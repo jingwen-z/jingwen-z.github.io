@@ -4,33 +4,32 @@ title: About
 permalink: /about/
 ---
 
-A graduate student pursuing a master’s degree in Economics at the Toulouse 
-School of Economics. Solid knowledge of statistics and economics. Extremely 
-interested in Data Science and Machine Learning.
-
-_Currently seeking full-time employment of **Data Scientist / Data Analyst** in
-the Ile-de-France._
+Junior data scientist at Franprix. Solid knowledge of statistics and economics.
+Extremely interested in Data Science and Machine Learning. Participing online
+courses and reading books are my principal approaches to strengthen my knowledge.
 
 ### More Information
 
-SOFTWARE SKILLS:
+_SOFTWARE SKILLS:_
 
-- Mastering skills in analysing with R and SAS. 
-- A high level of the office software, especially Microsoft Excel and Microsoft PowerPoint; 
-  for Microsoft Excel, ability to make the graphs by pivot table and write VBA. 
-- Mastering of SQL and Access. 
+- Mastering skills in analysing with R and SAS.
+- A high level of the office software, especially Microsoft Excel and Microsoft
+PowerPoint; for Microsoft Excel, ability to make the graphs by pivot table and
+write VBA.
+- Mastering of SQL, Talend and Access.
 - Knowledge the software Tableau.
 
-PERSONALITY:
+_PERSONALITY:_
 
-- Adaptability and ability to work in an international and multicultural environment.
+- Adaptability and ability to work in an international and multicultural
+environment.
 - Self-consistent
 - Enthusiast
 
-LANGUAGE:
+_LANGUAGE:_
 
 Speak French, English and Chinese (native language) fluently.
 
 ### Contact me
 
-[jingwen7.zheng@gmail.com](mailto:jingwen7.zheng@gmail.com)
+[jzheng@franprix.fr](mailto:jzheng@franprix.fr)
