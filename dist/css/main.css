@@ -11,7 +11,7 @@ h1 {
 	font-size: 2em;
 }
 h2 {
-	font-size: 50px;
+	font-size: 2.5em;
 }
 h3,
 h4,
@@ -81,12 +81,15 @@ code {
 #introduction {
 	background-color: #999;
 }
+#introduction {
+	padding: 0 20%;
+}
 #introduction .content {
-	margin-left: 80px;
-	max-width: 50%;
-	padding-top: 20%;
 	display: block;
 	text-align: center;
+}
+#introduction-heading {
+	padding-top: 30%;
 }
 #introduction-heading .title {
 	color: #FFFFFF;
