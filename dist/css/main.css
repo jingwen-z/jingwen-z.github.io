@@ -23,7 +23,7 @@ h4,
 	margin: 0;
 }
 h3 {
-	font-size: 1.2em;
+	font-size: .8em;
 	margin-bottom: .4em;
 }
 a,
@@ -34,6 +34,12 @@ p,
 li,
 .date {
 	font-size: 0.85em;
+	margin-top: 0;
+	margin-bottom: .1em;
+}
+.subtitle,
+.date {
+	font-size: 0.75em;
 }
 ul {
 	padding-left: 0;
@@ -67,7 +73,7 @@ code {
 	border-radius: 2px;
 }
 .col-xs-12{
-	width: 80%;
+	width: 100%;
 	display: inline-block;
 	vertical-align: top;
 	padding: 3%;
@@ -107,7 +113,7 @@ code {
 #experience .content {
 	display: block;
 	text-align: left;
-	padding: 0 15%;
+	padding-left: 10%;
 }
 #experience .content h1 {
 	font-size: 1.6em;
@@ -116,7 +122,7 @@ code {
 	padding: 0 1em;
 }
 #experience-image-div {
-	padding-top: 20%;
+	display: none;
 }
 #experience-image-div > img {
 	display: inline-block;
@@ -143,21 +149,23 @@ code {
 	text-transform: uppercase;
 	display: inline-block;
 	vertical-align: top;
+	font-size: 0.8em;
 }
 #project .content {
-	padding: 10%;
+	padding: 20% 10% 0 10%;
 	text-align: left;
 }
 #project .content img {
-	height: 50px;
-	width: 46px;
+	/*height: 50px;
+	width: 46px;*/
+	display: none;
 }
 #project .subtitle {
-	font-size: 18px;
+	font-size: 12px;
 	color: rgba(255, 255, 255, 1);
 }
 #project .date {
-	font-size: 15px;
+	font-size: 10px;
 	color: rgba(255, 255, 255, 0.65);
 }
 #education {
@@ -174,22 +182,20 @@ code {
 #education h3 {
 	color: #FFFFFF;
 }
+#education .img-background {
+	height: 100%;
+	width: auto;
+}
 #education .content {
 	position: absolute;
-	padding: 30% 0 0 25%;
+	padding: 20% 10% 0 10%;
 	z-index: 100;
 }
 #education .timeline {
-	/*background-color: rgba(0, 0, 0, 0.15);*/
 	height: auto;
-	border-left: 1px solid #BDBDBD;
 }
 #education .timeline-point {
-	margin: 20px 0 0 -5px;
-	padding: 0;
-	display: inline-block;
-	border: 5px solid #BDBDBD;
-	border-radius: 5px;
+	display: none;
 }
 #education .img-background {
 	background-color: none;
@@ -198,11 +204,17 @@ code {
 	z-index: 50;
 	-webkit-filter: blur(3px) brightness(0.8);
 }
+#education .media {
+	margin-top: 1.5em;
+	padding: 3%;
+}
 #education .media-img{
-	margin: 0 20px;
 	background-color: rgba(255, 255, 255, .8);
 	display: inline-block;
 	vertical-align: middle;
+	height: 2.1em; 
+	width: auto;
+	margin-bottom: .5em;
 }
 #education .media-body {
 	display: inline-block;
@@ -216,22 +228,24 @@ code {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 #contact .content {
-	padding: 25% 30%;
-}
-#contact .tag {
-	margin: 0 25px;
+	padding: 45% 12%;
 }
 #contact .tag,
 #contact .tag:visited {
 	color: #000;
+	margin: 0 .5em;
+	display: inline-block;
+}
+#contact .tag i {
+	font-size: 2em;
 }
 #contact .tag:hover {
 	color: rgba(255, 0, 0, 0.8);
 	cursor: pointer;
 }
 #contact .tags {
-	padding: 20px 0;
-	border-bottom: 3px solid #000;
+	padding: 10px 0;
+	border-bottom: 1px solid #000;
 	text-align: center;
 }
 @media(min-width: 320px) {
@@ -345,5 +359,79 @@ code {
 	#project .date {
 		font-size: 15px;
 		color: rgba(255, 255, 255, 0.65);
+	}
+	#education {
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+	#education p {
+		color: #FFFFFF;
+	}
+	#education h2 {
+		color: #FFFFFF;
+		position: relative;
+		z-index: 101;
+	}
+	#education h3 {
+		color: #FFFFFF;
+	}
+	#education .content {
+		position: absolute;
+		padding: 30% 0 0 25%;
+		z-index: 100;
+	}
+	#education .timeline {
+		/*background-color: rgba(0, 0, 0, 0.15);*/
+		height: auto;
+		border-left: 1px solid #BDBDBD;
+	}
+	#education .timeline-point {
+		margin: 20px 0 0 -5px;
+		padding: 0;
+		display: inline-block;
+		border: 5px solid #BDBDBD;
+		border-radius: 5px;
+	}
+	#education .img-background {
+		background-color: none;
+		position: absolute;
+		float: left;
+		z-index: 50;
+		-webkit-filter: blur(3px) brightness(0.8);
+	}
+	#education .media-img{
+		margin: 0 20px;
+		background-color: rgba(255, 255, 255, .8);
+		display: inline-block;
+		vertical-align: middle;
+	}
+	#education .media-body {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	#education .date,
+	#education .subtitle {
+		color: rgba(255, 255, 255, .7);
+	}
+	#contact {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	#contact .content {
+		padding: 25% 30%;
+	}
+	#contact .tag {
+		margin: 0 25px;
+	}
+	#contact .tag,
+	#contact .tag:visited {
+		color: #000;
+	}
+	#contact .tag:hover {
+		color: rgba(255, 0, 0, 0.8);
+		cursor: pointer;
+	}
+	#contact .tags {
+		padding: 20px 0;
+		border-bottom: 3px solid #000;
+		text-align: center;
 	}
 }
