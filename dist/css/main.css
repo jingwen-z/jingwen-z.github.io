@@ -25,6 +25,7 @@ h4,
 h3 {
 	font-size: .8em;
 	margin-bottom: .4em;
+	padding: 0 1px 0 1px;
 }
 a,
 a:visited {
@@ -113,11 +114,18 @@ code {
 #experience:hover img{
 	opacity: 0;
 }
+#experience-content {
+	display: block;
+	text-align: left;
+	padding: 25% 13% 0 13%;
+}
+/* TODO: cut to @media
 #experience .content {
 	display: block;
 	text-align: left;
-	padding-left: 10%;
+	padding: 20% 10% 0 10%;
 }
+*/
 #experience .content h1 {
 	font-size: 1.6em;
 }
@@ -155,7 +163,7 @@ code {
 	font-size: 0.8em;
 }
 #project .content {
-	padding: 20% 10% 0 10%;
+	padding: 20% 15% 0 15%;
 	text-align: left;
 }
 #project .content img {
@@ -174,16 +182,13 @@ code {
 #education {
 	background-color: rgba(255, 255, 255, 0.9);
 }
+#education h3,
 #education p {
-	color: #FFFFFF;
+	color: #000000;
 }
 #education h2 {
-	color: #FFFFFF;
 	position: relative;
 	z-index: 101;
-}
-#education h3 {
-	color: #FFFFFF;
 }
 #education .img-background {
 	height: 100%;
@@ -225,7 +230,7 @@ code {
 }
 #education .date,
 #education .subtitle {
-	color: rgba(255, 255, 255, .7);
+	color: rgba(0, 0, 0, .7);
 }
 #contact {
 	background-color: rgba(0, 0, 0, 0.4);
@@ -251,15 +256,14 @@ code {
 	border-bottom: 1px solid #000;
 	text-align: center;
 }
-@media(min-width: 320px) {
-
-}
-
 @media(min-width: 600px) {
-
+	#experience-content,
+	#project .content {
+		padding: 20% 14% 0 14%;
+	}
 }
 
-@media(min-width: 1025px) {
+@media(min-width: 800px) {
 	h1 {
 		font-size: 3em;
 	}
@@ -299,10 +303,10 @@ code {
 		padding: 3%;
 	}
 	#introduction .content {
-		margin-left: 80px;
-		max-width: 50%;
+		margin-left: 0px;
 		padding-top: 28.1%;
 		display: block;
+		text-align: left;
 	}
 	#introduction-heading .title {
 		margin-bottom: 0;
@@ -312,6 +316,7 @@ code {
 	}
 	#introduction-body p {
 		visibility: visible;
+		margin-bottom: 1em;
 	}
 	#introduction-body .btn {
 		font-size: 20px;
@@ -319,9 +324,6 @@ code {
 	}
 	#introduction-body .btn:hover {
 		cursor: pointer;
-	}	
-	#experience {
-		background-color: rgba(255, 255, 255, 0.9);
 	}
 	#experience:hover img{
 		opacity: 1;
@@ -329,6 +331,9 @@ code {
 	#experience .content {
 		display: inline-block;
 		width: 34.5%;
+	}
+	#experience-content {
+		padding: 0 0 0 10%;
 	}
 	#experience-image-div {
 		padding: 17% 0 0 15%;
@@ -357,35 +362,22 @@ code {
 	}
 	#project .subtitle {
 		font-size: 18px;
-		color: rgba(255, 255, 255, 1);
 	}
 	#project .date {
 		font-size: 15px;
-		color: rgba(255, 255, 255, 0.65);
-	}
-	#education {
-		background-color: rgba(255, 255, 255, 0.9);
-	}
-	#education p {
-		color: #FFFFFF;
 	}
 	#education h2 {
-		color: #FFFFFF;
 		position: relative;
 		z-index: 101;
 	}
-	#education h3 {
-		color: #FFFFFF;
-	}
 	#education .content {
 		position: absolute;
-		padding: 30% 0 0 25%;
+		padding: 7% 0 0 25%;
 		z-index: 100;
+		min-width: 700px;
 	}
 	#education .timeline {
-		/*background-color: rgba(0, 0, 0, 0.15);*/
 		height: auto;
-		border-left: 1px solid #BDBDBD;
 	}
 	#education .timeline-point {
 		margin: 20px 0 0 -5px;
@@ -395,7 +387,6 @@ code {
 		border-radius: 5px;
 	}
 	#education .img-background {
-		background-color: none;
 		position: absolute;
 		float: left;
 		z-index: 50;
@@ -403,17 +394,13 @@ code {
 	}
 	#education .media-img{
 		margin: 0 20px;
-		background-color: rgba(255, 255, 255, .8);
 		display: inline-block;
 		vertical-align: middle;
 	}
 	#education .media-body {
 		display: inline-block;
 		vertical-align: middle;
-	}
-	#education .date,
-	#education .subtitle {
-		color: rgba(255, 255, 255, .7);
+		max-width: 500px;
 	}
 	#contact {
 		background-color: rgba(0, 0, 0, 0.4);
