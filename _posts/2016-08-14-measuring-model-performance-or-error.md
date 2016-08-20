@@ -19,14 +19,16 @@ measures. If Accuracy goes up when Error goes down.
 
 <br>
 
-<p align="center"><img alt="Formula of Accuracy" src="http://latex.codecogs.com
-/gif.latex?\large&space;Accuracy&space;=&space;\frac{correctly&space;classified
-&space;instances}{total&space;amount&space;of&space;classified&space;instances}"/></p>
+<p align="center"><img alt="Formula of Accuracy" src="http://latex.codecogs.com/
+gif.latex?\fn_cm&space;\large&space;Accuracy\,&space;=\,&space;
+\frac{Correctly\;&space;Classified\;&space;Instances}{Total\,&space;Amount\,&space;
+of\,&space;Classified\,&space;Instances}"/></p>
 
 <br>
 
-<p align="center"><img alt="Formula of Error" src="http://latex.codecogs.com/gif.
-latex?\large&space;Error&space;=&space;1&space;-&space;Accuracy"/></p>
+<p align="center"><img alt="Formula of Error" src="http://latex.codecogs.com/
+gif.latex?\fn_cm&space;\large&space;Error\,&space;=\,&space;1\,&space;-\,&space;
+Accuracy"/></p>
 
 Because of the limit of accuracy, we should calculate the confusion matrix. For 
 now, we focus on binary classifier, there are 2 classes: positive (1) and negative (0)
@@ -56,17 +58,17 @@ gives us the mean distance between estimates and regression line.
 <br>
 
 <p align="center"><img alt="Formula of RMSE" src="http://latex.codecogs.com/
-gif.latex?\large&space;RMSE&space;=&space;\sqrt{\frac{1}{N}\sum_{i&space;=&space;1}^
-{N}{(y_i&space;-&space;\hat{y_i})^{2}}}"/></p>
+gif.latex?\fn_cm&space;\large&space;RMSE&space;=&space;\sqrt{\frac{1}{N}
+\sum_{i&space;=&space;1}^{N}{(y_i&space;-&space;\hat{y_i})^{2}}}"/></p>
 				
-* <img alt="y_i" src="http://latex.codecogs.com/gif.latex?\large&space;y_i"/>: 
-actual outcome for obs. <img alt="i" src="http://latex.codecogs.com/gif.latex?
-\large&space;i"/>
-* <img alt="\hat{y_i}" src="http://latex.codecogs.com/gif.latex?
+* <img alt="y_i" src="http://latex.codecogs.com/gif.latex?\fn_cm&space;
+\large&space;y_i"/>: actual outcome for obs. <img alt="i" 
+src="http://latex.codecogs.com/gif.latex?\fn_cm&space;\large&space;i"/>
+* <img alt="\hat{y_i}" src="http://latex.codecogs.com/gif.latex?\fn_cm&space;
 \large&space;\hat{y_i}"/>: predicted outcome for obs. <img alt="i" 
-src="http://latex.codecogs.com/gif.latex?\large&space;i"/>
-* <img alt="N" src="http://latex.codecogs.com/gif.latex?\large&space;N"/>: 
-Number of observations
+src="http://latex.codecogs.com/gif.latex?\fn_cm&space;\large&space;i"/>
+* <img alt="N" src="http://latex.codecogs.com/gif.latex?\fn_cm&space;
+\large&space;N"/>: Number of observations
 
 
 ## Clustering
@@ -90,8 +92,9 @@ Moreover, a popular performance index to compare clustering algorithms is Dunnâ€
 index.
 
 <p align="center"><img alt="Formula of Dunn's index" 
-src="http://latex.codecogs.com/gif.latex?\large&space;Dunn's&space;index&space;
-=&space;\frac{minimal&space;intercluster&space;distance}{maximal&space;diameter}"/>
+src="http://latex.codecogs.com/gif.latex?\fn_cm&space;\large&space;Dunn's\,&space;
+index\,&space;=\,&space;\frac{Minimal\,&space;Intercluster\,&space;Distance}{
+Maximal\,&space;Diameter}"/>
 </p>
 
 
