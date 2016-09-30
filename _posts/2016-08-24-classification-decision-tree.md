@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Classification - Decision Tree
+title: Decision Tree
 ---
 
 Thanks to [DataCamp][DataCamp], I know more about `Machine Learning`. Among its 
@@ -9,12 +9,12 @@ different tasks, I first learnt an very important concept in supervised learning
 automatically assign class to observations with features. Formally, an 
 observation consists of a vector of features and a class. Classification model 
 assigns automatically class with the input features, base on classes of previous 
-ovservations. In this and next blog, I will talk about two algorithms of 
-Classification: `Decision Tree` and `k-Nearest Neighbors`.
+ovservations. In this blog, I will talk about one algorithm of Classification: 
+`Decision Tree`.
 
 
 A `decision tree` is a decision support tool that uses a tree-like graph or 
-model of decisions and their possible consequences. It's a flowchart-like 
+model of decisions and their possible consequences. It is a flowchart-like 
 structure in which each internal node represents a "test" on an attribute, 
 each branch represents the outcome of the test and each leaf node represents 
 a class label, the paths from root to leaf represents classification rules. 
@@ -111,9 +111,6 @@ fancyRpartPlot(pruned)
 
 All things above are what I understand after learning from DataCamp, if you 
 have some other ideas, don't hesitate to tell me :)
-
-In next blog, I will talk about another algorithms of Classification: 
-`k-Nearest Neighbors`.
 
 
 [DataCamp]:https://www.datacamp.com/home
