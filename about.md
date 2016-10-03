@@ -4,12 +4,30 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A graduate student pursuing a master’s degree in Economics at the Toulouse School of Economics. 
+Solid knowledge of statistics, economics and environmental economics. 
+
+Currently doing my internship at French Development Agency in Paris. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+SOFTWARE SKILLS:
+
+- Mastering skills in analysing with R and SAS. 
+- A high level of the office software, especially Microsoft Excel and Microsoft PowerPoint; 
+for Microsoft Excel, ability to make the graphs by pivot table and write VBA. 
+- Mastering of SQL and Access. 
+- Knowledge the software Tableau.
+
+PERSONALITY:
+
+- Adaptability and ability to work in an international and multicultural environment.
+- Self-consistent
+- Enthusiast
+
+LANGUAGE:
+Speak French, English and Chinese (native language) fluently.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jingwen7.zheng@gmail.com](mailto:jingwen7.zheng@gmail.com)
