@@ -26,6 +26,7 @@ PERSONALITY:
 - Enthusiast
 
 LANGUAGE:
+
 Speak French, English and Chinese (native language) fluently.
 
 ### Contact me
