@@ -15,7 +15,7 @@ SOFTWARE SKILLS:
 
 - Mastering skills in analysing with R and SAS. 
 - A high level of the office software, especially Microsoft Excel and Microsoft PowerPoint; 
-for Microsoft Excel, ability to make the graphs by pivot table and write VBA. 
+  for Microsoft Excel, ability to make the graphs by pivot table and write VBA. 
 - Mastering of SQL and Access. 
 - Knowledge the software Tableau.
 
