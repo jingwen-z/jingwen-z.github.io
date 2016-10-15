@@ -3,17 +3,17 @@ layout: post
 title: Decision Tree
 ---
 
-Thanks to [DataCamp][DataCamp], I know more about `Machine Learning`. Among its 
+Thanks to [DataCamp][DataCamp], I know more about _Machine Learning_. Among its 
 different tasks, I first learnt an very important concept in supervised learning,
- `Classification`, which is suitable for the data with predefined classes. It 
+ _Classification_, which is suitable for the data with predefined classes. It 
 automatically assign class to observations with features. Formally, an 
 observation consists of a vector of features and a class. Classification model 
 assigns automatically class with the input features, base on classes of previous 
 ovservations. In this blog, I will talk about one algorithm of Classification: 
-`Decision Tree`.
+_Decision Tree_.
 
 
-A `decision tree` is a decision support tool that uses a tree-like graph or 
+A _decision tree_ is a decision support tool that uses a tree-like graph or 
 model of decisions and their possible consequences. It is a flowchart-like 
 structure in which each internal node represents a "test" on an attribute, 
 each branch represents the outcome of the test and each leaf node represents 
@@ -31,7 +31,7 @@ regression tree, we need to use the fonction `rpart()` in the library
 [**rpart**][package-rpart]. 
 
 {% highlight r %}
-# For example, we use the `titanic` data frame (Source: Kaggle),
+# For example, we use the "titanic" data frame (Source: Kaggle),
 # which contains 714 observations and 4 variables: Survived, 
 # Pclass, Sex and Age.
 # It has been divided into training and test sets (named train 
@@ -86,11 +86,11 @@ The number of nodes in the decision tree play an important role to see
 whether the decision tree will overfits to the training set or not. If 
 you restrict the size of decision tree, the bias of resulting tree model will 
 be higher, which will effectively decrease chance on overfit. This process 
-is called `Pruning the decision tree`.
+is called _Pruning the decision tree_.
 
 Now suppose that we will build a complex tree model: tree_cp. Then we can 
 use the `prune()` method to shrink the "tree_cp" to a more compact tree; 
-also specify the `cp` argument to be 0.01. As follows:
+also specify the _cp_ argument to be 0.01. As follows:
 
 {% highlight r %}
 # Calculation of a complex tree
