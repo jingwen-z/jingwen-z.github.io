@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Training set and Test set
+title: Training set and Test set 
 ---
 
 As I mentioned in my blog "[What is Machine Learning][blog-1]", Machine Learning 
