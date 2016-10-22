@@ -47,6 +47,10 @@ then push it into “cloud” with following code in terminal.
   <img alt="Dashboard2" src="{{ site.baseurl }}/images/20161018-dashboard2.png"/>
 </p>
 
+<p align="center">                                                              
+  <img alt="Dashboard3" src="{{ site.baseurl }}/images/20161018-dashboard3.png"/>
+</p> 
+
 Well, here are all things that I share to you today.
 
 [Google Analytics]:https://www.google.com/analytics
