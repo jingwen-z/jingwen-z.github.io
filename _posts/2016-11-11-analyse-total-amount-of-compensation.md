@@ -9,12 +9,12 @@ offers guarantees to banks providing loans to SMEs, thus limiting their risks.
 
 In order to record the business operation of GAR, we have several databases. 
 Thus, during this internship, my principal mission is according to the business 
-procedure of GAR, merge all databases into one with the process ETL (Extraction
+procedure of GAR, merge all datasources into one with the process ETL (Extraction
 -Transfer-Load), then analyse data to get the valuable information, which 
 contributes to our business.
 
-Since I will finish it in two weeks, here I will share you its most interesting 
-and important part – data analysis with machine learning algorithms. In 
+Since I will finish it in two weeks, here I will share you its most important
+and interesting part – data analysis with machine learning algorithm. In 
 consideration of the business of our division, the most important thing is not 
 only establishing business relation with more and more banks, but also limiting 
 the amount of compensation. Thus, I analysed the influence of different elements 
@@ -40,19 +40,19 @@ the loan amount.
 
 ## Data
 
-Since I focused on the total amount of compensation, I used the dataset 
-“guarantee activation” to do this analysis. In this dataset, there are 296 
-observations of 79 variables, I only used 11 variables of them: total amount of 
+Since we focused on the total amount of compensation, the dataset “guarantee 
+activation” has been used for analysing. In this dataset, we hqve 296 observations 
+of 79 variables, I used 11 most important variables of them: total amount of 
 compensation in euro, N° concours, guarantee type, country, primary beneficiary, 
 N° primary beneficiary, final beneficiary, N° final beneficiary, loan amount in 
 euro, guarantee amount in euro and exchange rate.
 
-Moreover, I had to exclude 36 observations because of incomplete information and 
-exclude 94 observations whose total amount of compensation equals to 0. I use 
-the final sample, which consists of 166 observations instead of 296 observations 
-with missing value. Besides, since the amount of compensation, the loan amount 
-and the guarantee amount are pretty large, I reduced them by one thousand, which 
-wouldn’t influence the result of analysis.
+Moreover, 36 observations are excluded due to incomplete information and 94 
+observations are excluded because of zero compensation amount. Thus, the final 
+sample consists of 166 observations instead of 296 observations with missing 
+value. Besides, since the amount of compensation, the loan amount and the 
+guarantee amount are pretty large, I reduced them by one thousand, which wouldn’t 
+influence the result of analysis.
 
 ## Data visualisation
 
@@ -81,7 +81,7 @@ increases, which is the same as we expect.
 
 ## Result
 
-I reference part of result since the table is quite long:
+I show the most important coefficients as following:
 
 <p align="center">                                                              
   <img alt="EstmatedCoefficient" src="{{ site.baseurl }}/images/20161111-estimatedcoeff.png"/>
@@ -89,19 +89,19 @@ I reference part of result since the table is quite long:
 
 As Table 1 shows, according to the p-values which are under the significant 
 level, I got the variables that have significant effects on the total amount of 
-compensation. The country Maurice, the primary beneficiary BOA Bénin, Banque des 
-MASCAREIGNES and MCB Ltd have significant effects on total amount of compensation 
+compensation. The country Maurice, the primary beneficiary BOA Benin, Bank of
+Mascarene and MCB Ltd have significant effects on total amount of compensation 
 at 1%. At 5% level, the primary beneficiary ALIOS has a significant impact on 
-total amount of compensation and at 10% level, the beneficiary CREDIT DU SENEGAL 
+total amount of compensation and at 10% level, the beneficiary Credit of Senegal
 and the loan amount also have a significant impact on it.
 
 Some of the variables above have positive effects on the amount of compensation. 
-Ceteris paribus, signing one contract with “BOA Bénin” increases 179.6 thousand 
-euros of total compensation. Signing one contract with Banque des MASCAREIGNES 
-leads to 679.9 thousand more euros, ceteris paribus. Thanks to the estimation 
-analysis, one contract with MCB Ltd increases total compensation by 609 thousand 
-euros. Besides, there are other two variables whose effects are not that outstanding. 
-Ceteris paribus, one contract with CREDIT DU SENEGAL results in 37.87 thousand 
+Ceteris paribus, signing one contract with “BOA Benin” increases 179.6 thousand 
+euros of total compensation. Signing one contract with Bank of Mascarene leads 
+to 679.9 thousand more euros, ceteris paribus. Thanks to the estimation analysis, 
+one contract with MCB Ltd increases total compensation by 609 thousand euros. 
+Besides, there are other two variables whose effects are not that outstanding. 
+Ceteris paribus, one contract with Credit of Senegal results in 37.87 thousand 
 euros’ compensation. In addition, a €1000-increasing in the loan amount augments 
 compensation amount by 17.05%.
 
@@ -137,4 +137,14 @@ This graph compares the quantiles of the residuals to the quantiles of the norma
 distribution. It presents approximately a line, which indicated all errors are 
 normally distributed.
 
+The statistical analysis by R tells us which bank has higher probability of 
+demanding the compensation, which means we should pay attention on it. For 
+instance, as the result of analysis, Bank of Mascarene has a significant effect 
+on total amount of compensation at 1%, so we may pay attention on this bank and 
+consider the rationality of our agreement with it.
+
+If you are interested in the R script, please check it on my [Github][Github], 
+all propositions are welcome!
+
 [French Development Agency]: http://www.afd.fr/home
+[Github]: https://github.com/jingwen-z/R/blob/master/TSE/internship/project_AFD.R
