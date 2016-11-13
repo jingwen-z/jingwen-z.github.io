@@ -4,10 +4,12 @@ title: About
 permalink: /about/
 ---
 
-A graduate student pursuing a master’s degree in Economics at the Toulouse School of Economics. 
-Solid knowledge of statistics, economics and environmental economics. 
+A graduate student pursuing a master’s degree in Economics at the Toulouse 
+School of Economics. Solid knowledge of statistics and economics. Extremely 
+interested in Data Science and Machine Learning.
 
-Currently doing my internship at French Development Agency in Paris. 
+_Currently seeking full-time employment de **Data Scientist / Data Analyst** in
+the Ile-de-France._
 
 ### More Information
 
