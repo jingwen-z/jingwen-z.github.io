@@ -89,25 +89,25 @@ I show the most important coefficients as following:
 
 As Table 1 shows, according to the p-values which are under the significant 
 level, I got the variables that have significant effects on the total amount of 
-compensation. The country Maurice, the primary beneficiary BOA Benin, Bank of
-Mascarene and MCB Ltd have significant effects on total amount of compensation 
-at 1%. At 5% level, the primary beneficiary ALIOS has a significant impact on 
-total amount of compensation and at 10% level, the beneficiary Credit of Senegal
-and the loan amount also have a significant impact on it.
+compensation. The country _Maurice_, the primary beneficiary _BOA Benin_, _Bank 
+of Mascarene_ and _MCB Ltd_ have significant effects on total amount of compensation 
+at **1%**. At **5%** level, the primary beneficiary _ALIOS_ has a significant 
+impact on total amount of compensation and at **10%** level, the beneficiary 
+_Credit of Senegal_ and the _loan amount_ also have a significant impact on it.
 
 Some of the variables above have positive effects on the amount of compensation. 
-Ceteris paribus, signing one contract with “BOA Benin” increases 179.6 thousand 
-euros of total compensation. Signing one contract with Bank of Mascarene leads 
-to 679.9 thousand more euros, ceteris paribus. Thanks to the estimation analysis, 
-one contract with MCB Ltd increases total compensation by 609 thousand euros. 
-Besides, there are other two variables whose effects are not that outstanding. 
-Ceteris paribus, one contract with Credit of Senegal results in 37.87 thousand 
-euros’ compensation. In addition, a €1000-increasing in the loan amount augments 
-compensation amount by 17.05%.
+Ceteris paribus, signing one contract with _BOA Benin_ increases **179.6 thousand** 
+euros of total compensation. Signing one contract with _Bank of Mascarene_ leads 
+to **679.9 thousand** more euros, ceteris paribus. Thanks to the estimation 
+analysis, one contract with _MCB Ltd_ increases total compensation by **609 
+thousand** euros. Besides, there are other two variables whose effects are not 
+that outstanding. Ceteris paribus, one contract with _Credit of Senegal_ results 
+in **37.87 thousand** euros’ compensation. In addition, a €1000-increasing in 
+the _loan amount_ augments compensation amount by **17.05%**.
 
 Moreover, we can observe that the model fits well the data since the value of R2 
-is 89.82%, which is pretty high. However, the p-value and R2 are not enough. In 
-order to check whether this linear model is really confidential, I firstly 
+is **89.82%**, which is pretty high. However, the p-value and R2 are not enough. 
+In order to check whether this linear model is really confidential, I firstly 
 checked if the observations are independent with following codes and got the 
 graph below:
 
