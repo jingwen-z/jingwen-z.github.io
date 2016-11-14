@@ -51,6 +51,13 @@ fancyRpartPlot(tree)
 <p align="center"><img alt="Decision Tree Example" src="{{site.baseurl }}/
 images/20160824-decision-tree-example.png"/></p>
 
+Let's take the plot above as an example, which studies survivals in Titanic.The 
+root node, at the top, shows 41% of passengers servive while 59% of them die. 
+Next, if the passenger is a woman, we move to the left branch, then we see she 
+has 76% probability to be alive. However, if she is in the second class, for the 
+next step, we move to the right branch, which indicates she has only 44% probability 
+to live. The rest can be done in the same manner.
+
 ## Classify with the decision tree
 
 The previous learning step involved proposing different tests on which to 
