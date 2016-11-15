@@ -8,7 +8,7 @@ A graduate student pursuing a master’s degree in Economics at the Toulouse
 School of Economics. Solid knowledge of statistics and economics. Extremely 
 interested in Data Science and Machine Learning.
 
-_Currently seeking full-time employment de **Data Scientist / Data Analyst** in
+_Currently seeking full-time employment of **Data Scientist / Data Analyst** in
 the Ile-de-France._
 
 ### More Information
