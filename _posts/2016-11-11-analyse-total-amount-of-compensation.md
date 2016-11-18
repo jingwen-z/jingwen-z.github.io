@@ -75,7 +75,7 @@ According to this graph, we can get similar idea as the previous one.
 
 <img alt="DataVisualisation3" src="{{ site.baseurl }}/images/20161111-dataviz3.png"/>
 
-This gragh shows that with the increasing of loan amount, the compensation 
+This graph shows that with the increasing of loan amount, the compensation 
 increases, which is the same as we expect.
 
 
