@@ -98,6 +98,14 @@ ul ul, ol ul {
   list-style-type: circle;
 }
 
+table, th, td {
+  border: 1px solid #e6e6e6; /* 10% black */
+}
+
+th, td {
+  padding: 7px;
+}
+
 em, i {
   font-style: italic;
 }
