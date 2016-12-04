@@ -110,11 +110,56 @@ In order to summarize the dataset while trying at the same time to keep the
 maximal information contained among the variables. I firstly used the Principal 
 Components Analysis (PCA) technique.
 
-Component  |  Comp.1 | Comp.2  | Comp.3  |    Comp.4   | Comp.5   | Comp.6   | Comp.7
----------- |---------|---------|---------|-------------|----------|----------|--------
-    sd     | 1.75685 | 1.09184 | 1.00515 |   0.98331   | 0.614753 | 0.492406 | 0.351811
-cumulative | 0.44093 | 0.61123 | 0.75556 | **0.89370** | 0.947681 | 0.982318 | 1.000000
-
+<table style="margin:auto; text-align:center">
+  <tr>
+    <th>
+      <b>Component</b>
+    </th>
+    <th>
+      <b>Sd</b>
+    </th>
+    <th>
+      <b>Cumulative</b>
+    </th>
+  </tr>
+  <tr>
+    <td>Comp.1</td>
+    <td>1.75685</td>
+    <td>0.44093</td>
+  </tr>
+  <tr>
+    <td>Comp.2</td>
+    <td>1.09184</td>
+    <td>0.61123</td>
+  </tr>
+  <tr>
+    <td>Comp.3</td>
+    <td>1.00515</td>
+    <td>0.75556</td>
+  </tr>
+  <tr>
+    <td>Comp.4</td>
+    <td>0.98331</td>
+    <td>
+      <b>0.89370</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Comp.5</td>
+    <td>0.614753</td>
+    <td>0.947681</td>
+  </tr>
+  <tr>
+    <td>Comp.6</td>
+    <td>0.492406</td>
+    <td>0.982318</td>
+  </tr>
+  <tr>
+    <td>Comp.7</td>
+    <td>0.351811</td>
+    <td>1.000000</td>
+  </tr>
+</table>
 
 According to the table above, notice that the explained variance labelled 
 _cumulative_ reaches **80%** and increases very little as we add more principal 
