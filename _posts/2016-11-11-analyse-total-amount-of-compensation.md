@@ -41,7 +41,7 @@ the loan amount.
 ## Data
 
 Since we focused on the total amount of compensation, the dataset “guarantee 
-activation” has been used for analysing. In this dataset, we hqve 296 observations 
+activation” has been used for analysing. In this dataset, we have 296 observations 
 of 79 variables, I used 11 most important variables of them: total amount of 
 compensation in euro, N° concours, guarantee type, country, primary beneficiary, 
 N° primary beneficiary, final beneficiary, N° final beneficiary, loan amount in 
