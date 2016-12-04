@@ -122,8 +122,8 @@ plot(lm_mej$fitted.values, lm_mej$residuals
 
 According to this graph, we can observe that there is no correlation between 
 fitted values and residual, which means the observations are independent. Then, 
-I checked if all errors are errors are normally distributed with the same 
-variance and mean equals to 0.
+I checked if all errors are normally distributed with the same variance and mean 
+equals to 0.
 
 <p align="center">
   <img alt="Normal Q-Q Plot" src="{{ site.baseurl }}/images/20161111-normalqqplot.png"/>
