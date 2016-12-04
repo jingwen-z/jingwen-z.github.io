@@ -18,9 +18,12 @@ and interesting part – data analysis with machine learning algorithm. In
 consideration of the business of our division, the most important thing is not 
 only establishing business relation with more and more banks, but also limiting 
 the amount of compensation. Thus, I analysed the influence of different elements 
-on total amount of compensation with R. 
+on total amount of compensation in R, with Linear Regression Model and Decision 
+Tree. 
 
-## Model
+## Linear Regression Model
+
+### Model
 
 As I mentioned above, the aim of analysis is to state the relationship between 
 each different elements and total amount of compensation. So the model is as 
@@ -30,7 +33,7 @@ following.
   <img alt="linear model" src="{{ site.baseurl }}/images/20161111-linearmodel.png"/>
 </p>
 
-The dependant variable  represents the total amount of compensation in euro. 
+The dependant variable represents the total amount of compensation in euro. 
 The explanatory variable  includes several control variables such as the loan 
 amount in euro, the guarantee amount in euro, and dummy variables of countries, 
 guarantee types, primary beneficiaries (our clients, i.e. banks), final 
@@ -38,7 +41,7 @@ beneficiaries (banks’ clients, i.e. loanees). Among the omitted factors
 represented by the error term, income of final beneficiaries may directly affect 
 the loan amount.
 
-## Data
+### Data
 
 Since we focused on the total amount of compensation, the dataset “guarantee 
 activation” has been used for analysing. In this dataset, we have 296 observations 
@@ -54,7 +57,7 @@ value. Besides, since the amount of compensation, the loan amount and the
 guarantee amount are pretty large, I reduced them by one thousand, which wouldn’t 
 influence the result of analysis.
 
-## Data visualisation
+### Data visualisation
 
 Before analysing, let's make some graphs to better understand our data.
 
@@ -79,7 +82,7 @@ This graph shows that with the increasing of loan amount, the compensation
 increases, which is the same as we expect.
 
 
-## Result
+### Result
 
 I show the most important coefficients as following:
 
@@ -142,6 +145,42 @@ demanding the compensation, which means we should pay attention on it. For
 instance, as the result of analysis, Bank of Mascarene has a significant effect 
 on total amount of compensation at 1%, so we may pay attention on this bank and 
 consider the rationality of our agreement with it.
+
+
+## Decision Tree
+
+In this part, the algorithm **CART(Classification And Regression Tree)** is used. 
+Firstly, the amount of compensation is divided into 3 groups(A, B and C), 
+according to the quantile. Then, all data are separated into _training set_ and 
+_test set_, with the ratio _3/1_. Next, in order to create a Decision Tree, we 
+need to use `library(rpart)` and `library(rpart.plot)`. Now, let's see some 
+details!
+
+### Regression Tree
+
+The Regression Tree can be created by the function `rpart()` with `method = 
+"anova"`, then use `rpart.plot()` to get the following graph.
+
+<img alt="Regression Tree" src="{{ site.baseurl }}/images/20161111-DT-RT.png"/>
+
+### Classification Tree
+
+Similar as Regression Tree, Classification Tree is created by the function 
+`rpart()` but with `method = "class"`, and use `rpart.plot()` to get its graph.
+
+<img alt="Classification Tree" src="{{ site.baseurl }}/images/20161111-DT-CT.png"/>
+
+Moreover, we can check the prediction with test set and find the error rate is 
+7.9%. Besides, according to the following confusion matrix, we can get accuracy 
+is 92%, which is pretty high.
+
+{% highlight r %}
+   predClass
+     A  B  C
+  A 28  1  0
+  B  0  7  0
+  C  0  2  0
+{% endhighlight %}
 
 If you are interested in the R script, please check it on my [Github][Github], 
 all propositions are welcome!
