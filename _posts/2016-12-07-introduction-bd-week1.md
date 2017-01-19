@@ -3,13 +3,13 @@ layout: post
 title: UCSD Introduction to Big Data Week 1 & 2 review
 ---
 
-Since big data becomes more and more important in our life. As a fresh graduate 
-in Economics and Statistics, I'm eager to learn more knowledge about big data. 
-Thus, I decide to participate the course [Big Data specilization][Big Data 
-specilization], created by University of California, San Diego, taught by _Ilkay 
-Altintas_(Chief Data Science Officer), _Amarnath Gupta_(Director, Advanced Query 
-Processing Lab) and _Mai Nguyen_(Lead for Data Analytics), they all work in San 
-Diego Supercomputer Center(SDSC).  
+Since big data becomes more and more important in our life. As a fresh graduate
+in Economics and Statistics, I'm eager to learn more knowledge about big data.
+Thus, I decide to participate the course [Big Data specilization][Big Data
+specilization], created by University of California, San Diego, taught by _Ilkay
+Altintas_ (Chief Data Science Officer), _Amarnath Gupta_ (Director, Advanced
+Query Processing Lab) and _Mai Nguyen_ (Lead for Data Analytics), they all work
+in San Diego Supercomputer Center(SDSC).
 
 This specilization contains 6 courses as follows:
 
