@@ -1,43 +1,43 @@
 ---
 layout: post
-title: Training set and Test set 
+title: Training set and Test set
 ---
 
-As I mentioned in my blog "[What is Machine Learning][blog-1]", Machine Learning 
-tasks are typically classified into three broad categories, one of them is 
-_Supervised learning_. In the supervised learning setting, it is important to 
-understand the concept of two sets: **Training set** and **Test set**, which are 
+As I mentioned in my blog "[What is Machine Learning][blog-1]", Machine Learning
+tasks are typically classified into three broad categories, one of them is
+_Supervised learning_. In the supervised learning setting, it is important to
+understand the concept of two sets: **Training set** and **Test set**, which are
 useful to make good predictions about unseen observations.
 
-When learning a predictive model, we should not use the complet dataset to train 
-a model, we only use so-called _training set_ for this; the other part of the 
+When learning a predictive model, we should not use the complet dataset to train
+a model, we only use so-called _training set_ for this; the other part of the
 dataset is called _test set_, which can be used to evaluate performance of model.
 It's really important to realise that training set and test set are disjoint sets,
-they don't have any observation in common, this makes it's possible to test our 
+they don't have any observation in common, this makes it's possible to test our
 model on unseen data.
 
 ## Split the dataset
 
-First, we need to split our dataset. Here I refer to [DataCamp][DataCamp]'s slide 
-to explain its theorem. Suppose that we have N observations, K features and 
+First, we need to split our dataset. Here I refer to [DataCamp][DataCamp]'s slide
+to explain its theorem. Suppose that we have N observations, K features and
 class labels for each observations y.
 
 <p align="center"><img alt="Training set & Test set" src="{{ site.baseurl }}/
 images/20160820-training set & test set.png"/></p>
 
-For the _training set_, we use the first r observations, then use the features 
+For the _training set_, we use the first r observations, then use the features
 and the class label to train a model. For the _test set_, we use the observations
-from r+1 until the end of the dataset, then use the features classified 
+from r+1 until the end of the dataset, then use the features classified
 observations and compare the prediction with the actual class y. The confusion
-matrix that results gives us clear ideas of the actual predicted performance 
+matrix that results gives us clear ideas of the actual predicted performance
 of the classifier.
 
-Then, how to choose _training set_ and _test set_? We should choose _training set_ 
+Then, how to choose _training set_ and _test set_? We should choose _training set_
 which is **larger** than _test set_, and the ratio is typically _3/1_(arbitrary)
-in the _training set_ over the _test set_. But make sure that your _test set_ is 
+in the _training set_ over the _test set_. But make sure that your _test set_ is
 NOT too small!
 
-For example, you could use the following commands to shuffle a data frame df 
+For example, you could use the following commands to shuffle a data frame df
 and divide it into training and test sets with a 60/40 split between the two.
 
 {% highlight r %}
@@ -51,25 +51,25 @@ test <- shuffled_df[test_indices, ]
 
 ## Distribution of the sets
 
-It's important that you choose wisely which elements you put in the _training 
-set_ and which ones you put in the _test set_. For _Classification_, the classes 
-inside the _training_ and _test_ set must have similar distributions, avoid a 
-class not being available in a set. For _Classification & Regression_, it's 
+It's important that you choose wisely which elements you put in the _training
+set_ and which ones you put in the _test set_. For _Classification_, the classes
+inside the _training_ and _test_ set must have similar distributions, avoid a
+class not being available in a set. For _Classification & Regression_, it's
 always a smart idea to shuffle dataset before splitting.
 
 ## Effect of sampling
 
-Finally, be aware of the effect that the sampling of data in a certain way to 
-compose the _test set_ can influence the performance measures on the set. In 
-order to add robustness to these measures, we can use **cross-validation**, 
-which means that we use a learning algorithm to train a model multiple times, 
-each time with different separations of _training_ and _test set_. _n-fold 
-cross-validation_ means the _test set_ is fold n times, each _test set_ is 
+Finally, be aware of the effect that the sampling of data in a certain way to
+compose the _test set_ can influence the performance measures on the set. In
+order to add robustness to these measures, we can use **cross-validation**,
+which means that we use a learning algorithm to train a model multiple times,
+each time with different separations of _training_ and _test set_. _n-fold
+cross-validation_ means the _test set_ is fold n times, each _test set_ is
 _1/n_ size of total dataset.
 
-For example, you will fold the dataset 6 times and calculate the accuracy 
-for each fold. The mean of these accuracies forms a more robust estimation 
-of the model's true accuracy of predicting unseen data, because it is less 
+For example, you will fold the dataset 6 times and calculate the accuracy
+for each fold. The mean of these accuracies forms a more robust estimation
+of the model's true accuracy of predicting unseen data, because it is less
 dependent on the choice of training and test sets.
 
 {% highlight r %}
@@ -79,7 +79,7 @@ accs <- rep(0,6)
 for (i in 1:6) {
   # These indices indicate the interval of the test set
    indices <- (((i-1) * round((1/6)*nrow(shuffled))) + 1)
-                    :((i*round((1/6) * nrow(shuffled)))) 
+                    :((i*round((1/6) * nrow(shuffled))))
   # Exclude them from the train set
   train <- shuffled[-indices,]
   
@@ -100,6 +100,5 @@ for (i in 1:6) {
 }
 {% endhighlight %}
 
-
-[blog-1]:http://jingwen-z.github.io/what-is-machine-learning/
+[blog-1]:http://jingwen-z.github.io/what-is-machine-learning
 [DataCamp]:https://www.datacamp.com/home
