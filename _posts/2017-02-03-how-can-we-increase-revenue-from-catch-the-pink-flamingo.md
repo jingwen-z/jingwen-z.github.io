@@ -77,7 +77,7 @@ spend $5.00 or less to buy the items. In this graph, red stands for the
 PennyPinchers, blue stands for the HighRollers.
 
 <p align="center">
-  <img alt="Decision Tree" src="{{ site.baseurl }}/images/20170203-decisionTree.png"/>
+  <img alt="Decision Tree" src="{{ site.baseurl }}/images/20170203-decisiontree.png"/>
 </p>
 
 According to the resulting decision tree, it obviously shows that the predicted
