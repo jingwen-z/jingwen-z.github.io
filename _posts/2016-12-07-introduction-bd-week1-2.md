@@ -187,8 +187,8 @@ such as bursts in the local cohesion in parts of the data. And _emergent
 behavior_ in the whole data set, such as increased polarization in a community.
 
 
-Voilà, here are what I want to share with you. In the next blog, I will talk
-about the process of data analysis and Hadoop.
+Voilà, here are what I want to share with you. In the [review of week 3][review of week 3],
+I will talk about the process of data analysis and Hadoop.
 
 [Big Data specilization]: https://www.coursera.org/specializations/big-data
 [Introduction]: https://www.coursera.org/learn/big-data-introduction
@@ -197,3 +197,4 @@ about the process of data analysis and Hadoop.
 [Machine Learning]: https://www.coursera.org/learn/big-data-machine-learning
 [Graph Analytics]: https://www.coursera.org/learn/big-data-graph-analytics
 [project]: https://www.coursera.org/learn/big-data-project
+[review of week 3]: http://jingwen-z.github.io/introduction-bd-week3
