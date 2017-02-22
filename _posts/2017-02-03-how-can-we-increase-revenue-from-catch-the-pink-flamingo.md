@@ -371,7 +371,7 @@ Thanks to the courses, I had a better understanding of Big Data, and got my
 dream job, Data Scientist. Well, a new journey will begin!
 
 [Coursera]: https://www.coursera.org
-[previous blog]: http://jingwen-z.github.io/introduction-bd-week1
+[previous blog]: https://jingwen-z.github.io/introduction-bd-week1
 [Splunk]: https://www.splunk.com
 [KNIME]: https://www.knime.org
 [neo4j]: https://neo4j.com

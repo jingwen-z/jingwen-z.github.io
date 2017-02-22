@@ -100,5 +100,5 @@ for (i in 1:6) {
 }
 {% endhighlight %}
 
-[blog-1]:http://jingwen-z.github.io/what-is-machine-learning
+[blog-1]:https://jingwen-z.github.io/what-is-machine-learning
 [DataCamp]:https://www.datacamp.com/home

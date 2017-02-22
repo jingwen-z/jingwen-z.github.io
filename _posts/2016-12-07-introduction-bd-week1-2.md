@@ -197,4 +197,4 @@ I will talk about the process of data analysis and Hadoop.
 [Machine Learning]: https://www.coursera.org/learn/big-data-machine-learning
 [Graph Analytics]: https://www.coursera.org/learn/big-data-graph-analytics
 [project]: https://www.coursera.org/learn/big-data-project
-[review of week 3]: http://jingwen-z.github.io/introduction-bd-week3
+[review of week 3]: https://jingwen-z.github.io/introduction-bd-week3

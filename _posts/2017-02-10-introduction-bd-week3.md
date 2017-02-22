@@ -159,4 +159,4 @@ better performance and lower costs.
 Well, here is the knowledge that I share with you of Introduction to Big Data.
 In the next few weeks, I will talk about other courses of Big Data.
 
-[UCSD Introduction to Big Data Week 1 & 2 review]: http://jingwen-z.github.io/introduction-bd-week1-2
+[UCSD Introduction to Big Data Week 1 & 2 review]: https://jingwen-z.github.io/introduction-bd-week1-2
