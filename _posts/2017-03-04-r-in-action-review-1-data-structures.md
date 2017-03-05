@@ -3,16 +3,16 @@ layout: post
 title: R IN ACTION Review 1 - Data structures
 ---
 
-During these days, I read the book "R IN ACTION" on my way to work and home.
-Reviewing very basic knowledge, feeling familiar and interesting since I got
-some new knowledge once again. Considering it could be useful and interesting in
-the career in data science, I prefer to share them as weekly blogs. Today, let's
-see something about data structures.
+During these days, I read the book "R IN ACTION" on my way to work and home. In
+order to strengthen my data analysis ability and facilitate our work, I decided
+to start from the begining. Reviewing the basic knowledge, I felt familiar and
+found its interests. Considering it could be useful in data science, I'd like to
+share them as weekly blogs. Today, let's see something about data structures.
 
 A dataset is usually a rectangular array of data with rows representing
 observations and columns representing variables. R has a wide variety of objects
-for holding data, including vectors, matrices, arrays, data frames, etc. Let's
-look at each structure in turn, starting with vectors.
+for holding data, including vectors, matrices, arrays, data frames, factors and
+lists. Let's look at each structure in turn, starting with vectors.
 
 ## Vectors
 _Vectors_ are one-dimensional arrays that can hold numeric data, character data,
@@ -102,5 +102,5 @@ of the list.
 
 ## Summary
 One of the most challenging tasks in data analysis is data preparation. We've
-made a good start by ourlining the various structures that R provides for
-holding data. In next blog, we'll review general methods for working with graphs.
+made a good start by outlining the various structures provided by R for holding
+data. In next blog, we'll review general methods for working with graphs.
