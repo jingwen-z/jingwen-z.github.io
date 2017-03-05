@@ -1,13 +1,18 @@
 ---
 layout: post
-title: R IN ACTION Review 1 - Creating a dataset
+title: R IN ACTION Review 1 - Data structures
 ---
 
-In [last blog][last blog] I mentioned the book "R IN ACTION". During these days,
-I read it on my way to work and home. I began from very basic knowledge (though
-I have learnt them), and got some new knowledge once again. Thus, I want to note
-and share them as weekly blogs. In this blog, I will talk about the knowledge of
-_creating a dataset_.
+During these days, I read the book "R IN ACTION" on my way to work and home.
+Reviewing very basic knowledge, feeling familiar and interesting since I got
+some new knowledge once again. Considering it could be useful and interesting in
+the career in data science, I prefer to share them as weekly blogs. Today, let's
+see something about data structures.
+
+A dataset is usually a rectangular array of data with rows representing
+observations and columns representing variables. R has a wide variety of objects
+for holding data, including vectors, matrices, arrays, data frames, etc. Let's
+look at each structure in turn, starting with vectors.
 
 ## Vectors
 _Vectors_ are one-dimensional arrays that can hold numeric data, character data,
@@ -95,4 +100,7 @@ You can specify elements of the list by indicating a component number or a name
 within double brackets. For instance, `mylist[[2]]` refers to the second element
 of the list.
 
-[last blog]: https://jingwen-z.github.io/goals-of-2017
+## Summary
+One of the most challenging tasks in data analysis is data preparation. We've
+made a good start by ourlining the various structures that R provides for
+holding data. In next blog, we'll review general methods for working with graphs.
