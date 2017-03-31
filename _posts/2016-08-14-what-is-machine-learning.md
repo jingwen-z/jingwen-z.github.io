@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What is Machine Learning?
+comments: true
 ---
 
 Machine learning explores the study and construction of algorithms that can

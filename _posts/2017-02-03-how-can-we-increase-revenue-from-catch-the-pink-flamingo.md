@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How can we increase revenue from Catch the Pink Flamingo?
+comments: true
 ---
 
 During last December and January, I participated Big Data courses on the website

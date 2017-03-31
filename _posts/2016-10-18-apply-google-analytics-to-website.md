@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Apply Google Analytics to website
+comments: true
 ---
 
 Nowadays, technique plays an important role in our life, almost all of us search

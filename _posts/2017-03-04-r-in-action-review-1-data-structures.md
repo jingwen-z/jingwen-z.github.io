@@ -1,6 +1,7 @@
 ---
 layout: post
 title: R IN ACTION Review 1 - Data structures
+comments: true
 ---
 
 During these days, I read the book "R IN ACTION" on my way to work and home. In

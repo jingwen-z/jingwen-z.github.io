@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Impact of different elements on compensation
+comments: true
 ---
 
 For the end of master, I’m doing my internship at [French Development Agency]

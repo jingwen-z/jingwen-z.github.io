@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Decision Tree
+comments: true
 ---
 
 Thanks to [DataCamp][DataCamp], I know more about _Machine Learning_. Among its

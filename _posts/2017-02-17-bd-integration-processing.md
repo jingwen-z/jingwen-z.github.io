@@ -1,6 +1,7 @@
 ---
 layout: post
 title: UCSD Big Data Integration and Processing review
+comments: true
 ---
 
 Today I'll talk about [Big Data Integration and Processing][Big Data Integration and Processing]

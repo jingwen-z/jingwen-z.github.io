@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Analysis of internauts' behavior
+comments: true
 ---
 
 Since the internship will be finished in a few days, I'm seeking employment and

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: UCSD Introduction to Big Data Week 1 & 2 review
+comments: true
 ---
 
 Since big data becomes more and more important in our life. As a fresh graduate

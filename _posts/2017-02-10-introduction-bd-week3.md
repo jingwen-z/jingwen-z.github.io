@@ -1,6 +1,7 @@
 ---
 layout: post
 title: UCSD Introduction to Big Data Week 3 review
+comments: true
 ---
 
 In the blog [UCSD Introduction to Big Data Week 1 & 2 review][UCSD Introduction to Big Data Week 1 & 2 review],
