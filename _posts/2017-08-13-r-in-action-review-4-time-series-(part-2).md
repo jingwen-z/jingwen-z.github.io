@@ -25,21 +25,21 @@ The simple exponential smoothing model assumes that an observation in the time
 series can be described by
 
 <p align="center">
-<img alt="simple exponential smoothing" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;level&space;&plus;&space;irregular_{t}"/>
+<img alt="simple exponential smoothing" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;level&space;&plus;&space;irregular_{t}"/>
 </p>
 
-The prediction at time <img alt="Y_t+1" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t&plus;1}"/>
+The prediction at time <img alt="Y_t+1" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t&plus;1}"/>
 (called the _1-step ahead forecast_) is written as
 
 <p align="center">
-<img alt="1-step ahead forecast" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t&plus;1}&space;=&space;c_{t}Y_{t}&space;&plus;&space;c_{1}Y_{t-1}&space;&plus;&space;c_{2}Y_{t-2}&space;&plus;&space;..."/>
+<img alt="1-step ahead forecast" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t&plus;1}&space;=&space;c_{t}Y_{t}&space;&plus;&space;c_{1}Y_{t-1}&space;&plus;&space;c_{2}Y_{t-2}&space;&plus;&space;..."/>
 </p>
 
 where
-<img alt="c_i" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;c_{i}&space;=&space;\alpha&space;(1-\alpha&space;)^{i}"/>,
+<img alt="c_i" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;c_{i}&space;=&space;\alpha&space;(1-\alpha&space;)^{i}"/>,
 i=0, 1, 2, ... and
-<img alt="alpha" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;0&space;\leq&space;\alpha&space;\leq&space;1"/>.
-The <img alt="c_i" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;c_{i}"/>
+<img alt="alpha" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;0&space;\leq&space;\alpha&space;\leq&space;1"/>.
+The <img alt="c_i" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;c_{i}"/>
 weights sum to one, and the 1-step ahead forecast can be seem to be a weighted
 average of the current value and all past values of the time series. The alpha
 parameter controls the rate of decay for the weights. The closer alpha is to 1,
@@ -57,7 +57,7 @@ The Holt exponential smoothing approach can fit a time series that has an
 overall level and a trend (slope). The model for an observation at time _t_ is
 
 <p align="center">
-<img alt="holt exponential smoothing" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;level&space;&plus;&space;slope&space;*&space;t&space;&plus;&space;irregular_{t}"/>
+<img alt="holt exponential smoothing" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;level&space;&plus;&space;slope&space;*&space;t&space;&plus;&space;irregular_{t}"/>
 </p>
 
 An alpha smoothing parameter controls the exponential decay for the level, and
@@ -69,11 +69,11 @@ The Holt-Winters exponential smoothing approach can be used to fit a time series
 that has an overall level, a trend, and a seasonal component. Here, the model is
 
 <p align="center">
-<img alt="holt-winters exponential smoothing" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;level&space;&plus;&space;slope&space;*&space;t&space;&plus;&space;s_{t}&space;&plus;&space;irregular_{t}"/>
+<img alt="holt-winters exponential smoothing" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;level&space;&plus;&space;slope&space;*&space;t&space;&plus;&space;s_{t}&space;&plus;&space;irregular_{t}"/>
 </p>
 
 where
-<img src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;s_{t}"/> represents
+<img src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;s_{t}"/> represents
 the seasonal influence at time _t_. In addition to alpha and beta parameters, a
 gamma smoothing parameter controls the exponential decay of the seasonal
 component. Like the others, it ranges from 0 to 1, and larger values give more
