@@ -51,7 +51,7 @@ The decomposition can be additive or multiplicative. In an additive model, the
 components sum to give the values of the times series. Specifically,
 
 <p align="center">
-<img alt="Additive model" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;Trend_{t}&space;&plus;&space;Seasonal_{t}&space;&plus;&space;Irregular_{t}"/>
+<img alt="Additive model" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;Trend_{t}&space;&plus;&space;Seasonal_{t}&space;&plus;&space;Irregular_{t}"/>
 </p>
 
 where the observation at time t is the sum of the contributions of the trend at
@@ -60,7 +60,7 @@ time t, the seasonal effet at time t, and an irregular effect at time t.
 In a multiplicative model, given by the equation
 
 <p align="center">
-<img alt="Multiplicative model" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;Trend_{t}&space;*&space;Seasonal_{t}&space;*&space;Irregular_{t}"/>
+<img alt="Multiplicative model" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;Trend_{t}&space;*&space;Seasonal_{t}&space;*&space;Irregular_{t}"/>
 </p>
 
 the trend, seasonal, and irregular influences are multiplied. Examples are given
