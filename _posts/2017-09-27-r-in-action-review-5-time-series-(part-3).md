@@ -204,6 +204,13 @@ values.
 Point estimates are given by the blue dots, and 80% and 95% confidence bands are
 represented by dark and light bands, respectively.
 
+In the last 3 blogs, we've looked at how to create time series in R, assess
+trends, and examine seasonal effects. Then we considered two of the most popular
+approaches to forecasting: exponential models and ARIMA models. Although these
+methodologies can be crucial in understanding and predicting a wide variety of
+phenomena, it's important to remember that they each entail extrapolation -
+going beyond the data.
+
 ## Reference
 
 [1] Robert I. Kabacoff. 2015. "Chapter 15 Time series" _R IN ACTION Data
