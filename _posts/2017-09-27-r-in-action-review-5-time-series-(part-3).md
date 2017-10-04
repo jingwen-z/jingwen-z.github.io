@@ -17,7 +17,7 @@ When you _lag_ a time series, you shift it back by a given number of
 observations. _Autocorrelation_ measures the way observations in a time series
 relate to each other. <img alt="AC_k" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;AC_{k}"/>
 is the correlation between a set of observations
-(<img alt="Y_t" src="http://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}"/>) and
+(<img alt="Y_t" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}"/>) and
 observationsk periods earlier
 (<img alt="Y_t-k" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t-k}"/>).
 So <img alt="AC_1" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;AC_{1}"/>
