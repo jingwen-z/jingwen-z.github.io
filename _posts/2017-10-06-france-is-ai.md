@@ -54,7 +54,7 @@ to understand more about different actors.
 
 Since AI is a new technical domain, there are many challenges to address.
 Microsoft mentioned several keys challenges: learning about the world is an
-_unspervised manner_, so it's difficult to endow AI systems with commonsense
+_unsupervised manner_, so it's difficult to endow AI systems with commonsense
 reasoning that provide them with core understandings about the world; besides,
 we also need to imbue systems with key sets of social and emotional skills that
 people rely on in communicating, coordinating and collaborating with one another,
@@ -77,7 +77,7 @@ with teammates. For this point, I'm totally agree with him.
   src="{{ site.baseurl }}/images/20171006-datavalue-chain.jpg"/>
 </p>
 
-By the figure above, Dreamquark mentioned the chain of data value. Since it's
+By the figure above, DreamQuark mentioned the chain of data value. Since it's
 easy to read, I won't explain it here.
 
 ### Deep Learning in timelines ranking
