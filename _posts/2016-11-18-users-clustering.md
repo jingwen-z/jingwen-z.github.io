@@ -243,4 +243,4 @@ all propositions are welcome!
 [blog]: https://www.r-bloggers.com/identify-describe-plot-and-remove-the-outliers-from-the-dataset
 [R-bloggers]: https://www.r-bloggers.com
 [Tukey]: https://en.wikipedia.org/wiki/Outlier#Tukey.27s_test
-[Github]: https://github.com/jingwen-z/R/blob/master/algorithm/UserClustering.R
+[Github]: https://github.com/jingwen-z/R/blob/master/algorithm/user_clustering.R
