@@ -17,7 +17,7 @@ the data structures in R to Python briefly.
 - _scalars_ are one-element vectors, e.g. `f <- 3`, `g <- "US"`
 - function `c()`
 
-```r
+{% highlight r %}
 v <- c("k", "j", "w", "d", "v")
 > v[1]
 [1] "k"
@@ -25,14 +25,14 @@ v <- c("k", "j", "w", "d", "v")
 [1] "k" "w"
 > v[3:4]
 [1] "w", "d"
-```
+{% endhighlight %}
 
 **Matrices**
 - two-dimensional array
 - each element has the same mode (numeric, character or logical)
 - function `matrix()`
 
-```r
+{% highlight r %}
 m <- matrix(1:6, nrow = 2, ncol = 3)
 > m
      [,1] [,2] [,3]
@@ -43,14 +43,14 @@ m <- matrix(1:6, nrow = 2, ncol = 3)
 [1] 2 4 6
 > m[1, 3]
 [1] 5
-```
+{% endhighlight %}
 
 **Arrays**
 - similar to matrices
 - more than two dimensions
 - function `array()` 
 
-```r
+{% highlight r %}
 dim1 <- c("A1", "A2")
 dim2 <- c("B1", "B2", "B3")
 dim3 <- c("C1", "C2")
@@ -81,14 +81,14 @@ C1 C2
 B1  1  7
 B2  3  9
 B3  5 11
-```
+{% endhighlight %}
 
 ### Python
 
 - package `numpy`
 - functions `numpy.array()`, `numpy.arange()`
 
-```python
+{% highlight python %}
 In [1]: import numpy
 In [2]: arr_1d = numpy.array([6, 5.2, 2, 7])
 In [3]: print(arr_1d)
@@ -107,7 +107,7 @@ array([[[ 1,  2,  3],
         [ 4,  5,  6]],
        [[ 7,  8,  9],
         [10, 11, 12]]])
-```
+{% endhighlight %}
 
 ## List
 
@@ -116,7 +116,7 @@ array([[[ 1,  2,  3],
 - an ordered collection of objects
 - allow to gather a variety of objects under one name
 
-```r
+{% highlight r %}
 str <- "My first list"
 mtx <- matrix(1:6, nrow = 3)
 intVtr <- c(5, 7, 32, 19)
@@ -143,7 +143,7 @@ $ages
 [1]  5  7 32 19
 > mylist[["ages"]]
 [1]  5  7 32 19
-```
+{% endhighlight %}
 
 ### Python
 
@@ -152,7 +152,7 @@ $ages
 - `[]`, `list()`
 - methods: `append()`, `insert()`, `pop()`, `remove()`, `extend()`, `sort()`
 
-```python
+{% highlight python %}
 In [1]: a_list = [2, 7, None]
 In [2]: print(a_list)
 Out[2]: [2, 7, None]
@@ -161,7 +161,7 @@ In [3]: b_list = list(('foo', 'bar'))
 In [4]: b_list[1] = 'pee'
 In [5]: print(b_list)
 Out[5]: ['foo', 'pee']
-```
+{% endhighlight %}
 
 ## Dataframe
 
@@ -169,7 +169,7 @@ Out[5]: ['foo', 'pee']
 
 - `data.frame()`
 
-```r
+{% highlight r %}
 patientId <- c(1, 2, 3)
 age <- c(34, 23, 7)
 diabetes <- c("Type1", "Type2", "Type1")
@@ -200,7 +200,7 @@ patientDF <- data.frame(patientId, age, diabetes, status)
 
 > patientDF$age
 [1] 34 23  7
-```
+{% endhighlight %}
 
 ### Python
 
@@ -209,7 +209,7 @@ patientDF <- data.frame(patientId, age, diabetes, status)
 - package `pandas`
 - `pandas.DataFrame()`
 
-```python
+{% highlight python %}
 import pandas as pd
 data = {'state': ['Ohio', 'Ohio', 'Nevada', 'Nevada'],
         'year': [2000, 2001, 2002, 2003],
@@ -222,7 +222,7 @@ Out[1]:
 1  2001    Ohio  1.7
 2  2002  Nevada  3.6
 3  2003  Nevada  2.7
-```
+{% endhighlight %}
 
 Besides, there are some data structures which don't exist in both R and Python:
 
@@ -231,7 +231,7 @@ Besides, there are some data structures which don't exist in both R and Python:
 - nominal / ordinal / continuous
 - `factor()`
 
-```r
+{% highlight r %}
 patientId <- c(1, 2, 3)
 age <- c(34, 23, 7)
 diabetes <- c("Type1", "Type2", "Type1")
@@ -256,7 +256,7 @@ patientDF <- data.frame(patientId, age, diabetes, status)
  Mean   :2.0   Mean   :21.33                          
  3rd Qu.:2.5   3rd Qu.:28.50                          
  Max.   :3.0   Max.   :34.00 
-```
+{% endhighlight %}
 
 ## Tuple (Python)
 
@@ -264,7 +264,7 @@ patientDF <- data.frame(patientId, age, diabetes, status)
 - immutable
 - `tuple()`
 
-```python
+{% highlight python %}
 In [1]: tup_int = 4, 5, 6
 In [2]: print(tup_int)
 Out[2]: (4, 5, 6)
@@ -274,7 +274,7 @@ In [4]: print(tup_str)
 Out[4]: ('s', 't', 'r', 'i', 'n', 'g')
 In [5]: tup_str[0]
 Out[5]: 's'
-```
+{% endhighlight %}
 
 ## Dict (Python)
 
@@ -283,7 +283,7 @@ Out[5]: 's'
 - `{}`, `,`
 - methods: `del`, `pop()`, `update()`
 
-```python
+{% highlight python %}
 empty_dict = {}
 d1 = {'a': 'some value', 'b': [1, 2]}
 In [1]: print(d1)
@@ -294,7 +294,7 @@ In [2]: print(di)
 Out[2]: {'a': 'some value', 'b': [1, 2], 7: 'an integer'}
 In [3]: print(d1['b'])
 Out[3]: [1, 2]
-```
+{% endhighlight %}
 
 ## Set (Python)
 
@@ -303,12 +303,12 @@ Out[3]: [1, 2]
 - `set()`, `{}`
 - set operations: union, intersection, difference, symmetric difference
 
-```python
+{% highlight python %}
 In [1]: print(set([2, 2, 1, 3]))
 Out[1]: {1, 2, 3}
 In [2]: print({2, 2, 1, 3})
 Out[2]: {1, 2, 3}
-```
+{% endhighlight %}
 
 ## List, Set and Dict comprehensions (Python)
 
