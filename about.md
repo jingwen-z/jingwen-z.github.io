@@ -29,7 +29,3 @@ environment.
 _LANGUAGE:_
 
 Speak French, English and Chinese (native language) fluently.
-
-### Contact me
-
-[jzheng@franprix.fr](mailto:jzheng@franprix.fr)
