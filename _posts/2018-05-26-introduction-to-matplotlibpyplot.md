@@ -43,17 +43,63 @@ plt.ylabel('y-axis label', fontdict={'fontsize': 15})
 plt.show()
 {% endhighlight %}
 
+### Detail
+{% highlight python %}
+plt.figure(figsize=(10, 7))
+{% endhighlight %}
+
 Parameter `figsize` in function [`plt.figure()`][pltfigure] places a tuple of
-integers (width, height in inches); function [`plt.plot()`][pltplot] creates a
-figure, _data_ shows the horizontal/vertical coordinates of the data points,
-_marker_ and _linestyle_ specify the marker style for each point and line style
-between each two points; [`plt.title()`][plttitle] helps us to add a title for
-the figure, and put it on the left, middle or right by _loc_ parameter;
+integers (width, height in inches)
+
+{% highlight python %}
+plt.plot(data, color='green', marker='.',
+         linestyle='--', linewidth=2, markersize=12)
+{% endhighlight %}
+Function [`plt.plot()`][pltplot] creates a figure, _data_ shows the
+horizontal/vertical coordinates of the data points, _marker_ and _linestyle_
+specify the marker style for each point and line style between each two points.
+
+{% highlight python %}
+plt.title('Title', loc='center', fontdict={'fontsize': 20})
+{% endhighlight %}
+[`plt.title()`][plttitle] helps us to add a title for the figure, and put it on
+the left, middle or right by _loc_ parameter, _fontdict_ is a dictionary
+controlling the appearance of the title text.
+
+{% highlight python %}
+plt.xticks(np.arange(6),
+           ('xtick1', 'xtick2', 'xtick3',
+            'xtick4', 'xtick5', 'xtick6'))
+plt.yticks(np.arange(6),
+           ('ytick1', 'ytick2', 'ytick3',
+            'ytick4', 'ytick5', 'ytick6'))
+{% endhighlight %}
 [`plt.xticks()`][pltxticks] and [`plt.yticks()`][pltyticks] get or set the
-current tick locations and labels of the x-axis/y-axis;
+current tick locations and labels of the x-axis/y-axis. The first parameter
+_locs_ is a list of positions at which ticks should be placed, the second
+parameter _labels_, which is optional, is a list of explicit labels to place at
+the given locs. If your data is in a pandas dataframe, you can use `df.index` to
+specify locs and use `df.col1` to specify labels.
+
+{% highlight python %}
+plt.tick_params(axis='x', labelsize=13, colors='b')
+plt.tick_params(axis='y', labelsize=13, colors='r')
+{% endhighlight %}
 [`plt.tick_params()`][plttickparams] changes the appearance of ticks, tick
-labels, and gridlines; [`plt.xlabel()`][pltxlabel] and [`plt.ylabel()`][pltylabel]
-set the x-axis/y-axis label of the current axes.
+labels, and gridlines. Parameter _axis_ specifies which axis to apply the
+parameters to, _labelsize_ changes tick label font size in points or as a string
+(e.g., ‘large’), _colors_ changes the tick color and the label color to the same
+value: mpl color spec.
+
+{% highlight python %}
+plt.xlabel('x-axis label', fontdict={'fontsize': 15})
+plt.ylabel('y-axis label', fontdict={'fontsize': 15})
+{% endhighlight %}
+[`plt.xlabel()`][pltxlabel] and [`plt.ylabel()`][pltylabel] set the x-axis/y-axis
+label of the current axes. First parameter _label_ describe label of x-axis or
+y-axis, _fontdict_ is a dictionary controlling the appearance of the label, here
+I set the label font size to be 15.
+
 
 ## Subplots
 A figure can contain a set of subplots.
@@ -119,29 +165,100 @@ plt.subplots_adjust(hspace=0.3)
 plt.show()
 {% endhighlight %}
 
+### Detail
+{% highlight python %}
+fig, axarr = plt.subplots(nrows=3, ncols=2, figsize=(16, 10))
+{% endhighlight %}
 Function [`plt.subplots()`][subplots] creates a figure and a set of subplots,
 this utility wrapper makes it convenient to create common layouts of subplots,
 including the enclosing figure object, in a single call.
+
+{% highlight python %}
+ax00 = plt.subplot2grid((3, 2), (0, 0), rowspan=2)
+{% endhighlight %}
 [`subplot2grid()`][subplot2grid] creates an axis at specific location inside a
 regular grid, the first subplot on the left spans 2 rows and the subplot at the
-bottom spans 2 columns. [`set_xticks()`][setxticks] helps to set the x ticks
-with list of ticks for a subplot, it's similar as `plt.xticks()`, if
-_minor=False_ sets major ticks, if True sets minor ticks. [`plt.grid()`][pltgrid]
-sets the axes grids on or off, _which_ can be 'major' (default), 'minor', or
-'both' to control whether major tick grids, minor tick grids, or both are
-affected, _alpha_ specifies the transparency of the grid (float, 0.0 transparent
-through 1.0 opaque). [`legend()`][legend] places a legend on the axes.
+bottom spans 2 columns. First parameter _shape_ is a sequence of 2 integers, it
+is the shape of grid in which to place axis, first entry is number of rows,
+second entry is number of columns. _loc_ is also a sequence of 2 ints, which
+describes location to place axis within grid, first entry is row number, second
+entry is column number. _rowspan_ and _colspan_ is a integer, they are the
+number of rows/columns for the axis to span to the right/downwards.
 
+{% highlight python %}
+ax00.set_xticks(np.arange(11), minor=True)
+{% endhighlight %}
+[`set_xticks()`][setxticks] helps to set the x ticks with list of ticks for a
+subplot, similar as `plt.xticks()`, first parameter _ticks_ is a list of x-axis
+tick locations; if _minor=False_ sets major ticks, if True sets minor ticks.
+
+{% highlight python %}
+ax00.grid(which='major', alpha=0.5)
+ax00.grid(which='minor', alpha=0.2)
+{% endhighlight %}
+[`plt.grid()`][pltgrid] sets the axes grids on or off, _which_ can be 'major'
+(default), 'minor', or 'both' to control whether major tick grids, minor tick
+grids, or both are affected, _alpha_ specifies the transparency of the grid
+(float, 0.0 transparent through 1.0 opaque). You can also fill parameter _axis_
+to control which set of gridlines are drawn.
+
+{% highlight python %}
+ax00.legend()
+{% endhighlight %}
+[`legend()`][legend] places a legend on the axes. When you do not pass in any
+extra arguments, the elements to be added to the legend are automatically
+determined. To make a legend for lines which already exist on the axes, simply
+call this function with an iterable of strings, one for each legend item. For
+full control of which artists have a legend entry, you can pass an iterable of
+legend artists followed by an iterable of legend labels respectively.
+
+{% highlight python %}
+ax20_2 = ax20.twinx()
+{% endhighlight %}
 You might find that in the bottom plot, there are two different axes that share
 the same x axis ([more details][diffscales]). Function [`axes.twinx()`][twinx]
-helps us to realise it.
+helps us to make a second axes that shares the x-axis. The new axes will overlay
+ax (or the current axes if ax is None). The ticks for ax2 will be placed on the
+right, and the ax2 instance is returned.
 
+{% highlight python %}
+ax11 = axarr[1, 1]
+{% endhighlight %}
 If we don't need to span rows/columns, like the plot on the right side, we only
 need to specify the location of the graph with _[row, column]_, so here with
-`axarr[1, 1]`. Function [`plt.text()`][plttext] can add text to the axes.
+`axarr[1, 1]`.
 
+{% highlight python %}
+ax11.text(0.5, 0.5, 'middle',
+          horizontalalignment='center',
+          verticalalignment='center',
+          fontsize=20, color='red',
+          transform=ax11.transAxes)
+{% endhighlight %}
+Function [`plt.text()`][plttext] can add text to the axes. First two parameters
+_x_ and _y_ are scalars, they show the position to place the text. Third
+parameter _s_ is the text string. _horizontalalignment_ and _verticalalignment_
+set the horizontal and verticalalignment to one of left/center/right.
+
+{% highlight python %}
+image_file = cbook.get_sample_data('images/20180526-unicorn.png')
+image = plt.imread(image_file)
+ax01.imshow(image)
+ax01.axis('off')
+{% endhighlight %}
 At the right top corner, I put an image of unicorn ([source][unicorn]) with
-[`plt.imshow()`][imshow], and hide the axis with `axes.axis('off')`. Last point,
+[`plt.imshow()`][imshow], and hide the axis with `axes.axis('off')`. Package
+[`cbook`][cbook] is a collection of utility functions and classes, one of its
+function [`get_sample_data()`][get_sample_data] returns a sample data file, the
+first parameter _fname_ is a path relative to the mpl-data/sample_data directory.
+[`plt.imread()`][pltimread] reads an image from a file into an array, _fname_
+may be a string path, a valid URL, or a Python file-like object. If using a file
+object, it must be opened in binary mode. `plt.imshow()` displays an image on
+the axes.
+
+{% highlight python %}
+plt.subplots_adjust(hspace=0.3)
+{% endhighlight %}
 [`plt.subplots_adjust()`][subplotsadjust] helps us to adjust the subplot layout,
 I increased a little the height between subplots with parameter _hspace_.
 
@@ -163,6 +280,9 @@ I increased a little the height between subplots with parameter _hspace_.
 [diffscales]: https://matplotlib.org/gallery/api/two_scales.html#sphx-glr-gallery-api-two-scales-py
 [twinx]: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.twinx.html
 [unicorn]: https://whatsthebigdata.com/2015/10/17/how-to-become-a-unicorn-data-scientist-and-make-more-than-240000
-[plttext]: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.text.html
+[plttext]: https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.text.html
 [imshow]: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html
+[cbook]: https://matplotlib.org/api/cbook_api.html
+[get_sample_data]: https://matplotlib.org/api/cbook_api.html
+[pltimread]: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imread.html
 [subplotsadjust]: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots_adjust.html
