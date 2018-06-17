@@ -238,7 +238,7 @@ finite collection of different sets.
 
 {% highlight python %}
 import matplotlib.pyplot as plt
-import numpy as np
+from matplotlib_venn import venn2
 
 v = venn2(subsets = (4, 6, 3),
           set_labels = ('Group A', 'Group B'))
