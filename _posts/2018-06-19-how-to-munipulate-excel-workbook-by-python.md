@@ -229,7 +229,7 @@ Voila, result as follows:
 
 <p align="center">
   <img alt="one plot"
-  src="{{ site.baseurl }}/images/20180619-openpyxl.png"/>
+  src="{{ site.baseurl }}/images/20180619-openpyxl.PNG"/>
 </p>
 
 [openpyxl]: https://openpyxl.readthedocs.io/en/stable
