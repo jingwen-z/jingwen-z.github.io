@@ -10,17 +10,20 @@ in text. A single expression, commonly called a _regex_, is a string formed
 according to the regular expression language.Python's built-in `re` module is
 responsible for applying regular expressions to strings.
 
+In this blog, I'll first introduce regular expression syntax, and then apply
+them in some examples.
+
 ## Syntax
 ### Special characters
 Special characters either stand for classes of ordinary characters, or affect
 how the regular expressions around them are interpreted.
 
 - `.`
- (Dot.) In the default mode, this matches any character except a newline. If the
+ (dot) In the default mode, this matches any character except a newline. If the
  `DOTALL` flag has been specified, this matches any character including a
  newline.
 - `^`
- (Caret.) Matches the start of the string, and in `MULTILINE` mode also matches
+ (caret) Matches the start of the string, and in `MULTILINE` mode also matches
  immediately after each newline.
 - `$`
   Matches the end of the string or just before the newline at the end of the
@@ -56,9 +59,9 @@ Following sequences can be included inside a character class.
 - `\S`
   Matches any non-whitespace character; this is equivalent to the class `[^ \t\n\r\f\v]`.
 - `\w`
-  Matches any alphanumeric character; this is equivalent to the class `[a-zA-Z0-9_]`.
+  Matches any word; this is equivalent to the class `[a-zA-Z0-9_]`.
 - `\W`
-  Matches any non-alphanumeric character; this is equivalent to the class `[^a-zA-Z0-9_]`.
+  Matches any non-word; this is equivalent to the class `[^a-zA-Z0-9_]`.
 
 ### White space characters
 - `\n` new line
@@ -76,7 +79,14 @@ Following sequences can be included inside a character class.
 import re
 {% endhighlight %}
 
-### Any number
+This module provides regular expression matching operations similar to those
+found in Perl. The solution is to use Python’s raw string notation for regular
+expression patterns; backslashes are not handled in any special way in a string
+literal prefixed with 'r'. So r"\n" is a two-character string containing '\' and
+'n', while "\n" is a one-character string containing a newline. Usually patterns
+will be expressed in Python code using this raw string notation.
+
+### Match digit
 {% highlight python %}
 >>> value = '''
 ... One is 1, ten is 10, one hundred is 100.
@@ -90,52 +100,39 @@ import re
 `\d` matches decimal digit, `{1,3}` stands for length is 1 to 3. In the "value",
 we find 1, 10 and 100.
 
-### Any character
+### Match word
 {% highlight python %}
 >>> value = '''
-... One is 1, ten is 10, one hundred is 100.
+... One is 1.
 ... '''
 >>> p = r'\w+'
 >>> re.findall(p, value)
-['One', 'is', '1', 'ten', 'is', '10', 'one', 'hundred', 'is', '100']
+['One', 'is', '1']
 
 {% endhighlight %}
 
 `\w+` matches 1 or more alphanumeric characters, so we can find all words but
 spaces and punctuations.
 
-### Match 0 or more
+### Match 0 or 1 or more
 {% highlight python %}
->>> value = 'One = 1.'
->>> p = r'\d*'
->>> re.findall(p, value)
-['', '', '', '', '', '', '1', '', '']
+# Match 0 or more
+>>> re.findall(r'\d*', 'i1')
+['', '1', '']
+# Match 1 or more
+>>> re.findall(r'\d+', 'i1')
+['1']
+# Match 0 or 1
+>>> re.findall(r'\d?', 'i1')
+['', '1', '']
 
 {% endhighlight %}
 
 `\d*` matches 0 or more digits, so we can find a '1' and others are `''`.
 
-### Match 1 or more
-{% highlight python %}
->>> value = 'One = 1.'
->>> p = r'\d+'
->>> re.findall(p, value)
-['1']
-
-{% endhighlight %}
-
 `\d*` matches at least 1 digits, so we can find only '1'.
 
-### Match 0 or 1
-{% highlight python %}
->>> value = 'One = 1.'
->>> p = r'\W?'
->>> re.findall(p, value)
-['', '', '', ' ', '=', ' ', '', '.', '']
-
-{% endhighlight %}
-
-`\W?` means 0 or 1 non-alphanumeric character, so we get '', '=', ' ', '.'.
+`\d?` means 0 or 1 digit, so we get '', '1', ''.
 
 ### Match starting and ending
 {% highlight python %}
@@ -190,19 +187,17 @@ example, regular expression doesn't match the first 3 upper-case letters.
 >>> import pandas as pd
 
 >>> df = pd.DataFrame({'Name': ['Amy', 'Ben', 'Christine', 'David'],
-...                    'Birthday': ['1980-02-12', '2013-02-14',
-...                                 '1983-11-23', '1969-05-30'],
 ...                    'Email': ['amy.l@hotmail.com',
 ...                              'benmartni@gmail.fr',
 ...                              'c.mousse@example.com',
 ...                              'd_zhang@fp.fr']},
-...                    columns=['Name', 'Birthday', 'Email'])
+...                    columns=['Name', 'Email'])
 >>> df
-        Name    Birthday                 Email
-0        Amy  1980-02-12     amy.l@hotmail.com
-1        Ben  2013-02-14    benmartni@gmail.fr
-2  Christine  1983-11-23  c.mousse@example.com
-3      David  1969-05-30         d_zhang@fp.fr
+        Name                  Email
+0        Amy      amy.l@hotmail.com
+1        Ben     benmartni@gmail.fr
+2  Christine   c.mousse@example.com
+3      David          d_zhang@fp.fr
 
 >>> p = r'^[a-z]+@[a-z]+\.[a-z]{2,3}'
 
@@ -223,8 +218,7 @@ letters. Thus, among 4 e-mail addresses, the second one satisfies our pattern.
 
 ### Use regex to replace character in dataframe
 {% highlight python %}
->>> p = r'[@]'
->>> df['Email'].apply(lambda x: re.sub(p, '[at]', x))
+>>> df['Email'].apply(lambda x: re.sub(r'@', '[at]', x))
 0       amy.l[at]hotmail.com
 1      benmartni[at]gmail.fr
 2    c.mousse[at]example.com
@@ -237,6 +231,36 @@ E-mail addresses contain "@" to specify the second-level. However, we want to
 replace it to "[at]" in the dataframe. We can use [`re.sub()`][re_sub] to
 realise it.
 
+### Use regex to modify values in some columns
+{% highlight python %}
+>>> def date_convert(date_value):
+...   m = re.match(r'(\d{2})\/(\d{2})\/(\d{4})', date_value)
+...   return '-'.join([m.groups()[2], m.groups()[1], m.groups()[0]])
+
+>>> df_ex = pd.DataFrame({'Name':['Amy', 'Ben', 'Chris'],
+...                       'Birthday':['12/02/1992',
+...                                   '01/12/1980',
+...                                   '12/05/1839']},
+...                      columns=['Name', 'Birthday'])
+>>> df_ex
+    Name    Birthday
+0    Amy  12/02/1992
+1    Ben  01/12/1980
+2  Chris  12/05/1839
+
+>>> df_ex['Birthday'] = df_ex['Birthday'].apply(lambda x:date_convert(x))
+>>> df_ex
+    Name    Birthday
+0    Amy  1992-02-12
+1    Ben  1980-12-01
+2  Chris  1839-05-12
+
+{% endhighlight %}
+
+When we need to change values' order in one column, we can firstly use
+[`re.match()`][re_sub] and [`Match.groups()`][groups] to separate it into
+multiple groups, then put them in order. 
+
 There is much more to regular expressions in Python, we can find most of them
 [here][re].
 
@@ -246,8 +270,8 @@ There is much more to regular expressions in Python, we can find most of them
 - Wes McKinney. 2017. "Chapter 7 Data Cleaning and Preparation" _Python for Data
 Analysis DATA WRANGLING WITH PANDAS, NUMPY, AND IPYTHON_ p 213-216
 
-
 [re_sub]: https://docs.python.org/3/library/re.html#module-contents
+[groups]: https://docs.python.org/3/library/re.html#match-objects
 [re]: https://docs.python.org/3/library/re.html
 [r1]: https://www.youtube.com/watch?v=sZyAn2TW7GY&t=927s
 [r2]: https://stackoverflow.com/questions/25292838/applying-regex-to-a-pandas-dataframe
