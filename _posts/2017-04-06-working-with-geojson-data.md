@@ -1,8 +1,13 @@
 ---
-layout:      post
-title:       "Working with GeoJSON data"
-date:        "2017-04-06 23:32:43 +0200"
-comments:    true
+layout:             post
+title:              "Working with GeoJSON data"
+date:               2017-04-06 23:32:43 +0200
+last_modified_at:   2018-07-24 21:58:23 +0200
+comments:           true
+excerpt:            >
+    This blog presents how to work with GeoJSON data in R, and proposes the
+    solution of "Error in ogrInfo(dsn = dsn, layer = layer, encoding = encoding,
+    use_iconv = use_iconv"
 ---
 
 Since working in franprix, I've accomplished many projects, for different
