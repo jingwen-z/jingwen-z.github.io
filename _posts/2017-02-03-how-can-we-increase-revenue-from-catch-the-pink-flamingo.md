@@ -1,7 +1,12 @@
 ---
-layout: post
-title: How can we increase revenue from Catch the Pink Flamingo?
-comments: true
+layout:      post
+title:       "Coursera project catch the pink flamingo"
+date:        "2017-02-03 18:31:21 +0100"
+comments:    true
+excerpt:     >
+    This blog presents the Coursera project "catch the pink flamingo". Here,
+    you can find the data model design like classification, clustering, and the
+    histogram made by splunk.
 ---
 
 During last December and January, I participated Big Data courses on the website
