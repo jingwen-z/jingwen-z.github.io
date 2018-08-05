@@ -1,10 +1,10 @@
 ---
-layout:      post
-title:       "How to play with regular expression via Python?"
-date:        "2018-07-10 18:31:21 +0200"
+layout:             post
+title:              "Python: Apply regular expression with regex"
+date:               2018-07-10 18:31:21 +0200
+last_modified_at:   2018-08-05 09:53:23 +0200
 comments:    true
 ---
-
 _Regular expressions_ provide a flexible way to search or match string patterns
 in text. A single expression, commonly called a _regex_, is a string formed
 according to the regular expression language.Python's built-in `re` module is

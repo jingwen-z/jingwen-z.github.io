@@ -1,7 +1,13 @@
 ---
-layout: post
-title: Decision Tree
-comments: true
+layout:             post
+title:              Decision Tree
+date:               2016-08-24 23:32:43 +0200
+last_modified_at:   2018-08-05 10:33:08 +0200
+comments:           true
+excerpt:            >
+    Applying decision tree model in R's library 'rpart', using rpart function to
+    build a model, showing fancyRpartPlot example, predicting with predict(),
+    pruning with prune().  
 ---
 
 Thanks to [DataCamp][DataCamp], I know more about _Machine Learning_. Among its

@@ -1,13 +1,13 @@
 ---
-layout:      post
-title:       "Automate python jobs by GitLab Runner"
-date:        "2018-07-26 19:44:19 +0200"
-categories:  [weekly]
-comments:    true
+layout:             post
+title:              "Automate python jobs by GitLab CI"
+date:               2018-07-26 19:44:19 +0200
+last_modified_at:   2018-08-05 09:02:31 +0200
+comments:           true
 excerpt:            >
-    This blog specifies how to automate python scripts to run by GitLab runner.
-    In the following, I will talk about the requirements, configuration with
-    ".gitlab-ci.yml", manage environments and settings on GitLab.
+    Automating python scripts to run by GitLab runner needs to configure with
+    ".gitlab-ci.yml" with multiple parts like image, stage, only, manage
+    environments and settings on GitLab.
 ---
 This blog specifies how to automate python scripts to run by GitLab runner. In
 the following, I will talk about each element of the configuration with

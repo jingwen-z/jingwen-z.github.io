@@ -1,7 +1,12 @@
 ---
-layout: post
-title: UCSD Big Data Integration and Processing review
-comments: true
+layout:             post
+title:              "Coursera UCSD Big Data Integration and Processing review"
+date:               2017-02-17 23:32:43 +0200
+last_modified_at:   2018-08-05 10:08:31 +0200
+comments:           true
+excerpt:            >
+    Introducing to basic concepts in big data integration and processing by
+    coursera, specifically apply with Apache Spark.
 ---
 
 Today I'll talk about [Big Data Integration and Processing][Big Data Integration and Processing]
