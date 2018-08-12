@@ -1,6 +1,36 @@
 ---
 layout: default
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "datePublished": {{ page.date | jsonify }},
+  "headline": {{ page.title | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
+  "author": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jingwen Zheng"
+  },
+  "publisher": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Jingwen's Blog",
+    "logo": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "url": "https://avatars1.githubusercontent.com/u/13399618?v=3&s=460"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "description": {{ page.excerpt | strip_newlines | strip | jsonify }},
+  "articleBody": {{ page.content | strip_html | jsonify }}
+}
+</script>
 
 <article class="post">
   <h1>{{ page.title }}</h1>
