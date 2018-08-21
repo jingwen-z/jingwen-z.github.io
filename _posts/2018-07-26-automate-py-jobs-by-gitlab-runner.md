@@ -5,11 +5,17 @@ date:               2018-07-26 19:44:19 +0200
 last_modified_at:   2018-08-05 09:02:31 +0200
 comments:           true
 excerpt:            >
-    Automating python scripts to run by GitLab runner needs to configure with
+    Automating python scripts to run by GitLab CI (Runner) needs to configure with
     ".gitlab-ci.yml" with multiple parts like image, stage, only, manage
     environments and settings on GitLab.
 ---
-This blog specifies how to automate python scripts to run by GitLab runner. In
+
+<p align="center">
+  <img alt="GitLab Runner Logo"
+  src="{{ site.baseurl }}/images/20180726-runner-logo.png"/>
+</p>
+
+This blog specifies how to automate python scripts to run by GitLab CI. In
 the following, I will talk about each element of the configuration with
 ".gitlab-ci.yml", manage environments with anaconda and "environment.yml", and
 settings on GitLab.
@@ -31,11 +37,11 @@ $ tree
 └── weekly_job.py
 {% endhighlight %}
 
-## Configuration of your jobs with ".gitlab-ci.yml"
-`.gitlab-ci.yml` is used by GitLab Runner to manage your project's jobs. It is
+## Using GitLab CI to configure your jobs
+`.gitlab-ci.yml` is used by GitLab CI to manage your project's jobs. It is
 placed in the root of your repository and contains definitions of how your
 project should be built. On any push to your repository, GitLab will look for
-the `.gitlab-ci.yml` file and start jobs on Runners according to the contents of
+the `.gitlab-ci.yml` file and start jobs on CI according to the contents of
 the file, for that commit.
 
 Following is one example:
@@ -109,7 +115,7 @@ In the example, the job in 'tests' corresponds the stage 'test', the job in
 
 ### `script`
 `script` is the only required keyword that a job needs. It's a shell script
-which is executed by the Runner.
+which is executed by the CI.
 
 {% highlight python %}
   script:
@@ -192,7 +198,7 @@ An environment.yml file should specify environment's name with `name`, and
 dependable packages with `dependencies`.
 
 ## GitLab settings
-### Configuring GitLab Runners
+### Configuring GitLab CI
 A Runner can be specific to a certain project or serve any project in GitLab CI.
 A Runner that serves all projects is called a shared Runner. You can find more
 information about configuration [here][Configuring GitLab Runners].
@@ -225,6 +231,7 @@ available in GitLab CI so that they can be used in your .GitLab-ci.yml file.
 
 
 ## References
+- [Project GitLab Runner on GitLab][logo]
 - [Configuration of your jobs with .GitLab-ci.yml][GitLab-ci]
 - [Managing environments][Managing environments]
 - [Configuring GitLab Runners][Configuring GitLab Runners]
@@ -240,6 +247,4 @@ available in GitLab CI so that they can be used in your .GitLab-ci.yml file.
 [Managing environments]: https://conda.io/docs/user-guide/tasks/manage-environments.html
 [Configuring GitLab Runners]: https://docs.GitLab.com/ee/ci/runners
 [Pipeline Schedules]: https://docs.GitLab.com/ce/user/project/pipelines/schedules.html
-
-
-
+[logo]: https://gitlab.com/gitlab-org/gitlab-runner
