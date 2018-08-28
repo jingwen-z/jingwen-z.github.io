@@ -1,8 +1,8 @@
 ---
 layout:             post
-title:              "Python Data Visualization Series 1: Bar chart"
+title:              "Data viz with matplotlib Series 1: Bar chart"
 date:               2018-06-14 21:33:25 +0200
-last_modified_at:   2018-08-29 21:45:07 +0200
+last_modified_at:   2018-09-05 21:09:58 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create simple bar chart, grouped bar chart and
