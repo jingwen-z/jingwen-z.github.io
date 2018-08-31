@@ -117,4 +117,4 @@ Globally, the sales of cheese products are much more than others.
 You can click [here][notebook] to check this example in jupyter notebook.
 
 [bar chart]: https://en.wikipedia.org/wiki/Bar_chart
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/bar_plot.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/bar_chart.ipynb
