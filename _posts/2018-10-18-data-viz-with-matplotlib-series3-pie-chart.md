@@ -2,12 +2,15 @@
 layout:             post
 title:              "Data viz with matplotlib Series 3: Pie chart"
 date:               "2018-10-18 21:05:15 +0200"
+last_modified_at:   2018-10-25 22:06:31 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create pie chart with value labels, donut chart
     and nested pie chart, and how to adjust labels' size and position with
     matplotlib in Python.
 ---
+
+## Pie chart
 A [pie chart][pie chart] (or a circle chart) is a circular statistical graphic
 which is divided into slices to illustrate numerical proportion. In a pie chart,
 the arc length of each slice (and consequently its central angle and area), is
@@ -21,8 +24,6 @@ the data with _less than 10 categories_.
 </p>
 
 {% highlight python %}
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(7, 7))
