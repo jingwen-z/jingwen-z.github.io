@@ -2,6 +2,7 @@
 layout:             post
 title:              "Data viz with matplotlib Series 4: Scatter plot"
 date:               "2018-10-25 21:06:53 +0200"
+last_modified_at:   2018-10-30 21:26:14 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create scatter plot, connected scatter plot
@@ -91,14 +92,16 @@ For conveying information regarding a **third data element** per observation.
 </p>
 
 {% highlight python %}
+nbclients = range(10, 494, 7)
 plt.scatter(x=range(77, 770, 10),
             y=np.random.randn(70)*55+range(77, 770, 10),
-            s=range(10, 494, 7), alpha=0.6)
+            s=nbclients, alpha=0.6)
 
 plt.show()
 {% endhighlight %}
 
-Extracly the same implication as the scatter plot above.
+Since I added number of clients as size of each point, which corresponds the
+explication of the scatter plot above.
 
 You can click [here][notebook] to check this example in jupyter notebook.
 
