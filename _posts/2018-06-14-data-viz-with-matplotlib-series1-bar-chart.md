@@ -2,18 +2,32 @@
 layout:             post
 title:              "Data viz with matplotlib Series 1: Bar chart"
 date:               2018-06-14 21:33:25 +0200
-last_modified_at:   2018-09-05 21:09:58 +0200
+last_modified_at:   2018-11-02 23:14:40 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create simple bar chart, grouped bar chart and
     stacked bar chart with matplotlib in Python.
 ---
 
-[Bar chart][bar chart] is the basic and simplest way to compare categorical data.
-A bar graph shows comparisons among _discrete categories_. One axis of the chart
-shows the specific categories being compared, and the other axis represents a
-measured value.
+<p align="center">
+  <img alt="plot examples"
+  src="{{ site.baseurl }}/images/20181102-matplotlib-series.png
+"/>
+</p>
 
+## Bar chart
+A [bar chart][bar chart] or bar graph is a chart or graph that presents
+categorical data with rectangular bars with heights or lengths proportional to
+the values that they represent. The bars can be plotted vertically or
+horizontally.
+
+### When to use it ?
+- Compare **categorical data**.
+- Comparisons among **discrete categories**.
+- One axis of the chart shows the specific categories being compared, and the
+other axis represents a measured value.
+
+### Example
 <p align="center">
   <img alt="one plot"
   src="{{ site.baseurl }}/images/20180614-bar-chart.png"/>
@@ -44,6 +58,10 @@ bar charts and stacked bar charts. In a grouped bar chart, for each categorical
 group there are two or more bars. These bars are color-coded to represent a
 particular grouping.
 
+### When to use it ?
+To represent and compare **different categories of two or more groups**.
+
+### Example
 <p align="center">
   <img alt="one plot"
   src="{{ site.baseurl }}/images/20180614-grp-bar-chart.png"/>
@@ -85,6 +103,12 @@ Alternatively, a stacked bar chart could be used. The stacked bar chart stacks
 bars that represent different groups on top of each other. The height of the
 resulting bar shows the combined result of the groups.
 
+### When to use it ?
+- To compare the **totals** and **one part of the totals**.
+- If the total of your parts is crucial, stacked column chart can work well for
+dates.
+
+### Example
 <p align="center">
   <img alt="one plot"
   src="{{ site.baseurl }}/images/20180614-stacked-bar-chart.png"/>
