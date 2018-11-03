@@ -10,22 +10,33 @@ excerpt:            >
     Python.
 ---
 
+<p align="center">
+  <img alt="plot examples"
+  src="{{ site.baseurl }}/images/20181102-matplotlib-series.png
+"/>
+</p>
+
+## Line chart
 A [line chart][line chart] or line graph is a type of chart which displays
-information as aseries of data points called 'markers' connected by straight
+information as a series of data points called 'markers' connected by straight
 line segments. A line chart is often used to visualize a trend in data over
 intervals of time – a time series – thus the line is often drawn chronologically.
 
+### When to use it ?
+- Track changes over time
+- x-axis displays continuous variables
+- Y-axis displays measurement
+
+### Example
 <p align="center">
   <img alt="line plot"
-  src="{{ site.baseurl }}/images/20180916-bar-chart.png"/>
+  src="{{ site.baseurl }}/images/20180916-line-chart.png"/>
 </p>
 
 {% highlight python %}
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
-plt.figure(figsize=(9, 6))
 
 turnover = [2, 7, 14, 17, 20, 27, 30, 38, 25, 18, 6, 1]
 plt.plot(np.arange(12), turnover, marker='.')
@@ -44,14 +55,16 @@ during one year. According to the plot, we can clearly find that the sales
 reach a peak in summer, then fall from autumn to winter, which is logical.
 
 ## Line chart with multiple lines
+### When to use it ?
+Compare different subjects during the same period.
+
+### Example
 <p align="center">
   <img alt="line plot"
   src="{{ site.baseurl }}/images/20180916-multi-line-chart.png"/>
 </p>
 
 {% highlight python %}
-plt.figure(figsize=(9, 6))
-
 year_n_1 = [1.5, 3, 10, 13, 22, 36, 30, 33, 24.5, 15, 6.5, 1.2]
 year_n = [2, 7, 14, 17, 20, 27, 30, 38, 25, 18, 6, 1]
 
@@ -59,12 +72,6 @@ plt.plot(np.arange(12), year_n_1, marker='.', color='#1f77b4',
          label='year N-1', linestyle='--', alpha=0.5)
 plt.plot(np.arange(12), year_n, marker='.', color='#1f77b4',
          label='year N')
-
-plt.tick_params(labelsize=12)
-plt.xticks(np.arange(12), np.arange(1,13))
-plt.xlabel('Month', size=12)
-plt.ylabel('Turnover (K euros) of ice-cream', size=12)
-plt.ylim(bottom=0)
 plt.legend()
 
 plt.show()
@@ -96,18 +103,10 @@ def autolabel_simple_lineplot_mille_wk(df, col_name, lines_color):
 {% endhighlight %}
 
 {% highlight python %}
-df = pd.DataFrame({'turnover':[2, 7, 14, 17, 20, 27, 30, 38, 25, 18, 6, 1]})
+df = pd.DataFrame({'turnover':[2, 7, 14, 17, 20, 27,
+                               30, 38, 25, 18, 6, 1]})
 
-plt.figure(figsize=(9, 6))
-
-turnover = [2, 7, 14, 17, 20, 27, 30, 38, 25, 18, 6, 1]
 plt.plot(df.index, df.turnover, marker='.')
-
-plt.tick_params(labelsize=12)
-plt.xticks(df.index, np.arange(1, 13))
-plt.xlabel('Month', size=12)
-plt.ylabel('Turnover (K euros) of ice-cream', size=12)
-plt.ylim(bottom=0, top=max(df.turnover)+7)
 autolabel_simple_lineplot_mille_wk(df, 'turnover', '#1f77b4')
 
 plt.show()
