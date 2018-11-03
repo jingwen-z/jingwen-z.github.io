@@ -2,7 +2,7 @@
 layout:             post
 title:              "Data viz with matplotlib Series 1: Bar chart"
 date:               2018-06-14 21:33:25 +0200
-last_modified_at:   2018-11-02 23:14:40 +0100
+last_modified_at:   2018-11-03 11:01:27 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create simple bar chart, grouped bar chart and
@@ -68,9 +68,6 @@ To represent and compare **different categories of two or more groups**.
 </p>
 
 {% highlight python %}
-import matplotlib.pyplot as plt
-import numpy as np
-
 year_n_1 = (20, 35, 30, 35, 27, 27, 33)
 year_n = (25, 39, 45, 25, 21, 29, 36)
 
@@ -82,11 +79,6 @@ rects1 = ax.bar(ind - width / 2, year_n_1,
                 width, color='#1f77b4', alpha=0.5)
 rects2 = ax.bar(ind + width / 2, year_n,
                 width, color='#1f77b4')
-
-plt.xticks(np.arange(7),
-           ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'))
-plt.xlabel('Month')
-plt.ylabel('Turnover (K euros)')
 plt.legend((rects1[0], rects2[0]), ('year N-1', 'year N'))
 
 plt.show()
@@ -115,9 +107,6 @@ dates.
 </p>
 
 {% highlight python %}
-import matplotlib.pyplot as plt
-import numpy as np
-
 cheese = (20, 35, 30, 35, 27, 37, 20)
 non_cheese = (25, 32, 34, 20, 25, 17, 29)
 
@@ -125,12 +114,6 @@ rect1 = plt.bar(np.arange(7), cheese,
                 width=0.5, color='orangered')
 rect2 = plt.bar(np.arange(7), non_cheese,
                 bottom=cheese, width=0.5, color='#1f77b4')
-
-plt.xticks(np.arange(7),
-           ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'))
-plt.xlabel('Weekday')
-plt.ylabel('Turnover (K euros)')
-plt.legend((rect1[0], rect2[0]), ('cheese', 'non-cheese'))
 
 plt.show()
 {% endhighlight %}
