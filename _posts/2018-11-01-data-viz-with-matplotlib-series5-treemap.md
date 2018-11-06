@@ -1,25 +1,33 @@
 ---
 layout:             post
-title:              "Data viz with matplotlib Series 5: Treemap"
+title:              "Matplotlib Series 5: Treemap"
 date:               "2018-11-01 16:23:50 +0100"
+last_modified_at:   2018-11-06 22:46:51 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create treemap with matplotlib in Python, and
     its use case.
 ---
 
+<p align="center">
+  <img alt="plot examples"
+  src="{{ site.baseurl }}/images/20181102-matplotlib-series.png
+"/>
+</p>
+
+## Treemap
 [Treemaps][treemap] display hierarchical (tree-structured) data as a set of
 nested rectangles. Each branch of the tree is given a rectangle, which is then
 tiled with smaller rectangles representing sub-branches. A leaf node's
 rectangle has an area proportional to a specified dimension of the data. Often
 the leaf nodes are colored to show a separate dimension of the data.
 
-## When to use it ?
+### When to use it ?
 - Less than 10 branches
 - Positive values
 - Space for visualisation is limited.
 
-## Example
+### Example
 <p align="center">
   <img alt="treemap"
   src="{{ site.baseurl }}/images/20181030-treemap.png"/>

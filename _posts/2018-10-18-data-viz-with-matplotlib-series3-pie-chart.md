@@ -1,8 +1,8 @@
 ---
 layout:             post
-title:              "Data viz with matplotlib Series 3: Pie chart"
+title:              "Matplotlib Series 3: Pie chart"
 date:               "2018-10-18 21:05:15 +0200"
-last_modified_at:   2018-10-25 22:06:31 +0200
+last_modified_at:   2018-11-06 22:45:53 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create pie chart with value labels, donut chart

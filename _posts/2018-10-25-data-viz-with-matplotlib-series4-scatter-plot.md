@@ -1,13 +1,19 @@
 ---
 layout:             post
-title:              "Data viz with matplotlib Series 4: Scatter plot"
+title:              "Matplotlib Series 4: Scatter plot"
 date:               "2018-10-25 21:06:53 +0200"
-last_modified_at:   2018-10-30 21:26:14 +0100
+last_modified_at:   2018-11-06 22:46:29 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create scatter plot, connected scatter plot
     and bubble chart with matplotlib in Python.
 ---
+
+<p align="center">
+  <img alt="plot examples"
+  src="{{ site.baseurl }}/images/20181102-matplotlib-series.png
+"/>
+</p>
 
 ## Scatter plot
 A [scatter plot][scatter plot] (also called a scatter graph, scatter chart,
@@ -31,8 +37,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib_venn import venn2
 import squarify
-
-plt.figure(figsize=(7, 7))
 
 plt.scatter(x=range(77, 770, 10),
             y=np.random.randn(70)*55+range(77, 770, 10),

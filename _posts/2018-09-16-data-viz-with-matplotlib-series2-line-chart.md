@@ -1,8 +1,8 @@
 ---
 layout:             post
-title:              "Data viz with matplotlib Series 2: Line chart"
+title:              "Matplotlib Series 2: Line chart"
 date:               2018-09-16 16:58:54 +0200
-last_modified_at:   2018-11-03 10:50:27 +0100
+last_modified_at:   2018-11-06 22:45:34 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create line chart with single line, line chart
