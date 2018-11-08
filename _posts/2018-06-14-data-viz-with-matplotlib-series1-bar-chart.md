@@ -121,6 +121,41 @@ plt.show()
 This plot presents weekdays' turnover with cheese and non-cheese products' sales.
 Globally, the sales of cheese products are much more than others.
 
+## Vertical bar chart
+The horizontal bar chart is the same as a vertical bar chart only the x-axis and
+y-axis are switched.
+
+### When to use it ?
+- You need more room to fit text labels for categorical variables.
+- When you work with a big dataset, horizontal bar charts tend to work better in
+a narrow layout such as mobile view.
+
+### Example
+<p align="center">
+  <img alt="vertical bar chart"
+  src="{{ site.baseurl }}/images/20180614-vertical-bar-chart.png"/>
+</p>
+
+{% highlight python %}
+df = pd.DataFrame({'product': ['grill', 'cheese', 'red wine', 'salade',
+                               'chicken', 'sushi', 'pizza', 'soup'],
+                   'turnover': [846, 739, 639, 593, 572, 493, 428, 293]},
+                  columns=['product', 'turnover'])
+df.sort_values('turnover', inplace=True)
+df.reset_index(inplace=True, drop=True)
+
+plt.barh(np.arange(len(df['product'])), df['turnover'], align='center')
+plt.yticks(np.arange(len(df['product'])), df['product'])
+plt.tick_params(labelsize=12)
+plt.xlabel('Turnover(k euros)', fontdict={'fontsize': 13})
+plt.ylabel('Product', fontdict={'fontsize': 13})
+
+plt.show()
+{% endhighlight %}
+
+This vertical bar chart describes clearly turnover for each product. Obviously,
+grill product is prefered by clients.
+
 You can click [here][notebook] to check this example in jupyter notebook.
 
 [bar chart]: https://en.wikipedia.org/wiki/Bar_chart
