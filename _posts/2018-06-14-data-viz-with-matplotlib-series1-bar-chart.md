@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 1: Bar chart"
 date:               2018-06-14 21:33:25 +0200
-last_modified_at:   2018-11-06 22:45:10 +0100
+last_modified_at:   2018-11-08 21:39:15 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create simple bar chart, grouped bar chart and
