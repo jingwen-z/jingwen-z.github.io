@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 4: Scatter plot"
 date:               "2018-10-25 21:06:53 +0200"
-last_modified_at:   2018-11-06 22:46:29 +0100
+last_modified_at:   2018-11-10 16:19:37 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create scatter plot, connected scatter plot
@@ -26,10 +26,10 @@ Scatter plots are used when you want to show the **relationship between two
 variables**. Scatter plots are sometimes called correlation plots because they
 show how two variables are correlated.
 
-### Example
+### Example 1
 <p align="center">
-  <img alt="scatter plot"
-  src="{{ site.baseurl }}/images/20181025-scatter-plot.png"/>
+  <img alt="positive scatter plot"
+  src="{{ site.baseurl }}/images/20181025-pos-scatter-plot.png"/>
 </p>
 
 {% highlight python %}
@@ -53,6 +53,46 @@ plt.show()
 This plot describes the positive relation between store's surface and its
 turnover(k euros), which is reasonable: for stores, the larger it is, more
 clients it can accept, more turnover it will generate.
+
+### Example 2
+<p align="center">
+  <img alt="negative scatter plot"
+  src="{{ site.baseurl }}/images/20181025-neg-scatter-plot.png"/>
+</p>
+
+{% highlight python %}
+plt.scatter(x=range(-10, 38, 1), y=range(770, 60, -15)-np.random.randn(48)*40,
+            s=200,
+            alpha=0.6)
+plt.xlabel('Temperature(°C)', size=12)
+plt.ylabel('Volume per store', size=12)
+
+plt.show()
+{% endhighlight %}
+
+This chart displays a negative relation between two variables: temperature and
+average volume of hot soup. When it gets colder, people need to think something
+hot to keep them warmer, however, when it becomes hotter, the needs of hot soup
+decreases.
+
+### Example 3
+<p align="center">
+  <img alt="independant scatter plot"
+  src="{{ site.baseurl }}/images/20181025-indpt-scatter-plot.png"/>
+</p>
+
+{% highlight python %}
+plt.scatter(x=range(20, 80, 1), y=np.abs(np.random.randn(60)*40),
+            s=200,
+            alpha=0.6)
+plt.xlabel('Age', size=12)
+plt.ylabel('Average purchase cost per week(euros)', size=12)
+
+plt.show()
+{% endhighlight %}
+
+This plot shows that there is no relation between client's age and their
+purchase cost per week.
 
 ## Connected scatter plot
 A [connected scatter][connected scatter] plot is a mix between scatter plot and
