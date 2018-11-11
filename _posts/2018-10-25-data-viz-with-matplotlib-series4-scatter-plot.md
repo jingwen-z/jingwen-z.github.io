@@ -92,7 +92,8 @@ plt.show()
 {% endhighlight %}
 
 This plot shows that there is no relation between client's age and their
-purchase cost per week.
+purchase cost per week. Thus, we shouldn't study their relationship for this
+case.
 
 ## Connected scatter plot
 A [connected scatter][connected scatter] plot is a mix between scatter plot and
