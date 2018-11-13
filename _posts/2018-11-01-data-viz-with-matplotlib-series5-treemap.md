@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 5: Treemap"
 date:               "2018-11-01 16:23:50 +0100"
-last_modified_at:   2018-11-11 09:30:04 +0100
+last_modified_at:   2018-11-13 22:42:16 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create treemap with matplotlib in Python, and
@@ -11,7 +11,7 @@ excerpt:            >
 
 <p align="center">
   <img alt="plot examples"
-  src="{{ site.baseurl }}/images/20181102-matplotlib-series.png
+  src="{{ site.baseurl }}/images/20181030-treemap-header.png
 "/>
 </p>
 

@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 4: Scatter plot"
 date:               "2018-10-25 21:06:53 +0200"
-last_modified_at:   2018-11-10 16:19:37 +0100
+last_modified_at:   2018-11-13 22:44:41 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create scatter plot, connected scatter plot
@@ -11,7 +11,7 @@ excerpt:            >
 
 <p align="center">
   <img alt="plot examples"
-  src="{{ site.baseurl }}/images/20181102-matplotlib-series.png
+  src="{{ site.baseurl }}/images/20181025-scatter-header.png
 "/>
 </p>
 
