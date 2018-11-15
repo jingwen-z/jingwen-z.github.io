@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Junior data scientist at Franprix. Solid knowledge of statistics and economics.
+Data scientist in retailing. Solid knowledge of statistics and economics.
 Extremely interested in Data Science and Machine Learning. Participating online
 courses and reading books are my principal approaches to strengthen my knowledge.
 
