@@ -2,19 +2,22 @@
 layout:             post
 title:              "Matplotlib Series 3: Pie chart"
 date:               "2018-10-18 21:05:15 +0200"
-last_modified_at:   2018-11-13 22:45:53 +0100
+last_modified_at:   2018-11-23 22:52:12 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create pie chart with value labels, donut chart
     and nested pie chart, and how to adjust labels' size and position with
     matplotlib in Python.
+img_url:           images/20181011-pie-header.png
+img_width:         1280
+img_height:        853
 ---
 
-<p align="center">
+<!-- <p align="center">
   <img alt="plot examples"
   src="{{ site.baseurl }}/images/20181011-pie-header.png
 "/>
-</p>
+</p> -->
 
 ## Pie chart
 A [pie chart][pie chart] (or a circle chart) is a circular statistical graphic
