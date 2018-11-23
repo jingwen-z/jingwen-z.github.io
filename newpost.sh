@@ -29,8 +29,12 @@ cat << EOF >> "$filepath"
 layout:      post
 title:       "$title"
 date:        "$(date +"%Y-%m-%d %H:%M:%S %z")"
-categories:  [weekly]
 comments:    true
+excerpt:     >
+    This blog ...
+img_url:     /images/
+img_width:   1280
+img_height:  853
 ---
 EOF
 
