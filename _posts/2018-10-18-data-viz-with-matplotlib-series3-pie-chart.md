@@ -13,12 +13,6 @@ img_width:         1280
 img_height:        853
 ---
 
-<!-- <p align="center">
-  <img alt="plot examples"
-  src="{{ site.baseurl }}/images/20181011-pie-header.png
-"/>
-</p> -->
-
 ## Pie chart
 A [pie chart][pie chart] (or a circle chart) is a circular statistical graphic
 which is divided into slices to illustrate numerical proportion. In a pie chart,

@@ -2,10 +2,14 @@
 layout:             post
 title:              "Matplotlib Series 8: Radar chart"
 date:               "2018-11-21 21:27:34 +0100"
+last_modified_at:   2018-11-24 10:55:57 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create simple radar charts, multiple area charts
     with matplotlib in Python and their use cases.
+img_url:           /images/20181121-radar-header.png
+img_width:         1280
+img_height:        853
 ---
 
 ## Radar chart

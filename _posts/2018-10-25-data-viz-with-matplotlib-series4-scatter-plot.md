@@ -2,18 +2,15 @@
 layout:             post
 title:              "Matplotlib Series 4: Scatter plot"
 date:               "2018-10-25 21:06:53 +0200"
-last_modified_at:   2018-11-13 22:44:41 +0100
+last_modified_at:   2018-11-24 10:42:18 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create scatter plot, connected scatter plot
     and bubble chart with matplotlib in Python.
+img_url:           /images/20181025-scatter-header.png
+img_width:         1280
+img_height:        853
 ---
-
-<p align="center">
-  <img alt="plot examples"
-  src="{{ site.baseurl }}/images/20181025-scatter-header.png
-"/>
-</p>
 
 ## Scatter plot
 A [scatter plot][scatter plot] (also called a scatter graph, scatter chart,

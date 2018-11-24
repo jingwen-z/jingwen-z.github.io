@@ -2,18 +2,15 @@
 layout:             post
 title:              "Matplotlib Series 6: Venn diagram"
 date:               2018-11-06 22:22:34 +0100
-last_modified_at:   2018-11-13 22:45:48 +0100
+last_modified_at:   2018-11-24 10:50:14 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create venn diagram with matplotlib in Python,
     and its use case.
+img_url:           /images/20181106-venn-header.png
+img_width:         1280
+img_height:        853
 ---
-
-<p align="center">
-  <img alt="plot examples"
-  src="{{ site.baseurl }}/images/20181106-venn-header.png
-"/>
-</p>
 
 ## Venn diagram
 A [venn diagram][venn diagram] (also called primary diagram, set diagram or

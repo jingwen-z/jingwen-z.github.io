@@ -2,18 +2,16 @@
 layout:             post
 title:              "Matplotlib Series 7: Area chart"
 date:               "2018-11-14 21:55:44 +0100"
+last_modified_at:   2018-11-24 10:54:08 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create simple area charts, multiple area charts,
     stacked area charts and 100% stacked area charts with matplotlib in Python,
     and their use cases.
+img_url:           /images/20181114-area-header.png
+img_width:         1280
+img_height:        853
 ---
-
-<p align="center">
-  <img alt="area chart examples"
-  src="{{ site.baseurl }}/images/20181114-area-header.png
-"/>
-</p>
 
 ## Area chart
 An [area chart][area chart] or area graph displays graphically quantitative data.

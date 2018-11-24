@@ -2,18 +2,15 @@
 layout:             post
 title:              "Matplotlib Series 5: Treemap"
 date:               "2018-11-01 16:23:50 +0100"
-last_modified_at:   2018-11-13 22:42:16 +0100
+last_modified_at:   2018-11-24 10:48:40 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create treemap with matplotlib in Python, and
     its use case.
+img_url:           /images/20181030-treemap-header.png
+img_width:         1280
+img_height:        853
 ---
-
-<p align="center">
-  <img alt="plot examples"
-  src="{{ site.baseurl }}/images/20181030-treemap-header.png
-"/>
-</p>
 
 ## Treemap
 [Treemaps][treemap] display hierarchical (tree-structured) data as a set of
