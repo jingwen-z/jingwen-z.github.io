@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 8: Radar chart"
 date:               "2018-11-21 21:27:34 +0100"
-last_modified_at:   2018-11-24 10:55:57 +0100
+last_modified_at:   2018-11-28 22:57:58 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create simple radar charts, multiple area charts
@@ -99,6 +99,44 @@ chicken and bread, and doesn't like cheese that much. Nevertheless, client c2
 prefers cheese to other 4 products and doesn't like beer. We can have an
 interview with these 2 clients, in order to find the weakness of products which
 are out of preference.
+
+### Counter-example
+<p align="center">
+  <img alt="larger dataframe"
+  src="{{ site.baseurl }}/images/20181121-large-df.png"/>
+</p>
+
+<p align="center">
+  <img alt="bad radar chart"
+  src="{{ site.baseurl }}/images/20181121-bad-radar-chart.png"/>
+</p>
+
+{% highlight python %}
+larger_categories = list(larger_df)[1:]
+larger_values = larger_df.loc[0].drop('client_id').values.flatten().tolist()
+larger_values += larger_values[:1]
+larger_angles = [n / float(len(larger_categories)) * 2 * pi for n in range(len(larger_categories))]
+larger_angles += larger_angles[:1]
+
+fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(8, 8),
+                       subplot_kw=dict(polar=True))
+
+plt.xticks(larger_angles[:-1], larger_categories,
+           color='grey', size=12)
+plt.yticks(np.arange(1, 6), ['1', '2', '3', '4', '5'],
+           color='grey', size=12)
+plt.ylim(0, 5)
+ax.set_rlabel_position(30)
+ 
+ax.plot(larger_angles, larger_values, linewidth=1, linestyle='solid')
+ax.fill(larger_angles, larger_values, 'skyblue', alpha=0.4)
+
+plt.show()
+{% endhighlight %}
+
+In this example, we have client c1's preferences on 13 food. Since the number
+of food is a bit more, which makes the preference not be obvious. That's why
+we'd better apply radar chart with less than 8 items.
 
 You can click [here][notebook] to check this example in jupyter notebook.
 
