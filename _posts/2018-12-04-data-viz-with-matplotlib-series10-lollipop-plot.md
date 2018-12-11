@@ -6,9 +6,9 @@ comments:           true
 excerpt:            >
     This blog specifies how to create/custom basic lollipop plot and vertical
     lollipop plot with matplotlib in Python and their use cases.
-# img_url:           /images/20181127-basic-word-cloud.png
-# img_width:         1280
-# img_height:        853
+img_url:           /images/20181204-lollipop-header.png
+img_width:         1280
+img_height:        853
 ---
 
 ## Lollipop plot
