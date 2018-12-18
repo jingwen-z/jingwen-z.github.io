@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 4: Scatter plot"
 date:               "2018-10-25 21:06:53 +0200"
-last_modified_at:   2018-11-24 10:42:18 +0100
+last_modified_at:   2018-12-18 22:21:29 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create scatter plot, connected scatter plot
@@ -11,6 +11,19 @@ img_url:           /images/20181025-scatter-header.png
 img_width:         1280
 img_height:        853
 ---
+
+> This blog is part of Matplotlib Series:
+> * [Matplotlib Series 1: Bar chart][series1]
+> * [Matplotlib Series 2: Line chart][series2]
+> * [Matplotlib Series 3: Pie chart][series3]
+> * Matplotlib Series 4: Scatter plot (this blog)
+> * [Matplotlib Series 5: Treemap][series5]
+> * [Matplotlib Series 6: Venn diagram][series6]
+> * [Matplotlib Series 7: Area chart][series7]
+> * [Matplotlib Series 8: Radar chart][series8]
+> * [Matplotlib Series 9: Word cloud][series9]
+> * [Matplotlib Series 10: Lollipop plot][series10]
+> * [Matplotlib Series 11: Histogram][series11]
 
 ## Scatter plot
 A [scatter plot][scatter plot] (also called a scatter graph, scatter chart,
@@ -159,3 +172,13 @@ You can click [here][notebook] to check this example in jupyter notebook.
 [use of scatter plot]: https://chartio.com/learn/dashboards-and-charts/what-is-a-scatter-plot
 [use of csp]: https://research.tableau.com/sites/default/files/Haroz-TVCG-2016.pdf
 [use of bubble plot]: https://msktc.org/lib/docs/KT_Toolkit/Charts_and_Graphs/Charts_Tool_Bubble_508c.pdf
+[series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
+[series2]: https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/
+[series3]: https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/
+[series5]: https://jingwen-z.github.io/data-viz-with-matplotlib-series5-treemap/
+[series6]: https://jingwen-z.github.io/data-viz-with-matplotlib-series6-venn-diagram/
+[series7]: https://jingwen-z.github.io/data-viz-with-matplotlib-series7-area-chart/
+[series8]: https://jingwen-z.github.io/data-viz-with-matplotlib-series8-radar-chart/
+[series9]: https://jingwen-z.github.io/data-viz-with-matplotlib-series9-word-cloud/
+[series10]: https://jingwen-z.github.io/data-viz-with-matplotlib-series10-lollipop-plot/
+[series11]: https://jingwen-z.github.io/data-viz-with-matplotlib-series11-histogram/

@@ -2,19 +2,29 @@
 layout:             post
 title:              "Matplotlib Series 2: Line chart"
 date:               2018-09-16 16:58:54 +0200
-last_modified_at:   2018-11-06 22:45:34 +0100
+last_modified_at:   2018-12-18 22:16:35 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create line chart with single line, line chart
     with multiple lines and add values' label on the chart with matplotlib in
     Python.
+img_url:           /images/20181102-matplotlib-series.png
+img_width:         1280
+img_height:        853
 ---
 
-<p align="center">
-  <img alt="plot examples"
-  src="{{ site.baseurl }}/images/20181102-matplotlib-series.png
-"/>
-</p>
+> This blog is part of Matplotlib Series:
+> * [Matplotlib Series 1: Bar chart][series1]
+> * Matplotlib Series 2: Line chart (this blog)
+> * [Matplotlib Series 3: Pie chart][series3]
+> * [Matplotlib Series 4: Scatter plot][series4]
+> * [Matplotlib Series 5: Treemap][series5]
+> * [Matplotlib Series 6: Venn diagram][series6]
+> * [Matplotlib Series 7: Area chart][series7]
+> * [Matplotlib Series 8: Radar chart][series8]
+> * [Matplotlib Series 9: Word cloud][series9]
+> * [Matplotlib Series 10: Lollipop plot][series10]
+> * [Matplotlib Series 11: Histogram][series11]
 
 ## Line chart
 A [line chart][line chart] or line graph is a type of chart which displays
@@ -116,3 +126,13 @@ You can click [here][notebook] to check this example in jupyter notebook.
 
 [line chart]: https://en.wikipedia.org/wiki/Line_chart
 [notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/line_chart.ipynb
+[series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
+[series3]: https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/
+[series4]: https://jingwen-z.github.io/data-viz-with-matplotlib-series4-scatter-plot/
+[series5]: https://jingwen-z.github.io/data-viz-with-matplotlib-series5-treemap/
+[series6]: https://jingwen-z.github.io/data-viz-with-matplotlib-series6-venn-diagram/
+[series7]: https://jingwen-z.github.io/data-viz-with-matplotlib-series7-area-chart/
+[series8]: https://jingwen-z.github.io/data-viz-with-matplotlib-series8-radar-chart/
+[series9]: https://jingwen-z.github.io/data-viz-with-matplotlib-series9-word-cloud/
+[series10]: https://jingwen-z.github.io/data-viz-with-matplotlib-series10-lollipop-plot/
+[series11]: https://jingwen-z.github.io/data-viz-with-matplotlib-series11-histogram/

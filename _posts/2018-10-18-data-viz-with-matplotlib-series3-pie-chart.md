@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 3: Pie chart"
 date:               "2018-10-18 21:05:15 +0200"
-last_modified_at:   2018-11-23 22:52:12 +0100
+last_modified_at:   2018-12-18 22:19:22 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create pie chart with value labels, donut chart
@@ -12,6 +12,19 @@ img_url:           /images/20181011-pie-header.png
 img_width:         1280
 img_height:        853
 ---
+
+> This blog is part of Matplotlib Series:
+> * [Matplotlib Series 1: Bar chart][series1]
+> * [Matplotlib Series 2: Line chart][series2]
+> * Matplotlib Series 3: Pie chart (this blog)
+> * [Matplotlib Series 4: Scatter plot][series4]
+> * [Matplotlib Series 5: Treemap][series5]
+> * [Matplotlib Series 6: Venn diagram][series6]
+> * [Matplotlib Series 7: Area chart][series7]
+> * [Matplotlib Series 8: Radar chart][series8]
+> * [Matplotlib Series 9: Word cloud][series9]
+> * [Matplotlib Series 10: Lollipop plot][series10]
+> * [Matplotlib Series 11: Histogram][series11]
 
 ## Pie chart
 A [pie chart][pie chart] (or a circle chart) is a circular statistical graphic
@@ -138,3 +151,13 @@ You can click [here][notebook] to check this example in jupyter notebook.
 [pie chart]: https://en.wikipedia.org/wiki/Pie_chart
 [nested pie chart]: https://www.zingchart.com/docs/chart-types/nested-pie-chart
 [notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/pie_chart.ipynb
+[series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
+[series2]: https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/
+[series4]: https://jingwen-z.github.io/data-viz-with-matplotlib-series4-scatter-plot/
+[series5]: https://jingwen-z.github.io/data-viz-with-matplotlib-series5-treemap/
+[series6]: https://jingwen-z.github.io/data-viz-with-matplotlib-series6-venn-diagram/
+[series7]: https://jingwen-z.github.io/data-viz-with-matplotlib-series7-area-chart/
+[series8]: https://jingwen-z.github.io/data-viz-with-matplotlib-series8-radar-chart/
+[series9]: https://jingwen-z.github.io/data-viz-with-matplotlib-series9-word-cloud/
+[series10]: https://jingwen-z.github.io/data-viz-with-matplotlib-series10-lollipop-plot/
+[series11]: https://jingwen-z.github.io/data-viz-with-matplotlib-series11-histogram/

@@ -171,7 +171,6 @@ You can click [here][notebook] to check this example in jupyter notebook.
 
 [bar chart]: https://en.wikipedia.org/wiki/Bar_chart
 [notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/bar_chart.ipynb
-<!-- [series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/ -->
 [series2]: https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/
 [series3]: https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/
 [series4]: https://jingwen-z.github.io/data-viz-with-matplotlib-series4-scatter-plot/

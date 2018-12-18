@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 6: Venn diagram"
 date:               2018-11-06 22:22:34 +0100
-last_modified_at:   2018-11-24 10:50:14 +0100
+last_modified_at:   2018-12-18 22:26:38 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create venn diagram with matplotlib in Python,
@@ -11,6 +11,19 @@ img_url:           /images/20181106-venn-header.png
 img_width:         1280
 img_height:        853
 ---
+
+> This blog is part of Matplotlib Series:
+> * [Matplotlib Series 1: Bar chart][series1]
+> * [Matplotlib Series 2: Line chart][series2]
+> * [Matplotlib Series 3: Pie chart][series3]
+> * [Matplotlib Series 4: Scatter plot][series4]
+> * [Matplotlib Series 5: Treemap][series5]
+> * Matplotlib Series 6: Venn diagram (this blog)
+> * [Matplotlib Series 7: Area chart][series7]
+> * [Matplotlib Series 8: Radar chart][series8]
+> * [Matplotlib Series 9: Word cloud][series9]
+> * [Matplotlib Series 10: Lollipop plot][series10]
+> * [Matplotlib Series 11: Histogram][series11]
 
 ## Venn diagram
 A [venn diagram][venn diagram] (also called primary diagram, set diagram or
@@ -151,3 +164,13 @@ You can click [here][notebook] to check this example in jupyter notebook.
 [notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/venn_diagram.ipynb
 [1]: http://www.datascienceassn.org/content/data-science-venn-diagram-shelly-palmer-2015
 [2]: https://python-graph-gallery.com/172-custom-venn-diagram/
+[series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
+[series2]: https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/
+[series3]: https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/
+[series4]: https://jingwen-z.github.io/data-viz-with-matplotlib-series4-scatter-plot/
+[series5]: https://jingwen-z.github.io/data-viz-with-matplotlib-series5-treemap/
+[series7]: https://jingwen-z.github.io/data-viz-with-matplotlib-series7-area-chart/
+[series8]: https://jingwen-z.github.io/data-viz-with-matplotlib-series8-radar-chart/
+[series9]: https://jingwen-z.github.io/data-viz-with-matplotlib-series9-word-cloud/
+[series10]: https://jingwen-z.github.io/data-viz-with-matplotlib-series10-lollipop-plot/
+[series11]: https://jingwen-z.github.io/data-viz-with-matplotlib-series11-histogram/
