@@ -2,13 +2,13 @@
 layout:             post
 title:              "Matplotlib Series 2: Line chart"
 date:               2018-09-16 16:58:54 +0200
-last_modified_at:   2018-12-18 22:16:35 +0100
+last_modified_at:   2018-12-21 22:21:17 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create line chart with single line, line chart
     with multiple lines and add values' label on the chart with matplotlib in
     Python.
-img_url:           /images/20181102-matplotlib-series.png
+img_url:           /images/20180916-line-header.png
 img_width:         1280
 img_height:        853
 ---

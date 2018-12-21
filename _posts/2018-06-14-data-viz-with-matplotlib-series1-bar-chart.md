@@ -2,12 +2,12 @@
 layout:             post
 title:              "Matplotlib Series 1: Bar chart"
 date:               2018-06-14 21:33:25 +0200
-last_modified_at:   2018-12-18 22:08:50 +0100
+last_modified_at:   2018-12-21 22:20:03 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create simple bar chart, grouped bar chart and
     stacked bar chart with matplotlib in Python.
-img_url:           /images/20181102-matplotlib-series.png
+img_url:           /images/20180614-bar-header.png
 img_width:         1280
 img_height:        853
 ---
