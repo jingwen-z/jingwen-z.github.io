@@ -1,16 +1,23 @@
 ---
-layout:      post
-title:       "Python: ISO 8601 date"
-date:        "2019-01-22 21:59:44 +0100"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Python: ISO 8601 date"
+date:               2019-01-22 21:59:44 +0100"
+last_modified_at:   2019-01-30 23:16:07 +0100
+comments:           true
+excerpt:            >
     This blog talks about applying ISO 8601 date by python such as ISO year,
     ISO week, ISO date; how to convert datetime format to ISO format and how to
     convert ISO format to datetime format.
-# img_url:     /images/
-# img_width:   1280
-# img_height:  853
+img_url:            /images/20190122-iso8601.png
+img_width:          1280
+img_height:         853
 ---
+
+<p align="center">
+  <img alt="Title image"
+  src="{{ site.baseurl }}/images/20190122-iso8601.png"/>
+</p>
+
 [ISO 8601][ISO8601], an international standard covering the exchange of date
 and time-related data, as the string format. The ISO calendar is a widely used
 variant of the Gregorian calendar. The ISO year consists of 52 or 53 full
@@ -116,9 +123,11 @@ parses a string in one of the supported formats.
 - [date.fromisoformat()][fromisoformat]
 - [How do I parse an ISO 8601-formatted date?][stackoverflow]
 - [dateutil.parser.parse()][parser.parse()]
+- [ISO 8601 image][img]
 
 [ISO8601]: https://en.wikipedia.org/wiki/ISO_8601
 [python basic date time types]: https://docs.python.org/3/library/datetime.html
 [fromisoformat]: https://docs.python.org/3/library/datetime.html#datetime.date.fromisoformat
 [stackoverflow]: https://stackoverflow.com/questions/127803/how-do-i-parse-an-iso-8601-formatted-date/15228038#15228038
 [parser.parse()]: https://dateutil.readthedocs.io/en/stable/parser.html
+[img]: https://imgur.com/gallery/Ka4T3CJ
