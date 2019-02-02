@@ -1,21 +1,28 @@
 ---
-layout:      post
-title:       "Python: for loop"
-date:        "2019-01-29 22:50:19 +0100"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Python: for loop"
+date:               2019-01-29 22:50:19 +0100
+last_modified_at:   2019-02-07 12:16:44 +0100
+comments:           true
+excerpt:            >
     This blog presents for loop for multiple data structures, like loop over a
     range, loop over a string, loop over a numpy array, loop over a list, loop
     over a dictionary, loop over a series and loop over a dataframe.
-# img_url:     /images/
-# img_width:   1280
-# img_height:  853
+img_url:            /images/20190129-python-for-loop.jpg
+img_width:          1280
+img_height:         853
 ---
+
+<p align="center">
+  <img alt="Python while loop flow diagram"
+  src="{{ site.baseurl }}/images/20190129-python-for-loop.jpg"/>
+</p>
 
 `for` loops are traditionally used when you have a block of code which you want
 to repeat a fixed number of times. The Python for statement iterates over the
 members of a sequence in order, executing the block each time. In this blog,
-I'll talk about how to achieve loops over:
+except for `for` loop's syntax and flow diagram, I'll also talk about how to
+achieve loops over:
 - a range
 - a string
 - a `numpy array`
@@ -24,6 +31,19 @@ I'll talk about how to achieve loops over:
 - a dictionary
 - a series
 - a dataframe
+
+## Syntax
+{% highlight python %}
+for iterating_var in sequence:
+    statements(s)
+{% endhighlight %}
+
+## Flow diagram
+If a `sequence` contains an expression list, it is evaluated first. Then, the
+first item in the `sequence` is assigned to the iterating variable
+`iterating_var`. Next, the `statements` block is executed. Each item in the
+list is assigned to `iterating_var`, and the `statement(s)` block is executed
+until the entire `sequence` is exhausted.
 
 ## Loop of a range
 {% highlight python %}
@@ -213,8 +233,16 @@ Name: 2, dtype: object
 `pandas.DataFrame.iterrows` iterates over dataFrame rows as (index, Series)
 pairs.
 
+## Conclusion
+In this blog, we talked about syntax of `for` loop, and its applications: loop
+over a range, loop over a string, loop over a numpy array, loop over a list,
+loop over a dictionary, loop over a series and loop over a dataframe. Hope it's
+useful for you :)
+
+
 ## Reference
 - SciPy.org, _Iterating Over Arrays_, viewed 29 January 2019, <https://docs.scipy.org/doc/numpy/reference/arrays.nditer.html#arrays-nditer>.
 - PythonTips, _Enumerate_, viewed 29 January 2019, <http://book.pythontips.com/en/latest/enumerate.html>.
 - pandas 0.24.0 documentation, _pandas.Series_, viewed 29 January 2019, <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html>.
 - pandas 0.24.0 documentation, _pandas.DataFrame.iterrows_, viewed 29 January 2019, <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iterrows.html>.
+- tutorialspoint, _Python for Loop Statements_, viewed 7 February 2019, <http://www.tutorialspoint.com/python/python_for_loop.htm>.

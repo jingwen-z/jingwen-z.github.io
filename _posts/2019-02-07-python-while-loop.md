@@ -17,7 +17,7 @@ img_height:  853
   src="{{ site.baseurl }}/images/20190207-python-while-loop.jpg"/>
 </p>
 
-`while` loops, like the ForLoop, are used for repeating sections of code - but
+`while` loops, like the for loop, are used for repeating sections of code - but
 unlike a for loop, the while loop will not run n times, but until a defined
 condition is no longer met. If the condition is initially false, the loop body
 will not be executed at all. In this blog, I'll talk about how to achieve
@@ -208,7 +208,7 @@ value and reassign i with i plus one, until i equals to 5, which corresponds
 'Michael'.
 
 ## Conclusion
-In this blog, we talked about syntax and basic using for `while` loop, and its
+In this blog, we talked about syntax and basic using of `while` loop, and its
 supplementary applications: the infinite loop, nested while loop, if-else
 statement with while loop and loop of a list. Hope it's useful for you :)
 
