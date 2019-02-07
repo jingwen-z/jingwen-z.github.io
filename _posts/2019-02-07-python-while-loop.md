@@ -185,7 +185,7 @@ In this example, count is initially equal to 0. When count is smaller than 6,
 print current count's value and reassign its value with count plus one, until
 count equals to 6, we print "The final count is: 6"
 
-## Loop if a list
+## Loop of a list
 {% highlight python %}
 >>> names = ['John', 'Jerome', 'Paul', 'George', 'Andy', 'Michael']
 >>> i = 0
