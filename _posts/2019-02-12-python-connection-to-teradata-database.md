@@ -2,7 +2,7 @@
 layout:             post
 title:              "Python: Connection to Teradata Database"
 date:               2019-02-12 21:33:39 +0100"
-last_modified_at:   2019-02-13 22:16:25 +0100
+last_modified_at:   2019-02-19 22:23:14 +0100
 comments:           true
 excerpt:            >
     This blog will talk about how to connect to Teradata database and extract
@@ -56,7 +56,7 @@ initialization so that we can get feedback about our application in DBQL and
 Teradata Viewpoint as this information is included in the QueryBand of all
 database sessions created by our script.  We also tell UdaExec not to log to
 the console (e.g. `logConsole=False`) so that our print statement is easier to
-read. The second line creates a connection to a Teradata system named “tdprod”
+read. The second line creates a connection to a Teradata system named "tdprod"
 using `ODBC` as the connection method, and specify `USEREGIONALSETTINGS="N"` to
 ensure that float values can be loaded and make decimal separator be '.'
 
