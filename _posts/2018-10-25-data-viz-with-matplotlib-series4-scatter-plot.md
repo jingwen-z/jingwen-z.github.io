@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 4: Scatter plot"
 date:               "2018-10-25 21:06:53 +0200"
-last_modified_at:   2018-12-18 22:21:29 +0100
+last_modified_at:   2019-02-26 22:34:31 +0100
 comments:           true
 excerpt:            >
     This blog specifies how to create scatter plot, connected scatter plot
@@ -157,6 +157,87 @@ plt.show()
 
 Since I added number of clients as size of each point, which corresponds the
 explication of the scatter plot above.
+
+## Scatter plot with different colors
+Scatter plot which created by matplotlib, cannot specify colors in terms of
+category variable's value. So we have to overlap plots of different colors.
+
+### Example 1
+
+<p align="center">
+  <img alt="simple 2-color scatter plot"
+  src="{{ site.baseurl }}/images/20181025-simple-scatter-2colors.png"/>
+</p>
+
+{% highlight python %}
+plt.scatter(x=range(40, 70, 1),
+            y=np.abs(np.random.randn(30)*20),
+            s=200,
+            alpha=0.6,
+            label='40-69 years old')
+plt.scatter(x=range(20, 40, 1),
+            y=np.abs(np.random.randn(20)*40),
+            s=200,
+            alpha=0.6,
+            label='20-39 years old')
+plt.show()
+{% endhighlight %}
+
+This 2-color scatter plot displays clearly the difference of weekly purchase
+cost between young people and middle aged or elderly people: average weekly
+purchase of younger people is nealy once more than middle aged or elderly
+people.
+
+### Example 2
+
+<p align="center">
+  <img alt="overlapped scatter plot"
+  src="{{ site.baseurl }}/images/20181025-overlapped-scatter.png"/>
+</p>
+
+{% highlight python %}
+plt.scatter(x=range(10, 70, 1),
+            y=np.abs(np.random.randn(60)*40),
+            s=100,
+            alpha=0.6,
+            label='Paris (75)')
+plt.scatter(x=range(10, 70, 1),
+            y=np.abs(np.random.randn(60)*20),
+            s=100,
+            alpha=0.6,
+            label='Val de Marne (94)')
+plt.show()
+{% endhighlight %}
+
+In this plot, some points are overlapped, which will impact our analysis. In
+this case, it's better to separate samples of "Paris (75)" and "Val de Marne
+(94)" into 2 plot:
+
+<p align="center">
+  <img alt="separated scatter plot"
+  src="{{ site.baseurl }}/images/20181025-separated-scatter.png"/>
+</p>
+
+{% highlight python %}
+fig, axarr = plt.subplots(nrows=1, ncols=2, figsize=(14, 7))
+
+axarr[0].scatter(x=range(10, 70, 1),
+                 y=np.abs(np.random.randn(60)*40),
+                 s=100,
+                 alpha=0.6,
+                 label='Paris (75)')
+axarr[1].scatter(x=range(10, 70, 1),
+                 y=np.abs(np.random.randn(60)*20),
+                 s=100,
+                 alpha=0.6,
+                 label='Val de Marne (94)',
+                 color='#ff7f01')
+plt.show()
+{% endhighlight %}
+
+Comparing to the first plot of this example, the graphs above are more clearer
+and explicable. The rent price per m2 of Val de Marne is almost half of the
+rent price / m2 of Paris.
 
 You can click [here][notebook] to check this example in jupyter notebook.
 
