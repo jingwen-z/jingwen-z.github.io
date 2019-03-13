@@ -1,15 +1,16 @@
 ---
-layout:      post
-title:       "Creating a python package for a python job"
-date:        "2019-03-12 21:33:16 +0100"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Creating a python package for a python job"
+date:               2019-03-12 21:33:16 +0100
+last_modified_at:   2019-03-13 22:26:29 +0100
+comments:           true
+excerpt:            >
     This blog introduces how we create a python package for a python job with
     package structure and some details like SQL queries and data extraction
     with python.
-img_url:     /images/20190312-tree.jpg
-img_width:   1280
-img_height:  853
+img_url:            /images/20190312-tree.jpg
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -35,6 +36,7 @@ $ tree
 ├── data
 │   ├── __init__.py
 │   └── job.sql
+├── setup.py
 ├── job.py
 │── tests
 │   ├── __init__.py
@@ -90,6 +92,24 @@ WITH    date_start AS
 As you read, we put `date_start` and `date_end` as input, search `stores` data
 directly from database, and use all of them to filter `sales` data.
 
+### Python file `setup.py`
+`setup.py` tells you that the module/package you are about to install has been
+packaged and distributed with Distutils, which is the standard for distributing
+Python Modules.
+
+{% highlight python %}
+from setuptools import setup
+
+setup(name='job_name',
+      version='0.1',
+      url='gitlab/job', # url of job's repo on gitlab
+      author='author_name',
+      author_email='author_email',
+      packages=['job'], # package name
+      package_data={
+          '':['*.sql'], } # search .sql file in all folders of this job
+     )
+{% endhighlight %}
 
 ### Python file `job.py`
 This file describes how to create report with SQL file above.
@@ -143,12 +163,13 @@ to write unit test with python in the near furture.
 They are used for automating job with gitlab runner. If you are interesting in
 it, you can find more information [here][gitlabci].
 
-
 ## Reference
 - "6.4. Packages", _doc.python.org_. [Online]. Available: [https://docs.python.org/3/tutorial/modules.html#packages][r1]
 - TimHill, "Tree image", _pixabay_. [Online]. Available: [https://pixabay.com/photos/tree-sun-sunshine-summer-meadow-2916763][r2]
+- Silfverstrom, "What is setup.py?", _stackoverflow_. [Online]. Available: [https://stackoverflow.com/questions/1471994/what-is-setup-py][r3]
 
 [r1]: https://docs.python.org/3/tutorial/modules.html#packages
 [r2]: https://pixabay.com/photos/tree-sun-sunshine-summer-meadow-2916763
+[r3]: https://stackoverflow.com/questions/1471994/what-is-setup-py
 [connect2teradata]: https://jingwen-z.github.io/python-connection-to-teradata-database/
 [gitlabci]: https://jingwen-z.github.io/automate-py-jobs-by-gitlab-runner/
