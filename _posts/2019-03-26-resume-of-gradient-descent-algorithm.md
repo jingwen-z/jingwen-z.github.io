@@ -1,19 +1,20 @@
 ---
-layout:      post
-title:       "Resume of Gradient Descent algorithm"
-date:        "2019-03-26 21:36:01 +0100"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Resume of Gradient Descent algorithm"
+date:               "2019-03-26 21:36:01 +0100"
+last_modified_at:   2019-04-02 22:31:54 +0200
+comments:           true
+excerpt:            >
     In this blog, I resumed characteristics of 3 different Gradient Descent
-    algorithms: Batch Gradient Descent computs the gradients based on the full
+    algorithms: Batch Gradient Descent computes the gradients based on the full
     training set, it takes long time; Stochastic Gradient Descent picks just one
     instance of training set, it has a better chance of finding the global minimum
     than Batch GD; Mini-batch Gradient Descent computes the gradients on small
     random sets of instances, it get a performance boost from hardware optimization
     of matrix operations.
-img_url:     /images/20190326-mountain.jpg
-img_width:   1280
-img_height:  853
+img_url:            /images/20190326-mountain.jpg
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -21,7 +22,7 @@ img_height:  853
   src="{{ site.baseurl }}/images/20190326-mountain.jpg"/>
 </p>
 
-_Gradient Descent_ is a very generic optimization algorith capable of finding
+_Gradient Descent_ is a very generic optimization algorithm capable of finding
 optimal solutions to a wide range of problems. The general idea of Gradient
 Descent is to tweak parameters iteratively so that we can minimize a cost
 function. An important parameter in Gradient Descent is the size of the steps,
@@ -47,7 +48,7 @@ Partial derivatives of the cost function:
 
 Notice that this formula involves calculations over the full training set X, at
 each Gradient Descent step! That is why the algorithm is called _Batch Gradient
-Descent_: it uses the whole batch of training dta at every step.
+Descent_: it uses the whole batch of training data at every step.
 
 ## Stochastic Gradient Descent
 The main problem with Batch Gradient Descent is the that is uses the whole
@@ -59,7 +60,7 @@ computes the gradients based only on the single instance.
 Randomness is good to escape from local optima, but bad since it means that the
 algorithm can never settle at the minimum. One solution is to gradually reduce
 the learning rate. The steps start out large, then get smaller and smaller,
-allowing the algorithm to settle at the golbal minimum. However, if you want to
+allowing the algorithm to settle at the global minimum. However, if you want to
 be sure that the algorithm goes through every instance at each epoch, another
 approach is to shuffle the training set, go through it instance by instance,
 then shuffle it again, and so on.
@@ -108,7 +109,7 @@ instances, _n_ is the number of features.
 
 ## Conclusion
 In this blog, I resumed characteristics of 3 different Gradient Descent
-algorithms: Batch Gradient Descent computs the gradients based on the full
+algorithms: Batch Gradient Descent computes the gradients based on the full
 training set, it takes long time; Stochastic Gradient Descent picks just one
 instance of training set, it has a better chance of finding the global minimum
 than Batch GD; Mini-batch Gradient Descent computes the gradients on small
