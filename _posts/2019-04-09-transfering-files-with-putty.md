@@ -1,14 +1,15 @@
 ---
-layout:      post
-title:       "Transfering files with Putty"
-date:        "2019-04-09 19:18:27 +0200"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Transfering files with Putty"
+date:               "2019-04-09 19:18:27 +0200"
+last_modified_at:   2019-04-10 21:56:03 +0200
+comments:           true
+excerpt:            >
     This blog introduces how to use `Putty` to transfer files from Windows OS
     to Linux OS and reverse.
-img_url:     /images/20190409-transfer.jpg
-img_width:   1280
-img_height:  853
+img_url:            /images/20190409-transfer.jpg
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -51,11 +52,22 @@ Now, let's start to transfer files to Linux:
 {% highlight bash %}
 pscp ./weekly_report.xlsx xxx@123.456.789.0:/reporting
 {% endhighlight %}
+
+<p align="center">
+  <img alt="Wins to Linux 1"
+  src="{{ site.baseurl }}/images/20190409-wins-to-linux-1.PNG"/>
+</p>
+
 Here, `./weekly_report.xlsx` specifies the path of source file, `xxx` is user's
 account for accessing the Linux server, `123.456.789.0` is the host address,
 `/reporting` presents target path.
 - After the bash script above, we also need to type the password for accessing
 the Linux server.
+
+<p align="center">
+  <img alt="Wins to Linux 2"
+  src="{{ site.baseurl }}/images/20190409-wins-to-linux-2.PNG"/>
+</p>
 
 ## Transfering files from Linux to Windows 
 Transfering files from Linux OS to Windows OS is similar to the steps above:
@@ -64,8 +76,19 @@ Transfering files from Linux OS to Windows OS is similar to the steps above:
 {% highlight bash %}
 pscp xxx@123.456.789.0:/reporting/weekly_report.xlsx ./
 {% endhighlight %}
+
+<p align="center">
+  <img alt="Linux to Wins 1"
+  src="{{ site.baseurl }}/images/20190409-linux-to-wins-1.PNG"/>
+</p>
+
 - Same as above, after the bash script above, we also need to type the password
 for accessing the Linux server.
+
+<p align="center">
+  <img alt="Linux to Wins 2"
+  src="{{ site.baseurl }}/images/20190409-linux-to-wins-2.PNG"/>
+</p>
 
 ## Conclusion
 In this blog, I introduced how to use `Putty` to transfer files from Windows OS
