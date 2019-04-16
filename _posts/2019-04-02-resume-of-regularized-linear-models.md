@@ -131,4 +131,3 @@ with Scikit-Learn & TensorFlow_ p 129-136
 - stevepb, "Cheese", _pixabay.com_. [Online]. Available: [https://pixabay.com/photos/pawn-chess-pieces-strategy-chess-2430046/][r1]
 
 [r1]: https://pixabay.com/photos/pawn-chess-pieces-strategy-chess-2430046/
-
