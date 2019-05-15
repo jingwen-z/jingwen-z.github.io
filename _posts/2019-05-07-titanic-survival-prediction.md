@@ -1,15 +1,16 @@
 ---
-layout:      post
-title:       "Titanic: survival prediction"
-date:        "2019-05-07 21:25:17 +0200"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Titanic: survival prediction"
+date:               "2019-05-07 21:25:17 +0200"
+last_modified_at:   2019-05-22 23:12:30 +0200
+comments:           true
+excerpt:            >
     In this challenge, we need to analyse what sorts of people were likely to
     survive. In particular, we also need to apply the tools of machine learning
     to predict which passengers survived the tragedy.
-img_url:     /images/20190507-giant-ship.jpg
-img_width:   1280
-img_height:  853
+img_url:            /images/20190507-giant-ship.jpg
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -258,16 +259,17 @@ survived chance. However, the majority of passengers who came from Cherbourg
 than others, which is coherent with result above.
 
 ## Train model
-I trained data with 4 SVM (Support-vector machine), Decision Trees, Random
-Forest and Logistic Regression, and compared their Root MSE:
+I trained data with SVM (Support-vector machine), Decision Trees, Random
+Forest, Logistic Regression, AdaBoost, Extra Trees, Gradient Boosting and
+Voting classifier (hard and soft), and compared their accuracy score:
 
 <p align="center">
-  <img alt="Root MSE"
-  src="{{ site.baseurl }}/images/20190507-root-mse.png"/>
+  <img alt="Accurcy score"
+  src="{{ site.baseurl }}/images/20190507-accuracy-score.png"/>
 </p>
 
-Since the root MSE of Random Forest model is the least among four models that
-we chose, I'll apply Random Forest to predict survivals in test dataset.
+Finally I chose soft voting classifier in order to avoid the overfitting and
+applied it to predict survivals in test dataset.
 
 You can find all codes in [this notebook][notebook].
 
