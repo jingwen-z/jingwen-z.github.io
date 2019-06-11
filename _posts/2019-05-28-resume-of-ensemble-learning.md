@@ -1,14 +1,15 @@
 ---
-layout:      post
-title:       "Resume of Ensemble Learning Part 1"
-date:        "2019-05-28 18:54:17 +0200"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Resume of Ensemble Learning"
+date:               "2019-05-28 18:54:17 +0200"
+last_modified_at:   2019-06-11 22:01:31 +0200
+comments:           true
+excerpt:            >
     In this blog, I introduced 3 Ensemble Learning algorithms: Voting
     Classifiers, Bagging and Pasting, Random Forests.
-img_url:     /images/20190528-ensemble.jpg
-img_width:   1280
-img_height:  853
+img_url:            /images/20190528-ensemble.jpg
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
