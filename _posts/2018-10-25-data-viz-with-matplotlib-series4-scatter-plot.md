@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 4: Scatter plot"
 date:               "2018-10-25 21:06:53 +0200"
-last_modified_at:   2019-02-26 22:34:31 +0100
+last_modified_at:   2019-06-12 22:19:21 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create scatter plot, connected scatter plot
@@ -249,7 +249,7 @@ You can click [here][notebook] to check this example in jupyter notebook.
 [scatter plot]: https://en.wikipedia.org/wiki/Scatter_plot
 [connected scatter]: https://vega.github.io/vega/examples/connected-scatter-plot
 [bubble chart]: https://en.wikipedia.org/wiki/Bubble_chart
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/scatter_plot.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/scatter_plot.ipynb
 [use of scatter plot]: https://chartio.com/learn/dashboards-and-charts/what-is-a-scatter-plot
 [use of csp]: https://research.tableau.com/sites/default/files/Haroz-TVCG-2016.pdf
 [use of bubble plot]: https://msktc.org/lib/docs/KT_Toolkit/Charts_and_Graphs/Charts_Tool_Bubble_508c.pdf
