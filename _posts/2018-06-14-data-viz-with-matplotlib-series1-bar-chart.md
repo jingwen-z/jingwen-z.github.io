@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 1: Bar chart"
 date:               2018-06-14 21:33:25 +0200
-last_modified_at:   2018-12-21 22:20:03 +0100
+last_modified_at:   2019-06-21 09:24:12 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create simple bar chart, grouped bar chart and
@@ -170,7 +170,7 @@ You can click [here][notebook] to check this example in jupyter notebook.
 
 
 [bar chart]: https://en.wikipedia.org/wiki/Bar_chart
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/bar_chart.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/bar_chart.ipynb
 [series2]: https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/
 [series3]: https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/
 [series4]: https://jingwen-z.github.io/data-viz-with-matplotlib-series4-scatter-plot/
