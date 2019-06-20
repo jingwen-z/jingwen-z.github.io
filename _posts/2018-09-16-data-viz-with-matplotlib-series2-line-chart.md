@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 2: Line chart"
 date:               2018-09-16 16:58:54 +0200
-last_modified_at:   2018-12-21 22:21:17 +0100
+last_modified_at:   2019-06-21 09:28:10 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create line chart with single line, line chart
@@ -125,7 +125,7 @@ plt.show()
 You can click [here][notebook] to check this example in jupyter notebook.
 
 [line chart]: https://en.wikipedia.org/wiki/Line_chart
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/line_chart.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/line_chart.ipynb
 [series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
 [series3]: https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/
 [series4]: https://jingwen-z.github.io/data-viz-with-matplotlib-series4-scatter-plot/
