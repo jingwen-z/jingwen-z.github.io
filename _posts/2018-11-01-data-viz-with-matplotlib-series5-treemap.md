@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 5: Treemap"
 date:               "2018-11-01 16:23:50 +0100"
-last_modified_at:   2018-12-18 22:25:10 +0100
+last_modified_at:   2019-07-01 23:11:24 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create treemap with matplotlib in Python, and
@@ -103,7 +103,7 @@ choice.
 You can click [here][notebook] to check this example in jupyter notebook.
 
 [treemap]: https://en.wikipedia.org/wiki/Treemapping
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/treemap.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/treemap.ipynb
 [series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
 [series2]: https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/
 [series3]: https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/
