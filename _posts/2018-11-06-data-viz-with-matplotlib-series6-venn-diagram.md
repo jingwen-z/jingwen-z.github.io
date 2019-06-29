@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 6: Venn diagram"
 date:               2018-11-06 22:22:34 +0100
-last_modified_at:   2018-12-18 22:26:38 +0100
+last_modified_at:   2019-07-01 23:12:59 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create venn diagram with matplotlib in Python,
@@ -161,7 +161,7 @@ You can click [here][notebook] to check this example in jupyter notebook.
 - [Custom Venn diagram][2]
 
 [venn diagram]: https://en.wikipedia.org/wiki/Venn_diagram
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/venn_diagram.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/venn_diagram.ipynb
 [1]: http://www.datascienceassn.org/content/data-science-venn-diagram-shelly-palmer-2015
 [2]: https://python-graph-gallery.com/172-custom-venn-diagram/
 [series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
