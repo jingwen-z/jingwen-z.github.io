@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 7: Area chart"
 date:               "2018-11-14 21:55:44 +0100"
-last_modified_at:   2018-12-18 22:30:03 +0100
+last_modified_at:   2019-07-01 23:17:20 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create simple area charts, multiple area charts,
@@ -161,7 +161,7 @@ You can click [here][notebook] to check this example in jupyter notebook.
 
 [area chart]: https://en.wikipedia.org/wiki/Area_chart
 [Stacked Area Graph]: https://datavizcatalogue.com/methods/stacked_area_graph.html
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/area_chart.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/area_chart.ipynb
 [r1]: https://visage.co/data-visualization-101-area-charts/
 [r2]: https://exceljet.net/chart-type/100-stacked-area-chart
 [series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
