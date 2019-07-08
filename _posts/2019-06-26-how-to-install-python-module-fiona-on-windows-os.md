@@ -1,14 +1,15 @@
 ---
-layout:      post
-title:       "How to install python module fiona on Windows OS ?"
-date:        "2019-06-26 20:41:26 +0200"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "How to install python module fiona on Windows OS ?"
+date:               "2019-06-26 20:41:26 +0200"
+last_modified_at:   2019-07-10 00:07:44 +0200
+comments:           true
+excerpt:            >
     In this blog, I talk about the requirements and the steps for installing module
     fiona on Windows OS.
-img_url:     /images/20190626-map.png
-img_width:   1280
-img_height:  853
+img_url:            /images/20190626-map.png
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -63,7 +64,7 @@ Since python that I have installed is version Python 3.7 (32 bit), I choose
 "release-1911-gdal-2-4-1-mapserver-7-2-2".
 
 <p align="center">
-  <img alt="GDAL old releases"
+  <img alt="GDAL download table"
   src="{{ site.baseurl }}/images/20190626-GDAL-download-table.png"/>
 </p>
 
