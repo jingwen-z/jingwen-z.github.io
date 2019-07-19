@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 8: Radar chart"
 date:               "2018-11-21 21:27:34 +0100"
-last_modified_at:   2018-12-18 22:31:31 +0100
+last_modified_at:   2019-07-19 21:55:37 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create simple radar charts, multiple area charts
@@ -157,7 +157,7 @@ You can click [here][notebook] to check this example in jupyter notebook.
 - [Effective Use of Radar Charts][r1]
 
 [radar chart]: https://en.wikipedia.org/wiki/Radar_chart
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/radar_chart.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/radar_chart.ipynb
 [r1]: https://msktc.org/lib/docs/KT_Toolkit/Charts_and_Graphs/Charts_and_Graphics_Radar_508c.pdf
 [series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
 [series2]: https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/
