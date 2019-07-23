@@ -2,7 +2,7 @@
 layout:             post
 title:              "How to install python module fiona on Windows OS ?"
 date:               "2019-06-26 20:41:26 +0200"
-last_modified_at:   2019-07-10 00:07:44 +0200
+last_modified_at:   2019-07-23 21:21:08 +0200
 comments:           true
 excerpt:            >
     In this blog, I talk about the requirements and the steps for installing module
@@ -48,7 +48,7 @@ You can download it [here][GDAL old release].
 
 <p align="center">
   <img alt="GDAL old releases"
-  src="{{ site.baseurl }}/images/20190626-GDAL-old-releases.png"/>
+  src="{{ site.baseurl }}/images/20190626-GDAL-old-releases.PNG"/>
 </p>
 
 ### Choose "win32" or "x64"?
@@ -65,7 +65,7 @@ Since python that I have installed is version Python 3.7 (32 bit), I choose
 
 <p align="center">
   <img alt="GDAL download table"
-  src="{{ site.baseurl }}/images/20190626-GDAL-download-table.png"/>
+  src="{{ site.baseurl }}/images/20190626-GDAL-download-table.PNG"/>
 </p>
 
 We need to download:
