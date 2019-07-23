@@ -116,6 +116,3 @@ In this blog, I talk about the requirements and the steps for installing module
 [fiona]: https://github.com/Toblerity/Fiona
 [python32or64]: https://intelligea.wordpress.com/2015/08/05/check-if-python-version-is-64-or-32-bit/
 [checkGDALversion]: https://sandbox.idre.ucla.edu/sandbox/tutorials/installing-gdal-for-windows
-
-
-
