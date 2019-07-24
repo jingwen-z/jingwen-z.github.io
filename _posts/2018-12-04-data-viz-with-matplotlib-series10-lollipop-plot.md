@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 10: Lollipop plot"
 date:               2018-12-04 22:27:05 +0100
-last_modified_at:   2018-12-18 22:34:22 +0100
+last_modified_at:   2019-07-19 21:56:54 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create/custom basic lollipop plot and vertical
@@ -93,7 +93,7 @@ Obviously, cheese is prefered by clients.
 You can click [here][notebook] to check this example in jupyter notebook.
 
 [lollipop plot]: https://python-graph-gallery.com/lollipop-plot/
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/lollipop_plot.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/lollipop_plot.ipynb
 [series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
 [series2]: https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/
 [series3]: https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/
