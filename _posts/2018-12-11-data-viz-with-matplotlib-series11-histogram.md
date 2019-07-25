@@ -2,7 +2,7 @@
 layout:             post
 title:              "Matplotlib Series 11: Histogram"
 date:               2018-12-11 22:16:43 +0100
-last_modified_at:   2018-12-18 22:36:27 +0100
+last_modified_at:   2019-07-19 21:57:10 +0200
 comments:           true
 excerpt:            >
     This blog specifies how to create/custom basic histogram and cumulative
@@ -94,7 +94,7 @@ to 10 products.
 You can click [here][notebook] to check this example in jupyter notebook.
 
 [histogram]: https://en.wikipedia.org/wiki/Histogram
-[notebook]: https://github.com/jingwen-z/python-playground/blob/master/plotting_and_visualization/histogram.ipynb
+[notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/histogram.ipynb
 [series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
 [series2]: https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/
 [series3]: https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/
