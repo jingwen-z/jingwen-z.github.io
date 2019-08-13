@@ -8,14 +8,14 @@ excerpt:     >
     lots of tourists, which makes me eager to dig out Airbnb locations in
     Paris. Where are the locations located? What are their prices? In this
     blog, I will analyse Airbnb Paris with the following points...
-img_url:     /images/20190813-locations.PNG
+img_url:     /images/20190813-locations.png
 img_width:   1280
 img_height:  853
 ---
 
 <p align="center">
   <img alt="Airbnb Paris Locations"
-  src="{{ site.baseurl }}/images/20190813-locations.PNG"/>
+  src="{{ site.baseurl }}/images/20190813-locations.png"/>
 </p>
 
 Paris is the capital and most populous city of France, and it also attracts
@@ -41,7 +41,7 @@ this moment.
 
 <p align="center">
   <img alt="Data description"
-  src="{{ site.baseurl }}/images/20190813-data-description.PNG"/>
+  src="{{ site.baseurl }}/images/20190813-data-description.png"/>
 </p>
 
 According to the histograms above, we find that in Paris 50% locations are able
@@ -62,8 +62,8 @@ In the second part, I'll apply historical data to do some further analysis.
 ## What type of room are they?
 
 <p align="center">
-  <img alt=""
-  src="{{ site.baseurl }}/images/20190813-room-types.PNG"/>
+  <img alt="Room type"
+  src="{{ site.baseurl }}/images/20190813-room-types.png"/>
 </p>
 
 In Paris, 86.5% of Airbnb locations are entire home/apartment, nearly 13% are
@@ -120,7 +120,7 @@ the ones in Popincourt and Reuilly.
 
 <p align="center">
   <img alt="How many guests do different room types accommodate"
-  src="{{ site.baseurl }}/images/20190813-accommodate-roomtype.PNG"/>
+  src="{{ site.baseurl }}/images/20190813-accommodate-roomtype.png"/>
 </p>
 
 According to this graph, the majority of location is able to accommodate 2 or 4
@@ -132,7 +132,7 @@ Overall, almost locations are "Entire home/apt".
 
 <p align="center">
   <img alt="Hosts seniority"
-  src="{{ site.baseurl }}/images/20190813-host-seniority.PNG"/>
+  src="{{ site.baseurl }}/images/20190813-host-seniority.png"/>
 </p>
 
 Almost 40% of hosts have joined into Airbnb since 4 or 5 years, about 3% of
@@ -150,7 +150,7 @@ hosts are regular hosts who have joined Airbnb since at least 8 years.
 
 <p align="center">
   <img alt="Location amount in different months"
-  src="{{ site.baseurl }}/images/20190813-locations-amount-ts.PNG"/>
+  src="{{ site.baseurl }}/images/20190813-locations-amount-ts.png"/>
 </p>
 
 From May 2015 to July 2019, Airbnb locations' amount increases 102%
