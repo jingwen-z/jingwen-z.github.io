@@ -102,7 +102,7 @@ locations and its price is more expensive than others.
 
 <p align="center">
   <img src="{{ site.baseurl }}/images/20190813-location-history.gif"
-       style="max-width: 350px"
+       style="max-width: 720px"
        alt="Locations in Time Series">
 </p>
 
@@ -125,7 +125,7 @@ reflects the season.
 
 <p align="center">
   <img src="{{ site.baseurl }}/images/20190813-neighbourhood-locations-price-history.gif"
-       style="max-width: 350px"
+       style="max-width: 720px"
        alt="Average location price in different neighbourhood">
 </p>
 
