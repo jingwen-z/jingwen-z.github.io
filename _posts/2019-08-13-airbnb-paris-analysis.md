@@ -1,16 +1,17 @@
 ---
-layout:      post
-title:       "Airbnb Paris Analysis"
-date:        "2019-08-13 20:58:54 +0200"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Airbnb Paris Analysis"
+date:               "2019-08-13 20:58:54 +0200"
+last_modified_at:   2019-08-15 22:08:21 +0200
+comments:           true
+excerpt:            >
     Paris is the capital and most populous city of France, and it also attracts
     lots of tourists, which makes me eager to dig out Airbnb locations in
     Paris. Where are the locations located? What are their prices? In this
     blog, I will analyse Airbnb Paris with the following points...
-img_url:     /images/20190813-locations.png
-img_width:   1280
-img_height:  853
+img_url:            /images/20190813-locations.png
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -27,9 +28,6 @@ analyse Airbnb Paris with the following points:
 - What type of room are they?
 - What are the neighbourhood of locations?
 - Average price for each neighbourhood?
-- Average price for each room type in each neighbourhood?
-- How many guests do different room types accommodate?
-- Seniority of hosts
 - Location amount in time series
 - Location amount in different neighbourhood (heatmap)
 - Average location price in different neighbourhood
@@ -71,11 +69,10 @@ private room, the rest are shared room.
 
 ## What are the neighbourhood of locations?
 
-<iframe
-  src="{{ site.baseurl }}/images/20190813-neighbourhood-locations-190709.html"
-  style="display: block; width:100%; height: 370px">
-  <p>Airbnb Paris Locations neighbourhood</p>
-</iframe>
+<p align="center">
+  <img alt="Airbnb Paris Locations neighbourhood"
+  src="{{ site.baseurl }}/images/20190813-neighbourhood-locations-190709.png"/>
+</p>
 
 The top 3 neighbourhood are Buttes-Montmartre (11.3%), Popincourt (9.8%) and
 Vaugirard (7.4%), the flop 3 neighbourhood are Louvre, Elysée and
@@ -85,11 +82,14 @@ real estate for renting is less than other quarters.
 
 ## Average price for each neighbourhood?
 
-<iframe
-  src="{{ site.baseurl }}/images/20190813-neighbourhood-locations-price-190709.html"
-  style="display: block; width:100%; height: 370px">
-  <p>Airbnb Paris Locations price in different neighbourhoods</p>
-</iframe>
+<p align="center">
+  <img alt="Airbnb Paris Locations price in different neighbourhoods"
+  src="{{ site.baseurl }}/images/20190813-neighbourhood-locations-price-190709.png"/>
+</p>
+
+It's a pity that we don't know the area for each location, we cannot calculate
+the price for each m2. However, we calculate the average price for each room
+type in different neighbourhood.
 
 The top 3 neighbourhood are Elysée (240 euros), Palais-Bourbon (182 euros) and
 Louvre (178 euros), the flop 3 neighbourhood are Ménilmontant, Buttes-Chaumont
@@ -98,53 +98,13 @@ etc. We find an interesting point: the price and locations' amount is
 negatively related, which means the better neighbourhood has less Airbnb
 locations and its price is more expensive than others.
 
-## Average price for each room type in each neighbourhood?
-
-<p align="center">
-  <img alt="Average price for each room type in each neighbourhood"
-  src="{{ site.baseurl }}/images/20190813-avgprice-nbh-roomtype.png"/>
-</p>
-
-It's a pity that we don't know the area for each location, we cannot calculate
-the price for each m2. However, we the average price for each room type in
-different neighbourhood.
-
-Overall, the "Private room" and the "Entire home/apt" in Elysée is the most
-expensive, the "Shared room" in this neighbourhood is just a little bit cheaper
-than the ones in Hôtel-de-Ville. Moreover, the "Private room" and the "Entire
-home/apt" in Ménilmontant is much cheaper than other neighbourhoods, the
-"Shared room" in this neighbourhood is just a little bit more expensive than
-the ones in Popincourt and Reuilly.
-
-## How many guests do different room types accommodate?
-
-<p align="center">
-  <img alt="How many guests do different room types accommodate"
-  src="{{ site.baseurl }}/images/20190813-accommodate-roomtype.png"/>
-</p>
-
-According to this graph, the majority of location is able to accommodate 2 or 4
-people, most of the locations are "Entire home/apt". If you are one or two
-people, you might also find a "Private room" instead of an "Entire home/apt".
-Overall, almost locations are "Entire home/apt".
-
-## Seniority of hosts
-
-<p align="center">
-  <img alt="Hosts seniority"
-  src="{{ site.baseurl }}/images/20190813-host-seniority.png"/>
-</p>
-
-Almost 40% of hosts have joined into Airbnb since 4 or 5 years, about 3% of
-hosts are regular hosts who have joined Airbnb since at least 8 years.
-
 ## Locations in Time Series
 
-<iframe
-  src="{{ site.baseurl }}/images/20190813-location-history.html"
-  style="display: block; width:100%; height: 370px">
-  <p>Locations in Time Series</p>
-</iframe>
+<p align="center">
+  <img src="{{ site.baseurl }}/images/20190813-location-history.gif"
+       style="max-width: 350px"
+       alt="Locations in Time Series">
+</p>
 
 ## Location amount in time series
 
@@ -163,11 +123,11 @@ reflects the season.
 
 ## Average location price in different neighbourhood
 
-<iframe
-  src="{{ site.baseurl }}/images/20190813-neighbourhood-locations-price-history.html"
-  style="display: block; width:100%; height: 370px">
-  <p>Average location price in different neighbourhood</p>
-</iframe>
+<p align="center">
+  <img src="{{ site.baseurl }}/images/20190813-neighbourhood-locations-price-history.gif"
+       style="max-width: 350px"
+       alt="Average location price in different neighbourhood">
+</p>
 
 Globally, locations' average price does not change that much. Except for the
 locations at Elysée, Temple and Opéra, whose price increase 53%, 35% and 26%,
