@@ -2,7 +2,7 @@
 layout:             post
 title:              "Airbnb Paris Analysis"
 date:               "2019-08-13 20:58:54 +0200"
-last_modified_at:   2019-08-15 22:08:21 +0200
+last_modified_at:   2019-08-15 23:47:53 +0200
 comments:           true
 excerpt:            >
     Paris is the capital and most populous city of France, and it also attracts
@@ -88,8 +88,8 @@ real estate for renting is less than other quarters.
 </p>
 
 It's a pity that we don't know the area for each location, we cannot calculate
-the price for each m2. However, we calculate the average price for each room
-type in different neighbourhood.
+the price for each m2. However, we calculate the average price for different
+neighbourhood.
 
 The top 3 neighbourhood are Elysée (240 euros), Palais-Bourbon (182 euros) and
 Louvre (178 euros), the flop 3 neighbourhood are Ménilmontant, Buttes-Chaumont
