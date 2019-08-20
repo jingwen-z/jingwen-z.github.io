@@ -38,16 +38,13 @@ warehouse's purchase price, the store's margin is the difference between
 store's turnover excluding tax and store's purchase price. For the products
 bought directly from supplier, the margin is only the difference between
 store's turnover excluding tax and store's purchase price.
-
 - Margin rate: For the products stoken in warehouse, the warehouse's margin
 rate is the ratio of warehouse's margin value and warehouse's selling price,
 the store's margin rate is the ratio of store's margin value and store's
 turnover excluding tax.
-
 - Transaction amount
 - Quote-part in terms of volume / turnover / transaction amount
 - Evolution of volume / turnover / margin / margin rate / transaction amount
-
 
 ## Performance of products
 For the performance of products, some points are the same as stores' KPIs.
@@ -59,24 +56,18 @@ For the performance of products, some points are the same as stores' KPIs.
 - Transaction amount
 - Quote-part in terms of volume / turnover / transaction amount
 - Evolution of volume / turnover / margin / margin rate / transaction amount
-
 - Weekly sales: for discovering the day when the products are more sold than
 other days, during the weekday or weekend ?
-
 - Hourly sales: for discovering the hour when the products are more sold than
 other hours, during the breakfast, lunch or dinner ?
-
 - Sales of nomenclature in terms of universe, group, sub-group, etc.
 - Baskets' average in terms of volume / turnover / transaction number
 - Association analysis: for analysing which products are always sold together
-
 - Product amount that ordered from warehouse: this KPI allows us to compare
 it to sold volume, to judge if the ordered amount is reasonable.
-
 - Analysis with weather
 
 ## Profile of loyal clients
-
 - Sold volume
 - Turnover
 - Transaction amount
@@ -87,6 +78,7 @@ it to sold volume, to judge if the ordered amount is reasonable.
 - Weekly / Monthly new loyal clients' amount
 
 ## Case studies
+(_All sensitive data in this part is either simulated or hidden by mosaic._)
 
 ### Reporting merchandise
 
