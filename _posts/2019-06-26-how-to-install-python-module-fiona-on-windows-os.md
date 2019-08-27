@@ -2,7 +2,7 @@
 layout:             post
 title:              "How to install python module fiona on Windows OS ?"
 date:               "2019-06-26 20:41:26 +0200"
-last_modified_at:   2019-07-23 21:21:08 +0200
+last_modified_at:   2019-08-27 23:01:05 +0200
 comments:           true
 excerpt:            >
     In this blog, I talk about the requirements and the steps for installing module
@@ -13,7 +13,7 @@ img_height:         853
 ---
 
 <p align="center">
-  <img alt="Ensemble music"
+  <img alt="Map"
   src="{{ site.baseurl }}/images/20190626-map.png"/>
 </p>
 

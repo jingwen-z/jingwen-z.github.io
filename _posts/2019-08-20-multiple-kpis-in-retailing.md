@@ -1,16 +1,17 @@
 ---
-layout:      post
-title:       "Multiple KPIs in retailing"
-date:        "2019-08-20 21:07:54 +0200"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Multiple KPIs in retailing"
+date:               "2019-08-20 21:07:54 +0200"
+last_modified_at:   2019-08-27 21:42:40 +0200
+comments:           true
+excerpt:            >
     As a Data Scientist in retailing, I have a deeper understanding on
     operating of retailing and support business teams with multiple KPIs. In
     this blog, I will talk about KPIs in retailing with the following points of
     view...
-img_url:     /images/20190820-supermarket.jpg
-img_width:   1280
-img_height:  853
+img_url:            /images/20190820-supermarket.jpg
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -24,6 +25,7 @@ talk about KPIs in retailing with the following points of view:
 - Performance of stores
 - Performance of products
 - Profile of clients
+- Case studies
 
 ## Performance of stores
 Some of the following are pretty easy to understand, I'll still list all KPIs,
