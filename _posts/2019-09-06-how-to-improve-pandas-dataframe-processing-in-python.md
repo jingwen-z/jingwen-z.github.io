@@ -53,7 +53,7 @@ As shown below, the processing speeds up nearly 20%!
 
 <p align="center">
   <img alt="COALESCE result"
-  src="{{ site.baseurl }}/images/20190906-coalesce-result.png"/>
+  src="{{ site.baseurl }}/images/20190906-coalesce-result.PNG"/>
 </p>
 
 ## Apply `map` or `lambda` rather than for loop
