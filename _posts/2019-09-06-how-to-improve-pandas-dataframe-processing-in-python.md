@@ -103,7 +103,6 @@ In this blog I talked about how to improve `pandas` dataframe processing with
 the SQL query, `map` or `lambda` and some other quick tips. Hope it's useful
 for you.
 
-
 ## Reference
 - "Does pandas iterrows have performance issues?", _stackoverflow.com_. [Online]. Available: [https://stackoverflow.com/questions/24870953/does-pandas-iterrows-have-performance-issues/24871316#24871316][r1]
 - Free-Photos, "Bike riding fast moving bike motion", _pixabay.com_. [Online]. Available: [https://pixabay.com/photos/bike-riding-fast-moving-bike-motion-1149234/][image]
