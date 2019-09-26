@@ -1,14 +1,15 @@
 ---
-layout:      post
-title:       "How to improve pandas dataframe processing in Python"
-date:        "2019-09-06 20:57:01 +0200"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "How to improve pandas dataframe processing performance in Python"
+date:               "2019-09-06 20:57:01 +0200"
+last_modified_at:   2019-09-29 10:57:42 +0200
+comments:           true
+excerpt:            >
     In this blog I talked about how to improve `pandas` dataframe processing
     with the SQL query, `map` or `lambda` and some other quick tips. 
-img_url:     /images/20190906-speed.jpg
-img_width:   1280
-img_height:  853
+img_url:            /images/20190906-speed.jpg
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
