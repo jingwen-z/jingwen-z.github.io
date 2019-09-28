@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% assign pageYear = page.date | date: "%Y" | plus: 0 %}
+{% assign pageMonth = page.date | date: "%m" | plus: 0 %}
+
+<div class="posts">
+  {% for post in site.posts %}
+    {% assign postYear = post.date | date: "%Y" | plus: 0 %}
+    {% assign postMonth = post.date | date: "%m" | plus: 0 %}
+
+    {% if postYear == pageYear %}
+      {% if postMonth == pageMonth %}
+
+        <article class="post">
+
+          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+          <img src="{{ post.img_url }}" alt="Image">
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </article>
+      {% endif %}
+    {% endif %}  
+  {% endfor %}
+</div>
+
