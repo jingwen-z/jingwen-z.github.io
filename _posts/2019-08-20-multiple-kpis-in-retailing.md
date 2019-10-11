@@ -2,7 +2,7 @@
 layout:             post
 title:              "Multiple KPIs in retailing"
 date:               "2019-08-20 21:07:54 +0200"
-last_modified_at:   2019-08-27 21:42:40 +0200
+last_modified_at:   2019-10-11 22:15:01 +0200
 comments:           true
 excerpt:            >
     As a Data Scientist in retailing, I have a deeper understanding on
@@ -78,6 +78,22 @@ it to sold volume, to judge if the ordered amount is reasonable.
 - Activated loyal clients amount
 - Purchase frequency
 - Weekly / Monthly new loyal clients' amount
+
+## Potential issues
+### Cannot find warehouse's purchase price for fresh orange juice squeezed
+We have a juicer in our stores, the employees put fresh orange in the machine,
+and clients can use the bottle which is just next to the machine to contain the
+juice. To calculate its margin, we need to extract its selling price excluding
+tax, warehouse's selling price and warehouse's purchase price. Unfortunately,
+we cannot find the warehouse's purchase price for the product. What should we
+do ? Since the fresh orange juice squeezed is consisted of kilograms of orange
+and one bottle, we need to use warehouse's purchase price of 1 kilogram's
+orange multiply by kilograms amount, plus one bottle's warehouse's purchase
+price. For example, if a 33-cl bottle of fresh orange juice squeezed need 2 kg
+of orange, the warehouse's purchase price of orange is 1 euro per kg, the
+warehouse's purchase price of a 33-cl bottle is 0.5 euro, so the warehouse's
+purchase price of one 33-cl bottle of fresh orange juice squeezed is equal to
+1 euro * 2 kg + 0.5 euro = 2.5 euros.
 
 ## Case studies
 (_All sensitive data in this part is either simulated or hidden by mosaic._)
