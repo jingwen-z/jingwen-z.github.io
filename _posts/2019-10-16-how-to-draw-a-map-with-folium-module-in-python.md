@@ -1,16 +1,16 @@
 ---
-layout:      post
-title:       "How to draw a map with folium module in Python?"
-date:        "2019-10-16 19:05:34 +0200"
-comments:    true
-excerpt:     >
-    A map can clearly present information in terms of geography. Recently I
-    learnt how to realize geovisualisation with "folium" module in Python. In
-    this blog, I will talk about how to draw a map like the one above with
-    "folium" with the following points
-img_url:     /images/20191016-dvf-idf.png
-img_width:   1280
-img_height:  853
+layout:             post
+title:              "How to draw a map with folium module in Python?"
+date:               "2019-10-16 19:05:34 +0200"
+last_modified_at:   2019-10-18 18:30:42 +0200
+comments:           true
+excerpt:            >
+    This blog talks about how to draw a map with python module "folium", like
+    how to draw a basic map, to create a colormap, to add different layers and
+    to customize title and legends.
+img_url:            /images/20191016-dvf-idf.png
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -19,17 +19,17 @@ img_height:  853
 </p>
 
 A map can clearly present information in terms of geography. Recently I learnt
-how to realize geovisualisation with `folium` module in Python. In this blog, I
+how to realize geovisualization with `folium` module in Python. In this blog, I
 will talk about how to draw a map like the one above with `folium` with the
 following points:
 - Data preparation
-- Geovisualisation with `folium`
+- Geovisualization with `folium`
 
 ## Data preparation
 ### Import datasets
-The map above describes the appartments' average price per m2 of Ile-de-France,
-between 2014 and 2018. Before all, we need sold appartments' data for
-calculating average price per m2, need communities' and departments' polygen
+The map above describes the apartments' average price per m2 of Ile-de-France,
+between 2014 and 2018. Before all, we need sold apartments' data for
+calculating average price per m2, need communities' and departments' polygon
 data to draw areas on the map.
 
 {% highlight python %}
@@ -43,11 +43,12 @@ communesidf_geo = geopandas.read_file('Communes_IDF.json', driver='JSON')
   src="{{ site.baseurl }}/images/20191016-vf-info.png"/>
 </p>
 
-In the sold appartments' dataset, we have data like "id_mutation" to identify
-the trasaction, "nature_mutation" specifies the sale's nature, "valeur_fonciere"
-presents the sold price, "code_commune", "nom_commune" and "code_departement"
-specify the communities and departments, "surface_reelle_bati" describes the
-real surface area, longitude and latitude can help us to determine the location.
+In the sold apartments' dataset, we have data like "id_mutation" to identify
+the transaction, "nature_mutation" specifies the sale's nature,
+"valeur_fonciere" presents the sold price, "code_commune", "nom_commune" and
+"code_departement" specify the communities and departments,
+"surface_reelle_bati" describes the real surface area, longitude and latitude
+can help us to determine the location.
 
 <p align="center">
   <img alt="dept_geo.head()"
@@ -59,10 +60,11 @@ real surface area, longitude and latitude can help us to determine the location.
   src="{{ site.baseurl }}/images/20191016-communegeo-info.png"/>
 </p>
 
-For the polygen data, we only need "code" and "C_INSEE" to match the department
-and community and "geometry" to draw polygens.
+For the polygon data, we only need "code" and "C_INSEE" to match the department
+and community and "geometry" to draw polygons.
 
-Now we have sold appartments and polygen data for the whole France, what we
+### Data cleaning
+Now we have sold apartments and polygon data for the whole France, what we
 need is the data that relative to Ile-de-France:
 
 {% highlight python %}
@@ -100,8 +102,8 @@ by dividing "valeur_fonciere" by "surface_terrain"; otherwise, divide
 "valeur_fonciere" by "surface_reelle_bati".
 
 The last 2 steps before drawing the map are transform the coordinates to
-geopoints with `shapely.geometry.Point()`, match each polygen to community,
-and find out which communities(polygens) have no sales.
+geopoints with `shapely.geometry.Point()`, match each polygon to community,
+and find out which communities(polygons) have no sales.
 
 {% highlight python %}
 vf['points'] = vf.apply(lambda row: Point(row['longitude'],
@@ -123,11 +125,11 @@ price per m2 for each community.
   src="{{ site.baseurl }}/images/20191016-vf-zero.png"/>
 </p>
 
-## Geovisualisation with "folium"
-In this part, I'll complet the map with the following elements:
+## Geovisualization with "folium"
+In this part, I'll complete the map with the following elements:
 - Colormap
 - Map base
-- Sold appartments layer
+- Sold apartments layer
 - No-sales layer
 - Department layer
 - Add customized title and legend
@@ -168,7 +170,7 @@ vf_map = folium.Map(location=[48.856614, 2.3522219],
   src="{{ site.baseurl }}/images/20191016-base-map.png"/>
 </p>
 
-### Sold appartments layer
+### Sold apartments layer
 
 {% highlight python %}
 style_function = lambda x: {
@@ -306,7 +308,7 @@ following codes:
 
 ## Reference
 - DGFiP, "Demandes de valeurs foncières géolocalisées", _data.gouv.fr_. [Online]. Available: [https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/][datasource1]
-- Grégoire David, "Departments polygen", _github.com_. [Online]. Available: [https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson][datasource2]
+- Grégoire David, "Departments polygon", _github.com_. [Online]. Available: [https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson][datasource2]
 - APUR, "APUR : Communes - Ile de France", _data.gouv.fr_. [Online]. Available: [https://www.data.gouv.fr/fr/datasets/apur-communes-ile-de-france/][datasource3]
 - branca, "branca.colormap", _python-visualization.github.io/branca_. [Online]. Available: [https://python-visualization.github.io/branca/colormap.html#][branca.colormap]
 - folium, "Preleminary demo of the pattern plugin for Folium", _nbviewer.jupyter.org_. [Online]. Available: [https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/plugin-patterns.ipynb][plugsin_pattern]
