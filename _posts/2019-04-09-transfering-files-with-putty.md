@@ -2,7 +2,7 @@
 layout:             post
 title:              "Transfering files with Putty"
 date:               "2019-04-09 19:18:27 +0200"
-last_modified_at:   2019-04-10 21:56:03 +0200
+last_modified_at:   2019-12-06 16:58:14 +0100
 comments:           true
 excerpt:            >
     This blog introduces how to use `Putty` to transfer files from Windows OS
@@ -50,7 +50,7 @@ Now, let's start to transfer files to Linux:
 - Open Windows Command Prompt.
 - Type `pscp source_path user_name@host:target_path` at the prompt
 {% highlight bash %}
-pscp ./weekly_report.xlsx xxx@123.456.789.0:/reporting
+pscp weekly_report.xlsx xxx@123.456.789.0:reporting
 {% endhighlight %}
 
 <p align="center">
@@ -74,7 +74,7 @@ Transfering files from Linux OS to Windows OS is similar to the steps above:
 - Open Windows Command Prompt.
 - Type `pscp user_name@host:source_path target_path` at the prompt
 {% highlight bash %}
-pscp xxx@123.456.789.0:/reporting/weekly_report.xlsx ./
+pscp xxx@123.456.789.0:reporting/weekly_report.xlsx ./
 {% endhighlight %}
 
 <p align="center">
