@@ -1,17 +1,19 @@
 ---
-layout:      post
-title:       "Older apartments transactions in Paris"
-date:        "2019-12-17 20:47:40 +0100"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Second-hand apartments transactions in Paris"
+date:               "2019-12-17 20:47:40 +0100"
+last_modified_at:   2019-12-27 21:55:59 +0100
+comments:           true
+excerpt:            >
     Paris is the capital and most populous city of France. Since the 17th
     century, Paris has been one of Europe's major centres of finance, diplomacy,
     commerce, fashion, science, and the arts. All these elements help to bring
     the increasing price of real estate in Paris. In this blog, I'll talk about
-    the older apartments purchases in Paris between January 2014 and June 2019.
-img_url:     /images/20191217-dvf-paris-quartier.png
-img_width:   1280
-img_height:  853
+    the second-hand apartments purchases in Paris between January 2014 and June
+    2019.
+img_url:            /images/20191217-dvf-paris-quartier.png
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -26,9 +28,9 @@ Worldwide Cost of Living Survey in 2018, Paris was the second most expensive
 city in the world, after Singapore, and ahead of Zürich, Hong Kong, Oslo and
 Geneva. Another source ranked Paris as most expensive, on a par with Singapore
 and Hong Kong, in 2018. All these elements help to bring the increasing price
-of real estate in Paris. In this blog, I'll talk about the older apartments
-purchases in Paris between January 2014 and June 2019, with the following
-points:
+of real estate in Paris. In this blog, I'll talk about the second-hand
+apartments purchases in Paris between January 2014 and June 2019, with the
+following points:
 - Data description
 - How large are the apartments?
 - Which is the most expensive district?
@@ -50,10 +52,8 @@ can help us to determine the location.
   src="{{ site.baseurl }}/images/20191217-vf-info.png"/>
 </p>
 
-For this analysis, I only took account of older apartments' transactions with
-positive area in Paris.
-
-
+For this analysis, I only took account of second-hand apartments' transactions
+with positive area in Paris.
 
 ## How large are the apartments?
 
@@ -76,12 +76,12 @@ the details.
   src="{{ site.baseurl }}/images/20191217-unit-price-piece-number.png"/>
 </p>
 
-This graph describes the average price m2 for different number of pieces older
-apartments in Paris, between January 2014 and June 2019. According to the
-second graph, we find that although T2 and T3 are much larger than T1, their
-unit prices are 5.5% and 4% lower than the unit price of T1. Moreover, average
-area of T4 is three times larger than T1, its unit price is only 1% more
-expensive than T1; similar for other piece-nomber apartments. Why are T1
+This graph describes the average price m2 for different number of pieces
+second-hand apartments in Paris, between January 2014 and June 2019. According
+to the second graph, we find that although T2 and T3 are much larger than T1,
+their unit prices are 5.5% and 4% lower than the unit price of T1. Moreover,
+average area of T4 is three times larger than T1, its unit price is only 1%
+more expensive than T1; similar for other piece-nomber apartments. Why are T1
 apartments that expensive per m2? That might be because there are many students
 or young workers in Paris, they need to rent a big enough apartment, which
 makes investors to invest T1 apartments, it also leads to higher demands on T1.
@@ -94,10 +94,10 @@ makes investors to invest T1 apartments, it also leads to higher demands on T1.
   src="{{ site.baseurl }}/images/20191217-district-price.png"/>
 </p>
 
-According to this map, we observe that the older apartments in districts 1, 4,
-6, 7 and 8 are much more expensive than other districts, their average unit
-price is at least 11000 euros; on the contrary, the older apartments in
-districts 13, 18, 19 and 20 are much cheaper than others, their average unit
+According to this map, we observe that the second-hand apartments in districts
+1, 4, 6, 7 and 8 are much more expensive than other districts, their average
+unit price is at least 11000 euros; on the contrary, the second-hand apartments
+in districts 13, 18, 19 and 20 are much cheaper than others, their average unit
 price is less than 8k euros. This might be caused by geographical positions,
 number of pieces, apartment's state, performance of energy, public security,
 etc. The public transport in the city center is more than other areas, there
@@ -125,7 +125,7 @@ price of these districts is more expensive.
 </p>
 
 According to this group of scatter plots, we can simply get the relationship
-between older apartments' price and their area. Each point stands for one
+between second-hand apartments' price and their area. Each point stands for one
 transaction, the plots on the red dash line mean that the price per m2 of these
 transactions is 10k euros. The points above the dash line indicate their unit
 price are greater than 10k euros; otherwise, it's less than 10k euros per m2.
@@ -146,18 +146,18 @@ m2.
   src="{{ site.baseurl }}/images/20191217-transaction-amount-unit-price-1419.png"/>
 </p>
 
-This graph describes older apartments' transaction amount and average price per
-m2 of Paris, between January 2014 and June 2019. The orange line shows the
-monthly average price per m2, the blue area displays the monthly transaction
-amount. During 5.5 years, the average price per m2 increases 32%(10.3/7.8 - 1),
-especially from the year 2017, the average price per m2 increases nearly 20%
-(10.3/8.6 - 1). Moreover, the transaction amount arrives the yearly lowest
-point in August, which might because people go on holiday at that time; on the
-contrary, the transactions in July or September are higher than other months,
-which means that people usually sign the purchase promise in May or July
-(supposed that we have 2 months for negotiating the credit between the purchase
-promise and purchase agreement), so that they can sign the agreement before
-their holiday or before the school opening.
+This graph describes second-hand apartments' transaction amount and average
+price per m2 of Paris, between January 2014 and June 2019. The orange line
+shows the monthly average price per m2, the blue area displays the monthly
+transaction amount. During 5.5 years, the average price per m2 increases 32%
+(10.3/7.8 - 1), especially from the year 2017, the average price per m2
+increases nearly 20% (10.3/8.6 - 1). Moreover, the transaction amount arrives
+the yearly lowest point in August, which might because people go on holiday at
+that time; on the contrary, the transactions in July or September are higher
+than other months, which means that people usually sign the purchase promise in
+May or July (supposed that we have 2 months for negotiating the credit between
+the purchase promise and purchase agreement), so that they can sign the
+agreement before their holiday or before the school opening.
 
 <p align="center">
   <img alt="Time series decomposition"
@@ -186,12 +186,12 @@ increases for the prediction because of the initial uncertainty and it grows
 over time. This can be impacted by policy, social elements, or some others.
 
 ## Conclusion
-According to this analysis, we find that among all transactions of older
-apartments in Paris, T1 and T2 hold 60% transactions. The older apartments in
-districts 1, 4, 6, 7 and 8 are much more expensive than other districts, their
-average unit price is at least 11000 euros; on the contrary, the older
-apartments in districts 13, 18, 19 and 20 are much cheaper than others, their
-average unit price is less than 8k euros.
+According to this analysis, we find that among all transactions of second-hand
+apartments in Paris, T1 and T2 hold 60% transactions. The second-hand
+apartments in districts 1, 4, 6, 7 and 8 are much more expensive than other
+districts, their average unit price is at least 11000 euros; on the contrary,
+the second-hand apartments in districts 13, 18, 19 and 20 are much cheaper than
+others, their average unit price is less than 8k euros.
 
 You can find all codes in [this notebook][notebook].
 
