@@ -1,8 +1,8 @@
 ---
 layout:             post
-title:              "How to improve pandas dataframe processing performance in Python"
+title:              "How to improve pandas dataframe processing performance in Python?"
 date:               "2019-09-06 20:57:01 +0200"
-last_modified_at:   2019-09-29 10:57:42 +0200
+last_modified_at:   2020-01-06 22:18:10 +0100
 comments:           true
 excerpt:            >
     In this blog I talked about how to improve `pandas` dataframe processing
