@@ -1,15 +1,16 @@
 ---
-layout:      post
-title:       "How to get places' reviews on Google Maps by Place API?"
-date:        "2020-01-03 21:21:35 +0100"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "How to get places' reviews on Google Maps by Place API?"
+date:               "2020-01-03 21:21:35 +0100"
+last_modified_at:   2020-01-12 16:13:30 +0100
+comments:           true
+excerpt:            >
     This blog talks about how to get places' reviews on Google Maps by
     different API and Python scripts, like Google Geocoding API, Place Search
     API and Place Details API.
-img_url:     /images/20200103-google-maps-reviews.jpg
-img_width:   1280
-img_height:  853
+img_url:            /images/20200103-google-maps-reviews.jpg
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -256,12 +257,15 @@ def get_place_details(place_id, api_key):
     # Read response as json
     resp_details = response.json()
     # status=OK: the place was successfully detected and at least one result was returned
+    for i in range(len(resp_details)):
+
     if resp_details['status'] == 'OK':
-        review_rating = resp_details['result']['reviews'][i]['rating']
-        review_time = resp_details['result']['reviews'][i]['relative_time_description']
-        review_timestamp = resp_details['result']['reviews'][i]['time']
-        review_text = resp_details['result']['reviews'][i]['text']
-        return [place_id, review_rating, review_time, review_timestamp, review_text]
+        for i in range(len(resp_details)):
+            review_rating = resp_details['result']['reviews'][i]['rating']
+            review_time = resp_details['result']['reviews'][i]['relative_time_description']
+            review_timestamp = resp_details['result']['reviews'][i]['time']
+            review_text = resp_details['result']['reviews'][i]['text']
+            return [place_id, review_rating, review_time, review_timestamp, review_text]
     else:
         print('Failed to get json response:', resp_details)
         return ['Review is not found', place_id]
