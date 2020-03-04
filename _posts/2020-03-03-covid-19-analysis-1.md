@@ -4,7 +4,10 @@ title:       "COVID-19 analysis (up to 2020-03-02) COVID-19分析（截至2020�
 date:        "2020-03-03 21:16:07 +0100"
 comments:    true
 excerpt:     >
-    This blog ...
+    The outbreak of the COVID-19 has been more than two months. The initial
+    outbreak has greatly affected China and other Asian countries, and it has
+    spread in other countries around the world in the past two weeks. In this
+    blog, I will analyse COVID-19 outbreak with multiple points.
 img_url:     /images/20200303-china-map.png
 img_width:   1280
 img_height:  853
@@ -104,7 +107,7 @@ and confirmed many cases at the same time.
 自2020年1月31日起，中国新冠肺炎病例治愈数量和治愈率超过死亡数量和死亡率，且差值越来越大，目前
 已达到55.93%。这和医务人员的不懈努力是分不开的。
 
-Up to 24:00 Beijing time on 2/3/2020, China has accumulatively cured 44843 cases
+Up to 24:00 Beijing time on 2/3/2020, China has cumulatively cured 44843 cases
 of coronavirus and accumulated 2915 cases of deaths. Since January 31, 2020, the
 number of cured cases and the cure rate of new cases of pneumonia in China have
 exceeded the number of deaths and death rates, and the difference is getting
@@ -359,6 +362,12 @@ Note: The above figure only labels the cities (districts) whose cumulative confi
   src="{{ site.baseurl }}/images/20200302_huadong.png"/>
 </p>
 
+<p align="center">
+  <img src="{{ site.baseurl }}/images/20200302-huadong-ts.gif"
+       style="max-width: 720px"
+       alt="20200303-huadong-time series">
+</p>
+
 截至北京时间2020年3月2日24时，华东地区累计确诊病例平均值为56例，累计确诊病例最多的城市（区）为浙江省-温州，共有504例。在累计确诊病例大于该地区平均值且死亡率为正的城市（区）中，山东省-泰安死亡率最高，为5.71%。
 
 需要特别注意的是山东省济宁和任城监狱确诊病例于2020年2月21日的大幅度增长来自于任城监狱确诊了200例病例。
@@ -443,11 +452,11 @@ The countries in the figure above are listed in descending order of the number o
   src="{{ site.baseurl }}/images/20200302_countries_top12_evol.png"/>
 </p>
 
-对于累计确诊病例最多的10个国家，上图描绘了确诊病例环比增长的百分比最高的12个国家。其中韩国2月20日新增确诊病例较前一日增加例3倍多，意大利2月21日的新增确诊病例较前一日增加了5倍，法国2月27日的新增确诊病例较前一日增加了3倍有余。
+对于累计确诊病例最多的12个国家，上图描绘了各国确诊病例环比增长的百分比。其中韩国2月20日新增确诊病例较前一日增加例3倍多，意大利2月21日的新增确诊病例较前一日增加了5倍，法国2月27日的新增确诊病例较前一日增加了3倍有余。
 
-For the top 10 countries with the highest number of confirmed cases, the chart above describes top 12 countries on increasing percentage of confirmed cases. Among them, the number of newly confirmed cases in South Korea on February 20 increased three times over the previous day, the number of newly confirmed cases in Italy on February 21 increased five times compared to the previous day, and the number of newly confirmed cases in France on February 27 was three times more than the previous day.
+For the top 12 countries with the highest number of confirmed cases, the chart above describes the percentage increase in the number of confirmed cases. Among them, the number of newly confirmed cases in South Korea on February 20 increased three times over the previous day, the number of newly confirmed cases in Italy on February 21 increased five times compared to the previous day, and the number of newly confirmed cases in France on February 27 was three times more than the previous day.
 
-If you are intested in the scipts, please find them [here][notebook].
+If you are interested in the scripts, please find them [here][notebook].
 
 ## Reference
 - Isaac Lin, "DXY-COVID-19-Data", _www.github.com_. [Online]. Available: [https://github.com/BlankerL/DXY-COVID-19-Data][r1]
