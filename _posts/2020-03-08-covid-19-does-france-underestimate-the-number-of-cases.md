@@ -1,15 +1,16 @@
 ---
-layout:      post
-title:       "COVID-19: Does France underestimate the number of cases?"
-date:        "2020-03-08 14:29:48 +0100"
-comments:    true
-excerpt:     >
+layout:             post
+title:              "COVID-19: Does France underestimate the number of cases?"
+date:               "2020-03-08 14:29:48 +0100"
+last_modified_at:   2020-03-09 22:04:55 +0100
+comments:           true
+excerpt:            >
     This blog talks about the actual COVID-19 situation of France, the
     definition of confirmed cases in France and some predictions of confirmed
     cases in France.
-img_url:     /images/20200308-france-prediction.png
-img_width:   1280
-img_height:  853
+img_url:            /images/20200308-france-prediction.png
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -107,7 +108,7 @@ the following week.
   src="{{ site.baseurl }}/images/20200308-france-prediction.png"/>
 </p>
 
-### Method 2: simulating Italy's daily evolution
+### Method 2: simulating with Italy's daily evolution
 You may ask why we simulate Italy's daily evolution for France ? Since actually
 France tests only the people who have been to the risk zone or who have the
 symptom of COVID-19, which risks missing some cases. However, Italy tests all
@@ -133,6 +134,23 @@ below describes the actual cumulative confirmed cases in France (the blue line)
 and the simulation with evolution of Italy (the green dotted line). It's clear
 that the gap is large, so if one day the confirmed cases in France have a great
 increasing, it won't be that surprising.
+
+### Method 3: simulating with Italy's different segment evolution
+This method is similar as the above one, but the difference is the method 2
+simulates Italy's daily evolution, and the method 3 calculates firstly Italy's
+mean evolution for the segments greater than and less than France's cumulative
+confirmed cases, then calculate the ratio and apply on data of France. In my
+case, there are 1009 confirmed count in France; in Italy, the mean value of
+daily evolution for the period less than 1009 cases is around 32%, the mean
+value for the period greater than 1009 cases is around 26%, so the ratio between
+32% and 26% is 1.23. Now we calculate the mean value of daily evolution of
+France, get 17.8%, then we use 0.178/1.23, get 14.5%, which is our predictive
+daily evolution. The result is shown as below:
+
+<p align="center">
+  <img alt="France simulates with Italy avg daily evolution"
+  src="{{ site.baseurl }}/images/20200308-simul2.png"/>
+</p>
 
 ## Easter egg
 
