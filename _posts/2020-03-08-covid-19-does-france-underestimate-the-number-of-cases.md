@@ -108,44 +108,21 @@ the following week.
   src="{{ site.baseurl }}/images/20200308-france-prediction.png"/>
 </p>
 
-### Method 2: simulating with Italy's daily evolution
-You may ask why we simulate Italy's daily evolution for France ? Since actually
-France tests only the people who have been to the risk zone or who have the
-symptom of COVID-19, which risks missing some cases. However, Italy tests all
-people from the epidemic area of northern Italy or who have close contact with
-the diagnosed person, with or without symptoms. Then, I suppose that the gap
-between Italy and France's evolution might be the missing cases of France. Thus,
-for the second approach, I calculated the daily confirmed cases' evolution of
-Italy, and apply it with France's data.
+### Method 2: simulating with Italy's different segment evolution
+You may ask why we simulate Italy's evolution for France ? Since actually France
+tests only the people who have been to the risk zone or who have the symptom of
+COVID-19, which risks missing some cases. However, Italy tests all people from
+the epidemic area of northern Italy or who have close contact with the diagnosed
+person, with or without symptoms.
 
-<p align="center">
-  <img alt="France simulates with Italy daily evolution"
-  src="{{ site.baseurl }}/images/20200308-france-simul-italy.png"/>
-</p>
-
-The plot above describes daily confirmed cases’ evolution of France and Italy.
-On 22, Feb. 2020, Italy government imposed the quarantine of 11 municipalities
-in Northern Italy, since the incubation is around 14 days, although Italy's
-daily evolution decreases, it hasn't been 14 days, so to be observed. On 29 Feb.
-2020, France passed to "Stade 2", which means several contaminants are
-detected "in several points of the national territory, clusters of cases"; and
-there is no obvious changes in terms of daily confirmed evolution. The plot
-below describes the actual cumulative confirmed cases in France (the blue line)
-and the simulation with evolution of Italy (the green dotted line). It's clear
-that the gap is large, so if one day the confirmed cases in France have a great
-increasing, it won't be that surprising.
-
-### Method 3: simulating with Italy's different segment evolution
-This method is similar as the above one, but the difference is the method 2
-simulates Italy's daily evolution, and the method 3 calculates firstly Italy's
-mean evolution for the segments greater than and less than France's cumulative
-confirmed cases, then calculate the ratio and apply on data of France. In my
-case, there are 1009 confirmed count in France; in Italy, the mean value of
-daily evolution for the period less than 1009 cases is around 32%, the mean
-value for the period greater than 1009 cases is around 26%, so the ratio between
-32% and 26% is 1.23. Now we calculate the mean value of daily evolution of
-France, get 17.8%, then we use 0.178/1.23, get 14.5%, which is our predictive
-daily evolution. The result is shown as below:
+This method calculates firstly Italy's mean evolution for the segments greater
+than and less than France's cumulative confirmed cases, then calculate the ratio
+and apply on data of France. In my case, there are 1009 confirmed count in
+France; in Italy, the mean value of daily evolution for the period less than 1009
+cases is around 32%, the mean value for the period greater than 1009 cases is
+around 26%, so the ratio between 32% and 26% is 1.23. Now we calculate the mean
+value of daily evolution of France, get 17.8%, then we use 0.178/1.23, get 14.5%,
+which is our predictive daily evolution. The result is shown as below:
 
 <p align="center">
   <img alt="France simulates with Italy avg daily evolution"
