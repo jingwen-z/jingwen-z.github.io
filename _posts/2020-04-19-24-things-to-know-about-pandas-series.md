@@ -349,7 +349,9 @@ Return elements chosen from x or y depending on condition.<br>
 </p>
 
 ## Reference
-- Mikkekylilt, "snake python animal reptile snakes", _pixabay.com_. [Online]. Available: [https://pixabay.com/photos/snake-python-animal-reptile-snakes-4201970/][img]
+- Wes McKinney. 2017. Python for Data Analysis DATA WRANGLING WITH PANDAS, NUMPY, AND IPYTHON
+- Mikkekylilt, "snake python animal reptile snakes", _pixabay.com_. [Online].
+Available: [https://pixabay.com/photos/snake-python-animal-reptile-snakes-4201970/][img]
 
 [pandas-Series]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html
 [series-reindex]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.reindex.html
