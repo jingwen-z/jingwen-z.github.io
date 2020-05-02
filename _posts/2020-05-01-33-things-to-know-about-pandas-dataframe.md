@@ -1,10 +1,10 @@
 ---
 layout:      post
-title:       "32 things to know about pandas dataframe"
+title:       "33 things to know about pandas dataframe"
 date:        "2020-05-01 10:37:21 +0200"
 comments:    true
 excerpt:     >
-    32 things to know about pandas dataframe
+    33 things to know about pandas dataframe
 img_url:     /images/20200501-python.jpg
 img_width:   1280
 img_height:  853
@@ -206,7 +206,21 @@ derived from a function, a `dict` or a Series.
   src="{{ site.baseurl }}/images/20200501-sort-values.png"/>
 </p>
 
-## 15. ranking
+## 15. reset_index
+Reset the index of the DataFrame, and use the default one instead. If the
+DataFrame has a MultiIndex, this method can remove one or more levels.
+
+[`DataFrame.reset_index(self, level= None, drop=False, inplace=False, col_level=0, col_fill='')`][reset-index]
+
+`drop`: bool, default False. Do not try to insert index into dataframe columns.
+This resets the index to the default integer index.
+
+<p align="center">
+  <img alt="20200501-reset-index"
+  src="{{ site.baseurl }}/images/20200501-reset-index.png"/>
+</p>
+
+## 16. ranking
 [`DataFrame.rank(self, axis=0, method='average', numeric_only=None, na_option='keep', ascending=True, pct=False)`][rank]
 
 <p align="center">
@@ -214,7 +228,7 @@ derived from a function, a `dict` or a Series.
   src="{{ site.baseurl }}/images/20200501-ranking.png"/>
 </p>
 
-## 16. .isin()
+## 17. .isin()
 Return whether each element in the DataFrame is contained in values.
 
 <p align="center">
@@ -222,7 +236,7 @@ Return whether each element in the DataFrame is contained in values.
   src="{{ site.baseurl }}/images/20200501-isin.png"/>
 </p>
 
-## 17. is_unique
+## 18. is_unique
 Return boolean if values in the object are unique.
 
 <p align="center">
@@ -230,14 +244,14 @@ Return boolean if values in the object are unique.
   src="{{ site.baseurl }}/images/20200501-is-unique.png"/>
 </p>
 
-## 18. Computing descriptive statistics
+## 19. Computing descriptive statistics
 
 <p align="center">
   <img alt="20200501-stat"
   src="{{ site.baseurl }}/images/20200501-stat.png"/>
 </p>
 
-## 19. Importing a dataframe
+## 20. Importing a dataframe
 Read a comma-separated values (csv) file into DataFrame:<br>
 [`pandas.read_csv()`][pandas-read-csv]
 
@@ -252,7 +266,7 @@ Read an Excel file into a pandas DataFrame:<br>
   src="{{ site.baseurl }}/images/20200501-read-csv.png"/>
 </p>
 
-## 20. Exporting a dataframe
+## 21. Exporting a dataframe
 Write object to a comma-separated values (csv) file:<br>
 [`DataFrame.to_csv()`][to-csv]
 
@@ -264,7 +278,7 @@ Write object to an Excel sheet:<br>
   src="{{ site.baseurl }}/images/20200501-export-df.png"/>
 </p>
 
-## 21. dropna & fillna
+## 22. dropna & fillna
 Remove missing values.<br>
 [`DataFrame.dropna(self, axis=0, how='any', thresh=None, subset=None, inplace=False)`][drop-na]
 
@@ -291,7 +305,7 @@ Method to use for filling holes in reindexed Series.
   src="{{ site.baseurl }}/images/20200501-fillna.png"/>
 </p>
 
-## 22. Removing duplicates
+## 23. Removing duplicates
 Return boolean Series denoting duplicate rows.<br>
 [`DataFrame.duplicated(self, subset=None, keep='first')`][df-duplicated]
 
@@ -308,7 +322,7 @@ Determines which duplicates (if any) to mark.
   src="{{ site.baseurl }}/images/20200501-duplicates.png"/>
 </p>
 
-## 23. Dummy variables
+## 24. Dummy variables
 Convert categorical variable into dummy/indicator variables.<br>
 [`pandas.get_dummies(data, prefix=None, prefix_sep='_', dummy_na=False, columns=None, sparse=False, drop_first=False, dtype=None)`][get-dummies]
 
@@ -317,7 +331,7 @@ Convert categorical variable into dummy/indicator variables.<br>
   src="{{ site.baseurl }}/images/20200501-dummy.png"/>
 </p>
 
-## 24. merge
+## 25. merge
 Merge DataFrame or named Series objects with a database-style join.<br>
 The join is done on columns or indexes. If joining columns on columns, the
 DataFrame indexes will be ignored. Otherwise if joining indexes on indexes or
@@ -349,7 +363,7 @@ the join key. Same caveats as left_index.
   src="{{ site.baseurl }}/images/20200501-merge2.png"/>
 </p>
 
-## 25. join
+## 26. join
 Join columns with other DataFrame either on index or on a key column.
 Efficiently join multiple DataFrame objects by index at once by passing a list.
 
@@ -360,7 +374,7 @@ Efficiently join multiple DataFrame objects by index at once by passing a list.
   src="{{ site.baseurl }}/images/20200501-join.png"/>
 </p>
 
-## 26. concat
+## 27. concat
 The `concat` function in pandas provides a consistent way to address each of
 these concerns.
 
@@ -376,7 +390,7 @@ these concerns.
   src="{{ site.baseurl }}/images/20200501-concat-2.png"/>
 </p>
 
-## 27. pivot
+## 28. pivot
 Reshape data (produce a “pivot” table) based on column values. Uses unique
 values from specified index / columns to form axes of the resulting
 DataFrame. This function does not support data aggregation, multiple values
@@ -389,7 +403,7 @@ will result in a MultiIndex in the columns.
   src="{{ site.baseurl }}/images/20200501-pivot.png"/>
 </p>
 
-## 28. melt
+## 29. melt
 Unpivot a DataFrame from wide to long format, optionally leaving identifiers
 set.
 
@@ -400,7 +414,7 @@ set.
   src="{{ site.baseurl }}/images/20200501-melt.png"/>
 </p>
 
-## 29. groupby
+## 30. groupby
 A `groupby` operation involves some combination of splitting the object,
 applying a function, and combining the results. This can be used to group large
 amounts of data and compute operations on these groups.
@@ -419,7 +433,7 @@ amounts of data and compute operations on these groups.
   src="{{ site.baseurl }}/images/20200501-groupby-2.png"/>
 </p>
 
-## 30. aggregation
+## 31. aggregation
 Generate descriptive statistics.
 Descriptive statistics include those that summarize the central tendency,
 dispersion and shape of a dataset’s distribution, excluding NaN values.
@@ -457,7 +471,7 @@ tuple will be used as the dataframe column names:
   src="{{ site.baseurl }}/images/20200501-agg-3.png"/>
 </p>
 
-## 31. crosstab
+## 32. crosstab
 Compute a simple cross tabulation of two (or more) factors. By default computes
 a frequency table of the factors unless an array of values and an aggregation
 function are passed.
@@ -469,7 +483,7 @@ function are passed.
   src="{{ site.baseurl }}/images/20200501-crosstab.png"/>
 </p>
 
-## 32. pivot_table
+## 33. pivot_table
 Create a spreadsheet-style pivot table as a DataFrame.
 The levels in the pivot table will be stored in MultiIndex objects (hierarchical
 indexes) on the index and columns of the result DataFrame.
@@ -492,6 +506,7 @@ indexes) on the index and columns of the result DataFrame.
 [df-drop]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html
 [df-sort-index]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_index.html
 [df-sort-values]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html
+[reset-index]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.reset_index.html?highlight=reset_index#pandas.DataFrame.reset_index
 [rank]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rank.html
 [pandas-read-csv]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
 [pandas-read-table]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_table.html
