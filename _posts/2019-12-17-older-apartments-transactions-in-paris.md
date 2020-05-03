@@ -3,6 +3,7 @@ layout:             post
 title:              "Second-hand apartments transactions in Paris"
 date:               "2019-12-17 20:47:40 +0100"
 last_modified_at:   2019-12-27 21:55:59 +0100
+tags:               [analysis, real estate, visualisation, geovisualisation]
 comments:           true
 excerpt:            >
     Paris is the capital and most populous city of France. Since the 17th

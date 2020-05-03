@@ -1,7 +1,9 @@
 ---
-layout: post
-title: Measuring model performance or error
-comments: true
+layout:             post
+title:              Measuring model performance or error
+date:               2016-08-14 23:32:43 +0200
+tags:               [Machine Learning]
+comments:           true
 ---
 
 How to find out whether the Machine Learning I did is good or not? (i.e. the

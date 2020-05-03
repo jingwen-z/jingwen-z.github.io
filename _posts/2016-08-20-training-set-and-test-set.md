@@ -1,6 +1,8 @@
 ---
-layout: post
-title: Training set and Test set
+layout:             post
+title:              Training set and Test set
+date:               2016-08-20 23:32:43 +0200
+tags:               [Machine Learning, R]
 comments: true
 ---
 

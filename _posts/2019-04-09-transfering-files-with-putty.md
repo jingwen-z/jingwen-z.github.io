@@ -3,6 +3,7 @@ layout:             post
 title:              "Transfering files with Putty"
 date:               "2019-04-09 19:18:27 +0200"
 last_modified_at:   2019-12-06 16:58:14 +0100
+tags:               [putty, Windows OS, Linux]
 comments:           true
 excerpt:            >
     This blog introduces how to use `Putty` to transfer files from Windows OS

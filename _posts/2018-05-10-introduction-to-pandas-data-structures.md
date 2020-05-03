@@ -2,6 +2,7 @@
 layout:      post
 title:       "Introduction to pandas data structures"
 date:        "2018-05-10 14:49:48 +0200"
+tags:        [python3, pandas, data structure]
 comments:    true
 ---
 

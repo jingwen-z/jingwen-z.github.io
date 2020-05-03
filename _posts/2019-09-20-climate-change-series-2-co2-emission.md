@@ -2,6 +2,7 @@
 layout:      post
 title:       "Climate change Series 2: CO2 emission"
 date:        "2019-09-20 15:06:24 +0200"
+tags:        [analysis, climate, visualisation, geovisualisation]
 comments:    true
 excerpt:     >
     A greenhouse gas (sometimes abbreviated GHG) is a gas that absorbs and

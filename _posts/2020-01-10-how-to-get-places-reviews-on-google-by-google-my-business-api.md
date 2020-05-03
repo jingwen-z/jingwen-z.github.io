@@ -2,6 +2,7 @@
 layout:      post
 title:       "How to get places' reviews on Google by Google My Business API?"
 date:        "2020-01-10 21:40:42 +0100"
+tags:        [python3, API]
 comments:    true
 excerpt:     >
     In the last blog, I talked about how to get places' reviews on Google by

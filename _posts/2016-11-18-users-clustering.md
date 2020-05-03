@@ -1,7 +1,9 @@
 ---
-layout: post
-title: Analysis of internauts' behavior
-comments: true
+layout:             post
+title:              Analysis of internauts' behavior
+date:               2016-11-18 23:32:43 +0200
+tags:               [analysis]
+comments:           true
 ---
 
 Since the internship will be finished in a few days, I'm seeking employment and

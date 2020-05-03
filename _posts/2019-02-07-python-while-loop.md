@@ -2,6 +2,7 @@
 layout:      post
 title:       "Python: while loop"
 date:        "2019-02-07 03:19:48 +0100"
+tags:        [python3]
 comments:    true
 excerpt:     >
     This blog presents how to acheive a while loop by python. Except for the

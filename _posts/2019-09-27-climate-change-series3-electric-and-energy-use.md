@@ -2,6 +2,7 @@
 layout:      post
 title:       "Climate change Series 3: Electric and energy use"
 date:        "2019-09-27 21:34:05 +0200"
+tags:        [analysis, climate, visualisation, geovisualisation]
 comments:    true
 excerpt:     >
     World energy consumption is the total energy produced and used by the

@@ -2,6 +2,7 @@
 layout:      post
 title:       "How to draw a variety of maps with folium in python?"
 date:        "2019-11-08 20:55:41 +0100"
+tags:        [python3, folium, geovisualisation]
 comments:    true
 excerpt:     >
     This blog talks about how to draw a map with python module "folium", like

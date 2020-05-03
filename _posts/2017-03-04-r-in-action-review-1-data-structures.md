@@ -1,7 +1,9 @@
 ---
-layout: post
-title: R IN ACTION Review 1 - Data structures
-comments: true
+layout:      post
+title:       R IN ACTION Review 1 - Data structures
+date:        2017-03-04 23:32:43 +0200
+tags:        [R, data structure]
+comments:    true
 ---
 
 During these days, I read the book "R IN ACTION" on my way to work and home. In

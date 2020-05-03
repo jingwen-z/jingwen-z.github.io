@@ -2,6 +2,7 @@
 layout:      post
 title:       "Who use Paris' wifi hotspots?"
 date:        "2020-04-16 22:43:56 +0200"
+tags:        [analysis, geovisualisation]
 comments:    true
 excerpt:     >
     This blog talks about the users of Paris' wifi hotspots in terms of user

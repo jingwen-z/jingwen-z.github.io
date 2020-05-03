@@ -3,6 +3,7 @@ layout:             post
 title:              "Python: for loop"
 date:               2019-01-29 22:50:19 +0100
 last_modified_at:   2019-02-07 12:16:44 +0100
+tags:               [python3]
 comments:           true
 excerpt:            >
     This blog presents for loop for multiple data structures, like loop over a

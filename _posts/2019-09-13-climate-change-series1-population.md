@@ -2,6 +2,7 @@
 layout:      post
 title:       "Climate change Series 1: Population"
 date:        "2019-09-13 09:50:17 +0200"
+tags:        [analysis, climate, visualisation, geovisualisation]
 comments:    true
 excerpt:     >
     According to the United States Census Bureau the world's population was

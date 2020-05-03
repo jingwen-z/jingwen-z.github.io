@@ -1,7 +1,9 @@
 ---
-layout: post
-title: Apply Google Analytics to website
-comments: true
+layout:             post
+title:              Apply Google Analytics to website
+date:               2016-10-18 23:32:43 +0200
+tags:               [Google analytics]
+comments:           true
 ---
 
 Nowadays, technique plays an important role in our life, almost all of us search

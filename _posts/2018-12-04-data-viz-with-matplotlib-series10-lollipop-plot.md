@@ -3,6 +3,7 @@ layout:             post
 title:              "Matplotlib Series 10: Lollipop plot"
 date:               2018-12-04 22:27:05 +0100
 last_modified_at:   2019-07-19 21:56:54 +0200
+tags:               [matplotlib, visualisation]
 comments:           true
 excerpt:            >
     This blog specifies how to create/custom basic lollipop plot and vertical

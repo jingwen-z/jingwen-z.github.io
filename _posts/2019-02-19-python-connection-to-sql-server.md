@@ -2,6 +2,7 @@
 layout:      post
 title:       "Python: Connection to SQL Server from Windows"
 date:        "2019-02-19 20:50:46 +0100"
+tags:        [python3, SQL Server, Windows OS]
 comments:    true
 excerpt:     >
     This blog will talk about how to connect to SQL Server, connect to a

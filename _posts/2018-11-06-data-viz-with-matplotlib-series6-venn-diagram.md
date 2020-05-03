@@ -3,6 +3,7 @@ layout:             post
 title:              "Matplotlib Series 6: Venn diagram"
 date:               2018-11-06 22:22:34 +0100
 last_modified_at:   2019-07-01 23:12:59 +0200
+tags:               [matplotlib, visualisation]
 comments:           true
 excerpt:            >
     This blog specifies how to create venn diagram with matplotlib in Python,

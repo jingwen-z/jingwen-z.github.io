@@ -3,6 +3,7 @@ layout:             post
 title:              "R: Working with GeoJSON data and resolve 'Error in ogrInfo'"
 date:               2017-04-06 23:32:43 +0200
 last_modified_at:   2018-08-05 10:06:02 +0200
+tags:               [R]
 comments:           true
 excerpt:            >
     This blog presents how to work with GeoJSON data in R, and proposes the

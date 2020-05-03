@@ -124,8 +124,12 @@ img {
 }
 
 .date {
-  font-style: italic;
   color: $gray;
+}
+
+span.tag.code {
+  color: #595959;
+  background-color: #f0f0f0;
 }
 
 // Specify the color of the selection

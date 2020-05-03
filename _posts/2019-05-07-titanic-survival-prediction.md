@@ -3,6 +3,7 @@ layout:             post
 title:              "Titanic: survival prediction"
 date:               "2019-05-07 21:25:17 +0200"
 last_modified_at:   2019-05-22 23:12:30 +0200
+tags:               [kaggle, classification, analysis, visualisation]
 comments:           true
 excerpt:            >
     In this challenge, we need to analyse what sorts of people were likely to

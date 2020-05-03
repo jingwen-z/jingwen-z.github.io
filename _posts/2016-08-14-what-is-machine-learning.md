@@ -1,7 +1,9 @@
 ---
-layout: post
-title: What is Machine Learning?
-comments: true
+layout:             post
+title:              What is Machine Learning?
+date:               2016-08-14 23:32:43 +0200
+tags:               [Machine Learning]
+comments:           true
 ---
 
 Machine learning explores the study and construction of algorithms that can

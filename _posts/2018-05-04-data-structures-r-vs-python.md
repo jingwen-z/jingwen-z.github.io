@@ -2,6 +2,7 @@
 layout:      post
 title:       "Data structures - R vs Python"
 date:        "2018-05-04 21:48:06 +0200"
+tags:        [python3, R]
 comments:    true
 ---
 I've learnt python since the beginning of this year. In this blog, I'll compare

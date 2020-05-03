@@ -2,6 +2,7 @@
 layout:      post
 title:       "COVID-19 analysis (up to 2020-03-02) COVID-19分析（截至2020年3月2日）"
 date:        "2020-03-03 21:16:07 +0100"
+tags:        [analysis, COVID-19, visualisation, geovisualisation]
 comments:    true
 excerpt:     >
     The outbreak of the COVID-19 has been more than two months. The initial

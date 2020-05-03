@@ -2,6 +2,7 @@
 layout:      post
 title:       "Introduction to matplotlib.pyplot"
 date:        "2018-05-26 09:06:12 +0200"
+tags:        [matplotlib, visualisation]
 comments:    true
 ---
 

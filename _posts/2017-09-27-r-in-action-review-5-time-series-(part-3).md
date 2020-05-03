@@ -2,6 +2,7 @@
 layout:      post
 title:       "R IN ACTION Review 5 - Time series (Part 3)"
 date:        "2017-09-27 22:15:39 +0200"
+tags:        [R, Time series]
 comments:    true
 ---
 

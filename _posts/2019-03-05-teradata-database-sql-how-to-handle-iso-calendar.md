@@ -2,6 +2,7 @@
 layout:      post
 title:       "Teradata SQL: How to handle ISO calendar?"
 date:        "2019-03-05 21:11:01 +0100"
+tags:        [SQL, Teradata, ISO]
 comments:    true
 excerpt:     >
     This blog introduces how to handle ISO calendar with Teradata Database SQL

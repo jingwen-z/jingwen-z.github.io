@@ -1,7 +1,9 @@
 ---
-layout: post
-title: Impact of different elements on compensation
-comments: true
+layout:             post
+title:              Impact of different elements on compensation
+date:               2016-11-11 23:32:43 +0200
+tags:               [analysis]
+comments:           true
 ---
 
 For the end of master, I’m doing my internship at [French Development Agency]

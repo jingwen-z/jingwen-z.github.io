@@ -2,6 +2,7 @@
 layout:      post
 title:       "Array manipulation - R vs Python"
 date:        "2018-05-10 14:19:19 +0200"
+tags:        [python3, R, data structure]
 comments:    true
 ---
 

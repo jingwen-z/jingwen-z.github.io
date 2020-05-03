@@ -3,6 +3,7 @@ layout:             post
 title:              "Matplotlib Series 8: Radar chart"
 date:               "2018-11-21 21:27:34 +0100"
 last_modified_at:   2019-07-19 21:55:37 +0200
+tags:               [matplotlib, visualisation]
 comments:           true
 excerpt:            >
     This blog specifies how to create simple radar charts, multiple area charts

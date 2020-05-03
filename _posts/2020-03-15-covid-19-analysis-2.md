@@ -2,6 +2,7 @@
 layout:      post
 title:       "COVID-19 worldwide analysis (up to 2020-03-14)"
 date:        "2020-03-15 19:17:18 +0100"
+tags:        [analysis, COVID-19, visualisation]
 comments:    true
 excerpt:     >
     Since mid February, the situation of COVID-19 in China begins to be stable,

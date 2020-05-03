@@ -2,6 +2,7 @@
 layout:      post
 title:       "24 things to know about pandas series"
 date:        "2020-04-19 16:44:58 +0200"
+tags:        [python3, pandas, series]
 comments:    true
 excerpt:     >
     24 things to know about pandas series
