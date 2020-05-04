@@ -2,7 +2,7 @@
 layout:      post
 title:       "33 things to know about pandas dataframe"
 date:        "2020-05-01 10:37:21 +0200"
-tags:        [python3, pandas, dataframe]
+tags:        [python3, pandas, data structure, dataframe]
 comments:    true
 excerpt:     >
     33 things to know about pandas dataframe

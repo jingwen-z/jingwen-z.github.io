@@ -9,6 +9,9 @@ excerpt:     >
     usually create static plots with it. But how if we create animated graph to
     present the evolution in terms of time? In this blog, I will show you how
     to create animated graphs with matplotlib.
+img_url:     /images/20200329-img.jpg
+img_width:   1280
+img_height:  853
 ---
 
 `Matplotlib` is a well-known python library used for data visualisation, we
@@ -207,9 +210,12 @@ If you are interested in the scripts, please find them [here][notebook].
 - Viviane, "How to Create Animated Graphs in Python", _towardsdatascience.com_. [Online]. Available: [https://towardsdatascience.com/how-to-create-animated-graphs-in-python-bb619cc2dec1][r1]
 - Louis Tiao, "Save Matplotlib Animations as GIFs", _louistiao.me_. [Online]. Available: [http://louistiao.me/posts/notebooks/save-matplotlib-animations-as-gifs/][r2]
 - Thomas Kühn, "Animate points with labels with matplotlib", _stackoverflow.com_. [Online]. Available: [https://stackoverflow.com/questions/18351932/animate-points-with-labels-with-matplotlib?noredirect=1&lq=1][r3]
+- jarmoluk, "innovation business information", _pixabay.com_. [Online]. Available:
+[https://pixabay.com/photos/innovation-business-information-561388/][img]
 
 [r1]: https://towardsdatascience.com/how-to-create-animated-graphs-in-python-bb619cc2dec1
 [r2]: http://louistiao.me/posts/notebooks/save-matplotlib-animations-as-gifs/
 [r3]: https://stackoverflow.com/questions/18351932/animate-points-with-labels-with-matplotlib?noredirect=1&lq=1
 [funcAni]: https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.animation.FuncAnimation.html#matplotlib.animation.FuncAnimation
 [notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/animated_graphs.ipynb
+[img]: https://pixabay.com/photos/innovation-business-information-561388/

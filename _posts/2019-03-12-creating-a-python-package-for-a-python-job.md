@@ -3,7 +3,7 @@ layout:             post
 title:              "Creating a python package for a python job"
 date:               2019-03-12 21:33:16 +0100
 last_modified_at:   2019-03-13 22:26:29 +0100
-tags:               [python, python module]
+tags:               [python3, python module]
 comments:           true
 excerpt:            >
     This blog introduces how we create a python package for a python job with
