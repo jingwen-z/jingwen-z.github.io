@@ -2,7 +2,7 @@
 layout:      post
 title:       "House Prices: Regression Techniques"
 date:        "2019-08-06 21:12:47 +0200"
-tags:        [Machine Learning, kaggle, regression, analysis, real estate, visualisation]
+tags:        [Machine-Learning, kaggle, regression, analysis, real-estate, visualisation]
 comments:    true
 excerpt:     >
     In this challenge, we need to predict the sales price for each house.

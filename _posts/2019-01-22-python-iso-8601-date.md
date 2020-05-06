@@ -3,7 +3,7 @@ layout:             post
 title:              "Python: ISO 8601 date"
 date:               2019-01-22 21:59:44 +0100"
 last_modified_at:   2019-01-30 23:16:07 +0100
-tags:               [python3, ISO]
+tags:               [python3, ISO, datetime]
 comments:           true
 excerpt:            >
     This blog talks about applying ISO 8601 date by python such as ISO year,

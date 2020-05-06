@@ -2,7 +2,7 @@
 layout:      post
 title:       "Association analysis - Apriori algorithm"
 date:        "2017-10-20 23:16:08 +0200"
-tags:        [Machine Learning, Association analysis]
+tags:        [Machine-Learning, Association-analysis]
 comments:    true
 ---
 

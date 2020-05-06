@@ -3,7 +3,7 @@ layout:             post
 title:              "Airbnb Paris Analysis"
 date:               "2019-08-13 20:58:54 +0200"
 last_modified_at:   2019-08-15 23:47:53 +0200
-tags:               [analysis, real estate, visualisation, geovisualisation]
+tags:               [analysis, real-estate, visualisation, geovisualisation]
 comments:           true
 excerpt:            >
     Paris is the capital and most populous city of France, and it also attracts

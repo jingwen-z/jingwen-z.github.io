@@ -2,7 +2,7 @@
 layout:      post
 title:       "Resume of Decision Trees with Scikit-Learn"
 date:        "2019-04-30 20:47:23 +0200"
-tags:        [Machine Learning, Decision Trees, Scikit-Learn, review]
+tags:        [Machine-Learning, Decision-Trees, Scikit-Learn, review]
 comments:    true
 excerpt:     >
     This blog introduces how CART algorithm works for classification and
