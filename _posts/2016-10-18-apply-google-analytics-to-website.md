@@ -2,7 +2,7 @@
 layout:             post
 title:              Apply Google Analytics to website
 date:               2016-10-18 23:32:43 +0200
-tags:               [Google analytics]
+tags:               [Google-analytics]
 comments:           true
 ---
 
