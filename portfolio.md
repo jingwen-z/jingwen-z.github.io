@@ -1,7 +1,12 @@
 ---
 layout: page
+title: Portfolio
 permalink: /portfolio/
 ---
+
+As a data scientist, I love sharing what I learnt with writing blogs. In my
+portfolio, you will discover the topics that I am engaged in during working and
+personal time.
 
 # Analysis
 
