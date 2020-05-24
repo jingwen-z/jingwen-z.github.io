@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     This blog talks about how to manipulate data with "pyspark" module in a
     Docker container.
-img_url:     /images/20200523-docker-pyspark
+img_url:     /images/20200523-docker-pyspark.png
 img_width:   1280
 img_height:  853
 ---
