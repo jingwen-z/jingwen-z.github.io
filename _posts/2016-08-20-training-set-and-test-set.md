@@ -4,6 +4,9 @@ title:              Training set and Test set
 date:               2016-08-20 23:32:43 +0200
 tags:               [Machine-Learning, R]
 comments: true
+img_url:     /images/20160820-header-img.jpg
+img_width:   1280
+img_height:  853
 ---
 
 As I mentioned in my blog "[What is Machine Learning][blog-1]", Machine Learning
@@ -103,5 +106,9 @@ for (i in 1:6) {
 }
 {% endhighlight %}
 
+## Reference
+- Kendal, "person holding amber glass bottles", _unsplash.com_. [Online]. Available: [https://unsplash.com/photos/L4iKccAChOc][img]
+
 [blog-1]:https://jingwen-z.github.io/what-is-machine-learning
 [DataCamp]:https://www.datacamp.com/home
+[img]: https://unsplash.com/photos/L4iKccAChOc

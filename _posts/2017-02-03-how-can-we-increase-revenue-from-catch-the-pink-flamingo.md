@@ -9,7 +9,15 @@ excerpt:            >
     This blog presents the Coursera project "catch the pink flamingo". Here,
     you can find the data model design like classification, clustering, and the
     histogram made by splunk.
+img_url:     /images/20170203-flamingo.jpg
+img_width:   640
+img_height:  426
 ---
+
+<p align="center">
+  <img alt="flamingo"
+  src="{{ site.baseurl }}/images/20170203-flamingo.jpg"/>
+</p>
 
 During last December and January, I participated Big Data courses on the website
 [Coursera][Coursera], like what I mentioned in my [previous blog][previous blog].
@@ -378,6 +386,9 @@ follows.
 Thanks to the courses, I had a better understanding of Big Data, and got my
 dream job, Data Scientist. Well, a new journey will begin!
 
+## Reference
+- Yucel Moran, "flock of flamingo on body of water", _unsplash.com_. [Online]. Available: [https://unsplash.com/photos/AiEL7IwzzMg][img]
+
 [Coursera]: https://www.coursera.org
 [previous blog]: https://jingwen-z.github.io/introduction-bd-week1-2
 [Splunk]: https://www.splunk.com
@@ -386,3 +397,4 @@ dream job, Data Scientist. Well, a new journey will begin!
 [slides]: https://github.com/jingwen-z/bigdata-ucsd/blob/master/capstone-project/How%20can%20we%20increase%20revenue%20%20from%20Catch%20the%20Pink%20Flamingo%3F.pdf
 [technical appendix]: https://github.com/jingwen-z/bigdata-ucsd/blob/master/capstone-project/Technical%20Appendix.pdf
 [GitHub]: https://github.com/jingwen-z/bigdata-ucsd/tree/master/capstone-project
+[img]: https://unsplash.com/photos/AiEL7IwzzMg
