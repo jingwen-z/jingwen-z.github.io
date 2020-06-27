@@ -7,14 +7,14 @@ comments:    true
 excerpt:     >
     I extract one video's (Mojito Jay Chou) comments on YouTube with YouTube
     Data API and in this blog I will analyse them in different views.
-img_url:     /images/
+img_url:     /images/20200628-mojito.jpg
 img_width:   1280
 img_height:  853
 ---
 
 <p align="center">
-  <img alt="20200601-mail"
-  src="{{ site.baseurl }}/images/20200601-mail.png"/>
+  <img alt="20200628-mojito"
+  src="{{ site.baseurl }}/images/20200628-mojito.jpg"/>
 </p>
 
 Jay Chou is a Taiwanese musician, singer, songwriter, record producer, film
