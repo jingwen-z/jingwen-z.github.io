@@ -36,7 +36,7 @@ with the following points:
 ## Daily comments count
 
 <p align="center">
-  <img alt=daily-comments-count"
+  <img alt="daily-comments-count"
   src="{{ site.baseurl }}/images/20200628-daily-comments-count.png"/>
 </p>
 
@@ -50,7 +50,7 @@ count decreases with time, but around 100 comments per day.
 ## Comments during 24 hours after the release
 
 <p align="center">
-  <img alt=first24h-comments-count"
+  <img alt="first24h-comments-count"
   src="{{ site.baseurl }}/images/20200628-first24h-comments-count.png"/>
 </p>
 
@@ -63,7 +63,7 @@ minutes after 18h on 11 June 2020.
 ## Word clouds
 
 <p align="center">
-  <img alt=comments-all"
+  <img alt="comments-all"
   src="{{ site.baseurl }}/images/20200628-comments-all.png"/>
 </p>
 
@@ -75,7 +75,7 @@ created word clouds with `wordcloud` module.
 ### Comments in Chinese
 
 <p align="center">
-  <img alt=comments-all"
+  <img alt="comments-cn"
   src="{{ site.baseurl }}/images/20200628-comments-cn.png"/>
 </p>
 
@@ -86,7 +86,7 @@ song "Mi Die Xiang"(Rosemary).
 ### Comments in non-Chinese
 
 <p align="center">
-  <img alt=comments-all"
+  <img alt="comments-not-cn"
   src="{{ site.baseurl }}/images/20200628-comments-not-cn.png"/>
 </p>
 
