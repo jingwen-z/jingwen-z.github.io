@@ -78,7 +78,7 @@ Return the column labels of the DataFrame.
 </p>
 
 ## 5. Rename column
-[`DataFrame.rename(self, mapper=None, index=None, columns=None, axis=None, copy=True, inplace=False, level=None, errors='ignore')`]
+[`DataFrame.rename(self, mapper=None, index=None, columns=None, axis=None, copy=True, inplace=False, level=None, errors='ignore')`][df-rename]
 
 <p align="center">
   <img alt="20200501-rename-cols"
@@ -530,3 +530,4 @@ indexes) on the index and columns of the result DataFrame.
 [crosstab]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.crosstab.html
 [pivot-table]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html
 [img]: https://pixabay.com/photos/snake-python-ball-python-419043/
+[df-rename]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rename.html
