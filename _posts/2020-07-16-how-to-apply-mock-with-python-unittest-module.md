@@ -664,4 +664,3 @@ According to this blog, now you can:
 [r3]: https://www.youtube.com/watch?v=WFRljVPHrkE&t=345s
 [r4]: https://en.wikipedia.org/wiki/Mock_object
 [r5]: https://bs-uploads.toptal.io/blackfish-uploads/blog/article/content/cover_image_file/cover_image/17606/cover-0402-an-introduction-to-mocking-in-python-Waldek_Newsletter-fdc7cce1eda95aee17e25b769a2bd183.png
-
