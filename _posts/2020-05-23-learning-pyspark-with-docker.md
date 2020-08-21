@@ -1,15 +1,16 @@
 ---
-layout:      post
-title:       "Learning pyspark with Docker"
-date:        "2020-05-23 16:44:45 +0200"
-tags:        [python3, pyspark, Spark, Docker]
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Learning pyspark with Docker"
+date:               "2020-05-23 16:44:45 +0200"
+last_modified_at:   2020-08-21 22:31:25 +0200
+tags:               [python3, pyspark, Spark, Docker]
+comments:           true
+excerpt:            >
     This blog talks about how to manipulate data with "pyspark" module in a
     Docker container.
-img_url:     /images/20200523-docker-pyspark.png
-img_width:   1280
-img_height:  853
+img_url:            /images/20200523-docker-pyspark.png
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -54,7 +55,7 @@ Docker image, since it contains:
 - Pre-installed versions of `pyspark`, pandas, matplotlib, scipy, seaborn, and scikit-learn
 
 {% highlight bash %}
-docker run -it -p 8888:8888 -v $PWD:/home/work jupyter/pyspark-notebook
+docker run -it -p 8888:8888 -v $PWD:/home/jovyan/work jupyter/pyspark-notebook
 {% endhighlight %}
 
 - `-it`: run an image interactively
