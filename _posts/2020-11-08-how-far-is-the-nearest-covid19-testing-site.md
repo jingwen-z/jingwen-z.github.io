@@ -195,7 +195,7 @@ sites_map.get_root().add_child(macro2)
   src="{{ site.baseurl }}/images/20201108-nearest-covid19-testing-site-distance.png"/>
 </p>
 
-If you are interested in detailed python codes behind the graph,[here][notebook]
+If you are interested in detailed python codes behind the graph, [here][notebook]
 you are :)
 
 ## Reference
