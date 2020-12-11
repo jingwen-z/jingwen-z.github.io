@@ -132,13 +132,12 @@ transactions is 10k euros. The points above the dash line indicate their unit
 price are greater than 10k euros; otherwise, it's less than 10k euros per m2.
 
 For the 1st, 2nd and 4th district, almost sold apartments are smaller than 50
-m2, but their price per m2 varies widely to nearly 2 million euros; for the
-8th, 16th and 17th district, almost sold apartments' price also arrive more
-than 2 million euros, but their area varies widely to 200 m2; moreover, there
-are also apartments whose unit price and area don't vary that widely, as in
-13th, 18th, 19th and 20th district, most of the apartments here are smaller
-than 100 m2 and cheaper than 1 million euros, so than less than 10k euros per
-m2.
+m2, but their price varies widely to nearly 2 million euros; for the 8th, 16th
+and 17th district, almost sold apartments' price also arrive more than 2 million
+euros, but their area varies widely to 200 m2; moreover, there are also
+apartments whose unit price and area don't vary that widely, as in 13th, 18th,
+19th and 20th district, most of the apartments here are smaller than 100 m2 and
+cheaper than 1 million euros, so than less than 10k euros per m2.
 
 ## Price evolution in terms of timing?
 
