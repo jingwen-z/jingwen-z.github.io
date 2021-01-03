@@ -1,19 +1,20 @@
 ---
-layout:      post
-title:       "Second-hand apartments transactions in Paris (01/2014 - 06/2020)"
-date:        "2021-01-02 22:20:57 +0100"
-tags:        [analysis, real-estate, visualisation, geovisualisation]
-comments:    true
-excerpt:     >
+layout:             post
+title:              "Second-hand apartments transactions in Paris (01/2014 - 06/2020)"
+date:               "2021-01-02 22:20:57 +0100"
+last_modified_at:   2021-01-03 18:52:53 +0100
+tags:               [analysis, real-estate, visualisation, geovisualisation]
+comments:           true
+excerpt:            >
     Paris is the capital and most populous city of France. Since the 17th
-    century, Paris has been one of Europe's major centres of finance, diplomacy,
+    century, Paris has been one of Europe's major centers of finance, diplomacy,
     commerce, fashion, science, and the arts. All these elements help to bring
     the increasing price of real estate in Paris. In this blog, I'll talk about
     the second-hand apartments purchases in Paris between January 2014 and June
     2020.
-img_url:     /images/20210102-dvf-paris-quartier.png
-img_width:   1280
-img_height:  853
+img_url:            /images/20210102-dvf-paris-quartier.png
+img_width:          1280
+img_height:         853
 ---
 
 <p align="center">
@@ -22,15 +23,15 @@ img_height:  853
 </p>
 
 Paris is the capital and most populous city of France. Since the 17th century,
-Paris has been one of Europe's major centres of finance, diplomacy, commerce,
+Paris has been one of Europe's major centers of finance, diplomacy, commerce,
 fashion, science, and the arts. According to the Economist Intelligence Unit
 Worldwide Cost of Living Survey in 2018, Paris was the second most expensive
 city in the world, after Singapore, and ahead of Zürich, Hong Kong, Oslo and
-Geneva. Another source ranked Paris as most expensive, on a par with Singapore
-and Hong Kong, in 2018. All these elements help to bring the increasing price
-of real estate in Paris. In this blog, I'll talk about the second-hand
-apartments purchases in Paris between January 2014 and June 2020, with the
-following points:
+Geneva. Another source ranked Paris as the most expensive, on a par with
+Singapore and Hong Kong, in 2018. All these elements help to bring the
+increasing price of real estate in Paris. In this blog, I'll talk about the
+second-hand apartments purchases in Paris between January 2014 and June 2020,
+with the following points:
 - Data description
 - How large are the apartments?
 - Which is the most expensive district?
@@ -53,7 +54,7 @@ and latitude can help us to determine the location.
 </p>
 
 For this analysis, I only took account of second-hand apartments' transactions
-with positive area in Paris.
+with a positive area in Paris.
 
 ## How large are the apartments?
 
@@ -62,12 +63,12 @@ with positive area in Paris.
   src="{{ site.baseurl }}/images/20210102-quotepart-piece-number.png"/>
 </p>
 
-I classed older apartments into 5 groups in terms of piece's number: T1, which
-means one-room apartment with around 23 m2; T2, which means two-room apartment
-with around 40 m2; T3 presents three-room apartment around 63 m2; T4 are
-four-room apartments nearly 93 m2; T5 are five-room apartments with larger area
-about 147 m2. This donut chart describes the quote-part of different pieces'
-apartment among the transactions. T1 and T2 hold 60% transactions, 22%
+I classed second-hand apartments into 5 groups in terms of piece's number: T1,
+which means one-room apartment with around 23 m2; T2, which means two-room
+apartment with around 40 m2; T3 presents three-room apartment around 63 m2; T4
+are four-room apartments nearly 93 m2; T5 are five-room apartments with a larger
+area of about 147 m2. This donut chart describes the quote-part of different
+pieces' apartment among the transactions. T1 and T2 hold 60% transactions, 22%
 transactions sold T3 apartments, other purchases are for larger apartments.
 Let's go further on the details.
 
@@ -76,15 +77,15 @@ Let's go further on the details.
   src="{{ site.baseurl }}/images/20210102-unit-price-piece-number.png"/>
 </p>
 
-This graph describes the average price m2 for different nomber of piece
+This graph describes the average price m2 for the different number of piece
 second-hand apartments in Paris, between January 2014 and June 2020. According
 to the second graph, we find that although T2 and T3 are much larger than T1,
 their unit prices are 5.3% and 4.7% lower than the unit price of T1. Moreover,
-average area of T4 is three times larger than T1, its unit price is only 4% more
-expensive than T1; similar for other piece-nomber apartments. Why are T1
+the average area of T4 is three times larger than T1, its unit price is only 4%
+more expensive than T1; similar for other piece-number apartments. Why are T1
 apartments that expensive per m2? That might be because there are many students
 or young workers in Paris, they need to rent a big enough apartment, which makes
-investors to invest T1 apartments, it also leads to higher demands on T1.
+investors invest in T1 apartments, which also leads to higher demands on T1.
 
 ## Which is the most expensive district?
 
@@ -94,28 +95,28 @@ investors to invest T1 apartments, it also leads to higher demands on T1.
 </p>
 
 According to this map, we observe that the second-hand apartments in districts
-1, 4, 6, 7 are much more expensive that other districts, their average unit
+1, 4, 6, 7 are much more expensive than other districts, their average unit
 price is at least 12000 euros; on the contrary, the second-hand apartments in
-districts 13, 19 and 20 are much cheaper than others, their average unit price
-is less than 8500 euros. This might be caused by geographical positions, number
-of piece, apartment's state, performance of energy, public security, etc. The
-public transport in the city center is more than other areas, there are also
-lots of shopping centers or tourist spots, which attracts a great deal of
-people, so that make the city center to be more valuable.
+districts 13, 19, and 20 are much cheaper than others, their average unit price
+is less than 8500 euros. This might be caused by geographical positions, the
+number of pieces, the apartment's state, the performance of energy, public
+security, etc. The public transport in the city center is more than in other
+areas, there are also lots of shopping centers or tourist spots, which attracts
+a great deal of people, so that makes the city center to be more valuable.
 
 Furthermore, according to the stacked bar plot below, it’s obvious that there
 are much more transactions in the 16th district than other areas, nearly 50%
-sold apartment are 2-room or 3-room apartments, and the transaction amount of
+sold apartments are 2-room or 3-room apartments, and the transaction amount of
 T4 is pretty larger than all other districts. Paris 16 is eminently residential,
 as evidenced by its charming buildings with green courtyards and balconies. But
 it is also a Parisian cultural hotspot with many museums and emblematic places
 from both a historical and intellectual point of view. Moreover, it concentrates
-many schools and establishments of choice for the education of children and
+on many schools and establishments of choice for the education of children and
 students. All these might be the reason why the transactions in Paris 16 are
-much more than other distincts. For the districts as 1st, 2nd or 3rd district,
-more than one third of sold apartments are T1 apartments, that might because
-there is not that many apartments at the center of Paris, and its unit price is
-high.
+much more than in other districts. For the districts as 1st, 2nd, or 3rd
+district, more than one-third of sold apartments are T1 apartments, that might
+because there are not that many apartments at the center of Paris, and its unit
+price is high.
 
 <p align="center">
   <img alt="Unit price per piece nb in different districts"
@@ -132,16 +133,17 @@ high.
 According to this group of scatter plots, we can simply get the relationship
 between second-hand apartments’ price and their area. Each point stands for one
 transaction, the plots on the red dash line mean that the price per m2 of these
-transactions is 10k euros. The points above the dash line indicate their unit
-price are greater than 10k euros; otherwise, it’s less than 10k euros per m2.
+transactions is 10k euros. The points above the dashed line indicate their unit
+price is greater than 10k euros; otherwise, it’s less than 10k euros per m2.
 
-For the transactions of downtown area, most of them are smaller than 50 m2, but
-their price varies widely to nearly 2 million euros; on the other hand, for the
-8th, 16th and 17th district, almost sold apartments’ price also arrive more than
-2 million euros, but their area varies widely to 200 m2; moreover, there are
-also apartments whose unit price and area don’t vary that widely, as in 13th,
-18th, 19th and 20th district, most of the apartments here are smaller than 100
-m2 and cheaper than 1 million euros, so than less than 10k euros per m2.
+For the transactions of the downtown area, most of them are smaller than 50 m2,
+but their price varies widely to nearly 2 million euros; on the other hand, for
+the 8th, 16th, and 17th district, almost sold apartments’ price also arrive more
+than 2 million euros, but their area varies widely to 200 m2; moreover, there
+are also apartments whose unit price and area don’t vary that widely, as in
+13th, 18th, 19th, and 20th district, most of the apartments here are smaller
+than 100 m2 and cheaper than 1 million euros, so than less than 10k euros per
+m2.
 
 ## Price evolution in terms of timing?
 
@@ -153,15 +155,15 @@ m2 and cheaper than 1 million euros, so than less than 10k euros per m2.
 This graph describes second-hand apartments’ transaction amount and average
 price per m2 of Paris, between January 2014 and June 2020. The orange line shows
 the monthly average price per m2, the blue area displays the monthly transaction
-amount. During 6.5 years, the average price per m2 increases 28%(11.1/8.7 - 1),
-especially from the year 2017, the average price per m2 increases nearly 31%
-(11.1/8.5 - 1). Moreover, the transaction amount arrives the yearly lowest point
-in August, which might because people go on holiday at that time; on the
-contrary, the transactions in July or September are higher than other months,
-which means that people usually sign the purchase promise in May or July
-(supposed that we have 2 months for negotiating the credit between the purchase
-promise and purchase agreement), so that they can sign the agreement before
-their holiday or before the school opening.
+amount. During 6.5 years, the average price per m2 increases by 28%
+(11.1/8.7 - 1), especially from the year 2017, the average price per m2
+increases by nearly 31% (11.1/8.5 - 1). Moreover, the transaction amount arrives
+at the yearly lowest point in August, which might because people go on holiday
+at that time; on the contrary, the transactions in July or September are higher
+than in other months, which means that people usually sign the purchase promise
+in May or July (supposed that we have 2 months for negotiating the credit
+between the purchase promise and purchase agreement) so that they can sign the
+agreement before their holiday or before the school opening.
 
 <p align="center">
   <img alt="Time series decomposition"
@@ -169,13 +171,13 @@ their holiday or before the school opening.
 </p>
 
 Then I used Time Series `additive` model to decompose data into a trend
-component, a seasonal component and a residual component. The trend component
+component, a seasonal component, and a residual component. The trend component
 captures changes over time, the seasonal component captures cyclical effects
 due to the time of year, the residual component captures the influences not
 described by the trend and seasonal effects. Thanks to this model, we find that
-except for July, there are another transaction peak in January, which we didn’t
+except for July, there is another transaction peak in January, which we didn’t
 find above. In March and November, the transactions arrive at their low points,
-that might be because during the transition period between 2 years, the desire
+that might be because, during the transition period between 2 years, the desire
 for purchasing or selling apartments is not that high.
 
 <p align="center">
