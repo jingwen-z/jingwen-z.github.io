@@ -95,9 +95,6 @@ I also visualise transport lines of many other cities:
 
 If you are curious about the scripts, you will find them [here][notebook].
 
-
-
-
 ## Reference
 - "Gares et stations du réseau ferré d'Île-de-France (par ligne)", _data.iledefrance-mobilites.fr_. [Online]. Available: [https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&basemap=jawg.streets][r1]
 - "Stations de métro (Toulouse)", _data.toulouse-metropole.fr_. [Online]. Available: [https://data.toulouse-metropole.fr/explore/dataset/stations-de-metro/map/?location=16,43.60215,1.44379&basemap=jawg.streets][r2]
