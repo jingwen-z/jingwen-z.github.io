@@ -29,6 +29,7 @@ cat << EOF >> "$filepath"
 layout:      post
 title:       "$title"
 date:        "$(date +"%Y-%m-%d %H:%M:%S %z")"
+tags:        [python3]
 comments:    true
 excerpt:     >
     This blog ...
@@ -36,6 +37,26 @@ img_url:     /images/
 img_width:   1280
 img_height:  853
 ---
+
+<p align="center">
+  <img alt="image"
+  src="{{ site.baseurl }}/images/20210110-image.jpg"/>
+</p>
+
+... In this blog, I'll talk about this with the
+following points:
+
+
+If you are curious about the scripts, you will find them [here][notebook].
+
+
+
+## References
+- "", __. [Online]. Available: [][r]
+
+[notebook]:
+[image]:
+
 EOF
 
 echo "Blog created: $filepath"
