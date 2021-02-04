@@ -24,6 +24,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20210103-paris.jpg
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -220,6 +221,7 @@ You can find all codes in [this notebook][notebook].
 - "Île-de-France", _en.wikipedia.org_. [Online]. Available: [https://en.wikipedia.org/wiki/Paris][wiki-idf]
 - Ehi Aigiomawu, "Analyzing time series data in Pandas", _towardsdatascience.com_. [Online]. Available: [https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621][ts1]
 - Will Koehrsen, "Time Series Analysis in Python: An Introduction", _towardsdatascience.com_. [Online]. Available: [https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a][ts2]
+- Pexels, "Paris gargoyle France architecture", _pixabay.com_. [Online]. Available: [https://pixabay.com/photos/paris-gargoyle-france-architecture-1852928/][backgroud-img]
 
 [datasource1]: https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/
 [datasource2]: https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson
@@ -228,3 +230,4 @@ You can find all codes in [this notebook][notebook].
 [ts1]: https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621
 [ts2]: https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a
 [notebook]: https://github.com/jingwen-z/python-playground/blob/master/analysis/dvf/dvf_IDF_analysis.ipynb
+[backgroud-img]: https://pixabay.com/photos/paris-gargoyle-france-architecture-1852928/
