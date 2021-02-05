@@ -15,6 +15,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20201207-subway.jpg
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -107,6 +108,7 @@ If you are curious about the scripts, you will find them [here][notebook].
 - pyproj4, "pyproj4 / pyproj", _github.com_. [Online]. Available: [https://github.com/pyproj4/pyproj][r8]
 - Turbo87, "Turbo87 / utm", _github.com_. [Online]. Available: [https://github.com/Turbo87/utm][r9]
 - "Universal Transverse Mercator coordinate system", _en.wikipedia.org_. [Online]. Available: [https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#From_UTM_coordinates_(E,_N,_Zone,_Hemi)_to_latitude,_longitude_(%CF%86,_%CE%BB)][r10]
+- SplitShire, "metro subway rails railroad tracks", _pixabay.com_. [Online]. Available: [https://pixabay.com/photos/metro-subway-rails-railroad-tracks-407204/][backgroud-img]
 
 [r1]: https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&basemap=jawg.streets
 [r2]: https://data.toulouse-metropole.fr/explore/dataset/stations-de-metro/map/?location=16,43.60215,1.44379&basemap=jawg.streets
@@ -119,3 +121,4 @@ If you are curious about the scripts, you will find them [here][notebook].
 [r9]: https://github.com/Turbo87/utm
 [r10]: https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#From_UTM_coordinates_(E,_N,_Zone,_Hemi)_to_latitude,_longitude_(%CF%86,_%CE%BB)
 [notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/geovisualization/transport_lines.ipynb
+[backgroud-img]: https://pixabay.com/photos/metro-subway-rails-railroad-tracks-407204/
