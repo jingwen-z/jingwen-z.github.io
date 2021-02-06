@@ -77,7 +77,7 @@ longitude, latitude to native map projection x,y coordinates and vice versa. The
 without needing to re-create them. The goal is to make repeated transforms faster.
 
 ### Method 1
-{% highlight python %}
+```python
 import pyproj
 
 wgs84 = pyproj.Proj(projparams = 'epsg:4326')
@@ -85,7 +85,7 @@ InputGrid = pyproj.Proj(projparams = 'epsg:3857')
 
 x1, y1 = -11705274.6374,4826473.6922
 pyproj.transform(InputGrid, wgs84, x1, y1)
-{% endhighlight %}
+```
 
 We firstly set 2 variables `wgs84` and `InputGrid` by specifying the
 `projparams`, then transfer the point (x1, y1) from the coordinate system
@@ -100,10 +100,10 @@ We got the results but with a warning message as above. After checking the
 [recommendation][pyproj2 to 1], now we have another method.
 
 ### Method 2
-{% highlight python %}
+```python
 transformer = pyproj.Transformer.from_crs("epsg:3857", "epsg:4326")
 transformer.transform(x1, y1)
-{% endhighlight %}
+```
 
 For the second method, we create a transformer from a `pyproj.crs.CRS`, with
 `crs_from="epsg:3857"` and `crs_to="epsg:4326"`, then transform the point
@@ -120,7 +120,7 @@ So how to solve the problem at the beginning of this article?
 Idea is that we go through the projected coordinates, and transform each of them
 to "EPSG:4326".
 
-{% highlight python %}
+```python
 transformer = pyproj.Transformer.from_crs("epsg:3857", "epsg:4326")
 for feature in subway_lines_df['features']:
     if feature['geometry']['type'] == 'LineString':
@@ -140,7 +140,7 @@ for feature in subway_lines_df['features']:
                 lat_grid, lng_grid = coordList
                 # coordList[0],coordList[1] = pyproj.transform(InputGrid, wgs84, lat_grid, lng_grid) # methode 1
                 coordList[0],coordList[1] = transformer.transform(lat_grid, lng_grid) # methode 2
-{% endhighlight %}
+```
 
 If you are curious about the scripts, you will find them [here][notebook].
 

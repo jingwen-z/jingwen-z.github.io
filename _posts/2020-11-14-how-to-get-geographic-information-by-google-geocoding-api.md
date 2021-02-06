@@ -40,9 +40,9 @@ request.
 ### Geocoding
 A Geocoding API request takes the following form:
 
-{% highlight python %}
+```python
 https://maps.googleapis.com/maps/api/geocode/outputFormat?parameters
-{% endhighlight %}
+```
 
 where outputFormat may be either of the following values:
 - `json` (recommended) indicates output in JavaScript Object Notation (JSON)
@@ -58,9 +58,9 @@ purposes of quota management.
 Imagine that we have an address "52 Rue Rambuteau, 75003 Paris" and want its
 coordinates, we can write the request as follows:
 
-{% highlight python %}
+```python
 https://maps.googleapis.com/maps/api/geocode/json?address=52%20Rue%20Rambuteau%2075003%20Paris&key=YOUR_API_KEY
-{% endhighlight %}
+```
 
 then we can get the result in “json” format:
 
@@ -91,9 +91,9 @@ purposes of quota management.
 Imagine that we have a latitude 48.871143, a longitude 2.332060 and want its
 address, we can write the request as follows:
 
-{% highlight python %}
+```python
 https://maps.googleapis.com/maps/api/geocode/json?latlng=48.871143,2.332060&key=YOUR_API_KEY
-{% endhighlight %}
+```
 
 then we can get the result in “json” format:
 
@@ -115,7 +115,7 @@ module and `urlencode` from `urllib.parse`, then you find the python functions
 for the cases above in the following.
 
 ### Geocoding
-{% highlight python %}
+```python
 import requests
 from urllib.parse import urlencode
 
@@ -137,7 +137,7 @@ def get_coordinates(adr, key=key):
     else:
         print('Failed to get json response:', resp_address)
         return ['Latitude is not found', 'Longitude is not found', address]
-{% endhighlight %}
+```
 
 <p align="center">
   <img alt="20201114-get-coordinates-result"
@@ -145,7 +145,7 @@ def get_coordinates(adr, key=key):
 </p>
 
 ### Reverse geocoding
-{% highlight python %}
+```python
 import requests
 from urllib.parse import urlencode
 
@@ -161,7 +161,7 @@ def get_address(lat, lng, key=key):
     else:
         print('Failed to get json response:', resp_coordinates)
         return 'Address is not found'
-{% endhighlight %}
+```
 
 <p align="center">
   <img alt="20201114-get-address-result"

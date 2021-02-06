@@ -34,11 +34,11 @@ and `shapely` modules with the following points:
 First of all, we need sites' location, communities' and departments' polygon
 data to draw areas on the map.
 
-{% highlight python %}
+```python
 sites_df = pd.read_csv('sites-prelevements-grand-public.csv')
 dept_geo = gpd.read_file('departements.geojson', driver='GeoJSON')
 commune_geo = gpd.read_file('communes.geojson', driver='GeoJSON')
-{% endhighlight %}
+```
 
 <p align="center">
   <img alt="20201108-sites-info"
@@ -69,23 +69,22 @@ only calculate the distance between the department's stores and department's
 border; for the department without stores, we will calculate the distance
 between each store and department's border.
 
-{% highlight python %}
+```python
 sites_df['CP'] = sites_df['CP'].apply(lambda x: ('00000%d' % x)[-5:])
 sites_df['code_dept'] = sites_df['cp'].apply(lambda x: x[:2])
 
 sites_geometry = [Point(xy) for xy in zip(sites_df.longitude, sites_df.latitude)]
 crs = {'init': 'epsg:4326'}
 sites_gdf = gpd.GeoDataFrame(sites_df, crs=crs, geometry=sites_geometry)
-
-{% endhighlight %}
+```
 
 Since some communities have the same name in different departments, I also
 created a column to combine them.
 
-{% highlight python %}
+```python
 commune_geo['nom_dept_com'] = commune_geo.apply(lambda row: row['nom_dep'] + ':' + row['nom_com'],
                                                 axis='columns')
-{% endhighlight %}
+```
 
 ### Distance calculating
 To find the shortest distance between a testing site and a community, the idea
@@ -93,7 +92,7 @@ is that creating a dictionary, put "nom_dept_com" as keys and distance as
 values; update distance if the existing one is greater than the new one. For
 calculating the distance, I applied the `boundary.distance()` function.
 
-{% highlight python %}
+```python
 def fill_dist_dict(commune_polygon, site_point, nom_dept_com, dist_dict):
     dist = commune_polygon.boundary.distance(site_point)
     if not nom_dept_com in dist_dict:
@@ -133,19 +132,19 @@ dist_dict = commune_geo.apply(lambda row:calcul_shortest_distance(row['insee_dep
                               axis='columns')
 
 commune_geo['shortest_distance'] = commune_geo['nom_dept_com'].map(dist_dict.iloc[0, 0])
-{% endhighlight %}
+```
 
 Moreover, I applied `convex_hull` to avoid gaps between two polygons.
 
-{% highlight python %}
+```python
 commune_visu_gdf['geometry_hull'] = commune_visu_gdf.geometry.convex_hull
-{% endhighlight %}
+```
 
 ## Geovisualization
 I've talked about the elements of geovisualization in [this blog][geo-elements],
 so I'll simply show my codes here:
 
-{% highlight python %}
+```python
 colormap_commune = cm.StepColormap(
     colors=['#f3fc14', '#f9a43a', '#de3f80',
             '#8800bb', '#060495'],
@@ -189,7 +188,7 @@ macro2._template = Template(template_title)
 
 sites_map.get_root().add_child(macro)
 sites_map.get_root().add_child(macro2)
-{% endhighlight %}
+```
 
 <p align="center">
   <img alt="The nearest COVID-19 testing site distance"

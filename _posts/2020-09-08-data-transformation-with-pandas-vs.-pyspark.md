@@ -36,13 +36,13 @@ transformation with the following points:
 - Creating a pivot table
 
 ## Packages
-{% highlight python %}
+```python
 import pandas as pd
 
 import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
-{% endhighlight %}
+```
 
 ## Data
 <p align="center">

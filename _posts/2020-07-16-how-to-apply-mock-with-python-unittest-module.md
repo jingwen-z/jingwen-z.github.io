@@ -91,39 +91,39 @@ code has done to them.
 
 We can create a `mock` instance as follows:
 
-{% highlight python %}
+```python
 >>> from unittest.mock import Mock
 >>> mock = Mock()
 >>> mock
 <Mock id='4448647264'>
-{% endhighlight %}
+```
 
 Moreover, we can also specify parameters' values like `return_value`:
-{% highlight python %}
+```python
 >>> mock = Mock(return_value=3)
 >>> mock.return_value
 3
 >>> mock()
 3
-{% endhighlight %}
+```
 
 ### Configure the returned value with `return_value`
 We can set `return_value` to configure the value returned by calling the mock:
-{% highlight python %}
+```python
 >>> mock = Mock()
 >>> mock.return_value = 'fish'
 >>> mock()
 'fish'
-{% endhighlight %}
+```
 
 `return_value` can also be set in the constructor:
-{% highlight python %}
+```python
 >>> mock = Mock(return_value=3)
 >>> mock.return_value
 3
 >>> mock()
 3
-{% endhighlight %}
+```
 
 ### Configure the raising exceptions with `side_effect`
 This can either be a function to be called when the mock is called, an iterable
@@ -141,22 +141,22 @@ is identical to the function case).
 
 An example of a mock that raises an exception (to test exception handling of an
 API):
-{% highlight python %}
+```python
 >>> mock = Mock()
 >>> mock.side_effect = Exception('Boom!')
 >>> mock()
 Traceback (most recent call last):
   ...
 Exception: Boom!
-{% endhighlight %}
+```
 
 Using `side_effect` to return a sequence of values:
-{% highlight python %}
+```python
 >>> mock = Mock()
 >>> mock.side_effect = [3, 2, 1]
 >>> mock(), mock(), mock()
 (3, 2, 1)
-{% endhighlight %}
+```
 
 ### Assertions
 Mock instances store data on how you used them. For example, you can see if you
@@ -164,16 +164,16 @@ called a method, how you called it, etc.
 
 #### `assert_called()`
 Assert that the mock was called at least once.
-{% highlight python %}
+```python
 >>> mock = Mock()
 >>> mock.method()
 <Mock name='mock.method()' id='...'>
 >>> mock.method.assert_called()
-{% endhighlight %}
+```
 
 #### `assert_called_once()`
 Assert that the mock was called exactly once.
-{% highlight python %}
+```python
 >>> mock = Mock()
 >>> mock.method()
 <Mock name='mock.method()' id='...'>
@@ -184,22 +184,22 @@ Assert that the mock was called exactly once.
 Traceback (most recent call last):
 ...
 AssertionError: Expected 'method' to have been called once. Called 2 times.
-{% endhighlight %}
+```
 
 #### `assert_called_with(*args, **kwargs)`
 This method is a convenient way of asserting that the last call has been made in
 a particular way:
-{% highlight python %}
+```python
 >>> mock = Mock()
 >>> mock.method(1, 2, 3, test='wow')
 <Mock name='mock.method()' id='...'>
 >>> mock.method.assert_called_with(1, 2, 3, test='wow')
-{% endhighlight %}
+```
 
 #### `assert_called_once_with(*args, **kwargs)`
 Assert that the mock was called exactly once and that that call was with the
 specified arguments.
-{% highlight python %}
+```python
 >>> mock = Mock(return_value=None)
 >>> mock('foo', bar='baz')
 >>> mock.assert_called_once_with('foo', bar='baz')
@@ -208,7 +208,7 @@ specified arguments.
 Traceback (most recent call last):
   ...
 AssertionError: Expected 'mock' to be called once. Called 2 times.
-{% endhighlight %}
+```
 
 ### Calling
 Mock objects are callable. The call will return the value set as the
@@ -222,7 +222,7 @@ Calls made to the object will be recorded in the attributes like `call_args` and
 #### `call_args`
 This is either `None` (if the mock hasn’t been called), or the arguments that
 the mock was last called with.
-{% highlight python %}
+```python
 >>> mock = Mock(return_value=None)
 >>> print(mock.call_args)
 None
@@ -231,14 +231,14 @@ None
 call()
 >>> mock.call_args == ()
 True
-{% endhighlight %}
+```
 
 This will be in the form of a tuple: the first member, which can also be
 accessed through the args property, is any ordered arguments the mock was called
 with (or an empty tuple) and the second member, which can also be accessed
 through the kwargs property, is any keyword arguments (or an empty dictionary).
 
-{% highlight python %}
+```python
 >>> mock(3, 4)
 >>> mock.call_args
 call(3, 4)
@@ -255,7 +255,7 @@ call(3, 4, 5, key='fish', next='w00t!')
 (3, 4, 5)
 >>> mock.call_args.kwargs
 {'key': 'fish', 'next': 'w00t!'}
-{% endhighlight %}
+```
 
 #### `call_args_list`
 This is a list of all the calls made to the mock object in sequence (so the
@@ -263,7 +263,7 @@ length of the list is the number of times it has been called). Before any calls
 have been made it is an empty list. The `call` object can be used for
 conveniently constructing lists of calls to compare with `call_args_list`.
 
-{% highlight python %}
+```python
 >>> mock = Mock(return_value=None)
 >>> mock()
 >>> mock(3, 4)
@@ -273,13 +273,13 @@ conveniently constructing lists of calls to compare with `call_args_list`.
 >>> expected = [(), ((3, 4),), ({'key': 'fish', 'next': 'w00t!'},)]
 >>> mock.call_args_list == expected
 True
-{% endhighlight %}
+```
 
 #### `method_calls`
 As well as tracking calls to themselves, mocks also track calls to methods and
 attributes, and _their_ methods and attributes:
 
-{% highlight python %}
+```python
 >>> mock = Mock()
 >>> mock.method()
 <Mock name='mock.method()' id='...'>
@@ -287,13 +287,13 @@ attributes, and _their_ methods and attributes:
 <Mock name='mock.property.method.attribute()' id='...'>
 >>> mock.method_calls
 [call.method(), call.property.method.attribute()]
-{% endhighlight %}
+```
 
 ### patch()
-{% highlight python %}
+```python
 unittest.mock.patch(target, new=DEFAULT, spec=None, create=False, spec_set=None,
                     autospec=None, new_callable=None, **kwargs)
-{% endhighlight %}
+```
 
 `patch()` acts as a function decorator, class decorator, or a context manager.
 Inside the body of the function or with a statement, the _target_ is patched with
@@ -310,7 +310,7 @@ decoration time.
 If you want to mock an object for the duration of your entire test function,
 you can use `patch()` as a function decorator.
 
-{% highlight python %}
+```python
 import unittest
 from unittest.mock import patch
 
@@ -331,13 +331,13 @@ class PatchDecoratorTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-{% endhighlight %}
+```
 
 - Context manager
 You only want to mock an object for a part of the test scope. You are already
 using too many decorators or parameters, which hurts your test’s readability.
 
-{% highlight python %}
+```python
 import unittest
 from unittest.mock import patch
 
@@ -358,7 +358,7 @@ class PatchContextManagerTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-{% endhighlight %}
+```
 
 - Inline
 This approach is using start and stop on the mock itself to apply the mock
@@ -375,7 +375,7 @@ keep a reference to the returned `patcher` object. You can then call `start()`
 to put the patch in place and `stop()` to undo it. If you are using `patch()`
 to create a mock for you then it will be returned by the call to `patcher.start`.
 
-{% highlight python %}
+```python
 import unittest
 from unittest.mock import patch
 
@@ -402,11 +402,11 @@ class PatchInlineTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-{% endhighlight %}
+```
 
 ## Usecases
 ### Mocking sending requests with Google Places API
-{% highlight python %}
+```python
 # learn_unittest_mock/google_place_api.py
 from urllib.parse import urlencode
 
@@ -439,7 +439,7 @@ def search_place(gps='gps', api_key='api_key') -> Place:
         return Place(lat, lng, place_name, place_id, glb_rating)
     else:
         return Place(0, 0, 'null', 'null', 0)
-{% endhighlight %}
+```
 
 In the scripts `google_place_api.py`, I create a Python class named "`Place`",
 which contains one place's latitude, longitude, name, ID and its rating; then I
@@ -447,7 +447,7 @@ create a function `search_place(gps='gps', api_key='api_key')` in order to get
 places' information by Google Places API and inject the values into `Place`
 class.
 
-{% highlight python %}
+```python
 # learn_unittest_mock/google_place_api_test.py
 import unittest
 from unittest.mock import patch, Mock, call
@@ -529,7 +529,7 @@ class GooglePlaceApiTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-{% endhighlight %}
+```
 
 In the `google_place_api_test.py` scripts, I firstly patch the
 `learn_unittest_mock.google_place_api.requests`, then create multiple tests:
@@ -545,7 +545,7 @@ has been called twice; test arguments that the mock was last called with and the
 list of all the calls mode to the mock in sequence.
 
 ### Mocking generating dates
-{% highlight python %}
+```python
 # learn_unittest_mock/dates_generator.py
 
 import calendar
@@ -576,14 +576,14 @@ def start_end_dates() -> StartEndDates:
 
     return StartEndDates(last_week_start, last_week_end,
                          last_month_start, last_month_end)
-{% endhighlight %}
+```
 
 In the scripts `dates_generator.py`, I created a class named `StartEndDates`
 which contains the start date and end date for last week and last month,
 respectively. I also created a function `start_end_dates()` who injects the 4
 dates into the `StartEndDates` class.
 
-{% highlight python %}
+```python
 # learn_unittest_mock/dates_generator_test.py
 import unittest
 from datetime import datetime, date
@@ -638,7 +638,7 @@ class DatesGeneratorTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-{% endhighlight %}
+```
 
 In the `dates_generator_test.py`, I firstly mock `datetime` then configure the
 value of "`datetime.now`" with `return_value` and test if the dates are the same
