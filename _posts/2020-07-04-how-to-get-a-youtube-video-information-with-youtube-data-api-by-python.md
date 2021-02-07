@@ -18,6 +18,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20200704-youtube.png
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -528,6 +529,7 @@ to retrieve playlists owned by the YouTube channel that the request’s
 - "Code Samples / Running code samples locally / Python", _developers.google.com_. [Online]. Available: [https://developers.google.com/explorer-help/guides/code_samples#python][r2]
 - "youtube / api-samples", _github.com_. [Online]. Available: [https://github.com/youtube/api-samples/tree/master/python][r3]
 - geralt, "Hand touch YouTube icon", _pixabay.com_. [Online]. Available: [https://pixabay.com/illustrations/hand-touch-you-tube-you-tube-icon-589488/][r4]
+- slightly_different, "youtube logo graphic red", _pixabay.com_. [Online]. Available: [https://pixabay.com/vectors/youtube-logo-graphic-red-1837872/][background-img]
 
 [r1]: https://developers.google.com/youtube/v3/docs
 [r2]: https://developers.google.com/explorer-help/guides/code_samples#python
@@ -538,3 +540,4 @@ to retrieve playlists owned by the YouTube channel that the request’s
 [commentThreads-list-param]: https://developers.google.com/youtube/v3/docs/commentThreads/list#parameters
 [channels-list-param]: https://developers.google.com/youtube/v3/docs/channels/list#parameters
 [playlists-list-param]: https://developers.google.com/youtube/v3/docs/playlists/list#parameters
+[background-img]: https://pixabay.com/vectors/youtube-logo-graphic-red-1837872/
