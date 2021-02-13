@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     This blog talks about how to convert projected coordinates to latitude
     longitude with python module "pyproj".
-img_url:     /images/20210110-image.jpg
+cover:       /images/20210110-image.jpg
 img_width:   1280
 img_height:  853
 ---

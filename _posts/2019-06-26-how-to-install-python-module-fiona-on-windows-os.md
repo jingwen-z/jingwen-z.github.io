@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     In this blog, I talk about the requirements and the steps for installing module
     fiona on Windows OS.
-img_url:            /images/20190626-map.png
+cover:              /images/20190626-map.png
 img_width:          1280
 img_height:         853
 ---

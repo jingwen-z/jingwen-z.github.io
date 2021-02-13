@@ -8,7 +8,7 @@ excerpt:     >
     This blog talks about what is box plot, understanding box plot with help of
     probability density function (pdf), how to make a box plot by python module
     matplotlib and how to interprete a boxplot.
-img_url:     /images/20190319-boxplot.png
+cover:       /images/20190319-boxplot.png
 img_width:   1280
 img_height:  853
 ---

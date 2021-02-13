@@ -8,7 +8,7 @@ excerpt:     >
     This blog introduces how CART algorithm works for classification and
     regression Decision Tree, how we understand and predict with the Decision
     Tree.
-img_url:     /images/20190430-tree.jpg
+cover:       /images/20190430-tree.jpg
 img_width:   1280
 img_height:  853
 ---

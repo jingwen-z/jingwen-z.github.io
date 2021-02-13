@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     This blog talks about the users of Paris' wifi hotspots in terms of user
     language and device.
-img_url:     /images/20200416-user-lang.png
+cover:       /images/20200416-user-lang.png
 img_width:   1280
 img_height:  853
 ---

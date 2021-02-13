@@ -14,7 +14,7 @@ excerpt:     >
     point retailers in the right direction, they need to dig the retail metrics
     and KPIs to track in their business. In this blog, I'll talk about some
     pretty helpful KPIs for retailers.
-img_url:     /images/20210117-supermarket.jpg
+cover:       /images/20210117-supermarket.jpg
 img_width:   1280
 img_height:  853
 ---

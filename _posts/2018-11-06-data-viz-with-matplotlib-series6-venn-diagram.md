@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     This blog specifies how to create venn diagram with matplotlib in Python,
     and its use case.
-img_url:           /images/20181106-venn-header.png
+cover:             /images/20181106-venn-header.png
 img_width:         1280
 img_height:        853
 ---

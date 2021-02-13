@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     In this blog I talked about how to improve `pandas` dataframe processing
     with the SQL query, `map` or `lambda` and some other quick tips. 
-img_url:            /images/20190906-speed.jpg
+cover:              /images/20190906-speed.jpg
 img_width:          1280
 img_height:         853
 ---

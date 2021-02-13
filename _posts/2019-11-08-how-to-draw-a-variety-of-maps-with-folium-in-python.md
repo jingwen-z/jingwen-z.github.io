@@ -9,7 +9,7 @@ excerpt:     >
     how to display all locations with points or with cluster, how to paint
     areas with different colors, how to add labels or polygon borders, show
     changes in terms of timing with heatmap or with choropleth.
-img_url:     /images/20191108-header-img.jpg
+cover:       /images/20191108-header-img.jpg
 img_width:   1280
 img_height:  853
 ---

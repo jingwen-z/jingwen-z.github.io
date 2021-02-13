@@ -8,7 +8,7 @@ excerpt:     >
     In this blog, I talked about why we create a virtual environment, how to
     create a virtual environment by Python and how to use virtual environment
     in Jupyter Notebook.
-img_url:     /images/20190723-venv.jpg
+cover:       /images/20190723-venv.jpg
 img_width:   1280
 img_height:  853
 ---

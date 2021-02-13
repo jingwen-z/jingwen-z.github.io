@@ -8,7 +8,7 @@ excerpt:     >
     This blog presents how to acheive a while loop by python. Except for the
     basic using, you will also comprehend the infinite loop, nested while loop,
     if-else statement with while loop and loop of a list.
-img_url:     /images/20190207-python-while-loop.jpg
+cover:       /images/20190207-python-while-loop.jpg
 img_width:   1280
 img_height:  853
 ---

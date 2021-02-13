@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     In this blog, I presented how to get coordinates and address by Google
     Geocoding API, and how to accomplish it by Python.
-img_url:     /images/20201114-map-image.jpg
+cover:       /images/20201114-map-image.jpg
 img_width:   1280
 img_height:  853
 ---

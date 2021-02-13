@@ -13,7 +13,7 @@ excerpt:            >
     than Batch GD; Mini-batch Gradient Descent computes the gradients on small
     random sets of instances, it get a performance boost from hardware optimization
     of matrix operations.
-img_url:            /images/20190326-mountain.jpg
+cover:              /images/20190326-mountain.jpg
 img_width:          1280
 img_height:         853
 ---

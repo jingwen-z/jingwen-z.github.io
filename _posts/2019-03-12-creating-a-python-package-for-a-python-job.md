@@ -9,7 +9,7 @@ excerpt:            >
     This blog introduces how we create a python package for a python job with
     package structure and some details like SQL queries and data extraction
     with python.
-img_url:            /images/20190312-tree.jpg
+cover:              /images/20190312-tree.jpg
 img_width:          1280
 img_height:         853
 ---

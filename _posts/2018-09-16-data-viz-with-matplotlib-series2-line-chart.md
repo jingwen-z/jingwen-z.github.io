@@ -9,7 +9,7 @@ excerpt:            >
     This blog specifies how to create line chart with single line, line chart
     with multiple lines and add values' label on the chart with matplotlib in
     Python.
-img_url:           /images/20180916-line-header.png
+cover:             /images/20180916-line-header.png
 img_width:         1280
 img_height:        853
 ---

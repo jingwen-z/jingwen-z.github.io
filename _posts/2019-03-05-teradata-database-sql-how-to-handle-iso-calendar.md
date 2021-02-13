@@ -8,7 +8,7 @@ excerpt:     >
     This blog introduces how to handle ISO calendar with Teradata Database SQL
     with ISO Computation and Teradata Database SQL Functions like
     YearNumber_Of_Calendar, MonthNumber_Of_Year and WeekNumber_Of_Year.
-img_url:     /images/20190305-bird.jpg
+cover:       /images/20190305-bird.jpg
 img_width:   1280
 img_height:  853
 ---

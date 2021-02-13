@@ -6,7 +6,7 @@ tags:        [python3, pandas, data-structure, dataframe]
 comments:    true
 excerpt:     >
     33 things to know about pandas dataframe
-img_url:     /images/20200501-python.jpg
+cover:       /images/20200501-python.jpg
 img_width:   1280
 img_height:  853
 ---

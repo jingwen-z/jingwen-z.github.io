@@ -12,7 +12,7 @@ excerpt:            >
     the increasing price of real estate in Paris. In this blog, I'll talk about
     the second-hand apartments purchases in Paris between January 2014 and June
     2019.
-img_url:            /images/20191217-dvf-paris-quartier.png
+cover:              /images/20191217-dvf-paris-quartier.png
 img_width:          1280
 img_height:         853
 ---

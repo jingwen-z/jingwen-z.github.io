@@ -4,7 +4,7 @@ title:              Training set and Test set
 date:               2016-08-20 23:32:43 +0200
 tags:               [Machine-Learning, R]
 comments: true
-img_url:     /images/20160820-header-img.jpg
+cover:       /images/20160820-header-img.jpg
 img_width:   1280
 img_height:  853
 ---

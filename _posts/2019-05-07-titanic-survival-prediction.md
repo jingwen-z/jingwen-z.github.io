@@ -9,7 +9,7 @@ excerpt:            >
     In this challenge, we need to analyse what sorts of people were likely to
     survive. In particular, we also need to apply the tools of machine learning
     to predict which passengers survived the tragedy.
-img_url:            /images/20190507-giant-ship.jpg
+cover:              /images/20190507-giant-ship.jpg
 img_width:          1280
 img_height:         853
 ---

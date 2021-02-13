@@ -10,7 +10,7 @@ excerpt:     >
     column, creating a new column, filtering, selecting a list of columns,
     aggregating, renaming columns, joining 2 dataframes, creating a new
     dataframe, creating a pivot table.
-img_url:     /images/20200908-pandas.jpg
+cover:       /images/20200908-pandas.jpg
 img_width:   1280
 img_height:  853
 ---

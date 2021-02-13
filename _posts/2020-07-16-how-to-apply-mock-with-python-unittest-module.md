@@ -10,7 +10,7 @@ excerpt:     >
     configure your mock instance with "return_value" or / and "side_effect",
     check how you called a method with assertions and mock an object with
     "patch()".
-img_url:     /images/20200716-python-mock.png
+cover:       /images/20200716-python-mock.png
 img_width:   1280
 img_height:  853
 ---

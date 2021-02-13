@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     This blog introduces how to set up a fake SMTP server and send e-mails with
     python, and how to test sending e-mails with unittest.mock.
-img_url:     /images/20200601-mail.png
+cover:       /images/20200601-mail.png
 img_width:   1280
 img_height:  853
 ---

@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     This blog introduces how to use `Putty` to transfer files from Windows OS
     to Linux OS and reverse.
-img_url:            /images/20190409-transfer.jpg
+cover:              /images/20190409-transfer.jpg
 img_width:          1280
 img_height:         853
 ---

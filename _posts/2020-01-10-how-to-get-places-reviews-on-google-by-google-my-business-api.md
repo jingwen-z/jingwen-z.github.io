@@ -10,7 +10,7 @@ excerpt:     >
     want to extract all reviews of each location, you can use "Google My
     Business API". In this blog, I will talk about how to get places' reviews
     on Google by Google My Business API
-img_url:     /images/20200103-google-maps-reviews.jpg
+cover:       /images/20200103-google-maps-reviews.jpg
 img_width:   1280
 img_height:  853
 ---

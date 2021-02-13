@@ -8,7 +8,7 @@ excerpt:     >
     In this blog, I presented 3 excel functions, `vlookup`, `index`, and `match`,
     on their usages, syntaxes, applied them in different use cases, and their pro
     & cons.
-img_url:     /images/20201118-image.jpg
+cover:       /images/20201118-image.jpg
 img_width:   1280
 img_height:  853
 ---

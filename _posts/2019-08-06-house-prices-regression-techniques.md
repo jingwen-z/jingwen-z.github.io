@@ -6,7 +6,7 @@ tags:        [Machine-Learning, kaggle, regression, analysis, real-estate, visua
 comments:    true
 excerpt:     >
     In this challenge, we need to predict the sales price for each house.
-img_url:     /images/20190806-house-price.jpg
+cover:       /images/20190806-house-price.jpg
 img_width:   1280
 img_height:  853
 ---

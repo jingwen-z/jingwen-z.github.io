@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     In this blog, I will resume Logistic Regression, Softmax Regression and
     their usecases via Python.
-img_url:     /images/20190416-iris.jpg
+cover:       /images/20190416-iris.jpg
 img_width:   1280
 img_height:  853
 ---

@@ -10,7 +10,7 @@ excerpt:     >
     and regression. It is one of the most popular models in Machine Learning.
     SVMs are suited for classification of complex but small- or medium-sized
     datasets.
-img_url:     /images/20190423-california-street.jpg
+cover:       /images/20190423-california-street.jpg
 img_width:   1280
 img_height:  853
 ---

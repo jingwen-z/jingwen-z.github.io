@@ -11,7 +11,7 @@ excerpt:     >
     biomass. Net primary production is estimated at 21.9 gigatonnes carbon per
     year for tropical forests, 8.1 for temperate forests, and 2.6 for boreal
     forests.
-img_url:     /images/20191004-forest.jpg
+cover:       /images/20191004-forest.jpg
 img_width:   1280
 img_height:  853
 ---

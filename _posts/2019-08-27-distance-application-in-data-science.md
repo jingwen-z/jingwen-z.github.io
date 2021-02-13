@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     In this blog, I talked about how to apply haversine distance and real
     distance with "haversine" python module and Google Distance Matrix API.
-img_url:     /images/20190827-image.jpg
+cover:       /images/20190827-image.jpg
 img_width:   1280
 img_height:  853
 ---

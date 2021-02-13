@@ -9,7 +9,7 @@ excerpt:     >
     outbreak has greatly affected China and other Asian countries, and it has
     spread in other countries around the world in the past two weeks. In this
     blog, I will analyse COVID-19 outbreak with multiple points.
-img_url:     /images/20200303-china-map.png
+cover:       /images/20200303-china-map.png
 img_width:   1280
 img_height:  853
 ---

@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     This blog specifies how to create simple bar chart, grouped bar chart and
     stacked bar chart with matplotlib in Python.
-img_url:           /images/20180614-bar-header.png
+cover:             /images/20180614-bar-header.png
 img_width:         1280
 img_height:        853
 ---

@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     This blog specifies how to create scatter plot, connected scatter plot
     and bubble chart with matplotlib in Python.
-img_url:           /images/20181025-scatter-header.png
+cover:             /images/20181025-scatter-header.png
 img_width:         1280
 img_height:        853
 ---

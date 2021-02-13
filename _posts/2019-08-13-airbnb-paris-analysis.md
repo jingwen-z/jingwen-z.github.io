@@ -10,7 +10,7 @@ excerpt:            >
     lots of tourists, which makes me eager to dig out Airbnb locations in
     Paris. Where are the locations located? What are their prices? In this
     blog, I will analyse Airbnb Paris with the following points...
-img_url:            /images/20190813-locations.png
+cover:              /images/20190813-locations.png
 img_width:          1280
 img_height:         853
 ---

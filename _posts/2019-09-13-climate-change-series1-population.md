@@ -12,7 +12,7 @@ excerpt:     >
     offers unprecedented challenges and opportunities to all of humanity,
     according to UNFPA, the United Nations Population Fund. In this blog I will
     talk about population with the following points...
-img_url:     /images/20190913-population.jpg
+cover:       /images/20190913-population.jpg
 img_width:   1280
 img_height:  853
 ---

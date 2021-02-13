@@ -9,7 +9,7 @@ excerpt:            >
     Automating python scripts to run by GitLab CI (Runner) needs to configure with
     ".gitlab-ci.yml" with multiple parts like image, stage, only, manage
     environments and settings on GitLab.
-img_url:     /images/20180726-runner-logo.png
+cover:       /images/20180726-runner-logo.png
 img_width:   1280
 img_height:  853
 ---

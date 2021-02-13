@@ -6,7 +6,7 @@ tags:        [analysis, COVID-19, visualisation, geovisualisation]
 comments:    true
 excerpt:     >
     This blog talks about how COVID-19 impacts people's working in France.
-img_url:     /images/20201026-nb-salaries.png
+cover:       /images/20201026-nb-salaries.png
 img_width:   1280
 img_height:  853
 ---

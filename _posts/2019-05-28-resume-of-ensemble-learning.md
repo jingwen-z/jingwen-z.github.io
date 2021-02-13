@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     In this blog, I introduced 3 Ensemble Learning algorithms: Voting
     Classifiers, Bagging and Pasting, Random Forests.
-img_url:            /images/20190528-ensemble.jpg
+cover:              /images/20190528-ensemble.jpg
 img_width:          1280
 img_height:         853
 ---

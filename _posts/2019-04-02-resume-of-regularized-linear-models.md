@@ -11,7 +11,7 @@ excerpt:     >
     constraining the weights of the model. In this blog, I will talk about how
     to constrain the weights of Ridge Regression, Lasso Regression and Elastic
     Net.
-img_url:     /images/20190402-cheese.jpg
+cover:       /images/20190402-cheese.jpg
 img_width:   1280
 img_height:  853
 ---

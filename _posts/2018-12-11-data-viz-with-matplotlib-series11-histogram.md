@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     This blog specifies how to create/custom basic histogram and cumulative
     histogram with matplotlib in Python and their use cases.
-img_url:           /images/20181211-histogram-header.png
+cover:             /images/20181211-histogram-header.png
 img_width:         1280
 img_height:        853
 ---

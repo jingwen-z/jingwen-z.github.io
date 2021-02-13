@@ -9,7 +9,7 @@ excerpt:            >
     This blog talks about the actual COVID-19 situation of France, the
     definition of confirmed cases in France and some predictions of confirmed
     cases in France.
-img_url:            /images/20200308-france-prediction.png
+cover:              /images/20200308-france-prediction.png
 img_width:          1280
 img_height:         853
 ---

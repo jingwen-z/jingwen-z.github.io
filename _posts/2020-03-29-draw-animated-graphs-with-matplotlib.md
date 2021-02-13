@@ -9,7 +9,7 @@ excerpt:     >
     usually create static plots with it. But how if we create animated graph to
     present the evolution in terms of time? In this blog, I will show you how
     to create animated graphs with matplotlib.
-img_url:     /images/20200329-img.jpg
+cover:       /images/20200329-img.jpg
 img_width:   1280
 img_height:  853
 ---

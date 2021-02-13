@@ -9,7 +9,7 @@ excerpt:            >
     This blog talks about applying ISO 8601 date by python such as ISO year,
     ISO week, ISO date; how to convert datetime format to ISO format and how to
     convert ISO format to datetime format.
-img_url:            /images/20190122-iso8601.png
+cover:              /images/20190122-iso8601.png
 img_width:          1280
 img_height:         853
 ---

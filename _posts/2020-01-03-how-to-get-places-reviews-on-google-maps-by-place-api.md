@@ -9,7 +9,7 @@ excerpt:            >
     This blog talks about how to get places' reviews on Google Maps by
     different API and Python scripts, like Google Geocoding API, Place Search
     API and Place Details API.
-img_url:            /images/20200103-google-maps-reviews.jpg
+cover:              /images/20200103-google-maps-reviews.jpg
 img_width:          1280
 img_height:         853
 ---

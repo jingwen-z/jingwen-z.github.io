@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     This blog will talk about how to connect to Teradata database and extract
     data with teradata python module.
-img_url:            /images/20190212-teradata-logo.png
+cover:              /images/20190212-teradata-logo.png
 img_width:          1280
 img_height:         853
 ---

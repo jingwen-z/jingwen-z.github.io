@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     This blog will talk about how to connect to SQL Server, connect to a
     specified database and extract data with pyodbc python module.
-img_url:     /images/20190219-sqlserver-logo.png
+cover:       /images/20190219-sqlserver-logo.png
 img_width:   1280
 img_height:  853
 ---

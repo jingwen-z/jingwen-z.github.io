@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     This blog specifies how to create treemap with matplotlib in Python, and
     its use case.
-img_url:           /images/20181030-treemap-header.png
+cover:             /images/20181030-treemap-header.png
 img_width:         1280
 img_height:        853
 ---

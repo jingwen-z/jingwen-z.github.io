@@ -11,7 +11,7 @@ excerpt:     >
     endeavors across every single industrial and technological sector, across
     every country. In this blog, I will talk about energy consumption with the
     following points...
-img_url:     /images/20190927-light-bulb.jpg
+cover:       /images/20190927-light-bulb.jpg
 img_width:   1280
 img_height:  853
 ---

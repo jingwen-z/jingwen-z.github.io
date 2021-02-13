@@ -9,7 +9,7 @@ excerpt:            >
     This blog talks about how to draw a map with python module "folium", like
     how to draw a basic map, to create a colormap, to add different layers and
     to customize title and legends.
-img_url:            /images/20191016-dvf-idf.png
+cover:              /images/20191016-dvf-idf.png
 img_width:          1280
 img_height:         853
 ---

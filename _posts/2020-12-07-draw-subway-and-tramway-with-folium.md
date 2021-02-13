@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     This blog talks about how to draw public transport lines with "folium"
     module in Python.
-img_url:     /images/20201207-public-transport-lines.png
+cover:       /images/20201207-public-transport-lines.png
 img_width:   1280
 img_height:  853
 ---

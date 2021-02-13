@@ -8,7 +8,7 @@ comments:           true
 excerpt:            >
     This blog talks about converting datetime between string and datetime with
     python. The principal python package we will use is datetime and dateutil.
-img_url:            /images/20190108-calendar.jpg
+cover:              /images/20190108-calendar.jpg
 img_width:          1280
 img_height:         853
 ---

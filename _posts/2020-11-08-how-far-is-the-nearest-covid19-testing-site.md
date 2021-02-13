@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     In this blog, I create a map to display how far is the nearest COVID-19
     testing site for each community with python modules "folium" and "shapely".
-img_url:     /images/20201108-nearest-covid19-testing-site-distance.png
+cover:       /images/20201108-nearest-covid19-testing-site-distance.png
 img_width:   1280
 img_height:  853
 ---

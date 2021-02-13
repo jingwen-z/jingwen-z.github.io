@@ -9,7 +9,7 @@ excerpt:            >
     This blog presents the Coursera project "catch the pink flamingo". Here,
     you can find the data model design like classification, clustering, and the
     histogram made by splunk.
-img_url:     /images/20170203-flamingo.jpg
+cover:       /images/20170203-flamingo.jpg
 img_width:   640
 img_height:  426
 ---

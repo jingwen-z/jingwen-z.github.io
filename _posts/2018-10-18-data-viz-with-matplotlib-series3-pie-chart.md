@@ -9,7 +9,7 @@ excerpt:            >
     This blog specifies how to create pie chart with value labels, donut chart
     and nested pie chart, and how to adjust labels' size and position with
     matplotlib in Python.
-img_url:           /images/20181011-pie-header.png
+cover:             /images/20181011-pie-header.png
 img_width:         1280
 img_height:        853
 ---

@@ -7,7 +7,7 @@ comments:    true
 excerpt:     >
     I extract one video's (Mojito Jay Chou) comments on YouTube with YouTube
     Data API and in this blog I will analyse them in different views.
-img_url:     /images/20200628-mojito.jpg
+cover:       /images/20200628-mojito.jpg
 img_width:   1280
 img_height:  853
 ---

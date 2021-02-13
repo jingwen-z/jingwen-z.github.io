@@ -9,7 +9,7 @@ excerpt:     >
     emits radiant energy within the thermal infrared range. Greenhouse gases
     cause the greenhouse effect. In this blog, I will talk about greenhouse gas
     emission with the following points...
-img_url:     /images/20190920-ghg-emission-header.jpg
+cover:       /images/20190920-ghg-emission-header.jpg
 img_width:   1280
 img_height:  853
 ---

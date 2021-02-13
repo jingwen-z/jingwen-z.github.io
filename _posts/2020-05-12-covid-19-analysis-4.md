@@ -8,7 +8,7 @@ excerpt:     >
     Recently, lots of European countries started to stop the lockdown. Thus, I'm
     curious about the actual COVID-19 situation around the world. In this blog,
     I will talk about the worldwide COVID-19 pandemic in the following points...
-img_url:     /images/20200510-daynb-cumul-case.png
+cover:       /images/20200510-daynb-cumul-case.png
 img_width:   1280
 img_height:  853
 ---

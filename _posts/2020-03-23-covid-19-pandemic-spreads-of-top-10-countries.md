@@ -10,7 +10,7 @@ excerpt:     >
     infected all around the world. The number of people who have dead exceeds
     16400. Nearly 190 countries have confirmed cases. In this blog, I focus on
     the top 10 countries in terms of cumulative confirmed cases.
-img_url:            /images/20200324-daynb-cumul-case-1million-people.png
+cover:              /images/20200324-daynb-cumul-case-1million-people.png
 img_width:          1280
 img_height:         853
 ---

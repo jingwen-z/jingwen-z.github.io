@@ -10,7 +10,7 @@ excerpt:     >
     with a query, getting a video’s statistics data with a video ID, getting a
     video’s comments, getting a channel’s information with channel ID, and
     getting a channel’s playlist.
-img_url:     /images/20200704-youtube-img.png
+cover:       /images/20200704-youtube-img.png
 img_width:   1280
 img_height:  905
 ---
