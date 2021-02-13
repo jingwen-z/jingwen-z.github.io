@@ -10,3 +10,4 @@ Gemfile.lock
 /vendor/bundle
 node_modules
 package.json
+*.swp
