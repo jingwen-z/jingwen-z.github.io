@@ -9,6 +9,12 @@ excerpt:            >
     This blog presents how to work with GeoJSON data in R, and proposes the
     solution of "Error in ogrInfo(dsn = dsn, layer = layer, encoding = encoding,
     use_iconv = use_iconv"
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 Since working in franprix, I've accomplished many projects, for different

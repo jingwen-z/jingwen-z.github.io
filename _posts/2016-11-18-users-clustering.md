@@ -4,6 +4,12 @@ title:              Analysis of internauts' behavior
 date:               2016-11-18 23:32:43 +0200
 tags:               [analysis]
 comments:           true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 Since the internship will be finished in a few days, I'm seeking employment and

@@ -13,6 +13,12 @@ excerpt:            >
     background colors and center text in one cell, wrap text in one cell, reset
     columns' width, set borders, hide grid, reset zoom scale, create named
     range and save the workbook.
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 During the work we need to automate some reports frequently, including

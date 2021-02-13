@@ -13,6 +13,12 @@ excerpt:     >
 cover:              /images/20200324-daynb-cumul-case-1million-people.png
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 From the COVID-19's outbreak until 23 March, 378139 people are / have been

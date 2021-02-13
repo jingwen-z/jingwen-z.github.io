@@ -4,6 +4,12 @@ title:       "france is AI"
 date:        "2017-10-06 13:48:00 +0200"
 tags:        [review]
 comments:    true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 <p align="center">

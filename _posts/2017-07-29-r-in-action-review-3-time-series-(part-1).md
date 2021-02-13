@@ -4,6 +4,12 @@ title:       "R IN ACTION Review 3 - Time series (Part 1)"
 date:        "2017-07-29 10:41:46 +0200"
 tags:        [R, Machine-Learning, Time-series]
 comments:    true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 I learnt Time Series from "R IN ACTION" in recent days and want to extract some

@@ -8,6 +8,12 @@ comments:           true
 excerpt:            >
     Introducing to basic concepts in big data integration and processing by
     coursera, specifically apply with Apache Spark.
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 Today I'll talk about [Big Data Integration and Processing][Big Data Integration and Processing]

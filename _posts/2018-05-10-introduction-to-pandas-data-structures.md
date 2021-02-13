@@ -4,6 +4,12 @@ title:       "Introduction to pandas data structures"
 date:        "2018-05-10 14:49:48 +0200"
 tags:        [python3, pandas, data-structure]
 comments:    true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 [`pandas`][pandas] provides high-level data structures and functions designed to

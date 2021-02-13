@@ -7,6 +7,12 @@ comments: true
 cover:       /images/20160820-header-img.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 As I mentioned in my blog "[What is Machine Learning][blog-1]", Machine Learning

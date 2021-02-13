@@ -4,6 +4,12 @@ title:       "R IN ACTION Review 4 - Time series (Part 2)"
 date:        "2017-08-13 21:47:54 +0200"
 tags:        [R, Machine-Learning, Time-series]
 comments:    true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 In this blog, we'll turn to forecasting, starting with popular exponential

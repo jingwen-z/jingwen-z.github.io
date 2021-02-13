@@ -4,6 +4,12 @@ title:       "R IN ACTION Review 5 - Time series (Part 3)"
 date:        "2017-09-27 22:15:39 +0200"
 tags:        [R, Machine-Learning, Time-series]
 comments:    true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 In this blog, I'll introduce ARIMA forecasting models. In the _autoregressive

@@ -12,6 +12,12 @@ excerpt:            >
 cover:       /images/20170203-flamingo.jpg
 img_width:   640
 img_height:  426
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 <p align="center">
