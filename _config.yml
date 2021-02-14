@@ -215,6 +215,12 @@ defaults:
       show_subscribe: true
       pageview: true
 
+## => Collections
+##############################
+collections:
+  displayed_portfolio:
+    permalink: /portfolio/:name
+    output: true
 
 ## => Plugins
 ##############################
