@@ -1,7 +1,7 @@
 ---
 layout:            portfolio
-title:             Analysis
-portfolio:         analysis
+title:             Visualisation
+portfolio:         visualisation
 cover:             /images/tag-analysis.png
 comments:          false
 sidebar:

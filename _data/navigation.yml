@@ -52,3 +52,22 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /about.html
+
+
+portfolio:
+  - title: Portfolio
+    children:
+      - title:  Analysis
+        url:    /portfolio/analysis
+      - title:  CI
+        url:    /portfolio/ci
+      - title:  Excel
+        url:    /portfolio/excel
+      - title:  Geovisualisation
+        url:    /portfolio/geovisualisation
+      - title:  Machine-Learning
+        url:    /portfolio/machine-learning
+      - title:  SQL
+        url:    /portfolio/sql
+      - title:  Visualisation
+        url:    /portfolio/visualisation
