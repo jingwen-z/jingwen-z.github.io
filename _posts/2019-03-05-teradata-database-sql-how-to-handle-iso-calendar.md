@@ -8,15 +8,16 @@ excerpt:     >
     This blog introduces how to handle ISO calendar with Teradata Database SQL
     with ISO Computation and Teradata Database SQL Functions like
     YearNumber_Of_Calendar, MonthNumber_Of_Year and WeekNumber_Of_Year.
-img_url:     /images/20190305-bird.jpg
+cover:       /images/20190305-bird.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Bird"
-  src="{{ site.baseurl }}/images/20190305-bird.jpg"/>
-</p>
 
 When we create yearly, monthly or weekly report, we are sometimes beset by
 problem about calendar. Like the last day of year 2018 (2018-12-31) is regarded

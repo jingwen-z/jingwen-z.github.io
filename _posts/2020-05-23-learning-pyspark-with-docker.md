@@ -8,15 +8,16 @@ comments:           true
 excerpt:            >
     This blog talks about how to manipulate data with "pyspark" module in a
     Docker container.
-img_url:            /images/20200523-docker-pyspark.png
+cover:              /images/20200523-docker-pyspark.png
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="20200523-docker-pyspark"
-  src="{{ site.baseurl }}/images/20200523-docker-pyspark.png"/>
-</p>
 
 Considering I will use Spark in my future work, I learnt how to manipulate data
 with `pyspark` in a Docker container and am willing to share it with you! In my

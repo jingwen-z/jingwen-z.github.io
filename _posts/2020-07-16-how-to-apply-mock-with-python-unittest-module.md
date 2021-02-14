@@ -10,15 +10,16 @@ excerpt:     >
     configure your mock instance with "return_value" or / and "side_effect",
     check how you called a method with assertions and mock an object with
     "patch()".
-img_url:     /images/20200716-python-mock.png
+cover:       /images/20200716-python-mock.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="20200716-python-mock"
-  src="{{ site.baseurl }}/images/20200716-python-mock.png"/>
-</p>
 
 Imagine that when we wrote a Python class to extract some business places'
 reviews with Google Place API, how could we ensure that we will extract the data

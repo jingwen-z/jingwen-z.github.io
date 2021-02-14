@@ -8,16 +8,17 @@ excerpt:     >
     Since mid February, the situation of COVID-19 in China begins to be stable,
     but it propagates in the Rest of the World. In this blog, I'll talk about
     its propagation around the world.
-img_url:     /images/20200315-world-map.png
+cover:       /images/20200315-world-map.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img src="{{ site.baseurl }}/images/20200315-map.gif"
-       style="max-width: 720px"
-       alt="20200315-map">
-</p>
 
 Since mid February, the situation of COVID-19 in China begins to be stable, but
 it propagates in the Rest of the World. In this blog, I'll talk about its

@@ -9,15 +9,16 @@ excerpt:            >
     This blog presents for loop for multiple data structures, like loop over a
     range, loop over a string, loop over a numpy array, loop over a list, loop
     over a dictionary, loop over a series and loop over a dataframe.
-img_url:            /images/20190129-python-for-loop.jpg
+cover:              /images/20190129-python-for-loop.jpg
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Python while loop flow diagram"
-  src="{{ site.baseurl }}/images/20190129-python-for-loop.jpg"/>
-</p>
 
 `for` loops are traditionally used when you have a block of code which you want
 to repeat a fixed number of times. The Python for statement iterates over the

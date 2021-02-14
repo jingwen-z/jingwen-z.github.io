@@ -1,31 +1,29 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: article
+titles:
+  en      : &EN       About
+key: page-about
 ---
 
-Data scientist in retailing. Solid knowledge of statistics and economics.
-Extremely interested in Data Science and Machine Learning. Participating online
-courses and reading books are my principal approaches to strengthen my knowledge.
+More than four years as a data scientist in retailing. Rich experience in data
+processing, visualisation and analysis with Python/Spark, SQL and communication.
+Working projects and personal projects made me aware of various approaches to
+data application. Participating in online courses and reading books are my
+principal approaches to strengthen my knowledge.
 
-### More Information
-
-_SOFTWARE SKILLS:_
-
-- Mastering skills in analysing with R and python.
+SOFTWARE SKILLS:
+- Mastering skills in analysing and visualising with Python & Spark.
 - Mastering of SQL, Talend and database(Teradata, SQLServer, Access).
-- A high level of the office software, especially Microsoft Excel and Microsoft
+- A high level of office software, especially Microsoft Excel and Microsoft
 PowerPoint; for Microsoft Excel, ability to make the graphs by pivot table and
 write VBA.
-- Knowledge the software Tableau.
+- Knowledge of the software Tableau & Microstrategy.
 
-_PERSONALITY:_
-
+PERSONALITY:
 - Adaptability and ability to work in an international and multicultural
 environment.
 - Self-consistent
 - Enthusiast
 
-_LANGUAGE:_
-
+LANGUAGE:<br>
 Speak French, English and Chinese (native language) fluently.

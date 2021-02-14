@@ -11,15 +11,16 @@ excerpt:     >
     biomass. Net primary production is estimated at 21.9 gigatonnes carbon per
     year for tropical forests, 8.1 for temperate forests, and 2.6 for boreal
     forests.
-img_url:     /images/20191004-forest.jpg
+cover:       /images/20191004-forest.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Forest"
-  src="{{ site.baseurl }}/images/20191004-forest.jpg"/>
-</p>
 
 Forests are the dominant terrestrial ecosystem of Earth, and are distributed
 around the globe. Forests account for 75% of the gross primary production of

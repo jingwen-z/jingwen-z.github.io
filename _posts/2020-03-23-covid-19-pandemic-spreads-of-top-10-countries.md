@@ -10,9 +10,15 @@ excerpt:     >
     infected all around the world. The number of people who have dead exceeds
     16400. Nearly 190 countries have confirmed cases. In this blog, I focus on
     the top 10 countries in terms of cumulative confirmed cases.
-img_url:            /images/20200324-daynb-cumul-case-1million-people.png
+cover:              /images/20200324-daynb-cumul-case-1million-people.png
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 From the COVID-19's outbreak until 23 March, 378139 people are / have been

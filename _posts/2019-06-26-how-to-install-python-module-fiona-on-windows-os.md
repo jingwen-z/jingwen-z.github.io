@@ -8,15 +8,16 @@ comments:           true
 excerpt:            >
     In this blog, I talk about the requirements and the steps for installing module
     fiona on Windows OS.
-img_url:            /images/20190626-map.png
+cover:              /images/20190626-map.png
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Map"
-  src="{{ site.baseurl }}/images/20190626-map.png"/>
-</p>
 
 Recently, I learn how to visualise geographical data with python. However, I
 met difficulties when I installed the module `fiona` (on my professional PC

@@ -7,15 +7,16 @@ comments:    true
 excerpt:     >
     This blog will talk about how to connect to SQL Server, connect to a
     specified database and extract data with pyodbc python module.
-img_url:     /images/20190219-sqlserver-logo.png
+cover:       /images/20190219-sqlserver-logo.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="SQL Server logo"
-  src="{{ site.baseurl }}/images/20190219-sqlserver-logo.png"/>
-</p>
 
 In the [last blog][connection teradata] I presented how to connect to Teradata
 Database with `teradata` python module. Today I'll talk about how to connect to

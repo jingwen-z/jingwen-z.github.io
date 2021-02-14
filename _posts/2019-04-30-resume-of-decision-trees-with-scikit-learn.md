@@ -8,15 +8,16 @@ excerpt:     >
     This blog introduces how CART algorithm works for classification and
     regression Decision Tree, how we understand and predict with the Decision
     Tree.
-img_url:     /images/20190430-tree.jpg
+cover:       /images/20190430-tree.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Califormia street"
-  src="{{ site.baseurl }}/images/20190430-tree.jpg"/>
-</p>
 
 Like SVMs, _Decision Trees_ are versatile Machine Learning algorithms that can
 perform both classification and regression tasks, and even multioutput tasks.

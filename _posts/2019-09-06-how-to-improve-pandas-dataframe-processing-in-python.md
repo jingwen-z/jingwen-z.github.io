@@ -8,15 +8,16 @@ comments:           true
 excerpt:            >
     In this blog I talked about how to improve `pandas` dataframe processing
     with the SQL query, `map` or `lambda` and some other quick tips. 
-img_url:            /images/20190906-speed.jpg
+cover:              /images/20190906-speed.jpg
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Speed"
-  src="{{ site.baseurl }}/images/20190906-speed.jpg"/>
-</p>
 
 These days I cleaned my codes for different reports and analyses, which allows
 the scripts to be more brief and to increase running speed. In this blog, I'll

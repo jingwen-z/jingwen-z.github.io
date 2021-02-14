@@ -14,15 +14,16 @@ excerpt:     >
     point retailers in the right direction, they need to dig the retail metrics
     and KPIs to track in their business. In this blog, I'll talk about some
     pretty helpful KPIs for retailers.
-img_url:     /images/20210117-supermarket.jpg
+cover:       /images/20210117-supermarket.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="supermarket"
-  src="{{ site.baseurl }}/images/20210117-supermarket.jpg"/>
-</p>
 
 Retail is the process of selling consumer goods or services to customers through
 multiple channels of distribution to earn a profit. Retailers satisfy demand

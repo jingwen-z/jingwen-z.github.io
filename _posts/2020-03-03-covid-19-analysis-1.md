@@ -9,15 +9,16 @@ excerpt:     >
     outbreak has greatly affected China and other Asian countries, and it has
     spread in other countries around the world in the past two weeks. In this
     blog, I will analyse COVID-19 outbreak with multiple points.
-img_url:     /images/20200303-china-map.png
+cover:       /images/20200303-china-map.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="China COVIF-19 map"
-  src="{{ site.baseurl }}/images/20200303-china-map.png"/>
-</p>
 
 2019新型冠状病毒疫情爆发已有两个多月，爆发初期对中国及亚洲其他国家产生很大影响，近两周在全球其他
 国家开始扩散。此篇博客将从一下几点对2019新型冠状病毒疫情进行分析：

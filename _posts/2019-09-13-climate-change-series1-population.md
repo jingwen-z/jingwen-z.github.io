@@ -12,15 +12,16 @@ excerpt:     >
     offers unprecedented challenges and opportunities to all of humanity,
     according to UNFPA, the United Nations Population Fund. In this blog I will
     talk about population with the following points...
-img_url:     /images/20190913-population.jpg
+cover:       /images/20190913-population.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Speed"
-  src="{{ site.baseurl }}/images/20190913-population.jpg"/>
-</p>
 
 According to the United States Census Bureau the world's population was about
 7.55 billion in 2019 and that the 7 billion number was surpassed on 12

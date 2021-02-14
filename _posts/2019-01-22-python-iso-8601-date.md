@@ -9,15 +9,16 @@ excerpt:            >
     This blog talks about applying ISO 8601 date by python such as ISO year,
     ISO week, ISO date; how to convert datetime format to ISO format and how to
     convert ISO format to datetime format.
-img_url:            /images/20190122-iso8601.png
+cover:              /images/20190122-iso8601.png
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Title image"
-  src="{{ site.baseurl }}/images/20190122-iso8601.png"/>
-</p>
 
 [ISO 8601][ISO8601], an international standard covering the exchange of date
 and time-related data, as the string format. The ISO calendar is a widely used

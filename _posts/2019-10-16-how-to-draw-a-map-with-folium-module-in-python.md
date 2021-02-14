@@ -9,15 +9,16 @@ excerpt:            >
     This blog talks about how to draw a map with python module "folium", like
     how to draw a basic map, to create a colormap, to add different layers and
     to customize title and legends.
-img_url:            /images/20191016-dvf-idf.png
+cover:              /images/20191016-dvf-idf.png
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="DVF Ile-de-France map"
-  src="{{ site.baseurl }}/images/20191016-dvf-idf.png"/>
-</p>
 
 A map can clearly present information in terms of geography. Recently I learnt
 how to realize geovisualization with `folium` module in Python. In this blog, I

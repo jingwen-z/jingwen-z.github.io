@@ -4,6 +4,12 @@ title:       "Association analysis - Apriori algorithm"
 date:        "2017-10-20 23:16:08 +0200"
 tags:        [Machine-Learning, Association-analysis]
 comments:    true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 Have your heard about the classic use case of association analysis -

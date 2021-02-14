@@ -8,15 +8,16 @@ excerpt:     >
     In this blog, I presented 3 excel functions, `vlookup`, `index`, and `match`,
     on their usages, syntaxes, applied them in different use cases, and their pro
     & cons.
-img_url:     /images/20201118-image.jpg
+cover:       /images/20201118-image.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="image"
-  src="{{ site.baseurl }}/images/20201118-image.jpg"/>
-</p>
 
 During my work, sometimes I need to create a dynamic Excel workbook for clients.
 The screenshot below is a simple example, we can filter "analysed year",

@@ -11,15 +11,16 @@ excerpt:     >
     constraining the weights of the model. In this blog, I will talk about how
     to constrain the weights of Ridge Regression, Lasso Regression and Elastic
     Net.
-img_url:     /images/20190402-cheese.jpg
+cover:       /images/20190402-cheese.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Regularized cheese"
-  src="{{ site.baseurl }}/images/20190402-cheese.jpg"/>
-</p>
 
 A good way to reduce overfitting is to regularize the model, which means the
 fewer degrees of freedom it has, the harder it will be for it to overfit the

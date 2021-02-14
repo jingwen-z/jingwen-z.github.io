@@ -8,15 +8,16 @@ comments:           true
 excerpt:            >
     In this blog, I introduced 3 Ensemble Learning algorithms: Voting
     Classifiers, Bagging and Pasting, Random Forests.
-img_url:            /images/20190528-ensemble.jpg
+cover:              /images/20190528-ensemble.jpg
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Ensemble music"
-  src="{{ site.baseurl }}/images/20190528-ensemble.jpg"/>
-</p>
 
 Suppose you ask a complex question to thousands of random people, then
 aggregate their answers. In many cases you will find that this aggregated

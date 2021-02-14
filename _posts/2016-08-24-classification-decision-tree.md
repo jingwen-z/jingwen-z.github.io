@@ -9,6 +9,12 @@ excerpt:            >
     Applying decision tree model in R's library 'rpart', using rpart function to
     build a model, showing fancyRpartPlot example, predicting with predict(),
     pruning with prune().  
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 Thanks to [DataCamp][DataCamp], I know more about _Machine Learning_. Among its

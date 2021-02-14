@@ -4,12 +4,14 @@ title:       "france is AI"
 date:        "2017-10-06 13:48:00 +0200"
 tags:        [review]
 comments:    true
+cover:       /images/20171006-franceisai.jpg
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="france is AI"
-  src="{{ site.baseurl }}/images/20171006-franceisai.jpg"/>
-</p>
 
 I participated the conference "[france is AI][france is AI]" in this Thursday
 and Friday. In this conference, lots of companies and institutes talked about

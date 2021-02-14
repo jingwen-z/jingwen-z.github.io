@@ -9,15 +9,16 @@ excerpt:            >
     This blog introduces how we create a python package for a python job with
     package structure and some details like SQL queries and data extraction
     with python.
-img_url:            /images/20190312-tree.jpg
+cover:              /images/20190312-tree.jpg
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Tree"
-  src="{{ site.baseurl }}/images/20190312-tree.jpg"/>
-</p>
 
 As a member of data science team, we do not only analyse / explore data with
 terrific algorithm, but also create some reports which can help others

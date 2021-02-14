@@ -4,6 +4,12 @@ title:       "Array manipulation - R vs Python"
 date:        "2018-05-10 14:19:19 +0200"
 tags:        [python3, R, data-structure]
 comments:    true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 In this blog, I will talk about array manipulation via R and Python. You will

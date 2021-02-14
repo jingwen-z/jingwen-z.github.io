@@ -8,16 +8,17 @@ excerpt:     >
     Recently, lots of European countries started to stop the lockdown. Thus, I'm
     curious about the actual COVID-19 situation around the world. In this blog,
     I will talk about the worldwide COVID-19 pandemic in the following points...
-img_url:     /images/20200510-daynb-cumul-case.png
+cover:       /images/20200510-daynb-cumul-case.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img src="{{ site.baseurl }}/images/20200510-world-tsmap.gif"
-       style="max-width: 720px"
-       alt="20200510-world-tsmap">
-</p>
 
 Recently, lots of European countries started to stop the lockdown. Thus, I'm
 curious about the actual COVID-19 situation around the world. In this blog, I

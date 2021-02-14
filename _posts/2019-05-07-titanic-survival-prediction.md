@@ -9,15 +9,16 @@ excerpt:            >
     In this challenge, we need to analyse what sorts of people were likely to
     survive. In particular, we also need to apply the tools of machine learning
     to predict which passengers survived the tragedy.
-img_url:            /images/20190507-giant-ship.jpg
+cover:              /images/20190507-giant-ship.jpg
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Califormia street"
-  src="{{ site.baseurl }}/images/20190507-giant-ship.jpg"/>
-</p>
 
 ## Content
 - Project understanding

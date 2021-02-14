@@ -4,6 +4,12 @@ title:              UCSD Introduction to Big Data Week 3 review
 date:               2017-02-10 23:32:43 +0200
 tags:               [MOOC]
 comments:           true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 In the blog [UCSD Introduction to Big Data Week 1 & 2 review][UCSD Introduction to Big Data Week 1 & 2 review],

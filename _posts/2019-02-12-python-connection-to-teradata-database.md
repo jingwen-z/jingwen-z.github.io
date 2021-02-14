@@ -8,15 +8,16 @@ comments:           true
 excerpt:            >
     This blog will talk about how to connect to Teradata database and extract
     data with teradata python module.
-img_url:            /images/20190212-teradata-logo.png
+cover:              /images/20190212-teradata-logo.png
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Teradata logo"
-  src="{{ site.baseurl }}/images/20190212-teradata-logo.png"/>
-</p>
 
 As a data scientist, we need to extract data inevitably. Before extracting
 data, we should firstly connect to database. In this blog, I'll talk about how

@@ -7,15 +7,16 @@ comments:    true
 excerpt:     >
     In this blog, I talked about how to apply haversine distance and real
     distance with "haversine" python module and Google Distance Matrix API.
-img_url:     /images/20190827-image.jpg
+cover:       /images/20190827-image.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Distance"
-  src="{{ site.baseurl }}/images/20190827-image.jpg"/>
-</p>
 
 When we say "distance", what do you think about? The distance between your home
 and your workplace? What is the shortest distance to arrive somewhere? In this

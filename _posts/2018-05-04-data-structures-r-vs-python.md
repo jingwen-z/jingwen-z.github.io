@@ -4,6 +4,12 @@ title:       "Data structures - R vs Python"
 date:        "2018-05-04 21:48:06 +0200"
 tags:        [python3, R]
 comments:    true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 I've learnt python since the beginning of this year. In this blog, I'll compare
 the data structures in R to Python briefly.

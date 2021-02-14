@@ -9,15 +9,16 @@ excerpt:            >
     This blog talks about how to get places' reviews on Google Maps by
     different API and Python scripts, like Google Geocoding API, Place Search
     API and Place Details API.
-img_url:            /images/20200103-google-maps-reviews.jpg
+cover:              /images/20200103-google-maps-reviews.jpg
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Google Maps Review"
-  src="{{ site.baseurl }}/images/20200103-google-maps-reviews.jpg"/>
-</p>
 
 Imagine that you have a friend who recommend a restaurant to you, how will you
 check its location and know if it's really good? Maybe Google Maps is a good

@@ -9,9 +9,15 @@ excerpt:            >
     This blog specifies how to create simple area charts, multiple area charts,
     stacked area charts and 100% stacked area charts with matplotlib in Python,
     and their use cases.
-img_url:           /images/20181114-area-header.png
+cover:             /images/20181114-area-header.png
 img_width:         1280
 img_height:        853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 > This blog is part of Matplotlib Series:

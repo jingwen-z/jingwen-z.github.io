@@ -11,15 +11,16 @@ excerpt:     >
     endeavors across every single industrial and technological sector, across
     every country. In this blog, I will talk about energy consumption with the
     following points...
-img_url:     /images/20190927-light-bulb.jpg
+cover:       /images/20190927-light-bulb.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Light bulb"
-  src="{{ site.baseurl }}/images/20190927-light-bulb.jpg"/>
-</p>
 
 World energy consumption is the total energy produced and used by the entire
 human civilization. Typically measured per year, it involves all energy

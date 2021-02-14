@@ -10,15 +10,16 @@ excerpt:     >
     and regression. It is one of the most popular models in Machine Learning.
     SVMs are suited for classification of complex but small- or medium-sized
     datasets.
-img_url:     /images/20190423-california-street.jpg
+cover:       /images/20190423-california-street.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Califormia street"
-  src="{{ site.baseurl }}/images/20190423-california-street.jpg"/>
-</p>
 
 A _Support Vector Machine (SVM)_ is a very powerful and versatile Machine
 Learning model, capable of performing linear or nonlinear classification and

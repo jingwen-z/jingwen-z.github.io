@@ -7,6 +7,12 @@ comments:    true
 excerpt:            >
     This blog follows PEP 328 to specify how to import package absolutely or
     relatively in Python and how to build package as well.
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 Module and package are core of large programs. In this blog, I will talk about
 how to write long `import` statements, how to import packages absolutely and

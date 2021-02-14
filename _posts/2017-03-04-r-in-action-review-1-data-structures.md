@@ -4,6 +4,12 @@ title:       R IN ACTION Review 1 - Data structures
 date:        2017-03-04 23:32:43 +0200
 tags:        [R, data-structure]
 comments:    true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 During these days, I read the book "R IN ACTION" on my way to work and home. In

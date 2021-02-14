@@ -5,6 +5,12 @@ date:               2018-07-10 18:31:21 +0200
 last_modified_at:   2018-08-05 09:53:23 +0200
 tags:               [python3, regular-expression]
 comments:           true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 _Regular expressions_ provide a flexible way to search or match string patterns
 in text. A single expression, commonly called a _regex_, is a string formed

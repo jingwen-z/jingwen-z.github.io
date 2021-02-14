@@ -16,15 +16,16 @@ excerpt:     >
     the less affluent outside Paris. In this blog, I'll talk about the
     second-hand apartments purchases in Île-de-France between January 2014 and
     June 2020.
-img_url:     /images/20210103-district-price.png
+cover:       /images/20210103-district-price.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="dvf IDF per area"
-  src="{{ site.baseurl }}/images/20210103-district-price.png"/>
-</p>
 
 Île-de-France is the most populous of the 18 regions of France. It is located
 in the north-central part of the country and often called the Région Parisienne

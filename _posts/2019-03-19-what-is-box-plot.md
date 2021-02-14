@@ -8,15 +8,16 @@ excerpt:     >
     This blog talks about what is box plot, understanding box plot with help of
     probability density function (pdf), how to make a box plot by python module
     matplotlib and how to interprete a boxplot.
-img_url:     /images/20190319-boxplot.png
+cover:       /images/20190319-boxplot.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Box plot"
-  src="{{ site.baseurl }}/images/20190319-boxplot.png"/>
-</p>
 
 What should we do if we are curious about the average volume of basket? It's
 not enough if we only sum volume of all baskets and divide it by baskets'

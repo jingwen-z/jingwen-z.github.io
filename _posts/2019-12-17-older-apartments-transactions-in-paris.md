@@ -12,15 +12,16 @@ excerpt:            >
     the increasing price of real estate in Paris. In this blog, I'll talk about
     the second-hand apartments purchases in Paris between January 2014 and June
     2019.
-img_url:            /images/20191217-dvf-paris-quartier.png
+cover:              /images/20191217-dvf-paris-quartier.png
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="dvf Paris per area"
-  src="{{ site.baseurl }}/images/20191217-dvf-paris-quartier.png"/>
-</p>
 
 Paris is the capital and most populous city of France. Since the 17th century,
 Paris has been one of Europe's major centres of finance, diplomacy, commerce,

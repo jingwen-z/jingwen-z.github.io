@@ -8,15 +8,16 @@ excerpt:     >
     In this blog, I talked about why we create a virtual environment, how to
     create a virtual environment by Python and how to use virtual environment
     in Jupyter Notebook.
-img_url:     /images/20190723-venv.jpg
+cover:       /images/20190723-venv.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Ensemble music"
-  src="{{ site.baseurl }}/images/20190723-venv.jpg"/>
-</p>
 
 Imagine that you are creating a project with python, and you need to import a
 package which is not the same version as other project, what should we in this

@@ -10,15 +10,16 @@ excerpt:            >
     lots of tourists, which makes me eager to dig out Airbnb locations in
     Paris. Where are the locations located? What are their prices? In this
     blog, I will analyse Airbnb Paris with the following points...
-img_url:            /images/20190813-locations.png
+cover:              /images/20190813-locations.png
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Airbnb Paris Locations"
-  src="{{ site.baseurl }}/images/20190813-locations.png"/>
-</p>
 
 Paris is the capital and most populous city of France, and it also attracts
 lots of tourists, which makes me eager to dig out Airbnb locations in Paris.

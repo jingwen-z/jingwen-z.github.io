@@ -10,15 +10,16 @@ excerpt:     >
     column, creating a new column, filtering, selecting a list of columns,
     aggregating, renaming columns, joining 2 dataframes, creating a new
     dataframe, creating a pivot table.
-img_url:     /images/20200908-pandas.jpg
+cover:       /images/20200908-pandas.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="20200716-pandas"
-  src="{{ site.baseurl }}/images/20200908-pandas.jpg"/>
-</p>
 
 In recent work, I transformed data with `pyspark`. Since I often did this with
 `pandas` in my previous work, I will compare these two packages on data

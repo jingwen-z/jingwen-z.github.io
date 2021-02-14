@@ -4,6 +4,12 @@ title:              What is Machine Learning?
 date:               2016-08-14 23:32:43 +0200
 tags:               [Machine-Learning]
 comments:           true
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
 Machine learning explores the study and construction of algorithms that can

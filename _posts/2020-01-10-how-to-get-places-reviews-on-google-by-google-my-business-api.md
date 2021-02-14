@@ -10,15 +10,16 @@ excerpt:     >
     want to extract all reviews of each location, you can use "Google My
     Business API". In this blog, I will talk about how to get places' reviews
     on Google by Google My Business API
-img_url:     /images/20200103-google-maps-reviews.jpg
+cover:       /images/20200103-google-maps-reviews.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Google Maps Review"
-  src="{{ site.baseurl }}/images/20200103-google-maps-reviews.jpg"/>
-</p>
 
 In the [last blog][place-api], I talked about how to get places' reviews on
 Google by Place API, but we can get only 5 reviews at most by “Place Details”.

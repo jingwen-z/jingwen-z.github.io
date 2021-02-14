@@ -10,15 +10,16 @@ excerpt:     >
     with a query, getting a video’s statistics data with a video ID, getting a
     video’s comments, getting a channel’s information with channel ID, and
     getting a channel’s playlist.
-img_url:     /images/20200704-youtube-img.png
+cover:       /images/20200704-youtube-img.png
 img_width:   1280
 img_height:  905
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="YouTube"
-  src="{{ site.baseurl }}/images/20200704-youtube-img.png"/>
-</p>
 
 Imagine that your favorite singer releases a new song on YouTube, you listen to
 the song and click a "like" or leave your reviews, or you go to your favorite

@@ -7,15 +7,16 @@ comments:    true
 excerpt:     >
     This blog introduces how to set up a fake SMTP server and send e-mails with
     python, and how to test sending e-mails with unittest.mock.
-img_url:     /images/20200601-mail.png
+cover:       /images/20200601-mail.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="20200601-mail"
-  src="{{ site.baseurl }}/images/20200601-mail.png"/>
-</p>
 
 Imagine that we need to deliver some specific dashboards or report frequently,
 it's more convenient to send them automatically rather than manually. In this

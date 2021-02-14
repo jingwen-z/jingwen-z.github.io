@@ -8,15 +8,16 @@ comments:           true
 excerpt:            >
     This blog introduces how to use `Putty` to transfer files from Windows OS
     to Linux OS and reverse.
-img_url:            /images/20190409-transfer.jpg
+cover:              /images/20190409-transfer.jpg
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Transfering"
-  src="{{ site.baseurl }}/images/20190409-transfer.jpg"/>
-</p>
 
 During my daily working, I do the development on Windows OS; besides, we have a
 Debian server for running different jobs automatically, file storage, etc.

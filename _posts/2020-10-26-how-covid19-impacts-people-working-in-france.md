@@ -6,15 +6,16 @@ tags:        [analysis, COVID-19, visualisation, geovisualisation]
 comments:    true
 excerpt:     >
     This blog talks about how COVID-19 impacts people's working in France.
-img_url:     /images/20201026-nb-salaries.png
+cover:       /images/20201026-nb-salaries.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="20201026-nb-salaries"
-  src="{{ site.baseurl }}/images/20201026-nb-salaries.png"/>
-</p>
 
 Faced with the scale of the health crisis linked to COVID-19, the French
 Government has decided to structurally transform the partial activity mechanism,

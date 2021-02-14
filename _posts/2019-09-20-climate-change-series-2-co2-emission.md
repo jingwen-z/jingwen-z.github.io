@@ -9,15 +9,16 @@ excerpt:     >
     emits radiant energy within the thermal infrared range. Greenhouse gases
     cause the greenhouse effect. In this blog, I will talk about greenhouse gas
     emission with the following points...
-img_url:     /images/20190920-ghg-emission-header.jpg
+cover:       /images/20190920-ghg-emission-header.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="GHG emission"
-  src="{{ site.baseurl }}/images/20190920-ghg-emission-header.jpg"/>
-</p>
 
 A greenhouse gas (sometimes abbreviated GHG) is a gas that absorbs and emits
 radiant energy within the thermal infrared range. Greenhouse gases cause the

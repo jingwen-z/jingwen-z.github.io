@@ -8,15 +8,16 @@ excerpt:     >
     This blog presents how to acheive a while loop by python. Except for the
     basic using, you will also comprehend the infinite loop, nested while loop,
     if-else statement with while loop and loop of a list.
-img_url:     /images/20190207-python-while-loop.jpg
+cover:       /images/20190207-python-while-loop.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Python while loop flow diagram"
-  src="{{ site.baseurl }}/images/20190207-python-while-loop.jpg"/>
-</p>
 
 `while` loops, like the for loop, are used for repeating sections of code - but
 unlike a for loop, the while loop will not run n times, but until a defined

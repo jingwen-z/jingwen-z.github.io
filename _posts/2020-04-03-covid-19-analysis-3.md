@@ -8,16 +8,17 @@ excerpt:     >
     At the same time of last month, China reached its peak of COVID-19 pandemic
     for the first stage. After March, the COVID-19's proliferation spread to
     other countries around the world, especially in Europe and North America.
-img_url:     /images/20200402-daynb-cumul-case.png
+cover:       /images/20200402-daynb-cumul-case.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img src="{{ site.baseurl }}/images/20200403-world-tsmap.gif"
-       style="max-width: 720px"
-       alt="20200403-world-tsmap">
-</p>
 
 At the same time of last month, China reached its peak of COVID-19 pandemic for
 the first stage. After March, the COVID-19's proliferation spread to other

@@ -7,15 +7,16 @@ comments:    true
 excerpt:     >
     In this blog, I create a map to display how far is the nearest COVID-19
     testing site for each community with python modules "folium" and "shapely".
-img_url:     /images/20201108-nearest-covid19-testing-site-distance.png
+cover:       /images/20201108-nearest-covid19-testing-site-distance.png
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="The nearest COVID-19 testing site distance"
-  src="{{ site.baseurl }}/images/20201108-nearest-covid19-testing-site-distance.png"/>
-</p>
 
 The COVID-19 pandemic is still around the world, we need to do a COVID-19 test
 if you feel that you have the symptom or you need to travel abroad. There are

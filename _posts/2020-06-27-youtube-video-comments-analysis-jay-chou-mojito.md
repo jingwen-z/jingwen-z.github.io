@@ -7,15 +7,16 @@ comments:    true
 excerpt:     >
     I extract one video's (Mojito Jay Chou) comments on YouTube with YouTube
     Data API and in this blog I will analyse them in different views.
-img_url:     /images/20200628-mojito.jpg
+cover:       /images/20200628-mojito.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="20200628-mojito"
-  src="{{ site.baseurl }}/images/20200628-mojito.jpg"/>
-</p>
 
 Jay Chou is a Taiwanese musician, singer, songwriter, record producer, film
 producer, actor, and director. In 2000, Chou released his debut album, titled

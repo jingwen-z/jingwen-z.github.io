@@ -13,15 +13,16 @@ excerpt:            >
     than Batch GD; Mini-batch Gradient Descent computes the gradients on small
     random sets of instances, it get a performance boost from hardware optimization
     of matrix operations.
-img_url:            /images/20190326-mountain.jpg
+cover:              /images/20190326-mountain.jpg
 img_width:          1280
 img_height:         853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="Mountain"
-  src="{{ site.baseurl }}/images/20190326-mountain.jpg"/>
-</p>
 
 _Gradient Descent_ is a very generic optimization algorithm capable of finding
 optimal solutions to a wide range of problems. The general idea of Gradient

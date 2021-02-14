@@ -7,15 +7,16 @@ comments:    true
 excerpt:     >
     This blog talks about how to convert projected coordinates to latitude
     longitude with python module "pyproj".
-img_url:     /images/20210110-image.jpg
+cover:       /images/20210110-image.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="image"
-  src="{{ site.baseurl }}/images/20210110-image.jpg"/>
-</p>
 
 Last month I [drew subway and tramway lines with `folium`][draw-transport-lines]
 according to the [Île-de-France public transport network datasets][r1]. However,
