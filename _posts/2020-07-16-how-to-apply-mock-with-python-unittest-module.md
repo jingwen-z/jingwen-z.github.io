@@ -21,11 +21,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="20200716-python-mock"
-  src="{{ site.baseurl }}/images/20200716-python-mock.png"/>
-</p>
-
 Imagine that when we wrote a Python class to extract some business places'
 reviews with Google Place API, how could we ensure that we will extract the data
 correctly without sending requests to Google? In this case, we can use python

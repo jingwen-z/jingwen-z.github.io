@@ -18,11 +18,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Distance"
-  src="{{ site.baseurl }}/images/20190827-image.jpg"/>
-</p>
-
 When we say "distance", what do you think about? The distance between your home
 and your workplace? What is the shortest distance to arrive somewhere? In this
 blog, I will talk about how we apply distance in Data Science with the

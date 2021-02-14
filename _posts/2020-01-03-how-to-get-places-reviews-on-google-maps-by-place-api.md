@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Google Maps Review"
-  src="{{ site.baseurl }}/images/20200103-google-maps-reviews.jpg"/>
-</p>
-
 Imagine that you have a friend who recommend a restaurant to you, how will you
 check its location and know if it's really good? Maybe Google Maps is a good
 choice, since you can get its note and reviews given by clients. In this blog,

@@ -27,11 +27,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="dvf IDF per area"
-  src="{{ site.baseurl }}/images/20210103-district-price.png"/>
-</p>
-
 Île-de-France is the most populous of the 18 regions of France. It is located
 in the north-central part of the country and often called the Région Parisienne
 ("Paris Region") because it includes the city of Paris. Besides the landmarks of

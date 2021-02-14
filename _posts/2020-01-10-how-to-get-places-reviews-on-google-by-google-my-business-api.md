@@ -21,11 +21,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Google Maps Review"
-  src="{{ site.baseurl }}/images/20200103-google-maps-reviews.jpg"/>
-</p>
-
 In the [last blog][place-api], I talked about how to get places' reviews on
 Google by Place API, but we can get only 5 reviews at most by “Place Details”.
 If you want to extract all reviews of each location, you can use "Google My

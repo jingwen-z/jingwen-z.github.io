@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="image"
-  src="{{ site.baseurl }}/images/20201118-image.jpg"/>
-</p>
-
 During my work, sometimes I need to create a dynamic Excel workbook for clients.
 The screenshot below is a simple example, we can filter "analysed year",
 "compared year" and "country" to get some KPIs of selected country on selected

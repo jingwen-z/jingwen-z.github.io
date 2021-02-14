@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Tree"
-  src="{{ site.baseurl }}/images/20190312-tree.jpg"/>
-</p>
-
 As a member of data science team, we do not only analyse / explore data with
 terrific algorithm, but also create some reports which can help others
 departments to make decisions or map out strategies. For creating reports, we

@@ -25,11 +25,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="supermarket"
-  src="{{ site.baseurl }}/images/20210202-supermarket.jpg"/>
-</p>
-
 Retail is the process of selling consumer goods or services to customers through
 multiple channels of distribution to earn a profit. Retailers satisfy demand
 identified through a supply chain. Most modern retailers typically make a

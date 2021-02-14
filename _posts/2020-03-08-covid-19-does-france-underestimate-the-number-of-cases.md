@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Prediction with France history"
-  src="{{ site.baseurl }}/images/20200308-france-prediction.png"/>
-</p>
-
 Today I read an article on [franceinfo][franceinfo-vrai-ou-fake] that discusses
 if France underestimate the number of cases, and expressed that the difference
 between the number of tests carried out in different countries is explained by

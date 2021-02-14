@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="20200523-docker-pyspark"
-  src="{{ site.baseurl }}/images/20200523-docker-pyspark.png"/>
-</p>
-
 Considering I will use Spark in my future work, I learnt how to manipulate data
 with `pyspark` in a Docker container and am willing to share it with you! In my
 blog, I'll talk about the following points:

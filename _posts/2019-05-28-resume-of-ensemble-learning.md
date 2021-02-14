@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Ensemble music"
-  src="{{ site.baseurl }}/images/20190528-ensemble.jpg"/>
-</p>
-
 Suppose you ask a complex question to thousands of random people, then
 aggregate their answers. In many cases you will find that this aggregated
 answer is better than an expert's answer. Similarly, if you aggregate the

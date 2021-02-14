@@ -22,11 +22,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Forest"
-  src="{{ site.baseurl }}/images/20191004-forest.jpg"/>
-</p>
-
 Forests are the dominant terrestrial ecosystem of Earth, and are distributed
 around the globe. Forests account for 75% of the gross primary production of
 the Earth's biosphere, and contain 80% of the Earth's plant biomass. Net

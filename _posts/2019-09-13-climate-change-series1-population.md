@@ -23,11 +23,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Speed"
-  src="{{ site.baseurl }}/images/20190913-population.jpg"/>
-</p>
-
 According to the United States Census Bureau the world's population was about
 7.55 billion in 2019 and that the 7 billion number was surpassed on 12
 March 2012. According to a separate estimate by the United Nations, Earth's

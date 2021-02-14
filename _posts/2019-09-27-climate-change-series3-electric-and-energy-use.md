@@ -22,11 +22,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Light bulb"
-  src="{{ site.baseurl }}/images/20190927-light-bulb.jpg"/>
-</p>
-
 World energy consumption is the total energy produced and used by the entire
 human civilization. Typically measured per year, it involves all energy
 harnessed from every energy source applied towards humanity's endeavors across

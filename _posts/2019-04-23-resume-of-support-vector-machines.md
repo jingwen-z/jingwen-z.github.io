@@ -21,11 +21,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Califormia street"
-  src="{{ site.baseurl }}/images/20190423-california-street.jpg"/>
-</p>
-
 A _Support Vector Machine (SVM)_ is a very powerful and versatile Machine
 Learning model, capable of performing linear or nonlinear classification and
 regression. It is one of the most popular models in Machine Learning. SVMs are

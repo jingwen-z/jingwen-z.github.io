@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="China COVIF-19 map"
-  src="{{ site.baseurl }}/images/20200303-china-map.png"/>
-</p>
-
 2019新型冠状病毒疫情爆发已有两个多月，爆发初期对中国及亚洲其他国家产生很大影响，近两周在全球其他
 国家开始扩散。此篇博客将从一下几点对2019新型冠状病毒疫情进行分析：
 - 中国整体疫情

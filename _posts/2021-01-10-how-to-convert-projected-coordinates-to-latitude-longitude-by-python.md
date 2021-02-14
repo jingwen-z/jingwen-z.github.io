@@ -18,11 +18,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="image"
-  src="{{ site.baseurl }}/images/20210110-image.jpg"/>
-</p>
-
 Last month I [drew subway and tramway lines with `folium`][draw-transport-lines]
 according to the [Île-de-France public transport network datasets][r1]. However,
 the coordinates are not what we use in GPS (EPSG:4326), but the Mercator

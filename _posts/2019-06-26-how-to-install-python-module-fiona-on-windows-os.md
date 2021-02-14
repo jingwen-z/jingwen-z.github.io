@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Map"
-  src="{{ site.baseurl }}/images/20190626-map.png"/>
-</p>
-
 Recently, I learn how to visualise geographical data with python. However, I
 met difficulties when I installed the module `fiona` (on my professional PC
 which is Windows OS). So in this blog, I'll introduce how to install `fiona`

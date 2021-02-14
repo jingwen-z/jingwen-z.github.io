@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Python while loop flow diagram"
-  src="{{ site.baseurl }}/images/20190207-python-while-loop.jpg"/>
-</p>
-
 `while` loops, like the for loop, are used for repeating sections of code - but
 unlike a for loop, the while loop will not run n times, but until a defined
 condition is no longer met. If the condition is initially false, the loop body

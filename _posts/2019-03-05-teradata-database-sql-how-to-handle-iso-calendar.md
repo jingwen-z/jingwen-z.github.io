@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Bird"
-  src="{{ site.baseurl }}/images/20190305-bird.jpg"/>
-</p>
-
 When we create yearly, monthly or weekly report, we are sometimes beset by
 problem about calendar. Like the last day of year 2018 (2018-12-31) is regarded
 as one day of 2018 or 2019 ? Or the last day of year 2018 is considered as one

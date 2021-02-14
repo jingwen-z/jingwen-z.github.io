@@ -18,11 +18,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="20200628-mojito"
-  src="{{ site.baseurl }}/images/20200628-mojito.jpg"/>
-</p>
-
 Jay Chou is a Taiwanese musician, singer, songwriter, record producer, film
 producer, actor, and director. In 2000, Chou released his debut album, titled
 Jay (2000), under the record company Alfa Music. In 2001, Chou released his

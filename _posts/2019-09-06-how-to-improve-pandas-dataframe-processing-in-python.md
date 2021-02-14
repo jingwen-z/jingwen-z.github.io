@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Speed"
-  src="{{ site.baseurl }}/images/20190906-speed.jpg"/>
-</p>
-
 These days I cleaned my codes for different reports and analyses, which allows
 the scripts to be more brief and to increase running speed. In this blog, I'll
 pay particular emphasis on how to improve `pandas` dataframe processing with

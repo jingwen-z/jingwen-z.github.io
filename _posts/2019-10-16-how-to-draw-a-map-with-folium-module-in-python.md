@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="DVF Ile-de-France map"
-  src="{{ site.baseurl }}/images/20191016-dvf-idf.png"/>
-</p>
-
 A map can clearly present information in terms of geography. Recently I learnt
 how to realize geovisualization with `folium` module in Python. In this blog, I
 will talk about how to draw a map like the one above with `folium` with the

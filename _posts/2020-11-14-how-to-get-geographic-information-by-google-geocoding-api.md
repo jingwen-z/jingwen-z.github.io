@@ -18,11 +18,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="20201114-map-image"
-  src="{{ site.baseurl }}/images/20201114-map-image.jpg"/>
-</p>
-
 Imagine that you want to draw some geographic points on a map, you only have
 their addresses, how to get their latitude and longitude? As a data scientist,
 we can find them by Google Geocoding API. In this blog, I'll talk about Google

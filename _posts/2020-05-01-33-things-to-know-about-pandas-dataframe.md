@@ -17,11 +17,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="20200501-python"
-  src="{{ site.baseurl }}/images/20200501-python.jpg"/>
-</p>
-
 To get start with `pandas`, you need to get confortable with its two data
 structures: series and dataframe. In this blog, we will talk about multiple
 applications of dataframe.

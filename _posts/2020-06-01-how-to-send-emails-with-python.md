@@ -18,11 +18,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="20200601-mail"
-  src="{{ site.baseurl }}/images/20200601-mail.png"/>
-</p>
-
 Imagine that we need to deliver some specific dashboards or report frequently,
 it's more convenient to send them automatically rather than manually. In this
 blog I'll talk about how to send an e-mail with Python in the following points:

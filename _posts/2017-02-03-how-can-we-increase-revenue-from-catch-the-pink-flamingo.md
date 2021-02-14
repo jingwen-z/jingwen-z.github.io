@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="flamingo"
-  src="{{ site.baseurl }}/images/20170203-flamingo.jpg"/>
-</p>
-
 During last December and January, I participated Big Data courses on the website
 [Coursera][Coursera], like what I mentioned in my [previous blog][previous blog].
 Since schedual of the was really substantial, I didn't have time to summary the

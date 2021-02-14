@@ -21,11 +21,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Airbnb Paris Locations"
-  src="{{ site.baseurl }}/images/20190813-locations.png"/>
-</p>
-
 Paris is the capital and most populous city of France, and it also attracts
 lots of tourists, which makes me eager to dig out Airbnb locations in Paris.
 Where are the locations located? What are their prices? In this blog, I will

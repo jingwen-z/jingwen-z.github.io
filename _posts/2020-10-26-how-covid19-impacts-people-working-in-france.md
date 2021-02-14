@@ -17,11 +17,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="20201026-nb-salaries"
-  src="{{ site.baseurl }}/images/20201026-nb-salaries.png"/>
-</p>
-
 Faced with the scale of the health crisis linked to COVID-19, the French
 Government has decided to structurally transform the partial activity mechanism,
 to provide France with the most protective system in Europe.

@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Title image"
-  src="{{ site.baseurl }}/images/20190108-calendar.jpg"/>
-</p>
-
 Converting between datetime and string is a subject that we usually need to
 handle during data processing. In this blog, I'll talk about how to convert
 `datetime` to `string` and inverse, with following date format:

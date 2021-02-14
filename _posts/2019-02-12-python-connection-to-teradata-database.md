@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Teradata logo"
-  src="{{ site.baseurl }}/images/20190212-teradata-logo.png"/>
-</p>
-
 As a data scientist, we need to extract data inevitably. Before extracting
 data, we should firstly connect to database. In this blog, I'll talk about how
 to connect to [Teradata Database][Teradata] with following points:

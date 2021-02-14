@@ -18,11 +18,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="The nearest COVID-19 testing site distance"
-  src="{{ site.baseurl }}/images/20201108-nearest-covid19-testing-site-distance.png"/>
-</p>
-
 The COVID-19 pandemic is still around the world, we need to do a COVID-19 test
 if you feel that you have the symptom or you need to travel abroad. There are
 some testing sites in different communities. Inspired by [Boris' portfolio][Boris],

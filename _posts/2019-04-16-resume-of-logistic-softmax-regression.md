@@ -18,11 +18,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Iris"
-  src="{{ site.baseurl }}/images/20190416-iris.jpg"/>
-</p>
-
 In this blog, I will talk about two models that are commonly used for
 classification tasks: Logistic Regression and Softmax Regression.
 

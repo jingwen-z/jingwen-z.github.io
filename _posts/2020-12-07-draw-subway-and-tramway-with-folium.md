@@ -18,11 +18,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="20201207-public-transport-lines"
-  src="{{ site.baseurl }}/images/20201207-public-transport-lines.png"/>
-</p>
-
 A map can clearly present information in terms of geography. Recently I learnt
 how to draw public transport lines with `folium` module in Python. In this blog,
 I will talk about how to do that with the following points:

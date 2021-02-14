@@ -21,11 +21,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="YouTube"
-  src="{{ site.baseurl }}/images/20200704-youtube-img.png"/>
-</p>
-
 Imagine that your favorite singer releases a new song on YouTube, you listen to
 the song and click a "like" or leave your reviews, or you go to your favorite
 channel to see if there are some new releases. In this blog, I'll talk about how

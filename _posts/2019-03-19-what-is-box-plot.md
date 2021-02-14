@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Box plot"
-  src="{{ site.baseurl }}/images/20190319-boxplot.png"/>
-</p>
-
 What should we do if we are curious about the average volume of basket? It's
 not enough if we only sum volume of all baskets and divide it by baskets'
 amount. We can also explore it with box plot. In this blog, I'll talk about box

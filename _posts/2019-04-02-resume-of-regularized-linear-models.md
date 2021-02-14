@@ -22,11 +22,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Regularized cheese"
-  src="{{ site.baseurl }}/images/20190402-cheese.jpg"/>
-</p>
-
 A good way to reduce overfitting is to regularize the model, which means the
 fewer degrees of freedom it has, the harder it will be for it to overfit the
 data. For a linear model, regularization is achieved by constraining the

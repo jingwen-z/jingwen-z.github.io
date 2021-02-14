@@ -24,11 +24,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Mountain"
-  src="{{ site.baseurl }}/images/20190326-mountain.jpg"/>
-</p>
-
 _Gradient Descent_ is a very generic optimization algorithm capable of finding
 optimal solutions to a wide range of problems. The general idea of Gradient
 Descent is to tweak parameters iteratively so that we can minimize a cost

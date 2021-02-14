@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Python while loop flow diagram"
-  src="{{ site.baseurl }}/images/20190129-python-for-loop.jpg"/>
-</p>
-
 `for` loops are traditionally used when you have a block of code which you want
 to repeat a fixed number of times. The Python for statement iterates over the
 members of a sequence in order, executing the block each time. In this blog,

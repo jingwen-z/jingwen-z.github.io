@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Califormia street"
-  src="{{ site.baseurl }}/images/20190507-giant-ship.jpg"/>
-</p>
-
 ## Content
 - Project understanding
 - Objectif

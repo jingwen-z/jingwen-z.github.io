@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Map image"
-  src="{{ site.baseurl }}/images/20191108-header-img.jpg"/>
-</p>
-
 A map can clearly present information in terms of geography. Recently I learnt
 how to realize geovisualization with `folium` module in Python. In this blog, I
 will talk about how to draw a different types of map like with the following

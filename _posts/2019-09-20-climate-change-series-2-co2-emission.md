@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="GHG emission"
-  src="{{ site.baseurl }}/images/20190920-ghg-emission-header.jpg"/>
-</p>
-
 A greenhouse gas (sometimes abbreviated GHG) is a gas that absorbs and emits
 radiant energy within the thermal infrared range. Greenhouse gases cause the
 greenhouse effect. The primary greenhouse gases in Earth's atmosphere are water

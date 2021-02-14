@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Ensemble music"
-  src="{{ site.baseurl }}/images/20190723-venv.jpg"/>
-</p>
-
 Imagine that you are creating a project with python, and you need to import a
 package which is not the same version as other project, what should we in this
 situation? Maybe creating a virtual environment for this project is a good

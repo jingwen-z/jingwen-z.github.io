@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Title image"
-  src="{{ site.baseurl }}/images/20190122-iso8601.png"/>
-</p>
-
 [ISO 8601][ISO8601], an international standard covering the exchange of date
 and time-related data, as the string format. The ISO calendar is a widely used
 variant of the Gregorian calendar. The ISO year consists of 52 or 53 full

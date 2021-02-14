@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Califormia street"
-  src="{{ site.baseurl }}/images/20190430-tree.jpg"/>
-</p>
-
 Like SVMs, _Decision Trees_ are versatile Machine Learning algorithms that can
 perform both classification and regression tasks, and even multioutput tasks.
 In this blog, I will introduce Decision Trees with following point:

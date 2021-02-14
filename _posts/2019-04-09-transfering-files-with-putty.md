@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="Transfering"
-  src="{{ site.baseurl }}/images/20190409-transfer.jpg"/>
-</p>
-
 During my daily working, I do the development on Windows OS; besides, we have a
 Debian server for running different jobs automatically, file storage, etc.
 Sometimes, we also need to transfer files from Windows OS to Linux OS, or

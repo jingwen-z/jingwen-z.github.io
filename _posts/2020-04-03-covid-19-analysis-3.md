@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img src="{{ site.baseurl }}/images/20200403-world-tsmap.gif"
-       style="max-width: 720px"
-       alt="20200403-world-tsmap">
-</p>
 
 At the same time of last month, China reached its peak of COVID-19 pandemic for
 the first stage. After March, the COVID-19's proliferation spread to other

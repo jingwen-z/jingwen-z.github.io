@@ -18,11 +18,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="SQL Server logo"
-  src="{{ site.baseurl }}/images/20190219-sqlserver-logo.png"/>
-</p>
-
 In the [last blog][connection teradata] I presented how to connect to Teradata
 Database with `teradata` python module. Today I'll talk about how to connect to
 [SQL Server][SQL Server] by python with following points:

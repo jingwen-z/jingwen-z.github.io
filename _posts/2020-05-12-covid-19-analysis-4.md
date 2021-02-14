@@ -19,11 +19,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img src="{{ site.baseurl }}/images/20200510-world-tsmap.gif"
-       style="max-width: 720px"
-       alt="20200510-world-tsmap">
-</p>
 
 Recently, lots of European countries started to stop the lockdown. Thus, I'm
 curious about the actual COVID-19 situation around the world. In this blog, I

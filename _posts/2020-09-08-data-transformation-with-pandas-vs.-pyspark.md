@@ -21,11 +21,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="20200716-pandas"
-  src="{{ site.baseurl }}/images/20200908-pandas.jpg"/>
-</p>
-
 In recent work, I transformed data with `pyspark`. Since I often did this with
 `pandas` in my previous work, I will compare these two packages on data
 transformation with the following points:

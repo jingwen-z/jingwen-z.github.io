@@ -20,11 +20,6 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
-<p align="center">
-  <img alt="GitLab Runner Logo"
-  src="{{ site.baseurl }}/images/20180726-runner-logo.png"/>
-</p>
-
 This blog specifies how to automate python scripts to run by GitLab CI. In
 the following, I will talk about each element of the configuration with
 ".gitlab-ci.yml", manage environments with anaconda and "environment.yml", and
