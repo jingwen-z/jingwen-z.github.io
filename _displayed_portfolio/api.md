@@ -1,8 +1,8 @@
 ---
 layout:            portfolio
-title:             CI
-portfolio:         CI
-cover:             /images/tag-ci.png
+title:             API
+portfolio:         API
+cover:             /images/tag-api.png
 comments:          false
 sidebar:
   nav:             portfolio
