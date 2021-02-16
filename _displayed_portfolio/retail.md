@@ -1,5 +1,5 @@
 ---
-layout:            tag
+layout:            portfolio
 title:             Retail
 portfolio:         retail
 cover:             /images/20210117-supermarket.jpg
