@@ -3,6 +3,7 @@ layout: article
 titles:
   en      : &EN       About
 key: page-about
+permalink: /about/
 ---
 
 More than four years as a data scientist in retailing. Rich experience in data
