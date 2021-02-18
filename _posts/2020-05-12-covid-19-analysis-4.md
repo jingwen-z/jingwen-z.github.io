@@ -16,6 +16,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20200512-virus.jpg
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -139,6 +140,8 @@ increase during the last month.
 ## Reference
 - Isaac Lin, "DXY-COVID-19-Data", _www.github.com_. [Online]. Available: [https://github.com/BlankerL/DXY-COVID-19-Data][r1]
 - CSSEGISandData, "csse_covid_19_data", _www.github.com_. [Online]. Available: [https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports][r2]
+- geralt, "virus coronavirus covid-19 pandemic", _pixabay.com_. [Online]. Available: [https://pixabay.com/illustrations/virus-coronavirus-covid-19-pandemic-5675422/][background-img]
 
 [r1]: https://github.com/BlankerL/DXY-COVID-19-Data
 [r2]: https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports
+[background-img]: https://pixabay.com/illustrations/virus-coronavirus-covid-19-pandemic-5675422/
