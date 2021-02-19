@@ -17,6 +17,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20200512-virus.jpg
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -146,6 +147,7 @@ worth sharing with you:
 - "Point épidémiologique du 07/03/2020, 15h", _www.santepubliquefrance.fr_. [Online]. Available: [https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde][r2]
 - "Zaia, da test Vo' studio epidemiologico", _www.ansa.it_. [Online]. Available: [http://www.ansa.it/sito/notizie/cronaca/2020/02/28/zaia-da-test-vo-studio-epidemiologico_2c3d88f3-6a4a-4e00-b255-9e1e2feb2768.html][r3]
 - "COVID-19 is not like the flu", _rentry.co_. [Online]. Available: [https://rentry.co/covid-19-is-not-like-the-flu][r4]
+- geralt, "virus coronavirus covid-19 pandemic", _pixabay.com_. [Online]. Available: [https://pixabay.com/illustrations/virus-coronavirus-covid-19-pandemic-5675422/][background-img]
 
 [franceinfo-vrai-ou-fake]: https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-la-france-sous-estime-t-elle-le-nombre-de-cas_3853661.html
 [def-case]: https://www.santepubliquefrance.fr/media/files/01-maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/definition-de-cas-03-03-20
@@ -153,3 +155,4 @@ worth sharing with you:
 [r2]: https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde
 [r3]: http://www.ansa.it/sito/notizie/cronaca/2020/02/28/zaia-da-test-vo-studio-epidemiologico_2c3d88f3-6a4a-4e00-b255-9e1e2feb2768.html
 [r4]: https://rentry.co/covid-19-is-not-like-the-flu
+[background-img]: https://pixabay.com/illustrations/virus-coronavirus-covid-19-pandemic-5675422/
