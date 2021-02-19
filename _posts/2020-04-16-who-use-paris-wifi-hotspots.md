@@ -15,6 +15,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20200416-wifi.jpg
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -124,3 +125,9 @@ des Berges de Seine Gardens or Trocadéro Gardens. Moreover, if you want to do
 sports with the Arab, Centre Sportif Pyrenees might be a good choice.
 
 [data-src]: https://opendata.paris.fr/explore/dataset/paris-wi-fi-utilisation-des-hotspots-paris-wi-fi/information/?disjunctive.incomingzonelabel&disjunctive.incomingnetworklabel&disjunctive.device_portal_format&disjunctive.device_constructor_name&disjunctive.device_operating_system_name_version&disjunctive.device_browser_name_version&disjunctive.userlanguage
+
+
+## Reference
+- Buffik, "business technology city line", _pixabay.com_. [Online]. Available: [https://pixabay.com/illustrations/business-technology-city-line-5475656/][background-img]
+
+[background-img]: https://pixabay.com/illustrations/business-technology-city-line-5475656/

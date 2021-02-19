@@ -17,6 +17,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20191108-header-img.jpg
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -315,6 +316,7 @@ following codes:
 - branca, "branca.colormap", _python-visualization.github.io/branca_. [Online]. Available: [https://python-visualization.github.io/branca/colormap.html#][branca.colormap]
 - folium, "Preleminary demo of the pattern plugin for Folium", _nbviewer.jupyter.org_. [Online]. Available: [https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/plugin-patterns.ipynb][plugsin_pattern]
 - "How does one add a legend (categorical) to a folium map", _nbviewer.jupyter.org_. [Online]. Available: [https://nbviewer.jupyter.org/gist/talbertc-usgs/18f8901fc98f109f2b71156cf3ac81cd][add_legend]
+- WikiImages, "Earth map summer July continents", pixabay.com_. [Online]. Available: [https://pixabay.com/photos/earth-map-summer-july-continents-11048/][image]
 
 [datasource1]: https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/
 [datasource2]: https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson
@@ -322,3 +324,4 @@ following codes:
 [branca.colormap]: https://python-visualization.github.io/branca/colormap.html#
 [plugsin_pattern]: https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/plugin-patterns.ipynb
 [add_legend]: https://nbviewer.jupyter.org/gist/talbertc-usgs/18f8901fc98f109f2b71156cf3ac81cd
+[image]: https://pixabay.com/photos/earth-map-summer-july-continents-11048/
