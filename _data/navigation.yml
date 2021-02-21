@@ -67,6 +67,8 @@ portfolio:
         url:    /portfolio/geovisualisation
       - title:  Machine-Learning
         url:    /portfolio/machine-learning
+      - title:  Python3
+        url:    /portfolio/python3
       - title:  Retail
         url:    /portfolio/retail
       - title:  SQL
