@@ -1,5 +1,0 @@
----
-layout: monthly
-date:   2020-06-01
----
-
