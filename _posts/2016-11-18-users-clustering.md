@@ -4,6 +4,9 @@ title:              Analysis of internauts' behavior
 date:               2016-11-18 23:32:43 +0200
 tags:               [analysis]
 comments:           true
+cover:              /images/20161118-notebook.jpg
+img_width:          1280
+img_height:         853
 article_header:
   type: overlay
   theme: dark
@@ -247,8 +250,12 @@ Here is what I want to share with you, really enjoyable, right?
 If you are interested in the R script, please check it on my [Github][Github],
 all propositions are welcome!
 
+## Reference
+- freephotocc, "notebook laptop macbook conceptual", _pixabay.com_. [Online]. Available: [https://pixabay.com/photos/notebook-laptop-macbook-conceptual-1280538/][backgroud-img]
+
 [FABERNOVEL DATA & MEDIA]: http://data-media.fabernovel.fr
 [blog]: https://www.r-bloggers.com/identify-describe-plot-and-remove-the-outliers-from-the-dataset
 [R-bloggers]: https://www.r-bloggers.com
 [Tukey]: https://en.wikipedia.org/wiki/Outlier#Tukey.27s_test
 [Github]: https://github.com/jingwen-z/R/blob/master/algorithm/user_clustering.R
+[backgroud-img]: https://pixabay.com/photos/notebook-laptop-macbook-conceptual-1280538/

@@ -13,6 +13,9 @@ excerpt:            >
     background colors and center text in one cell, wrap text in one cell, reset
     columns' width, set borders, hide grid, reset zoom scale, create named
     range and save the workbook.
+cover:              /images/tag-excel.jpg
+img_width:          1280
+img_height:         853
 article_header:
   type: overlay
   theme: dark
@@ -330,5 +333,10 @@ Voila, result as follows:
   src="{{ site.baseurl }}/images/20180619-final-result.PNG"/>
 </p>
 
+## Reference
+- "0*eSQte3e-rJeH7bu8", _miro.medium.com_. [Online].
+Available: [https://miro.medium.com/max/1400/0*eSQte3e-rJeH7bu8.jpg][backgroud-img]
+
 [openpyxl]: https://openpyxl.readthedocs.io/en/stable
 [stackoverflow]: https://stackoverflow.com/questions/34520764/apply-border-to-range-of-cells-using-openpyxl
+[backgroud-img]: https://miro.medium.com/max/1400/0*eSQte3e-rJeH7bu8.jpg

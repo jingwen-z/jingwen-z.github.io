@@ -4,6 +4,9 @@ title:              Impact of different elements on compensation
 date:               2016-11-11 23:32:43 +0200
 tags:               [analysis]
 comments:           true
+cover:              /images/20161118-notebook.jpg
+img_width:          1280
+img_height:         853
 article_header:
   type: overlay
   theme: dark
@@ -194,5 +197,9 @@ is 92%, which is pretty high.
 If you are interested in the R script, please check it on my [Github][Github],
 all propositions are welcome!
 
+## Reference
+- freephotocc, "notebook laptop macbook conceptual", _pixabay.com_. [Online]. Available: [https://pixabay.com/photos/notebook-laptop-macbook-conceptual-1280538/][backgroud-img]
+
 [French Development Agency]: http://www.afd.fr/home
 [Github]: https://github.com/jingwen-z/R/blob/master/TSE/internship/project_AFD.R
+[backgroud-img]: https://pixabay.com/photos/notebook-laptop-macbook-conceptual-1280538/
