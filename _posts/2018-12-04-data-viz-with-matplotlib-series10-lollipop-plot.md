@@ -16,6 +16,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20180526-pexels-steve-johnson.jpg
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -99,6 +100,9 @@ Obviously, cheese is prefered by clients.
 
 You can click [here][notebook] to check this example in jupyter notebook.
 
+## Reference
+- Steve Johnson, "painting wallpaper", _www.pexels.com_. [Online]. Available: [https://www.pexels.com/photo/painting-wallpaper-1070527/][backgroud-img]
+
 [lollipop plot]: https://python-graph-gallery.com/lollipop-plot/
 [notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/lollipop_plot.ipynb
 [series1]: https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/
@@ -111,3 +115,4 @@ You can click [here][notebook] to check this example in jupyter notebook.
 [series8]: https://jingwen-z.github.io/data-viz-with-matplotlib-series8-radar-chart/
 [series9]: https://jingwen-z.github.io/data-viz-with-matplotlib-series9-word-cloud/
 [series11]: https://jingwen-z.github.io/data-viz-with-matplotlib-series11-histogram/
+[backgroud-img]: https://www.pexels.com/photo/painting-wallpaper-1070527/

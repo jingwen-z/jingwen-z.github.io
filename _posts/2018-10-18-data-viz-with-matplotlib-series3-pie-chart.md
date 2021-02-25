@@ -17,6 +17,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20180526-pexels-steve-johnson.jpg
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -155,6 +156,9 @@ apples than other vegetables and fruits.
 
 You can click [here][notebook] to check this example in jupyter notebook.
 
+## Reference
+- Steve Johnson, "painting wallpaper", _www.pexels.com_. [Online]. Available: [https://www.pexels.com/photo/painting-wallpaper-1070527/][backgroud-img]
+
 [pie chart]: https://en.wikipedia.org/wiki/Pie_chart
 [nested pie chart]: https://www.zingchart.com/docs/chart-types/nested-pie-chart
 [notebook]: https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/pie_chart.ipynb
@@ -168,3 +172,4 @@ You can click [here][notebook] to check this example in jupyter notebook.
 [series9]: https://jingwen-z.github.io/data-viz-with-matplotlib-series9-word-cloud/
 [series10]: https://jingwen-z.github.io/data-viz-with-matplotlib-series10-lollipop-plot/
 [series11]: https://jingwen-z.github.io/data-viz-with-matplotlib-series11-histogram/
+[backgroud-img]: https://www.pexels.com/photo/painting-wallpaper-1070527/

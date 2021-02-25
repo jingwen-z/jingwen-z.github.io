@@ -16,6 +16,7 @@ article_header:
   theme: dark
   background_color: "#203028"
   background_image:
+    src: /images/20180526-pexels-steve-johnson.jpg
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 
@@ -252,6 +253,7 @@ You can click [here][notebook] to check this example in jupyter notebook.
 - [When to use a scatter plot?][use of scatter plot]
 - [The Connected Scatterplot for Presenting Paired Time Series][use of csp]
 - [Effective Use of Bubble Charts][use of bubble plot]
+- Steve Johnson, "painting wallpaper", _www.pexels.com_. [Online]. Available: [https://www.pexels.com/photo/painting-wallpaper-1070527/][backgroud-img]
 
 [scatter plot]: https://en.wikipedia.org/wiki/Scatter_plot
 [connected scatter]: https://vega.github.io/vega/examples/connected-scatter-plot
@@ -270,3 +272,4 @@ You can click [here][notebook] to check this example in jupyter notebook.
 [series9]: https://jingwen-z.github.io/data-viz-with-matplotlib-series9-word-cloud/
 [series10]: https://jingwen-z.github.io/data-viz-with-matplotlib-series10-lollipop-plot/
 [series11]: https://jingwen-z.github.io/data-viz-with-matplotlib-series11-histogram/
+[backgroud-img]: https://www.pexels.com/photo/painting-wallpaper-1070527/

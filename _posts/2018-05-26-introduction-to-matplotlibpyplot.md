@@ -4,6 +4,9 @@ title:       "Introduction to matplotlib.pyplot"
 date:        "2018-05-26 09:06:12 +0200"
 tags:        [matplotlib, visualisation]
 comments:    true
+cover:              /images/20180526-pexels-steve-johnson.jpg
+img_width:          1280
+img_height:         853
 article_header:
   type: overlay
   theme: dark
@@ -269,6 +272,9 @@ plt.subplots_adjust(hspace=0.3)
 [`plt.subplots_adjust()`][subplotsadjust] helps us to adjust the subplot layout,
 I increased a little the height between subplots with parameter _hspace_.
 
+## Reference
+- Steve Johnson, "painting wallpaper", _www.pexels.com_. [Online]. Available: [https://www.pexels.com/photo/painting-wallpaper-1070527/][backgroud-img]
+
 [matplotlib.pyplot]: https://matplotlib.org/api/pyplot_api.html
 [source]: https://www.data-blogger.com/2017/11/15/python-matplotlib-pyplot-a-perfect-combination
 [pltfigure]: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html
@@ -293,3 +299,4 @@ I increased a little the height between subplots with parameter _hspace_.
 [get_sample_data]: https://matplotlib.org/api/cbook_api.html
 [pltimread]: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imread.html
 [subplotsadjust]: https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots_adjust.html
+[backgroud-img]: https://www.pexels.com/photo/painting-wallpaper-1070527/

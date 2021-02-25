@@ -4,6 +4,7 @@ title:       "R IN ACTION Review 2 - Getting started with graphs"
 date:        "2017-04-15 10:51:27 +0200"
 tags:        [R, visualisation]
 comments:    true
+cover:              /images/20170415-pexels-steve-johnson.jpg
 article_header:
   type: overlay
   theme: dark
@@ -400,3 +401,8 @@ parameters listed in table 5.
 
 In the next blog, we'll turn to the customization of text annotations, and look
 at ways to combine more than one graph into a single image.
+
+## Reference
+- Steve Johnson, "art dirty texture brush", _www.pexels.com_. [Online]. Available: [https://www.pexels.com/photo/art-dirty-texture-brush-6868219/][backgroud-img]
+
+[backgroud-img]: https://www.pexels.com/photo/art-dirty-texture-brush-6868219/
