@@ -4,6 +4,7 @@ title:       "Association analysis - Apriori algorithm"
 date:        "2017-10-20 23:16:08 +0200"
 tags:        [Machine-Learning, Association-analysis]
 comments:    true
+cover:       /images/20171020-pexels-junjie-xu.jpg
 article_header:
   type: overlay
   theme: dark
@@ -280,5 +281,9 @@ associated with yogurt.
 Association analysis is a useful way to analyse the relation between 2 different
 products, which can also help the decision of retailing.
 
+## Reference
+- Junjie Xu, "assorted bottles and cans in commercial coolers", _www.pexels.com_. [Online]. Available: [https://www.pexels.com/photo/assorted-bottles-and-cans-in-commercial-coolers-3028500/][backgroud-img]
+
 [Beer and diaper]: https://blog.bissantz.com/myth-of-data-mining
 [Wikipedia]: https://en.wikipedia.org/wiki/Association_rule_learning
+[backgroud-img]: https://www.pexels.com/photo/assorted-bottles-and-cans-in-commercial-coolers-3028500/

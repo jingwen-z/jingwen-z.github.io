@@ -4,6 +4,9 @@ title:              Measuring model performance or error
 date:               2016-08-14 23:32:43 +0200
 tags:               [Machine-Learning]
 comments:           true
+cover:             /images/20160814-pexels-engin-akyurt.jpg
+img_width:   1280
+img_height:  853
 article_header:
   type: overlay
   theme: dark
@@ -102,3 +105,9 @@ src="https://latex.codecogs.com/gif.latex?\fn_cm&space;\large&space;Dunn's\,&spa
 index\,&space;=\,&space;\frac{Minimal\,&space;Intercluster\,&space;Distance}{
 Maximal\,&space;Diameter}"/>
 </p>
+
+## Reference
+- Engin Akyurt, "black and white dartboard", _www.pexels.com_. [Online].
+Available: [https://www.pexels.com/photo/black-and-white-dartboard-1552617/][backgroud-img]
+
+[backgroud-img]: https://www.pexels.com/photo/black-and-white-dartboard-1552617/

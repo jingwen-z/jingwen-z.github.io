@@ -8,7 +8,10 @@ comments:           true
 excerpt:            >
     Applying decision tree model in R's library 'rpart', using rpart function to
     build a model, showing fancyRpartPlot example, predicting with predict(),
-    pruning with prune().  
+    pruning with prune().
+cover:       /images/20190430-tree.jpg
+img_width:   1280
+img_height:  853
 article_header:
   type: overlay
   theme: dark
@@ -131,5 +134,9 @@ fancyRpartPlot(pruned)
 All things above are what I understand after learning from DataCamp, if you
 have some other ideas, don't hesitate to tell me :)
 
+## Reference
+- jplenio, "Tree nature wood sunset light", _pixabay.com_. [Online]. Available: [https://pixabay.com/photos/tree-nature-wood-sunset-light-3822149/][r1]
+
+[r1]: https://pixabay.com/photos/tree-nature-wood-sunset-light-3822149/
 [DataCamp]:https://www.datacamp.com/home
 [package-rpart]:https://cran.r-project.org/web/packages/rpart/rpart.pdf

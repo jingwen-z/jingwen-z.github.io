@@ -4,6 +4,7 @@ title:       "R IN ACTION Review 3 - Time series (Part 1)"
 date:        "2017-07-29 10:41:46 +0200"
 tags:        [R, Machine-Learning, Time-series]
 comments:    true
+cover:       /images/20170729-night.jpg
 article_header:
   type: overlay
   theme: dark
@@ -100,3 +101,7 @@ analysis and graphics with R_ p 343-348
 
 [2] Robert I. Kabacoff. 2015. "Chapter 15 Time series Figure 15.4" _R IN ACTION
 Data analysis and graphics with R_ p 347
+
+- Pexels, "night stars rotation starry sky", _pixabay.com_. [Online]. Available: [https://pixabay.com/photos/night-stars-rotation-starry-sky-1846734/][backgroud-img]
+
+[backgroud-img]: https://pixabay.com/photos/night-stars-rotation-starry-sky-1846734/

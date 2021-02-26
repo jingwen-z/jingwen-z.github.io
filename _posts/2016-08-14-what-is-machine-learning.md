@@ -4,6 +4,9 @@ title:              What is Machine Learning?
 date:               2016-08-14 23:32:43 +0200
 tags:               [Machine-Learning]
 comments:           true
+cover:             /images/tag-machine-learning.png
+img_width:   1280
+img_height:  853
 article_header:
   type: overlay
   theme: dark
@@ -49,3 +52,9 @@ quantitative. Clustering is grouping objects in clusters, it’s similar with
 cluster and dissimilar between clusters; this algorithm identifies potential
 categories out of a group of observations, without knowing what the expected
 categories are in advance.
+
+## Reference
+- GDJ, "a-i-ai-anatomy-2729794", _pixabay.com_. [Online].
+Available: [https://pixabay.com/vectors/a-i-ai-anatomy-2729794/][backgroud-img]
+
+[backgroud-img]: https://pixabay.com/vectors/a-i-ai-anatomy-2729794/
