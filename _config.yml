@@ -219,6 +219,7 @@ defaults:
 ##############################
 collections:
   displayed_portfolio:
+    my_label: Portfolio
     permalink: /portfolio/:name
     output: true
 
