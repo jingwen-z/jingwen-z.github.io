@@ -5,7 +5,17 @@
 {%- include snippets/get-article-title.html article=page -%}
 <title>{%- if __return -%}{{ __return }} - {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}</title>
 
-<meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">
+<meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | xml_escape | truncate: 160 }}{%- else -%}{{ site.description | xml_escape }}{%- endif -%}">
+
+{% seo %}
+
+<!-- Extra Open Graph :: Start -->
+{% if page.image %}
+<meta property="og:image:width" content="{{ site.data.images[page.image].width }}"/>
+<meta property="og:image:height" content="{{ site.data.images[page.image].height }}"/>
+{% endif %}
+<!-- Extra Open Graph :: End -->
+
 <link rel="canonical" href="{%- include snippets/page-url.html -%}">
 
 {%- assign _paths_rss = site.paths.rss | default: site.data.variables.default.paths.rss -%}
