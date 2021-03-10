@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "How to create a data pipeline with Azure data factory and slack?"
-date:        "2021-04-18 10:23:00 +0100"
+date:        "2021-04-27 10:23:00 +0100"
 tags:        [data-processing, API]
 comments:    true
 excerpt:     >
