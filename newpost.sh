@@ -36,13 +36,14 @@ excerpt:     >
 img_url:     /images/
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-
-<p align="center">
-  <img alt="image"
-  src="{{ site.baseurl }}/images/20210110-image.jpg"/>
-</p>
-
+## Introduction
 ... In this blog, I'll talk about this with the
 following points:
 
