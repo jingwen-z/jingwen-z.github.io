@@ -33,7 +33,7 @@ tags:        [python3]
 comments:    true
 excerpt:     >
     This blog ...
-img_url:     /images/
+cover:       /images/
 img_width:   1280
 img_height:  853
 article_header:
