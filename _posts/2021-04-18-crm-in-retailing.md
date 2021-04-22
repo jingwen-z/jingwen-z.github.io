@@ -9,13 +9,13 @@ excerpt:     >
     customer satifaction and the customer loyalty. To reach the goals, we need
     to understand CRM (Customer Relationship Management) firstly, then we can
     take steps to improve them.
-img_url:     /images/
+img_url:     /images/20210418-crm.jpg
 img_width:   1280
 img_height:  853
 ---
 <p align="center">
   <img alt="image"
-  src="{{ site.baseurl }}/images/20210110-image.jpg"/>
+  src="{{ site.baseurl }}/images/20210418-crm.jpg"/>
 </p>
 
 In retailing domain, one of the most important things is increasing the customer
@@ -166,8 +166,8 @@ _System Sciences, 2007. HICSS 2007. 40th Annual Hawaii International Conference 
 pp. 151b-151b. IEEE, 2007. 
 - SAP INSIGHTS, "What Is CRM Today?", _insights.sap.com_. [Online]. Available: [https://insights.sap.com/what-is-crm/][r1]
 - Marshall Hargrave, "Customer Relationship Management (CRM)", _investopedia.com_. [Online]. Available: [https://www.investopedia.com/terms/c/customer_relation_management.asp][r2]
-- "", __. [Online]. Available: [][image]
+- Tumisu, "smileys satisfaction du client", _pixabay.com_. [Online]. Available: [https://pixabay.com/fr/photos/smileys-satisfaction-du-client-5617876/][image]
 
 [r1]: https://insights.sap.com/what-is-crm/
 [r2]: https://www.investopedia.com/terms/c/customer_relation_management.asp
-[image]:
+[image]: https://pixabay.com/fr/photos/smileys-satisfaction-du-client-5617876/
