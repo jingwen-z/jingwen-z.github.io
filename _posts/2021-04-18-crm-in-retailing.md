@@ -12,12 +12,14 @@ excerpt:     >
 img_url:     /images/20210418-crm.jpg
 img_width:   1280
 img_height:  853
+article_header:
+  type: overlay
+  theme: dark
+  background_color: "#203028"
+  background_image:
+    gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
-<p align="center">
-  <img alt="image"
-  src="{{ site.baseurl }}/images/20210418-crm.jpg"/>
-</p>
-
+## Introduction
 In retailing domain, one of the most important things is increasing the customer
 satifaction and the customer loyalty. To reach the goals, we need to understand
 CRM (Customer Relationship Management) firstly, then we can take steps to
