@@ -9,7 +9,7 @@ excerpt:     >
     customer satifaction and the customer loyalty. To reach the goals, we need
     to understand CRM (Customer Relationship Management) firstly, then we can
     take steps to improve them.
-img_url:     /images/20210418-crm.jpg
+cover:       /images/20210418-crm.jpg
 img_width:   1280
 img_height:  853
 article_header:
