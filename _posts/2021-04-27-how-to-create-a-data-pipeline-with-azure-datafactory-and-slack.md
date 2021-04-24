@@ -180,8 +180,8 @@ I sent a message "test" with Databricks Message Bot on Slack, and received a
 message as below.
 
 <p align="center">
-  <img alt="vf.info()"
-  src="{{ site.baseurl }}/images/20210427-slack-send-msg.png"/>
+  <img alt="20210427-slack-send-msg"
+  src="{{ site.baseurl }}/images/20210427-slack-send-msg.PNG"/>
 </p>
 
 #### Upload files
