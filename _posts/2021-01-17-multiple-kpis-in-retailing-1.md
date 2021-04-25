@@ -60,7 +60,7 @@ apple that much.
 
 ## Turnover of transactions
 [datapine][r3] uses this indicator in their dashboard. Transactions' turnover
-measures the number of sales during a specific period. It can help you to
+measures the value of sales during a specific period. It can help you to
 understand if some products bring more value than others in different periods or
 different zones.
 
