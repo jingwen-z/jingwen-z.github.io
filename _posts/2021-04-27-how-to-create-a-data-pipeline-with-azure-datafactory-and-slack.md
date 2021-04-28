@@ -90,7 +90,8 @@ Slack provides a range of [APIs][slack-apis] that provide access to read, write,
 and update many types of data in Slack. To communicate data pipeline's result on
 Slack, we can send messages to a channel or upload files on a channel.
 
-### Send messages to a channel
+### Slack APIs
+#### Send messages to a channel
 We can use [`chat.postMessage`][chat-postMessage] for posting a message to a
 public channel, private channel, or direct message/IM channel.
 
@@ -108,7 +109,7 @@ to. Can be an encoded ID, or a name.
 
 About more information of arguments, you can find them [here][chat-postMessage].
 
-### Upload files
+#### Upload files
 We can use [`files.upload`][files-upload] for creating or uploading an existing
 file.
 
@@ -123,6 +124,85 @@ should be passed as an HTTP Authorization header or alternatively, as a `POST`
 parameter.
 
 About more information of arguments, you can find them [here][files-upload].
+
+### How to find channel ID on Slack?
+To send messages or upload files to a public channel, a multi-person direct
+message or a direct message to someone, we need to get the channel ID, but where
+can we find them?
+
+#### The public channel's ID
+When we open Slack with navigator, we can find it in the URL, with the following
+format:
+
+```
+https://app.slack.com/client/TD123ABCD/C024BE91L
+```
+
+The last part of the URL(`C024BE91L`) above starts with "C", which presents
+the public channel's ID.
+
+#### The multi-person direct message's ID
+Similar as above, let's open Slack with navigator, we can find it in the URL,
+with the following format:
+
+```
+https://app.slack.com/client/TD123ABCD/G012AC86C
+```
+
+The last part of the URL(`G012AC86C`) above starts with "G", which presents
+the group's ID.
+
+#### The user's ID
+For a User's ID, we can find it both on the website or the application. When we
+check someone's profile, we can find the ID (starts with "U") by clicking
+"More".
+
+<p align="center">
+  <img alt="vf.info()"
+  src="{{ site.baseurl }}/images/20210427-slack-user-id.jpg"/>
+</p>
+
+### How to realise it via Python?
+#### Send messages to a channel
+We can send the messages with `requests.post()` by specify the token,
+the channel ID and message that you want to send.
+
+```python
+import requests
+
+requests.post("https://slack.com/api/chat.postMessage", {
+  "token": "as-123dfghj456-klqwert7y8u9iop",
+  "channel": "U012AB34C",
+  "text": "test"
+})
+```
+I sent a message "test" with Databricks Message Bot on Slack, and received a
+message as below.
+
+<p align="center">
+  <img alt="vf.info()"
+  src="{{ site.baseurl }}/images/20210427-slack-send-msg.png"/>
+</p>
+
+#### Upload files
+We can upload the file with `requests.post()` by specify the file path, the
+token, the channel ID and `initial_comment` if you want to introduce the file.
+
+```python
+import requests
+
+requests.post("https://slack.com/api/files.upload",
+  params= {
+    "filename": "/path/of/file",
+    "token": "as-123dfghj456-klqwert7y8u9iop",
+    "channels": "U012AB34C",
+    "initial_comment" : "test file"},
+  files= {
+    "file" : ("/path/of/file",
+              open("/path/of/file", 'rb'),
+              os.path.splitext(os.path.basename("/path/of/file"))[1][1:])}
+)
+```
 
 ## Conclusion
 In this blog, I talked about how to create and automate a data pipeline on Azure
