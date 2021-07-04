@@ -90,7 +90,7 @@ wechat:      true
 - "Local Reactions, Systemic Reactions, Adverse Events, and Serious Adverse Events: Pfizer-BioNTech COVID-19 Vaccine", _www.cdc.gov_. [Online]. Available: [https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/reactogenicity.html][r1]
 - "辉瑞－BioNTech 2019冠状病毒病疫苗", _zh.wikipedia.org_. [Online]. Available: [https://zh.wikipedia.org/wiki/%E8%BE%89%E7%91%9E%EF%BC%8DBioNTech_2019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97][r2]
 - "辉瑞-生物科技COVID-19疫苗概述和安全性", _chinese.cdc.gov_. [Online]. Available: [https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html][r3]
-- 大众迷你仓, "新冠疫苗接种后注意事项", _zhuanlan.zhihu.com_. [Online]. Available: https://zhuanlan.zhihu.com/p/368304205[r4]
+- 大众迷你仓, "新冠疫苗接种后注意事项", _zhuanlan.zhihu.com_. [Online]. Available: [https://zhuanlan.zhihu.com/p/368304205][r4]
 - Alexandra_Koch, "corona vaccination virus vaccine", _pixabay.com_. [Online]. Available: [https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/][image]
 
 [r1]: https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/reactogenicity.html
