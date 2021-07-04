@@ -5,7 +5,7 @@ date:        "2021-07-01 22:27:55 +0200"
 tags:        [analysis, visualisation, COVID-19]
 comments:    true
 excerpt:     >
-    The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech's new crown vaccine. Today, I will take you to learn more about the specific information
+    The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information
 cover:       /images/20210626-vaccin.jpg
 img_width:   1280
 img_height:  853
@@ -18,9 +18,9 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 ## Introduction
-Since the beginning of 2020, people from all over the world have struggled with the new crown virus, and scientists are also actively looking for solutions. In order to achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. And a vaccine from theoretical design to clinical trials requires too much wisdom and effort of scientists. Among non-domestic vaccines, the most familiar one is Pfizer vaccine, but do you know its adverse reactions?
+Since the beginning of 2020, people from all over the world have struggled with COVID-19, and scientists are also actively looking for solutions. To achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. A vaccine from theoretical design to clinical trials requires too much wisdom and effort from scientists. Among so many vaccines, the most familiar one is the Pfizer vaccine, but do you know its adverse reactions?
 
-The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech's new crown vaccine. Today, the editor will take you to learn more about the specific information.
+The Centers for Disease Control and Prevention (CDC) recently released data on the response and degree of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information.
 
 ## Data background
 The study published experimental data for people of different age groups: one group was an adult group (more than 18 years old), and the other group was a teenager group (12-15 years old).
@@ -36,14 +36,14 @@ Data on people aged 12-15: On April 9, 2021, Pfizer-Biotech supplemented the tes
   src="{{ site.baseurl }}/images/20210701-global-reactions1.png"/>
 </p>
 
-Among the local reactions, pain at the injection site is a common adverse reaction of all ages, and it is most obvious after the first injection, especially for people aged 12-55 years old, the probability of occurrence is as high as 80%; compared to the pain, swelling and swelling at the injection site The chance of redness is much lower, less than 10%.
+Among the local reactions, pain at the injection site is a common adverse reaction of all ages, and it is most obvious after the first injection, especially for people aged 12-55 years old, the probability of occurrence is as high as 80%; compared to the pain at the injection site, the probability of swelling and redness is much lower, which is less than 10%.
 
 <p align="center">
   <img alt="20210701-global-reactions2"
   src="{{ site.baseurl }}/images/20210701-global-reactions2.png"/>
 </p>
 
-Among the systemic reactions, the overall probability of adverse reactions after the second injection is higher than that of the first injection. The more common ones are fatigue, headache and muscle pain. It is worth noting that the same adverse reactions increase with age. The probability of occurrence will be reduced. For example, among people aged 12-15, 60% will feel fatigued after the first injection, but for people aged 18-55, this proportion drops to 47%, and for 55-year-olds For the above population, this proportion is reduced to 34%.
+Among the systemic reactions, the overall probability of adverse reactions after the second injection is higher than that of the first injection. The more common ones are fatigue, headache and muscle pain. It is worth noting that the probability of the same adverse reactions occurrence will be reduced with age increasing. For example, among people aged 12-15, 60% will feel fatigued after the first injection, but for people aged 18-55, this proportion drops to 47%, and for people aged > 55-year-olds, this proportion is reduced to 34%.
 
 ## Different people have different levels of sensitivity
 
@@ -56,9 +56,9 @@ Here, "Mild" means not affecting daily activities, "Moderate" means beginning to
 
 Nearly half of people over the age of 18 will experience mild pain at the injection site, and about 80% of people aged 12-15 will experience mild or moderate pain at the injection site.
 
-People aged 12-15 are most sensitive to slight fatigue, especially during the second injection, 40% of them will feel slightly fatigued, which is twice the proportion of people over 18 years old; but people over 18 years old feel moderate fatigue It is more likely that people aged 12-15, especially those aged 18-55, have a 35% probability that they will feel moderately fatigued after the second injection.
+People aged 12-15 are most sensitive to mild fatigue, especially during the second injection, 40% of them will feel slightly fatigued, which is twice the proportion of people over 18 years old; but people over 18 years old feel moderate fatigue more easily than people aged 12-15, especially those aged 18-55, which have a 35% probability that they will feel moderately fatigued after the second injection.
 
-For headaches, the most common degree is moderate headache. Among people aged 12-15, 22.3% of people have a moderate headache after the first injection, but the proportion of people experiencing a moderate headache after the second injection has risen to 35%. A similar situation also appeared in people over the age of 18, 19.2% of people had a moderate headache after the first injection, but after the second injection, this proportion rose to 36%.
+For headaches, the most common degree is a moderate headache. Among people aged 12-15, 22.3% have a moderate headache after the first injection, but the proportion of people experiencing a moderate headache after the second injection has risen to 35%. A similar situation also appeared in people over the age of 18, 19.2% of people had a moderate headache after the first injection, but after the second injection, this proportion rose to 36%.
 
 <p align="center">
   <img alt="20210701-detail-reactions-2"
@@ -67,9 +67,9 @@ For headaches, the most common degree is moderate headache. Among people aged 12
 
 Here, "Mild" means not affecting daily activities, "Moderate" means beginning to affect daily activities, "Severe" means hindering daily activities, and "Grade 4" means going to the emergency room or hospitalized due to severe pain at the injection site.
 
-The response of different age groups to different degrees of muscle pain is similar. About 5%-10% of people feel mild or moderate pain after the first injection. This proportion rises to after the second injection. 15%-20%. People over the age of 18 who received the second shot of the vaccine are more sensitive to arthralgia than those aged 12-15, and the probability of occurrence is doubled after the first shot.
+The response of different age groups to different degrees of muscle pain is similar. About 5%-10% of people feel mild or moderate pain after the first injection. This proportion rises to 15%-20% after the second injection. People over the age of 18 who received the second shot of the vaccine are more sensitive to joint pain than those aged 12-15, and the probability of occurrence is doubled after the first shot.
 
-Compared with muscle pain and joint pain, people aged 12-15 are more likely to feel chills. About 30% of them feel mild or moderate chills after the first injection. This is after the second injection. The proportion increased to 40%. The same reaction is 14% and 33% for people aged 18-55, and it is even lower for people over 55: 6% and 22%.
+Compared with muscle pain and joint pain, people aged 12-15 are more likely to feel chills. About 30% of them feel mild or moderate chills after the first injection, this proportion increased to 40% after the second injection. The same reaction is 14% and 33% for people aged 18-55, and it is even lower for people over 55: 6% and 22%.
 
 ## What should I pay attention to after vaccination?
 Being vaccinated does not mean that everything will be well and that the virus will not invade. After observing, we still need to pay attention to some things:
@@ -79,7 +79,7 @@ Being vaccinated does not mean that everything will be well and that the virus w
 - You should still pay attention to the symptoms of COVID-19, especially when you are with patients. If you develop symptoms of COVID-19, you should be tested and self-isolate, stay away from others (Source: CDC)
 
 ## Conclusion
-On the whole, in clinical trials, regardless of the first or second needle, there is about 80% probability that the injection site will feel pain, and there is a 30%-50% probability that you will feel tired or headache. After the second injection, the feeling will be more obvious than the first injection, but it is mostly mild or moderate.
+On the whole, in clinical trials, regardless of the first or the second dose, there is about 80% probability that the injection site will feel pain, and there is a 30%-50% probability that you will feel tired or headache. After the second injection, the feeling will be more obvious than the first injection, but it is mostly mild or moderate.
 
 After vaccination, you should pay attention to the light diet and keep adequate rest. Even if you are vaccinated, you must pay attention to protection.
 
