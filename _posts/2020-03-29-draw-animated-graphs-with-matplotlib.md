@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Draw animated graphs with matplotlib"
+lang:        en
 date:        "2020-03-29 09:16:32 +0200"
 tags:        [python3, matplotlib, visualisation]
 comments:    true

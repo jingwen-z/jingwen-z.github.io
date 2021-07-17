@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "How to draw a variety of maps with folium in python?"
+lang:        en
 date:        "2019-11-08 20:55:41 +0100"
 tags:        [python3, folium, geovisualisation]
 comments:    true

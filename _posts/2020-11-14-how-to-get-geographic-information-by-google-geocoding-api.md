@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "How to get geographic information by Google Geocoding API?"
+lang:        en
 date:        "2020-11-14 17:14:22 +0100"
 tags:        [python3, API]
 comments:    true

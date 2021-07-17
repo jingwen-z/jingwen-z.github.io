@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Multiple KPIs in retailing (Part 1)"
+lang:        en
 date:        "2021-01-17 16:59:00 +0100"
 tags:        [retail]
 comments:    true

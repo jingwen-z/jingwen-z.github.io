@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              UCSD Introduction to Big Data Week 3 review
+lang:        en
 date:               2017-02-10 23:32:43 +0200
 tags:               [MOOC]
 comments:           true

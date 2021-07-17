@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "Matplotlib Series 11: Histogram"
+lang:        en
 date:               2018-12-11 22:16:43 +0100
 last_modified_at:   2019-07-19 21:57:10 +0200
 tags:               [matplotlib, visualisation]

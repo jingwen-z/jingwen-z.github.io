@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "R IN ACTION Review 2 - Getting started with graphs"
+lang:        en
 date:        "2017-04-15 10:51:27 +0200"
 tags:        [R, visualisation]
 comments:    true

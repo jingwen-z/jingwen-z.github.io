@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "How far is the nearest COVID-19 testing site?"
+lang:        en
 date:        "2020-11-08 13:37:36 +0100"
 tags:        [analysis, COVID-19, visualisation, geovisualisation]
 comments:    true

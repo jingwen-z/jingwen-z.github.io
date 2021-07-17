@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "How to create a virtual environment by Python?"
+lang:        en
 date:        "2019-07-23 20:57:21 +0200"
 tags:        [python3, virtual-environment, jupyter-notebook]
 comments:    true

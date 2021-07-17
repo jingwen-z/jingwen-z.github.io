@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "How to install python module fiona on Windows OS ?"
+lang:        en
 date:               "2019-06-26 20:41:26 +0200"
 last_modified_at:   2019-08-27 23:01:05 +0200
 tags:               [python3, fiona, Windows-OS]

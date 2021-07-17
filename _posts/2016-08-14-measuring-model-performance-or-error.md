@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              Measuring model performance or error
+lang:        en
 date:               2016-08-14 23:32:43 +0200
 tags:               [Machine-Learning]
 comments:           true

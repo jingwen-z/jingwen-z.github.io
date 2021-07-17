@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "COVID-19 worldwide analysis (up to 2020-05-10 UTC+02:00)"
+lang:        en
 date:        "2020-05-12 08:43:37 +0200"
 tags:        [analysis, COVID-19, visualisation, geovisualisation]
 comments:    true

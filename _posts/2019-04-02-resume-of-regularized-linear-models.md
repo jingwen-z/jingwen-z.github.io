@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Resume of Regularized Linear Models"
+lang:        en
 date:        "2019-04-02 21:08:43 +0200"
 tags:        [Machine-Learning, Regularized-Linear-Models, review]
 comments:    true

@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Who use Paris' wifi hotspots?"
+lang:        en
 date:        "2020-04-16 22:43:56 +0200"
 tags:        [analysis, geovisualisation]
 comments:    true

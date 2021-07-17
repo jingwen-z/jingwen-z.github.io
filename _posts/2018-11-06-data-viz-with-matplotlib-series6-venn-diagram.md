@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "Matplotlib Series 6: Venn diagram"
+lang:        en
 date:               2018-11-06 22:22:34 +0100
 last_modified_at:   2019-07-01 23:12:59 +0200
 tags:               [matplotlib, visualisation]

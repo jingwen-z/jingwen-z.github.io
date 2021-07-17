@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "What is box plot ?"
+lang:        en
 date:        "2019-03-19 21:25:27 +0100"
 tags:        [statistics, matplotlib, visualisation]
 comments:    true

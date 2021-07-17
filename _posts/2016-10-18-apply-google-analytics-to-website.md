@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              Apply Google Analytics to website
+lang:        en
 date:               2016-10-18 23:32:43 +0200
 tags:               [Google-analytics]
 comments:           true

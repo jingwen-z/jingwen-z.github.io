@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "How to improve pandas dataframe processing performance in Python?"
+lang:        en
 date:               "2019-09-06 20:57:01 +0200"
 last_modified_at:   2020-01-06 22:18:10 +0100
 tags:               [python3, dataframe, data-processing, SQL]

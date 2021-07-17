@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "france is AI"
+lang:        en
 date:        "2017-10-06 13:48:00 +0200"
 tags:        [review]
 comments:    true

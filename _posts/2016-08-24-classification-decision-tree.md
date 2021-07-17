@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              Decision Tree
+lang:        en
 date:               2016-08-24 23:32:43 +0200
 last_modified_at:   2018-08-05 10:33:08 +0200
 tags:               [Machine-Learning, Decision-Trees, review]

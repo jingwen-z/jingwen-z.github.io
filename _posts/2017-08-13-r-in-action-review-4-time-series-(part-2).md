@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "R IN ACTION Review 4 - Time series (Part 2)"
+lang:        en
 date:        "2017-08-13 21:47:54 +0200"
 tags:        [R, Machine-Learning, Time-series]
 comments:    true

@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Draw subway and tramway with folium"
+lang:        en
 date:        "2020-12-07 22:06:04 +0100"
 tags:        [python3, folium, geovisualisation]
 comments:    true

@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              Analysis of internauts' behavior
+lang:        en
 date:               2016-11-18 23:32:43 +0200
 tags:               [analysis]
 comments:           true

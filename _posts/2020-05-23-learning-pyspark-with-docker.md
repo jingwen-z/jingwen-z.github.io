@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "Learning pyspark with Docker"
+lang:        en
 date:               "2020-05-23 16:44:45 +0200"
 last_modified_at:   2020-08-21 22:31:25 +0200
 tags:               [python3, pyspark, Spark, Docker]

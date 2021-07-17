@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Do you know the reactions of Pfizer vaccine?"
+lang:        en
 date:        "2021-07-01 22:27:55 +0200"
 tags:        [analysis, visualisation, COVID-19]
 comments:    true

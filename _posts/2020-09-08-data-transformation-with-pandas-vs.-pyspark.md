@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Data transformation with pandas vs. pyspark"
+lang:        en
 date:        "2020-09-08 22:09:23 +0200"
 tags:        [python3, pandas, pyspark]
 comments:    true

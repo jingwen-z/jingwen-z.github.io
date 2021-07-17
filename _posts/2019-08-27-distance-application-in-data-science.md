@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Distance application in Data Science"
+lang:        en
 date:        "2019-08-27 21:31:59 +0200"
 tags:        [python3, distance, API]
 comments:    true
