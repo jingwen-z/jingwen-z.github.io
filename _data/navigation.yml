@@ -54,6 +54,11 @@ header:
       # @end locale config
     url: /about
 
+site:
+  titles:
+    en  : Jingwen Zheng
+    zh  : 数据水手
+  url: /
 
 portfolio:
   - title: Portfolio
