@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "哪里工资高？哪行待遇好？读完本文你一目了然！"
-lang:        cn
+lang:        zh
 date:        "2021-06-13 17:59:46 +0200"
 tags:        [analysis, visualisation]
 comments:    true
