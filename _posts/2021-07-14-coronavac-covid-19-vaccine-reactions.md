@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "科兴疫苗的不良反应，你知道吗？"
-lang:        cn
+lang:        zh
 date:        "2021-07-14 11:57:39 +0200"
 tags:        [analysis, visualisation, COVID-19]
 comments:    true
