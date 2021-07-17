@@ -1,6 +1,7 @@
 header:
   - titles:
       en      : &EN       Portfolio
+      zh      : &ZH_HANS  作品集
     url: /portfolio
 
   - titles:
