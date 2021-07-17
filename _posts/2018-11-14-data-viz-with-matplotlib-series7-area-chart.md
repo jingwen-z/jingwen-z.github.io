@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "Matplotlib Series 7: Area chart"
+lang:        en
 date:               "2018-11-14 21:55:44 +0100"
 last_modified_at:   2019-07-01 23:17:20 +0200
 tags:               [matplotlib, visualisation]

@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Resume of Decision Trees with Scikit-Learn"
+lang:        en
 date:        "2019-04-30 20:47:23 +0200"
 tags:        [Machine-Learning, Decision-Trees, Scikit-Learn, review]
 comments:    true

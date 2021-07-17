@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Resume of Support Vector Machines"
+lang:        en
 date:        "2019-04-23 20:42:54 +0200"
 tags:        [Machine-Learning, Support-Vector-Machines, review]
 comments:    true

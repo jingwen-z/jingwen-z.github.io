@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "How to send E-mails with Python?"
+lang:        en
 date:        "2020-06-01 15:39:06 +0200"
 tags:        [python3, smtp, unittest, mock]
 comments:    true

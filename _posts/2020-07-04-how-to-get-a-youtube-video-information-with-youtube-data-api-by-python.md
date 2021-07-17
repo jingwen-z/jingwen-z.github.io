@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "How to get a YouTube video's information with YouTube Data API by Python?"
+lang:        en
 date:        "2020-07-04 09:03:55 +0200"
 tags:        [python3, API]
 comments:    true

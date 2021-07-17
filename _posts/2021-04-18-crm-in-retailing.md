@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "CRM in retailing"
+lang:        en
 date:        "2021-04-18 10:23:00 +0100"
 tags:        [retail]
 comments:    true

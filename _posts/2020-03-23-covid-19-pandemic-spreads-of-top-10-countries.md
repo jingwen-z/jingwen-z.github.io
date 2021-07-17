@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "COVID-19 pandemic spreads of TOP 10 countries"
+lang:        en
 date:               "2020-03-23 21:52:16 +0100"
 tags:               [analysis, COVID-19, visualisation]
 last_modified_at:   2020-03-25 22:07:54 +0100

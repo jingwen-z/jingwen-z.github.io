@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "Coursera project catch the pink flamingo"
+lang:        en
 date:               2017-02-03 18:31:21 +0100
 last_modified_at:   2018-07-24 21:42:23 +0200
 tags:               [MOOC]

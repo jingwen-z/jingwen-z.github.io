@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "Matplotlib Series 2: Line chart"
+lang:        en
 date:               2018-09-16 16:58:54 +0200
 last_modified_at:   2019-06-21 09:28:10 +0200
 tags:               [matplotlib, visualisation]

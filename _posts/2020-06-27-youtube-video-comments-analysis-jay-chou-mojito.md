@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Youtube video's comments analysis Jay Chou Mojito"
+lang:        en
 date:        "2020-06-28 22:20:18 +0200"
 tags:        [analysis, visualisation]
 comments:    true

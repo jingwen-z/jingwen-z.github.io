@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "Second-hand apartments transactions in Paris (01/2014 - 06/2020)"
+lang:        en
 date:               "2021-01-02 22:20:57 +0100"
 last_modified_at:   2021-01-03 18:52:53 +0100
 tags:               [analysis, real-estate, visualisation, geovisualisation]

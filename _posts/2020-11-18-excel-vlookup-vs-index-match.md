@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Excel: vlookup vs. index & match"
+lang:        en
 date:        "2020-11-18 08:56:52 +0100"
 tags:        [excel]
 comments:    true

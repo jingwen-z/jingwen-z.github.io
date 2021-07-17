@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "How to get places' reviews on Google Maps by Place API?"
+lang:        en
 date:               "2020-01-03 21:21:35 +0100"
 last_modified_at:   2020-01-12 16:13:30 +0100
 tags:               [python3, API]

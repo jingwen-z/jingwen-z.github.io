@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "Matplotlib Series 1: Bar chart"
+lang:        en
 date:               2018-06-14 21:33:25 +0200
 last_modified_at:   2019-06-21 09:24:12 +0200
 tags:               [matplotlib, visualisation]

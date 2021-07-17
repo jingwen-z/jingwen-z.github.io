@@ -1,6 +1,7 @@
 ---
 layout:      post
 title:       "Second-hand apartments transactions in Île-de-France (01/2014 - 06/2020)"
+lang:        en
 date:        "2021-01-03 16:12:46 +0100"
 tags:        [analysis, real-estate, visualisation, geovisualisation]
 comments:    true

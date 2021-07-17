@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "Python: ISO 8601 date"
+lang:        en
 date:               2019-01-22 21:59:44 +0100"
 last_modified_at:   2019-01-30 23:16:07 +0100
 tags:               [python3, ISO, datetime]

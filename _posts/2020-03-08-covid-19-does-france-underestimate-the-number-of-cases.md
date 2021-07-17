@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "COVID-19: Does France underestimate the number of cases?"
+lang:        en
 date:               "2020-03-08 14:29:48 +0100"
 last_modified_at:   2020-03-09 22:04:55 +0100
 tags:               [analysis, COVID-19, visualisation]

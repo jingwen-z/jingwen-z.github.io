@@ -1,6 +1,7 @@
 ---
 layout:             post
 title:              "How to manipulate excel workbook by Python?"
+lang:        en
 date:               2018-06-19 09:10:03 +0200
 last_modified_at:   2019-01-05 10:31:25 +0100
 tags:               [python3, excel]
