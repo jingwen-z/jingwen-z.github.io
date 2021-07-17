@@ -1,7 +1,7 @@
 ---
 layout:      post
 title:       "辉瑞疫苗的不良反应，你知道吗？"
-lang:        en
+lang:        cn
 date:        "2021-06-26 11:57:39 +0200"
 tags:        [analysis, visualisation, COVID-19]
 comments:    true
