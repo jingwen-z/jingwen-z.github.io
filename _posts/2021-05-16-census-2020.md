@@ -8,8 +8,6 @@ comments:    true
 excerpt:     >
     望眼欲穿的第七次人口普查的主要数据终于在2021年5月11日公之于众了。哪里人口最多？哪里最受年轻人欢迎？哪里男女比例最平衡？又是哪里的大学生最多？
     本文将一一解答。
-redirect_from:
-  - /census-2020/
 cover:       /images/20190913-population.jpg
 img_width:   1280
 img_height:  853
