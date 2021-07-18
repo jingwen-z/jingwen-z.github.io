@@ -7,6 +7,8 @@ tags:        [analysis, visualisation, COVID-19]
 comments:    true
 excerpt:     >
     美国疾病控制与预防中心（CDC）最近公布了不同年龄阶段的人群在接种辉瑞-生物科技（Pfizer-BioNTech）新冠疫苗后的反应以及严重程度的数据。今天小编就带大家了解一下具体信息。
+redirect_from:
+  - /pfizer-biontech-covid-19-vaccine-reactions/
 cover:       /images/20210626-vaccin.jpg
 img_width:   1280
 img_height:  853
