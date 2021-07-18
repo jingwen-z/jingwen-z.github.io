@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jingwen-z.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2021-07-18T19:42:38+02:00</updated><id>https://jingwen-z.github.io//feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Do you know the reactions of Pfizer vaccine?</title><link href="https://jingwen-z.github.io//posts/pfizer-biontech-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Pfizer vaccine?" /><published>2021-07-01T22:27:55+02:00</published><updated>2021-07-01T22:27:55+02:00</updated><id>https://jingwen-z.github.io//posts/pfizer-biontech-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io//posts/pfizer-biontech-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with COVID-19, and scientists are also actively looking for solutions. To achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. A vaccine from theoretical design to clinical trials requires too much wisdom and effort from scientists. Among so many vaccines, the most familiar one is the Pfizer vaccine, but do you know its adverse reactions?&lt;/p&gt;
+
+&lt;p&gt;The Centers for Disease Control and Prevention (CDC) recently released data on the response and degree of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information.&lt;/p&gt;
+
+&lt;h2 id=&quot;data-background&quot;&gt;Data background&lt;/h2&gt;
+&lt;p&gt;The study published experimental data for people of different age groups: one group was an adult group (more than 18 years old), and the other group was a teenager group (12-15 years old).&lt;/p&gt;
+
+&lt;p&gt;Data for people over 18 years old: As of November 14, 2020, 43,252 participants were randomly assigned to the vaccine or placebo group at a 1:1 ratio, and the median follow-up time was 2 months after the second vaccination. They included 49.4% of women, 81.9% of whites, 9.8% of African Americans, 4.4% of Asian participants and &amp;lt;3% of other ethnic groups; 26.2% of participants were Hispanic/Latino; 21.4% Participants are &amp;gt;65 years old. The median age is 51 years. The most frequently reported comorbidities were obesity (35.1%), diabetes (with or without chronic complications, 8.4%) and lung disease (7.8%). Geographically, 76.7% of the participants are from the United States, 15.3% are from Argentina, 6.1% are from Brazil, and 2% are from South Africa.&lt;/p&gt;
+
+&lt;p&gt;Data on people aged 12-15: On April 9, 2021, Pfizer-Biotech supplemented the test results of people aged 12-15 and stated that the vaccine can be used in this group. 2260 adolescents aged 12-15 were randomly assigned to the vaccine or placebo group at a ratio of 1:1, with a median follow-up period of 2 months after the second vaccination. They included 49.3% of women, 88.0% of whites, 7.7% of African Americans, 2.4% of Asians, and &amp;lt;2% of other ethnic groups; 10.5% of the participants were Hispanic/Latino. The median age is 14 years. 21.5% of participants had one or more comorbidities that would increase the risk of severe COVID-19 disease. Geographically, all participants live in the United States.&lt;/p&gt;
+
+&lt;h2 id=&quot;pain-at-the-injection-site-is-most-common&quot;&gt;Pain at the injection site is most common&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210701-global-reactions1&quot; src=&quot;/images/20210701-global-reactions1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Among the local reactions, pain at the injection site is a common adverse reaction of all ages, and it is most obvious after the first injection, especially for people aged 12-55 years old, the probability of occurrence is as high as 80%; compared to the pain at the injection site, the probability of swelling and redness is much lower, which is less than 10%.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210701-global-reactions2&quot; src=&quot;/images/20210701-global-reactions2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Among the systemic reactions, the overall probability of adverse reactions after the second injection is higher than that of the first injection. The more common ones are fatigue, headache and muscle pain. It is worth noting that the probability of the same adverse reactions occurrence will be reduced with age increasing. For example, among people aged 12-15, 60% will feel fatigued after the first injection, but for people aged 18-55, this proportion drops to 47%, and for people aged &amp;gt; 55-year-olds, this proportion is reduced to 34%.&lt;/p&gt;
+
+&lt;h2 id=&quot;different-people-have-different-levels-of-sensitivity&quot;&gt;Different people have different levels of sensitivity&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210701-detail-reactions-1&quot; src=&quot;/images/20210701-detail-reactions-1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Here, “Mild” means not affecting daily activities, “Moderate” means beginning to affect daily activities, “Severe” means hindering daily activities, and “Grade 4” means going to the emergency room or hospitalized due to severe pain at the injection site.&lt;/p&gt;
+
+&lt;p&gt;Nearly half of people over the age of 18 will experience mild pain at the injection site, and about 80% of people aged 12-15 will experience mild or moderate pain at the injection site.&lt;/p&gt;
+
+&lt;p&gt;People aged 12-15 are most sensitive to mild fatigue, especially during the second injection, 40% of them will feel slightly fatigued, which is twice the proportion of people over 18 years old; but people over 18 years old feel moderate fatigue more easily than people aged 12-15, especially those aged 18-55, which have a 35% probability that they will feel moderately fatigued after the second injection.&lt;/p&gt;
+
+&lt;p&gt;For headaches, the most common degree is a moderate headache. Among people aged 12-15, 22.3% have a moderate headache after the first injection, but the proportion of people experiencing a moderate headache after the second injection has risen to 35%. A similar situation also appeared in people over the age of 18, 19.2% of people had a moderate headache after the first injection, but after the second injection, this proportion rose to 36%.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210701-detail-reactions-2&quot; src=&quot;/images/20210701-detail-reactions-2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Here, “Mild” means not affecting daily activities, “Moderate” means beginning to affect daily activities, “Severe” means hindering daily activities, and “Grade 4” means going to the emergency room or hospitalized due to severe pain at the injection site.&lt;/p&gt;
+
+&lt;p&gt;The response of different age groups to different degrees of muscle pain is similar. About 5%-10% of people feel mild or moderate pain after the first injection. This proportion rises to 15%-20% after the second injection. People over the age of 18 who received the second shot of the vaccine are more sensitive to joint pain than those aged 12-15, and the probability of occurrence is doubled after the first shot.&lt;/p&gt;
+
+&lt;p&gt;Compared with muscle pain and joint pain, people aged 12-15 are more likely to feel chills. About 30% of them feel mild or moderate chills after the first injection, this proportion increased to 40% after the second injection. The same reaction is 14% and 33% for people aged 18-55, and it is even lower for people over 55: 6% and 22%.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-should-i-pay-attention-to-after-vaccination&quot;&gt;What should I pay attention to after vaccination?&lt;/h2&gt;
+&lt;p&gt;Being vaccinated does not mean that everything will be well and that the virus will not invade. After observing, we still need to pay attention to some things:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Avoid eating spicy and irritating foods, seafood foods, and drinking alcohol. It is recommended to drink plenty of water (source: Zhihu)&lt;/li&gt;
+  &lt;li&gt;Try to avoid strenuous exercise and keep adequate rest (source: Zhihu)&lt;/li&gt;
+  &lt;li&gt;Measures should still be taken to protect yourself and others during travel (Source: CDC)&lt;/li&gt;
+  &lt;li&gt;You should still pay attention to the symptoms of COVID-19, especially when you are with patients. If you develop symptoms of COVID-19, you should be tested and self-isolate, stay away from others (Source: CDC)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;On the whole, in clinical trials, regardless of the first or the second dose, there is about 80% probability that the injection site will feel pain, and there is a 30%-50% probability that you will feel tired or headache. After the second injection, the feeling will be more obvious than the first injection, but it is mostly mild or moderate.&lt;/p&gt;
+
+&lt;p&gt;After vaccination, you should pay attention to the light diet and keep adequate rest. Even if you are vaccinated, you must pay attention to protection.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Local Reactions, Systemic Reactions, Adverse Events, and Serious Adverse Events: Pfizer-BioNTech COVID-19 Vaccine”, &lt;em&gt;www.cdc.gov&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/reactogenicity.html&quot;&gt;https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/reactogenicity.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“辉瑞－BioNTech 2019冠状病毒病疫苗”, &lt;em&gt;zh.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E8%BE%89%E7%91%9E%EF%BC%8DBioNTech_2019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97&quot;&gt;https://zh.wikipedia.org/wiki/%E8%BE%89%E7%91%9E%EF%BC%8DBioNTech_2019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“辉瑞-生物科技COVID-19疫苗概述和安全性”, &lt;em&gt;chinese.cdc.gov&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&quot;&gt;https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;大众迷你仓, “新冠疫苗接种后注意事项”, &lt;em&gt;zhuanlan.zhihu.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://zhuanlan.zhihu.com/p/368304205&quot;&gt;https://zhuanlan.zhihu.com/p/368304205&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Alexandra_Koch, “corona vaccination virus vaccine”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/&quot;&gt;https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html">The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information</summary></entry><entry xml:lang="en"><title type="html">How to create a data pipeline with Azure data factory and slack?</title><link href="https://jingwen-z.github.io//posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/" rel="alternate" type="text/html" title="How to create a data pipeline with Azure data factory and slack?" /><published>2021-04-27T11:23:00+02:00</published><updated>2021-04-27T11:23:00+02:00</updated><id>https://jingwen-z.github.io//posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack</id><content type="html" xml:base="https://jingwen-z.github.io//posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Imagine that we need to calculat some KPIs by running Azure Databricks notebook,
+before the calculation we also need to check our input data to ensure that they
+satisfy some rules, such as check if clients are in our database, check if there
+is the overlap between the period of analysis and the period of comparison, or
+count the sample of each input files (clients, stores, or products), etc.
+Sometimes, the demand comes from other teams, like marketing or innovation
+teams, to optimise the working process, creating a data pipeline and communicate
+on slack should be helpful. Since in my working environment, we use Microsoft
+Azure, in this blog, I’ll create a data pipeline with Azure Data Factory and
+talk about the following points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;What is Microsoft Azure?&lt;/li&gt;
+  &lt;li&gt;What is Slack?&lt;/li&gt;
+  &lt;li&gt;How to create a date pipeline with Azure Data Factory and Databricks?&lt;/li&gt;
+  &lt;li&gt;How to communicate data pipeline’s result on Slack?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-microsoft-azure&quot;&gt;What is Microsoft Azure?&lt;/h2&gt;
+&lt;p&gt;Microsoft Azure, commonly referred to as Azure, is a cloud computing service
+created by Microsoft for building, testing, deploying, and managing applications
+and services through Microsoft-managed data centers. It provides software as a
+service (SaaS), platform as a service (PaaS) and infrastructure as a service
+(IaaS) and supports many different programming languages, tools, and frameworks,
+including both Microsoft-specific and third-party software and systems.
+Moreover, Azure Data Factory is a data integration service that allows creation
+of data-driven workflows in the cloud for orchestrating and automating data
+movement and data transformation.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, Databricks is an enterprise software company founded by the
+original creators of Apache Spark. Databricks develops a web-based platform for
+working with Spark, that provides automated cluster management and IPython-style
+notebooks. In November 2017, the company was announced as a first-party service
+on Microsoft Azure via the integration Azure Databricks.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-slack&quot;&gt;What is Slack?&lt;/h2&gt;
+&lt;p&gt;Slack is a proprietary business communication platform developed by American
+software company Slack Technologies. Slack offers many IRC-style features,
+including persistent chat rooms (channels) organized by topic, private groups,
+and direct messaging. For more information, you can find them &lt;a href=&quot;https://slack.com&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-create-a-date-pipeline-with-azure-data-factory-and-databricks&quot;&gt;How to create a date pipeline with Azure Data Factory and Databricks?&lt;/h2&gt;
+&lt;p&gt;Before beginning, you need to have/create a Databricks workspace, prepare the
+Python notebook that you want to execute using Azure Data Factory. We have 2
+main steps for automating the execution of notebook:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create a data pipeline in Azure Data Factory&lt;/li&gt;
+  &lt;li&gt;Create a trigger for running a pipeline&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;create-a-data-pipeline-in-azure-data-factory&quot;&gt;Create a data pipeline in Azure Data Factory&lt;/h3&gt;
+&lt;p&gt;I won’t show more details for the step, since you can find them in this
+&lt;a href=&quot;https://docs.microsoft.com/en-gb/azure/data-factory/transform-data-using-databricks-notebook&quot;&gt;tutorial&lt;/a&gt; as the following steps:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Create a data factory.&lt;/li&gt;
+  &lt;li&gt;Create a pipeline that uses Databricks Notebook Activity.&lt;/li&gt;
+  &lt;li&gt;Trigger a pipeline run.&lt;/li&gt;
+  &lt;li&gt;Monitor the pipeline run.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;create-a-trigger-for-running-a-pipeline&quot;&gt;Create a trigger for running a pipeline&lt;/h3&gt;
+&lt;p&gt;Triggers represent a unit of processing that determines when a pipeline
+execution needs to be kicked off. Currently, Data Factory supports three types
+of triggers:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-gb/azure/data-factory/how-to-create-schedule-trigger&quot;&gt;Schedule trigger&lt;/a&gt;: A trigger that invokes a pipeline on a
+wall-clock schedule.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-gb/azure/data-factory/how-to-create-tumbling-window-trigger&quot;&gt;Tumbling window trigger&lt;/a&gt;: A trigger that operates
+on a periodic interval, while also retaining state.&lt;/li&gt;
+  &lt;li&gt;Event-based trigger: A trigger that responds to an event, like
+&lt;a href=&quot;https://docs.microsoft.com/en-gb/azure/data-factory/how-to-create-event-trigger&quot;&gt;a storage event&lt;/a&gt; or &lt;a href=&quot;https://docs.microsoft.com/en-gb/azure/data-factory/how-to-create-custom-event-trigger&quot;&gt;a custom event&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Same as above, you can find all tutorials with the links.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-communicate-data-pipelines-result-on-slack&quot;&gt;How to communicate data pipeline’s result on Slack?&lt;/h2&gt;
+&lt;p&gt;Slack provides a range of &lt;a href=&quot;https://api.slack.com/apis&quot;&gt;APIs&lt;/a&gt; that provide access to read, write,
+and update many types of data in Slack. To communicate data pipeline’s result on
+Slack, we can send messages to a channel or upload files on a channel.&lt;/p&gt;
+
+&lt;h3 id=&quot;slack-apis&quot;&gt;Slack APIs&lt;/h3&gt;
+&lt;h4 id=&quot;send-messages-to-a-channel&quot;&gt;Send messages to a channel&lt;/h4&gt;
+&lt;p&gt;We can use &lt;a href=&quot;https://api.slack.com/methods/chat.postMessage&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chat.postMessage&lt;/code&gt;&lt;/a&gt; for posting a message to a
+public channel, private channel, or direct message/IM channel.&lt;/p&gt;
+
+&lt;p&gt;A request is an HTTP URL of the following form:&lt;/p&gt;
+
+&lt;div class=&quot;language-http highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;POST https://slack.com/api/chat.postMessage
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;with certain arguments:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;token&lt;/code&gt;: (Required) Authentication token bearing required scopes. Tokens
+should be passed as an HTTP Authorization header or alternatively, as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;POST&lt;/code&gt;
+parameter.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;channel&lt;/code&gt;: (Required) Channel, private group, or IM channel to send message
+to. Can be an encoded ID, or a name.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;About more information of arguments, you can find them &lt;a href=&quot;https://api.slack.com/methods/chat.postMessage&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;upload-files&quot;&gt;Upload files&lt;/h4&gt;
+&lt;p&gt;We can use &lt;a href=&quot;https://api.slack.com/methods/files.upload&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;files.upload&lt;/code&gt;&lt;/a&gt; for creating or uploading an existing
+file.&lt;/p&gt;
+
+&lt;p&gt;A request is an HTTP URL of the following form:&lt;/p&gt;
+
+&lt;div class=&quot;language-http highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;POST https://slack.com/api/files.upload
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;with certain arguments:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;token&lt;/code&gt;: (Required) Authentication token bearing required scopes. Tokens
+should be passed as an HTTP Authorization header or alternatively, as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;POST&lt;/code&gt;
+parameter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;About more information of arguments, you can find them &lt;a href=&quot;https://api.slack.com/methods/files.upload&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-find-channel-id-on-slack&quot;&gt;How to find channel ID on Slack?&lt;/h3&gt;
+&lt;p&gt;To send messages or upload files to a public channel, a multi-person direct
+message or a direct message to someone, we need to get the channel ID, but where
+can we find them?&lt;/p&gt;
+
+&lt;h4 id=&quot;the-public-channels-id&quot;&gt;The public channel’s ID&lt;/h4&gt;
+&lt;p&gt;When we open Slack with navigator, we can find it in the URL, with the following
+format:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://app.slack.com/client/TD123ABCD/C024BE91L
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The last part of the URL(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C024BE91L&lt;/code&gt;) above starts with “C”, which presents
+the public channel’s ID.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-multi-person-direct-messages-id&quot;&gt;The multi-person direct message’s ID&lt;/h4&gt;
+&lt;p&gt;Similar as above, let’s open Slack with navigator, we can find it in the URL,
+with the following format:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://app.slack.com/client/TD123ABCD/G012AC86C
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The last part of the URL(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;G012AC86C&lt;/code&gt;) above starts with “G”, which presents
+the group’s ID.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-users-id&quot;&gt;The user’s ID&lt;/h4&gt;
+&lt;p&gt;For a User’s ID, we can find it both on the website or the application. When we
+check someone’s profile, we can find the ID (starts with “U”) by clicking
+“More”.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;vf.info()&quot; src=&quot;/images/20210427-slack-user-id.jpg&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-realise-it-via-python&quot;&gt;How to realise it via Python?&lt;/h3&gt;
+&lt;h4 id=&quot;send-messages-to-a-channel-1&quot;&gt;Send messages to a channel&lt;/h4&gt;
+&lt;p&gt;We can send the messages with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;requests.post()&lt;/code&gt; by specify the token,
+the channel ID and message that you want to send.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;requests&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://slack.com/api/chat.postMessage&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;&quot;token&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;as-123dfghj456-klqwert7y8u9iop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;&quot;channel&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;U012AB34C&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;test&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;I sent a message “test” with Databricks Message Bot on Slack, and received a
+message as below.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210427-slack-send-msg&quot; src=&quot;/images/20210427-slack-send-msg.PNG&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h4 id=&quot;upload-files-1&quot;&gt;Upload files&lt;/h4&gt;
+&lt;p&gt;We can upload the file with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;requests.post()&lt;/code&gt; by specify the file path, the
+token, the channel ID and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;initial_comment&lt;/code&gt; if you want to introduce the file.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;requests&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://slack.com/api/files.upload&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;filename&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;/path/of/file&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;token&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;as-123dfghj456-klqwert7y8u9iop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;channels&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;U012AB34C&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;initial_comment&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;test file&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;file&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/path/of/file&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/path/of/file&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'rb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+              &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;splitext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;basename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/path/of/file&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this blog, I talked about how to create and automate a data pipeline on Azure
+Data Factory, how to send messages and upload files on Slack with its APIs. Hope
+it’s helpful for you!&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Microsoft Azure”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Microsoft_Azure&quot;&gt;https://en.wikipedia.org/wiki/Microsoft_Azure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Databricks”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Databricks&quot;&gt;https://en.wikipedia.org/wiki/Databricks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Slack (software)”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Slack_(software)&quot;&gt;https://en.wikipedia.org/wiki/Slack_(software)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Run a Databricks notebook with the Databricks Notebook Activity in Azure Data Factory”, &lt;em&gt;docs.microsoft.com&lt;/em&gt;. [Online].
+Available: &lt;a href=&quot;https://docs.microsoft.com/en-gb/azure/data-factory/transform-data-using-databricks-notebook&quot;&gt;https://docs.microsoft.com/en-gb/azure/data-factory/transform-data-using-databricks-notebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Pipeline execution and triggers in Azure Data Factory”, &lt;em&gt;docs.microsoft.com&lt;/em&gt;. [Online].
+Available: &lt;a href=&quot;https://docs.microsoft.com/en-gb/azure/data-factory/concepts-pipeline-execution-triggers&quot;&gt;https://docs.microsoft.com/en-gb/azure/data-factory/concepts-pipeline-execution-triggers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;billycm, “pipe rea l’eau metal pipeline”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/fr/photos/pipe-red-l-eau-m%C3%A9tal-pipeline-2369719/&quot;&gt;https://pixabay.com/fr/photos/pipe-red-l-eau-m%C3%A9tal-pipeline-2369719/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="data-processing" /><category term="API" /><summary type="html">In this blog, I talked about how to create and automate a data pipeline on Azure Data Factory, how to send messages and upload files on Slack with its APIs.</summary></entry><entry xml:lang="en"><title type="html">CRM in retailing</title><link href="https://jingwen-z.github.io//posts/crm-in-retailing/" rel="alternate" type="text/html" title="CRM in retailing" /><published>2021-04-18T11:23:00+02:00</published><updated>2021-04-18T11:23:00+02:00</updated><id>https://jingwen-z.github.io//posts/crm-in-retailing</id><content type="html" xml:base="https://jingwen-z.github.io//posts/crm-in-retailing/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In retailing domain, one of the most important things is increasing the customer
+satifaction and the customer loyalty. To reach the goals, we need to understand
+CRM (Customer Relationship Management) firstly, then we can take steps to
+improve them. In this blog, I’ll talk about this with the following points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;What is CRM ?&lt;/li&gt;
+  &lt;li&gt;How does CRM help retailers ?&lt;/li&gt;
+  &lt;li&gt;Applications in retailing&lt;/li&gt;
+  &lt;li&gt;CRM application in other industries&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-crm-&quot;&gt;What is CRM ?&lt;/h2&gt;
+&lt;p&gt;Customer relationship management (CRM) refers to the principles, practices, and
+guidelines that an organization follows when interacting with its customers.
+From the organization’s point of view, this entire relationship encompasses
+direct interactions with customers, such as sales and service-related processes,
+forecasting, and the analysis of customer trends and behaviors. Ultimately, CRM
+serves to enhance the customer’s overall experience.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-does-crm-help-retailers-&quot;&gt;How does CRM help retailers ?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://insights.sap.com/what-is-crm/&quot;&gt;SAP INSIGHTS&lt;/a&gt; shows us five biggest benefits of CRM:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Improved customer experience:&lt;/strong&gt; Give contact center reps and field service
+technicians a 360° view of customers – so they can deliver personalized customer
+experiences and resolve issues quickly.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Increased customer retention:&lt;/strong&gt; Wow your customers with personalized service
+that wins loyalty. Run real-time analytics to identify the best offers, the
+right timing, and the optimal channel.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Higher sales revenue:&lt;/strong&gt; Boost pipeline visibility and sell more – with
+integrated tools for sales force automation, lead management, forecasting,
+cross-selling, e-commerce, and more. &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Greater process efficiency:&lt;/strong&gt; Help your sales, marketing, and service teams
+accomplish more with less effort – by taking advantage of automated processes
+and scheduled follow-up prompts.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Work smarter – better collaboration:&lt;/strong&gt; Share information across teams,
+departments, and internal and external stakeholders with collaborative CRM – to
+better serve customers at every touchpoint.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;applications-in-retailing&quot;&gt;Applications in retailing&lt;/h2&gt;
+&lt;p&gt;Khalifa, Mohamed, and Ning Shen [1] developped, operationalized and empirically
+tested a temporal model explaining the relationship between three categories
+of eCRM (i.e., pre-purchase, at-purchase and post-purchase eCRM) and online
+customer satisfaction at two phases of the customer lifecycle, i.e., attraction
+and retention.&lt;/p&gt;
+
+&lt;p&gt;They used the customer lifecycle framework to conceptualize satisfaction and
+relied on the transaction cycle to classify eCRM features. Their research model
+identifies the important features for three types of eCRM, i.e., pre-purchase,
+at-purchase, and post-purchase eCRM:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pre-purchase eCRM features
+    &lt;ul&gt;
+      &lt;li&gt;Site customization&lt;/li&gt;
+      &lt;li&gt;Customer education&lt;/li&gt;
+      &lt;li&gt;Alternative channels&lt;/li&gt;
+      &lt;li&gt;Loyalty program membership&lt;/li&gt;
+      &lt;li&gt;Search capabilities&lt;/li&gt;
+      &lt;li&gt;Alerts&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;At-purchase eCRM features
+    &lt;ul&gt;
+      &lt;li&gt;Product customization&lt;/li&gt;
+      &lt;li&gt;Payment methods&lt;/li&gt;
+      &lt;li&gt;Purchase conditions&lt;/li&gt;
+      &lt;li&gt;Comparative shopping&lt;/li&gt;
+      &lt;li&gt;Dynamic pricing&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Post-purchase eCRM features
+    &lt;ul&gt;
+      &lt;li&gt;Online sale of spare parts&lt;/li&gt;
+      &lt;li&gt;Problem solving&lt;/li&gt;
+      &lt;li&gt;Feedback channels&lt;/li&gt;
+      &lt;li&gt;Order tracking&lt;/li&gt;
+      &lt;li&gt;Online community&lt;/li&gt;
+      &lt;li&gt;Web center&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Their research found that the significance and magnitude of the effects of
+product customization, website customization and dynamic pricing reflect the
+perceived importance of eCRM activities that are intended to support the
+one-to-one paradigm shift: transforming the relationship between the firm and
+the customer from a one-to-many mode into a one-to-one mode. Other eCRM drivers
+of customer satisfaction include alerts, search capabilities, order tracking and
+problem solving. They represent another transformation of the relationship
+between the firm and the customer: from passive to active. Another significant
+variable, i.e., online community, is intended for yet another paradigm shift:
+many-to-many marketing, where the customers are involved in providing value to
+each other.&lt;/p&gt;
+
+&lt;p&gt;Moreover, Khalid Rababah, Haslina Mohd, and Huda Ibrahim [3] suggested an
+important step before the implementation of CRM programs/systems, which is the
+creation and communication of customer-oriented culture within the
+organizational. The purpose of this step is to be as a pre-implementation plan
+for CRM programs/systems in which, a better understanding of the concept of CRM
+and the sense and awareness of the CRM program/system are created within the
+organization.&lt;/p&gt;
+
+&lt;h2 id=&quot;crm-application-in-other-industries&quot;&gt;CRM application in other industries&lt;/h2&gt;
+&lt;p&gt;Except the application of CRM in retailing, CRM is also important in many other
+industries:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Banking: Due to the tough competition in the banking industry in Jordan, it is
+very necessary for financial institutions to build and maintain a strong
+relationship with the customers in order to achieve the ultimate goal of
+customer satisfaction. The statistical analysis of Azzam, K [4] revealed that
+there is a significant relationship between the independent variables(i.e., CRM
+elements represented by service quality, employee’s behavior, customer data
+base, solving customer problems physical environment; and social network
+interaction) and customer satisfaction as a dependent variable in the services
+banking industry.&lt;/li&gt;
+  &lt;li&gt;Education: The study of Olaleke, Oluseye Olaleke, Tairat Taiye Taiye, and
+Emmanuel Olumide Olumide [5] explored the ways in which student satisfaction can
+be achieved with the use of customer relationship management. Their research
+findings showed that student’s willingness to recommend to others increases when
+the student lifecycle in the university is well managed. It was also discovered
+that strong parent relationship management at the University enhances the
+student’s  willingness to recommend their Universities to others. It is
+therefore recommended that Universities should adopt effective customer
+relationship management strategies to achieve student satisfaction.&lt;/li&gt;
+  &lt;li&gt;Mobile telecom: With the expansive growth of mobile commerce come
+opportunities for business and mobile service providers. To distinguish its
+service from another’s and build a loyal customer base, a mobile service
+provider must look beyond technology and appeal to their customers’
+individuality through CRM. A study of Chen, Ja-Shen, and Russell KH Ching [6]
+examined the relationships of CRM practices and mobile services with customer
+loyalty, and the moderating effects of brand image was conducted. The results
+suggest that all contribute to loyalty. However, brand image moderates the
+relationships of customer service and customization, and mobile usage with
+customer loyalty.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This blog talked about what is CRM and its 5 biggest benefits, it also presented
+the application in retailing and other industies, such as banking, education and
+mobile telecom. Hope it’s useful for you!&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;[1] Khalifa, Mohamed, and Ning Shen. “Effects of electronic customer
+relationship management on customer satisfaction: A temporal model.” In
+&lt;em&gt;System Sciences, 2005. HICSS’05. Proceedings of the 38th Annual Hawaii International Conference on&lt;/em&gt;,
+pp. 171a-171a. IEEE, 2005.&lt;/li&gt;
+  &lt;li&gt;[2] Saeed Awadh Bin-Nashwan, Haslinda Hassan. “Impact of customer relationship
+management (CRM) on customer satisfaction and loyalty: A systematic review.”
+&lt;em&gt;Journal of Advanced Research in Business and Management Studies&lt;/em&gt; 6, Issue 1 (2017) 86-10.&lt;/li&gt;
+  &lt;li&gt;[3] Khalid Rababah, Haslina Mohd, and Huda Ibrahim. “Customer Relationship
+Management (CRM) Processes from Theory to Practice: The Pre-implementation Plan
+of CRM System.”
+&lt;em&gt;International Journal of e-Education, e-Business, e-Management and e-Learning, Vol. 1, No. 1, April 2011&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;[4] Azzam, K. “The Impact of Customer Relationship Management on Customer
+Satisfaction in the Banking Industry–A Case of Jordan.”
+&lt;em&gt;European Journal of Business and Management&lt;/em&gt; 6, no. 32 (2014): 99-112.&lt;/li&gt;
+  &lt;li&gt;[5] Olaleke, Oluseye Olaleke, Tairat Taiye Taiye, and Emmanuel Olumide Olumide.
+“Customer Relationship Management Approach and Student Satisfaction in Higher
+Education Marketing.” &lt;em&gt;Journal of Competitiveness&lt;/em&gt; 6, no.3 (2014): 49-62.&lt;/li&gt;
+  &lt;li&gt;[6] Chen, Ja-Shen, and Russell KH Ching. “The effects of mobile customer
+relationship management on customer loyalty: brand image does matter.” In
+&lt;em&gt;System Sciences, 2007. HICSS 2007. 40th Annual Hawaii International Conference on&lt;/em&gt;,
+pp. 151b-151b. IEEE, 2007.&lt;/li&gt;
+  &lt;li&gt;SAP INSIGHTS, “What Is CRM Today?”, &lt;em&gt;insights.sap.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://insights.sap.com/what-is-crm/&quot;&gt;https://insights.sap.com/what-is-crm/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Marshall Hargrave, “Customer Relationship Management (CRM)”, &lt;em&gt;investopedia.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.investopedia.com/terms/c/customer_relation_management.asp&quot;&gt;https://www.investopedia.com/terms/c/customer_relation_management.asp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Tumisu, “smileys satisfaction du client”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/fr/photos/smileys-satisfaction-du-client-5617876/&quot;&gt;https://pixabay.com/fr/photos/smileys-satisfaction-du-client-5617876/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html">In retailing domain, one of the most important things is increasing the customer satifaction and the customer loyalty. To reach the goals, we need to understand CRM (Customer Relationship Management) firstly, then we can take steps to improve them.</summary></entry><entry xml:lang="en"><title type="html">Multiple KPIs in retailing (Part 2)</title><link href="https://jingwen-z.github.io//posts/multiple-kpis-in-retailing-2/" rel="alternate" type="text/html" title="Multiple KPIs in retailing (Part 2)" /><published>2021-02-09T21:59:00+01:00</published><updated>2021-02-09T21:59:00+01:00</updated><id>https://jingwen-z.github.io//posts/multiple-kpis-in-retailing-2</id><content type="html" xml:base="https://jingwen-z.github.io//posts/multiple-kpis-in-retailing-2/">&lt;p&gt;Retail is the process of selling consumer goods or services to customers through
+multiple channels of distribution to earn a profit. Retailers satisfy demand
+identified through a supply chain. Most modern retailers typically make a
+variety of strategic level decisions including the type of store, the market to
+be served, the optimal product assortment, customer service, supporting services
+and the store’s overall market positioning. To point retailers in the right
+direction, they need to dig the retail metrics and KPIs to track in their
+business. In this blog, I’ll talk about the following pretty helpful KPIs for
+retailers:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Turnover per square foot&lt;/li&gt;
+  &lt;li&gt;Year over year growth&lt;/li&gt;
+  &lt;li&gt;Customer retention rate&lt;/li&gt;
+  &lt;li&gt;Inventory turnover vs sell-through rate&lt;/li&gt;
+  &lt;li&gt;Break-Even Point&lt;/li&gt;
+  &lt;li&gt;Back Order Rate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;turnover-per-square-foot&quot;&gt;Turnover per square foot&lt;/h2&gt;
+&lt;p&gt;According to &lt;a href=&quot;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&quot;&gt;Tableau&lt;/a&gt;, we find that the turnover per square foot measures
+how effectively you’re using the area you have, and it is a good indicator of
+your store’s productivity while offering insights into store and merchandise
+layouts. If some product categories perform better than others, it may because
+of the types of products or their arrangement.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Turnover per square foot = Total turnover / Total square foot&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Moreover, &lt;a href=&quot;https://www.vendhq.com/blog/retail-metrics-and-kpis/&quot;&gt;vend&lt;/a&gt; presents some tips for improving our turnover per square
+foot:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Improve your store layout&lt;/li&gt;
+  &lt;li&gt;Have a winning product assortment&lt;/li&gt;
+  &lt;li&gt;Optimize your prices or promotions&lt;/li&gt;
+  &lt;li&gt;Increase transaction or basket value&lt;/li&gt;
+  &lt;li&gt;Train your staff to sell more&lt;/li&gt;
+  &lt;li&gt;Encourage people to stay longer in your shop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210202-turnover-per-square-foot&quot; src=&quot;/images/20210202-turnover-per-square-foot.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This plot shows the turnover per square foot of 4 kinds of products during one
+day, the value for the wine is higher than others since they are put on the
+multi-layer shelves, which is a good example of using spaces. Fruits’ turnover
+per square foot is the lowest among the four, because its unit price is lower,
+although its space utilization is better than the shelves of butchery and
+seafood. For the other two kinds of products, their space utilization is not
+enough, but their unit price is high, so their turnovers per square are not that
+low.&lt;/p&gt;
+
+&lt;h2 id=&quot;year-over-year-growth&quot;&gt;Year over year growth&lt;/h2&gt;
+&lt;p&gt;Year-over-year growth is a comparison of a retail metric for one period to the
+same period the previous year. It calculates the percentage change during the
+past twelve months.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Year Over Year Growth = (Current year sales total – Previous year’s sales total) / Previous year’s sales total x 100&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ehopper.com/guides/kpi-retail/&quot;&gt;ehopper&lt;/a&gt; shows us an example that can help us to understand why the year
+over year growth is an important retail metric. Imagine that the retail revenue
+was up 20% in November concerning October, besides, you also need to check this
+number against the revenue from last November. If it’s also greater than the
+revenue of last November, that means your business is doing better.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210202-year-over-year-growth&quot; src=&quot;/images/20210202-year-over-year-growth.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This plot shows the turnover and the year over year growth for each month, which
+helps us to identify if the increase of turnover is also significant vs. the
+last year.&lt;/p&gt;
+
+&lt;h2 id=&quot;customer-retention-rate&quot;&gt;Customer retention rate&lt;/h2&gt;
+&lt;p&gt;Being able to attract new customers and to let them return is a relatively
+stable source for long-term profit. To understand if we have this source in our
+business, we can track the number of new customers versus repeat customers, and
+calculate the customer retention rate. There is a formula to calculate this KPI
+on the site of &lt;a href=&quot;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&quot;&gt;Tableau&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Customer retention rate = ((Total distinct customers at end of period) - (Total new distinct customers acquired during period)) / (Total distinct customers at start of period) x 100&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Furthermore, &lt;a href=&quot;https://www.vendhq.com/blog/retail-metrics-and-kpis/&quot;&gt;vend&lt;/a&gt; presents some tips to improve our customer retention
+rate:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Tracking customer purchases and offering personalized recommendations&lt;/li&gt;
+  &lt;li&gt;Developing meaningful relationships through amazing customer service as well
+as community-building efforts like classes, events, or online groups&lt;/li&gt;
+  &lt;li&gt;Implementing a killer loyalty program to encourage shoppers to keep coming
+back&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210202-user-retention&quot; src=&quot;/images/20210202-user-retention.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Here I take the example of Google Analytics of my blog, the idea is similar for
+e-commerce or physical stores. During the last 6 weeks, only 2.7% of visitors of
+week 0 were back in week 1, 0.9% were back in week 2, and so on.&lt;/p&gt;
+
+&lt;h2 id=&quot;inventory-turnover-vs-sell-through-rate&quot;&gt;Inventory turnover vs sell-through rate&lt;/h2&gt;
+&lt;h3 id=&quot;inventory-turnover&quot;&gt;Inventory turnover&lt;/h3&gt;
+&lt;p&gt;In accounting, the Inventory turnover is a measure of the number of times
+inventory is sold or used in a period such as a year. It is calculated to see if
+a business has an excessive inventory in comparison to its sales level.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Inventory Turnover = Net sales / Average inventory at the selling price
+or
+Inventory Turnover = Cost of good sold / Average inventory at cost&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Average inventory = (Beginning inventory + Ending inventory) / 2&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210202-inventory-turnover&quot; src=&quot;/images/20210202-inventory-turnover.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The target inventory turnover of 2020 is 2.7, which means the net sales is twice
+more than the average inventory at the selling price. Because of the lockdown,
+the sales had a high increase. which brings a high inventory turnover.&lt;/p&gt;
+
+&lt;h3 id=&quot;sell-through-rate&quot;&gt;Sell-through rate&lt;/h3&gt;
+&lt;p&gt;Sell-through rate refers to the percentage of a product that is sold by a
+retailer after being shipped by its supplier, typically expressed as a
+percentage. Sell-through is calculated during a period (usually 1 month).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sell-Through Rate = Units Sold / Units Received&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example, imagine that you are the manager of a supermarket, you ordered
+100 boxes of chocolate, but after 1 month only 20 boxes are sold, in this case,
+the sell-through rate is 20%, which means other 80% of chocolate are there for
+gathering dust :(&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210202-sell-through-rate&quot; src=&quot;/images/20210202-sell-through-rate.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Among these 7 kinds of products, sushi’s sell-through rate is the highest since
+they can nearly all be sold the same day; on the contrary, the sell-through rate
+of the wine is lower than others since it’s not the daily aliment for everyone.&lt;/p&gt;
+
+&lt;h2 id=&quot;break-even-point&quot;&gt;Break-Even Point&lt;/h2&gt;
+&lt;p&gt;Break-even (or break even), often abbreviated as B/E in finance, is the point of
+balance making neither a profit nor a loss. Any number below the break-even
+point constitutes a loss while any number above it shows a profit. The term
+originates in finance but the concept has been applied in other fields.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Break-Even ($) = Fixed Costs / Gross Margin Percentage&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210202-break-even&quot; src=&quot;/images/20210202-break-even.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;back-order-rate&quot;&gt;Back Order Rate&lt;/h2&gt;
+&lt;p&gt;The back order rate is the ratio between the number of orders that cannot be
+fulfilled at the moment the customer places an order and the total number of
+orders. A high back order rate means that your customers have to wait for more
+longer than assumed, which might have an impact on customers’ satisfaction and
+the customer retention rate.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;datapine&lt;/a&gt; inserts this KPI into their dashboard to help retailers to
+measure the ability to fulfill customer orders, to identify why the related
+product has no enough stock, and to avoid the same problem in the future.&lt;/p&gt;
+
+&lt;p&gt;If you are curious about the scripts of the visualisation, you will find them
+&lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/retail_kpis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Retail”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Retail&quot;&gt;https://en.wikipedia.org/wiki/Retail&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Francesca Nicasio, “Retail Metrics: 14 Essential KPIs for Tracking Your Business’ Performance”, &lt;em&gt;www.vendhq.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.vendhq.com/blog/retail-metrics-and-kpis/&quot;&gt;https://www.vendhq.com/blog/retail-metrics-and-kpis/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Retail Key Performance Indicators and Metrics”, &lt;em&gt;www.datapine.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;https://www.datapine.com/kpi-examples-and-templates/retail&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“15 Fundamental KPI Retail Metrics [And How to Measure Them]”, &lt;em&gt;ehopper.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://ehopper.com/guides/kpi-retail/&quot;&gt;https://ehopper.com/guides/kpi-retail/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Thomas Cesaroni, “9 KPIs Every Retail Manager Should Track”, &lt;em&gt;toucantoco.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://toucantoco.com/blog/en/kpis-retail-manager/&quot;&gt;https://toucantoco.com/blog/en/kpis-retail-manager/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Top 8 metrics for retail KPIs”, &lt;em&gt;www.tableau.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&quot;&gt;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Inventory turnover”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Inventory_turnover&quot;&gt;https://en.wikipedia.org/wiki/Inventory_turnover&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Sell-through”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Sell-through&quot;&gt;https://en.wikipedia.org/wiki/Sell-through&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Break-even”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Break-even&quot;&gt;https://en.wikipedia.org/wiki/Break-even&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Economic Viability”, &lt;em&gt;www.ruthtrumpold.id.au&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;http://www.ruthtrumpold.id.au/destech/?page_id=162&quot;&gt;http://www.ruthtrumpold.id.au/destech/?page_id=162&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;ElasticComputeFarm, “supermarket stalls coolers market”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/supermarket-stalls-coolers-market-949913/&quot;&gt;https://pixabay.com/photos/supermarket-stalls-coolers-market-949913/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product assortment, customer service, supporting services and the store's overall market positioning. To point retailers in the right direction, they need to dig the retail metrics and KPIs to track in their business. In this blog, I'll talk about some pretty helpful KPIs for retailers.</summary></entry><entry xml:lang="en"><title type="html">Multiple KPIs in retailing (Part 1)</title><link href="https://jingwen-z.github.io//posts/multiple-kpis-in-retailing-1/" rel="alternate" type="text/html" title="Multiple KPIs in retailing (Part 1)" /><published>2021-01-17T16:59:00+01:00</published><updated>2021-01-17T16:59:00+01:00</updated><id>https://jingwen-z.github.io//posts/multiple-kpis-in-retailing-1</id><content type="html" xml:base="https://jingwen-z.github.io//posts/multiple-kpis-in-retailing-1/">&lt;p&gt;Retail is the process of selling consumer goods or services to customers through
+multiple channels of distribution to earn a profit. Retailers satisfy demand
+identified through a supply chain. Most modern retailers typically make a
+variety of strategic level decisions including the type of store, the market to
+be served, the optimal product assortment, customer service, supporting services
+and the store’s overall market positioning. To point retailers in the right
+direction, they need to dig the retail metrics and KPIs to track in their
+business. In this blog, I’ll talk about the following pretty helpful KPIs for
+retailers:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Volume of transactions&lt;/li&gt;
+  &lt;li&gt;Turnover of transactions&lt;/li&gt;
+  &lt;li&gt;Transactions amount&lt;/li&gt;
+  &lt;li&gt;Average volume per transaction&lt;/li&gt;
+  &lt;li&gt;Average purchase value&lt;/li&gt;
+  &lt;li&gt;Purchase frequency&lt;/li&gt;
+  &lt;li&gt;Gross profit vs net profit&lt;/li&gt;
+  &lt;li&gt;Gross Margin Return On Investment (GMROI)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;volume-of-transactions&quot;&gt;Volume of transactions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;datapine&lt;/a&gt; uses this indicator in their dashboard. Transactions’ volume
+measures the number of units sold during a specific accounting period. It can
+help you to understand if some products are sold more than others in different
+periods or different zones.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210117-vol-trx&quot; src=&quot;/images/20210117-vol-trx.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This plot describes the volume(k) for each fruit. Among four fruits, bananas’
+sales are the largest (34k units), however, it seems that consumers don’t like
+apple that much.&lt;/p&gt;
+
+&lt;h2 id=&quot;turnover-of-transactions&quot;&gt;Turnover of transactions&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;datapine&lt;/a&gt; uses this indicator in their dashboard. Transactions’ turnover
+measures the value of sales during a specific period. It can help you to
+understand if some products bring more value than others in different periods or
+different zones.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210117-turnover-trx&quot; src=&quot;/images/20210117-turnover-trx.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This plot compares two-year turnover together. The peak for both year is in the
+summer, for year N, the peak is in August; however, the peak is reached in June
+in the year N-1, which is caused by the heatwave in June.&lt;/p&gt;
+
+&lt;h2 id=&quot;transactions-amount&quot;&gt;Transactions amount&lt;/h2&gt;
+&lt;p&gt;This is a pretty straightforward metric that &lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;datapine&lt;/a&gt; uses in their
+dashboard. The transaction amount calculates how many orders have been placed
+in your business over the day, month or year. It will help you in knowing when
+the peak periods are and adapt your stock inventory accordingly, to avoid any
+stock-out or backorder.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210117-trx-amount&quot; src=&quot;/images/20210117-trx-amount.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;According to this plot, it’s obvious that the peak in a day is around noon and
+after work like 19h, because customers work in the morning and afternoon, they
+have time to shopping during the noon and after work. Moreover, there are 2
+small peaks around 9h and 16h, that might because customer come to buy their
+breakfast and classes over around 16h.&lt;/p&gt;
+
+&lt;h2 id=&quot;average-volume-per-transaction&quot;&gt;Average volume per transaction&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://ehopper.com/guides/kpi-retail/&quot;&gt;eHopper&lt;/a&gt; talks about this indicator on their website. We can measure this
+KPI to track things like product sales over time, it helps us to ascertain if an
+increasing turnover means you are selling more products, or if customers are
+buying more costly products.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Average volume per transaction = Total transaction volume / Transactions amount&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210117-avg-vol-trx&quot; src=&quot;/images/20210117-avg-vol-trx.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This plot shows the average volume per transaction of ice-cream. Logically, the
+volume increases with temperature increasing.&lt;/p&gt;
+
+&lt;h2 id=&quot;average-purchase-value&quot;&gt;Average purchase value&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://toucantoco.com/blog/en/kpis-retail-manager/&quot;&gt;toucantoco&lt;/a&gt; talks about this indicator in his blog. Average purchase value
+measures the average value of each transaction made by customers. Retailers can
+understand sales’ trend with this measure, they can also combine it with average
+volume per sale to ascertain if an increasing turnover means you are selling
+more products, or if customers are buying more costly products.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Average purchase value = Total purchase value / Transactions amount&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210117-avg-trx-value&quot; src=&quot;/images/20210117-avg-trx-value.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This plot describes the average volume and average value per sale during 12
+months. We find that when the average volume per sale increases, the average
+value does not always increase. For instance, the average volume of April is
+more than March, but the average value is less, which means customers buy more
+units during their purchase, but the price per unit is decreasing.&lt;/p&gt;
+
+&lt;h2 id=&quot;purchase-frequency&quot;&gt;Purchase frequency&lt;/h2&gt;
+&lt;p&gt;Purchase frequency measures how many times a customer does purchase during a
+given period. The evolution of the purchase frequency does not represent
+directly the sales’ value becomes more or less, we should understand it with
+some other KPIs like average volume per transaction or average purchase value.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Purchase frequency&quot; src=&quot;/images/20210117-purchase-frequency.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Imagine that this plot shows the performance of some supermarkets in France
+in 2020. The purchase frequency reduces because of the lockdown for COVID-19,
+however, the average value per sale doubles. Thus, although the frequency
+reduces, the total turnover doesn’t become less by analysing the average value
+per sale.&lt;/p&gt;
+
+&lt;h2 id=&quot;gross-profit-vs-net-profit&quot;&gt;Gross profit vs net profit&lt;/h2&gt;
+&lt;p&gt;Both &lt;a href=&quot;https://ehopper.com/guides/kpi-retail/&quot;&gt;eHopper&lt;/a&gt; and &lt;a href=&quot;https://www.vendhq.com/blog/retail-metrics-and-kpis/&quot;&gt;vend&lt;/a&gt; talk about these 2 KPIs. The gross profit
+tells you how much you made after deducting the costs of creating and selling
+the product. The net profit tells you how much you made after deducting your
+cost of goods along with all other business expenses — including administrative
+costs, operating expenses, etc.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;gross profit = total revenue – cost of goods sold (COGS)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;net profit = gross profit – all expenses&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Gross profit and net profit help you to understand your business and to make
+better decisions. For example, if your gross profit is much higher than net
+profit, you can look into your operating expenses or all other expenses, and
+check if they are reasonable.&lt;/p&gt;
+
+&lt;h2 id=&quot;gross-margin-return-on-investment-gmroi&quot;&gt;Gross Margin Return On Investment (GMROI)&lt;/h2&gt;
+&lt;p&gt;Both &lt;a href=&quot;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&quot;&gt;tableau&lt;/a&gt; and &lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;datapine&lt;/a&gt; talk about these 2 KPIs. Gross Margin
+Return on Investment (GMROI) measures your profit return on the funds invested
+in the stock. What this means in practice is that for every euro you spend in
+your stock, this KPI can tell you how many euros you get back so that you apply
+it on specified products to measure if they are worth stocking.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;GMROI = gross profit / average inventory cost&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;GMROI&quot; src=&quot;/images/20210117-GMROI.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This plot describes the GMROI of 3 groups of products (cleaning products, staple
+products and fruits) of 2020. All of them increase since March because of the
+COVID-19 lockdown, customers were willing to buy more cleaning products to keep
+clean, to buy more staple products and fruits since they need to cook at home
+and to keep the dietary balance.&lt;/p&gt;
+
+&lt;p&gt;If you are curious about the scripts of the visualisation, you will find them
+&lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/retail_kpis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Retail”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Retail&quot;&gt;https://en.wikipedia.org/wiki/Retail&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Francesca Nicasio, “Retail Metrics: 14 Essential KPIs for Tracking Your Business’ Performance”, &lt;em&gt;www.vendhq.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.vendhq.com/blog/retail-metrics-and-kpis/&quot;&gt;https://www.vendhq.com/blog/retail-metrics-and-kpis/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Retail Key Performance Indicators and Metrics”, &lt;em&gt;www.datapine.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;https://www.datapine.com/kpi-examples-and-templates/retail&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“15 Fundamental KPI Retail Metrics [And How to Measure Them]”, &lt;em&gt;ehopper.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://ehopper.com/guides/kpi-retail/&quot;&gt;https://ehopper.com/guides/kpi-retail/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Thomas Cesaroni, “9 KPIs Every Retail Manager Should Track”, &lt;em&gt;toucantoco.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://toucantoco.com/blog/en/kpis-retail-manager/&quot;&gt;https://toucantoco.com/blog/en/kpis-retail-manager/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Top 8 metrics for retail KPIs”, &lt;em&gt;www.tableau.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&quot;&gt;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Alexas_Fotos, “Minion banana fruit healthy”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/minion-banana-fruit-healthy-1168873/&quot;&gt;https://pixabay.com/photos/minion-banana-fruit-healthy-1168873/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product assortment, customer service, supporting services and the store's overall market positioning. To point retailers in the right direction, they need to dig the retail metrics and KPIs to track in their business. In this blog, I'll talk about some pretty helpful KPIs for retailers.</summary></entry><entry xml:lang="en"><title type="html">How to convert projected coordinates to latitude longitude by Python?</title><link href="https://jingwen-z.github.io//posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/" rel="alternate" type="text/html" title="How to convert projected coordinates to latitude longitude by Python?" /><published>2021-01-10T16:44:58+01:00</published><updated>2021-01-10T16:44:58+01:00</updated><id>https://jingwen-z.github.io//posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python</id><content type="html" xml:base="https://jingwen-z.github.io//posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/">&lt;p&gt;Last month I &lt;a href=&quot;https://jingwen-z.github.io/draw-subway-and-tramway-with-folium/&quot;&gt;drew subway and tramway lines with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;folium&lt;/code&gt;&lt;/a&gt;
+according to the &lt;a href=&quot;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&quot;&gt;Île-de-France public transport network datasets&lt;/a&gt;. However,
+the coordinates are not what we use in GPS (EPSG:4326), but the Mercator
+projection (EPSG:3857).&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;input1&quot; src=&quot;/images/20210110-input-1.png&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;…&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;input2&quot; src=&quot;/images/20210110-input-2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Thus, before drawing the transport lines, we need to convert projected
+coordinates to latitude longitude. In this blog, I’ll talk about this with the
+following points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;What is EPSG:4326?&lt;/li&gt;
+  &lt;li&gt;What is EPSG:3857?&lt;/li&gt;
+  &lt;li&gt;How to convert projected coordinates to latitude longitude?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;what-is-epsg4326&quot;&gt;What is EPSG:4326?&lt;/h2&gt;
+&lt;p&gt;The World Geodetic System (WGS) is a standard for use in cartography, geodesy,
+and satellite navigation including GPS. This standard includes the definition of
+the coordinate system’s fundamental and derived constants, the ellipsoidal
+(normal) Earth Gravitational Model (EGM), a description of the associated World
+Magnetic Model (WMM), and a current list of local datum transformations.
+The latest revision is WGS 84 (also known as WGS 1984, EPSG:4326), established
+and maintained by the United States National Geospatial-Intelligence Agency
+since 1984, and last revised in 2004. Earlier schemes included WGS 72, WGS 66,
+and WGS 60. WGS 84 is the reference coordinate system used by the Global
+Positioning System.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-epsg3857&quot;&gt;What is EPSG:3857?&lt;/h2&gt;
+&lt;p&gt;Web Mercator, Google Web Mercator, Spherical Mercator, WGS 84 Web Mercator or
+WGS 84/Pseudo-Mercator is a variant of the Mercator projection and is the de
+facto standard for Web mapping applications. It rose to prominence when Google
+Maps adopted it in 2005. It is used by virtually all major online map providers,
+including Google Maps, Mapbox, Bing Maps, OpenStreetMap, Mapquest, Esri, and
+many others. Its official EPSG identifier is EPSG:3857, although others have
+been used historically.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-convert-projected-coordinates-to-latitude-longitude&quot;&gt;How to convert projected coordinates to latitude longitude?&lt;/h2&gt;
+&lt;p&gt;The Python module &lt;a href=&quot;https://pyproj4.github.io/pyproj/stable/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyproj&lt;/code&gt;&lt;/a&gt; is a cartographic projections and
+coordinate transformations library, which converts from longitude, latitude to
+native map projection x,y coordinates and vice versa, its classes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Proj&lt;/code&gt; and
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transform&lt;/code&gt; will help us to get the GPS coordinates.&lt;/p&gt;
+
+&lt;p&gt;A &lt;a href=&quot;https://pyproj4.github.io/pyproj/stable/api/proj.html?highlight=proj&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Proj&lt;/code&gt;&lt;/a&gt; class instance is initialized with proj map projection control
+parameter key/value pairs. The key/value pairs can either be passed in a
+dictionary, or as keyword arguments, or as a PROJ string (compatible with the
+proj command).
+  performs cartographic transformations: converting from
+longitude, latitude to native map projection x,y coordinates and vice versa. The
+&lt;a href=&quot;https://pyproj4.github.io/pyproj/v2.6.1rel/api/transformer.html?highlight=transform&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Transform.er&lt;/code&gt;&lt;/a&gt; class is also for facilitating re-using transforms
+without needing to re-create them. The goal is to make repeated transforms faster.&lt;/p&gt;
+
+&lt;h3 id=&quot;method-1&quot;&gt;Method 1&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyproj&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;wgs84&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Proj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;projparams&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'epsg:4326'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;InputGrid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Proj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;projparams&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'epsg:3857'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;11705274.6374&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;4826473.6922&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;InputGrid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wgs84&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We firstly set 2 variables &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wgs84&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;InputGrid&lt;/code&gt; by specifying the
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;projparams&lt;/code&gt;, then transfer the point (x1, y1) from the coordinate system
+“EPSG:3857” to the “EPSG:4326”.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;method1&quot; src=&quot;/images/20210110-metho1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;We got the results but with a warning message as above. After checking the
+&lt;a href=&quot;https://pyproj4.github.io/pyproj/stable/gotchas.html#upgrading-to-pyproj-2-from-pyproj-1&quot;&gt;recommendation&lt;/a&gt;, now we have another method.&lt;/p&gt;
+
+&lt;h3 id=&quot;method-2&quot;&gt;Method 2&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_crs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;epsg:3857&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;epsg:4326&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For the second method, we create a transformer from a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyproj.crs.CRS&lt;/code&gt;, with
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crs_from=&quot;epsg:3857&quot;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crs_to=&quot;epsg:4326&quot;&lt;/code&gt;, then transform the point
+(x1, y1), we can get the same result as the first method, without any warning
+message.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;method2&quot; src=&quot;/images/20210110-metho2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;use-case&quot;&gt;Use case&lt;/h3&gt;
+&lt;p&gt;So how to solve the problem at the beginning of this article?
+Idea is that we go through the projected coordinates, and transform each of them
+to “EPSG:4326”.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_crs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;epsg:3857&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;epsg:4326&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subway_lines_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'features'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'LineString'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# all coordinates
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'coordinates'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# coordList is for each individual polygon
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;lat_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lng_grid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;# do transformation
+&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;# coordList[0],coordList[1] = pyproj.transform(InputGrid, wgs84, lat_grid, lng_grid) # methode 1
+&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lat_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lng_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# methode 2
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'MultiLineString'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;len_coord&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'coordinates'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;len_coord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'coordinates'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;lat_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lng_grid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;# coordList[0],coordList[1] = pyproj.transform(InputGrid, wgs84, lat_grid, lng_grid) # methode 1
+&lt;/span&gt;                &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lat_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lng_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# methode 2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you are curious about the scripts, you will find them &lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/geovisualization/converting_projected_coordinates_to_latlon.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Gares et stations du réseau ferré d’Île-de-France (par ligne)”, &lt;em&gt;data.iledefrance-mobilites.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&quot;&gt;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“World Geodetic System”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/World_Geodetic_System&quot;&gt;https://en.wikipedia.org/wiki/World_Geodetic_System&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Web Mercator projection”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_Mercator_projection&quot;&gt;https://en.wikipedia.org/wiki/Web_Mercator_projection&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Antonio Falciano, “Converting projected coordinates to lat/lon using Python?”, &lt;em&gt;gis.stackexchange.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://gis.stackexchange.com/questions/78838/converting-projected-coordinates-to-lat-lon-using-python&quot;&gt;https://gis.stackexchange.com/questions/78838/converting-projected-coordinates-to-lat-lon-using-python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;PIRO4D, “Mission to Mars”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/mission-to-mars-mars-probe-2645472/&quot;&gt;https://pixabay.com/photos/mission-to-mars-mars-probe-2645472/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="python3" /><summary type="html">This blog talks about how to convert projected coordinates to latitude longitude with python module &quot;pyproj&quot;.</summary></entry><entry xml:lang="en"><title type="html">Second-hand apartments transactions in Île-de-France (01/2014 - 06/2020)</title><link href="https://jingwen-z.github.io//posts/second-hand-apartments-transactions-in-idf-1420/" rel="alternate" type="text/html" title="Second-hand apartments transactions in Île-de-France (01/2014 - 06/2020)" /><published>2021-01-03T16:12:46+01:00</published><updated>2021-01-03T16:12:46+01:00</updated><id>https://jingwen-z.github.io//posts/second-hand-apartments-transactions-in-idf-1420</id><content type="html" xml:base="https://jingwen-z.github.io//posts/second-hand-apartments-transactions-in-idf-1420/">&lt;p&gt;Île-de-France is the most populous of the 18 regions of France. It is located
+in the north-central part of the country and often called the Région Parisienne
+(“Paris Region”) because it includes the city of Paris. Besides the landmarks of
+Paris, the region has many important historic sites, including the Palace of
+Versailles and the Palace of Fontainebleau, as well as the most-visited tourist
+attraction in France, Disneyland Paris. The poverty rate in Île-de-France was
+15.9% in 2015, compared with 12.3% in 2006. The region is also increasingly
+unequal. Housing prices have pushed the less affluent outside Paris. In this
+blog, I’ll talk about the second-hand apartments purchases in Île-de-France
+between January 2014 and June 2020, with the following points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Data description&lt;/li&gt;
+  &lt;li&gt;How large are the apartments?&lt;/li&gt;
+  &lt;li&gt;Which is the most expensive district?&lt;/li&gt;
+  &lt;li&gt;Relationship between area &amp;amp; apartment price?&lt;/li&gt;
+  &lt;li&gt;Price evolution in terms of timing?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;data-description&quot;&gt;Data description&lt;/h2&gt;
+&lt;p&gt;First of all, I downloaded real estate transactions’ data on the &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/&quot;&gt;site of
+government&lt;/a&gt;. In the dataset, we have transaction’s information
+from January 2014 to June 2020, like “id_mutation” to identify the transaction,
+“nature_mutation” specifies the sale’s nature, “nombre_pieces_principales”
+indicates the number of rooms, “valeur_fonciere” presents the sold price,
+“code_commune”, “nom_commune” and “code_departement” specify the communities and
+departments, “surface_reelle_bati” describes the real surface area, longitude
+and latitude can help us to determine the location.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;vf.info()&quot; src=&quot;/images/20210103-vf.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For this analysis, I only took account of second-hand apartments’ transactions
+with a positive area in Île-de-France.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-large-are-the-apartments&quot;&gt;How large are the apartments?&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;QP piece number&quot; src=&quot;/images/20210103-quotepart-piece-number.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I classed second-hand apartments into 5 groups in terms of piece’s number: T1,
+which means one-room apartment with around 25 m2; T2, which means two-room
+apartment with around 40 m2; T3 presents three-room apartment around 60 m2; T4
+are four-room apartments nearly 80 m2; T5 are five-room apartments larger than
+100 m2. This donut chart describes the quote-part of different pieces’
+apartment among the transactions. T2 and T3 hold nearly 60% of transactions,
+nearly 17% of transactions sold T1 apartments, other purchases are for larger
+apartments. Let’s go further on the details.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Unit price for different piece number&quot; src=&quot;/images/20210103-unit-price-piece-number.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This graph describes the average price m2 for the different number of piece
+second-hand apartments in Ile-de-France, between January 2014 and June 2020.
+The average area of each class is similar in different departments. For the T1
+and T2 apartments, the ones in Paris are smaller than other departments;
+however, the second-hand apartments of T4 or larger ones are larger than other
+departments.&lt;/p&gt;
+
+&lt;p&gt;According to the second graph, we find that although T2 and T3 are much larger
+than T1, their unit prices are lower than the unit price of T1: the gap in Paris
+is 5.4% and 4.7%, respectively, concerning T1; the gap in other departments
+is pretty large (11% and 19%). Moreover, the average area of T4 is three times
+larger than T1, its unit price is 24% less expensive than T1 on average; except
+for Paris, T4’s unit price is 1% more expensive than T1 in Paris. Why are T1
+apartments that expensive per m2? That might be because there are many students
+or young workers, they need to rent a big enough apartment, which makes
+investors invest in T1 apartments, it also leads to higher demands on T1.&lt;/p&gt;
+
+&lt;h2 id=&quot;which-is-the-most-expensive-district&quot;&gt;Which is the most expensive district?&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;District price&quot; src=&quot;/images/20210103-district-price.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;According to this map, we observe that the second-hand apartments in the center
+and west of Paris are more expensive( &amp;gt; 9k euros per m2) than other districts
+of Paris(7k - 9k euros per m2), the second-hand apartments in Paris are more
+expensive than other departments of IDF. Among the departments except for Paris,
+the second-hand apartments in Hauts-de-Seine are more expensive(4k - 6k euros
+per m2).&lt;/p&gt;
+
+&lt;p&gt;Furthermore, in the light of the stacked bar chart, it’s obvious that there are
+much more transactions in Paris, although it’s much more expensive than other
+departments, no matter which class of apartments. In Paris, 60% of transactions
+sold studio or 2-room apartment; but in other departments, the majority of
+transactions sold 2-room or 3-room apartments. One of the reasons might be the
+unit price in Paris is more expensive, the studio or 2-room apartment can
+satisfy the needs of people who live alone or in couple and satisfy the need for
+investors; on the contrary, people who live with family prefer the apartments
+outside Paris, they are larger and less expensive.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Unit price per piece nb in different districts&quot; src=&quot;/images/20210103-unit-price-piece-number-district.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;relationship-between-area--apartment-price&quot;&gt;Relationship between area &amp;amp; apartment price?&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Relationship between area and apartment price in different districts&quot; src=&quot;/images/20210103-area-price-district.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;According to this group of scatter plots, we can simply get the relationship
+between second-hand apartments’ price and their area. Each point stands for one
+transaction, the plots on the red dash line mean that the price per m2 of these
+transactions is 10k euros. The points above the dashed line indicate their unit
+price is greater than 10k euros; otherwise, it’s less than 10k euros per m2.&lt;/p&gt;
+
+&lt;p&gt;For the transactions in Paris, most of the sold apartments are smaller than 150
+m2, the unit price is around 10k euros per m2. However, for the transaction in
+other departments, most of the apartments are smaller than 100 m2, the unit
+price is lower than 10k euros per m2; especially in Seine-et-Marne(77), Essonne
+(91) and Val-d’Oise(95), we can even get a 100 m2 second-hand apartment with
+only 0.25 million euros, which is much cheaper than in other departments.&lt;/p&gt;
+
+&lt;h2 id=&quot;price-evolution-in-terms-of-timing&quot;&gt;Price evolution in terms of timing?&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Tx amount &amp;amp; unit price evolution 14-20&quot; src=&quot;/images/20210103-transaction-amount-unit-price-1420.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The line chart describes the second-hand apartments’ average price per m2 of
+Ile-de-France, between January 2014 and June 2020. Obviously, the average price
+in Paris is the highest in Ile-de-France and its evolution is the highest as
+well, which increased by 28%(11.1/8.7 - 1). Besides, the average price in
+Hauts-de-Seine is the second-highest in Ile-de-France, it increased by 36%
+(7.5/5.5-1); and the average price in Val-de-Marne increased by 16% (5/4.3-1);
+the average price of other departments in Ile-de-France doesn’t change a lot.
+Among 8 departments, the second-hand apartments are the most expensive in Paris
+until June 2020, which is 11k euros per m2, it’s 47% higher than the price in
+Hauts-de-Seine and twice more expensive than second-hand apartments in
+Val-de-Marne.&lt;/p&gt;
+
+&lt;p&gt;The stacked area plot presents the second-hand apartments’ transaction amount of
+Ile-de-France, during the same period as the line chart. We can easily find that
+the transaction amount of Paris’ second-hand apartments is more than other
+departments of IDF, which is nearly 30% of transactions in IDF. Following Paris,
+the transaction amount of Hauts-de-Seine and Val-de-Marne are the second and
+third greatest of IDF. The peak of Paris’s transaction is March 2019 (4807
+transactions), for Hauts-de-Seine and Val-de-Marne are January 2019 and June
+2019, respectively.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Time series decomposition&quot; src=&quot;/images/20210103-time-series-idf.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Then I used Time Series &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;additive&lt;/code&gt; model to decompose data into a trend
+component, a seasonal component, and a residual component. The trend component
+captures changes over time, the seasonal component captures cyclical effects
+due to the time of year, the residual component captures the influences not
+described by the trend and seasonal effects. Thanks to this model, we find that
+except for July, there is another transaction peak in March, which we didn’t
+find above. In June and August, the transactions arrive at their low points,
+that might be because, during the transition period between 2 months, the desire
+for purchasing or selling apartments is not that high.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Unit price prediction&quot; src=&quot;/images/20210103-price-prediction-idf.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Moreover, I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fbprophet&lt;/code&gt; module to predict the price per m2. The black
+points present actual values, the blue line indicates the forecasted values, and
+the light blue shaded region is the uncertainty. The uncertainty’s region
+increases for the prediction because of the initial uncertainty and it grows
+over time. This can be impacted by policy, social elements, or some others.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;According to this analysis, we find that among all transactions of second-hand
+apartments in Île-de-France, T2 and T3 hold 60% transactions. The second-hand
+apartments in the center and west of Paris are more expensive( &amp;gt; 9k euros per
+m2) than other districts of Paris(7k - 9k euros per m2), the second-hand
+apartments in Paris are more expensive than other departments of IDF. Among the
+departments except for Paris, the second-hand apartments in Hauts-de-Seine are
+more expensive(4k - 6k euros per m2).&lt;/p&gt;
+
+&lt;p&gt;You can find all codes in &lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/analysis/dvf/dvf_IDF_analysis.ipynb&quot;&gt;this notebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;DGFiP, “Demandes de valeurs foncières géolocalisées”, &lt;em&gt;data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/&quot;&gt;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Grégoire David, “Departments polygon”, &lt;em&gt;github.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson&quot;&gt;https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;APUR, “APUR : Communes - Ile de France”, &lt;em&gt;data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/apur-communes-ile-de-france/&quot;&gt;https://www.data.gouv.fr/fr/datasets/apur-communes-ile-de-france/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Île-de-France”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/%C3%8Ele-de-France&quot;&gt;https://en.wikipedia.org/wiki/Paris&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ehi Aigiomawu, “Analyzing time series data in Pandas”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&quot;&gt;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Will Koehrsen, “Time Series Analysis in Python: An Introduction”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&quot;&gt;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Pexels, “Paris gargoyle France architecture”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/paris-gargoyle-france-architecture-1852928/&quot;&gt;https://pixabay.com/photos/paris-gargoyle-france-architecture-1852928/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html">Île-de-France is the most populous of the 18 regions of France. It is located in the north-central part of the country and often called the Région Parisienne (&quot;Paris Region&quot;) because it includes the city of Paris. Besides the landmarks of Paris, the region has many important historic sites, including the Palace of Versailles and the Palace of Fontainebleau, as well as the most-visited tourist attraction in France, Disneyland Paris. The poverty rate in Île-de-France was 15.9% in 2015, compared with 12.3% in 2006. The region is also increasingly unequal. Housing prices have pushed the less affluent outside Paris. In this blog, I'll talk about the second-hand apartments purchases in Île-de-France between January 2014 and June 2020.</summary></entry><entry xml:lang="en"><title type="html">Second-hand apartments transactions in Paris (01/2014 - 06/2020)</title><link href="https://jingwen-z.github.io//posts/second-hand-apartments-transactions-in-paris-1420/" rel="alternate" type="text/html" title="Second-hand apartments transactions in Paris (01/2014 - 06/2020)" /><published>2021-01-02T22:20:57+01:00</published><updated>2021-01-03T18:52:53+01:00</updated><id>https://jingwen-z.github.io//posts/second-hand-apartments-transactions-in-paris-1420</id><content type="html" xml:base="https://jingwen-z.github.io//posts/second-hand-apartments-transactions-in-paris-1420/">&lt;p&gt;Paris is the capital and most populous city of France. Since the 17th century,
+Paris has been one of Europe’s major centers of finance, diplomacy, commerce,
+fashion, science, and the arts. According to the Economist Intelligence Unit
+Worldwide Cost of Living Survey in 2018, Paris was the second most expensive
+city in the world, after Singapore, and ahead of Zürich, Hong Kong, Oslo and
+Geneva. Another source ranked Paris as the most expensive, on a par with
+Singapore and Hong Kong, in 2018. All these elements help to bring the
+increasing price of real estate in Paris. In this blog, I’ll talk about the
+second-hand apartments purchases in Paris between January 2014 and June 2020,
+with the following points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Data description&lt;/li&gt;
+  &lt;li&gt;How large are the apartments?&lt;/li&gt;
+  &lt;li&gt;Which is the most expensive district?&lt;/li&gt;
+  &lt;li&gt;Relationship between area &amp;amp; apartment price?&lt;/li&gt;
+  &lt;li&gt;Price evolution in terms of timing?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;data-description&quot;&gt;Data description&lt;/h2&gt;
+&lt;p&gt;First of all, I downloaded real estate transactions’ data on the &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/&quot;&gt;site of
+government&lt;/a&gt;. In the dataset, we have transaction’s information
+from January 2014 to June 2020, like “id_mutation” to identify the transaction,
+“nature_mutation” specifies the sale’s nature, “nombre_pieces_principales”
+indicates the number of rooms, “valeur_fonciere” presents the sold price,
+“code_commune”, “nom_commune” and “code_departement” specify the communities and
+departments, “surface_reelle_bati” describes the real surface area, longitude
+and latitude can help us to determine the location.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;vf.info()&quot; src=&quot;/images/20210102-vf75.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For this analysis, I only took account of second-hand apartments’ transactions
+with a positive area in Paris.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-large-are-the-apartments&quot;&gt;How large are the apartments?&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;QP piece number&quot; src=&quot;/images/20210102-quotepart-piece-number.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I classed second-hand apartments into 5 groups in terms of piece’s number: T1,
+which means one-room apartment with around 23 m2; T2, which means two-room
+apartment with around 40 m2; T3 presents three-room apartment around 63 m2; T4
+are four-room apartments nearly 93 m2; T5 are five-room apartments with a larger
+area of about 147 m2. This donut chart describes the quote-part of different
+pieces’ apartment among the transactions. T1 and T2 hold 60% transactions, 22%
+transactions sold T3 apartments, other purchases are for larger apartments.
+Let’s go further on the details.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Unit price for different piece number&quot; src=&quot;/images/20210102-unit-price-piece-number.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This graph describes the average price m2 for the different number of piece
+second-hand apartments in Paris, between January 2014 and June 2020. According
+to the second graph, we find that although T2 and T3 are much larger than T1,
+their unit prices are 5.3% and 4.7% lower than the unit price of T1. Moreover,
+the average area of T4 is three times larger than T1, its unit price is only 4%
+more expensive than T1; similar for other piece-number apartments. Why are T1
+apartments that expensive per m2? That might be because there are many students
+or young workers in Paris, they need to rent a big enough apartment, which makes
+investors invest in T1 apartments, which also leads to higher demands on T1.&lt;/p&gt;
+
+&lt;h2 id=&quot;which-is-the-most-expensive-district&quot;&gt;Which is the most expensive district?&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;District price&quot; src=&quot;/images/20210102-district-price.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;According to this map, we observe that the second-hand apartments in districts
+1, 4, 6, 7 are much more expensive than other districts, their average unit
+price is at least 12000 euros; on the contrary, the second-hand apartments in
+districts 13, 19, and 20 are much cheaper than others, their average unit price
+is less than 8500 euros. This might be caused by geographical positions, the
+number of pieces, the apartment’s state, the performance of energy, public
+security, etc. The public transport in the city center is more than in other
+areas, there are also lots of shopping centers or tourist spots, which attracts
+a great deal of people, so that makes the city center to be more valuable.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, according to the stacked bar plot below, it’s obvious that there
+are much more transactions in the 16th district than other areas, nearly 50%
+sold apartments are 2-room or 3-room apartments, and the transaction amount of
+T4 is pretty larger than all other districts. Paris 16 is eminently residential,
+as evidenced by its charming buildings with green courtyards and balconies. But
+it is also a Parisian cultural hotspot with many museums and emblematic places
+from both a historical and intellectual point of view. Moreover, it concentrates
+on many schools and establishments of choice for the education of children and
+students. All these might be the reason why the transactions in Paris 16 are
+much more than in other districts. For the districts as 1st, 2nd, or 3rd
+district, more than one-third of sold apartments are T1 apartments, that might
+because there are not that many apartments at the center of Paris, and its unit
+price is high.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Unit price per piece nb in different districts&quot; src=&quot;/images/20210102-unit-price-piece-number-district.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;relationship-between-area--apartment-price&quot;&gt;Relationship between area &amp;amp; apartment price?&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Relationship between area and apartment price in different districts&quot; src=&quot;/images/20210102-area-price-district.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;According to this group of scatter plots, we can simply get the relationship
+between second-hand apartments’ price and their area. Each point stands for one
+transaction, the plots on the red dash line mean that the price per m2 of these
+transactions is 10k euros. The points above the dashed line indicate their unit
+price is greater than 10k euros; otherwise, it’s less than 10k euros per m2.&lt;/p&gt;
+
+&lt;p&gt;For the transactions of the downtown area, most of them are smaller than 50 m2,
+but their price varies widely to nearly 2 million euros; on the other hand, for
+the 8th, 16th, and 17th district, almost sold apartments’ price also arrive more
+than 2 million euros, but their area varies widely to 200 m2; moreover, there
+are also apartments whose unit price and area don’t vary that widely, as in
+13th, 18th, 19th, and 20th district, most of the apartments here are smaller
+than 100 m2 and cheaper than 1 million euros, so than less than 10k euros per
+m2.&lt;/p&gt;
+
+&lt;h2 id=&quot;price-evolution-in-terms-of-timing&quot;&gt;Price evolution in terms of timing?&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Tx amount &amp;amp; unit price evolution 14-20&quot; src=&quot;/images/20210102-transaction-amount-unit-price-1420.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This graph describes second-hand apartments’ transaction amount and average
+price per m2 of Paris, between January 2014 and June 2020. The orange line shows
+the monthly average price per m2, the blue area displays the monthly transaction
+amount. During 6.5 years, the average price per m2 increases by 28%
+(11.1/8.7 - 1), especially from the year 2017, the average price per m2
+increases by nearly 31% (11.1/8.5 - 1). Moreover, the transaction amount arrives
+at the yearly lowest point in August, which might because people go on holiday
+at that time; on the contrary, the transactions in July or September are higher
+than in other months, which means that people usually sign the purchase promise
+in May or July (supposed that we have 2 months for negotiating the credit
+between the purchase promise and purchase agreement) so that they can sign the
+agreement before their holiday or before the school opening.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Time series decomposition&quot; src=&quot;/images/20210102-time-series-paris.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Then I used Time Series &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;additive&lt;/code&gt; model to decompose data into a trend
+component, a seasonal component, and a residual component. The trend component
+captures changes over time, the seasonal component captures cyclical effects
+due to the time of year, the residual component captures the influences not
+described by the trend and seasonal effects. Thanks to this model, we find that
+except for July, there is another transaction peak in January, which we didn’t
+find above. In March and November, the transactions arrive at their low points,
+that might be because, during the transition period between 2 years, the desire
+for purchasing or selling apartments is not that high.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Unit price prediction&quot; src=&quot;/images/20210102-price-prediction-paris.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Moreover, I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fbprophet&lt;/code&gt; module to predict the price per m2. The black
+points present actual values, the blue line indicates the forecasted values,
+and the light blue shaded region is the uncertainty. The uncertainty’s region
+increases for the prediction because of the initial uncertainty and it grows
+over time. This can be impacted by policy, social elements, or some others.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;According to this analysis, we find that among all transactions of second-hand
+apartments in Paris, T1 and T2 hold 60% transactions. The second-hand apartments
+in districts 1, 4, 6 and 7 are much more expensive than other districts, their
+average unit price is at least 12000 euros; on the contrary, the second-hand
+apartments in districts 13, 19 and 20 are much cheaper than others, their
+average unit price is less than 8500 euros.&lt;/p&gt;
+
+&lt;p&gt;You can find all codes in &lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/analysis/dvf/dvf_Paris_analysis.ipynb&quot;&gt;this notebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;DGFiP, “Demandes de valeurs foncières géolocalisées”, &lt;em&gt;data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/&quot;&gt;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Grégoire David, “Departments polygon”, &lt;em&gt;github.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson&quot;&gt;https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;APUR, “APUR : Communes - Ile de France”, &lt;em&gt;data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/apur-communes-ile-de-france/&quot;&gt;https://www.data.gouv.fr/fr/datasets/apur-communes-ile-de-france/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Paris”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Paris&quot;&gt;https://en.wikipedia.org/wiki/Paris&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ehi Aigiomawu, “Analyzing time series data in Pandas”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&quot;&gt;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Will Koehrsen, “Time Series Analysis in Python: An Introduction”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&quot;&gt;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Walkerssk, “Paris France Eiffel tower night”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/&quot;&gt;https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris between January 2014 and June 2020.</summary></entry><entry xml:lang="en"><title type="html">Review of 2020</title><link href="https://jingwen-z.github.io//posts/review-of-2020/" rel="alternate" type="text/html" title="Review of 2020" /><published>2020-12-29T21:40:05+01:00</published><updated>2021-01-04T22:42:49+01:00</updated><id>https://jingwen-z.github.io//posts/review-of-2020</id><content type="html" xml:base="https://jingwen-z.github.io//posts/review-of-2020/">&lt;p&gt;The year 2020 is a year unlike any other for every one of us. This year, we
+changed our working approach progressively; this year, most of us had more time
+to accompany our family; this year, we paid more attention to hygiene.&lt;/p&gt;
+
+&lt;p&gt;This year I enhanced my knowledge of retailing, improved my python and analysis
+by applying different projects. In the following, I’ll talk about:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Working in retailing&lt;/li&gt;
+  &lt;li&gt;Self-learning&lt;/li&gt;
+  &lt;li&gt;COVID-19 analysis&lt;/li&gt;
+  &lt;li&gt;Second-hand apartments transactions in Paris &amp;amp; Ile-de-France&lt;/li&gt;
+  &lt;li&gt;Blogs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;working-in-retailing&quot;&gt;Working in retailing&lt;/h2&gt;
+&lt;p&gt;After 3.5 years’ journey at Franprix, I started my adventure at “&lt;a href=&quot;https://www.inthememory.com/?lang=en&quot;&gt;In The Memory&lt;/a&gt;”
+since July of this year. I had a fruitful harvest by working at Franprix: I
+founded the Data Science Team with another colleague after setting up an
+infrastructure: Gitlab, e-mail reporting pipelines, and projects’ management
+tool; I entered the retailing world, saw its backstage, and understood how it
+worked by creating and maintaining 30+ reports for directors and different
+teams; learning and enhancing my skills in data engineering by automating ETL
+processes (SQL, python, GitLab) that allowed to make it easier to wrangle data
+and reduce time by as much as 50%; I also improved my analysis skill by applying
+descriptive &amp;amp; predictive models and visualising data with suitable graphs via
+python scripts to analyze products, clients’ preferences and predict products’
+sales.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;pot depart franprix&quot; src=&quot;/images/20201229-fx.jpeg&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.inthememory.com/?lang=en&quot;&gt;In The Memory&lt;/a&gt; is a retail-tech company that helps retail players to
+make the best use of the different internal and external data sources to meet
+their strategic and operational business challenges. Our products allow
+distributors and brands to accelerate their decision-making to attract more
+customers and make the best assortment, merchandising, pricing and promotional
+choices, in their various physical and online sales channels. We build tailored
+Augmented Intelligence solutions to meet clients’ priority challenges and serve
+their strategies by supporting their teams in change management, defining
+together the best KPIs to meet clients’ challenges, and adapting our solutions
+to the client’s needs, constraints and processes.&lt;/p&gt;
+
+&lt;p&gt;We have 3 teams: consultants, data scientists and developers. The colleagues of
+consultants team collects clients’ needs, transcribes the technical view points
+to discuss with the colleagues of data and dev team, to offer the solutions
+which satisfy the clients’ needs. For us data scientists, after discussing with
+our retailing experts, we define strategic indicators, develop and implement
+some algorithms with python and spark, then we’ll present the KPIs and data
+visualisation to the colleagues of the dev team, and to see if it’s reasonable
+and realizable for the platform.&lt;/p&gt;
+
+&lt;p&gt;The working atmosphere is amicably and dynamic, each week we have one meeting
+within the whole company, another for each team, which allow everyone to well
+know and follow all the projects (top transparency). Since mid-2020, we doubled
+the number of employees! During my 6-month working at In The Memory, I got a
+more global view of the retailing domain, enhanced my business thinking
+according to multiple projects, like CRM and new feature creation for our
+platform.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Memory CRM&quot; src=&quot;/images/20201229-CRM.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;self-learning&quot;&gt;Self-learning&lt;/h2&gt;
+&lt;p&gt;This year I enriched my skills of extracting data via Google API. For example,
+I learnt &lt;a href=&quot;https://jingwen-z.github.io/how-to-get-geographic-information-by-google-geocoding-api/&quot;&gt;how to get geographic information by Google Geocoding API&lt;/a&gt;,
+understood &lt;a href=&quot;https://jingwen-z.github.io/how-to-get-a-youtube-video-information-with-youtube-data-api-by-python/&quot;&gt;how to get a YouTube video’s information with YouTube Data API&lt;/a&gt;,
+handled how to get places’ reviews on Google Maps by &lt;a href=&quot;https://jingwen-z.github.io/how-to-get-places-reviews-on-google-maps-by-place-api/&quot;&gt;Place API&lt;/a&gt; and
+&lt;a href=&quot;https://jingwen-z.github.io/how-to-get-places-reviews-on-google-by-google-my-business-api/&quot;&gt;Google My Business API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before arriving at In The Memory, considering that I need to realise data
+transformation with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyspark&lt;/code&gt;, I learnt how to manipulate data with it on
+&lt;a href=&quot;https://www.datacamp.com/courses/cleaning-data-with-pyspark&quot;&gt;datacamp&lt;/a&gt; and &lt;a href=&quot;https://jingwen-z.github.io/learning-pyspark-with-docker/&quot;&gt;applied that with docker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;datacamp learning pyspark&quot; src=&quot;/images/20201229-datacamp.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Imagine that when we wrote a Python class to extract some business places’
+reviews with Google Place API, how could we ensure that we will extract the
+data correctly without sending requests to Google? In this case, I leart how to
+&lt;a href=&quot;https://jingwen-z.github.io/how-to-apply-mock-with-python-unittest-module/&quot;&gt;use python module &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unittest&lt;/code&gt; to mock&lt;/a&gt; a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;requests.get&lt;/code&gt; and to test if we
+will get the expectant result. Mocking objects can simulate the behavior of
+complex, real objects and are therefore useful when a real object is impractical
+or impossible to incorporate into a unit test.&lt;/p&gt;
+
+&lt;h2 id=&quot;covid-19-analysis&quot;&gt;COVID-19 analysis&lt;/h2&gt;
+&lt;p&gt;As I mentioned at the beginning, our life is impacted by COVID-19. I did some
+analysis for different continents, countries and cities with different
+visualisations on multiple aspects: confirmed cases evolution, daily cumulative
+confirmed count for each country, confirmed cases per 1 million people, deaths
+rate, etc. You can find them all &lt;a href=&quot;https://jingwen-z.github.io/tags/COVID-19/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;second-hand-apartments-transactions-in-paris--ile-de-france&quot;&gt;Second-hand apartments transactions in Paris &amp;amp; Ile-de-France&lt;/h2&gt;
+&lt;p&gt;Since the 17th century, Paris has been one of Europe’s major centers of finance,
+diplomacy, commerce, fashion, science, and the arts. According to the Economist
+Intelligence Unit Worldwide Cost of Living Survey in 2018, Paris was the second
+most expensive city in the world, after Singapore, and ahead of Zürich, Hong
+Kong, Oslo, and Geneva. Another source ranked Paris as the most expensive, on a
+par with Singapore and Hong Kong, in 2018. All these elements help to bring the
+increasing price of real estate in Paris. Thanks to the &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/#&quot;&gt;open data source&lt;/a&gt;,
+I went into them and found out the second-hand apartments transactions in
+&lt;a href=&quot;https://jingwen-z.github.io/second-hand-apartments-transactions-in-paris-1420/&quot;&gt;Paris&lt;/a&gt;, &lt;a href=&quot;https://jingwen-z.github.io/second-hand-apartments-transactions-in-idf-1420/&quot;&gt;Ile-de-France&lt;/a&gt; as well.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Second-hand apartments transactions in Ile-de-France&quot; src=&quot;/images/20201229-idf-map.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
+&lt;p&gt;This year I wrote 24 blogs (including this one), they talk about various topics:
+extracting data by Google APIs, data analysis, python application, unit test,
+geovisualisation.  Moreover, the traffic of my blog increases by 233%
+concerning 2019. I’m pretty glad if my blogs can help you and solve the problems
+for you.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Blog traffic 1&quot; src=&quot;/images/20201229-blog1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Blog traffic 2&quot; src=&quot;/images/20201229-blog2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Don’t hesitate if you want to ask questions or write comments, it’s welcome!!&lt;/p&gt;
+
+&lt;p&gt;Happy New Year! Hope to see you in 2021!&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;geralt, “New year 2020”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/illustrations/new-year-s-day-new-year-s-eve-4691183/&quot;&gt;https://pixabay.com/illustrations/new-year-s-day-new-year-s-eve-4691183/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html">Review of 2020.</summary></entry><entry xml:lang="en"><title type="html">Draw subway and tramway with folium</title><link href="https://jingwen-z.github.io//posts/draw-subway-and-tramway-with-folium/" rel="alternate" type="text/html" title="Draw subway and tramway with folium" /><published>2020-12-07T22:06:04+01:00</published><updated>2020-12-07T22:06:04+01:00</updated><id>https://jingwen-z.github.io//posts/draw-subway-and-tramway-with-folium</id><content type="html" xml:base="https://jingwen-z.github.io//posts/draw-subway-and-tramway-with-folium/">&lt;p&gt;A map can clearly present information in terms of geography. Recently I learnt
+how to draw public transport lines with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;folium&lt;/code&gt; module in Python. In this blog,
+I will talk about how to do that with the following points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Datasets&lt;/li&gt;
+  &lt;li&gt;Draw transport lines with “folium”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;datasets&quot;&gt;Datasets&lt;/h2&gt;
+&lt;p&gt;Before drawing maps, I’ll talk about the datasets which are used for this blog.
+I downloaded &lt;a href=&quot;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&quot;&gt;Île-de-France public transport network datasets&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;idf_transport_geo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data/transport/idf_ligne-transport.geojson'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data/transport/idf-emplacement-des-gares.csv'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;';'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20201207-idf-transport-geo&quot; src=&quot;/images/20201207-idf-transport-geo.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20201207-idf-station-df&quot; src=&quot;/images/20201207-idf-station-df.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lat'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lng'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Geo Point'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;','&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lat'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lat'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lng'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lng'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'mode_'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Metro'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'RER'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To get stations’ coordinates (latitude, longitude), we split the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Geo Point&lt;/code&gt; by
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;,&lt;/code&gt;, convert the values to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;, and filter only the subway and RER(Réseau
+Express Régional, English: Regional Express Network).&lt;/p&gt;
+
+&lt;h2 id=&quot;draw-transport-lines-with-folium&quot;&gt;Draw transport lines with “folium”&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;folium&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;idf_map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;folium&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;48.868&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.365&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zoom_start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Cartodb dark_matter'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line_segment&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_transport_geo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'features'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;gjson&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;folium&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;features&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GeoJson&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line_segment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+                                    &lt;span class=&quot;n&quot;&gt;style_function&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'color'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'#00C4B3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                                                                &lt;span class=&quot;s&quot;&gt;'weight'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;idf_map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gjson&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iterrows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;folium&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CircleMarker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lat'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lng'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'#00C4B3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;fill_color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'#00C4B3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idf_map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;idf_map&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I applied &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;geometry&lt;/code&gt; which belongs to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;idf_transport_geo['features']&lt;/code&gt; with
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;folium.features.GeoJson&lt;/code&gt; to draw the transport lines, and add station points
+with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;folium.CircleMarker&lt;/code&gt;, then we get the following map.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20201207-idf-map&quot; src=&quot;/images/20201207-idf-map.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;easter-egg&quot;&gt;Easter egg&lt;/h3&gt;
+&lt;p&gt;I also visualise transport lines of many other cities:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20201207-public-transport-lines&quot; src=&quot;/images/20201207-public-transport-lines.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If you are curious about the scripts, you will find them &lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/geovisualization/transport_lines.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Gares et stations du réseau ferré d’Île-de-France (par ligne)”, &lt;em&gt;data.iledefrance-mobilites.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&quot;&gt;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Stations de métro (Toulouse)”, &lt;em&gt;data.toulouse-metropole.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://data.toulouse-metropole.fr/explore/dataset/stations-de-metro/map/?location=16,43.60215,1.44379&amp;amp;basemap=jawg.streets&quot;&gt;https://data.toulouse-metropole.fr/explore/dataset/stations-de-metro/map/?location=16,43.60215,1.44379&amp;amp;basemap=jawg.streets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Itinéraires de métro dans OpenStreetMap”, &lt;em&gt;www.data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/itineraires-de-metro-dans-openstreetmap/&quot;&gt;https://www.data.gouv.fr/fr/datasets/itineraires-de-metro-dans-openstreetmap/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Itinéraires de tramways dans OpenStreetMap”, &lt;em&gt;www.data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/itineraires-de-tramways-dans-openstreetmap/&quot;&gt;https://www.data.gouv.fr/fr/datasets/itineraires-de-tramways-dans-openstreetmap/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Using GeoPandas to convert Linestring UTM data to LatLong”, &lt;em&gt;gis.stackexchange.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://gis.stackexchange.com/questions/351846/using-geopandas-to-convert-linestring-utm-data-to-latlong&quot;&gt;https://gis.stackexchange.com/questions/351846/using-geopandas-to-convert-linestring-utm-data-to-latlong&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Converting UTM to Lat/Long with a geoJSON file in pyproj”, &lt;em&gt;gis.stackexchange.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://gis.stackexchange.com/questions/217012/converting-utm-to-lat-long-with-a-geojson-file-in-pyproj&quot;&gt;https://gis.stackexchange.com/questions/217012/converting-utm-to-lat-long-with-a-geojson-file-in-pyproj&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Converting projected coordinates to lat/lon using Python?”, &lt;em&gt;gis.stackexchange.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://gis.stackexchange.com/questions/78838/converting-projected-coordinates-to-lat-lon-using-python&quot;&gt;https://gis.stackexchange.com/questions/78838/converting-projected-coordinates-to-lat-lon-using-python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;pyproj4, “pyproj4 / pyproj”, &lt;em&gt;github.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://github.com/pyproj4/pyproj&quot;&gt;https://github.com/pyproj4/pyproj&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Turbo87, “Turbo87 / utm”, &lt;em&gt;github.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://github.com/Turbo87/utm&quot;&gt;https://github.com/Turbo87/utm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Universal Transverse Mercator coordinate system”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#From_UTM_coordinates_(E,_N,_Zone,_Hemi)_to_latitude,_longitude_(%CF%86,_%CE%BB)&quot;&gt;https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#From_UTM_coordinates_(E,&lt;em&gt;N,_Zone,_Hemi)_to_latitude,_longitude&lt;/em&gt;(%CF%86,_%CE%BB)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;SplitShire, “metro subway rails railroad tracks”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/metro-subway-rails-railroad-tracks-407204/&quot;&gt;https://pixabay.com/photos/metro-subway-rails-railroad-tracks-407204/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="python3" /><category term="folium" /><category term="geovisualisation" /><summary type="html">This blog talks about how to draw public transport lines with &quot;folium&quot; module in Python.</summary></entry></feed>

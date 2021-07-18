@@ -10,29 +10,29 @@
 		
 	</script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Jingwen Zheng - Jingwen Zheng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Airbnb Paris Analysis - Jingwen Zheng</title>
 
-<meta name="description" content="Data Science Enthusiast
-">
+<meta name="description" content="Paris is the capital and most populous city of France, and it also attracts lots of tourists, which makes me eager to dig out Airbnb locations in Paris. Wher...">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Jingwen Zheng | Data Science Enthusiast</title>
+<title>Airbnb Paris Analysis | Jingwen Zheng</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Jingwen Zheng" />
+<meta property="og:title" content="Airbnb Paris Analysis" />
 <meta name="author" content="Jingwen Zheng" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Data Science Enthusiast" />
-<meta property="og:description" content="Data Science Enthusiast" />
-<link rel="canonical" href="https://jingwen-z.github.io//" />
-<meta property="og:url" content="https://jingwen-z.github.io//" />
+<meta name="description" content="Paris is the capital and most populous city of France, and it also attracts lots of tourists, which makes me eager to dig out Airbnb locations in Paris. Where are the locations located? What are their prices? In this blog, I will analyse Airbnb Paris with the following points…" />
+<meta property="og:description" content="Paris is the capital and most populous city of France, and it also attracts lots of tourists, which makes me eager to dig out Airbnb locations in Paris. Where are the locations located? What are their prices? In this blog, I will analyse Airbnb Paris with the following points…" />
+<link rel="canonical" href="https://jingwen-z.github.io//posts/airbnb-paris-analysis/" />
+<meta property="og:url" content="https://jingwen-z.github.io//posts/airbnb-paris-analysis/" />
 <meta property="og:site_name" content="Jingwen Zheng" />
-<link rel="next" href="https://jingwen-z.github.io//page2/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-13T20:58:54+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Jingwen Zheng" />
+<meta property="twitter:title" content="Airbnb Paris Analysis" />
 <meta name="twitter:site" content="@Jingwen_QI" />
 <meta name="twitter:creator" content="@Jingwen Zheng" />
 <script type="application/ld+json">
-{"headline":"Jingwen Zheng","description":"Data Science Enthusiast","author":{"@type":"Person","name":"Jingwen Zheng"},"@type":"WebSite","url":"https://jingwen-z.github.io//","name":"Jingwen Zheng","@context":"https://schema.org"}</script>
+{"headline":"Airbnb Paris Analysis","dateModified":"2019-08-15T23:47:53+02:00","datePublished":"2019-08-13T20:58:54+02:00","description":"Paris is the capital and most populous city of France, and it also attracts lots of tourists, which makes me eager to dig out Airbnb locations in Paris. Where are the locations located? What are their prices? In this blog, I will analyse Airbnb Paris with the following points…","author":{"@type":"Person","name":"Jingwen Zheng"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io//posts/airbnb-paris-analysis/"},"@type":"BlogPosting","url":"https://jingwen-z.github.io//posts/airbnb-paris-analysis/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -40,7 +40,7 @@
 
 <!-- Extra Open Graph :: End -->
 
-<link rel="canonical" href="https://jingwen-z.github.io//"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://jingwen-z.github.io//posts/airbnb-paris-analysis/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -290,7 +290,7 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
@@ -309,131 +309,211 @@
         <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20190813-locations.png);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=analysis">analysis</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=real-estate">real-estate</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=visualisation">visualisation</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=geovisualisation">geovisualisation</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Aug 13, 2019</span>
+            </li></ul></div><div class="article__header"><header><h1>Airbnb Paris Analysis</h1></header></div><p class="overlay__excerpt">Paris is the capital and most populous city of France, and it also attracts lots of tourists, which makes me eager to dig out Airbnb locations in Paris. Where are the locations located? What are th...</p></div></div>
+              </div>
+            </div><div class ="main"><div class="grid grid--reverse">
 
-              <div class="col-aside d-print-none js-col-aside"></div>
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
 
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>Jingwen Zheng</h1></header><meta itemprop="headline" content="Jingwen Zheng"><meta itemprop="author" content="Jingwen Zheng"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210626-vaccin.jpg" /></div><div class="item__content">
-          <header><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/"><h2 itemprop="headline" class="item__header">Do you know the reactions of Pfizer vaccine?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information</div><p><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=COVID-19">COVID-19</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 01, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-07-01T22:27:55+02:00">
-    <meta itemprop="keywords" content="analysis,visualisation,COVID-19"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210427-pipe.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/"><h2 itemprop="headline" class="item__header">How to create a data pipeline with Azure data factory and slack?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In this blog, I talked about how to create and automate a data pipeline on Azure Data Factory, how to send messages and upload files on Slack with its APIs.</div><p><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=data-processing">data-processing</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=API">API</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 27, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-27T11:23:00+02:00">
-    <meta itemprop="keywords" content="data-processing,API"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210418-crm.jpg" /></div><div class="item__content">
-          <header><a href="/posts/crm-in-retailing/"><h2 itemprop="headline" class="item__header">CRM in retailing</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In retailing domain, one of the most important things is increasing the customer satifaction and the customer loyalty. To reach the goals, we need to understand CRM (Customer Relationship Management) firstly, then we can take steps to improve them.</div><p><a href="/posts/crm-in-retailing/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 18, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-18T11:23:00+02:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210202-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-2/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 2)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-2/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Feb 09, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-02-09T21:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210117-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-1/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 1)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-1/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 17, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-17T16:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210110-image.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/"><h2 itemprop="headline" class="item__header">How to convert projected coordinates to latitude longitude by Python?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">This blog talks about how to convert projected coordinates to latitude longitude with python module "pyproj".</div><p><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=python3">python3</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 10, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-10T16:44:58+01:00">
-    <meta itemprop="keywords" content="python3"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210103-district-price.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-idf-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Île-de-France (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Île-de-France is the most populous of the 18 regions of France. It is located in the north-central part of the country and often called the Région Parisienne ("Paris Region") because it includes the city of Paris. Besides the landmarks of Paris, the region has many important historic sites, including the Palace of Versailles and the Palace of Fo...</div><p><a href="/posts/second-hand-apartments-transactions-in-idf-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 03, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-03T16:12:46+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210102-dvf-paris-quartier.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-paris-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Paris (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris bet...</div><p><a href="/posts/second-hand-apartments-transactions-in-paris-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 02, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-02T22:20:57+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article></div></div><div class="layout--home"><div class="pagination"><p>104 post articles, 13 pages.</p>
-    <div class="pagination__menu">
-      <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
-            <i class="fas fa-angle-left"></i>
-          </div></li><li>
-              <div class="button button--primary button--circle focus"><span>1</span></div>
-            </li><li>
-                  <a class="button button--secondary button--circle" href="/page2/"><span>2</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page3/"><span>3</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page4/"><span>4</span></a>
-                </li><li><span class="pagination__omit"><i class="fas fa-ellipsis-h"></i></span></li><li>
-                  <a class="button button--secondary button--circle" href="/page13/"><span>13</span></a>
-                </li><li><a class="button button--secondary button--circle" href="/page2/">
-            <i class="fas fa-angle-right"></i>
-          </a></li></ul>
-    </div>
-  </div></div>
-<script>/*(function () {
+<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="Airbnb Paris Analysis"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2019-08-13T20:58:54+02:00">
+    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
-})();*/
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><p>Paris is the capital and most populous city of France, and it also attracts
+lots of tourists, which makes me eager to dig out Airbnb locations in Paris.
+Where are the locations located? What are their prices? In this blog, I will
+analyse Airbnb Paris with the following points:</p>
+<ul>
+  <li>Data description</li>
+  <li>Locations on the map</li>
+  <li>What type of room are they?</li>
+  <li>What are the neighbourhood of locations?</li>
+  <li>Average price for each neighbourhood?</li>
+  <li>Location amount in time series</li>
+  <li>Location amount in different neighbourhood (heatmap)</li>
+  <li>Average location price in different neighbourhood</li>
+  <li>Reference</li>
+</ul>
+
+<h2 id="data-description">Data description</h2>
+<p>I firstly analyse only with data of 9th, July 2019, which is the most recent at
+this moment.</p>
+
+<p align="center">
+  <img alt="Data description" src="/images/20190813-data-description.png" />
+</p>
+
+<p>According to the histograms above, we find that in Paris 50% locations are able
+to accommodate at least 2 persons, the review scores rating is 100/100 for 18%
+locations, nearly 50% locations need clients to reserve at least 2 nights.
+Moreover, the most important point, the price of one night is less than $80 for
+50% locations.</p>
+
+<p>In the second part, I’ll apply historical data to do some further analysis.</p>
+
+<h2 id="locations-on-the-map">Locations on the map</h2>
+<iframe src="/images/20190813-locations-190709.html" style="display: block; width:100%; height: 370px">
+  <p>Airbnb Paris Locations 20190709</p>
+</iframe>
+
+<h2 id="what-type-of-room-are-they">What type of room are they?</h2>
+
+<p align="center">
+  <img alt="Room type" src="/images/20190813-room-types.png" />
+</p>
+
+<p>In Paris, 86.5% of Airbnb locations are entire home/apartment, nearly 13% are
+private room, the rest are shared room.</p>
+
+<h2 id="what-are-the-neighbourhood-of-locations">What are the neighbourhood of locations?</h2>
+
+<p align="center">
+  <img alt="Airbnb Paris Locations neighbourhood" src="/images/20190813-neighbourhood-locations-190709.png" />
+</p>
+
+<p>The top 3 neighbourhood are Buttes-Montmartre (11.3%), Popincourt (9.8%) and
+Vaugirard (7.4%), the flop 3 neighbourhood are Louvre, Elysée and
+Palais-Bourbon, which might because the real estate is much more expensive in
+these quarters, and there are less apartment to be sold, people who purchase
+real estate for renting is less than other quarters.</p>
+
+<h2 id="average-price-for-each-neighbourhood">Average price for each neighbourhood?</h2>
+
+<p align="center">
+  <img alt="Airbnb Paris Locations price in different neighbourhoods" src="/images/20190813-neighbourhood-locations-price-190709.png" />
+</p>
+
+<p>It’s a pity that we don’t know the area for each location, we cannot calculate
+the price for each m2. However, we calculate the average price for different
+neighbourhood.</p>
+
+<p>The top 3 neighbourhood are Elysée (240 euros), Palais-Bourbon (182 euros) and
+Louvre (178 euros), the flop 3 neighbourhood are Ménilmontant, Buttes-Chaumont
+and Gogelins, which might be because of the neighbourhood security, quality,
+etc. We find an interesting point: the price and locations’ amount is
+negatively related, which means the better neighbourhood has less Airbnb
+locations and its price is more expensive than others.</p>
+
+<h2 id="locations-in-time-series">Locations in Time Series</h2>
+
+<p align="center">
+  <img src="/images/20190813-location-history.gif" style="max-width: 720px" alt="Locations in Time Series" />
+</p>
+
+<h2 id="location-amount-in-time-series">Location amount in time series</h2>
+
+<p align="center">
+  <img alt="Location amount in different months" src="/images/20190813-locations-amount-ts.png" />
+</p>
+
+<p>From May 2015 to July 2019, Airbnb locations’ amount increases 102%
+(64293/29212) in Paris, especially between May 2015 and July 2016, it increases
+80% (52725/29212), most of them are “Entire home/apt”. Considering the real
+estate prices in Paris, the “Entire home/apt” might means a studio or a
+two-room apartment (1 living room + 1 bedroom). Moreover, for recent years, the
+peaks of locations’ amount are in the month of April or July / August, which
+reflects the season.</p>
+
+<h2 id="average-location-price-in-different-neighbourhood">Average location price in different neighbourhood</h2>
+
+<p align="center">
+  <img src="/images/20190813-neighbourhood-locations-price-history.gif" style="max-width: 720px" alt="Average location price in different neighbourhood" />
+</p>
+
+<p>Globally, locations’ average price does not change that much. Except for the
+locations at Elysée, Temple and Opéra, whose price increase 53%, 35% and 26%,
+respectively.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>According to this analysis, we find that the majority of Airbnb locations in
+Paris are entire home/apartment; most of the locations are location at
+Buttes-Montmartre, Popincourt and Vaugirard; the most expensive locations are
+located at Elysée, Palais-Bourbon and Louvre. Furthermore, in recent years,
+Airbnb locations’ amount increases 102% in Paris, and locations’ average price
+does not change that much in general.</p>
+
+<p>You can find all codes in <a href="https://github.com/jingwen-z/python-playground/blob/master/analysis/Airbnb%20Paris/airbnb_paris_analysis.ipynb">this notebook</a>.</p>
+
+<h2 id="reference">Reference</h2>
+<ul>
+  <li>“Inside Airbnb”, <em>insideairbnb.com</em>. [Online]. Available: <a href="http://insideairbnb.com/get-the-data.html">http://insideairbnb.com/get-the-data.html</a></li>
+  <li>folium, “plugin-Search”, <em>github/python-visualization/folium</em>. [Online]. Available: <a href="https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/plugin-Search.ipynb">https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/plugin-Search.ipynb</a></li>
+  <li>folium, “colormaps”, <em>github/python-visualization/folium</em>. [Online]. Available: <a href="https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/Colormaps.ipynb">https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/Colormaps.ipynb</a></li>
+</ul>
+
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2019-08-13T20:58:54+02:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div></div><div class="article__license"><div class="license">
+    <p>This work is licensed under a <a itemprop="license" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a> license.
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img alt="Attribution-NonCommercial 4.0 International" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+      </a>
+    </p>
+  </div></div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/posts/house-prices-regression-techniques/">House Prices: Regression Techniques</a></div><div class="next"><span>NEXT</span><a href="/posts/distance-application-in-data-science/">Distance application in Data Science</a></div></div></div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
 </script>
-
-
-
-</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+</div><section class="page__comments d-print-none"><div id="disqus_thread"></div>
+  <script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  var disqus_config = function () {
+    this.page.url = 'https://jingwen-z.github.io//posts/airbnb-paris-analysis/';
+    this.page.identifier = '/posts/airbnb-paris-analysis';
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jingwen-z.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></section></article><!-- start custom main bottom snippet -->
 
 <!-- end custom main bottom snippet -->
 </div>
@@ -984,6 +1064,68 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
 </script>
     </div>
     <script>(function () {

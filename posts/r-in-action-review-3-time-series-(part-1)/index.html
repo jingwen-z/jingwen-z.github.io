@@ -10,29 +10,29 @@
 		
 	</script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Jingwen Zheng - Jingwen Zheng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>R IN ACTION Review 3 - Time series (Part 1) - Jingwen Zheng</title>
 
-<meta name="description" content="Data Science Enthusiast
-">
+<meta name="description" content="I learnt Time Series from “R IN ACTION” in recent days and want to extract someimportant points for absorbing and summarizing the knowledge[1]. In this blog,...">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Jingwen Zheng | Data Science Enthusiast</title>
+<title>R IN ACTION Review 3 - Time series (Part 1) | Jingwen Zheng</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Jingwen Zheng" />
+<meta property="og:title" content="R IN ACTION Review 3 - Time series (Part 1)" />
 <meta name="author" content="Jingwen Zheng" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Data Science Enthusiast" />
-<meta property="og:description" content="Data Science Enthusiast" />
-<link rel="canonical" href="https://jingwen-z.github.io//" />
-<meta property="og:url" content="https://jingwen-z.github.io//" />
+<meta name="description" content="I learnt Time Series from “R IN ACTION” in recent days and want to extract some important points for absorbing and summarizing the knowledge[1]. In this blog, I will simply introduce the methods for creating and manipulating time series, describing and plotting them, and decomposing them into level, trend, seasonal, and irregular (error) components. Creating a time-series object in R In order to work with a time series in R, you have to place it into a time-series object - an R structure that contains the observations, the starting and ending time of the series, and information about its periodicity. Once the data are in a time-series object, you can use numerous functions to manipulate, model, and plot the data. A vector of numbers, or a column in a data frame, can be saved as a time-series object using the ts() function. Smoothing and seasonal decomposition In this section, we’ll look at smoothing a time series to clarigy its general trend, and decomposing a time series in order to observe any seasonal effects. Smoothing with simple moving averages Time series typically have a significant irregular or error component. In order to discern any patterns in the data, you’ll frequently want to plot a smoothed curve that damps down these fluctuations. One of the simplest methods of smoothing a time series is to use simple moving averages. Several functions in R can provide a simple moving average, including SMA() in the TTR package, rollmean() in the zoo package, and ma() in the forecast package. Seasonal decomposition Time-series data that have a seasonal aspect can be decomposed into a trend component, a seasonal component, and an irregular component. The trend component captures changes in level over time. The seasonal component captures cyclical effects due to the time of year. The irregular (of error) component captures thoses influences not described by the trend and seasonal effects. The decomposition can be additive or multiplicative. In an additive model, the components sum to give the values of the times series. Specifically, where the observation at time t is the sum of the contributions of the trend at time t, the seasonal effet at time t, and an irregular effect at time t. In a multiplicative model, given by the equation the trend, seasonal, and irregular influences are multiplied. Examples are given in the following figure[2]. In the first plot (a), there is neither a trend nor a seasonal component. The only influence is a random fluctuation around a given level. In the second plot (b), there is an upward trend over time, as well as random fluctuations. In the third plot (c), there are seasonal effects and random fluctuations, but no overall trend away from a horizontal line. In the fourth plot (d), all three components are present: an upward trend, seasonal effects, and random fluctuations. You also see all three components in the final plot (e), but here they combine in a multiplicative way. Notice how the variability is proportional to the level: as the level increases, so does the variability. This amplification (or possible damping) based on the current level of the series strongly suggests a multiplicative model. So far, we haven’t predicted any future values. In the next blog, we’ll consider the use of exponential models for forecasting beyond the available data. Reference [1] Robert I. Kabacoff. 2015. “Chapter 15 Time series” R IN ACTION Data analysis and graphics with R p 343-348 [2] Robert I. Kabacoff. 2015. “Chapter 15 Time series Figure 15.4” R IN ACTION Data analysis and graphics with R p 347 Pexels, “night stars rotation starry sky”, pixabay.com. [Online]. Available: https://pixabay.com/photos/night-stars-rotation-starry-sky-1846734/" />
+<meta property="og:description" content="I learnt Time Series from “R IN ACTION” in recent days and want to extract some important points for absorbing and summarizing the knowledge[1]. In this blog, I will simply introduce the methods for creating and manipulating time series, describing and plotting them, and decomposing them into level, trend, seasonal, and irregular (error) components. Creating a time-series object in R In order to work with a time series in R, you have to place it into a time-series object - an R structure that contains the observations, the starting and ending time of the series, and information about its periodicity. Once the data are in a time-series object, you can use numerous functions to manipulate, model, and plot the data. A vector of numbers, or a column in a data frame, can be saved as a time-series object using the ts() function. Smoothing and seasonal decomposition In this section, we’ll look at smoothing a time series to clarigy its general trend, and decomposing a time series in order to observe any seasonal effects. Smoothing with simple moving averages Time series typically have a significant irregular or error component. In order to discern any patterns in the data, you’ll frequently want to plot a smoothed curve that damps down these fluctuations. One of the simplest methods of smoothing a time series is to use simple moving averages. Several functions in R can provide a simple moving average, including SMA() in the TTR package, rollmean() in the zoo package, and ma() in the forecast package. Seasonal decomposition Time-series data that have a seasonal aspect can be decomposed into a trend component, a seasonal component, and an irregular component. The trend component captures changes in level over time. The seasonal component captures cyclical effects due to the time of year. The irregular (of error) component captures thoses influences not described by the trend and seasonal effects. The decomposition can be additive or multiplicative. In an additive model, the components sum to give the values of the times series. Specifically, where the observation at time t is the sum of the contributions of the trend at time t, the seasonal effet at time t, and an irregular effect at time t. In a multiplicative model, given by the equation the trend, seasonal, and irregular influences are multiplied. Examples are given in the following figure[2]. In the first plot (a), there is neither a trend nor a seasonal component. The only influence is a random fluctuation around a given level. In the second plot (b), there is an upward trend over time, as well as random fluctuations. In the third plot (c), there are seasonal effects and random fluctuations, but no overall trend away from a horizontal line. In the fourth plot (d), all three components are present: an upward trend, seasonal effects, and random fluctuations. You also see all three components in the final plot (e), but here they combine in a multiplicative way. Notice how the variability is proportional to the level: as the level increases, so does the variability. This amplification (or possible damping) based on the current level of the series strongly suggests a multiplicative model. So far, we haven’t predicted any future values. In the next blog, we’ll consider the use of exponential models for forecasting beyond the available data. Reference [1] Robert I. Kabacoff. 2015. “Chapter 15 Time series” R IN ACTION Data analysis and graphics with R p 343-348 [2] Robert I. Kabacoff. 2015. “Chapter 15 Time series Figure 15.4” R IN ACTION Data analysis and graphics with R p 347 Pexels, “night stars rotation starry sky”, pixabay.com. [Online]. Available: https://pixabay.com/photos/night-stars-rotation-starry-sky-1846734/" />
+<link rel="canonical" href="https://jingwen-z.github.io//posts/r-in-action-review-3-time-series-(part-1)/" />
+<meta property="og:url" content="https://jingwen-z.github.io//posts/r-in-action-review-3-time-series-(part-1)/" />
 <meta property="og:site_name" content="Jingwen Zheng" />
-<link rel="next" href="https://jingwen-z.github.io//page2/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-29T10:41:46+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Jingwen Zheng" />
+<meta property="twitter:title" content="R IN ACTION Review 3 - Time series (Part 1)" />
 <meta name="twitter:site" content="@Jingwen_QI" />
 <meta name="twitter:creator" content="@Jingwen Zheng" />
 <script type="application/ld+json">
-{"headline":"Jingwen Zheng","description":"Data Science Enthusiast","author":{"@type":"Person","name":"Jingwen Zheng"},"@type":"WebSite","url":"https://jingwen-z.github.io//","name":"Jingwen Zheng","@context":"https://schema.org"}</script>
+{"headline":"R IN ACTION Review 3 - Time series (Part 1)","dateModified":"2017-07-29T10:41:46+02:00","datePublished":"2017-07-29T10:41:46+02:00","description":"I learnt Time Series from “R IN ACTION” in recent days and want to extract some important points for absorbing and summarizing the knowledge[1]. In this blog, I will simply introduce the methods for creating and manipulating time series, describing and plotting them, and decomposing them into level, trend, seasonal, and irregular (error) components. Creating a time-series object in R In order to work with a time series in R, you have to place it into a time-series object - an R structure that contains the observations, the starting and ending time of the series, and information about its periodicity. Once the data are in a time-series object, you can use numerous functions to manipulate, model, and plot the data. A vector of numbers, or a column in a data frame, can be saved as a time-series object using the ts() function. Smoothing and seasonal decomposition In this section, we’ll look at smoothing a time series to clarigy its general trend, and decomposing a time series in order to observe any seasonal effects. Smoothing with simple moving averages Time series typically have a significant irregular or error component. In order to discern any patterns in the data, you’ll frequently want to plot a smoothed curve that damps down these fluctuations. One of the simplest methods of smoothing a time series is to use simple moving averages. Several functions in R can provide a simple moving average, including SMA() in the TTR package, rollmean() in the zoo package, and ma() in the forecast package. Seasonal decomposition Time-series data that have a seasonal aspect can be decomposed into a trend component, a seasonal component, and an irregular component. The trend component captures changes in level over time. The seasonal component captures cyclical effects due to the time of year. The irregular (of error) component captures thoses influences not described by the trend and seasonal effects. The decomposition can be additive or multiplicative. In an additive model, the components sum to give the values of the times series. Specifically, where the observation at time t is the sum of the contributions of the trend at time t, the seasonal effet at time t, and an irregular effect at time t. In a multiplicative model, given by the equation the trend, seasonal, and irregular influences are multiplied. Examples are given in the following figure[2]. In the first plot (a), there is neither a trend nor a seasonal component. The only influence is a random fluctuation around a given level. In the second plot (b), there is an upward trend over time, as well as random fluctuations. In the third plot (c), there are seasonal effects and random fluctuations, but no overall trend away from a horizontal line. In the fourth plot (d), all three components are present: an upward trend, seasonal effects, and random fluctuations. You also see all three components in the final plot (e), but here they combine in a multiplicative way. Notice how the variability is proportional to the level: as the level increases, so does the variability. This amplification (or possible damping) based on the current level of the series strongly suggests a multiplicative model. So far, we haven’t predicted any future values. In the next blog, we’ll consider the use of exponential models for forecasting beyond the available data. Reference [1] Robert I. Kabacoff. 2015. “Chapter 15 Time series” R IN ACTION Data analysis and graphics with R p 343-348 [2] Robert I. Kabacoff. 2015. “Chapter 15 Time series Figure 15.4” R IN ACTION Data analysis and graphics with R p 347 Pexels, “night stars rotation starry sky”, pixabay.com. [Online]. Available: https://pixabay.com/photos/night-stars-rotation-starry-sky-1846734/","author":{"@type":"Person","name":"Jingwen Zheng"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io//posts/r-in-action-review-3-time-series-(part-1)/"},"@type":"BlogPosting","url":"https://jingwen-z.github.io//posts/r-in-action-review-3-time-series-(part-1)/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -40,7 +40,7 @@
 
 <!-- Extra Open Graph :: End -->
 
-<link rel="canonical" href="https://jingwen-z.github.io//"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://jingwen-z.github.io//posts/r-in-action-review-3-time-series-(part-1)/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -290,7 +290,7 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
@@ -309,131 +309,178 @@
         <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20170729-night.jpg);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=R">R</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=Machine-Learning">Machine-Learning</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=Time-series">Time-series</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 29, 2017</span>
+            </li></ul></div><div class="article__header"><header><h1>R IN ACTION Review 3 - Time series (Part 1)</h1></header></div><p class="overlay__excerpt">I learnt Time Series from “R IN ACTION” in recent days and want to extract someimportant points for absorbing and summarizing the knowledge[1]. In this blog, Iwill simply introduce the methods for ...</p></div></div>
+              </div>
+            </div><div class ="main"><div class="grid grid--reverse">
 
-              <div class="col-aside d-print-none js-col-aside"></div>
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
 
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>Jingwen Zheng</h1></header><meta itemprop="headline" content="Jingwen Zheng"><meta itemprop="author" content="Jingwen Zheng"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210626-vaccin.jpg" /></div><div class="item__content">
-          <header><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/"><h2 itemprop="headline" class="item__header">Do you know the reactions of Pfizer vaccine?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information</div><p><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=COVID-19">COVID-19</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 01, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-07-01T22:27:55+02:00">
-    <meta itemprop="keywords" content="analysis,visualisation,COVID-19"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210427-pipe.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/"><h2 itemprop="headline" class="item__header">How to create a data pipeline with Azure data factory and slack?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In this blog, I talked about how to create and automate a data pipeline on Azure Data Factory, how to send messages and upload files on Slack with its APIs.</div><p><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=data-processing">data-processing</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=API">API</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 27, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-27T11:23:00+02:00">
-    <meta itemprop="keywords" content="data-processing,API"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210418-crm.jpg" /></div><div class="item__content">
-          <header><a href="/posts/crm-in-retailing/"><h2 itemprop="headline" class="item__header">CRM in retailing</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In retailing domain, one of the most important things is increasing the customer satifaction and the customer loyalty. To reach the goals, we need to understand CRM (Customer Relationship Management) firstly, then we can take steps to improve them.</div><p><a href="/posts/crm-in-retailing/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 18, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-18T11:23:00+02:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210202-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-2/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 2)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-2/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Feb 09, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-02-09T21:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210117-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-1/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 1)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-1/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 17, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-17T16:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210110-image.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/"><h2 itemprop="headline" class="item__header">How to convert projected coordinates to latitude longitude by Python?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">This blog talks about how to convert projected coordinates to latitude longitude with python module "pyproj".</div><p><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=python3">python3</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 10, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-10T16:44:58+01:00">
-    <meta itemprop="keywords" content="python3"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210103-district-price.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-idf-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Île-de-France (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Île-de-France is the most populous of the 18 regions of France. It is located in the north-central part of the country and often called the Région Parisienne ("Paris Region") because it includes the city of Paris. Besides the landmarks of Paris, the region has many important historic sites, including the Palace of Versailles and the Palace of Fo...</div><p><a href="/posts/second-hand-apartments-transactions-in-idf-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 03, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-03T16:12:46+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210102-dvf-paris-quartier.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-paris-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Paris (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris bet...</div><p><a href="/posts/second-hand-apartments-transactions-in-paris-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 02, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-02T22:20:57+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article></div></div><div class="layout--home"><div class="pagination"><p>104 post articles, 13 pages.</p>
-    <div class="pagination__menu">
-      <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
-            <i class="fas fa-angle-left"></i>
-          </div></li><li>
-              <div class="button button--primary button--circle focus"><span>1</span></div>
-            </li><li>
-                  <a class="button button--secondary button--circle" href="/page2/"><span>2</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page3/"><span>3</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page4/"><span>4</span></a>
-                </li><li><span class="pagination__omit"><i class="fas fa-ellipsis-h"></i></span></li><li>
-                  <a class="button button--secondary button--circle" href="/page13/"><span>13</span></a>
-                </li><li><a class="button button--secondary button--circle" href="/page2/">
-            <i class="fas fa-angle-right"></i>
-          </a></li></ul>
-    </div>
-  </div></div>
-<script>/*(function () {
+<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="R IN ACTION Review 3 - Time series (Part 1)"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2017-07-29T10:41:46+02:00">
+    <meta itemprop="keywords" content="R,Machine-Learning,Time-series"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
-})();*/
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><p>I learnt Time Series from “R IN ACTION” in recent days and want to extract some
+important points for absorbing and summarizing the knowledge[1]. In this blog, I
+will simply introduce the methods for creating and manipulating time series,
+describing and plotting them, and decomposing them into level, trend, seasonal,
+and irregular (error) components.</p>
+
+<h2 id="creating-a-time-series-object-in-r">Creating a time-series object in R</h2>
+
+<p>In order to work with a time series in R, you have to place it into a
+<em>time-series object</em> - an R structure that contains the observations, the
+starting and ending time of the series, and information about its periodicity.
+Once the data are in a time-series object, you can use numerous functions to
+manipulate, model, and plot the data.</p>
+
+<p>A vector of numbers, or a column in a data frame, can be saved as a time-series
+object using the <code class="language-plaintext highlighter-rouge">ts()</code> function.</p>
+
+<h2 id="smoothing-and-seasonal-decomposition">Smoothing and seasonal decomposition</h2>
+
+<p>In this section, we’ll look at smoothing a time series to clarigy its general
+trend, and decomposing a time series in order to observe any seasonal effects.</p>
+
+<h3 id="smoothing-with-simple-moving-averages">Smoothing with simple moving averages</h3>
+
+<p>Time series typically have a significant irregular or error component. In order
+to discern any patterns in the data, you’ll frequently want to plot a smoothed
+curve that damps down these fluctuations. One of the simplest methods of
+smoothing a time series is to use simple moving averages.</p>
+
+<p>Several functions in R can provide a <em>simple moving average</em>, including <code class="language-plaintext highlighter-rouge">SMA()</code>
+in the <code class="language-plaintext highlighter-rouge">TTR</code> package, <code class="language-plaintext highlighter-rouge">rollmean()</code> in the <code class="language-plaintext highlighter-rouge">zoo</code> package, and <code class="language-plaintext highlighter-rouge">ma()</code> in the
+<code class="language-plaintext highlighter-rouge">forecast</code> package.</p>
+
+<h3 id="seasonal-decomposition">Seasonal decomposition</h3>
+
+<p>Time-series data that have a seasonal aspect can be decomposed into a trend
+component, a seasonal component, and an irregular component. The <em>trend
+component</em> captures changes in level over time. The <em>seasonal component</em>
+captures cyclical effects due to the time of year. The <em>irregular (of error)
+component</em> captures thoses influences not described by the trend and seasonal
+effects.</p>
+
+<p>The decomposition can be additive or multiplicative. In an additive model, the
+components sum to give the values of the times series. Specifically,</p>
+
+<p align="center">
+<img alt="Additive model" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;Trend_{t}&space;&plus;&space;Seasonal_{t}&space;&plus;&space;Irregular_{t}" />
+</p>
+
+<p>where the observation at time t is the sum of the contributions of the trend at
+time t, the seasonal effet at time t, and an irregular effect at time t.</p>
+
+<p>In a multiplicative model, given by the equation</p>
+
+<p align="center">
+<img alt="Multiplicative model" src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;Y_{t}&space;=&space;Trend_{t}&space;*&space;Seasonal_{t}&space;*&space;Irregular_{t}" />
+</p>
+
+<p>the trend, seasonal, and irregular influences are multiplied. Examples are given
+in the following figure[2].</p>
+
+<p align="center">
+  <img alt="Time-series example" src="/images/20170729-seasonal-decomposition.png" />
+</p>
+
+<p>In the first plot (a), there is neither a trend nor a seasonal component. The
+only influence is a random fluctuation around a given level. In the second plot
+(b), there is an upward trend over time, as well as random fluctuations. In the
+third plot (c), there are seasonal effects and random fluctuations, but no
+overall trend away from a horizontal line. In the fourth plot (d), all three
+components are present: an upward trend, seasonal effects, and random
+fluctuations. You also see all three components in the final plot (e), but here
+they combine in a multiplicative way. Notice how the variability is proportional
+to the level: as the level increases, so does the variability. This amplification
+(or possible damping) based on the current level of the series strongly suggests
+a multiplicative model.</p>
+
+<p>So far, we haven’t predicted any future values. In the next blog, we’ll consider
+the use of exponential models for forecasting beyond the available data.</p>
+
+<h2 id="reference">Reference</h2>
+
+<p>[1] Robert I. Kabacoff. 2015. “Chapter 15 Time series” <em>R IN ACTION Data
+analysis and graphics with R</em> p 343-348</p>
+
+<p>[2] Robert I. Kabacoff. 2015. “Chapter 15 Time series Figure 15.4” <em>R IN ACTION
+Data analysis and graphics with R</em> p 347</p>
+
+<ul>
+  <li>Pexels, “night stars rotation starry sky”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/night-stars-rotation-starry-sky-1846734/">https://pixabay.com/photos/night-stars-rotation-starry-sky-1846734/</a></li>
+</ul>
+
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2017-07-29T10:41:46+02:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div></div><div class="article__license"><div class="license">
+    <p>This work is licensed under a <a itemprop="license" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a> license.
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img alt="Attribution-NonCommercial 4.0 International" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+      </a>
+    </p>
+  </div></div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/posts/r-in-action-review-2-getting-started-with-graphs/">R IN ACTION Review 2 - Getting started with graphs</a></div><div class="next"><span>NEXT</span><a href="/posts/r-in-action-review-4-time-series-(part-2)/">R IN ACTION Review 4 - Time series (Part 2)</a></div></div></div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
 </script>
-
-
-
-</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+</div><section class="page__comments d-print-none"><div id="disqus_thread"></div>
+  <script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  var disqus_config = function () {
+    this.page.url = 'https://jingwen-z.github.io//posts/r-in-action-review-3-time-series-(part-1)/';
+    this.page.identifier = '/posts/r-in-action-review-3-time-series-(part-1)';
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jingwen-z.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></section></article><!-- start custom main bottom snippet -->
 
 <!-- end custom main bottom snippet -->
 </div>
@@ -984,6 +1031,68 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
 </script>
     </div>
     <script>(function () {

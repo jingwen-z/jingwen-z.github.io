@@ -10,29 +10,29 @@
 		
 	</script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Jingwen Zheng - Jingwen Zheng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>How to get geographic information by Google Geocoding API? - Jingwen Zheng</title>
 
-<meta name="description" content="Data Science Enthusiast
-">
+<meta name="description" content="In this blog, I presented how to get coordinates and address by Google Geocoding API, and how to accomplish it by Python.">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Jingwen Zheng | Data Science Enthusiast</title>
+<title>How to get geographic information by Google Geocoding API? | Jingwen Zheng</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Jingwen Zheng" />
+<meta property="og:title" content="How to get geographic information by Google Geocoding API?" />
 <meta name="author" content="Jingwen Zheng" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Data Science Enthusiast" />
-<meta property="og:description" content="Data Science Enthusiast" />
-<link rel="canonical" href="https://jingwen-z.github.io//" />
-<meta property="og:url" content="https://jingwen-z.github.io//" />
+<meta name="description" content="In this blog, I presented how to get coordinates and address by Google Geocoding API, and how to accomplish it by Python." />
+<meta property="og:description" content="In this blog, I presented how to get coordinates and address by Google Geocoding API, and how to accomplish it by Python." />
+<link rel="canonical" href="https://jingwen-z.github.io//posts/how-to-get-geographic-information-by-google-geocoding-api/" />
+<meta property="og:url" content="https://jingwen-z.github.io//posts/how-to-get-geographic-information-by-google-geocoding-api/" />
 <meta property="og:site_name" content="Jingwen Zheng" />
-<link rel="next" href="https://jingwen-z.github.io//page2/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-14T17:14:22+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Jingwen Zheng" />
+<meta property="twitter:title" content="How to get geographic information by Google Geocoding API?" />
 <meta name="twitter:site" content="@Jingwen_QI" />
 <meta name="twitter:creator" content="@Jingwen Zheng" />
 <script type="application/ld+json">
-{"headline":"Jingwen Zheng","description":"Data Science Enthusiast","author":{"@type":"Person","name":"Jingwen Zheng"},"@type":"WebSite","url":"https://jingwen-z.github.io//","name":"Jingwen Zheng","@context":"https://schema.org"}</script>
+{"headline":"How to get geographic information by Google Geocoding API?","dateModified":"2020-11-14T17:14:22+01:00","datePublished":"2020-11-14T17:14:22+01:00","description":"In this blog, I presented how to get coordinates and address by Google Geocoding API, and how to accomplish it by Python.","author":{"@type":"Person","name":"Jingwen Zheng"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io//posts/how-to-get-geographic-information-by-google-geocoding-api/"},"@type":"BlogPosting","url":"https://jingwen-z.github.io//posts/how-to-get-geographic-information-by-google-geocoding-api/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -40,7 +40,7 @@
 
 <!-- Extra Open Graph :: End -->
 
-<link rel="canonical" href="https://jingwen-z.github.io//"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://jingwen-z.github.io//posts/how-to-get-geographic-information-by-google-geocoding-api/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -290,7 +290,7 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
@@ -309,131 +309,247 @@
         <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20201114-map-image.jpg);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=python3">python3</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=API">API</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Nov 14, 2020</span>
+            </li></ul></div><div class="article__header"><header><h1>How to get geographic information by Google Geocoding API?</h1></header></div><p class="overlay__excerpt">In this blog, I presented how to get coordinates and address by Google Geocoding API, and how to accomplish it by Python.</p></div></div>
+              </div>
+            </div><div class ="main"><div class="grid grid--reverse">
 
-              <div class="col-aside d-print-none js-col-aside"></div>
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
 
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>Jingwen Zheng</h1></header><meta itemprop="headline" content="Jingwen Zheng"><meta itemprop="author" content="Jingwen Zheng"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210626-vaccin.jpg" /></div><div class="item__content">
-          <header><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/"><h2 itemprop="headline" class="item__header">Do you know the reactions of Pfizer vaccine?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information</div><p><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=COVID-19">COVID-19</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 01, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-07-01T22:27:55+02:00">
-    <meta itemprop="keywords" content="analysis,visualisation,COVID-19"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210427-pipe.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/"><h2 itemprop="headline" class="item__header">How to create a data pipeline with Azure data factory and slack?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In this blog, I talked about how to create and automate a data pipeline on Azure Data Factory, how to send messages and upload files on Slack with its APIs.</div><p><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=data-processing">data-processing</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=API">API</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 27, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-27T11:23:00+02:00">
-    <meta itemprop="keywords" content="data-processing,API"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210418-crm.jpg" /></div><div class="item__content">
-          <header><a href="/posts/crm-in-retailing/"><h2 itemprop="headline" class="item__header">CRM in retailing</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In retailing domain, one of the most important things is increasing the customer satifaction and the customer loyalty. To reach the goals, we need to understand CRM (Customer Relationship Management) firstly, then we can take steps to improve them.</div><p><a href="/posts/crm-in-retailing/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 18, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-18T11:23:00+02:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210202-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-2/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 2)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-2/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Feb 09, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-02-09T21:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210117-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-1/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 1)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-1/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 17, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-17T16:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210110-image.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/"><h2 itemprop="headline" class="item__header">How to convert projected coordinates to latitude longitude by Python?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">This blog talks about how to convert projected coordinates to latitude longitude with python module "pyproj".</div><p><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=python3">python3</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 10, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-10T16:44:58+01:00">
-    <meta itemprop="keywords" content="python3"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210103-district-price.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-idf-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Île-de-France (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Île-de-France is the most populous of the 18 regions of France. It is located in the north-central part of the country and often called the Région Parisienne ("Paris Region") because it includes the city of Paris. Besides the landmarks of Paris, the region has many important historic sites, including the Palace of Versailles and the Palace of Fo...</div><p><a href="/posts/second-hand-apartments-transactions-in-idf-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 03, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-03T16:12:46+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210102-dvf-paris-quartier.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-paris-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Paris (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris bet...</div><p><a href="/posts/second-hand-apartments-transactions-in-paris-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 02, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-02T22:20:57+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article></div></div><div class="layout--home"><div class="pagination"><p>104 post articles, 13 pages.</p>
-    <div class="pagination__menu">
-      <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
-            <i class="fas fa-angle-left"></i>
-          </div></li><li>
-              <div class="button button--primary button--circle focus"><span>1</span></div>
-            </li><li>
-                  <a class="button button--secondary button--circle" href="/page2/"><span>2</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page3/"><span>3</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page4/"><span>4</span></a>
-                </li><li><span class="pagination__omit"><i class="fas fa-ellipsis-h"></i></span></li><li>
-                  <a class="button button--secondary button--circle" href="/page13/"><span>13</span></a>
-                </li><li><a class="button button--secondary button--circle" href="/page2/">
-            <i class="fas fa-angle-right"></i>
-          </a></li></ul>
-    </div>
-  </div></div>
-<script>/*(function () {
+<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="How to get geographic information by Google Geocoding API?"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2020-11-14T17:14:22+01:00">
+    <meta itemprop="keywords" content="python3,API"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
-})();*/
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><p>Imagine that you want to draw some geographic points on a map, you only have
+their addresses, how to get their latitude and longitude? As a data scientist,
+we can find them by Google Geocoding API. In this blog, I’ll talk about Google
+Geocoding API with the following points:</p>
+<ul>
+  <li>What is Google Geocoding API?</li>
+  <li>How to get information by Google Geocoding API?</li>
+  <li>How to accomplish the request by Python?</li>
+</ul>
+
+<h2 id="what-is-google-geocoding-api">What is Google Geocoding API?</h2>
+<p>Geocoding is the process of converting addresses (like “1600 Amphitheatre
+Parkway, Mountain View, CA”) into geographic coordinates (like latitude
+37.423021 and longitude -122.083739), which you can use to place markers on a
+map, or position the map. Reverse geocoding is the process of converting
+geographic coordinates into a human-readable address.</p>
+
+<p>The Geocoding API provides a direct way to access these services via an HTTP
+request.</p>
+
+<h2 id="how-to-get-information-by-google-geocoding-api">How to get information by Google Geocoding API?</h2>
+<h3 id="geocoding">Geocoding</h3>
+<p>A Geocoding API request takes the following form:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">maps</span><span class="p">.</span><span class="n">googleapis</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">maps</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">geocode</span><span class="o">/</span><span class="n">outputFormat</span><span class="err">?</span><span class="n">parameters</span>
+</code></pre></div></div>
+
+<p>where outputFormat may be either of the following values:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">json</code> (recommended) indicates output in JavaScript Object Notation (JSON)</li>
+  <li><code class="language-plaintext highlighter-rouge">xml</code> indicates output in XML</li>
+</ul>
+
+<p>Required parameters in a geocoding request:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">address</code>: The street address or plus code that you want to geocode.</li>
+  <li><code class="language-plaintext highlighter-rouge">key</code>: Your application’s API key. This key identifies your application for
+purposes of quota management.</li>
+</ul>
+
+<p><strong>Example</strong></p>
+
+<p>Imagine that we have an address “52 Rue Rambuteau, 75003 Paris” and want its
+coordinates, we can write the request as follows:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">maps</span><span class="p">.</span><span class="n">googleapis</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">maps</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">geocode</span><span class="o">/</span><span class="n">json</span><span class="err">?</span><span class="n">address</span><span class="o">=</span><span class="mi">52</span><span class="o">%</span><span class="mi">20</span><span class="n">Rue</span><span class="o">%</span><span class="mi">20</span><span class="n">Rambuteau</span><span class="o">%</span><span class="mi">2075003</span><span class="o">%</span><span class="mi">20</span><span class="n">Paris</span><span class="o">&amp;</span><span class="n">key</span><span class="o">=</span><span class="n">YOUR_API_KEY</span>
+</code></pre></div></div>
+
+<p>then we can get the result in “json” format:</p>
+
+<p align="center">
+  <img alt="20201114-resp-address" src="/images/20201114-resp-address.png" />
+</p>
+
+<p>According to the result, we get the latitude and longitude, and the formatted
+address as well.</p>
+
+<h3 id="reverse-geocoding">Reverse geocoding</h3>
+<p>Sometimes we need the address or zip code but have only the coordinates, in this
+case, we can do reverse geocoding to get the address.</p>
+
+<p>The term geocoding generally refers to translating a human-readable address into
+a location on a map. The process of doing the opposite, translating a location
+on the map into a human-readable address, is known as reverse geocoding.</p>
+
+<p>Required parameters in a reverse geocoding request:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">latlng</code>: The latitude and longitude values specifying the location for which
+you wish to obtain the closest, human-readable address.</li>
+  <li><code class="language-plaintext highlighter-rouge">key</code>: Your application’s API key. This key identifies your application for
+purposes of quota management.</li>
+</ul>
+
+<p><strong>Example</strong></p>
+
+<p>Imagine that we have a latitude 48.871143, a longitude 2.332060 and want its
+address, we can write the request as follows:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">maps</span><span class="p">.</span><span class="n">googleapis</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">maps</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">geocode</span><span class="o">/</span><span class="n">json</span><span class="err">?</span><span class="n">latlng</span><span class="o">=</span><span class="mf">48.871143</span><span class="p">,</span><span class="mf">2.332060</span><span class="o">&amp;</span><span class="n">key</span><span class="o">=</span><span class="n">YOUR_API_KEY</span>
+</code></pre></div></div>
+
+<p>then we can get the result in “json” format:</p>
+
+<p align="center">
+  <img alt="20201114-resp-coordinates-1" src="/images/20201114-resp-coordinates-1.png" />
+</p>
+<p>…</p>
+<p align="center">
+  <img alt="20201114-resp-coordinates-2" src="/images/20201114-resp-coordinates-2.png" />
+</p>
+
+<p>According to the result, we get the formatted address.</p>
+
+<h2 id="how-to-accomplish-the-request-by-python">How to accomplish the request by Python?</h2>
+<p>If you want to get requests’ results by Python, we need to import <code class="language-plaintext highlighter-rouge">requests</code>
+module and <code class="language-plaintext highlighter-rouge">urlencode</code> from <code class="language-plaintext highlighter-rouge">urllib.parse</code>, then you find the python functions
+for the cases above in the following.</p>
+
+<h3 id="geocoding-1">Geocoding</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlencode</span>
+
+<span class="k">def</span> <span class="nf">get_coordinates</span><span class="p">(</span><span class="n">adr</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">key</span><span class="p">):</span>
+    <span class="c1"># Send request by API
+</span>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span>
+        <span class="s">'https://maps.googleapis.com/maps/api/geocode/json?'</span> <span class="o">+</span> <span class="n">urlencode</span><span class="p">(</span>
+            <span class="p">{</span><span class="s">'address'</span><span class="p">:</span> <span class="n">adr</span><span class="p">,</span> <span class="s">'key'</span><span class="p">:</span> <span class="n">key</span><span class="p">}))</span>
+    <span class="c1"># Read response as json
+</span>    <span class="n">resp_address</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">json</span><span class="p">()</span>
+    
+    <span class="c1"># status=OK: the place was successfully detected and
+</span>    <span class="c1"># at least one result was returned
+</span>    <span class="k">if</span> <span class="n">resp_address</span><span class="p">[</span><span class="s">'status'</span><span class="p">]</span> <span class="o">==</span> <span class="s">'OK'</span><span class="p">:</span>
+        <span class="n">lat</span> <span class="o">=</span> <span class="n">resp_address</span><span class="p">[</span><span class="s">'results'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'geometry'</span><span class="p">][</span><span class="s">'location'</span><span class="p">][</span><span class="s">'lat'</span><span class="p">]</span>
+        <span class="n">lng</span> <span class="o">=</span> <span class="n">resp_address</span><span class="p">[</span><span class="s">'results'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'geometry'</span><span class="p">][</span><span class="s">'location'</span><span class="p">][</span><span class="s">'lng'</span><span class="p">]</span>
+        <span class="n">formatted_addr</span> <span class="o">=</span> <span class="n">resp_address</span><span class="p">[</span><span class="s">'results'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'formatted_address'</span><span class="p">]</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lng</span><span class="p">,</span> <span class="n">formatted_addr</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'Failed to get json response:'</span><span class="p">,</span> <span class="n">resp_address</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s">'Latitude is not found'</span><span class="p">,</span> <span class="s">'Longitude is not found'</span><span class="p">,</span> <span class="n">address</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p align="center">
+  <img alt="20201114-get-coordinates-result" src="/images/20201114-get-coordinates-result.png" />
+</p>
+
+<h3 id="reverse-geocoding-1">Reverse geocoding</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlencode</span>
+
+<span class="k">def</span> <span class="nf">get_address</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">lng</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">key</span><span class="p">):</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span>
+        <span class="s">'https://maps.googleapis.com/maps/api/geocode/json?'</span> <span class="o">+</span> <span class="n">urlencode</span><span class="p">(</span>
+            <span class="p">{</span><span class="s">'latlng'</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">lat</span><span class="p">)</span> <span class="o">+</span> <span class="s">','</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">lng</span><span class="p">),</span>
+             <span class="s">'key'</span><span class="p">:</span> <span class="n">key</span><span class="p">}))</span>
+    <span class="n">resp_coordinates</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">json</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">resp_coordinates</span><span class="p">[</span><span class="s">'status'</span><span class="p">]</span> <span class="o">==</span> <span class="s">'OK'</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">resp_coordinates</span><span class="p">[</span><span class="s">'results'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'formatted_address'</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'Failed to get json response:'</span><span class="p">,</span> <span class="n">resp_coordinates</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s">'Address is not found'</span>
+</code></pre></div></div>
+
+<p align="center">
+  <img alt="20201114-get-address-result" src="/images/20201114-get-address-result.png" />
+</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>In this blog, I presented how to get coordinates and address by Google
+Geocoding API, and how to accomplish it by Python. If you are curious about
+more detailed information like geocoding responses’ elements (status codes,
+error messages), component filtering or reverse geocoding responses, you can
+visit <a href="https://developers.google.com/maps/documentation/geocoding/overview">Google Geocoding API’s official website</a>.</p>
+
+<p>If you are interested in detailed python codes behind the graph, <a href="https://github.com/jingwen-z/python-playground/blob/master/google_geocoding_api/learning_google_geocoding_api.ipynb">here</a>
+you are :)</p>
+
+<h2 id="reference">Reference</h2>
+<ul>
+  <li>“Google Geocoding API”, <em>developers.google.com</em>. [Online]. Available: <a href="https://developers.google.com/maps/documentation/geocoding/overview">https://developers.google.com/maps/documentation/geocoding/overview</a></li>
+  <li>T.H. Chia, “maps”, <em>unsplash.com</em>. [Online]. Available: <a href="https://unsplash.com/photos/tVZMk-cidEc">https://unsplash.com/photos/tVZMk-cidEc</a></li>
+</ul>
+
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-11-14T17:14:22+01:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div></div><div class="article__license"><div class="license">
+    <p>This work is licensed under a <a itemprop="license" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a> license.
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img alt="Attribution-NonCommercial 4.0 International" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+      </a>
+    </p>
+  </div></div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/posts/how-far-is-the-nearest-covid19-testing-site/">How far is the nearest COVID-19 testing site?</a></div><div class="next"><span>NEXT</span><a href="/posts/excel-vlookup-vs-index-match/">Excel: vlookup vs. index & match</a></div></div></div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
 </script>
-
-
-
-</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+</div><section class="page__comments d-print-none"><div id="disqus_thread"></div>
+  <script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  var disqus_config = function () {
+    this.page.url = 'https://jingwen-z.github.io//posts/how-to-get-geographic-information-by-google-geocoding-api/';
+    this.page.identifier = '/posts/how-to-get-geographic-information-by-google-geocoding-api';
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jingwen-z.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></section></article><!-- start custom main bottom snippet -->
 
 <!-- end custom main bottom snippet -->
 </div>
@@ -984,6 +1100,68 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
 </script>
     </div>
     <script>(function () {

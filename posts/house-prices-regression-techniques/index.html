@@ -10,29 +10,29 @@
 		
 	</script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Jingwen Zheng - Jingwen Zheng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>House Prices: Regression Techniques - Jingwen Zheng</title>
 
-<meta name="description" content="Data Science Enthusiast
-">
+<meta name="description" content="In this challenge, we need to predict the sales price for each house.">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Jingwen Zheng | Data Science Enthusiast</title>
+<title>House Prices: Regression Techniques | Jingwen Zheng</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Jingwen Zheng" />
+<meta property="og:title" content="House Prices: Regression Techniques" />
 <meta name="author" content="Jingwen Zheng" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Data Science Enthusiast" />
-<meta property="og:description" content="Data Science Enthusiast" />
-<link rel="canonical" href="https://jingwen-z.github.io//" />
-<meta property="og:url" content="https://jingwen-z.github.io//" />
+<meta name="description" content="In this challenge, we need to predict the sales price for each house." />
+<meta property="og:description" content="In this challenge, we need to predict the sales price for each house." />
+<link rel="canonical" href="https://jingwen-z.github.io//posts/house-prices-regression-techniques/" />
+<meta property="og:url" content="https://jingwen-z.github.io//posts/house-prices-regression-techniques/" />
 <meta property="og:site_name" content="Jingwen Zheng" />
-<link rel="next" href="https://jingwen-z.github.io//page2/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-06T21:12:47+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Jingwen Zheng" />
+<meta property="twitter:title" content="House Prices: Regression Techniques" />
 <meta name="twitter:site" content="@Jingwen_QI" />
 <meta name="twitter:creator" content="@Jingwen Zheng" />
 <script type="application/ld+json">
-{"headline":"Jingwen Zheng","description":"Data Science Enthusiast","author":{"@type":"Person","name":"Jingwen Zheng"},"@type":"WebSite","url":"https://jingwen-z.github.io//","name":"Jingwen Zheng","@context":"https://schema.org"}</script>
+{"headline":"House Prices: Regression Techniques","dateModified":"2019-08-06T21:12:47+02:00","datePublished":"2019-08-06T21:12:47+02:00","description":"In this challenge, we need to predict the sales price for each house.","author":{"@type":"Person","name":"Jingwen Zheng"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io//posts/house-prices-regression-techniques/"},"@type":"BlogPosting","url":"https://jingwen-z.github.io//posts/house-prices-regression-techniques/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -40,7 +40,7 @@
 
 <!-- Extra Open Graph :: End -->
 
-<link rel="canonical" href="https://jingwen-z.github.io//"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://jingwen-z.github.io//posts/house-prices-regression-techniques/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -290,7 +290,7 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
@@ -309,131 +309,444 @@
         <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20190806-house-price.jpg);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=Machine-Learning">Machine-Learning</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=kaggle">kaggle</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=regression">regression</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=analysis">analysis</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=real-estate">real-estate</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=visualisation">visualisation</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Aug 06, 2019</span>
+            </li></ul></div><div class="article__header"><header><h1>House Prices: Regression Techniques</h1></header></div><p class="overlay__excerpt">In this challenge, we need to predict the sales price for each house.</p></div></div>
+              </div>
+            </div><div class ="main"><div class="grid grid--reverse">
 
-              <div class="col-aside d-print-none js-col-aside"></div>
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
 
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>Jingwen Zheng</h1></header><meta itemprop="headline" content="Jingwen Zheng"><meta itemprop="author" content="Jingwen Zheng"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210626-vaccin.jpg" /></div><div class="item__content">
-          <header><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/"><h2 itemprop="headline" class="item__header">Do you know the reactions of Pfizer vaccine?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information</div><p><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=COVID-19">COVID-19</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 01, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-07-01T22:27:55+02:00">
-    <meta itemprop="keywords" content="analysis,visualisation,COVID-19"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210427-pipe.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/"><h2 itemprop="headline" class="item__header">How to create a data pipeline with Azure data factory and slack?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In this blog, I talked about how to create and automate a data pipeline on Azure Data Factory, how to send messages and upload files on Slack with its APIs.</div><p><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=data-processing">data-processing</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=API">API</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 27, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-27T11:23:00+02:00">
-    <meta itemprop="keywords" content="data-processing,API"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210418-crm.jpg" /></div><div class="item__content">
-          <header><a href="/posts/crm-in-retailing/"><h2 itemprop="headline" class="item__header">CRM in retailing</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In retailing domain, one of the most important things is increasing the customer satifaction and the customer loyalty. To reach the goals, we need to understand CRM (Customer Relationship Management) firstly, then we can take steps to improve them.</div><p><a href="/posts/crm-in-retailing/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 18, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-18T11:23:00+02:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210202-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-2/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 2)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-2/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Feb 09, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-02-09T21:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210117-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-1/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 1)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-1/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 17, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-17T16:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210110-image.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/"><h2 itemprop="headline" class="item__header">How to convert projected coordinates to latitude longitude by Python?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">This blog talks about how to convert projected coordinates to latitude longitude with python module "pyproj".</div><p><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=python3">python3</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 10, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-10T16:44:58+01:00">
-    <meta itemprop="keywords" content="python3"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210103-district-price.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-idf-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Île-de-France (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Île-de-France is the most populous of the 18 regions of France. It is located in the north-central part of the country and often called the Région Parisienne ("Paris Region") because it includes the city of Paris. Besides the landmarks of Paris, the region has many important historic sites, including the Palace of Versailles and the Palace of Fo...</div><p><a href="/posts/second-hand-apartments-transactions-in-idf-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 03, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-03T16:12:46+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210102-dvf-paris-quartier.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-paris-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Paris (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris bet...</div><p><a href="/posts/second-hand-apartments-transactions-in-paris-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 02, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-02T22:20:57+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article></div></div><div class="layout--home"><div class="pagination"><p>104 post articles, 13 pages.</p>
-    <div class="pagination__menu">
-      <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
-            <i class="fas fa-angle-left"></i>
-          </div></li><li>
-              <div class="button button--primary button--circle focus"><span>1</span></div>
-            </li><li>
-                  <a class="button button--secondary button--circle" href="/page2/"><span>2</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page3/"><span>3</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page4/"><span>4</span></a>
-                </li><li><span class="pagination__omit"><i class="fas fa-ellipsis-h"></i></span></li><li>
-                  <a class="button button--secondary button--circle" href="/page13/"><span>13</span></a>
-                </li><li><a class="button button--secondary button--circle" href="/page2/">
-            <i class="fas fa-angle-right"></i>
-          </a></li></ul>
-    </div>
-  </div></div>
-<script>/*(function () {
+<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="House Prices: Regression Techniques"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2019-08-06T21:12:47+02:00">
+    <meta itemprop="keywords" content="Machine-Learning,kaggle,regression,analysis,real-estate,visualisation"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
-})();*/
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><h2 id="content">Content</h2>
+<ul>
+  <li>Project understanding</li>
+  <li>Objectif</li>
+  <li>Practice skills</li>
+  <li>Python packages to be applied</li>
+  <li>Data description</li>
+  <li>Data cleaning</li>
+  <li>Data analysis</li>
+  <li>Train models</li>
+  <li>Reference</li>
+</ul>
+
+<h2 id="project-understanding">Project understanding</h2>
+<p>Ask a home buyer to describe their dream house, and they probably won’t begin
+with the height of the basement ceiling or the proximity to an east-west
+railroad. But this playground competition’s dataset proves that much more
+influences price negotiations than the number of bedrooms or a white-picket
+fence.</p>
+
+<p>With 79 explanatory variables describing (almost) every aspect of residential
+homes in Ames, Iowa, this competition challenges you to predict the final price
+of each home.</p>
+
+<h2 id="objectif">Objectif</h2>
+<p>It is your job to predict the sales price for each house. For each Id in the
+test set, you must predict the value of the SalePrice variable.</p>
+
+<h2 id="practice-skills">Practice skills</h2>
+<ul>
+  <li>Creative feature engineering</li>
+  <li>Advanced regression techniques like random forest and gradient boosting</li>
+</ul>
+
+<h2 id="python-packages-to-be-applied">Python packages to be applied</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">skew</span><span class="p">,</span> <span class="n">boxcox_normmax</span>
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">boxcox1p</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">KFold</span><span class="p">,</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="kn">import</span> <span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span><span class="p">,</span> <span class="n">FeatureUnion</span><span class="p">,</span> <span class="n">make_pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">,</span> <span class="n">RobustScaler</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span><span class="p">,</span> <span class="n">Ridge</span><span class="p">,</span> <span class="n">Lasso</span><span class="p">,</span> <span class="n">ElasticNet</span><span class="p">,</span> <span class="n">ElasticNetCV</span><span class="p">,</span> <span class="n">LassoCV</span><span class="p">,</span> <span class="n">RidgeCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVR</span><span class="p">,</span> <span class="n">LinearSVR</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">GradientBoostingRegressor</span>
+<span class="kn">from</span> <span class="nn">xgboost</span> <span class="kn">import</span> <span class="n">XGBRegressor</span></code></pre></figure>
+
+<h2 id="data-description">Data description</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">'Dimension train_df:'</span><span class="p">,</span> <span class="n">train_df</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Dimension test_df:'</span><span class="p">,</span> <span class="n">test_df</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="c1"># Dimension train_df: (1460, 81)
+# Dimension test_df: (1459, 80)
+</span>
+<span class="n">train_df</span><span class="p">.</span><span class="n">info</span><span class="p">()</span>
+<span class="c1"># &lt;class 'pandas.core.frame.DataFrame'&gt;
+# RangeIndex: 1460 entries, 0 to 1459
+# Data columns (total 81 columns):
+# Id               1460 non-null int64
+# MSSubClass       1460 non-null int64
+# MSZoning         1460 non-null object
+# LotFrontage      1201 non-null float64
+# LotArea          1460 non-null int64
+# Street           1460 non-null object
+# Alley            91 non-null object
+# LotShape         1460 non-null object
+# LandContour      1460 non-null object
+# Utilities        1460 non-null object
+# LotConfig        1460 non-null object
+# LandSlope        1460 non-null object
+# Neighborhood     1460 non-null object
+# Condition1       1460 non-null object
+# Condition2       1460 non-null object
+# BldgType         1460 non-null object
+# HouseStyle       1460 non-null object
+# OverallQual      1460 non-null int64
+# OverallCond      1460 non-null int64
+# YearBuilt        1460 non-null int64
+# YearRemodAdd     1460 non-null int64
+# RoofStyle        1460 non-null object
+# RoofMatl         1460 non-null object
+# Exterior1st      1460 non-null object
+# Exterior2nd      1460 non-null object
+# MasVnrType       1452 non-null object
+# MasVnrArea       1452 non-null float64
+# ExterQual        1460 non-null object
+# ExterCond        1460 non-null object
+# Foundation       1460 non-null object
+# BsmtQual         1423 non-null object
+# BsmtCond         1423 non-null object
+# BsmtExposure     1422 non-null object
+# BsmtFinType1     1423 non-null object
+# BsmtFinSF1       1460 non-null int64
+# BsmtFinType2     1422 non-null object
+# BsmtFinSF2       1460 non-null int64
+# BsmtUnfSF        1460 non-null int64
+# TotalBsmtSF      1460 non-null int64
+# Heating          1460 non-null object
+# HeatingQC        1460 non-null object
+# CentralAir       1460 non-null object
+# Electrical       1459 non-null object
+# 1stFlrSF         1460 non-null int64
+# 2ndFlrSF         1460 non-null int64
+# LowQualFinSF     1460 non-null int64
+# GrLivArea        1460 non-null int64
+# BsmtFullBath     1460 non-null int64
+# BsmtHalfBath     1460 non-null int64
+# FullBath         1460 non-null int64
+# HalfBath         1460 non-null int64
+# BedroomAbvGr     1460 non-null int64
+# KitchenAbvGr     1460 non-null int64
+# KitchenQual      1460 non-null object
+# TotRmsAbvGrd     1460 non-null int64
+# Functional       1460 non-null object
+# Fireplaces       1460 non-null int64
+# FireplaceQu      770 non-null object
+# GarageType       1379 non-null object
+# GarageYrBlt      1379 non-null float64
+# GarageFinish     1379 non-null object
+# GarageCars       1460 non-null int64
+# GarageArea       1460 non-null int64
+# GarageQual       1379 non-null object
+# GarageCond       1379 non-null object
+# PavedDrive       1460 non-null object
+# WoodDeckSF       1460 non-null int64
+# OpenPorchSF      1460 non-null int64
+# EnclosedPorch    1460 non-null int64
+# 3SsnPorch        1460 non-null int64
+# ScreenPorch      1460 non-null int64
+# PoolArea         1460 non-null int64
+# PoolQC           7 non-null object
+# Fence            281 non-null object
+# MiscFeature      54 non-null object
+# MiscVal          1460 non-null int64
+# MoSold           1460 non-null int64
+# YrSold           1460 non-null int64
+# SaleType         1460 non-null object
+# SaleCondition    1460 non-null object
+# SalePrice        1460 non-null int64
+# dtypes: float64(3), int64(35), object(43)
+# memory usage: 924.0+ KB</span></code></pre></figure>
+
+<h2 id="data-cleaning">Data cleaning</h2>
+<p>There are missing data in “LotFrontage”, “Alley”, “MasVnrType”, “MasVnrArea”,
+“BsmtQual”, “BsmtCond”, “BsmtExposure”, “BsmtFinType1”, “BsmtFinType2”,
+“Electrical”, “FireplaceQu”, “GarageType”, “GarageYrBlt”, “GarageFinish”,
+“GarageQual”, “GarageCond”, “PoolQC”, “Fence” and “MiscFeature”.</p>
+
+<p>Among these fields,</p>
+<ul>
+  <li>94% data of “Alley” are missing.</li>
+  <li>47% data of “FireplaceQu” are missing.</li>
+  <li>99.5% data of “PoolQC” are missing.</li>
+  <li>81% data of “Fence” are missing.</li>
+  <li>96% data of “MiscFeature” are missing.</li>
+</ul>
+
+<p>So we will ignore them during the analysis.</p>
+
+<p>What should we do on missing data of other fields? We might replace null by
+median value or mode value.</p>
+
+<h2 id="data-analysis">Data analysis</h2>
+<h3 id="relationship-between-saleprice-and-numeric-fields">Relationship between “SalePrice” and numeric fields</h3>
+<p align="center">
+  <img alt="Relationship between SalePrice and numeric fields" src="/images/20190806-price-numericval.png" />
+</p>
+
+<p>I take parts of numeric values, show the relationship between “SalePrice per
+square feet” and each of them:</p>
+<ul>
+  <li>The more recent construction / remodel is, the higher “SalePrice per square
+feet” is.</li>
+  <li>The more total rooms above grade is, the higher “SalePrice per square feet”
+is.</li>
+  <li>The larger lot size (LotArea) is, the cheaper “SalePrice per square feet” is.</li>
+  <li>For the lot whose total basement area is not larger than 40 square feet, the
+larger total basement area is, the cheaper “SalePrice per square feet” is; for
+the lot whose total basement area is larger than 40 square feet, the “SalePrice
+per square feet” is between 500$ and 2000$.
+For the lot whose above grade (groud) living area is not larger than 40 square
+feet, the large above grade (groud) living area is, the higher “SalePrice per
+square feet” is; for the lot whose above grade (ground) living area is larger
+than 40 square feet, the “SalePrice per square feet” is between 500$ and 2000$.</li>
+  <li>Etc.</li>
+</ul>
+
+<h3 id="relationship-between-saleprice_per_squarefeet-and-category-fields">Relationship between “SalePrice_per_squareFeet” and category fields</h3>
+<h4 id="saleprice_per_squarefeet-vs-1mssubclass">“SalePrice_per_squareFeet” vs. “1MSSubClass”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. 1MSSubClass" src="/images/20190806-price-1MSSubClass.png" />
+</p>
+
+<p>Among all building classes, the first three most expensive classes are
+“2-STORY PUD - 1946 &amp; NEWER”, “PUD - MULTILEVEL - INCL SPLIT LEV/FOYER” and
+“1-STORY PUD (Planned Unit Development) - 1946 &amp; NEWER”.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-mszoning">“SalePrice_per_squareFeet” vs. “MSZoning”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. MSZoning" src="/images/20190806-price-MSZoning.png" />
+</p>
+
+<p>The graph above studies the sale price per square feet in terms of general
+zoning classification. Among these 5 zoning classes, the sale price per square
+feet of “Floating Village Residential (FV)” is the most expensive, the zoning
+classes which are less expensive are “Residential Medium Density (RM)”,
+“Residential High Density (RH)” and “Residential Low Density (RL)”, the sale
+price per square feet of “Commercial (C)” is the cheapest among the 5 classes.</p>
+
+<p>Considering the construction’s difficulty and their rarity, we can obviously
+understand why the sale price per square feet of “Floating Village Residential
+(FV)” is the most expensive. However, there are less restrictions on the
+“Commercial” class, so it’s the cheapest class.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-lotshape">“SalePrice_per_squareFeet” vs. “LotShape”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. LotShape" src="/images/20190806-price-LotShape.png" />
+</p>
+
+<p>The relationship between General shape of property (LotShape) and the sale
+price per square feet is easily to understand: people usually like regular
+shape (Reg) of property, since it’s simple for the overall arrangement and more
+comfortable for living.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-utilities">“SalePrice_per_squareFeet” vs. “Utilities”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. Utilities" src="/images/20190806-price-Utilities.png" />
+</p>
+
+<p>The result of this plot is interesting: we all know the more complete utilities
+are, the more expensive per square feet is. Except this point, we also get the
+price per square feet of a property whose all public utilities are available is
+double of the square feet-price of a property that only electricity and gas are
+available.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-lotconfig">“SalePrice_per_squareFeet” vs. “LotConfig”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. LotConfig" src="/images/20190806-price-LotConfig.png" />
+</p>
+
+<p>Considering the lightness, the ventilation and the view, the lot with “Frontage
+on 3 sides of property” is the best, so its price per square feet is the most
+expensive among the 5 configurations. On the contrary, the lot which is located
+as a Cul-de-sac, its price per square feet is the cheapest.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-neighborhood">“SalePrice_per_squareFeet” vs. “Neighborhood”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. Neighborhood" src="/images/20190806-price-Neighborhood.png" />
+</p>
+
+<p>Considering the economic / political / geographical reasons, if a lot is
+located near Bluestem, its price per square feet is nearly 90 dollars;
+moreover, if the lot is located near Bloomington Heights or Briardale, its
+price per square feet is about 60 dollars. However, if the lot is located near
+Clear Creek, its unit price is only about 15 dollars.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-overallqual">“SalePrice_per_squareFeet” vs. “OverallQual”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. OverallQual" src="/images/20190806-price-OverallQual.png" />
+</p>
+
+<p>The better the overall material is, the more expensive the lot is. The
+interesting point is the median value of square feet price of “very excellent”
+lot is a little bit lower than “excellent” ones, but its variance is more than
+others.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-roofmatl">“SalePrice_per_squareFeet” vs. “RoofMatl”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. RoofMatl" src="/images/20190806-price-RoofMatl.png" />
+</p>
+
+<p>Considering the insulation, drainage, material cost and robustness, the lot
+with Standard (Composite) Shingle roof or Wood Shingles roof is more expensive
+than others. However, if a lot’s roof is constructed by Clay or Tile, it’s the
+relatively cheap (per square feet) since its function is not as well as others.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-heating">“SalePrice_per_squareFeet” vs. “Heating”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. Heating" src="/images/20190806-price-Heating.png" />
+</p>
+
+<p>Considering material cost and construction-difficulties, the lot with “Gas
+forced warm air furnace” heating is more expensive than other heating types.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-garagetype">“SalePrice_per_squareFeet” vs. “GarageType”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. GarageType" src="/images/20190806-price-GarageType.png" />
+</p>
+
+<p>Considering construction and property’s convenience, the lot with built-in
+garage is more expensive than other types of garage, the lot only with car port
+as the garage is the cheapest in terms of per square feet’s price.</p>
+
+<h4 id="saleprice_per_squarefeet-vs-saletype">“SalePrice_per_squareFeet” vs. “SaleType”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. SaleType" src="/images/20190806-price-SaleType.png" />
+</p>
+
+<p>Let’s talk about the impact of sale type on the sale price. There is no doubt
+that the new lot which is just constructed and sold is the most expensive
+because its loss is the least. But I’m not clear for the reason of why other
+types of sale are less expensive. If you know why, your ideas are welcome :)</p>
+
+<h4 id="saleprice_per_squarefeet-vs-salecondition">“SalePrice_per_squareFeet” vs. “SaleCondition”</h4>
+
+<p align="center">
+  <img alt="SalePrice_per_squareFeet vs. SaleCondition" src="/images/20190806-price-SaleCondition.png" />
+</p>
+
+<p>Among all sold lots, a lot is more expensive than others if it was not
+completed when last assessed (associated with New Homes), but it’s less
+expensive for the adjoining land purchase.</p>
+
+<h2 id="train-models">Train models</h2>
+<p>I trained data with Linear Regression, Ridge Regression, Lasso Regression and
+Elastic Net (with and without with cross-validation), also SVR, Gradient
+Boosting Regressor, XGBoost Regressor, and compared their accuracy score.</p>
+
+<p>Finally I chose XGBoost Regressor to predict house prices in test dataset.</p>
+
+<p>You can find all codes in <a href="https://github.com/jingwen-z/python-playground/blob/master/analysis/House%20Prices%20Advanced%20Regression%20Techniques/predict_house_prices.ipynb">this notebook</a>.</p>
+
+<h2 id="reference">Reference</h2>
+<ul>
+  <li>Kaggle Competition: <a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques">Titanic: Machine Learning from Disaster</a></li>
+  <li><a href="https://www.kaggle.com/serigne/stacked-regressions-top-4-on-leaderboard">Stacked Regressions to predict House Prices</a></li>
+  <li>nattanan23, “Money home coin investment”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/money-home-coin-investment-2724235/">https://pixabay.com/photos/money-home-coin-investment-2724235/</a></li>
+</ul>
+
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2019-08-06T21:12:47+02:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div></div><div class="article__license"><div class="license">
+    <p>This work is licensed under a <a itemprop="license" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a> license.
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img alt="Attribution-NonCommercial 4.0 International" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+      </a>
+    </p>
+  </div></div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/posts/how-to-create-a-virtual-environment-by-python/">How to create a virtual environment by Python?</a></div><div class="next"><span>NEXT</span><a href="/posts/airbnb-paris-analysis/">Airbnb Paris Analysis</a></div></div></div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
 </script>
-
-
-
-</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+</div><section class="page__comments d-print-none"><div id="disqus_thread"></div>
+  <script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  var disqus_config = function () {
+    this.page.url = 'https://jingwen-z.github.io//posts/house-prices-regression-techniques/';
+    this.page.identifier = '/posts/house-prices-regression-techniques';
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jingwen-z.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></section></article><!-- start custom main bottom snippet -->
 
 <!-- end custom main bottom snippet -->
 </div>
@@ -984,6 +1297,68 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
 </script>
     </div>
     <script>(function () {

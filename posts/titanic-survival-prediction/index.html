@@ -10,29 +10,29 @@
 		
 	</script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Jingwen Zheng - Jingwen Zheng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Titanic: survival prediction - Jingwen Zheng</title>
 
-<meta name="description" content="Data Science Enthusiast
-">
+<meta name="description" content="In this challenge, we need to analyse what sorts of people were likely to survive. In particular, we also need to apply the tools of machine learning to pred...">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Jingwen Zheng | Data Science Enthusiast</title>
+<title>Titanic: survival prediction | Jingwen Zheng</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Jingwen Zheng" />
+<meta property="og:title" content="Titanic: survival prediction" />
 <meta name="author" content="Jingwen Zheng" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Data Science Enthusiast" />
-<meta property="og:description" content="Data Science Enthusiast" />
-<link rel="canonical" href="https://jingwen-z.github.io//" />
-<meta property="og:url" content="https://jingwen-z.github.io//" />
+<meta name="description" content="In this challenge, we need to analyse what sorts of people were likely to survive. In particular, we also need to apply the tools of machine learning to predict which passengers survived the tragedy." />
+<meta property="og:description" content="In this challenge, we need to analyse what sorts of people were likely to survive. In particular, we also need to apply the tools of machine learning to predict which passengers survived the tragedy." />
+<link rel="canonical" href="https://jingwen-z.github.io//posts/titanic-survival-prediction/" />
+<meta property="og:url" content="https://jingwen-z.github.io//posts/titanic-survival-prediction/" />
 <meta property="og:site_name" content="Jingwen Zheng" />
-<link rel="next" href="https://jingwen-z.github.io//page2/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-07T21:25:17+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Jingwen Zheng" />
+<meta property="twitter:title" content="Titanic: survival prediction" />
 <meta name="twitter:site" content="@Jingwen_QI" />
 <meta name="twitter:creator" content="@Jingwen Zheng" />
 <script type="application/ld+json">
-{"headline":"Jingwen Zheng","description":"Data Science Enthusiast","author":{"@type":"Person","name":"Jingwen Zheng"},"@type":"WebSite","url":"https://jingwen-z.github.io//","name":"Jingwen Zheng","@context":"https://schema.org"}</script>
+{"headline":"Titanic: survival prediction","dateModified":"2019-05-22T23:12:30+02:00","datePublished":"2019-05-07T21:25:17+02:00","description":"In this challenge, we need to analyse what sorts of people were likely to survive. In particular, we also need to apply the tools of machine learning to predict which passengers survived the tragedy.","author":{"@type":"Person","name":"Jingwen Zheng"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io//posts/titanic-survival-prediction/"},"@type":"BlogPosting","url":"https://jingwen-z.github.io//posts/titanic-survival-prediction/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -40,7 +40,7 @@
 
 <!-- Extra Open Graph :: End -->
 
-<link rel="canonical" href="https://jingwen-z.github.io//"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://jingwen-z.github.io//posts/titanic-survival-prediction/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -290,7 +290,7 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
@@ -309,131 +309,398 @@
         <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20190507-giant-ship.jpg);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=Machine-Learning">Machine-Learning</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=kaggle">kaggle</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=classification">classification</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=analysis">analysis</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=visualisation">visualisation</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>May 07, 2019</span>
+            </li></ul></div><div class="article__header"><header><h1>Titanic: survival prediction</h1></header></div><p class="overlay__excerpt">In this challenge, we need to analyse what sorts of people were likely to survive. In particular, we also need to apply the tools of machine learning to predict which passengers survived the tragedy.</p></div></div>
+              </div>
+            </div><div class ="main"><div class="grid grid--reverse">
 
-              <div class="col-aside d-print-none js-col-aside"></div>
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
 
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>Jingwen Zheng</h1></header><meta itemprop="headline" content="Jingwen Zheng"><meta itemprop="author" content="Jingwen Zheng"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210626-vaccin.jpg" /></div><div class="item__content">
-          <header><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/"><h2 itemprop="headline" class="item__header">Do you know the reactions of Pfizer vaccine?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information</div><p><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=COVID-19">COVID-19</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 01, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-07-01T22:27:55+02:00">
-    <meta itemprop="keywords" content="analysis,visualisation,COVID-19"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210427-pipe.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/"><h2 itemprop="headline" class="item__header">How to create a data pipeline with Azure data factory and slack?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In this blog, I talked about how to create and automate a data pipeline on Azure Data Factory, how to send messages and upload files on Slack with its APIs.</div><p><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=data-processing">data-processing</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=API">API</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 27, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-27T11:23:00+02:00">
-    <meta itemprop="keywords" content="data-processing,API"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210418-crm.jpg" /></div><div class="item__content">
-          <header><a href="/posts/crm-in-retailing/"><h2 itemprop="headline" class="item__header">CRM in retailing</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In retailing domain, one of the most important things is increasing the customer satifaction and the customer loyalty. To reach the goals, we need to understand CRM (Customer Relationship Management) firstly, then we can take steps to improve them.</div><p><a href="/posts/crm-in-retailing/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 18, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-18T11:23:00+02:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210202-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-2/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 2)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-2/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Feb 09, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-02-09T21:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210117-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-1/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 1)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-1/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 17, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-17T16:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210110-image.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/"><h2 itemprop="headline" class="item__header">How to convert projected coordinates to latitude longitude by Python?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">This blog talks about how to convert projected coordinates to latitude longitude with python module "pyproj".</div><p><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=python3">python3</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 10, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-10T16:44:58+01:00">
-    <meta itemprop="keywords" content="python3"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210103-district-price.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-idf-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Île-de-France (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Île-de-France is the most populous of the 18 regions of France. It is located in the north-central part of the country and often called the Région Parisienne ("Paris Region") because it includes the city of Paris. Besides the landmarks of Paris, the region has many important historic sites, including the Palace of Versailles and the Palace of Fo...</div><p><a href="/posts/second-hand-apartments-transactions-in-idf-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 03, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-03T16:12:46+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210102-dvf-paris-quartier.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-paris-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Paris (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris bet...</div><p><a href="/posts/second-hand-apartments-transactions-in-paris-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 02, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-02T22:20:57+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article></div></div><div class="layout--home"><div class="pagination"><p>104 post articles, 13 pages.</p>
-    <div class="pagination__menu">
-      <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
-            <i class="fas fa-angle-left"></i>
-          </div></li><li>
-              <div class="button button--primary button--circle focus"><span>1</span></div>
-            </li><li>
-                  <a class="button button--secondary button--circle" href="/page2/"><span>2</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page3/"><span>3</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page4/"><span>4</span></a>
-                </li><li><span class="pagination__omit"><i class="fas fa-ellipsis-h"></i></span></li><li>
-                  <a class="button button--secondary button--circle" href="/page13/"><span>13</span></a>
-                </li><li><a class="button button--secondary button--circle" href="/page2/">
-            <i class="fas fa-angle-right"></i>
-          </a></li></ul>
-    </div>
-  </div></div>
-<script>/*(function () {
+<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="Titanic: survival prediction"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2019-05-07T21:25:17+02:00">
+    <meta itemprop="keywords" content="Machine-Learning,kaggle,classification,analysis,visualisation"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
-})();*/
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><h2 id="content">Content</h2>
+<ul>
+  <li>Project understanding</li>
+  <li>Objectif</li>
+  <li>Practice skills</li>
+  <li>Python packages to be applied</li>
+  <li>Data description</li>
+  <li>Data cleaning</li>
+  <li>Data analysis</li>
+  <li>Train model</li>
+  <li>Reference</li>
+</ul>
+
+<h2 id="project-understanding">Project understanding</h2>
+<p>The sinking of the RMS Titanic is one of the most infamous shipwrecks in
+history. On April 15, 1912, during her maiden voyage, the Titanic sank after
+colliding with an iceberg, killing 1502 out of 2224 passengers and crew. This
+sensational tragedy shocked the international community and led to better
+safety regulations for ships.</p>
+
+<p>One of the reasons that the shipwreck led to such loss of life was that there
+were not enough lifeboats for the passengers and crew. Although there was some
+element of luck involved in surviving the sinking, some groups of people were
+more likely to survive than others, such as women, children, and the
+upper-class.</p>
+
+<h2 id="objectif">Objectif</h2>
+<p>In this challenge, we need to analyse what sorts of people were likely to
+survive. In particular, we also need to apply the tools of machine learning to
+predict which passengers survived the tragedy.</p>
+
+<h2 id="practice-skills">Practice skills</h2>
+<ul>
+  <li>Python 3</li>
+  <li>Data visualisation</li>
+  <li>Binary classification</li>
+</ul>
+
+<h2 id="python-packages-to-be-applied">Python packages to be applied</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="kn">import</span> <span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span><span class="p">,</span> <span class="n">FeatureUnion</span>
+<span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span><span class="p">,</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">RandomizedSearchCV</span><span class="p">,</span> <span class="n">GridSearchCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">reciprocal</span><span class="p">,</span> <span class="n">uniform</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span><span class="p">,</span> <span class="n">LinearSVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span></code></pre></figure>
+
+<h2 id="data-description">Data description</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Definition</th>
+      <th>Key</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Survived</td>
+      <td>Survival</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pclass</td>
+      <td>Ticket class</td>
+      <td>1 = 1st, 2 = 2nd, 3 = 3rd</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Name</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>Sex</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>Age in years</td>
+      <td>Age is fractional if less than 1.<br />If the age is estimated, is it in the form of xx.5</td>
+    </tr>
+    <tr>
+      <td>SibSp</td>
+      <td># of siblings / spouses aboard the Titanic</td>
+      <td>Sibling = brother, sister, stepbrother, stepsister.<br />Spouse = husband, wife (mistresses and fiancés were ignored)</td>
+    </tr>
+    <tr>
+      <td>Parch</td>
+      <td># of parents / children aboard the Titanic</td>
+      <td>Parent = mother, father.<br />Child = daughter, son, stepdaughter, stepson.<br />Some children travelled only with a nanny, therefore parch=0 for them.</td>
+    </tr>
+    <tr>
+      <td>Ticket</td>
+      <td>Ticket number</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fare</td>
+      <td>Passenger fare</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Cabin</td>
+      <td>Cabin number</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Embarked</td>
+      <td>Port of Embarkation</td>
+      <td>C = Cherbourg, Q = Queenstown, S = Southampton</td>
+    </tr>
+  </tbody>
+</table>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">train_df</span><span class="p">.</span><span class="n">info</span><span class="p">()</span>
+<span class="c1"># &lt;class 'pandas.core.frame.DataFrame'&gt;
+# RangeIndex: 891 entries, 0 to 890
+# Data columns (total 12 columns):
+# PassengerId    891 non-null int64
+# Survived       891 non-null int64
+# Pclass         891 non-null int64
+# Name           891 non-null object
+# Sex            891 non-null object
+# Age            714 non-null float64
+# SibSp          891 non-null int64
+# Parch          891 non-null int64
+# Ticket         891 non-null object
+# Fare           891 non-null float64
+# Cabin          204 non-null object
+# Embarked       889 non-null object
+# dtypes: float64(2), int64(5), object(5)</span></code></pre></figure>
+
+<p>=&gt; There are missing data in “Age”, “Cabin” and “Embarked”, especially “Cabin”
+whose 77% data are missing. So we will ignore it during the analysis.</p>
+
+<p>What should we do on missing data of “Age”? We might replace null by median
+age. Same for “Embarked”</p>
+
+<p>=&gt; On average, the probability of one passenger being survived is 38%.</p>
+
+<h2 id="data-cleaning">Data cleaning</h2>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">train_df</span><span class="p">[</span><span class="s">'Embarked'</span><span class="p">].</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="c1"># S    644
+# C    168
+# Q     77
+# Name: Embarked, dtype: int64
+</span>
+<span class="n">train_df</span><span class="p">[</span><span class="s">'Age'</span><span class="p">].</span><span class="n">fillna</span><span class="p">(</span><span class="n">train_df</span><span class="p">[</span><span class="s">'Age'</span><span class="p">].</span><span class="n">median</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">train_df</span><span class="p">[</span><span class="s">'Embarked'</span><span class="p">].</span><span class="n">fillna</span><span class="p">(</span><span class="s">'S'</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span></code></pre></figure>
+
+<p align="center">
+  <img alt="Description histogram" src="/images/20190507-description-histogram.png" />
+</p>
+
+<h2 id="data-analysis">Data analysis</h2>
+<h3 id="correlation-matrix-between-numerical-values-and-survived">Correlation matrix between numerical values and “Survived”</h3>
+
+<p align="center">
+  <img alt="Correlation heatmap" src="/images/20190507-corr-heatmap.png" />
+</p>
+
+<p>According to this correlation heatmap, we find that “Survived” possibility is
+slightly negative correlated with “Age”, which means that the older the
+passenger is, the more possible he will be survived; it’s significant at 5%.
+“Pclass” and “Fare are negatively correlated which is logic: the better class
+is, the more expensive fare is. “Pclass” is also negative correlated with
+“Survived” possibility, maybe the top class’s location is nearer to exit?</p>
+
+<h3 id="sibsp-vs-survived">SibSp vs. Survived</h3>
+
+<p align="center">
+  <img alt="SibSp vs. Survived" src="/images/20190507-sibsp-survived.png" />
+</p>
+
+<p>Most of survived people didn’t have siblings / spouses aboard the Titanic,
+other survived majority is people who had one sibling / spouse aboard the
+Titanic. Very few people who had more than one sibling / spouse aboard the
+Titanic were survived, since it’s difficult to survive all passengers.</p>
+
+<p align="center">
+  <img alt="SibSp &amp; Sex vs. Survived" src="/images/20190507-sibsp-sex-survived.png" />
+</p>
+
+<p>Among all survivals, the majority was female.</p>
+
+<h3 id="parch-vs-survived">Parch vs. Survived</h3>
+
+<p align="center">
+  <img alt="Parch vs. Survived" src="/images/20190507-parch-survived.png" />
+</p>
+
+<p>Similarly as relation between SibSp vs. Survived, most of survived people did
+not have parents / children aboard the Titanic, other survived majority is
+people who had one parent / child aboard the Titanic. Very few people who had
+more than one parent / child aboard the Titanic were survived, since it’s
+difficult to survive all passengers.</p>
+
+<p align="center">
+  <img alt="Parch &amp; Sex vs. Survived" src="/images/20190507-parch-sex-survived.png" />
+</p>
+
+<p>Among all survivals, the majority was female.</p>
+
+<h3 id="age-vs-survived">Age vs. Survived</h3>
+
+<p align="center">
+  <img alt="Age vs. Survived" src="/images/20190507-age-survived.png" />
+</p>
+
+<p>“Age” distribution is nearly a Normal distribution. We find that the most
+survived are the people around 25 year-old, which might because there were lots
+of younger on the board. However, people older than 50 year-old is less
+survived, which is not exactly same as analysis above. The graph below will
+explain why.</p>
+
+<h3 id="age-vs-sex-vs-survived">Age vs. Sex vs. Survived</h3>
+
+<p align="center">
+  <img alt="Age vs. Sex vs. Survived" src="/images/20190507-age-sex-survived.png" />
+</p>
+
+<p>According to this plot, we find that both female and male passengers are nearly
+half survived, since the shadow surface of “Survived” and “Non-survived” are
+nearly the same. But the survived possibility is different on ages for female
+and male. For female passengers, the ones that older than 27 year-old have a
+little bit more chance to be survived than others. For male passengers, the one
+who is younger than 15 years old or older than 34 years old are more likely to
+be survived than men between 16 and 32 years old, which because they help other
+passengers to be alive.</p>
+
+<p>Moreover, let’s pay attention to the passengers that were older than 50
+year-old. According to the graph “Age vs. Survived” we find that people older
+than 50 year-old is less survived, which is not exactly same as correlation
+analysis. But from this graph we can easily understand why: most of older
+passengers were male, most of the older survival were female, and they were
+nearly all survived. So in fact, older female passengers had much more chance
+to be survived than older male passengers.</p>
+
+<h3 id="pclass-vs-survived">Pclass vs. Survived</h3>
+
+<p align="center">
+  <img alt="Pclass vs. Survived" src="/images/20190507-pclass-survived.png" />
+</p>
+
+<p>For the class of survived passengers, it’s almost same for each class, the
+possibility for class 1 is a bit more higher than others. However, non-survived
+probability of class 3 is 3 times of class 1 and class 2, respectively. This is
+coherent with analysis above.</p>
+
+<h3 id="embarked-vs-survived">Embarked vs. Survived</h3>
+
+<p align="center">
+  <img alt="Embarked vs. Survived" src="/images/20190507-embarked-survived.png" />
+</p>
+
+<p>Passengers who came from Cherbourg (<code class="language-plaintext highlighter-rouge">Embarked='C'</code>) had more chance to be
+survived, so we’ll study why they were most survived in the following.</p>
+
+<p align="center">
+  <img alt="Embarked &amp; Pclass vs. Survived" src="/images/20190507-embarked-pclass-survived.png" />
+</p>
+
+<p>According to this graph, we find that the majority of passengers came from
+Southampton (<code class="language-plaintext highlighter-rouge">Embarked='S'</code>) and lots of them chose class 3 which decrease the
+survived chance. However, the majority of passengers who came from Cherbourg
+(<code class="language-plaintext highlighter-rouge">Embarked='C'</code>) were in class 1, such their chance to be survived was more
+than others, which is coherent with result above.</p>
+
+<h2 id="train-model">Train model</h2>
+<p>I trained data with SVM (Support-vector machine), Decision Trees, Random
+Forest, Logistic Regression, AdaBoost, Extra Trees, Gradient Boosting and
+Voting classifier (hard and soft), and compared their accuracy score:</p>
+
+<p align="center">
+  <img alt="Accurcy score" src="/images/20190507-accuracy-score.png" />
+</p>
+
+<p>Finally I chose soft voting classifier in order to avoid the overfitting and
+applied it to predict survivals in test dataset.</p>
+
+<p>You can find all codes in <a href="https://github.com/jingwen-z/python-playground/blob/master/analysis/Titanic%20ML%20from%20Disaster/titanic_classification.ipynb">this notebook</a>.</p>
+
+<h2 id="reference">Reference</h2>
+<ul>
+  <li>Kaggle Competition: <a href="https://www.kaggle.com/c/titanic/overview">Titanic: Machine Learning from Disaster</a></li>
+  <li><a href="https://www.kaggle.com/arthurtok/introduction-to-ensembling-stacking-in-python">Introduction to Ensembling/Stacking in Python</a></li>
+  <li><a href="https://www.kaggle.com/yassineghouzam/titanic-top-4-with-ensemble-modeling">Titanic Top 4% with ensemble modeling</a></li>
+  <li><a href="https://www.kaggle.com/helgejo/an-interactive-data-science-tutorial">An Interactive Data Science Tutorial</a></li>
+  <li><a href="https://github.com/ageron/handson-ml/blob/master/03_classification.ipynb">handson-ml/03_classification.ipynb</a></li>
+  <li>funnytools, “Giant downfall pleasure boat times”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/giant-downfall-pleasure-boat-times-510674/">https://pixabay.com/photos/giant-downfall-pleasure-boat-times-510674/</a></li>
+</ul>
+
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2019-05-07T21:25:17+02:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div></div><div class="article__license"><div class="license">
+    <p>This work is licensed under a <a itemprop="license" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a> license.
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img alt="Attribution-NonCommercial 4.0 International" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+      </a>
+    </p>
+  </div></div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/posts/resume-of-decision-trees-with-scikit-learn/">Resume of Decision Trees with Scikit-Learn</a></div><div class="next"><span>NEXT</span><a href="/posts/resume-of-ensemble-learning/">Resume of Ensemble Learning</a></div></div></div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
 </script>
-
-
-
-</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+</div><section class="page__comments d-print-none"><div id="disqus_thread"></div>
+  <script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  var disqus_config = function () {
+    this.page.url = 'https://jingwen-z.github.io//posts/titanic-survival-prediction/';
+    this.page.identifier = '/posts/titanic-survival-prediction';
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jingwen-z.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></section></article><!-- start custom main bottom snippet -->
 
 <!-- end custom main bottom snippet -->
 </div>
@@ -984,6 +1251,68 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
 </script>
     </div>
     <script>(function () {

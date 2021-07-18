@@ -10,29 +10,29 @@
 		
 	</script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Jingwen Zheng - Jingwen Zheng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Creating a python package for a python job - Jingwen Zheng</title>
 
-<meta name="description" content="Data Science Enthusiast
-">
+<meta name="description" content="This blog introduces how we create a python package for a python job with package structure and some details like SQL queries and data extraction with python.">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Jingwen Zheng | Data Science Enthusiast</title>
+<title>Creating a python package for a python job | Jingwen Zheng</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Jingwen Zheng" />
+<meta property="og:title" content="Creating a python package for a python job" />
 <meta name="author" content="Jingwen Zheng" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Data Science Enthusiast" />
-<meta property="og:description" content="Data Science Enthusiast" />
-<link rel="canonical" href="https://jingwen-z.github.io//" />
-<meta property="og:url" content="https://jingwen-z.github.io//" />
+<meta name="description" content="This blog introduces how we create a python package for a python job with package structure and some details like SQL queries and data extraction with python." />
+<meta property="og:description" content="This blog introduces how we create a python package for a python job with package structure and some details like SQL queries and data extraction with python." />
+<link rel="canonical" href="https://jingwen-z.github.io//posts/creating-a-python-package-for-a-python-job/" />
+<meta property="og:url" content="https://jingwen-z.github.io//posts/creating-a-python-package-for-a-python-job/" />
 <meta property="og:site_name" content="Jingwen Zheng" />
-<link rel="next" href="https://jingwen-z.github.io//page2/" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-03-12T21:33:16+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Jingwen Zheng" />
+<meta property="twitter:title" content="Creating a python package for a python job" />
 <meta name="twitter:site" content="@Jingwen_QI" />
 <meta name="twitter:creator" content="@Jingwen Zheng" />
 <script type="application/ld+json">
-{"headline":"Jingwen Zheng","description":"Data Science Enthusiast","author":{"@type":"Person","name":"Jingwen Zheng"},"@type":"WebSite","url":"https://jingwen-z.github.io//","name":"Jingwen Zheng","@context":"https://schema.org"}</script>
+{"headline":"Creating a python package for a python job","dateModified":"2019-03-13T22:26:29+01:00","datePublished":"2019-03-12T21:33:16+01:00","description":"This blog introduces how we create a python package for a python job with package structure and some details like SQL queries and data extraction with python.","author":{"@type":"Person","name":"Jingwen Zheng"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io//posts/creating-a-python-package-for-a-python-job/"},"@type":"BlogPosting","url":"https://jingwen-z.github.io//posts/creating-a-python-package-for-a-python-job/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -40,7 +40,7 @@
 
 <!-- Extra Open Graph :: End -->
 
-<link rel="canonical" href="https://jingwen-z.github.io//"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://jingwen-z.github.io//posts/creating-a-python-package-for-a-python-job/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -290,7 +290,7 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
@@ -309,131 +309,235 @@
         <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20190312-tree.jpg);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=python3">python3</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=python-module">python-module</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Mar 12, 2019</span>
+            </li></ul></div><div class="article__header"><header><h1>Creating a python package for a python job</h1></header></div><p class="overlay__excerpt">This blog introduces how we create a python package for a python job with package structure and some details like SQL queries and data extraction with python.</p></div></div>
+              </div>
+            </div><div class ="main"><div class="grid grid--reverse">
 
-              <div class="col-aside d-print-none js-col-aside"></div>
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
 
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>Jingwen Zheng</h1></header><meta itemprop="headline" content="Jingwen Zheng"><meta itemprop="author" content="Jingwen Zheng"/><div class="js-article-content"><div class="layout--articles"><div class="article-list items items--divided"><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210626-vaccin.jpg" /></div><div class="item__content">
-          <header><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/"><h2 itemprop="headline" class="item__header">Do you know the reactions of Pfizer vaccine?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information</div><p><a href="/posts/pfizer-biontech-covid-19-vaccine-reactions/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=COVID-19">COVID-19</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 01, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-07-01T22:27:55+02:00">
-    <meta itemprop="keywords" content="analysis,visualisation,COVID-19"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210427-pipe.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/"><h2 itemprop="headline" class="item__header">How to create a data pipeline with Azure data factory and slack?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In this blog, I talked about how to create and automate a data pipeline on Azure Data Factory, how to send messages and upload files on Slack with its APIs.</div><p><a href="/posts/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=data-processing">data-processing</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=API">API</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 27, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-27T11:23:00+02:00">
-    <meta itemprop="keywords" content="data-processing,API"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210418-crm.jpg" /></div><div class="item__content">
-          <header><a href="/posts/crm-in-retailing/"><h2 itemprop="headline" class="item__header">CRM in retailing</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">In retailing domain, one of the most important things is increasing the customer satifaction and the customer loyalty. To reach the goals, we need to understand CRM (Customer Relationship Management) firstly, then we can take steps to improve them.</div><p><a href="/posts/crm-in-retailing/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 18, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-04-18T11:23:00+02:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210202-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-2/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 2)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-2/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Feb 09, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-02-09T21:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210117-supermarket.jpg" /></div><div class="item__content">
-          <header><a href="/posts/multiple-kpis-in-retailing-1/"><h2 itemprop="headline" class="item__header">Multiple KPIs in retailing (Part 1)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product asso...</div><p><a href="/posts/multiple-kpis-in-retailing-1/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=retail">retail</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 17, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-17T16:59:00+01:00">
-    <meta itemprop="keywords" content="retail"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210110-image.jpg" /></div><div class="item__content">
-          <header><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/"><h2 itemprop="headline" class="item__header">How to convert projected coordinates to latitude longitude by Python?</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">This blog talks about how to convert projected coordinates to latitude longitude with python module "pyproj".</div><p><a href="/posts/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=python3">python3</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 10, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-10T16:44:58+01:00">
-    <meta itemprop="keywords" content="python3"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210103-district-price.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-idf-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Île-de-France (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Île-de-France is the most populous of the 18 regions of France. It is located in the north-central part of the country and often called the Région Parisienne ("Paris Region") because it includes the city of Paris. Besides the landmarks of Paris, the region has many important historic sites, including the Palace of Versailles and the Palace of Fo...</div><p><a href="/posts/second-hand-apartments-transactions-in-idf-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 03, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-03T16:12:46+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article><article class="item" itemscope itemtype="http://schema.org/BlogPosting"><div class="item__image"><img class="image image--lg" src="/images/20210102-dvf-paris-quartier.png" /></div><div class="item__content">
-          <header><a href="/posts/second-hand-apartments-transactions-in-paris-1420/"><h2 itemprop="headline" class="item__header">Second-hand apartments transactions in Paris (01/2014 - 06/2020)</h2></a></header>
-          <div class="item__description"><div class="article__content" itemprop="description articleBody">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris bet...</div><p><a href="/posts/second-hand-apartments-transactions-in-paris-1420/">Read more</a></p></div><div class="article__info clearfix"><ul class="left-col menu"><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=analysis">analysis</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=real-estate">real-estate</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=geovisualisation">geovisualisation</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jan 02, 2021</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2021-01-02T22:20:57+01:00">
-    <meta itemprop="keywords" content="analysis,real-estate,visualisation,geovisualisation"></div>
-      </article></div></div><div class="layout--home"><div class="pagination"><p>104 post articles, 13 pages.</p>
-    <div class="pagination__menu">
-      <ul class="menu menu--nowrap"><li><div class="button button--secondary button--circle disabled">
-            <i class="fas fa-angle-left"></i>
-          </div></li><li>
-              <div class="button button--primary button--circle focus"><span>1</span></div>
-            </li><li>
-                  <a class="button button--secondary button--circle" href="/page2/"><span>2</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page3/"><span>3</span></a>
-                </li><li>
-                  <a class="button button--secondary button--circle" href="/page4/"><span>4</span></a>
-                </li><li><span class="pagination__omit"><i class="fas fa-ellipsis-h"></i></span></li><li>
-                  <a class="button button--secondary button--circle" href="/page13/"><span>13</span></a>
-                </li><li><a class="button button--secondary button--circle" href="/page2/">
-            <i class="fas fa-angle-right"></i>
-          </a></li></ul>
-    </div>
-  </div></div>
-<script>/*(function () {
+<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="Creating a python package for a python job"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2019-03-12T21:33:16+01:00">
+    <meta itemprop="keywords" content="python3,python-module"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
-})();*/
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><p>As a member of data science team, we do not only analyse / explore data with
+terrific algorithm, but also create some reports which can help others
+departments to make decisions or map out strategies. For creating reports, we
+create a python package which contains multiple elements. In this blog, I’ll
+talk about how we create the python package with following points:</p>
+
+<ul>
+  <li>Structure of python package</li>
+  <li>Detail for each element</li>
+</ul>
+
+<h2 id="structure-of-python-package">Structure of python package</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tree
+<span class="nb">.</span>
+├── __init__.py
+├── data
+│   ├── __init__.py
+│   └── job.sql
+├── setup.py
+├── job.py
+│── tests
+│   ├── __init__.py
+│   └── job_test.py
+├── .gitlab-ci.yml
+└── environment.yml</code></pre></figure>
+
+<h2 id="detail-for-each-element">Detail for each element</h2>
+
+<h3 id="initpy"><strong>init</strong>.py</h3>
+<p>The <code class="language-plaintext highlighter-rouge">__init__.py</code> files are required to make Python treat the directories as
+containing packages; this is done to prevent directories with a common name,
+such as string, from unintentionally hiding valid modules that occur later on
+the module search path. In the simplest case, <code class="language-plaintext highlighter-rouge">__init__.py</code> can just be an
+empty file, but it can also execute initialization code for the package or set
+the <code class="language-plaintext highlighter-rouge">__all__</code> variable. If you want more information, click <a href="https://docs.python.org/3/tutorial/modules.html#packages">here</a>.</p>
+
+<h3 id="sql-file">SQL file</h3>
+<p>In the SQL file, we specify all queries that we need for the report, with
+following format:</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">WITH</span>    <span class="n">date_start</span> <span class="k">AS</span>
+        <span class="p">(</span>
+            <span class="k">SELECT</span> <span class="k">CAST</span><span class="p">(</span><span class="s1">'{}'</span> <span class="k">AS</span> <span class="nb">DATE</span><span class="p">)</span> <span class="k">as</span> <span class="n">date_start</span>
+        <span class="p">),</span>
+
+        <span class="n">date_end</span> <span class="k">AS</span>
+        <span class="p">(</span>
+            <span class="k">SELECT</span> <span class="k">CAST</span><span class="p">(</span><span class="s1">'{}'</span> <span class="k">AS</span> <span class="nb">DATE</span><span class="p">)</span> <span class="k">as</span> <span class="n">date_end</span>
+        <span class="p">),</span>
+
+        <span class="n">stores</span> <span class="k">AS</span>
+        <span class="p">(</span>
+            <span class="k">SELECT</span> <span class="n">store_id</span>
+            <span class="k">FROM</span> <span class="n">stores_table</span>
+        <span class="p">),</span>
+
+        <span class="n">sales</span> <span class="k">AS</span>
+        <span class="p">(</span>
+            <span class="k">SELECT</span>
+                    <span class="n">product_id</span>
+                    <span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">turnover_euros</span><span class="p">)</span> <span class="k">AS</span> <span class="n">turnover</span>
+            <span class="k">FROM</span> <span class="n">sales_table</span>
+            <span class="k">WHERE</span> <span class="n">sale_store</span> <span class="k">IN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">stores</span><span class="p">)</span>
+            <span class="k">AND</span> <span class="n">turnover_euros</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span>
+            <span class="k">AND</span> <span class="n">sale_date</span> <span class="k">BETWEEN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">date_start</span><span class="p">)</span> <span class="k">AND</span> <span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">date_end</span><span class="p">)</span>
+            <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">product_id</span>
+        <span class="p">)</span></code></pre></figure>
+
+<p>As you read, we put <code class="language-plaintext highlighter-rouge">date_start</code> and <code class="language-plaintext highlighter-rouge">date_end</code> as input, search <code class="language-plaintext highlighter-rouge">stores</code> data
+directly from database, and use all of them to filter <code class="language-plaintext highlighter-rouge">sales</code> data.</p>
+
+<h3 id="python-file-setuppy">Python file <code class="language-plaintext highlighter-rouge">setup.py</code></h3>
+<p><code class="language-plaintext highlighter-rouge">setup.py</code> tells you that the module/package you are about to install has been
+packaged and distributed with Distutils, which is the standard for distributing
+Python Modules.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
+
+<span class="n">setup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'job_name'</span><span class="p">,</span>
+      <span class="n">version</span><span class="o">=</span><span class="s">'0.1'</span><span class="p">,</span>
+      <span class="n">url</span><span class="o">=</span><span class="s">'gitlab/job'</span><span class="p">,</span> <span class="c1"># url of job's repo on gitlab
+</span>      <span class="n">author</span><span class="o">=</span><span class="s">'author_name'</span><span class="p">,</span>
+      <span class="n">author_email</span><span class="o">=</span><span class="s">'author_email'</span><span class="p">,</span>
+      <span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="s">'job'</span><span class="p">],</span> <span class="c1"># package name
+</span>      <span class="n">package_data</span><span class="o">=</span><span class="p">{</span>
+          <span class="s">''</span><span class="p">:[</span><span class="s">'*.sql'</span><span class="p">],</span> <span class="p">}</span> <span class="c1"># search .sql file in all folders of this job
+</span>     <span class="p">)</span></code></pre></figure>
+
+<h3 id="python-file-jobpy">Python file <code class="language-plaintext highlighter-rouge">job.py</code></h3>
+<p>This file describes how to create report with SQL file above.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span><span class="p">,</span> <span class="n">timedelta</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="nn">teradata</span>
+<span class="kn">from</span> <span class="nn">pkg_resources</span> <span class="kn">import</span> <span class="n">resource_filename</span>
+
+<span class="c1"># start date &amp; end date
+</span><span class="n">date_start</span> <span class="o">=</span> <span class="n">date</span><span class="p">.</span><span class="n">today</span><span class="p">()</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">date_end</span> <span class="o">=</span> <span class="n">date</span><span class="p">.</span><span class="n">today</span><span class="p">()</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># connect to Teradata database
+</span><span class="n">udaExec</span> <span class="o">=</span> <span class="n">teradata</span><span class="p">.</span><span class="n">UdaExec</span><span class="p">(</span><span class="n">appName</span><span class="o">=</span><span class="s">"HelloWorld"</span><span class="p">,</span>
+                           <span class="n">version</span><span class="o">=</span><span class="s">"1.0"</span><span class="p">,</span>
+                           <span class="n">logConsole</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">session</span> <span class="o">=</span> <span class="n">udaExec</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s">"odbc"</span><span class="p">,</span>
+                          <span class="n">USEREGIONALSETTINGS</span><span class="o">=</span><span class="s">"N"</span><span class="p">,</span>
+                          <span class="n">system</span><span class="o">=</span><span class="s">"tdprod"</span><span class="p">,</span>
+                          <span class="n">username</span><span class="o">=</span><span class="s">"xxx"</span><span class="p">,</span>
+                          <span class="n">password</span><span class="o">=</span><span class="s">"xxx"</span><span class="p">);</span>
+
+<span class="c1"># find &amp; read SQL file
+</span><span class="n">filename</span> <span class="o">=</span> <span class="n">resource_filename</span><span class="p">(</span><span class="s">'job'</span><span class="p">,</span> <span class="s">'data/job.sql'</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">myfile</span><span class="p">:</span>
+    <span class="n">ctes_</span> <span class="o">=</span> <span class="n">myfile</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="c1"># prepare date_start and date_end
+</span><span class="n">ctes</span> <span class="o">=</span> <span class="n">ctes_</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">date_start</span><span class="p">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'%Y-%m-%d'</span><span class="p">),</span>
+                    <span class="n">date_end</span><span class="p">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'%Y-%m-%d'</span><span class="p">))</span>
+
+<span class="c1"># extract "sales" data
+</span><span class="n">q</span> <span class="o">=</span> <span class="s">"{}</span><span class="se">\n</span><span class="s">SELECT * FROM {}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">ctes</span><span class="p">,</span> <span class="s">'sales'</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">session</span><span class="p">)</span></code></pre></figure>
+
+<p>This <code class="language-plaintext highlighter-rouge">.py</code> script defines start date and end date of report with <code class="language-plaintext highlighter-rouge">datetime.date</code>,
+<a href="https://jingwen-z.github.io/python-connection-to-teradata-database/">connects to Teradata database with <code class="language-plaintext highlighter-rouge">teradata</code> package</a>, read
+SQL queries with <code class="language-plaintext highlighter-rouge">pkg_resources.resource_filename()</code>, import SQL query’s input
+with <code class="language-plaintext highlighter-rouge">.format()</code>, and extract data with <code class="language-plaintext highlighter-rouge">pandas.read_sql()</code>.</p>
+
+<h3 id="other-files">Other files</h3>
+<ul>
+  <li>
+    <p>Test file <code class="language-plaintext highlighter-rouge">job_test.py</code>
+We write tests (e.g. unit tests) in this file. I’ll write another blog about how
+to write unit test with python in the near furture.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">.gitlab-ci.yml</code> &amp; <code class="language-plaintext highlighter-rouge">environment.yml</code>
+They are used for automating job with gitlab runner. If you are interesting in
+it, you can find more information <a href="https://jingwen-z.github.io/automate-py-jobs-by-gitlab-runner/">here</a>.</p>
+  </li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+<ul>
+  <li>“6.4. Packages”, <em>doc.python.org</em>. [Online]. Available: <a href="https://docs.python.org/3/tutorial/modules.html#packages">https://docs.python.org/3/tutorial/modules.html#packages</a></li>
+  <li>TimHill, “Tree image”, <em>pixabay</em>. [Online]. Available: <a href="https://pixabay.com/photos/tree-sun-sunshine-summer-meadow-2916763">https://pixabay.com/photos/tree-sun-sunshine-summer-meadow-2916763</a></li>
+  <li>Silfverstrom, “What is setup.py?”, <em>stackoverflow</em>. [Online]. Available: <a href="https://stackoverflow.com/questions/1471994/what-is-setup-py">https://stackoverflow.com/questions/1471994/what-is-setup-py</a></li>
+</ul>
+
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2019-03-12T21:33:16+01:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div></div><div class="article__license"><div class="license">
+    <p>This work is licensed under a <a itemprop="license" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a> license.
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img alt="Attribution-NonCommercial 4.0 International" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+      </a>
+    </p>
+  </div></div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/posts/teradata-database-sql-how-to-handle-iso-calendar/">Teradata SQL: How to handle ISO calendar?</a></div><div class="next"><span>NEXT</span><a href="/posts/what-is-box-plot/">What is box plot ?</a></div></div></div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
 </script>
-
-
-
-</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+</div><section class="page__comments d-print-none"><div id="disqus_thread"></div>
+  <script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  var disqus_config = function () {
+    this.page.url = 'https://jingwen-z.github.io//posts/creating-a-python-package-for-a-python-job/';
+    this.page.identifier = '/posts/creating-a-python-package-for-a-python-job';
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jingwen-z.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></section></article><!-- start custom main bottom snippet -->
 
 <!-- end custom main bottom snippet -->
 </div>
@@ -984,6 +1088,68 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
 </script>
     </div>
     <script>(function () {
