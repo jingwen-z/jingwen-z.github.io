@@ -26,14 +26,26 @@ wechat:      true
 
 巴西布坦坦研究所（Instituto Butantan）最近公布了中国科兴公司新冠疫苗在巴西三期临床试验的最终研究结果。今天小编就带大家了解一下具体信息。
 
+## 巴西布坦坦研究所（Instituto Butantan）
+在开始正文之前，我们先大致了解下巴西布坦坦研究所:它是拉丁美洲最大的免疫生物学和生物制药生产商（也是世界上最大的生产商之一），被认为是世界上主要的科学中心之一。它以收集毒蛇以及毒蜥、蜘蛛、昆虫和蝎子而闻名于世。通过提取爬行动物和昆虫的毒液，该研究所开发了抗蛇毒血清和抗多种疾病的药物，包括肺结核、狂犬病、破伤风和白喉。
+
 ## 授权
 科兴公司品牌与公共关系总监刘沛诚表示，科兴新冠疫苗已陆续在中国、智利、巴西、土耳其等近30个国家及地区获批使用，包括紧急使用、附条件上市或正式上市，并且陆续启动了大规模接种工作。截至2021年4月21日，包括中国在内，全球累计接种有1.6亿剂。
 世界卫生组织（WHO）于2021年6月1日批准科兴COVID-19疫苗紧急使用。 
 
 ## 数据背景
+<p align="center">
+  <img alt="20210714-ethnic"
+  src="{{ site.baseurl }}/images/20210714-ethnic.png"/>
+</p>
+
+<p align="center">
+  <img alt="20210714-underlying-disease"
+  src="{{ site.baseurl }}/images/20210714-underlying-disease.png"/>
+</p>
+
 从 2020年7月21日至12月16日，在巴西的16个研究地点对12842名参与者进行了筛查，12408名参与者被随机分组。共有12396名参与者至少接受了一剂科兴疫苗或安慰剂，其中疫苗组6195人，安慰剂组6201人。
 在这12396名参与者中，5.1%是60岁或以上的老年参与者，64.2%是女性，大多数参与者自称是白人（75.3%）。 超过一半的参与者（55.9%）有基础疾病，其中22.5%为肥胖（BMI ≥ 30kg/m2）。参与者的平均年龄和BMI分别为39.5岁和26.8kg/m2。
-
 
 ## 不良反应大多会在接种7天内出现
 <p align="center">
@@ -48,7 +60,9 @@ wechat:      true
   src="{{ site.baseurl }}/images/20210714-global-2.png"/>
 </p>
 
-在试验人群中，半数都出现不同症状不同程度的不良反应，其中发生局部反应的概率（62%）略高于整体反应（58%）。
+在试验人群中，半数都出现不同症状不同程度的不良反应，其中发生局部反应的概率（62%）略高于全身反应（58%）。
+- 局部反应：在感染生物体或注射液的入口处发生的反应。
+- 全身反应：当炎症从一个器官（如皮肤）的局部区域扩散到身体的其他器官系统时，它被称为全身反应。
 
 ## 第二次接种的不良反应较第一次更轻微
 <p align="center">
@@ -87,10 +101,14 @@ wechat:      true
 - "克爾來福2019冠狀病毒病疫苗", _zh.wikipedia.org_. [Online]. Available: [https://zh.wikipedia.org/wiki/%E5%85%8B%E7%88%BE%E4%BE%86%E7%A6%8F2019%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97][r2]
 - "辉瑞-生物科技COVID-19疫苗概述和安全性", _chinese.cdc.gov_. [Online]. Available: [https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html][r3]
 - 大众迷你仓, "新冠疫苗接种后注意事项", _zhuanlan.zhihu.com_. [Online]. Available: [https://zhuanlan.zhihu.com/p/368304205][r4]
+- "local reaction", _medical-dictionary_. [Online]. Available: [https://medical-dictionary.thefreedictionary.com][r5]
+- Rod Brouhard, EMT-P, "Systemic Reaction Throughout the Body", _www.verywellhealth.com_. [Online]. Available: [https://www.verywellhealth.com/systemic-reaction-1298693][r6]
 - Alexandra_Koch, "corona vaccination virus vaccine", _pixabay.com_. [Online]. Available: [https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/][image]
 
 [r1]: https://europepmc.org/article/PPR/PPR341815
 [r2]: https://zh.wikipedia.org/wiki/%E5%85%8B%E7%88%BE%E4%BE%86%E7%A6%8F2019%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97
 [r3]: https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html
 [r4]: https://zhuanlan.zhihu.com/p/368304205
+[r5]: https://medical-dictionary.thefreedictionary.com
+[r6]: https://www.verywellhealth.com/systemic-reaction-1298693
 [image]: https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/
