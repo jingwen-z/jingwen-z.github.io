@@ -218,6 +218,18 @@ defaults:
       show_edit_on_github: false
       show_subscribe: true
       pageview: true
+  - scope:
+      path: _cn
+      type: cn
+    values:
+      layout: article
+      sharing: true
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: false
+      show_subscribe: true
+      pageview: true
 
 ## => Collections
 ##############################
@@ -232,6 +244,7 @@ collections:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
