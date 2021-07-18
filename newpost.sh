@@ -28,6 +28,7 @@ cat << EOF >> "$filepath"
 ---
 layout:      post
 title:       "$title"
+lang:        en
 date:        "$(date +"%Y-%m-%d %H:%M:%S %z")"
 tags:        [python3]
 comments:    true
