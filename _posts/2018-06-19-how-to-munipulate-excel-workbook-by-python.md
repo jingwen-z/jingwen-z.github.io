@@ -5,6 +5,7 @@ lang:        en
 date:               2018-06-19 09:10:03 +0200
 last_modified_at:   2019-01-05 10:31:25 +0100
 tags:               [python3, excel]
+permalink:         /how-to-munipulate-excel-workbook-by-python/
 comments:           true
 excerpt:            >
     This blog introduces how to use openpyxl package to manipulate Excel

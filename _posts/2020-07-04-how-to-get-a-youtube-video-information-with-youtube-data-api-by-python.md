@@ -4,6 +4,7 @@ title:       "How to get a YouTube video's information with YouTube Data API by 
 lang:        en
 date:        "2020-07-04 09:03:55 +0200"
 tags:        [python3, API]
+permalink:         /how-to-get-a-youtube-video-information-with-youtube-data-api-by-python/
 comments:    true
 excerpt:     >
     This blog talks about how to get YouTube video's/channel's information by

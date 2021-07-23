@@ -4,6 +4,7 @@ title:       "How to get places' reviews on Google by Google My Business API?"
 lang:        en
 date:        "2020-01-10 21:40:42 +0100"
 tags:        [python3, API]
+permalink:         /how-to-get-places-reviews-on-google-by-google-my-business-api/
 comments:    true
 excerpt:     >
     In the last blog, I talked about how to get places' reviews on Google by

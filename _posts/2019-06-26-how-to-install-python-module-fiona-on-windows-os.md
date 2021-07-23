@@ -5,6 +5,7 @@ lang:        en
 date:               "2019-06-26 20:41:26 +0200"
 last_modified_at:   2019-08-27 23:01:05 +0200
 tags:               [python3, fiona, Windows-OS]
+permalink:         /how-to-install-python-module-fiona-on-windows-os/
 comments:           true
 excerpt:            >
     In this blog, I talk about the requirements and the steps for installing module

@@ -5,6 +5,7 @@ lang:        en
 date:               "2019-10-16 19:05:34 +0200"
 last_modified_at:   2019-10-18 18:30:42 +0200
 tags:               [python3, folium, geovisualisation]
+permalink:         /how-to-draw-a-map-with-folium-module-in-python/
 comments:           true
 excerpt:            >
     This blog talks about how to draw a map with python module "folium", like

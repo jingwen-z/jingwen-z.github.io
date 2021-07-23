@@ -4,6 +4,7 @@ title:       "Youtube video's comments analysis Jay Chou Mojito"
 lang:        en
 date:        "2020-06-28 22:20:18 +0200"
 tags:        [analysis, visualisation]
+permalink:         /youtube-video-comments-analysis-jay-chou-mojito/
 comments:    true
 excerpt:     >
     I extract one video's (Mojito Jay Chou) comments on YouTube with YouTube

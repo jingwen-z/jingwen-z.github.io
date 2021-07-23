@@ -4,6 +4,7 @@ title:       "Teradata SQL: How to handle ISO calendar?"
 lang:        en
 date:        "2019-03-05 21:11:01 +0100"
 tags:        [SQL, Teradata, ISO]
+permalink:         /teradata-database-sql-how-to-handle-iso-calendar/
 comments:    true
 excerpt:     >
     This blog introduces how to handle ISO calendar with Teradata Database SQL

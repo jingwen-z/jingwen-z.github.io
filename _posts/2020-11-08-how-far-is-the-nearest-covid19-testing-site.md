@@ -4,6 +4,7 @@ title:       "How far is the nearest COVID-19 testing site?"
 lang:        en
 date:        "2020-11-08 13:37:36 +0100"
 tags:        [analysis, COVID-19, visualisation, geovisualisation]
+permalink:         /how-far-is-the-nearest-covid19-testing-site/
 comments:    true
 excerpt:     >
     In this blog, I create a map to display how far is the nearest COVID-19

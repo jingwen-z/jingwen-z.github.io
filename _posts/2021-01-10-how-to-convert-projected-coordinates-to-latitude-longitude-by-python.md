@@ -4,6 +4,7 @@ title:       "How to convert projected coordinates to latitude longitude by Pyth
 lang:        en
 date:        "2021-01-10 16:44:58 +0100"
 tags:        [python3]
+permalink:         /how-to-convert-projected-coordinates-to-latitude-longitude-by-python/
 comments:    true
 excerpt:     >
     This blog talks about how to convert projected coordinates to latitude

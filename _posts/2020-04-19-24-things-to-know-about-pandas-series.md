@@ -4,6 +4,7 @@ title:       "24 things to know about pandas series"
 lang:        en
 date:        "2020-04-19 16:44:58 +0200"
 tags:        [python3, pandas, data-structure, series]
+permalink:         /24-things-to-know-about-pandas-series/
 comments:    true
 excerpt:     >
     24 things to know about pandas series

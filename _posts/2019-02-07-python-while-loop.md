@@ -4,6 +4,7 @@ title:       "Python: while loop"
 lang:        en
 date:        "2019-02-07 03:19:48 +0100"
 tags:        [python3]
+permalink:         /python-while-loop/
 comments:    true
 excerpt:     >
     This blog presents how to acheive a while loop by python. Except for the

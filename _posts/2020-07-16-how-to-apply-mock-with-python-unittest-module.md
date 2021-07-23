@@ -4,6 +4,7 @@ title:       "How to apply mock with python unittest module?"
 lang:        en
 date:        "2020-07-16 22:11:20 +0200"
 tags:        [python3, unittest, mock]
+permalink:         /how-to-apply-mock-with-python-unittest-module/
 comments:    true
 excerpt:     >
     This blog talks about how to apply mock with python unittest module, like

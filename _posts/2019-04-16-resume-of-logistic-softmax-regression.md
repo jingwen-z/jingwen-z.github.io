@@ -4,6 +4,7 @@ title:       "Resume of Logistic & Softmax Regression"
 lang:        en
 date:        "2019-04-16 21:08:16 +0200"
 tags:        [Machine-Learning, Logistic-Regression, Softmax-Regression, review]
+permalink:         /resume-of-logistic-softmax-regression/
 comments:    true
 excerpt:     >
     In this blog, I will resume Logistic Regression, Softmax Regression and

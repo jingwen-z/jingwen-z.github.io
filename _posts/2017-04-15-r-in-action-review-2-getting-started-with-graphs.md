@@ -4,6 +4,7 @@ title:       "R IN ACTION Review 2 - Getting started with graphs"
 lang:        en
 date:        "2017-04-15 10:51:27 +0200"
 tags:        [R, visualisation]
+permalink:         /r-in-action-review-2-getting-started-with-graphs/
 comments:    true
 cover:              /images/20170415-pexels-steve-johnson.jpg
 article_header:

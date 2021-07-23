@@ -5,6 +5,7 @@ lang:        en
 date:               "2020-01-03 21:21:35 +0100"
 last_modified_at:   2020-01-12 16:13:30 +0100
 tags:               [python3, API]
+permalink:         /how-to-get-places-reviews-on-google-maps-by-place-api/
 comments:           true
 excerpt:            >
     This blog talks about how to get places' reviews on Google Maps by

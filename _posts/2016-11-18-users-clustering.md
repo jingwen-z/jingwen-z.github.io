@@ -4,6 +4,7 @@ title:              Analysis of internauts' behavior
 lang:        en
 date:               2016-11-18 23:32:43 +0200
 tags:               [analysis]
+permalink:         /users-clustering/
 comments:           true
 cover:              /images/20161118-notebook.jpg
 img_width:          1280

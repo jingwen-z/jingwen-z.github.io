@@ -4,6 +4,7 @@ title:       "Resume of Support Vector Machines"
 lang:        en
 date:        "2019-04-23 20:42:54 +0200"
 tags:        [Machine-Learning, Support-Vector-Machines, review]
+permalink:         /resume-of-support-vector-machines/
 comments:    true
 excerpt:     >
     A Support Vector Machine (SVM) is a very powerful and versatile Machine

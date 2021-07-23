@@ -5,6 +5,7 @@ lang:        en
 date:               "2020-03-23 21:52:16 +0100"
 tags:               [analysis, COVID-19, visualisation]
 last_modified_at:   2020-03-25 22:07:54 +0100
+permalink:         /covid-19-pandemic-spreads-of-top-10-countries/
 comments:           true
 excerpt:     >
     From the COVID-19's outbreak until 23 March, 378139 people are / have been

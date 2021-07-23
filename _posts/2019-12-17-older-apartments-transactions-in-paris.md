@@ -5,6 +5,7 @@ lang:        en
 date:               "2019-12-17 20:47:40 +0100"
 last_modified_at:   2019-12-27 21:55:59 +0100
 tags:               [analysis, real-estate, visualisation, geovisualisation]
+permalink:         /older-apartments-transactions-in-paris/
 comments:           true
 excerpt:            >
     Paris is the capital and most populous city of France. Since the 17th

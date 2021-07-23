@@ -5,6 +5,7 @@ lang:        en
 date:               2018-07-26 19:44:19 +0200
 last_modified_at:   2018-08-05 09:02:31 +0200
 tags:               [python3, CI]
+permalink:         /automate-py-jobs-by-gitlab-runner/
 comments:           true
 excerpt:            >
     Automating python scripts to run by GitLab CI (Runner) needs to configure with

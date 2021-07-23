@@ -5,6 +5,7 @@ lang:        en
 date:               2018-07-10 18:31:21 +0200
 last_modified_at:   2018-08-05 09:53:23 +0200
 tags:               [python3, regular-expression]
+permalink:         /how-to-play-with-regular-expression-via-python/
 comments:           true
 article_header:
   type: overlay

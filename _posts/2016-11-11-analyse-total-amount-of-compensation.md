@@ -4,6 +4,7 @@ title:              Impact of different elements on compensation
 lang:        en
 date:               2016-11-11 23:32:43 +0200
 tags:               [analysis]
+permalink:         /analyse-total-amount-of-compensation/
 comments:           true
 cover:              /images/20161118-notebook.jpg
 img_width:          1280

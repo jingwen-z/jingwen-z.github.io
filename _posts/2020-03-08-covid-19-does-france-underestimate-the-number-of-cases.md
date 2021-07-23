@@ -5,6 +5,7 @@ lang:        en
 date:               "2020-03-08 14:29:48 +0100"
 last_modified_at:   2020-03-09 22:04:55 +0100
 tags:               [analysis, COVID-19, visualisation]
+permalink:         /covid-19-does-france-underestimate-the-number-of-cases/
 comments:           true
 excerpt:            >
     This blog talks about the actual COVID-19 situation of France, the

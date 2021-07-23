@@ -4,6 +4,7 @@ title:       "COVID-19 worldwide analysis (up to 2020-04-02 UTC+02:00)"
 lang:        en
 date:        "2020-04-03 22:07:05 +0200"
 tags:        [analysis, COVID-19, visualisation, geovisualisation]
+permalink:         /covid-19-analysis-3/
 comments:    true
 excerpt:     >
     At the same time of last month, China reached its peak of COVID-19 pandemic

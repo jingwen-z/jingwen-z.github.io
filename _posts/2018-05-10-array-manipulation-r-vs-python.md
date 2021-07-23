@@ -4,6 +4,7 @@ title:       "Array manipulation - R vs Python"
 lang:        en
 date:        "2018-05-10 14:19:19 +0200"
 tags:        [python3, R, data-structure]
+permalink:         /array-manipulation-r-vs-python/
 comments:    true
 article_header:
   type: overlay

@@ -5,6 +5,7 @@ lang:        en
 date:               2019-02-12 21:33:39 +0100"
 last_modified_at:   2019-02-19 22:23:14 +0100
 tags:               [python3, database, Teradata]
+permalink:         /python-connection-to-teradata-database/
 comments:           true
 excerpt:            >
     This blog will talk about how to connect to Teradata database and extract

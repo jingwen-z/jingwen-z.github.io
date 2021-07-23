@@ -4,6 +4,7 @@ title:       "Association analysis - Apriori algorithm"
 lang:        en
 date:        "2017-10-20 23:16:08 +0200"
 tags:        [Machine-Learning, Association-analysis]
+permalink:         /association-analysis-apriori-algorithm/
 comments:    true
 cover:       /images/20171020-pexels-junjie-xu.jpg
 article_header:

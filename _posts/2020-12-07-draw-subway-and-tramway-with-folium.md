@@ -4,6 +4,7 @@ title:       "Draw subway and tramway with folium"
 lang:        en
 date:        "2020-12-07 22:06:04 +0100"
 tags:        [python3, folium, geovisualisation]
+permalink:         /draw-subway-and-tramway-with-folium/
 comments:    true
 excerpt:     >
     This blog talks about how to draw public transport lines with "folium"

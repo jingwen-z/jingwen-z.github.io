@@ -4,6 +4,7 @@ title:       "Multiple KPIs in retailing (Part 2)"
 lang:        en
 date:        "2021-02-09 21:59:00 +0100"
 tags:        [retail]
+permalink:         /multiple-kpis-in-retailing-2/
 comments:    true
 excerpt:     >
     Retail is the process of selling consumer goods or services to customers
