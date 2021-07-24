@@ -7,8 +7,6 @@ tags:        [analysis, visualisation, COVID-19]
 comments:    true
 excerpt:     >
     巴西布坦坦研究所（Instituto Butantan）最近公布了中国科兴公司新冠疫苗在巴西三期临床试验的最终研究结果。今天小编就带大家了解一下具体信息。
-redirect_from:
-  - /coronavac-covid-19-vaccine-reactions/
 cover:       /images/20210626-vaccin.jpg
 img_width:   1280
 img_height:  853
