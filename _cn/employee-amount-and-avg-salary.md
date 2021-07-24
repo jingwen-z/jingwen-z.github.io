@@ -7,8 +7,6 @@ tags:        [analysis, visualisation]
 comments:    true
 excerpt:     >
     国家统计局公布了一组31个省/自治区/直辖市城镇单位各行业的就业人口和平均工资。其中，哪里工资高？哪个行业竞争大？哪里集中了最多的人才？本文将为您一一解答。
-redirect_from:
-  - /employee-amount-and-avg-salary/
 cover:       /images/20210613-tie.jpg
 img_width:   1280
 img_height:  853
