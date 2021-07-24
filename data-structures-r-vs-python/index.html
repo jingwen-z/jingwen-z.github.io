@@ -1,0 +1,1337 @@
+<!DOCTYPE html><html lang="en">
+  <head><!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-85831520-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-85831520-1');
+		
+	</script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Data structures - R vs Python - Jingwen Zheng</title>
+
+<meta name="description" content="I’ve learnt python since the beginning of this year. In this blog, I’ll comparethe data structures in R to Python briefly.ArrayRAtomic vectors  one-dimension...">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Data structures - R vs Python | Jingwen Zheng</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Data structures - R vs Python" />
+<meta name="author" content="Jingwen Zheng" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="I’ve learnt python since the beginning of this year. In this blog, I’ll compare the data structures in R to Python briefly. Array R Atomic vectors one-dimensional array contain only one data type scalars are one-element vectors, e.g. f &lt;- 3, g &lt;- &quot;US&quot; function c() v &lt;- c(&quot;k&quot;, &quot;j&quot;, &quot;w&quot;, &quot;d&quot;, &quot;v&quot;) &gt; v[1] [1] &quot;k&quot; &gt; v[c(1, 3)] [1] &quot;k&quot; &quot;w&quot; &gt; v[3:4] [1] &quot;w&quot;, &quot;d&quot; Matrices two-dimensional array each element has the same mode (numeric, character or logical) function matrix() m &lt;- matrix(1:6, nrow = 2, ncol = 3) &gt; m [,1] [,2] [,3] [1,] 1 3 5 [2,] 2 4 6 &gt; m[2, ] [1] 2 4 6 &gt; m[1, 3] [1] 5 Arrays similar to matrices more than two dimensions function array() dim1 &lt;- c(&quot;A1&quot;, &quot;A2&quot;) dim2 &lt;- c(&quot;B1&quot;, &quot;B2&quot;, &quot;B3&quot;) dim3 &lt;- c(&quot;C1&quot;, &quot;C2&quot;) arr &lt;- array(1:12, c(2, 3, 2), dimnames = list(dim1, dim2, dim3)) &gt; arr , , C1 B1 B2 B3 A1 1 3 5 A2 2 4 6 , , C2 B1 B2 B3 A1 7 9 11 A2 8 10 12 &gt; arr[1,2,2] [1] 9 &gt; arr[1,2,] C1 C2 3 9 &gt; arr[1,,] C1 C2 B1 1 7 B2 3 9 B3 5 11 Python package numpy functions numpy.array(), numpy.arange() In [1]: import numpy In [2]: arr_1d = numpy.array([6, 5.2, 2, 7]) In [3]: print(arr_1d) Out[3]: array([6. , 5.2, 2. , 7. ]) In [4]: arr_2d = numpy.array([[1, 2, 3], [4, 5, 6]]) In [5]: print(arr_2d) Out[5]: array([[1, 2, 3], [4, 5, 6]]) In [6]: arr_3d = numpy.array([[[1, 2, 3], [4, 5, 6]],[[7, 8, 9], [10, 11, 12]]]) In [7]: print(arr_3d) Out[7]: array([[[ 1, 2, 3], [ 4, 5, 6]], [[ 7, 8, 9], [10, 11, 12]]]) List R an ordered collection of objects allow to gather a variety of objects under one name str &lt;- &quot;My first list&quot; mtx &lt;- matrix(1:6, nrow = 3) intVtr &lt;- c(5, 7, 32, 19) strVtr &lt;- c(&quot;one&quot;, &quot;two&quot;) mylist &lt;- list(title = str, ages = intVtr, mtx, strVtr) &gt; mylist $title [1] &quot;My first list&quot; $ages [1] 5 7 32 19 [[3]] [,1] [,2] [1,] 1 4 [2,] 2 5 [3,] 3 6 [[4]] [1] &quot;one&quot; &quot;two&quot; &gt; mylist[[2]] [1] 5 7 32 19 &gt; mylist[[&quot;ages&quot;]] [1] 5 7 32 19 Python variable-length can be modified in-place [], list() methods: append(), insert(), pop(), remove(), extend(), sort() In [1]: a_list = [2, 7, None] In [2]: print(a_list) Out[2]: [2, 7, None] In [3]: b_list = list((&#39;foo&#39;, &#39;bar&#39;)) In [4]: b_list[1] = &#39;pee&#39; In [5]: print(b_list) Out[5]: [&#39;foo&#39;, &#39;pee&#39;] Dataframe R data.frame() patientId &lt;- c(1, 2, 3) age &lt;- c(34, 23, 7) diabetes &lt;- c(&quot;Type1&quot;, &quot;Type2&quot;, &quot;Type1&quot;) status &lt;- c(&quot;Poor&quot;, &quot;Excellent&quot;, &quot;Improved&quot;) patientDF &lt;- data.frame(patientId, age, diabetes, status) &gt; patientDF patientId age diabetes status 1 1 34 Type1 Poor 2 2 23 Type2 Excellent 3 3 7 Type1 Improved &gt; patientDF[1:2] patientId age 1 1 34 2 2 23 3 3 7 &gt; patientDF[1, ] patientId age diabetes status 1 1 34 Type1 Poor &gt; patientDF[c(&quot;patientId&quot;, &quot;age&quot;)] patientId age 1 1 34 2 2 23 3 3 7 &gt; patientDF$age [1] 34 23 7 Python contain an ordered collection of columns have both row and column index package pandas pandas.DataFrame() import pandas as pd data = {&#39;state&#39;: [&#39;Ohio&#39;, &#39;Ohio&#39;, &#39;Nevada&#39;, &#39;Nevada&#39;], &#39;year&#39;: [2000, 2001, 2002, 2003], &#39;pop&#39;: [1.5, 1.7, 3.6, 2.7]} frame = pd.DataFrame(data, columns=[&#39;year&#39;, &#39;state&#39;, &#39;pop&#39;]) In [1]: print(frame) Out[1]: year state pop 0 2000 Ohio 1.5 1 2001 Ohio 1.7 2 2002 Nevada 3.6 3 2003 Nevada 2.7 Besides, there are some data structures which don’t exist in both R and Python: Factors (R) nominal / ordinal / continuous factor() patientId &lt;- c(1, 2, 3) age &lt;- c(34, 23, 7) diabetes &lt;- c(&quot;Type1&quot;, &quot;Type2&quot;, &quot;Type1&quot;) status &lt;- c(&quot;Poor&quot;, &quot;Excellent&quot;, &quot;Improved&quot;) diabetes &lt;- factor(diabetes) status &lt;- factor(status, order = T) patientDF &lt;- data.frame(patientId, age, diabetes, status) &gt; str(patientDF) &#39;data.frame&#39;: 3 obs. of 4 variables: $ patientId: num 1 2 3 $ age : num 34 23 7 $ diabetes : Factor w/ 2 levels &quot;Type1&quot;,&quot;Type2&quot;: 1 2 1 $ status : Ord.factor w/ 3 levels &quot;Excellent&quot;&lt;&quot;Improved&quot;&lt;..: 3 1 2 &gt; summary(patientDF) patientId age diabetes status Min. :1.0 Min. : 7.00 Type1:2 Excellent:1 1st Qu.:1.5 1st Qu.:15.00 Type2:1 Improved :1 Median :2.0 Median :23.00 Poor :1 Mean :2.0 Mean :21.33 3rd Qu.:2.5 3rd Qu.:28.50 Max. :3.0 Max. :34.00 Tuple (Python) fixed-length immutable tuple() In [1]: tup_int = 4, 5, 6 In [2]: print(tup_int) Out[2]: (4, 5, 6) In [3]: tup_str = tuple(&#39;string&#39;) In [4]: print(tup_str) Out[4]: (&#39;s&#39;, &#39;t&#39;, &#39;r&#39;, &#39;i&#39;, &#39;n&#39;, &#39;g&#39;) In [5]: tup_str[0] Out[5]: &#39;s&#39; Dict (Python) hash map, associative array key-value pairs {}, , methods: del, pop(), update() empty_dict = {} d1 = {&#39;a&#39;: &#39;some value&#39;, &#39;b&#39;: [1, 2]} In [1]: print(d1) Out[1]: {&#39;a&#39;: &#39;some value&#39;, &#39;b&#39;: [1, 2]} d1[7] = &#39;an integer&#39; In [2]: print(di) Out[2]: {&#39;a&#39;: &#39;some value&#39;, &#39;b&#39;: [1, 2], 7: &#39;an integer&#39;} In [3]: print(d1[&#39;b&#39;]) Out[3]: [1, 2] Set (Python) unordered collection unique element set(), {} set operations: union, intersection, difference, symmetric difference In [1]: print(set([2, 2, 1, 3])) Out[1]: {1, 2, 3} In [2]: print({2, 2, 1, 3}) Out[2]: {1, 2, 3} List, Set and Dict comprehensions (Python) form a new list by filtering the elements of a collection transform the elements passing the filter in one concise expression list comprehension [expr for val in collection if condition] dict comprehension dict_comp = {key-expr : value-expr for value in collection if condition} set comprehension set_comp = {expr for value in collection if condition}" />
+<meta property="og:description" content="I’ve learnt python since the beginning of this year. In this blog, I’ll compare the data structures in R to Python briefly. Array R Atomic vectors one-dimensional array contain only one data type scalars are one-element vectors, e.g. f &lt;- 3, g &lt;- &quot;US&quot; function c() v &lt;- c(&quot;k&quot;, &quot;j&quot;, &quot;w&quot;, &quot;d&quot;, &quot;v&quot;) &gt; v[1] [1] &quot;k&quot; &gt; v[c(1, 3)] [1] &quot;k&quot; &quot;w&quot; &gt; v[3:4] [1] &quot;w&quot;, &quot;d&quot; Matrices two-dimensional array each element has the same mode (numeric, character or logical) function matrix() m &lt;- matrix(1:6, nrow = 2, ncol = 3) &gt; m [,1] [,2] [,3] [1,] 1 3 5 [2,] 2 4 6 &gt; m[2, ] [1] 2 4 6 &gt; m[1, 3] [1] 5 Arrays similar to matrices more than two dimensions function array() dim1 &lt;- c(&quot;A1&quot;, &quot;A2&quot;) dim2 &lt;- c(&quot;B1&quot;, &quot;B2&quot;, &quot;B3&quot;) dim3 &lt;- c(&quot;C1&quot;, &quot;C2&quot;) arr &lt;- array(1:12, c(2, 3, 2), dimnames = list(dim1, dim2, dim3)) &gt; arr , , C1 B1 B2 B3 A1 1 3 5 A2 2 4 6 , , C2 B1 B2 B3 A1 7 9 11 A2 8 10 12 &gt; arr[1,2,2] [1] 9 &gt; arr[1,2,] C1 C2 3 9 &gt; arr[1,,] C1 C2 B1 1 7 B2 3 9 B3 5 11 Python package numpy functions numpy.array(), numpy.arange() In [1]: import numpy In [2]: arr_1d = numpy.array([6, 5.2, 2, 7]) In [3]: print(arr_1d) Out[3]: array([6. , 5.2, 2. , 7. ]) In [4]: arr_2d = numpy.array([[1, 2, 3], [4, 5, 6]]) In [5]: print(arr_2d) Out[5]: array([[1, 2, 3], [4, 5, 6]]) In [6]: arr_3d = numpy.array([[[1, 2, 3], [4, 5, 6]],[[7, 8, 9], [10, 11, 12]]]) In [7]: print(arr_3d) Out[7]: array([[[ 1, 2, 3], [ 4, 5, 6]], [[ 7, 8, 9], [10, 11, 12]]]) List R an ordered collection of objects allow to gather a variety of objects under one name str &lt;- &quot;My first list&quot; mtx &lt;- matrix(1:6, nrow = 3) intVtr &lt;- c(5, 7, 32, 19) strVtr &lt;- c(&quot;one&quot;, &quot;two&quot;) mylist &lt;- list(title = str, ages = intVtr, mtx, strVtr) &gt; mylist $title [1] &quot;My first list&quot; $ages [1] 5 7 32 19 [[3]] [,1] [,2] [1,] 1 4 [2,] 2 5 [3,] 3 6 [[4]] [1] &quot;one&quot; &quot;two&quot; &gt; mylist[[2]] [1] 5 7 32 19 &gt; mylist[[&quot;ages&quot;]] [1] 5 7 32 19 Python variable-length can be modified in-place [], list() methods: append(), insert(), pop(), remove(), extend(), sort() In [1]: a_list = [2, 7, None] In [2]: print(a_list) Out[2]: [2, 7, None] In [3]: b_list = list((&#39;foo&#39;, &#39;bar&#39;)) In [4]: b_list[1] = &#39;pee&#39; In [5]: print(b_list) Out[5]: [&#39;foo&#39;, &#39;pee&#39;] Dataframe R data.frame() patientId &lt;- c(1, 2, 3) age &lt;- c(34, 23, 7) diabetes &lt;- c(&quot;Type1&quot;, &quot;Type2&quot;, &quot;Type1&quot;) status &lt;- c(&quot;Poor&quot;, &quot;Excellent&quot;, &quot;Improved&quot;) patientDF &lt;- data.frame(patientId, age, diabetes, status) &gt; patientDF patientId age diabetes status 1 1 34 Type1 Poor 2 2 23 Type2 Excellent 3 3 7 Type1 Improved &gt; patientDF[1:2] patientId age 1 1 34 2 2 23 3 3 7 &gt; patientDF[1, ] patientId age diabetes status 1 1 34 Type1 Poor &gt; patientDF[c(&quot;patientId&quot;, &quot;age&quot;)] patientId age 1 1 34 2 2 23 3 3 7 &gt; patientDF$age [1] 34 23 7 Python contain an ordered collection of columns have both row and column index package pandas pandas.DataFrame() import pandas as pd data = {&#39;state&#39;: [&#39;Ohio&#39;, &#39;Ohio&#39;, &#39;Nevada&#39;, &#39;Nevada&#39;], &#39;year&#39;: [2000, 2001, 2002, 2003], &#39;pop&#39;: [1.5, 1.7, 3.6, 2.7]} frame = pd.DataFrame(data, columns=[&#39;year&#39;, &#39;state&#39;, &#39;pop&#39;]) In [1]: print(frame) Out[1]: year state pop 0 2000 Ohio 1.5 1 2001 Ohio 1.7 2 2002 Nevada 3.6 3 2003 Nevada 2.7 Besides, there are some data structures which don’t exist in both R and Python: Factors (R) nominal / ordinal / continuous factor() patientId &lt;- c(1, 2, 3) age &lt;- c(34, 23, 7) diabetes &lt;- c(&quot;Type1&quot;, &quot;Type2&quot;, &quot;Type1&quot;) status &lt;- c(&quot;Poor&quot;, &quot;Excellent&quot;, &quot;Improved&quot;) diabetes &lt;- factor(diabetes) status &lt;- factor(status, order = T) patientDF &lt;- data.frame(patientId, age, diabetes, status) &gt; str(patientDF) &#39;data.frame&#39;: 3 obs. of 4 variables: $ patientId: num 1 2 3 $ age : num 34 23 7 $ diabetes : Factor w/ 2 levels &quot;Type1&quot;,&quot;Type2&quot;: 1 2 1 $ status : Ord.factor w/ 3 levels &quot;Excellent&quot;&lt;&quot;Improved&quot;&lt;..: 3 1 2 &gt; summary(patientDF) patientId age diabetes status Min. :1.0 Min. : 7.00 Type1:2 Excellent:1 1st Qu.:1.5 1st Qu.:15.00 Type2:1 Improved :1 Median :2.0 Median :23.00 Poor :1 Mean :2.0 Mean :21.33 3rd Qu.:2.5 3rd Qu.:28.50 Max. :3.0 Max. :34.00 Tuple (Python) fixed-length immutable tuple() In [1]: tup_int = 4, 5, 6 In [2]: print(tup_int) Out[2]: (4, 5, 6) In [3]: tup_str = tuple(&#39;string&#39;) In [4]: print(tup_str) Out[4]: (&#39;s&#39;, &#39;t&#39;, &#39;r&#39;, &#39;i&#39;, &#39;n&#39;, &#39;g&#39;) In [5]: tup_str[0] Out[5]: &#39;s&#39; Dict (Python) hash map, associative array key-value pairs {}, , methods: del, pop(), update() empty_dict = {} d1 = {&#39;a&#39;: &#39;some value&#39;, &#39;b&#39;: [1, 2]} In [1]: print(d1) Out[1]: {&#39;a&#39;: &#39;some value&#39;, &#39;b&#39;: [1, 2]} d1[7] = &#39;an integer&#39; In [2]: print(di) Out[2]: {&#39;a&#39;: &#39;some value&#39;, &#39;b&#39;: [1, 2], 7: &#39;an integer&#39;} In [3]: print(d1[&#39;b&#39;]) Out[3]: [1, 2] Set (Python) unordered collection unique element set(), {} set operations: union, intersection, difference, symmetric difference In [1]: print(set([2, 2, 1, 3])) Out[1]: {1, 2, 3} In [2]: print({2, 2, 1, 3}) Out[2]: {1, 2, 3} List, Set and Dict comprehensions (Python) form a new list by filtering the elements of a collection transform the elements passing the filter in one concise expression list comprehension [expr for val in collection if condition] dict comprehension dict_comp = {key-expr : value-expr for value in collection if condition} set comprehension set_comp = {expr for value in collection if condition}" />
+<link rel="canonical" href="https://jingwen-z.github.io//data-structures-r-vs-python/" />
+<meta property="og:url" content="https://jingwen-z.github.io//data-structures-r-vs-python/" />
+<meta property="og:site_name" content="Jingwen Zheng" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-04T21:48:06+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Data structures - R vs Python" />
+<meta name="twitter:site" content="@Jingwen_QI" />
+<meta name="twitter:creator" content="@Jingwen Zheng" />
+<script type="application/ld+json">
+{"headline":"Data structures - R vs Python","description":"I’ve learnt python since the beginning of this year. In this blog, I’ll compare the data structures in R to Python briefly. Array R Atomic vectors one-dimensional array contain only one data type scalars are one-element vectors, e.g. f &lt;- 3, g &lt;- &quot;US&quot; function c() v &lt;- c(&quot;k&quot;, &quot;j&quot;, &quot;w&quot;, &quot;d&quot;, &quot;v&quot;) &gt; v[1] [1] &quot;k&quot; &gt; v[c(1, 3)] [1] &quot;k&quot; &quot;w&quot; &gt; v[3:4] [1] &quot;w&quot;, &quot;d&quot; Matrices two-dimensional array each element has the same mode (numeric, character or logical) function matrix() m &lt;- matrix(1:6, nrow = 2, ncol = 3) &gt; m [,1] [,2] [,3] [1,] 1 3 5 [2,] 2 4 6 &gt; m[2, ] [1] 2 4 6 &gt; m[1, 3] [1] 5 Arrays similar to matrices more than two dimensions function array() dim1 &lt;- c(&quot;A1&quot;, &quot;A2&quot;) dim2 &lt;- c(&quot;B1&quot;, &quot;B2&quot;, &quot;B3&quot;) dim3 &lt;- c(&quot;C1&quot;, &quot;C2&quot;) arr &lt;- array(1:12, c(2, 3, 2), dimnames = list(dim1, dim2, dim3)) &gt; arr , , C1 B1 B2 B3 A1 1 3 5 A2 2 4 6 , , C2 B1 B2 B3 A1 7 9 11 A2 8 10 12 &gt; arr[1,2,2] [1] 9 &gt; arr[1,2,] C1 C2 3 9 &gt; arr[1,,] C1 C2 B1 1 7 B2 3 9 B3 5 11 Python package numpy functions numpy.array(), numpy.arange() In [1]: import numpy In [2]: arr_1d = numpy.array([6, 5.2, 2, 7]) In [3]: print(arr_1d) Out[3]: array([6. , 5.2, 2. , 7. ]) In [4]: arr_2d = numpy.array([[1, 2, 3], [4, 5, 6]]) In [5]: print(arr_2d) Out[5]: array([[1, 2, 3], [4, 5, 6]]) In [6]: arr_3d = numpy.array([[[1, 2, 3], [4, 5, 6]],[[7, 8, 9], [10, 11, 12]]]) In [7]: print(arr_3d) Out[7]: array([[[ 1, 2, 3], [ 4, 5, 6]], [[ 7, 8, 9], [10, 11, 12]]]) List R an ordered collection of objects allow to gather a variety of objects under one name str &lt;- &quot;My first list&quot; mtx &lt;- matrix(1:6, nrow = 3) intVtr &lt;- c(5, 7, 32, 19) strVtr &lt;- c(&quot;one&quot;, &quot;two&quot;) mylist &lt;- list(title = str, ages = intVtr, mtx, strVtr) &gt; mylist $title [1] &quot;My first list&quot; $ages [1] 5 7 32 19 [[3]] [,1] [,2] [1,] 1 4 [2,] 2 5 [3,] 3 6 [[4]] [1] &quot;one&quot; &quot;two&quot; &gt; mylist[[2]] [1] 5 7 32 19 &gt; mylist[[&quot;ages&quot;]] [1] 5 7 32 19 Python variable-length can be modified in-place [], list() methods: append(), insert(), pop(), remove(), extend(), sort() In [1]: a_list = [2, 7, None] In [2]: print(a_list) Out[2]: [2, 7, None] In [3]: b_list = list((&#39;foo&#39;, &#39;bar&#39;)) In [4]: b_list[1] = &#39;pee&#39; In [5]: print(b_list) Out[5]: [&#39;foo&#39;, &#39;pee&#39;] Dataframe R data.frame() patientId &lt;- c(1, 2, 3) age &lt;- c(34, 23, 7) diabetes &lt;- c(&quot;Type1&quot;, &quot;Type2&quot;, &quot;Type1&quot;) status &lt;- c(&quot;Poor&quot;, &quot;Excellent&quot;, &quot;Improved&quot;) patientDF &lt;- data.frame(patientId, age, diabetes, status) &gt; patientDF patientId age diabetes status 1 1 34 Type1 Poor 2 2 23 Type2 Excellent 3 3 7 Type1 Improved &gt; patientDF[1:2] patientId age 1 1 34 2 2 23 3 3 7 &gt; patientDF[1, ] patientId age diabetes status 1 1 34 Type1 Poor &gt; patientDF[c(&quot;patientId&quot;, &quot;age&quot;)] patientId age 1 1 34 2 2 23 3 3 7 &gt; patientDF$age [1] 34 23 7 Python contain an ordered collection of columns have both row and column index package pandas pandas.DataFrame() import pandas as pd data = {&#39;state&#39;: [&#39;Ohio&#39;, &#39;Ohio&#39;, &#39;Nevada&#39;, &#39;Nevada&#39;], &#39;year&#39;: [2000, 2001, 2002, 2003], &#39;pop&#39;: [1.5, 1.7, 3.6, 2.7]} frame = pd.DataFrame(data, columns=[&#39;year&#39;, &#39;state&#39;, &#39;pop&#39;]) In [1]: print(frame) Out[1]: year state pop 0 2000 Ohio 1.5 1 2001 Ohio 1.7 2 2002 Nevada 3.6 3 2003 Nevada 2.7 Besides, there are some data structures which don’t exist in both R and Python: Factors (R) nominal / ordinal / continuous factor() patientId &lt;- c(1, 2, 3) age &lt;- c(34, 23, 7) diabetes &lt;- c(&quot;Type1&quot;, &quot;Type2&quot;, &quot;Type1&quot;) status &lt;- c(&quot;Poor&quot;, &quot;Excellent&quot;, &quot;Improved&quot;) diabetes &lt;- factor(diabetes) status &lt;- factor(status, order = T) patientDF &lt;- data.frame(patientId, age, diabetes, status) &gt; str(patientDF) &#39;data.frame&#39;: 3 obs. of 4 variables: $ patientId: num 1 2 3 $ age : num 34 23 7 $ diabetes : Factor w/ 2 levels &quot;Type1&quot;,&quot;Type2&quot;: 1 2 1 $ status : Ord.factor w/ 3 levels &quot;Excellent&quot;&lt;&quot;Improved&quot;&lt;..: 3 1 2 &gt; summary(patientDF) patientId age diabetes status Min. :1.0 Min. : 7.00 Type1:2 Excellent:1 1st Qu.:1.5 1st Qu.:15.00 Type2:1 Improved :1 Median :2.0 Median :23.00 Poor :1 Mean :2.0 Mean :21.33 3rd Qu.:2.5 3rd Qu.:28.50 Max. :3.0 Max. :34.00 Tuple (Python) fixed-length immutable tuple() In [1]: tup_int = 4, 5, 6 In [2]: print(tup_int) Out[2]: (4, 5, 6) In [3]: tup_str = tuple(&#39;string&#39;) In [4]: print(tup_str) Out[4]: (&#39;s&#39;, &#39;t&#39;, &#39;r&#39;, &#39;i&#39;, &#39;n&#39;, &#39;g&#39;) In [5]: tup_str[0] Out[5]: &#39;s&#39; Dict (Python) hash map, associative array key-value pairs {}, , methods: del, pop(), update() empty_dict = {} d1 = {&#39;a&#39;: &#39;some value&#39;, &#39;b&#39;: [1, 2]} In [1]: print(d1) Out[1]: {&#39;a&#39;: &#39;some value&#39;, &#39;b&#39;: [1, 2]} d1[7] = &#39;an integer&#39; In [2]: print(di) Out[2]: {&#39;a&#39;: &#39;some value&#39;, &#39;b&#39;: [1, 2], 7: &#39;an integer&#39;} In [3]: print(d1[&#39;b&#39;]) Out[3]: [1, 2] Set (Python) unordered collection unique element set(), {} set operations: union, intersection, difference, symmetric difference In [1]: print(set([2, 2, 1, 3])) Out[1]: {1, 2, 3} In [2]: print({2, 2, 1, 3}) Out[2]: {1, 2, 3} List, Set and Dict comprehensions (Python) form a new list by filtering the elements of a collection transform the elements passing the filter in one concise expression list comprehension [expr for val in collection if condition] dict comprehension dict_comp = {key-expr : value-expr for value in collection if condition} set comprehension set_comp = {expr for value in collection if condition}","datePublished":"2018-05-04T21:48:06+02:00","dateModified":"2018-05-04T21:48:06+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io//data-structures-r-vs-python/"},"url":"https://jingwen-z.github.io//data-structures-r-vs-python/","author":{"@type":"Person","name":"Jingwen Zheng"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- Extra Open Graph :: Start -->
+
+<!-- Extra Open Graph :: End -->
+
+<link rel="canonical" href="https://jingwen-z.github.io//data-structures-r-vs-python/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+
+<meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+<!-- end favicons snippet --><link rel="stylesheet" href="/assets/css/main.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css" ><!-- start custom head snippets -->
+
+<!-- end custom head snippets -->
+<script>(function() {
+  window.isArray = function(val) {
+    return Object.prototype.toString.call(val) === '[object Array]';
+  };
+  window.isString = function(val) {
+    return typeof val === 'string';
+  };
+
+  window.hasEvent = function(event) {
+    return 'on'.concat(event) in window.document;
+  };
+
+  window.isOverallScroller = function(node) {
+    return node === document.documentElement || node === document.body || node === window;
+  };
+
+  window.isFormElement = function(node) {
+    var tagName = node.tagName;
+    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
+  };
+
+  window.pageLoad = (function () {
+    var loaded = false, cbs = [];
+    window.addEventListener('load', function () {
+      var i;
+      loaded = true;
+      if (cbs.length > 0) {
+        for (i = 0; i < cbs.length; i++) {
+          cbs[i]();
+        }
+      }
+    });
+    return {
+      then: function(cb) {
+        cb && (loaded ? cb() : (cbs.push(cb)));
+      }
+    };
+  })();
+})();
+(function() {
+  window.throttle = function(func, wait) {
+    var args, result, thisArg, timeoutId, lastCalled = 0;
+
+    function trailingCall() {
+      lastCalled = new Date;
+      timeoutId = null;
+      result = func.apply(thisArg, args);
+    }
+    return function() {
+      var now = new Date,
+        remaining = wait - (now - lastCalled);
+
+      args = arguments;
+      thisArg = this;
+
+      if (remaining <= 0) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+        lastCalled = now;
+        result = func.apply(thisArg, args);
+      } else if (!timeoutId) {
+        timeoutId = setTimeout(trailingCall, remaining);
+      }
+      return result;
+    };
+  };
+})();
+(function() {
+  var Set = (function() {
+    var add = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          return;
+        }
+      }
+      this.size ++;
+      data.push(item);
+      return data;
+    };
+
+    var Set = function(data) {
+      this.size = 0;
+      this._data = [];
+      var i;
+      if (data.length > 0) {
+        for (i = 0; i < data.length; i++) {
+          add.call(this, data[i]);
+        }
+      }
+    };
+    Set.prototype.add = add;
+    Set.prototype.get = function(index) { return this._data[index]; };
+    Set.prototype.has = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (this.get(i) === item) {
+          return true;
+        }
+      }
+      return false;
+    };
+    Set.prototype.is = function(map) {
+      if (map._data.length !== this._data.length) { return false; }
+      var i, j, flag, tData = this._data, mData = map._data;
+      for (i = 0; i < tData.length; i++) {
+        for (flag = false, j = 0; j < mData.length; j++) {
+          if (tData[i] === mData[j]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) { return false; }
+      }
+      return true;
+    };
+    Set.prototype.values = function() {
+      return this._data;
+    };
+    return Set;
+  })();
+
+  window.Lazyload = (function(doc) {
+    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
+    var createNode = function(name, attrs) {
+      var node = doc.createElement(name), attr;
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          node.setAttribute(attr, attrs[attr]);
+        }
+      }
+      return node;
+    };
+    var end = function(type, url) {
+      var s, q, qi, cbs, i, j, cur, val, flag;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        s[url] = true;
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (cur.urls.has(url)) {
+            qi = cur, val = qi.urls.values();
+            qi && (cbs = qi.callbacks);
+            for (flag = true, j = 0; j < val.length; j++) {
+              cur = val[j];
+              if (!s[cur]) {
+                flag = false;
+              }
+            }
+            if (flag && cbs && cbs.length > 0) {
+              for (j = 0; j < cbs.length; j++) {
+                cbs[j].call(context);
+              }
+              qi.load = true;
+            }
+          }
+        }
+      }
+    };
+    var load = function(type, urls, callback) {
+      var s, q, qi, node, i, cur,
+        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (_urls.is(cur.urls)) {
+            qi = cur;
+            break;
+          }
+        }
+        val = _urls.values();
+        if (qi) {
+          callback && (qi.load || qi.callbacks.push(callback));
+          callback && (qi.load && callback());
+        } else {
+          q.push({
+            urls: _urls,
+            callbacks: callback ? [callback] : [],
+            load: false
+          });
+          for (i = 0; i < val.length; i++) {
+            node = null, url = val[i];
+            if (s[url] === undefined) {
+              (type === 'js' ) && (node = createNode('script', { src: url }));
+              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
+              if (node) {
+                node.onload = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
+                (doc.head || doc.body).appendChild(node);
+                s[url] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+    return {
+      js: function(url, callback) {
+        load('js', url, callback);
+      },
+      css: function(url, callback) {
+        load('css', url, callback);
+      }
+    };
+  })(this.document);
+})();
+</script><script>
+  (function() {
+    var TEXT_VARIABLES = {
+      version: '2.2.6',
+      sources: {
+        font_awesome: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.css',
+        jquery: 'https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js',
+        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
+        chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
+        gitalk: {
+          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
+          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
+        },
+        valine: 'https://unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js'
+      },
+      site: {
+        toc: {
+          selectors: 'h1,h2,h3'
+        }
+      },
+      paths: {
+        search_js: '/assets/search.js'
+      }
+    };
+    window.TEXT_VARIABLES = TEXT_VARIABLES;
+  })();
+</script>
+</head>
+  <body>
+    <div class="root" data-is-touch="false">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
+
+      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
+      <div class="header__title">
+        <div class="header__brand"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24">
+<style type="text/css">
+	.st0{fill:#515151;}
+</style>
+<path class="st0" d="M1.7,22.3c5.7-5.7,11.3-5.7,17,0c3.3-3.3,3.5-5.3,0.8-6c2.7,0.7,3.5-1.1,2.3-5.6s-3.3-5.2-6.3-2.1
+	c3-3,2.3-5.2-2.1-6.3S7,1.8,7.7,4.6C7,1.8,5,2.1,1.7,5.3C7.3,11,7.3,16.7,1.7,22.3"/>
+</svg>
+
+          <a title="Data Science Enthusiast
+" href="/">Jingwen Zheng</a>
+        </div><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></div><nav class="navigation">
+        <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
+      </nav></div>
+  </header>
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4));background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=python3">python3</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=R">R</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>May 04, 2018</span>
+            </li></ul></div><div class="article__header"><header><h1>Data structures - R vs Python</h1></header></div><p class="overlay__excerpt">I’ve learnt python since the beginning of this year. In this blog, I’ll comparethe data structures in R to Python briefly.ArrayRAtomic vectors  one-dimensional array  contain only one data type  sc...</p></div></div>
+              </div>
+            </div><div class ="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
+
+              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
+
+<!-- end custom main top snippet -->
+<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="Data structures - R vs Python"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2018-05-04T21:48:06+02:00">
+    <meta itemprop="keywords" content="python3,R"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><p>I’ve learnt python since the beginning of this year. In this blog, I’ll compare
+the data structures in R to Python briefly.</p>
+
+<h2 id="array">Array</h2>
+
+<h3 id="r">R</h3>
+
+<p><strong>Atomic vectors</strong></p>
+<ul>
+  <li>one-dimensional array</li>
+  <li>contain only one data type</li>
+  <li><em>scalars</em> are one-element vectors, e.g. <code class="language-plaintext highlighter-rouge">f &lt;- 3</code>, <code class="language-plaintext highlighter-rouge">g &lt;- "US"</code></li>
+  <li>function <code class="language-plaintext highlighter-rouge">c()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">v</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"k"</span><span class="p">,</span><span class="w"> </span><span class="s2">"j"</span><span class="p">,</span><span class="w"> </span><span class="s2">"w"</span><span class="p">,</span><span class="w"> </span><span class="s2">"d"</span><span class="p">,</span><span class="w"> </span><span class="s2">"v"</span><span class="p">)</span><span class="w">
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="s2">"k"</span><span class="w">
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">)]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="s2">"k"</span><span class="w"> </span><span class="s2">"w"</span><span class="w">
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="m">3</span><span class="o">:</span><span class="m">4</span><span class="p">]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="s2">"w"</span><span class="p">,</span><span class="w"> </span><span class="s2">"d"</span></code></pre></figure>
+
+<p><strong>Matrices</strong></p>
+<ul>
+  <li>two-dimensional array</li>
+  <li>each element has the same mode (numeric, character or logical)</li>
+  <li>function <code class="language-plaintext highlighter-rouge">matrix()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">m</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w">
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">m</span><span class="w">
+     </span><span class="p">[,</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="p">[,</span><span class="m">2</span><span class="p">]</span><span class="w"> </span><span class="p">[,</span><span class="m">3</span><span class="p">]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">,]</span><span class="w">    </span><span class="m">1</span><span class="w">    </span><span class="m">3</span><span class="w">    </span><span class="m">5</span><span class="w">
+</span><span class="p">[</span><span class="m">2</span><span class="p">,]</span><span class="w">    </span><span class="m">2</span><span class="w">    </span><span class="m">4</span><span class="w">    </span><span class="m">6</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">m</span><span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="p">]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">6</span><span class="w">
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">m</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="m">5</span></code></pre></figure>
+
+<p><strong>Arrays</strong></p>
+<ul>
+  <li>similar to matrices</li>
+  <li>more than two dimensions</li>
+  <li>function <code class="language-plaintext highlighter-rouge">array()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">dim1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"A1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"A2"</span><span class="p">)</span><span class="w">
+</span><span class="n">dim2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"B1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"B2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"B3"</span><span class="p">)</span><span class="w">
+</span><span class="n">dim3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"C1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"C2"</span><span class="p">)</span><span class="w">
+
+</span><span class="n">arr</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">array</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">12</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">dimnames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">dim1</span><span class="p">,</span><span class="w"> </span><span class="n">dim2</span><span class="p">,</span><span class="w"> </span><span class="n">dim3</span><span class="p">))</span><span class="w">
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arr</span><span class="w">
+</span><span class="p">,</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">C1</span><span class="w">
+
+   </span><span class="n">B1</span><span class="w"> </span><span class="n">B2</span><span class="w"> </span><span class="n">B3</span><span class="w">
+</span><span class="n">A1</span><span class="w">  </span><span class="m">1</span><span class="w">  </span><span class="m">3</span><span class="w">  </span><span class="m">5</span><span class="w">
+</span><span class="n">A2</span><span class="w">  </span><span class="m">2</span><span class="w">  </span><span class="m">4</span><span class="w">  </span><span class="m">6</span><span class="w">
+
+</span><span class="p">,</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">C2</span><span class="w">
+
+   </span><span class="n">B1</span><span class="w"> </span><span class="n">B2</span><span class="w"> </span><span class="n">B3</span><span class="w">
+</span><span class="n">A1</span><span class="w">  </span><span class="m">7</span><span class="w">  </span><span class="m">9</span><span class="w"> </span><span class="m">11</span><span class="w">
+</span><span class="n">A2</span><span class="w">  </span><span class="m">8</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">12</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="m">9</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,]</span><span class="w">
+</span><span class="n">C1</span><span class="w"> </span><span class="n">C2</span><span class="w"> 
+ </span><span class="m">3</span><span class="w">  </span><span class="m">9</span><span class="w"> 
+ 
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="m">1</span><span class="p">,,]</span><span class="w">
+   </span><span class="n">C1</span><span class="w"> </span><span class="n">C2</span><span class="w">
+</span><span class="n">B1</span><span class="w">  </span><span class="m">1</span><span class="w">  </span><span class="m">7</span><span class="w">
+</span><span class="n">B2</span><span class="w">  </span><span class="m">3</span><span class="w">  </span><span class="m">9</span><span class="w">
+</span><span class="n">B3</span><span class="w">  </span><span class="m">5</span><span class="w"> </span><span class="m">11</span></code></pre></figure>
+
+<h3 id="python">Python</h3>
+
+<ul>
+  <li>package <code class="language-plaintext highlighter-rouge">numpy</code></li>
+  <li>functions <code class="language-plaintext highlighter-rouge">numpy.array()</code>, <code class="language-plaintext highlighter-rouge">numpy.arange()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="kn">import</span> <span class="nn">numpy</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">arr_1d</span> <span class="o">=</span> <span class="n">numpy</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span> <span class="mf">5.2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">arr_1d</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">array</span><span class="p">([</span><span class="mf">6.</span> <span class="p">,</span> <span class="mf">5.2</span><span class="p">,</span> <span class="mf">2.</span> <span class="p">,</span> <span class="mf">7.</span> <span class="p">])</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">arr_2d</span> <span class="o">=</span> <span class="n">numpy</span><span class="p">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">arr_2d</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span>
+<span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+       <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">arr_3d</span> <span class="o">=</span> <span class="n">numpy</span><span class="p">.</span><span class="n">array</span><span class="p">([[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]],[[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]]])</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">arr_3d</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span>
+<span class="n">array</span><span class="p">([[[</span> <span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">],</span>
+        <span class="p">[</span> <span class="mi">4</span><span class="p">,</span>  <span class="mi">5</span><span class="p">,</span>  <span class="mi">6</span><span class="p">]],</span>
+       <span class="p">[[</span> <span class="mi">7</span><span class="p">,</span>  <span class="mi">8</span><span class="p">,</span>  <span class="mi">9</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]]])</span></code></pre></figure>
+
+<h2 id="list">List</h2>
+
+<h3 id="r-1">R</h3>
+
+<ul>
+  <li>an ordered collection of objects</li>
+  <li>allow to gather a variety of objects under one name</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">str</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"My first list"</span><span class="w">
+</span><span class="n">mtx</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w">
+</span><span class="n">intVtr</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">7</span><span class="p">,</span><span class="w"> </span><span class="m">32</span><span class="p">,</span><span class="w"> </span><span class="m">19</span><span class="p">)</span><span class="w">
+</span><span class="n">strVtr</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"one"</span><span class="p">,</span><span class="w"> </span><span class="s2">"two"</span><span class="p">)</span><span class="w">
+
+</span><span class="n">mylist</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">str</span><span class="p">,</span><span class="w"> </span><span class="n">ages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">intVtr</span><span class="p">,</span><span class="w"> </span><span class="n">mtx</span><span class="p">,</span><span class="w"> </span><span class="n">strVtr</span><span class="p">)</span><span class="w">
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mylist</span><span class="w">
+</span><span class="o">$</span><span class="n">title</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="s2">"My first list"</span><span class="w">
+
+</span><span class="o">$</span><span class="n">ages</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">  </span><span class="m">5</span><span class="w">  </span><span class="m">7</span><span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="m">19</span><span class="w">
+
+</span><span class="p">[[</span><span class="m">3</span><span class="p">]]</span><span class="w">
+     </span><span class="p">[,</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="p">[,</span><span class="m">2</span><span class="p">]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">,]</span><span class="w">    </span><span class="m">1</span><span class="w">    </span><span class="m">4</span><span class="w">
+</span><span class="p">[</span><span class="m">2</span><span class="p">,]</span><span class="w">    </span><span class="m">2</span><span class="w">    </span><span class="m">5</span><span class="w">
+</span><span class="p">[</span><span class="m">3</span><span class="p">,]</span><span class="w">    </span><span class="m">3</span><span class="w">    </span><span class="m">6</span><span class="w">
+
+</span><span class="p">[[</span><span class="m">4</span><span class="p">]]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="s2">"one"</span><span class="w"> </span><span class="s2">"two"</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mylist</span><span class="p">[[</span><span class="m">2</span><span class="p">]]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">  </span><span class="m">5</span><span class="w">  </span><span class="m">7</span><span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="m">19</span><span class="w">
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mylist</span><span class="p">[[</span><span class="s2">"ages"</span><span class="p">]]</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">  </span><span class="m">5</span><span class="w">  </span><span class="m">7</span><span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="m">19</span></code></pre></figure>
+
+<h3 id="python-1">Python</h3>
+
+<ul>
+  <li>variable-length</li>
+  <li>can be modified in-place</li>
+  <li><code class="language-plaintext highlighter-rouge">[]</code>, <code class="language-plaintext highlighter-rouge">list()</code></li>
+  <li>methods: <code class="language-plaintext highlighter-rouge">append()</code>, <code class="language-plaintext highlighter-rouge">insert()</code>, <code class="language-plaintext highlighter-rouge">pop()</code>, <code class="language-plaintext highlighter-rouge">remove()</code>, <code class="language-plaintext highlighter-rouge">extend()</code>, <code class="language-plaintext highlighter-rouge">sort()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="bp">None</span><span class="p">]</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="bp">None</span><span class="p">]</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">b_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">((</span><span class="s">'foo'</span><span class="p">,</span> <span class="s">'bar'</span><span class="p">))</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">b_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s">'pee'</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">b_list</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="p">[</span><span class="s">'foo'</span><span class="p">,</span> <span class="s">'pee'</span><span class="p">]</span></code></pre></figure>
+
+<h2 id="dataframe">Dataframe</h2>
+
+<h3 id="r-2">R</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">data.frame()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">patientId</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w">
+</span><span class="n">age</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">34</span><span class="p">,</span><span class="w"> </span><span class="m">23</span><span class="p">,</span><span class="w"> </span><span class="m">7</span><span class="p">)</span><span class="w">
+</span><span class="n">diabetes</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Type1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Type2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Type1"</span><span class="p">)</span><span class="w">
+</span><span class="n">status</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Poor"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Excellent"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Improved"</span><span class="p">)</span><span class="w">
+</span><span class="n">patientDF</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">patientId</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">,</span><span class="w"> </span><span class="n">diabetes</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">)</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">patientDF</span><span class="w">
+  </span><span class="n">patientId</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="n">diabetes</span><span class="w">    </span><span class="n">status</span><span class="w">
+</span><span class="m">1</span><span class="w">         </span><span class="m">1</span><span class="w">  </span><span class="m">34</span><span class="w">    </span><span class="n">Type1</span><span class="w">      </span><span class="n">Poor</span><span class="w">
+</span><span class="m">2</span><span class="w">         </span><span class="m">2</span><span class="w">  </span><span class="m">23</span><span class="w">    </span><span class="n">Type2</span><span class="w"> </span><span class="n">Excellent</span><span class="w">
+</span><span class="m">3</span><span class="w">         </span><span class="m">3</span><span class="w">   </span><span class="m">7</span><span class="w">    </span><span class="n">Type1</span><span class="w">  </span><span class="n">Improved</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">patientDF</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">2</span><span class="p">]</span><span class="w">
+  </span><span class="n">patientId</span><span class="w"> </span><span class="n">age</span><span class="w">
+</span><span class="m">1</span><span class="w">         </span><span class="m">1</span><span class="w">  </span><span class="m">34</span><span class="w">
+</span><span class="m">2</span><span class="w">         </span><span class="m">2</span><span class="w">  </span><span class="m">23</span><span class="w">
+</span><span class="m">3</span><span class="w">         </span><span class="m">3</span><span class="w">   </span><span class="m">7</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">patientDF</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="p">]</span><span class="w">
+  </span><span class="n">patientId</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="n">diabetes</span><span class="w"> </span><span class="n">status</span><span class="w">
+</span><span class="m">1</span><span class="w">         </span><span class="m">1</span><span class="w">  </span><span class="m">34</span><span class="w">    </span><span class="n">Type1</span><span class="w">   </span><span class="n">Poor</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">patientDF</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="s2">"patientId"</span><span class="p">,</span><span class="w"> </span><span class="s2">"age"</span><span class="p">)]</span><span class="w">
+  </span><span class="n">patientId</span><span class="w"> </span><span class="n">age</span><span class="w">
+</span><span class="m">1</span><span class="w">         </span><span class="m">1</span><span class="w">  </span><span class="m">34</span><span class="w">
+</span><span class="m">2</span><span class="w">         </span><span class="m">2</span><span class="w">  </span><span class="m">23</span><span class="w">
+</span><span class="m">3</span><span class="w">         </span><span class="m">3</span><span class="w">   </span><span class="m">7</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">patientDF</span><span class="o">$</span><span class="n">age</span><span class="w">
+</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="m">34</span><span class="w"> </span><span class="m">23</span><span class="w">  </span><span class="m">7</span></code></pre></figure>
+
+<h3 id="python-2">Python</h3>
+
+<ul>
+  <li>contain an ordered collection of columns</li>
+  <li>have both row and column index</li>
+  <li>package <code class="language-plaintext highlighter-rouge">pandas</code></li>
+  <li><code class="language-plaintext highlighter-rouge">pandas.DataFrame()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s">'state'</span><span class="p">:</span> <span class="p">[</span><span class="s">'Ohio'</span><span class="p">,</span> <span class="s">'Ohio'</span><span class="p">,</span> <span class="s">'Nevada'</span><span class="p">,</span> <span class="s">'Nevada'</span><span class="p">],</span>
+        <span class="s">'year'</span><span class="p">:</span> <span class="p">[</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2001</span><span class="p">,</span> <span class="mi">2002</span><span class="p">,</span> <span class="mi">2003</span><span class="p">],</span>
+        <span class="s">'pop'</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.7</span><span class="p">,</span> <span class="mf">3.6</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">]}</span>
+<span class="n">frame</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">'year'</span><span class="p">,</span> <span class="s">'state'</span><span class="p">,</span> <span class="s">'pop'</span><span class="p">])</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">frame</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+   <span class="n">year</span>   <span class="n">state</span>  <span class="n">pop</span>
+<span class="mi">0</span>  <span class="mi">2000</span>    <span class="n">Ohio</span>  <span class="mf">1.5</span>
+<span class="mi">1</span>  <span class="mi">2001</span>    <span class="n">Ohio</span>  <span class="mf">1.7</span>
+<span class="mi">2</span>  <span class="mi">2002</span>  <span class="n">Nevada</span>  <span class="mf">3.6</span>
+<span class="mi">3</span>  <span class="mi">2003</span>  <span class="n">Nevada</span>  <span class="mf">2.7</span></code></pre></figure>
+
+<p>Besides, there are some data structures which don’t exist in both R and Python:</p>
+
+<h2 id="factors-r">Factors (R)</h2>
+
+<ul>
+  <li>nominal / ordinal / continuous</li>
+  <li><code class="language-plaintext highlighter-rouge">factor()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">patientId</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w">
+</span><span class="n">age</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">34</span><span class="p">,</span><span class="w"> </span><span class="m">23</span><span class="p">,</span><span class="w"> </span><span class="m">7</span><span class="p">)</span><span class="w">
+</span><span class="n">diabetes</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Type1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Type2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Type1"</span><span class="p">)</span><span class="w">
+</span><span class="n">status</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Poor"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Excellent"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Improved"</span><span class="p">)</span><span class="w">
+</span><span class="n">diabetes</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">diabetes</span><span class="p">)</span><span class="w">
+</span><span class="n">status</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">status</span><span class="p">,</span><span class="w"> </span><span class="n">order</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">T</span><span class="p">)</span><span class="w">
+
+</span><span class="n">patientDF</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">patientId</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">,</span><span class="w"> </span><span class="n">diabetes</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="p">)</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">str</span><span class="p">(</span><span class="n">patientDF</span><span class="p">)</span><span class="w">
+</span><span class="s1">'data.frame'</span><span class="o">:</span><span class="w">	</span><span class="m">3</span><span class="w"> </span><span class="n">obs.</span><span class="w"> </span><span class="n">of</span><span class="w">  </span><span class="m">4</span><span class="w"> </span><span class="n">variables</span><span class="o">:</span><span class="w">
+ </span><span class="o">$</span><span class="w"> </span><span class="n">patientId</span><span class="o">:</span><span class="w"> </span><span class="n">num</span><span class="w">  </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w">
+ </span><span class="o">$</span><span class="w"> </span><span class="n">age</span><span class="w">      </span><span class="o">:</span><span class="w"> </span><span class="n">num</span><span class="w">  </span><span class="m">34</span><span class="w"> </span><span class="m">23</span><span class="w"> </span><span class="m">7</span><span class="w">
+ </span><span class="o">$</span><span class="w"> </span><span class="n">diabetes</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Factor</span><span class="w"> </span><span class="n">w</span><span class="o">/</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="s2">"Type1"</span><span class="p">,</span><span class="s2">"Type2"</span><span class="o">:</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">1</span><span class="w">
+ </span><span class="o">$</span><span class="w"> </span><span class="n">status</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="n">Ord.factor</span><span class="w"> </span><span class="n">w</span><span class="o">/</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="s2">"Excellent"</span><span class="o">&lt;</span><span class="s2">"Improved"</span><span class="o">&lt;</span><span class="n">..</span><span class="o">:</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w">
+
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">summary</span><span class="p">(</span><span class="n">patientDF</span><span class="p">)</span><span class="w">
+   </span><span class="n">patientId</span><span class="w">        </span><span class="n">age</span><span class="w">         </span><span class="n">diabetes</span><span class="w">       </span><span class="n">status</span><span class="w"> 
+ </span><span class="n">Min.</span><span class="w">   </span><span class="o">:</span><span class="m">1.0</span><span class="w">   </span><span class="n">Min.</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="m">7.00</span><span class="w">   </span><span class="n">Type1</span><span class="o">:</span><span class="m">2</span><span class="w">   </span><span class="n">Excellent</span><span class="o">:</span><span class="m">1</span><span class="w">  
+ </span><span class="m">1</span><span class="n">st</span><span class="w"> </span><span class="n">Qu.</span><span class="o">:</span><span class="m">1.5</span><span class="w">   </span><span class="m">1</span><span class="n">st</span><span class="w"> </span><span class="n">Qu.</span><span class="o">:</span><span class="m">15.00</span><span class="w">   </span><span class="n">Type2</span><span class="o">:</span><span class="m">1</span><span class="w">   </span><span class="n">Improved</span><span class="w"> </span><span class="o">:</span><span class="m">1</span><span class="w">  
+ </span><span class="n">Median</span><span class="w"> </span><span class="o">:</span><span class="m">2.0</span><span class="w">   </span><span class="n">Median</span><span class="w"> </span><span class="o">:</span><span class="m">23.00</span><span class="w">             </span><span class="n">Poor</span><span class="w">     </span><span class="o">:</span><span class="m">1</span><span class="w">  
+ </span><span class="n">Mean</span><span class="w">   </span><span class="o">:</span><span class="m">2.0</span><span class="w">   </span><span class="n">Mean</span><span class="w">   </span><span class="o">:</span><span class="m">21.33</span><span class="w">                          
+ </span><span class="m">3</span><span class="n">rd</span><span class="w"> </span><span class="n">Qu.</span><span class="o">:</span><span class="m">2.5</span><span class="w">   </span><span class="m">3</span><span class="n">rd</span><span class="w"> </span><span class="n">Qu.</span><span class="o">:</span><span class="m">28.50</span><span class="w">                          
+ </span><span class="n">Max.</span><span class="w">   </span><span class="o">:</span><span class="m">3.0</span><span class="w">   </span><span class="n">Max.</span><span class="w">   </span><span class="o">:</span><span class="m">34.00</span><span class="w"> </span></code></pre></figure>
+
+<h2 id="tuple-python">Tuple (Python)</h2>
+
+<ul>
+  <li>fixed-length</li>
+  <li>immutable</li>
+  <li><code class="language-plaintext highlighter-rouge">tuple()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">tup_int</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">tup_int</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">tup_str</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="s">'string'</span><span class="p">)</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">tup_str</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="p">(</span><span class="s">'s'</span><span class="p">,</span> <span class="s">'t'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">,</span> <span class="s">'i'</span><span class="p">,</span> <span class="s">'n'</span><span class="p">,</span> <span class="s">'g'</span><span class="p">)</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">tup_str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="s">'s'</span></code></pre></figure>
+
+<h2 id="dict-python">Dict (Python)</h2>
+
+<ul>
+  <li>hash map, associative array</li>
+  <li>key-value pairs</li>
+  <li><code class="language-plaintext highlighter-rouge">{}</code>, <code class="language-plaintext highlighter-rouge">,</code></li>
+  <li>methods: <code class="language-plaintext highlighter-rouge">del</code>, <code class="language-plaintext highlighter-rouge">pop()</code>, <code class="language-plaintext highlighter-rouge">update()</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">empty_dict</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">d1</span> <span class="o">=</span> <span class="p">{</span><span class="s">'a'</span><span class="p">:</span> <span class="s">'some value'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="p">{</span><span class="s">'a'</span><span class="p">:</span> <span class="s">'some value'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}</span>
+
+<span class="n">d1</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="s">'an integer'</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">di</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="p">{</span><span class="s">'a'</span><span class="p">:</span> <span class="s">'some value'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">7</span><span class="p">:</span> <span class="s">'an integer'</span><span class="p">}</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">d1</span><span class="p">[</span><span class="s">'b'</span><span class="p">])</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span></code></pre></figure>
+
+<h2 id="set-python">Set (Python)</h2>
+
+<ul>
+  <li>unordered collection</li>
+  <li>unique element</li>
+  <li><code class="language-plaintext highlighter-rouge">set()</code>, <code class="language-plaintext highlighter-rouge">{}</code></li>
+  <li>set operations: union, intersection, difference, symmetric difference</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="k">print</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">})</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span></code></pre></figure>
+
+<h2 id="list-set-and-dict-comprehensions-python">List, Set and Dict comprehensions (Python)</h2>
+
+<ul>
+  <li>form a new list by filtering the elements of a collection</li>
+  <li>
+    <p>transform the elements passing the filter in one concise expression</p>
+  </li>
+  <li>
+    <p>list comprehension
+<code class="language-plaintext highlighter-rouge">[expr for val in collection if condition]</code></p>
+  </li>
+  <li>
+    <p>dict comprehension
+<code class="language-plaintext highlighter-rouge">dict_comp = {key-expr : value-expr for value in collection if condition}</code></p>
+  </li>
+  <li>set comprehension
+<code class="language-plaintext highlighter-rouge">set_comp = {expr for value in collection if condition}</code></li>
+</ul>
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2018-05-04T21:48:06+02:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div></div><div class="article__license"><div class="license">
+    <p>This work is licensed under a <a itemprop="license" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a> license.
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img alt="Attribution-NonCommercial 4.0 International" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+      </a>
+    </p>
+  </div></div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/review-of-2017/">Review of 2017</a></div><div class="next"><span>NEXT</span><a href="/array-manipulation-r-vs-python/">Array manipulation - R vs Python</a></div></div></div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
+</script>
+</div><section class="page__comments d-print-none"><div id="disqus_thread"></div>
+  <script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  var disqus_config = function () {
+    this.page.url = 'https://jingwen-z.github.io//data-structures-r-vs-python/';
+    this.page.identifier = '/data-structures-r-vs-python';
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jingwen-z.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></section></article><!-- start custom main bottom snippet -->
+
+<!-- end custom main bottom snippet -->
+</div>
+            </div></div></div><div class="page__footer d-print-none">
+<footer class="footer py-4 js-page-footer">
+  <div class="main"><div itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jingwen Zheng"><meta itemprop="url" content="/"><meta itemprop="description" content="Data Science Enthusiast"><div class="footer__author-links"><div class="author-links">
+  <ul class="menu menu--nowrap menu--inline"><li title="Follow me on Linkedin.">
+        <a class="button button--circle linkedin-button" itemprop="sameAs" href="https://www.linkedin.com/in/jingwen-zheng" target="_blank">
+          <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M260.096 155.648c0 27.307008-9.899008 50.516992-29.696 69.632-19.796992 19.115008-45.396992 28.672-76.8 28.672-30.036992 0-54.612992-9.556992-73.728-28.672-19.115008-19.115008-28.672-42.324992-28.672-69.632 0-28.672 9.556992-52.224 28.672-70.656 19.115008-18.432 44.372992-27.648 75.776-27.648 31.403008 0 56.32 9.216 74.752 27.648 18.432 18.432 28.331008 41.984 29.696 70.656 0 0 0 0 0 0m-202.752 808.96c0 0 0-632.832 0-632.832 0 0 196.608 0 196.608 0 0 0 0 632.832 0 632.832 0 0-196.608 0-196.608 0 0 0 0 0 0 0m313.344-430.08c0-58.708992-1.364992-126.292992-4.096-202.752 0 0 169.984 0 169.984 0 0 0 10.24 88.064 10.24 88.064 0 0 4.096 0 4.096 0 40.96-68.267008 105.812992-102.4 194.56-102.4 68.267008 0 123.220992 22.868992 164.864 68.608 41.643008 45.739008 62.464 113.664 62.464 203.776 0 0 0 374.784 0 374.784 0 0-196.608 0-196.608 0 0 0 0-350.208 0-350.208 0-91.476992-33.451008-137.216-100.352-137.216-47.787008 0-81.236992 24.576-100.352 73.728-4.096 8.192-6.144 24.576-6.144 49.152 0 0 0 364.544 0 364.544 0 0-198.656 0-198.656 0 0 0 0-430.08 0-430.08 0 0 0 0 0 0" />
+</svg>
+</div>
+        </a>
+      </li><li title="Follow me on Github.">
+        <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/jingwen-z" target="_blank">
+          <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path class="svgpath" data-index="path_0" fill="#272636" d="M0 525.2c0 223.6 143.3 413.7 343 483.5 26.9 6.8 22.8-12.4 22.8-25.4l0-88.7c-155.3 18.2-161.5-84.6-172-101.7-21.1-36-70.8-45.2-56-62.3 35.4-18.2 71.4 4.6 113.1 66.3 30.2 44.7 89.1 37.2 119 29.7 6.5-26.9 20.5-50.9 39.7-69.6C248.8 728.2 181.7 630 181.7 513.2c0-56.6 18.7-108.7 55.3-150.7-23.3-69.3 2.2-128.5 5.6-137.3 66.5-6 135.5 47.6 140.9 51.8 37.8-10.2 80.9-15.6 129.1-15.6 48.5 0 91.8 5.6 129.8 15.9 12.9-9.8 77-55.8 138.8-50.2 3.3 8.8 28.2 66.7 6.3 135 37.1 42.1 56 94.6 56 151.4 0 117-67.5 215.3-228.8 243.7 26.9 26.6 43.6 63.4 43.6 104.2l0 128.8c0.9 10.3 0 20.5 17.2 20.5C878.1 942.4 1024 750.9 1024 525.3c0-282.9-229.3-512-512-512C229.1 13.2 0 242.3 0 525.2L0 525.2z" />
+</svg>
+</div>
+        </a>
+      </li></ul>
+</div>
+</div>
+    </div><div class="site-info mt-2">
+      <div>© Jingwen Zheng 2021,
+        Powered by <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/">Jekyll</a> & <a
+        title="TeXt is a super customizable Jekyll theme." href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>.
+      </div>
+    </div>
+  </div>
+</footer>
+</div></div>
+    </div><script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $body = $('body'), $window = $(window);
+    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
+    var activeCount = 0;
+    function modal(options) {
+      var $root = this, visible, onChange, hideWhenWindowScroll = false;
+      var scrollTop;
+      function setOptions(options) {
+        var _options = options || {};
+        visible = _options.initialVisible === undefined ? false : show;
+        onChange = _options.onChange;
+        hideWhenWindowScroll = _options.hideWhenWindowScroll;
+      }
+      function init() {
+        setState(visible);
+      }
+      function setState(isShow) {
+        if (isShow === visible) {
+          return;
+        }
+        visible = isShow;
+        if (visible) {
+          activeCount++;
+          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
+          $root.addClass('modal--show');
+          $pageMain.scrollTop(scrollTop);
+          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
+          $window.on('keyup', handleKeyup);
+        } else {
+          activeCount > 0 && activeCount--;
+          $root.removeClass('modal--show');
+          $window.scrollTop(scrollTop);
+          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
+          $window.off('keyup', handleKeyup);
+        }
+        onChange && onChange(visible);
+      }
+      function show() {
+        setState(true);
+      }
+      function hide() {
+        setState(false);
+      }
+      function handleKeyup(e) {
+        // Char Code: 27  ESC
+        if (e.which ===  27) {
+          hide();
+        }
+      }
+      setOptions(options);
+      init();
+      return {
+        show: show,
+        hide: hide,
+        $el: $root
+      };
+    }
+    $.fn.modal = modal;
+  });
+})();
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"><script>
+(function () {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    // search panel
+    var search = (window.search || (window.search = {}));
+    var useDefaultSearchBox = window.useDefaultSearchBox === undefined ?
+      true : window.useDefaultSearchBox ;
+
+    var $searchModal = $('.js-page-search-modal');
+    var $searchToggle = $('.js-search-toggle');
+    var searchModal = $searchModal.modal({ onChange: handleModalChange, hideWhenWindowScroll: true });
+    var modalVisible = false;
+    search.searchModal = searchModal;
+
+    var $searchBox = null;
+    var $searchInput = null;
+    var $searchClear = null;
+
+    function getModalVisible() {
+      return modalVisible;
+    }
+    search.getModalVisible = getModalVisible;
+
+    function handleModalChange(visible) {
+      modalVisible = visible;
+      if (visible) {
+        search.onShow && search.onShow();
+        useDefaultSearchBox && $searchInput[0] && $searchInput[0].focus();
+      } else {
+        search.onShow && search.onHide();
+        useDefaultSearchBox && $searchInput[0] && $searchInput[0].blur();
+        setTimeout(function() {
+          useDefaultSearchBox && ($searchInput.val(''), $searchBox.removeClass('not-empty'));
+          search.clear && search.clear();
+          window.pageAsideAffix && window.pageAsideAffix.refresh();
+        }, 400);
+      }
+    }
+
+    $searchToggle.on('click', function() {
+      modalVisible ? searchModal.hide() : searchModal.show();
+    });
+    // Char Code: 83  S, 191 /
+    $(window).on('keyup', function(e) {
+      if (!modalVisible && !window.isFormElement(e.target || e.srcElement) && (e.which === 83 || e.which === 191)) {
+        modalVisible || searchModal.show();
+      }
+    });
+
+    if (useDefaultSearchBox) {
+      $searchBox = $('.js-search-box');
+      $searchInput = $searchBox.children('input');
+      $searchClear = $searchBox.children('.js-icon-clear');
+      search.getSearchInput = function() {
+        return $searchInput.get(0);
+      };
+      search.getVal = function() {
+        return $searchInput.val();
+      };
+      search.setVal = function(val) {
+        $searchInput.val(val);
+      };
+
+      $searchInput.on('focus', function() {
+        $(this).addClass('focus');
+      });
+      $searchInput.on('blur', function() {
+        $(this).removeClass('focus');
+      });
+      $searchInput.on('input', window.throttle(function() {
+        var val = $(this).val();
+        if (val === '' || typeof val !== 'string') {
+          search.clear && search.clear();
+        } else {
+          $searchBox.addClass('not-empty');
+          search.onInputNotEmpty && search.onInputNotEmpty(val);
+        }
+      }, 400));
+      $searchClear.on('click', function() {
+        $searchInput.val(''); $searchBox.removeClass('not-empty');
+        search.clear && search.clear();
+      });
+    }
+  });
+})();
+</script><div class="search search--dark">
+  <div class="main">
+    <div class="search__header">Search</div>
+    <div class="search-bar">
+      <div class="search-box js-search-box">
+        <div class="search-box__icon-search"><i class="fas fa-search"></i></div>
+        <input type="text" />
+        <div class="search-box__icon-clear js-icon-clear">
+          <a><i class="fas fa-times"></i></a>
+        </div>
+      </div>
+      <button class="button button--theme-dark button--pill search__cancel js-search-toggle">
+        Cancel</button>
+    </div>
+    <div class="search-result js-search-result"></div>
+  </div>
+</div>
+<script>var SOURCES = window.TEXT_VARIABLES.sources;
+var PAHTS = window.TEXT_VARIABLES.paths;
+window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
+  var search = (window.search || (window.search = {}));
+  var searchData = window.TEXT_SEARCH_DATA || {};
+
+  function memorize(f) {
+    var cache = {};
+    return function () {
+      var key = Array.prototype.join.call(arguments, ',');
+      if (key in cache) return cache[key];
+      else return cache[key] = f.apply(this, arguments);
+    };
+  }
+
+  /// search
+  function searchByQuery(query) {
+    var i, j, key, keys, cur, _title, result = {};
+    keys = Object.keys(searchData);
+    for (i = 0; i < keys.length; i++) {
+      key = keys[i];
+      for (j = 0; j < searchData[key].length; j++) {
+        cur = searchData[key][j], _title = cur.title;
+        if ((result[key] === undefined || result[key] && result[key].length < 4 )
+          && _title.toLowerCase().indexOf(query.toLowerCase()) >= 0) {
+          if (result[key] === undefined) {
+            result[key] = [];
+          }
+          result[key].push(cur);
+        }
+      }
+    }
+    return result;
+  }
+
+  var renderHeader = memorize(function(header) {
+    return $('<p class="search-result__header">' + header + '</p>');
+  });
+
+  var renderItem = function(index, title, url) {
+    return $('<li class="search-result__item" data-index="' + index + '"><a class="button" href="' + url + '">' + title + '</a></li>');
+  };
+
+  function render(data) {
+    if (!data) { return null; }
+    var $root = $('<ul></ul>'), i, j, key, keys, cur, itemIndex = 0;
+    keys = Object.keys(data);
+    for (i = 0; i < keys.length; i++) {
+      key = keys[i];
+      $root.append(renderHeader(key));
+      for (j = 0; j < data[key].length; j++) {
+        cur = data[key][j];
+        $root.append(renderItem(itemIndex++, cur.title, cur.url));
+      }
+    }
+    return $root;
+  }
+
+  // search box
+  var $result = $('.js-search-result'), $resultItems;
+  var lastActiveIndex, activeIndex;
+
+  function clear() {
+    $result.html(null);
+    $resultItems = $('.search-result__item'); activeIndex = 0;
+  }
+  function onInputNotEmpty(val) {
+    $result.html(render(searchByQuery(val)));
+    $resultItems = $('.search-result__item'); activeIndex = 0;
+    $resultItems.eq(0).addClass('active');
+  }
+
+  search.clear = clear;
+  search.onInputNotEmpty = onInputNotEmpty;
+
+  function updateResultItems() {
+    lastActiveIndex >= 0 && $resultItems.eq(lastActiveIndex).removeClass('active');
+    activeIndex >= 0 && $resultItems.eq(activeIndex).addClass('active');
+  }
+
+  function moveActiveIndex(direction) {
+    var itemsCount = $resultItems ? $resultItems.length : 0;
+    if (itemsCount > 1) {
+      lastActiveIndex = activeIndex;
+      if (direction === 'up') {
+        activeIndex = (activeIndex - 1 + itemsCount) % itemsCount;
+      } else if (direction === 'down') {
+        activeIndex = (activeIndex + 1 + itemsCount) % itemsCount;
+      }
+      updateResultItems();
+    }
+  }
+
+  // Char Code: 13  Enter, 37  ⬅, 38  ⬆, 39  ➡, 40  ⬇
+  $(window).on('keyup', function(e) {
+    var modalVisible = search.getModalVisible && search.getModalVisible();
+    if (modalVisible) {
+      if (e.which === 38) {
+        modalVisible && moveActiveIndex('up');
+      } else if (e.which === 40) {
+        modalVisible && moveActiveIndex('down');
+      } else if (e.which === 13) {
+        modalVisible && $resultItems && activeIndex >= 0 && $resultItems.eq(activeIndex).children('a')[0].click();
+      }
+    }
+  });
+
+  $result.on('mouseover', '.search-result__item > a', function() {
+    var itemIndex = $(this).parent().data('index');
+    itemIndex >= 0 && (lastActiveIndex = activeIndex, activeIndex = itemIndex, updateResultItems());
+  });
+});
+</script>
+</div></div>
+
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function scrollToAnchor(anchor, duration, callback) {
+      var $root = this;
+      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
+        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
+        callback && callback();
+      });
+    }
+    $.fn.scrollToAnchor = scrollToAnchor;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function affix(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroll,
+        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
+        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
+        hasInit = false, curState;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroll && (scroll = _options.scroll);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $scrollTarget = $(scrollTarget);
+        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
+        $scroll = $(scroll);
+      }
+      function preCalc() {
+        top();
+        rootHeight = $root.outerHeight();
+        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
+        rootLeft = $root.offset().left;
+      }
+      function calc(needPreCalc) {
+        needPreCalc && preCalc();
+        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
+        rootBottomTop = scrollBottom - rootTop;
+      }
+      function top() {
+        if (curState !== 'top') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: 0
+          });
+          curState = 'top';
+        }
+      }
+      function fixed() {
+        if (curState !== 'fixed') {
+          $root.addClass('fixed').css({
+            left: rootLeft + 'px',
+            top: 0
+          });
+          curState = 'fixed';
+        }
+      }
+      function bottom() {
+        if (curState !== 'bottom') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: rootBottomTop + 'px'
+          });
+          curState = 'bottom';
+        }
+      }
+      function setState() {
+        var scrollTop = $scrollTarget.scrollTop();
+        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
+          fixed();
+        } else if (scrollTop < rootTop) {
+          top();
+        } else {
+          bottom();
+        }
+      }
+      function init() {
+        if(!hasInit) {
+          var interval, timeout;
+          calc(true); setState();
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState();
+          });
+          $window.on('resize', function() {
+            disabled || (calc(true), setState());
+          });
+          hasInit = true;
+        }
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions,
+        refresh: function() {
+          calc(true, { animation: false }); setState();
+        }
+      };
+    }
+    $.fn.affix = affix;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function toc(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
+        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
+        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.selectors && (selectors = _options.selectors);
+        _options.container && (container = _options.container);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroller && (scroller = _options.scroller);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $headings = $(container).find(selectors).filter('[id]');
+        $scrollTarget = $(scrollTarget);
+        $scroller = $(scroller);
+      }
+      function calc() {
+        headingsPos = [];
+        $headings.each(function() {
+          headingsPos.push(Math.floor($(this).position().top));
+        });
+      }
+      function setState(element, disabled) {
+        var scrollTop = $scrollTarget.scrollTop(), i;
+        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
+        if (element) {
+          $activeCur = element;
+        } else {
+          for (i = 0; i < headingsPos.length; i++) {
+            if (scrollTop >= headingsPos[i]) {
+              $activeCur = $tocLi.eq(i);
+            } else {
+              $activeCur || ($activeCur = $tocLi.eq(i));
+              break;
+            }
+          }
+        }
+        $activeLast && $activeLast.removeClass('active');
+        ($activeLast = $activeCur).addClass('active');
+      }
+      function render() {
+        if(!hasRendered) {
+          $root.append($tocUl);
+          $headings.each(function() {
+            var $this = $(this);
+            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
+              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
+          });
+          $tocLi = $tocUl.children('li');
+          $tocUl.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            scrolling = true;
+            setState($this.parent());
+            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
+              scrolling = false;
+            });
+          });
+        }
+        hasRendered = true;
+      }
+      function init() {
+        var interval, timeout;
+        if(!hasInit) {
+          render(); calc(); setState(null, scrolling);
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState(null, scrolling);
+          });
+          $window.on('resize', window.throttle(function() {
+            if (!disabled) {
+              render(); calc(); setState(null, scrolling);
+            }
+          }, 100));
+        }
+        hasInit = true;
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions
+      };
+    }
+    $.fn.toc = toc;
+  });
+})();
+/*(function () {
+
+})();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
+</script>
+    </div>
+    <script>(function () {
+  var $root = document.getElementsByClassName('root')[0];
+  if (window.hasEvent('touchstart')) {
+    $root.dataset.isTouch = true;
+    document.addEventListener('touchstart', function(){}, false);
+  }
+})();
+</script>
+  </body>
+</html>
+
