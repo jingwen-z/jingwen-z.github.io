@@ -1660,6 +1660,10 @@ a > .item__header.disabled, a > .item__header:disabled, a.item__header.disabled,
 
 .article__info .right-col > li:not(:last-child) { border: 0 solid #888; border-right-width: 1px; padding-right: 0.5rem; margin-right: 0.5rem; line-height: 1.2; }
 
+.article__info .separator { margin-left: 0.5rem; margin-right: 0.5rem; }
+
+.article__info .lang { font-size: 0.85rem; }
+
 .article__header { margin-top: 3rem; margin-bottom: 1.5rem; }
 
 @media (max-width: 499px) { .article__header { margin-top: 1.5rem; } }
