@@ -4,6 +4,7 @@ title:       "Data transformation with pandas vs. pyspark"
 lang:        en
 date:        "2020-09-08 22:09:23 +0200"
 tags:        [python3, pandas, pyspark]
+permalink:         /data-transformation-with-pandas-vs.-pyspark/
 comments:    true
 excerpt:     >
     This blog compares "pandas" and "pyspark" on data transformation with the

@@ -4,6 +4,7 @@ title:       "How to get geographic information by Google Geocoding API?"
 lang:        en
 date:        "2020-11-14 17:14:22 +0100"
 tags:        [python3, API]
+permalink:         /how-to-get-geographic-information-by-google-geocoding-api/
 comments:    true
 excerpt:     >
     In this blog, I presented how to get coordinates and address by Google

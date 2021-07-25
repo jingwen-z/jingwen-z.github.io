@@ -5,6 +5,7 @@ lang:        en
 date:               "2019-03-26 21:36:01 +0100"
 last_modified_at:   2019-04-02 22:31:54 +0200
 tags:               [Machine-Learning, Gradient-Descent-algorithm, review]
+permalink:         /resume-of-gradient-descent-algorithm/
 comments:           true
 excerpt:            >
     In this blog, I resumed characteristics of 3 different Gradient Descent

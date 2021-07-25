@@ -4,6 +4,7 @@ title:              What is Machine Learning?
 lang:        en
 date:               2016-08-14 23:32:43 +0200
 tags:               [Machine-Learning]
+permalink:         /what-is-machine-learning/
 comments:           true
 cover:             /images/tag-machine-learning.png
 img_width:   1280

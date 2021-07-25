@@ -4,6 +4,7 @@ title:       "R IN ACTION Review 3 - Time series (Part 1)"
 lang:        en
 date:        "2017-07-29 10:41:46 +0200"
 tags:        [R, Machine-Learning, Time-series]
+permalink:         /r-in-action-review-3-time-series-(part-1)/
 comments:    true
 cover:       /images/20170729-night.jpg
 article_header:

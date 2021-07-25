@@ -4,6 +4,7 @@ title:       "Introduction to matplotlib.pyplot"
 lang:        en
 date:        "2018-05-26 09:06:12 +0200"
 tags:        [matplotlib, visualisation]
+permalink:         /introduction-to-matplotlibpyplot/
 comments:    true
 cover:              /images/20180526-pexels-steve-johnson.jpg
 img_width:          1280

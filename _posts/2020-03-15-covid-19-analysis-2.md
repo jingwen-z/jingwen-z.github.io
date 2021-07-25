@@ -4,6 +4,7 @@ title:       "COVID-19 worldwide analysis (up to 2020-03-14)"
 lang:        en
 date:        "2020-03-15 19:17:18 +0100"
 tags:        [analysis, COVID-19, visualisation]
+permalink:         /covid-19-analysis-2/
 comments:    true
 excerpt:     >
     Since mid February, the situation of COVID-19 in China begins to be stable,

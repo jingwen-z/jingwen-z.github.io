@@ -4,6 +4,7 @@ title:              Measuring model performance or error
 lang:        en
 date:               2016-08-14 23:32:43 +0200
 tags:               [Machine-Learning]
+permalink:         /measuring-model-performance-or-error/
 comments:           true
 cover:             /images/20160814-pexels-engin-akyurt.jpg
 img_width:   1280

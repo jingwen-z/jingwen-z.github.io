@@ -4,6 +4,7 @@ title:       "How COVID-19 impacts people's working in France?"
 lang:        en
 date:        "2020-10-26 22:22:17 +0100"
 tags:        [analysis, COVID-19, visualisation, geovisualisation]
+permalink:         /how-covid19-impacts-people-working-in-france/
 comments:    true
 excerpt:     >
     This blog talks about how COVID-19 impacts people's working in France.

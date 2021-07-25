@@ -4,6 +4,7 @@ title:       "What is box plot ?"
 lang:        en
 date:        "2019-03-19 21:25:27 +0100"
 tags:        [statistics, matplotlib, visualisation]
+permalink:         /what-is-box-plot/
 comments:    true
 excerpt:     >
     This blog talks about what is box plot, understanding box plot with help of

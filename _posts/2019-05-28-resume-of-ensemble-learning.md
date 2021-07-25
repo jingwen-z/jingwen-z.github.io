@@ -5,6 +5,7 @@ lang:        en
 date:               "2019-05-28 18:54:17 +0200"
 last_modified_at:   2019-06-11 22:01:31 +0200
 tags:               [Machine-Learning, Ensemble-Learning, review]
+permalink:         /resume-of-ensemble-learning/
 comments:           true
 excerpt:            >
     In this blog, I introduced 3 Ensemble Learning algorithms: Voting

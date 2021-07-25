@@ -4,6 +4,7 @@ title:       "Do you know the reactions of Pfizer vaccine?"
 lang:        en
 date:        "2021-07-01 22:27:55 +0200"
 tags:        [analysis, visualisation, COVID-19]
+permalink:         /pfizer-biontech-covid-19-vaccine-reactions/
 comments:    true
 excerpt:     >
     The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information

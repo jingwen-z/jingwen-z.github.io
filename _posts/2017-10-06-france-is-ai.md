@@ -4,6 +4,7 @@ title:       "france is AI"
 lang:        en
 date:        "2017-10-06 13:48:00 +0200"
 tags:        [review]
+permalink:         /france-is-ai/
 comments:    true
 cover:       /images/20171006-franceisai.jpg
 article_header:

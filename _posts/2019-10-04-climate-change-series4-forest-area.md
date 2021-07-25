@@ -4,6 +4,7 @@ title:       "Climate change Series 4: Forest area"
 lang:        en
 date:        "2019-10-04 21:27:45 +0200"
 tags:        [analysis, climate, visualisation, geovisualisation]
+permalink:         /climate-change-series4-forest-area/
 comments:    true
 excerpt:     >
     Forests are the dominant terrestrial ecosystem of Earth, and are

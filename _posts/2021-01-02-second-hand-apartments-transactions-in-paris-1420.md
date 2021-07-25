@@ -5,6 +5,7 @@ lang:        en
 date:               "2021-01-02 22:20:57 +0100"
 last_modified_at:   2021-01-03 18:52:53 +0100
 tags:               [analysis, real-estate, visualisation, geovisualisation]
+permalink:         /second-hand-apartments-transactions-in-paris-1420/
 comments:           true
 excerpt:            >
     Paris is the capital and most populous city of France. Since the 17th

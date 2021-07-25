@@ -4,6 +4,7 @@ title:              UCSD Introduction to Big Data Week 1 & 2 review
 lang:        en
 date:               2016-12-07 23:32:43 +0200
 tags:               [MOOC]
+permalink:         /introduction-bd-week1-2/
 comments:           true
 article_header:
   type: overlay

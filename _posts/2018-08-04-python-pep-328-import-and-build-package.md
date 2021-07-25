@@ -4,6 +4,7 @@ title:       "Python PEP 328: import and build package"
 lang:        en
 date:        "2018-08-04 18:56:28 +0200"
 tags:        [python3, PEP-328]
+permalink:         /python-pep-328-import-and-build-package/
 comments:    true
 excerpt:            >
     This blog follows PEP 328 to specify how to import package absolutely or

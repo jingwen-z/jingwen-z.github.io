@@ -5,6 +5,7 @@ lang:        en
 date:               2019-01-08 21:37:26 +0100
 last_modified_at:   2019-01-15 22:24:27 +0100
 tags:               [python3, datetime, string]
+permalink:         /converting-between-datetime-and-string/
 comments:           true
 excerpt:            >
     This blog talks about converting datetime between string and datetime with

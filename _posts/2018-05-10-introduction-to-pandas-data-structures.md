@@ -4,6 +4,7 @@ title:       "Introduction to pandas data structures"
 lang:        en
 date:        "2018-05-10 14:49:48 +0200"
 tags:        [python3, pandas, data-structure]
+permalink:         /introduction-to-pandas-data-structures/
 comments:    true
 article_header:
   type: overlay

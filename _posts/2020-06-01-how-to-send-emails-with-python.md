@@ -4,6 +4,7 @@ title:       "How to send E-mails with Python?"
 lang:        en
 date:        "2020-06-01 15:39:06 +0200"
 tags:        [python3, smtp, unittest, mock]
+permalink:         /how-to-send-emails-with-python/
 comments:    true
 excerpt:     >
     This blog introduces how to set up a fake SMTP server and send e-mails with

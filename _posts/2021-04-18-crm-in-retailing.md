@@ -4,6 +4,7 @@ title:       "CRM in retailing"
 lang:        en
 date:        "2021-04-18 10:23:00 +0100"
 tags:        [retail]
+permalink:         /crm-in-retailing/
 comments:    true
 excerpt:     >
     In retailing domain, one of the most important things is increasing the

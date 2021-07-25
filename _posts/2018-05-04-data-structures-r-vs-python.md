@@ -4,6 +4,7 @@ title:       "Data structures - R vs Python"
 lang:        en
 date:        "2018-05-04 21:48:06 +0200"
 tags:        [python3, R]
+permalink:         /data-structures-r-vs-python/
 comments:    true
 article_header:
   type: overlay

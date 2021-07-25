@@ -5,6 +5,7 @@ lang:        en
 date:               2018-12-04 22:27:05 +0100
 last_modified_at:   2019-07-19 21:56:54 +0200
 tags:               [matplotlib, visualisation]
+permalink:         /data-viz-with-matplotlib-series10-lollipop-plot/
 comments:           true
 excerpt:            >
     This blog specifies how to create/custom basic lollipop plot and vertical

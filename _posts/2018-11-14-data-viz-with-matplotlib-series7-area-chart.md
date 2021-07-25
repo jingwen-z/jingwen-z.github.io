@@ -5,6 +5,7 @@ lang:        en
 date:               "2018-11-14 21:55:44 +0100"
 last_modified_at:   2019-07-01 23:17:20 +0200
 tags:               [matplotlib, visualisation]
+permalink:         /data-viz-with-matplotlib-series7-area-chart/
 comments:           true
 excerpt:            >
     This blog specifies how to create simple area charts, multiple area charts,

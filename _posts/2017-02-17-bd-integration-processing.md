@@ -5,6 +5,7 @@ lang:        en
 date:               2017-02-17 23:32:43 +0200
 last_modified_at:   2018-08-05 10:08:31 +0200
 tags:               [MOOC]
+permalink:         /bd-integration-processing/
 comments:           true
 excerpt:            >
     Introducing to basic concepts in big data integration and processing by

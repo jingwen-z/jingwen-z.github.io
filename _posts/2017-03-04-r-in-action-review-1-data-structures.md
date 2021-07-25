@@ -4,6 +4,7 @@ title:       R IN ACTION Review 1 - Data structures
 lang:        en
 date:        2017-03-04 23:32:43 +0200
 tags:        [R, data-structure]
+permalink:         /r-in-action-review-1-data-structures/
 comments:    true
 article_header:
   type: overlay

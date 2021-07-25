@@ -4,6 +4,7 @@ title:       "33 things to know about pandas dataframe"
 lang:        en
 date:        "2020-05-01 10:37:21 +0200"
 tags:        [python3, pandas, data-structure, dataframe]
+permalink:         /33-things-to-know-about-pandas-dataframe/
 comments:    true
 excerpt:     >
     33 things to know about pandas dataframe

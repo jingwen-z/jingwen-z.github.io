@@ -4,6 +4,7 @@ title:       "Excel: vlookup vs. index & match"
 lang:        en
 date:        "2020-11-18 08:56:52 +0100"
 tags:        [excel]
+permalink:         /excel-vlookup-vs-index-match/
 comments:    true
 excerpt:     >
     In this blog, I presented 3 excel functions, `vlookup`, `index`, and `match`,
