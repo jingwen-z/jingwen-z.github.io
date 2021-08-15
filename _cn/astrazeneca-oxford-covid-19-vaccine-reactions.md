@@ -7,7 +7,7 @@ tags:        [analysis, visualisation, COVID-19]
 comments:    true
 excerpt:     >
     牛津大学的阿斯利康疫苗试验组公布了不同年龄阶段的人群在接种阿斯利康新冠疫苗后的反应以及严重程度的数据。今天小编就带大家了解一下具体信息。
-cover:       /images/20210626-vaccin.jpg
+cover:       /images/20210821-astrazeneca.jpg
 img_width:   1280
 img_height:  853
 article_header:
