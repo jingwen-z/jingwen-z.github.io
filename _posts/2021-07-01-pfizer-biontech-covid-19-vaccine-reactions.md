@@ -8,7 +8,7 @@ permalink:         /pfizer-biontech-covid-19-vaccine-reactions/
 comments:    true
 excerpt:     >
     The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information
-cover:       /images/20210626-vaccin.jpg
+cover:       /images/20210626-pfizer-biontech.jpg
 img_width:   1280
 img_height:  853
 article_header:
