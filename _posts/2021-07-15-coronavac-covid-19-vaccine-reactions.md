@@ -4,7 +4,7 @@ title:       "Do you know the reactions of Coronavac vaccine?"
 lang:        en
 date:        "2021-07-15 22:27:55 +0200"
 tags:        [analysis, visualisation, COVID-19]
-permalink:         /pfizer-biontech-covid-19-vaccine-reactions/
+permalink:         /coronavac-covid-19-vaccine-reactions/
 comments:    true
 excerpt:     >
     Instituto Butantan announced the final results of the Phase III clinical
