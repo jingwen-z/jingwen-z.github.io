@@ -2,11 +2,11 @@
 layout:      post
 title:       "莫德纳疫苗的不良反应，你知道吗？"
 lang:        zh
-date:        "2021-08-21 22:18:53 +0200"
+date:        "2021-09-18 22:18:53 +0200"
 tags:        [analysis, visualisation, COVID-19]
 comments:    true
 excerpt:     >
-    牛津大学的阿斯利康疫苗试验组公布了不同年龄阶段的人群在接种阿斯利康新冠疫苗后的反应以及严重程度的数据。今天小编就带大家了解一下具体信息。
+    美国疾病控制与预防中心（CDC）最近公布了不同年龄阶段的人群在接种莫德纳（Moderna）新冠疫苗后的反应以及严重程度的数据。今天小编就带大家了解一下具体信息。
 cover:       /images/20210918-moderna.jpg
 img_width:   1280
 img_height:  853
