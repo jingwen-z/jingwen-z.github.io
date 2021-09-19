@@ -7,7 +7,7 @@ tags:        [analysis, visualisation, COVID-19]
 comments:    true
 excerpt:     >
     牛津大学的阿斯利康疫苗试验组公布了不同年龄阶段的人群在接种阿斯利康新冠疫苗后的反应以及严重程度的数据。今天小编就带大家了解一下具体信息。
-cover:       /images/20210626-vaccin.jpg
+cover:       /images/20210918-moderna.jpg
 img_width:   1280
 img_height:  853
 article_header:
@@ -109,7 +109,7 @@ wechat:      true
 - 大众迷你仓, "新冠疫苗接种后注意事项", _zhuanlan.zhihu.com_. [Online]. Available: [https://zhuanlan.zhihu.com/p/368304205][r4]
 - "local reaction", _medical-dictionary_. [Online]. Available: [https://medical-dictionary.thefreedictionary.com][r5]
 - Rod Brouhard, EMT-P, "Systemic Reaction Throughout the Body", _www.verywellhealth.com_. [Online]. Available: [https://www.verywellhealth.com/systemic-reaction-1298693][r6]
-- Alexandra_Koch, "corona vaccination virus vaccine", _pixabay.com_. [Online]. Available: [https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/][image]
+- "moderna", _cdn.futura-sciences.com_. [Online]. Available: [https://cdn.futura-sciences.com/buildsv6/images/wide1920/f/9/4/f94999f310_50180650_vaccin-moderna-markus-mainka-adobe-stock.jpg][image]
 
 [r2]: https://www.cdc.gov/vaccines/covid-19/info-by-product/moderna/reactogenicity.html
 [r3]: https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html
@@ -119,4 +119,4 @@ wechat:      true
 [b1]: https://jingwen-z.github.io/cn/pfizer-biontech-covid-19-vaccine-reactions/
 [b2]: https://jingwen-z.github.io/cn/coronavac-covid-19-vaccine-reactions/
 [b3]: https://jingwen-z.github.io/cn/astrazeneca-oxford-covid-19-vaccine-reactions/
-[image]: https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/
+[image]: https://cdn.futura-sciences.com/buildsv6/images/wide1920/f/9/4/f94999f310_50180650_vaccin-moderna-markus-mainka-adobe-stock.jpg
