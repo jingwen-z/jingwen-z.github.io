@@ -1,5 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-23T12:08:48+02:00</updated><id>https://jingwen-z.github.io//feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Do you know the reactions of Pfizer vaccine?</title><link href="https://jingwen-z.github.io//pfizer-biontech-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Pfizer vaccine?" /><published>2021-07-01T22:27:55+02:00</published><updated>2021-07-01T22:27:55+02:00</updated><id>https://jingwen-z.github.io//pfizer-biontech-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io//pfizer-biontech-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-23T12:09:06+02:00</updated><id>https://jingwen-z.github.io//feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Do you know the reactions of Coronavac vaccine?</title><link href="https://jingwen-z.github.io//pfizer-biontech-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Coronavac vaccine?" /><published>2021-07-15T22:27:55+02:00</published><updated>2021-07-15T22:27:55+02:00</updated><id>https://jingwen-z.github.io//coronavac-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io//pfizer-biontech-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with COVID-19, and scientists are also actively looking for solutions. To achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. A vaccine from theoretical design to clinical trials requires too much wisdom and effort from scientists. Among Chinese vaccines, the most familiar one is Coronavac vaccine, but do you know its adverse reactions?&lt;/p&gt;
+
+&lt;p&gt;Instituto Butantan announced the final results of the Phase III clinical trial of China’s Coronavac COVID-19 vaccine in Brazil. Today, I will take you to learn more about the specific information.&lt;/p&gt;
+
+&lt;h2 id=&quot;instituto-butantan&quot;&gt;Instituto Butantan&lt;/h2&gt;
+&lt;p&gt;Before starting the text, let’s get a general understanding of the Basilis Butantan Institute: It is the largest immunobiology and biopharmaceutical manufacturer in Latin America (and one of the largest in the world), and is considered to be the world’s main science One of the centers. It is world-famous for collecting venomous snakes as well as venomous lizards, spiders, insects and scorpions. By extracting the venom of reptiles and insects, the institute has developed antivenoms and drugs against many diseases, including tuberculosis, rabies, tetanus and diphtheria.&lt;/p&gt;
+
+&lt;h2 id=&quot;authorization&quot;&gt;Authorization&lt;/h2&gt;
+&lt;p&gt;Liu Peicheng, Director of Branding and Public Relations of Kexing, said that Kexing’s new crown vaccine has been approved for use in nearly 30 countries and regions, including China, Chile, Brazil, and Turkey, including emergency use, conditional listing or official listing, and has been launched one after another. Large-scale vaccination work. As of April 21, 2021, a total of 160 million doses have been vaccinated globally, including China. The World Health Organization (WHO) approved the emergency use of Kexing COVID-19 vaccine on June 1, 2021.&lt;/p&gt;
+
+&lt;h2 id=&quot;data-background&quot;&gt;Data background&lt;/h2&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210715-ethnic&quot; src=&quot;/images/20210715-ethnic.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210715-underlying-disease&quot; src=&quot;/images/20210715-underlying-disease.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;From July 21 to December 16, 2020, 12842 participants were screened at 16 research sites in Brazil, and 12408 participants were randomly grouped. A total of 12396 participants received at least one dose of Coxing vaccine or placebo, including 6195 in the vaccine group and 6,201 in the placebo group. Among the 12396 participants, 5.1% were elderly participants 60 years or older, 64.2% were women, and most of the participants claimed to be white (75.3%). More than half of the participants (55.9%) had underlying diseases, of which 22.5% were obese (BMI ≥ 30kg/m2). The average age and BMI of the participants were 39.5 years and 26.8 kg/m2, respectively.&lt;/p&gt;
+
+&lt;h2 id=&quot;most-adverse-reactions-will-occur-within-7-days-of-vaccination&quot;&gt;Most adverse reactions will occur within 7 days of vaccination&lt;/h2&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210715-global-1&quot; src=&quot;/images/20210715-global-1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Nearly 75% of adverse reactions occur within one week after vaccination, but adverse reactions occur within one hour after vaccination, but the probability is relatively low, about 7%.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210715-global-2&quot; src=&quot;/images/20210715-global-2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;In the trial population, half of them had adverse reactions with different symptoms and different degrees, and the probability of local reactions (62%) was slightly higher than that of systemic reactions (58%).&lt;/p&gt;
+
+&lt;p&gt;Local reaction: A reaction that occurs at the entrance of an infected organism or injection.
+Systemic reaction: When inflammation spreads from a local area of ​​an organ (such as the skin) to other organ systems in the body, it is called a systemic reaction.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-adverse-reactions-of-the-second-vaccination-were-milder-than-the-first&quot;&gt;The adverse reactions of the second vaccination were milder than the first&lt;/h2&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210715-common-local&quot; src=&quot;/images/20210715-common-local.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Judging from the common reactions after the two inoculations, among the local reactions, the reaction of the second inoculation will be slightly more obvious than the first but the difference is not much. The most common reaction is still pain at the injection site. The probability of this reaction in the second injection has increased by 1.83% compared with the first time. It is also the most likely increase in the probability of these five local reactions. In addition to the above-mentioned common adverse reactions, there are some reactions that will occur with a very small probability. For example, after the first dose of vaccination, there is a 0.1% probability of fever and a 0.06% probability of localized rash. After the second injection, the probability of hardening of the inoculation site, exfoliation of the epidermis, or pustules was less than 0.05%.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210715-common-systemic&quot; src=&quot;/images/20210715-common-systemic.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Judging from the common reaction after the two vaccination, in the systemic reaction, the reaction of the second vaccination was mostly weaker than that of the first vaccination. Especially for “headache”, “fatigue” and “nausea”, their chances of appearing decreased by 6.54%, 4.78% and 2% respectively. With regard to vomiting, hypersensitivity reactions, skin rashes, blushing and other adverse reactions, the probability of occurrence is less than 1%. In addition to the above-mentioned common adverse reactions, there are some reactions that will occur with a very small probability. For example, after the first dose of vaccination, there is a 0.42% probability of back pain, 0.26% of oral herpes, 0.19% probability of hyperhidrosis, rhinitis, conjunctivitis, muscle weakness, heart palpitations, etc. less than 1% will occur reaction. After the second injection, there is a 0.46% chance of limb pain, a 0.33% chance of breathing difficulties, a 0.11% chance of edema, and tachycardia, anxiety, pharyngitis, and other reactions less than 1%.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-should-i-pay-attention-to-after-vaccination&quot;&gt;What should I pay attention to after vaccination?&lt;/h2&gt;
+&lt;p&gt;Being vaccinated does not mean that everything will be well and that the virus will not invade. After observing, we still need to pay attention to some things:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Avoid eating spicy and irritating foods, seafood foods, and drinking alcohol. It is recommended to drink plenty of water (source: Zhihu)&lt;/li&gt;
+  &lt;li&gt;Try to avoid strenuous exercise and keep adequate rest (source: Zhihu)&lt;/li&gt;
+  &lt;li&gt;Measures should still be taken to protect yourself and others during travel (Source: CDC)&lt;/li&gt;
+  &lt;li&gt;You should still pay attention to the symptoms of COVID-19, especially when you are with patients. If you develop symptoms of COVID-19, you should be tested and self-isolate, stay away from others (Source: CDC)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;On the whole, in clinical trials, regardless of the first or second needle, there is a 45% probability that the injection site will feel pain, and there is a 20%-30% probability that you will feel tired or headache. After the second injection, the feeling will not be as obvious as the first injection.&lt;/p&gt;
+
+&lt;p&gt;After vaccination, you should pay attention to the light diet and keep adequate rest. Even if you are vaccinated, you must pay attention to protection.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;“Efficacy and Safety of a COVID-19 Inactivated Vaccine in Healthcare Professionals in Brazil: The PROFISCOV Study”, &lt;em&gt;europepmc.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://europepmc.org/article/PPR/PPR341815&quot;&gt;https://europepmc.org/article/PPR/PPR341815&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“克爾來福2019冠狀病毒病疫苗”, &lt;em&gt;zh.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E5%85%8B%E7%88%BE%E4%BE%86%E7%A6%8F2019%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97&quot;&gt;https://zh.wikipedia.org/wiki/%E5%85%8B%E7%88%BE%E4%BE%86%E7%A6%8F2019%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“辉瑞-生物科技COVID-19疫苗概述和安全性”, &lt;em&gt;chinese.cdc.gov&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&quot;&gt;https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;大众迷你仓, “新冠疫苗接种后注意事项”, &lt;em&gt;zhuanlan.zhihu.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://zhuanlan.zhihu.com/p/368304205&quot;&gt;https://zhuanlan.zhihu.com/p/368304205&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“local reaction”, &lt;em&gt;medical-dictionary&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://medical-dictionary.thefreedictionary.com&quot;&gt;https://medical-dictionary.thefreedictionary.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Rod Brouhard, EMT-P, “Systemic Reaction Throughout the Body”, &lt;em&gt;www.verywellhealth.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.verywellhealth.com/systemic-reaction-1298693&quot;&gt;https://www.verywellhealth.com/systemic-reaction-1298693&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Alexandra_Koch, “corona vaccination virus vaccine”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/&quot;&gt;https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html">Instituto Butantan announced the final results of the Phase III clinical trial of China's Coronavac COVID-19 vaccine in Brazil. Today, I will take you to learn more about the specific information.</summary></entry><entry xml:lang="en"><title type="html">Do you know the reactions of Pfizer vaccine?</title><link href="https://jingwen-z.github.io//pfizer-biontech-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Pfizer vaccine?" /><published>2021-07-01T22:27:55+02:00</published><updated>2021-07-01T22:27:55+02:00</updated><id>https://jingwen-z.github.io//pfizer-biontech-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io//pfizer-biontech-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with COVID-19, and scientists are also actively looking for solutions. To achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. A vaccine from theoretical design to clinical trials requires too much wisdom and effort from scientists. Among so many vaccines, the most familiar one is the Pfizer vaccine, but do you know its adverse reactions?&lt;/p&gt;
 
 &lt;p&gt;The Centers for Disease Control and Prevention (CDC) recently released data on the response and degree of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information.&lt;/p&gt;
@@ -1436,88 +1510,4 @@ for you.&lt;/p&gt;
 &lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;geralt, “New year 2020”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/illustrations/new-year-s-day-new-year-s-eve-4691183/&quot;&gt;https://pixabay.com/illustrations/new-year-s-day-new-year-s-eve-4691183/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html">Review of 2020.</summary></entry><entry xml:lang="en"><title type="html">Draw subway and tramway with folium</title><link href="https://jingwen-z.github.io//draw-subway-and-tramway-with-folium/" rel="alternate" type="text/html" title="Draw subway and tramway with folium" /><published>2020-12-07T22:06:04+01:00</published><updated>2020-12-07T22:06:04+01:00</updated><id>https://jingwen-z.github.io//draw-subway-and-tramway-with-folium</id><content type="html" xml:base="https://jingwen-z.github.io//draw-subway-and-tramway-with-folium/">&lt;p&gt;A map can clearly present information in terms of geography. Recently I learnt
-how to draw public transport lines with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;folium&lt;/code&gt; module in Python. In this blog,
-I will talk about how to do that with the following points:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Datasets&lt;/li&gt;
-  &lt;li&gt;Draw transport lines with “folium”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;datasets&quot;&gt;Datasets&lt;/h2&gt;
-&lt;p&gt;Before drawing maps, I’ll talk about the datasets which are used for this blog.
-I downloaded &lt;a href=&quot;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&quot;&gt;Île-de-France public transport network datasets&lt;/a&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;idf_transport_geo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data/transport/idf_ligne-transport.geojson'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data/transport/idf-emplacement-des-gares.csv'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;';'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decimal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;20201207-idf-transport-geo&quot; src=&quot;/images/20201207-idf-transport-geo.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;20201207-idf-station-df&quot; src=&quot;/images/20201207-idf-station-df.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lat'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lng'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Geo Point'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;','&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lat'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lat'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lng'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lng'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'mode_'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Metro'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'RER'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;To get stations’ coordinates (latitude, longitude), we split the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Geo Point&lt;/code&gt; by
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;,&lt;/code&gt;, convert the values to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;, and filter only the subway and RER(Réseau
-Express Régional, English: Regional Express Network).&lt;/p&gt;
-
-&lt;h2 id=&quot;draw-transport-lines-with-folium&quot;&gt;Draw transport lines with “folium”&lt;/h2&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;folium&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;idf_map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;folium&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;48.868&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.365&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zoom_start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tiles&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Cartodb dark_matter'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line_segment&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_transport_geo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'features'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;gjson&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;folium&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;features&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GeoJson&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line_segment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-                                    &lt;span class=&quot;n&quot;&gt;style_function&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'color'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'#00C4B3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                                                                &lt;span class=&quot;s&quot;&gt;'weight'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;idf_map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gjson&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idf_station_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iterrows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;folium&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CircleMarker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lat'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'lng'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;
-                        &lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                        &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'#00C4B3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                        &lt;span class=&quot;n&quot;&gt;fill_color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'#00C4B3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                        &lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idf_map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;idf_map&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;I applied &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;geometry&lt;/code&gt; which belongs to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;idf_transport_geo['features']&lt;/code&gt; with
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;folium.features.GeoJson&lt;/code&gt; to draw the transport lines, and add station points
-with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;folium.CircleMarker&lt;/code&gt;, then we get the following map.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;20201207-idf-map&quot; src=&quot;/images/20201207-idf-map.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&quot;easter-egg&quot;&gt;Easter egg&lt;/h3&gt;
-&lt;p&gt;I also visualise transport lines of many other cities:&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;20201207-public-transport-lines&quot; src=&quot;/images/20201207-public-transport-lines.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;If you are curious about the scripts, you will find them &lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/geovisualization/transport_lines.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;“Gares et stations du réseau ferré d’Île-de-France (par ligne)”, &lt;em&gt;data.iledefrance-mobilites.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&quot;&gt;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Stations de métro (Toulouse)”, &lt;em&gt;data.toulouse-metropole.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://data.toulouse-metropole.fr/explore/dataset/stations-de-metro/map/?location=16,43.60215,1.44379&amp;amp;basemap=jawg.streets&quot;&gt;https://data.toulouse-metropole.fr/explore/dataset/stations-de-metro/map/?location=16,43.60215,1.44379&amp;amp;basemap=jawg.streets&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Itinéraires de métro dans OpenStreetMap”, &lt;em&gt;www.data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/itineraires-de-metro-dans-openstreetmap/&quot;&gt;https://www.data.gouv.fr/fr/datasets/itineraires-de-metro-dans-openstreetmap/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Itinéraires de tramways dans OpenStreetMap”, &lt;em&gt;www.data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/itineraires-de-tramways-dans-openstreetmap/&quot;&gt;https://www.data.gouv.fr/fr/datasets/itineraires-de-tramways-dans-openstreetmap/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Using GeoPandas to convert Linestring UTM data to LatLong”, &lt;em&gt;gis.stackexchange.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://gis.stackexchange.com/questions/351846/using-geopandas-to-convert-linestring-utm-data-to-latlong&quot;&gt;https://gis.stackexchange.com/questions/351846/using-geopandas-to-convert-linestring-utm-data-to-latlong&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Converting UTM to Lat/Long with a geoJSON file in pyproj”, &lt;em&gt;gis.stackexchange.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://gis.stackexchange.com/questions/217012/converting-utm-to-lat-long-with-a-geojson-file-in-pyproj&quot;&gt;https://gis.stackexchange.com/questions/217012/converting-utm-to-lat-long-with-a-geojson-file-in-pyproj&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Converting projected coordinates to lat/lon using Python?”, &lt;em&gt;gis.stackexchange.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://gis.stackexchange.com/questions/78838/converting-projected-coordinates-to-lat-lon-using-python&quot;&gt;https://gis.stackexchange.com/questions/78838/converting-projected-coordinates-to-lat-lon-using-python&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;pyproj4, “pyproj4 / pyproj”, &lt;em&gt;github.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://github.com/pyproj4/pyproj&quot;&gt;https://github.com/pyproj4/pyproj&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Turbo87, “Turbo87 / utm”, &lt;em&gt;github.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://github.com/Turbo87/utm&quot;&gt;https://github.com/Turbo87/utm&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Universal Transverse Mercator coordinate system”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#From_UTM_coordinates_(E,_N,_Zone,_Hemi)_to_latitude,_longitude_(%CF%86,_%CE%BB)&quot;&gt;https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system#From_UTM_coordinates_(E,&lt;em&gt;N,_Zone,_Hemi)_to_latitude,_longitude&lt;/em&gt;(%CF%86,_%CE%BB)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;SplitShire, “metro subway rails railroad tracks”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/metro-subway-rails-railroad-tracks-407204/&quot;&gt;https://pixabay.com/photos/metro-subway-rails-railroad-tracks-407204/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="python3" /><category term="folium" /><category term="geovisualisation" /><summary type="html">This blog talks about how to draw public transport lines with &quot;folium&quot; module in Python.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html">Review of 2020.</summary></entry></feed>
