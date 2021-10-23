@@ -1,5 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-23T22:59:03+02:00</updated><id>https://jingwen-z.github.io//feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Do you know the reactions of Coronavac vaccine?</title><link href="https://jingwen-z.github.io//coronavac-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Coronavac vaccine?" /><published>2021-07-15T22:27:55+02:00</published><updated>2021-07-15T22:27:55+02:00</updated><id>https://jingwen-z.github.io//coronavac-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io//coronavac-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io//" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-23T23:00:24+02:00</updated><id>https://jingwen-z.github.io//feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Do you know the reactions of Oxford/AstraZeneca vaccine?</title><link href="https://jingwen-z.github.io//astrazeneca-oxford-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Oxford/AstraZeneca vaccine?" /><published>2021-08-20T22:27:55+02:00</published><updated>2021-08-20T22:27:55+02:00</updated><id>https://jingwen-z.github.io//astrazeneca-oxford-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io//astrazeneca-oxford-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with the COVID-19 virus, and scientists are also actively looking for solutions. In order to achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. And a vaccine from theoretical design to clinical trials requires too much wisdom and effort of scientists. Last time, I analyzed the adverse reactions of Pfizer vaccine and Kexing vaccine, and my friends wanted to know the side effects of AstraZeneca vaccine.&lt;/p&gt;
+
+&lt;p&gt;Today, I will borrow the data released by the AstraZeneca Vaccine Trial Group at the University of Oxford to show you the specific information. Before starting, introduce the following two terms that will be frequently mentioned next:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Local reaction: A reaction that occurs at the entrance of an infected organism or injection.&lt;/li&gt;
+  &lt;li&gt;Systemic reaction: When inflammation spreads from a local area of ​​an organ (such as the skin) to other organ systems in the body, it is called a systemic reaction.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;data-background&quot;&gt;Data background&lt;/h2&gt;
+&lt;p&gt;From May 30 to August 8, 2020, 560 participants were included in the study and randomly assigned to the experimental vaccine group or the control vaccine group: 160 participants between the ages of 18-55 (100 assigned To ChAdOx1 nCoV-19, 60 were assigned to MenACWY), 160 were 56-69 years old (120 were assigned to ChAdOx1 nCoV-19, 40 were assigned to MenACWY) and 240 were 70 years and older (200 were assigned to ChAdOx1 nCoV- 19, 40 were assigned to MenACWY).&lt;/p&gt;
+
+&lt;p&gt;18-55 years old population data: They include 47% of women, 82% of white people, 14% of Asian participants and 4% of other ethnic groups. The median age is 39 years. 92% were drinkers, 36% of participants had underlying diseases, and 20% had respiratory diseases.&lt;/p&gt;
+
+&lt;p&gt;Data for 56-69-year-olds: They include 53% of women, 87% of whites and 13% of Asian participants. The median age is 59.5 years. 97% were alcohol drinkers and 0 smokers. 23% of the participants had underlying diseases and 13% had cardiovascular diseases.&lt;/p&gt;
+
+&lt;p&gt;Data for people over 70 years old: 43% of them are women, and all participants are white. The median age is 73 years. 86% were drinkers and 0 smokers. 41% of the participants had underlying diseases and 27% had cardiovascular diseases.&lt;/p&gt;
+
+&lt;h2 id=&quot;tenderness-and-fatigue-are-the-most-common&quot;&gt;Tenderness and fatigue are the most common&lt;/h2&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-local-reactions-18-55&quot; src=&quot;/images/20210820-local-reactions-18-55.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-local-reactions-56-69&quot; src=&quot;/images/20210820-local-reactions-56-69.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-local-reactions-70plus&quot; src=&quot;/images/20210820-local-reactions-70plus.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Among the local reactions, tenderness and pain at the injection site are common adverse reactions of all ages, and they are most obvious after the first injection, especially for people aged 18-55 years old, the probability of occurrence is as high as 60%; compared to the pain at the injection site, The chance of itching and redness is much lower, less than 10%. In addition, people over the age of 70 have less than 5% of the possibility of swelling or induration after vaccination.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-sys-reactions-18-55&quot; src=&quot;/images/20210820-sys-reactions-18-55.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-sys-reactions-56-69&quot; src=&quot;/images/20210820-sys-reactions-56-69.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-sys-reactions-70plus&quot; src=&quot;/images/20210820-sys-reactions-70plus.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Among the systemic reactions, the overall risk of adverse reactions after the first injection is higher than that after the second injection. The more common ones are fatigue, headache and muscle pain. It is worth noting that the same adverse reactions increase with age. The probability of occurrence will be reduced. For example, among 18-55-year-olds, 75% of people will feel tired after the first injection, but for 56-69-year-olds, this proportion drops to 50%, and for 70-year-olds For the above population, this proportion is reduced to 41%.&lt;/p&gt;
+
+&lt;h2 id=&quot;different-people-have-different-levels-of-sensitivity&quot;&gt;Different people have different levels of sensitivity&lt;/h2&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-local-reactions-detail&quot; src=&quot;/images/20210820-local-reactions-detail.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;More than half of the population will experience mild tenderness, and about 60% of the 18-55-year-old population will experience mild or moderate pain at the injection site.&lt;/p&gt;
+
+&lt;p&gt;People aged 18-55 are the most sensitive to slight pain at the injection site. Especially at the first injection, more than 40% of them will feel slightly fatigued. This ratio is twice that of people over 70 years old. In addition, the injection site is suffering Almost all people suffering from pain are between 18-55 years old.&lt;/p&gt;
+
+&lt;p&gt;For itching, although the probability of occurrence is much lower than the first two, there are still 10% of people aged 18-55 who will feel moderate itching after the second injection.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-sys-reactions-details-1&quot; src=&quot;/images/20210820-sys-reactions-details-1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;More than 30% of people will feel slight fatigue regardless of the first or second injection. Among them, 56-69-year-olds are most sensitive to slight fatigue after the second injection. In addition, more than 20% of people aged 18-55 will experience moderate fatigue.&lt;/p&gt;
+
+&lt;p&gt;For headaches, the most common degree is mild headaches, and people aged 56-69 are the most sensitive to this. The probability of occurrence after the first injection is as high as 50%, but after the second injection, this proportion is reduced to 30% .&lt;/p&gt;
+
+&lt;p&gt;People over 18 years of age have a 20% chance of experiencing mild muscle pain after vaccination. In the trial, no people over 56 years of age felt moderate or more severe muscle pain, but about 20% of people aged 18-55 would have Feel moderate muscle pain.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-sys-reactions-details-2&quot; src=&quot;/images/20210820-sys-reactions-details-2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;After the first vaccination, 25% of the 18-55-year-old people will feel moderate discomfort, and those over 56 years old will have a 20% chance of feeling mild discomfort; after the second vaccination, the proportion of moderate discomfort will decrease. To about 5%, but there are still 20% of 18-55-year-old people feel mild discomfort.&lt;/p&gt;
+
+&lt;p&gt;For fever, people aged 18-55 have a 40% chance of experiencing mild, moderate or severe fever. This proportion is greatly reduced to 10% after the second injection; in addition, people over 56 years old will also have 10% chance of feeling mild fever.&lt;/p&gt;
+
+&lt;p&gt;Among people aged 18-55, the probability of joint pain is about 30%, especially after the first vaccination; for people over 56 years old, there is a 17% chance of feeling mild joint pain.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-sys-reactions-details-3&quot; src=&quot;/images/20210820-sys-reactions-details-3.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Among 18-55-year-olds, the probability of getting chills after the first shot is about 40%, and this rate is reduced to 14% after the second shot; people over 56 years old are not very sensitive to chills, only 10% Possibility.&lt;/p&gt;
+
+&lt;p&gt;After the first shot, about 27% of people aged 18-55 will feel nauseous, and after the second shot, this proportion drops to 8%; people aged 56-69 have a 13% chance of feeling slightly nauseous, on the contrary However, this proportion increased to 21% after the second shot.&lt;/p&gt;
+
+&lt;h2 id=&quot;are-astrazenecas-adverse-reactions-really-big&quot;&gt;Are AstraZeneca’s adverse reactions really big?&lt;/h2&gt;
+&lt;p&gt;King’s College London, Harvard Medical School and other units published an article on adverse reactions after injection of the COVID-19 vaccine on Lancet Infect Dis on April 21, 2021, which compared the different adverse effects after vaccination with Pfizer and AstraZeneca reaction. Let’s compare them below.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-local-reactions-pfizerVSaz&quot; src=&quot;/images/20210820-local-reactions-pfizerVSaz.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;In terms of local reactions, the first shot of AstraZeneca was not as severe as the first shot of Pfizer vaccine, especially the second shot of Pfizer. For some local reactions, the second injection of Pfizer is much more likely to occur than AstraZeneca, such as pain at the injection site (34.26% vs. 19.1%), swelling (9.75% vs. 5.5%), redness (7.23%) vs. 4.18%) etc.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210820-sys-reactions-pfizerVSaz&quot; src=&quot;/images/20210820-sys-reactions-pfizerVSaz.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;But if we look at the systemic reaction, the reaction to the first shot of AstraZeneca is more severe than the second shot of Pfizer, even if compared with the second shot of Pfizer: the probability of fatigue and headache is higher than that of the second shot of Pfizer by 7%-10 %, the chance of chills and shaking is more than double that of Pfizer (6.42% vs. 14.70%).&lt;/p&gt;
+
+&lt;h2 id=&quot;vaccination-with-astrazeneca--thrombosis&quot;&gt;Vaccination with AstraZeneca = Thrombosis?&lt;/h2&gt;
+&lt;p&gt;In February 2021, two Austrian women suffered from coagulation disorders after being vaccinated with the vaccine. One of them died and the other was hospitalized for pulmonary embolism. Although the connection between blood clots and vaccination was not yet established, people have naturally regarded blood clots as one of the side effects of the AstraZeneca vaccine. But is this really the case? How high is the chance of thrombosis?&lt;/p&gt;
+
+&lt;p&gt;In the“&lt;a href=&quot;https://www.who.int/news/item/16-04-2021-global-advisory-committee-on-vaccine-safety-(gacvs)-review-of-latest-evidence-of-rare-adverse-blood-coagulation-events-with-astrazeneca-covid-19-vaccine-(vaxzevria-and-covishield)&quot;&gt;Global Advisory Committee on Vaccine Safety (GACVS) review of latest evidence of rare adverse blood coagulation events with AstraZeneca COVID-19 Vaccine (Vaxzevria and Covishield)&lt;/a&gt;”published by the World Health Organization , it was mentioned that according to the latest available data, the AstraZeneca vaccine caused The risk of thrombotic thrombocytopenia syndrome appears to be very low. Data from the United Kingdom shows that there are about 4 cases per million adults (1 case per 250,000 people) vaccinated, while the EU estimates the ratio is about 1 case per 100,000 people. Luo Yijun, deputy head of the medical response team of the Taiwan Central Epidemic Command Center, said in mid-March that the incidence of thrombosis in Europeans and Americans is 5 to 10 times that of the yellow race.&lt;/p&gt;
+
+&lt;p&gt;Some investigators have investigated the age distribution of thrombotic thrombocytopenia syndrome. The Global Vaccine Safety Advisory Committee supports further research to understand age-related risks, because although existing data indicate that young people are at higher risk, further analysis is needed. Regarding the issue of gender-related risks, although more cases have been reported among women, it must be emphasized that more women are vaccinated, and some cases of thrombotic thrombocytopenia syndrome have also been reported among men.&lt;/p&gt;
+
+&lt;p&gt;There are four other categories of people, including those with thrombocytopenia or any coagulation abnormalities, and women who are pregnant or likely to become pregnant, etc., should first assess the benefits and risks before deciding whether to vaccinate. (Source: BBC)&lt;/p&gt;
+
+&lt;h2 id=&quot;what-should-i-pay-attention-to-after-vaccination&quot;&gt;What should I pay attention to after vaccination?&lt;/h2&gt;
+&lt;p&gt;Being vaccinated does not mean that everything will be well and that the virus will not invade. After observing, we still need to pay attention to some things:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Avoid eating spicy and irritating foods, seafood foods, and drinking alcohol. It is recommended to drink plenty of water (source: Zhihu)&lt;/li&gt;
+  &lt;li&gt;Try to avoid strenuous exercise and keep adequate rest (source: Zhihu)&lt;/li&gt;
+  &lt;li&gt;Measures should be taken to protect yourself and others during travel (Source: CDC)&lt;/li&gt;
+  &lt;li&gt;You should still pay attention to the symptoms of COVID-19, especially when you are with patients. If you develop symptoms of COVID-19, you should be tested and self-isolate, away from others (Source: CDC)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;On the whole, in clinical trials, regardless of the first or second needle, there is a 60% probability that the injection site will feel tenderness, and there is a 30%-50% probability that you will feel tired or headache. After the second injection, the feeling will not be as obvious as the first injection. In addition, considering that there are not many test samples, the credibility of the data needs to be confirmed.&lt;/p&gt;
+
+&lt;p&gt;After vaccination, you should pay attention to the lightness of your diet and maintain adequate rest. Even if you are vaccinated, you must pay attention to protection.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Maheshi N Ramasamy, Angela M Minassian, et Al. “Safety and immunogenicity of ChAdOx1 nCoV-19 vaccine administered in a prime-boost regimen in young and old adults (COV002): a single-blind, randomised, controlled, phase 2/3 trial”, &lt;em&gt;Lancet 2020; 396: 1979–93&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Cristina Menni, Kerstin Klaser, et Al. “Vaccine side-effects and SARS-CoV-2 infection after vaccination in users of the COVID Symptom Study app in the UK: a prospective observational study”, &lt;em&gt;Lancet Infect Dis 2021; 21: 939–49&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;“全球疫苗安全咨询委员会对阿斯利康COVID-19疫苗（Vaxzevria和Covishield）罕见不良凝血事件的最新证据的审查”, &lt;em&gt;www.who.int&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.who.int/news/item/16-04-2021-global-advisory-committee-on-vaccine-safety-(gacvs)-review-of-latest-evidence-of-rare-adverse-blood-coagulation-events-with-astrazeneca-covid-19-vaccine-(vaxzevria-and-covishield)&quot;&gt;https://www.who.int/zh/news/item/16-04-2021-global-advisory-committee-on-vaccine-safety-(gacvs)-review-of-latest-evidence-of-rare-adverse-blood-coagulation-events-with-astrazeneca-covid-19-vaccine-(vaxzevria-and-covishield)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“牛津－阿斯利康2019冠状病毒病疫苗”, &lt;em&gt;zh.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://zh.wikipedia.org/wiki/%E7%89%9B%E6%B4%A5%EF%BC%8D%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B72019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97&quot;&gt;https://zh.wikipedia.org/wiki/%E7%89%9B%E6%B4%A5%EF%BC%8D%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B72019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“阿斯利康疫苗：欧盟药监局确认血栓为该疫苗“罕见”副作用 年轻女性疑面临更大风险”, &lt;em&gt;www.bbc.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.bbc.com/zhongwen/simp/world-56614337&quot;&gt;https://www.bbc.com/zhongwen/simp/world-56614337&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“辉瑞-生物科技COVID-19疫苗概述和安全性”, &lt;em&gt;chinese.cdc.gov&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&quot;&gt;https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;大众迷你仓, “新冠疫苗接种后注意事项”, &lt;em&gt;zhuanlan.zhihu.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://zhuanlan.zhihu.com/p/368304205&quot;&gt;https://zhuanlan.zhihu.com/p/368304205&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“local reaction”, &lt;em&gt;medical-dictionary&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://medical-dictionary.thefreedictionary.com&quot;&gt;https://medical-dictionary.thefreedictionary.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Rod Brouhard, EMT-P, “Systemic Reaction Throughout the Body”, &lt;em&gt;www.verywellhealth.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.verywellhealth.com/systemic-reaction-1298693&quot;&gt;https://www.verywellhealth.com/systemic-reaction-1298693&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Alexandra_Koch, “corona vaccination virus vaccine”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/&quot;&gt;https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html">The AstraZeneca Vaccine Trial Group at the University of Oxford has released data on the response and severity of people at different ages after being vaccinated with AstraZeneca’s COVID-19 vaccine. Today, I will take you to learn more about the specific information.</summary></entry><entry xml:lang="en"><title type="html">Do you know the reactions of Coronavac vaccine?</title><link href="https://jingwen-z.github.io//coronavac-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Coronavac vaccine?" /><published>2021-07-15T22:27:55+02:00</published><updated>2021-07-15T22:27:55+02:00</updated><id>https://jingwen-z.github.io//coronavac-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io//coronavac-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with COVID-19, and scientists are also actively looking for solutions. To achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. A vaccine from theoretical design to clinical trials requires too much wisdom and effort from scientists. Among Chinese vaccines, the most familiar one is Coronavac vaccine, but do you know its adverse reactions?&lt;/p&gt;
 
 &lt;p&gt;Instituto Butantan announced the final results of the Phase III clinical trial of China’s Coronavac COVID-19 vaccine in Brazil. Today, I will take you to learn more about the specific information.&lt;/p&gt;
@@ -1379,135 +1515,4 @@ average unit price is less than 8500 euros.&lt;/p&gt;
   &lt;li&gt;Ehi Aigiomawu, “Analyzing time series data in Pandas”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&quot;&gt;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Will Koehrsen, “Time Series Analysis in Python: An Introduction”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&quot;&gt;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Walkerssk, “Paris France Eiffel tower night”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/&quot;&gt;https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris between January 2014 and June 2020.</summary></entry><entry xml:lang="en"><title type="html">Review of 2020</title><link href="https://jingwen-z.github.io//review-of-2020/" rel="alternate" type="text/html" title="Review of 2020" /><published>2020-12-29T21:40:05+01:00</published><updated>2021-01-04T22:42:49+01:00</updated><id>https://jingwen-z.github.io//review-of-2020</id><content type="html" xml:base="https://jingwen-z.github.io//review-of-2020/">&lt;p&gt;The year 2020 is a year unlike any other for every one of us. This year, we
-changed our working approach progressively; this year, most of us had more time
-to accompany our family; this year, we paid more attention to hygiene.&lt;/p&gt;
-
-&lt;p&gt;This year I enhanced my knowledge of retailing, improved my python and analysis
-by applying different projects. In the following, I’ll talk about:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Working in retailing&lt;/li&gt;
-  &lt;li&gt;Self-learning&lt;/li&gt;
-  &lt;li&gt;COVID-19 analysis&lt;/li&gt;
-  &lt;li&gt;Second-hand apartments transactions in Paris &amp;amp; Ile-de-France&lt;/li&gt;
-  &lt;li&gt;Blogs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;working-in-retailing&quot;&gt;Working in retailing&lt;/h2&gt;
-&lt;p&gt;After 3.5 years’ journey at Franprix, I started my adventure at “&lt;a href=&quot;https://www.inthememory.com/?lang=en&quot;&gt;In The Memory&lt;/a&gt;”
-since July of this year. I had a fruitful harvest by working at Franprix: I
-founded the Data Science Team with another colleague after setting up an
-infrastructure: Gitlab, e-mail reporting pipelines, and projects’ management
-tool; I entered the retailing world, saw its backstage, and understood how it
-worked by creating and maintaining 30+ reports for directors and different
-teams; learning and enhancing my skills in data engineering by automating ETL
-processes (SQL, python, GitLab) that allowed to make it easier to wrangle data
-and reduce time by as much as 50%; I also improved my analysis skill by applying
-descriptive &amp;amp; predictive models and visualising data with suitable graphs via
-python scripts to analyze products, clients’ preferences and predict products’
-sales.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;pot depart franprix&quot; src=&quot;/images/20201229-fx.jpeg&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.inthememory.com/?lang=en&quot;&gt;In The Memory&lt;/a&gt; is a retail-tech company that helps retail players to
-make the best use of the different internal and external data sources to meet
-their strategic and operational business challenges. Our products allow
-distributors and brands to accelerate their decision-making to attract more
-customers and make the best assortment, merchandising, pricing and promotional
-choices, in their various physical and online sales channels. We build tailored
-Augmented Intelligence solutions to meet clients’ priority challenges and serve
-their strategies by supporting their teams in change management, defining
-together the best KPIs to meet clients’ challenges, and adapting our solutions
-to the client’s needs, constraints and processes.&lt;/p&gt;
-
-&lt;p&gt;We have 3 teams: consultants, data scientists and developers. The colleagues of
-consultants team collects clients’ needs, transcribes the technical view points
-to discuss with the colleagues of data and dev team, to offer the solutions
-which satisfy the clients’ needs. For us data scientists, after discussing with
-our retailing experts, we define strategic indicators, develop and implement
-some algorithms with python and spark, then we’ll present the KPIs and data
-visualisation to the colleagues of the dev team, and to see if it’s reasonable
-and realizable for the platform.&lt;/p&gt;
-
-&lt;p&gt;The working atmosphere is amicably and dynamic, each week we have one meeting
-within the whole company, another for each team, which allow everyone to well
-know and follow all the projects (top transparency). Since mid-2020, we doubled
-the number of employees! During my 6-month working at In The Memory, I got a
-more global view of the retailing domain, enhanced my business thinking
-according to multiple projects, like CRM and new feature creation for our
-platform.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Memory CRM&quot; src=&quot;/images/20201229-CRM.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&quot;self-learning&quot;&gt;Self-learning&lt;/h2&gt;
-&lt;p&gt;This year I enriched my skills of extracting data via Google API. For example,
-I learnt &lt;a href=&quot;https://jingwen-z.github.io/how-to-get-geographic-information-by-google-geocoding-api/&quot;&gt;how to get geographic information by Google Geocoding API&lt;/a&gt;,
-understood &lt;a href=&quot;https://jingwen-z.github.io/how-to-get-a-youtube-video-information-with-youtube-data-api-by-python/&quot;&gt;how to get a YouTube video’s information with YouTube Data API&lt;/a&gt;,
-handled how to get places’ reviews on Google Maps by &lt;a href=&quot;https://jingwen-z.github.io/how-to-get-places-reviews-on-google-maps-by-place-api/&quot;&gt;Place API&lt;/a&gt; and
-&lt;a href=&quot;https://jingwen-z.github.io/how-to-get-places-reviews-on-google-by-google-my-business-api/&quot;&gt;Google My Business API&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Before arriving at In The Memory, considering that I need to realise data
-transformation with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyspark&lt;/code&gt;, I learnt how to manipulate data with it on
-&lt;a href=&quot;https://www.datacamp.com/courses/cleaning-data-with-pyspark&quot;&gt;datacamp&lt;/a&gt; and &lt;a href=&quot;https://jingwen-z.github.io/learning-pyspark-with-docker/&quot;&gt;applied that with docker&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;datacamp learning pyspark&quot; src=&quot;/images/20201229-datacamp.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Imagine that when we wrote a Python class to extract some business places’
-reviews with Google Place API, how could we ensure that we will extract the
-data correctly without sending requests to Google? In this case, I leart how to
-&lt;a href=&quot;https://jingwen-z.github.io/how-to-apply-mock-with-python-unittest-module/&quot;&gt;use python module &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unittest&lt;/code&gt; to mock&lt;/a&gt; a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;requests.get&lt;/code&gt; and to test if we
-will get the expectant result. Mocking objects can simulate the behavior of
-complex, real objects and are therefore useful when a real object is impractical
-or impossible to incorporate into a unit test.&lt;/p&gt;
-
-&lt;h2 id=&quot;covid-19-analysis&quot;&gt;COVID-19 analysis&lt;/h2&gt;
-&lt;p&gt;As I mentioned at the beginning, our life is impacted by COVID-19. I did some
-analysis for different continents, countries and cities with different
-visualisations on multiple aspects: confirmed cases evolution, daily cumulative
-confirmed count for each country, confirmed cases per 1 million people, deaths
-rate, etc. You can find them all &lt;a href=&quot;https://jingwen-z.github.io/tags/COVID-19/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;second-hand-apartments-transactions-in-paris--ile-de-france&quot;&gt;Second-hand apartments transactions in Paris &amp;amp; Ile-de-France&lt;/h2&gt;
-&lt;p&gt;Since the 17th century, Paris has been one of Europe’s major centers of finance,
-diplomacy, commerce, fashion, science, and the arts. According to the Economist
-Intelligence Unit Worldwide Cost of Living Survey in 2018, Paris was the second
-most expensive city in the world, after Singapore, and ahead of Zürich, Hong
-Kong, Oslo, and Geneva. Another source ranked Paris as the most expensive, on a
-par with Singapore and Hong Kong, in 2018. All these elements help to bring the
-increasing price of real estate in Paris. Thanks to the &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/#&quot;&gt;open data source&lt;/a&gt;,
-I went into them and found out the second-hand apartments transactions in
-&lt;a href=&quot;https://jingwen-z.github.io/second-hand-apartments-transactions-in-paris-1420/&quot;&gt;Paris&lt;/a&gt;, &lt;a href=&quot;https://jingwen-z.github.io/second-hand-apartments-transactions-in-idf-1420/&quot;&gt;Ile-de-France&lt;/a&gt; as well.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Second-hand apartments transactions in Ile-de-France&quot; src=&quot;/images/20201229-idf-map.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
-&lt;p&gt;This year I wrote 24 blogs (including this one), they talk about various topics:
-extracting data by Google APIs, data analysis, python application, unit test,
-geovisualisation.  Moreover, the traffic of my blog increases by 233%
-concerning 2019. I’m pretty glad if my blogs can help you and solve the problems
-for you.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Blog traffic 1&quot; src=&quot;/images/20201229-blog1.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Blog traffic 2&quot; src=&quot;/images/20201229-blog2.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Don’t hesitate if you want to ask questions or write comments, it’s welcome!!&lt;/p&gt;
-
-&lt;p&gt;Happy New Year! Hope to see you in 2021!&lt;/p&gt;
-
-&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;geralt, “New year 2020”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/illustrations/new-year-s-day-new-year-s-eve-4691183/&quot;&gt;https://pixabay.com/illustrations/new-year-s-day-new-year-s-eve-4691183/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html">Review of 2020.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris between January 2014 and June 2020.</summary></entry></feed>
