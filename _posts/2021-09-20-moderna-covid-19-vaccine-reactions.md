@@ -9,7 +9,7 @@ comments:    true
 excerpt:     >
     The Centers for Disease Control and Prevention (CDC) recently released data
     on the response and severity of people of different ages after being
-    vaccinated with the Moderna new crown vaccine. Today, I will take you to
+    vaccinated with the Moderna COVID-19 vaccine. Today, I will take you to
     learn more about the specific information.
 cover:       /images/20210918-moderna.jpg
 img_width:   1280
@@ -25,7 +25,7 @@ article_header:
 ## Introduction
 Since the beginning of 2020, people from all over the world have struggled with the COVID-19 virus, and scientists are also actively looking for solutions. In order to achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. And a vaccine from theoretical design to clinical trials requires too much wisdom and effort of scientists. Last time, I analyzed the adverse reactions of Pfizer vaccine, Coronavac vaccine and AstraZeneca vaccine, and my friends wanted to know the side effects of Modena vaccine.
 
-The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of people of different ages after being vaccinated with the Moderna new crown vaccine. Today, I will take you to learn more about the specific information. Before starting, introduce the following two terms that will be frequently mentioned next:
+The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of people of different ages after being vaccinated with the Moderna COVID-19 vaccine. Today, I will take you to learn more about the specific information. Before starting, introduce the following two terms that will be frequently mentioned next:
 - Local reaction: A reaction that occurs at the entrance of an infected organism or injection.
 - Systemic reaction: When inflammation spreads from a local area of ​​an organ (such as the skin) to other organ systems in the body, it is called a systemic reaction.
 
@@ -100,7 +100,7 @@ Overall, in clinical trials, regardless of the first or second needle, there is 
 
 After vaccination, you should pay attention to the light diet and keep adequate rest. Even if you are vaccinated, you must pay attention to protection.
 
-If you still want to know about the adverse reactions of Pfizer, Coxing and AstraZeneca's new crown vaccine, please click on the following article:
+If you still want to know about the adverse reactions of Pfizer, Coxing and AstraZeneca's COVID-19 vaccine, please click on the following article:
 
 - [Do you know the reactions of Pfizer vaccine?][b1]
 - [Do you know the reactions of Coronavac vaccine?][b2]
