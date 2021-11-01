@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-01T15:43:21+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-01T15:48:50+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
 </subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Do you know the reactions of Oxford/AstraZeneca vaccine?</title><link href="https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Oxford/AstraZeneca vaccine?" /><published>2021-08-20T22:27:55+02:00</published><updated>2021-08-20T22:27:55+02:00</updated><id>https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with the COVID-19 virus, and scientists are also actively looking for solutions. In order to achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. And a vaccine from theoretical design to clinical trials requires too much wisdom and effort of scientists. Last time, I analyzed the adverse reactions of Pfizer vaccine and Coronavac vaccine, and my friends wanted to know the side effects of AstraZeneca vaccine.&lt;/p&gt;
 
@@ -135,7 +135,99 @@
   &lt;li&gt;“local reaction”, &lt;em&gt;medical-dictionary&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://medical-dictionary.thefreedictionary.com&quot;&gt;https://medical-dictionary.thefreedictionary.com&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Rod Brouhard, EMT-P, “Systemic Reaction Throughout the Body”, &lt;em&gt;www.verywellhealth.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.verywellhealth.com/systemic-reaction-1298693&quot;&gt;https://www.verywellhealth.com/systemic-reaction-1298693&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Alexandra_Koch, “corona vaccination virus vaccine”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/&quot;&gt;https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html">The AstraZeneca Vaccine Trial Group at the University of Oxford has released data on the response and severity of people at different ages after being vaccinated with AstraZeneca’s COVID-19 vaccine. Today, I will take you to learn more about the specific information.</summary></entry><entry xml:lang="en"><title type="html">Do you know the reactions of Coronavac vaccine?</title><link href="https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Coronavac vaccine?" /><published>2021-07-15T22:27:55+02:00</published><updated>2021-07-15T22:27:55+02:00</updated><id>https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html">The AstraZeneca Vaccine Trial Group at the University of Oxford has released data on the response and severity of people at different ages after being vaccinated with AstraZeneca’s COVID-19 vaccine. Today, I will take you to learn more about the specific information.</summary></entry><entry xml:lang="en"><title type="html">Do you know the reactions of Modena vaccine?</title><link href="https://jingwen-z.github.io/moderna-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Modena vaccine?" /><published>2021-08-20T22:27:55+02:00</published><updated>2021-08-20T22:27:55+02:00</updated><id>https://jingwen-z.github.io/moderna-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/moderna-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with the COVID-19 virus, and scientists are also actively looking for solutions. In order to achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. And a vaccine from theoretical design to clinical trials requires too much wisdom and effort of scientists. Last time, I analyzed the adverse reactions of Pfizer vaccine, Coronavac vaccine and AstraZeneca vaccine, and my friends wanted to know the side effects of Modena vaccine.&lt;/p&gt;
+
+&lt;p&gt;The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of people of different ages after being vaccinated with the Moderna new crown vaccine. Today, I will take you to learn more about the specific information. Before starting, introduce the following two terms that will be frequently mentioned next:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Local reaction: A reaction that occurs at the entrance of an infected organism or injection.&lt;/li&gt;
+  &lt;li&gt;Systemic reaction: When inflammation spreads from a local area of ​​an organ (such as the skin) to other organ systems in the body, it is called a systemic reaction.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;data-background&quot;&gt;Data background&lt;/h2&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210920-ethnic&quot; src=&quot;/images/20210920-ethnic.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210920-underlying-disease&quot; src=&quot;/images/20210920-underlying-disease.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As of November 11, 2020, 30,350 participants were randomly assigned to the vaccine or placebo group at a 1:1 ratio, with a median follow-up period of 7 weeks after the second vaccination. 75.2% of the participants in the vaccine group were between 18 and 65 years old, 47.8% were women; 79% were white, 10% were black or African American, and 4.3% were Asian participants. The median age is 53 years. 27% of the participants had underlying diseases, and 5% had major heart diseases.&lt;/p&gt;
+
+&lt;h2 id=&quot;pain-at-the-injection-site-is-most-common&quot;&gt;Pain at the injection site is most common&lt;/h2&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210920-local-reactions&quot; src=&quot;/images/20210920-local-reactions.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Among the local reactions, pain at the injection site is a common adverse reaction of all ages, and it is most obvious after the second injection, especially for people aged 18-64 years old, the probability of occurrence is as high as 90%; compared to the pain at the injection site, redness The odds are much lower, less than 10%.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210920-sys-reactions&quot; src=&quot;/images/20210920-sys-reactions.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Among the systemic reactions, the overall probability of adverse reactions after the second injection is higher than that of the first injection, or even doubled. The more common ones are fatigue, headache and muscle pain; it is worth noting that the same adverse reactions As age increases, the probability of occurrence decreases. For example, among 18-64-year-olds, 68% of people will feel fatigued after the second injection, but for people 65 and older, this ratio drops to 58 %.&lt;/p&gt;
+
+&lt;h2 id=&quot;different-people-have-different-levels-of-sensitivity&quot;&gt;Different people have different levels of sensitivity&lt;/h2&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210920-local-reactions-detail&quot; src=&quot;/images/20210920-local-reactions-detail.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;About 80% of people will experience mild or moderate pain at the injection site, and 10%-15% will experience mild or moderate axillary swelling/tenderness.
+In addition, 4%-6% of people have slight or moderate swelling at the injection site after the first injection, and this proportion rises to 10%-12% after the second injection.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210920-sys-reactions-details-1&quot; src=&quot;/images/20210920-sys-reactions-details-1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;30%-40% of people will feel mild or moderate fatigue after the first injection. After the second injection, this proportion rises to 50%-60%, and there is a 10% probability of severe fatigue. .&lt;/p&gt;
+
+&lt;p&gt;In a similar situation, there is the symptom of headache. The difference is that the probability of severe headache is 3%-5%.&lt;/p&gt;
+
+&lt;p&gt;In addition, about 5%-10% of people will feel mild or moderate chills after the first injection. The proportion of people aged 18-64 after the second injection rises to 48%. For 65-year-olds About 30% of people and above feel mild or moderate chills after the second shot.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20210920-sys-reactions-details-2&quot; src=&quot;/images/20210920-sys-reactions-details-2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;About 20% of people will feel mild or moderate muscle pain after the first injection. After the second injection, this proportion rises to 40%-50%, and there is a 5%-10% probability that it will be severe. Fatigue.&lt;/p&gt;
+
+&lt;p&gt;The probability of joint pain is slightly lower than that of muscle pain. The probability of mild or moderate joint pain after the first shot is less than 20%, but after the second shot, the probability increases greatly, especially for people aged 18-64. One proportion doubles to 40%; and there is a 3%-6% probability that there will be severe joint pain.&lt;/p&gt;
+
+&lt;p&gt;Compared with the above adverse reactions, the probability of nausea or vomiting is not so high. After the first injection, there is a 5%-10% probability of feeling mild or moderate nausea or vomiting. This probability rises to 10%-20% after the second injection.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-should-i-pay-attention-to-after-vaccination&quot;&gt;What should I pay attention to after vaccination?&lt;/h2&gt;
+&lt;p&gt;Being vaccinated does not mean that everything will be well and that the virus will not invade. After observing, we still need to pay attention to some things:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Avoid eating spicy and irritating foods, seafood foods, and drinking alcohol. It is recommended to drink plenty of water (source: Zhihu)&lt;/li&gt;
+  &lt;li&gt;Try to avoid strenuous exercise and keep adequate rest (source: Zhihu)&lt;/li&gt;
+  &lt;li&gt;Measures should be taken to protect yourself and others during travel (Source: CDC)&lt;/li&gt;
+  &lt;li&gt;You should still pay attention to the symptoms of COVID-19, especially when you are with patients. If you develop symptoms of COVID-19, you should be tested and self-isolate, away from others (Source: CDC)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Overall, in clinical trials, regardless of the first or second needle, there is about 80% probability that the injection site will feel pain, and there is a 35%-60% probability that you will feel fatigue or headache. After the second injection, the feeling will be more obvious than the first injection, but most of them are mild or moderate.&lt;/p&gt;
+
+&lt;p&gt;After vaccination, you should pay attention to the light diet and keep adequate rest. Even if you are vaccinated, you must pay attention to protection.&lt;/p&gt;
+
+&lt;p&gt;If you still want to know about the adverse reactions of Pfizer, Coxing and AstraZeneca’s new crown vaccine, please click on the following article:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jingwen-z.github.io/pfizer-biontech-covid-19-vaccine-reactions/&quot;&gt;Do you know the reactions of Pfizer vaccine?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/&quot;&gt;Do you know the reactions of Coronavac vaccine?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions/&quot;&gt;Do you know the reactions of Oxford/AstraZeneca vaccine?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Vaccines and Related Biological Products Advisory Committee Meeting, “FDA Briefing Document Moderna COVID-19 Vaccine”, &lt;em&gt;December 17, 2020&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;“The Moderna COVID-19 Vaccine’s Local Reactions, Systemic Reactions, Adverse Events, and Serious Adverse Events”, &lt;em&gt;www.cdc.gov&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.cdc.gov/vaccines/covid-19/info-by-product/moderna/reactogenicity.html&quot;&gt;https://www.cdc.gov/vaccines/covid-19/info-by-product/moderna/reactogenicity.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“辉瑞-生物科技COVID-19疫苗概述和安全性”, &lt;em&gt;chinese.cdc.gov&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&quot;&gt;https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;大众迷你仓, “新冠疫苗接种后注意事项”, &lt;em&gt;zhuanlan.zhihu.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://zhuanlan.zhihu.com/p/368304205&quot;&gt;https://zhuanlan.zhihu.com/p/368304205&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“local reaction”, &lt;em&gt;medical-dictionary&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://medical-dictionary.thefreedictionary.com&quot;&gt;https://medical-dictionary.thefreedictionary.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Rod Brouhard, EMT-P, “Systemic Reaction Throughout the Body”, &lt;em&gt;www.verywellhealth.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.verywellhealth.com/systemic-reaction-1298693&quot;&gt;https://www.verywellhealth.com/systemic-reaction-1298693&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“moderna”, &lt;em&gt;cdn.futura-sciences.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://cdn.futura-sciences.com/buildsv6/images/wide1920/f/9/4/f94999f310_50180650_vaccin-moderna-markus-mainka-adobe-stock.jpg&quot;&gt;https://cdn.futura-sciences.com/buildsv6/images/wide1920/f/9/4/f94999f310_50180650_vaccin-moderna-markus-mainka-adobe-stock.jpg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html">The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of people of different ages after being vaccinated with the Moderna new crown vaccine. Today, I will take you to learn more about the specific information.</summary></entry><entry xml:lang="en"><title type="html">Do you know the reactions of Coronavac vaccine?</title><link href="https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Coronavac vaccine?" /><published>2021-07-15T22:27:55+02:00</published><updated>2021-07-15T22:27:55+02:00</updated><id>https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with COVID-19, and scientists are also actively looking for solutions. To achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. A vaccine from theoretical design to clinical trials requires too much wisdom and effort from scientists. Among Chinese vaccines, the most familiar one is Coronavac vaccine, but do you know its adverse reactions?&lt;/p&gt;
 
 &lt;p&gt;Instituto Butantan announced the final results of the Phase III clinical trial of China’s Coronavac COVID-19 vaccine in Brazil. Today, I will take you to learn more about the specific information.&lt;/p&gt;
@@ -1334,185 +1426,4 @@ more expensive(4k - 6k euros per m2).&lt;/p&gt;
   &lt;li&gt;Ehi Aigiomawu, “Analyzing time series data in Pandas”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&quot;&gt;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Will Koehrsen, “Time Series Analysis in Python: An Introduction”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&quot;&gt;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Pexels, “Paris gargoyle France architecture”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/paris-gargoyle-france-architecture-1852928/&quot;&gt;https://pixabay.com/photos/paris-gargoyle-france-architecture-1852928/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html">Île-de-France is the most populous of the 18 regions of France. It is located in the north-central part of the country and often called the Région Parisienne (&quot;Paris Region&quot;) because it includes the city of Paris. Besides the landmarks of Paris, the region has many important historic sites, including the Palace of Versailles and the Palace of Fontainebleau, as well as the most-visited tourist attraction in France, Disneyland Paris. The poverty rate in Île-de-France was 15.9% in 2015, compared with 12.3% in 2006. The region is also increasingly unequal. Housing prices have pushed the less affluent outside Paris. In this blog, I'll talk about the second-hand apartments purchases in Île-de-France between January 2014 and June 2020.</summary></entry><entry xml:lang="en"><title type="html">Second-hand apartments transactions in Paris (01/2014 - 06/2020)</title><link href="https://jingwen-z.github.io/second-hand-apartments-transactions-in-paris-1420/" rel="alternate" type="text/html" title="Second-hand apartments transactions in Paris (01/2014 - 06/2020)" /><published>2021-01-02T22:20:57+01:00</published><updated>2021-01-03T18:52:53+01:00</updated><id>https://jingwen-z.github.io/second-hand-apartments-transactions-in-paris-1420</id><content type="html" xml:base="https://jingwen-z.github.io/second-hand-apartments-transactions-in-paris-1420/">&lt;p&gt;Paris is the capital and most populous city of France. Since the 17th century,
-Paris has been one of Europe’s major centers of finance, diplomacy, commerce,
-fashion, science, and the arts. According to the Economist Intelligence Unit
-Worldwide Cost of Living Survey in 2018, Paris was the second most expensive
-city in the world, after Singapore, and ahead of Zürich, Hong Kong, Oslo and
-Geneva. Another source ranked Paris as the most expensive, on a par with
-Singapore and Hong Kong, in 2018. All these elements help to bring the
-increasing price of real estate in Paris. In this blog, I’ll talk about the
-second-hand apartments purchases in Paris between January 2014 and June 2020,
-with the following points:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Data description&lt;/li&gt;
-  &lt;li&gt;How large are the apartments?&lt;/li&gt;
-  &lt;li&gt;Which is the most expensive district?&lt;/li&gt;
-  &lt;li&gt;Relationship between area &amp;amp; apartment price?&lt;/li&gt;
-  &lt;li&gt;Price evolution in terms of timing?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;data-description&quot;&gt;Data description&lt;/h2&gt;
-&lt;p&gt;First of all, I downloaded real estate transactions’ data on the &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/&quot;&gt;site of
-government&lt;/a&gt;. In the dataset, we have transaction’s information
-from January 2014 to June 2020, like “id_mutation” to identify the transaction,
-“nature_mutation” specifies the sale’s nature, “nombre_pieces_principales”
-indicates the number of rooms, “valeur_fonciere” presents the sold price,
-“code_commune”, “nom_commune” and “code_departement” specify the communities and
-departments, “surface_reelle_bati” describes the real surface area, longitude
-and latitude can help us to determine the location.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;vf.info()&quot; src=&quot;/images/20210102-vf75.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;For this analysis, I only took account of second-hand apartments’ transactions
-with a positive area in Paris.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-large-are-the-apartments&quot;&gt;How large are the apartments?&lt;/h2&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;QP piece number&quot; src=&quot;/images/20210102-quotepart-piece-number.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;I classed second-hand apartments into 5 groups in terms of piece’s number: T1,
-which means one-room apartment with around 23 m2; T2, which means two-room
-apartment with around 40 m2; T3 presents three-room apartment around 63 m2; T4
-are four-room apartments nearly 93 m2; T5 are five-room apartments with a larger
-area of about 147 m2. This donut chart describes the quote-part of different
-pieces’ apartment among the transactions. T1 and T2 hold 60% transactions, 22%
-transactions sold T3 apartments, other purchases are for larger apartments.
-Let’s go further on the details.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Unit price for different piece number&quot; src=&quot;/images/20210102-unit-price-piece-number.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This graph describes the average price m2 for the different number of piece
-second-hand apartments in Paris, between January 2014 and June 2020. According
-to the second graph, we find that although T2 and T3 are much larger than T1,
-their unit prices are 5.3% and 4.7% lower than the unit price of T1. Moreover,
-the average area of T4 is three times larger than T1, its unit price is only 4%
-more expensive than T1; similar for other piece-number apartments. Why are T1
-apartments that expensive per m2? That might be because there are many students
-or young workers in Paris, they need to rent a big enough apartment, which makes
-investors invest in T1 apartments, which also leads to higher demands on T1.&lt;/p&gt;
-
-&lt;h2 id=&quot;which-is-the-most-expensive-district&quot;&gt;Which is the most expensive district?&lt;/h2&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;District price&quot; src=&quot;/images/20210102-district-price.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;According to this map, we observe that the second-hand apartments in districts
-1, 4, 6, 7 are much more expensive than other districts, their average unit
-price is at least 12000 euros; on the contrary, the second-hand apartments in
-districts 13, 19, and 20 are much cheaper than others, their average unit price
-is less than 8500 euros. This might be caused by geographical positions, the
-number of pieces, the apartment’s state, the performance of energy, public
-security, etc. The public transport in the city center is more than in other
-areas, there are also lots of shopping centers or tourist spots, which attracts
-a great deal of people, so that makes the city center to be more valuable.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, according to the stacked bar plot below, it’s obvious that there
-are much more transactions in the 16th district than other areas, nearly 50%
-sold apartments are 2-room or 3-room apartments, and the transaction amount of
-T4 is pretty larger than all other districts. Paris 16 is eminently residential,
-as evidenced by its charming buildings with green courtyards and balconies. But
-it is also a Parisian cultural hotspot with many museums and emblematic places
-from both a historical and intellectual point of view. Moreover, it concentrates
-on many schools and establishments of choice for the education of children and
-students. All these might be the reason why the transactions in Paris 16 are
-much more than in other districts. For the districts as 1st, 2nd, or 3rd
-district, more than one-third of sold apartments are T1 apartments, that might
-because there are not that many apartments at the center of Paris, and its unit
-price is high.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Unit price per piece nb in different districts&quot; src=&quot;/images/20210102-unit-price-piece-number-district.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&quot;relationship-between-area--apartment-price&quot;&gt;Relationship between area &amp;amp; apartment price?&lt;/h2&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Relationship between area and apartment price in different districts&quot; src=&quot;/images/20210102-area-price-district.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;According to this group of scatter plots, we can simply get the relationship
-between second-hand apartments’ price and their area. Each point stands for one
-transaction, the plots on the red dash line mean that the price per m2 of these
-transactions is 10k euros. The points above the dashed line indicate their unit
-price is greater than 10k euros; otherwise, it’s less than 10k euros per m2.&lt;/p&gt;
-
-&lt;p&gt;For the transactions of the downtown area, most of them are smaller than 50 m2,
-but their price varies widely to nearly 2 million euros; on the other hand, for
-the 8th, 16th, and 17th district, almost sold apartments’ price also arrive more
-than 2 million euros, but their area varies widely to 200 m2; moreover, there
-are also apartments whose unit price and area don’t vary that widely, as in
-13th, 18th, 19th, and 20th district, most of the apartments here are smaller
-than 100 m2 and cheaper than 1 million euros, so than less than 10k euros per
-m2.&lt;/p&gt;
-
-&lt;h2 id=&quot;price-evolution-in-terms-of-timing&quot;&gt;Price evolution in terms of timing?&lt;/h2&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Tx amount &amp;amp; unit price evolution 14-20&quot; src=&quot;/images/20210102-transaction-amount-unit-price-1420.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This graph describes second-hand apartments’ transaction amount and average
-price per m2 of Paris, between January 2014 and June 2020. The orange line shows
-the monthly average price per m2, the blue area displays the monthly transaction
-amount. During 6.5 years, the average price per m2 increases by 28%
-(11.1/8.7 - 1), especially from the year 2017, the average price per m2
-increases by nearly 31% (11.1/8.5 - 1). Moreover, the transaction amount arrives
-at the yearly lowest point in August, which might because people go on holiday
-at that time; on the contrary, the transactions in July or September are higher
-than in other months, which means that people usually sign the purchase promise
-in May or July (supposed that we have 2 months for negotiating the credit
-between the purchase promise and purchase agreement) so that they can sign the
-agreement before their holiday or before the school opening.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Time series decomposition&quot; src=&quot;/images/20210102-time-series-paris.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Then I used Time Series &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;additive&lt;/code&gt; model to decompose data into a trend
-component, a seasonal component, and a residual component. The trend component
-captures changes over time, the seasonal component captures cyclical effects
-due to the time of year, the residual component captures the influences not
-described by the trend and seasonal effects. Thanks to this model, we find that
-except for July, there is another transaction peak in January, which we didn’t
-find above. In March and November, the transactions arrive at their low points,
-that might be because, during the transition period between 2 years, the desire
-for purchasing or selling apartments is not that high.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Unit price prediction&quot; src=&quot;/images/20210102-price-prediction-paris.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Moreover, I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fbprophet&lt;/code&gt; module to predict the price per m2. The black
-points present actual values, the blue line indicates the forecasted values,
-and the light blue shaded region is the uncertainty. The uncertainty’s region
-increases for the prediction because of the initial uncertainty and it grows
-over time. This can be impacted by policy, social elements, or some others.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;According to this analysis, we find that among all transactions of second-hand
-apartments in Paris, T1 and T2 hold 60% transactions. The second-hand apartments
-in districts 1, 4, 6 and 7 are much more expensive than other districts, their
-average unit price is at least 12000 euros; on the contrary, the second-hand
-apartments in districts 13, 19 and 20 are much cheaper than others, their
-average unit price is less than 8500 euros.&lt;/p&gt;
-
-&lt;p&gt;You can find all codes in &lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/analysis/dvf/dvf_Paris_analysis.ipynb&quot;&gt;this notebook&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;DGFiP, “Demandes de valeurs foncières géolocalisées”, &lt;em&gt;data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/&quot;&gt;https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Grégoire David, “Departments polygon”, &lt;em&gt;github.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson&quot;&gt;https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;APUR, “APUR : Communes - Ile de France”, &lt;em&gt;data.gouv.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.data.gouv.fr/fr/datasets/apur-communes-ile-de-france/&quot;&gt;https://www.data.gouv.fr/fr/datasets/apur-communes-ile-de-france/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Paris”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Paris&quot;&gt;https://en.wikipedia.org/wiki/Paris&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Ehi Aigiomawu, “Analyzing time series data in Pandas”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&quot;&gt;https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Will Koehrsen, “Time Series Analysis in Python: An Introduction”, &lt;em&gt;towardsdatascience.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&quot;&gt;https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Walkerssk, “Paris France Eiffel tower night”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/&quot;&gt;https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris between January 2014 and June 2020.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html">Île-de-France is the most populous of the 18 regions of France. It is located in the north-central part of the country and often called the Région Parisienne (&quot;Paris Region&quot;) because it includes the city of Paris. Besides the landmarks of Paris, the region has many important historic sites, including the Palace of Versailles and the Palace of Fontainebleau, as well as the most-visited tourist attraction in France, Disneyland Paris. The poverty rate in Île-de-France was 15.9% in 2015, compared with 12.3% in 2006. The region is also increasingly unequal. Housing prices have pushed the less affluent outside Paris. In this blog, I'll talk about the second-hand apartments purchases in Île-de-France between January 2014 and June 2020.</summary></entry></feed>
