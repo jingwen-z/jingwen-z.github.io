@@ -18,7 +18,7 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://jingwen-z.github.io/
+url     : https://jingwen-z.github.io
 baseurl : # does not include hostname
 title   : Jingwen Zheng
 description: > # this means to ignore newlines until "Language & timezone"
