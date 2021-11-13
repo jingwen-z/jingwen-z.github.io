@@ -44,7 +44,7 @@ We have an Excel template named "template.xlsx", which contains two worksheets
 
 <p align="center">
   <img alt="20211127-category-template"
-  src="{{ site.baseurl }}/images/20211127-category-template.PNG"/>
+  src="{{ site.baseurl }}/images/20211127-category-template.png"/>
 </p>
 
 The worksheet "category" shows the performance of each category with different
@@ -52,7 +52,7 @@ indicators like turnover, volume, number of clients, etc.
 
 <p align="center">
   <img alt="20211127-product-template"
-  src="{{ site.baseurl }}/images/20211127-product-template.PNG"/>
+  src="{{ site.baseurl }}/images/20211127-product-template.png"/>
 </p>
 
 The worksheet "product" shows the performance of each product with the same
