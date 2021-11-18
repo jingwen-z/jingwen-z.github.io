@@ -161,13 +161,15 @@ price per m2 of Paris, between January 2014 and June 2020. The orange line shows
 the monthly average price per m2, the blue area displays the monthly transaction
 amount. During 6.5 years, the average price per m2 increases by 28%
 (11.1/8.7 - 1), especially from the year 2017, the average price per m2
-increases by nearly 31% (11.1/8.5 - 1). Moreover, the transaction amount arrives
+increases by nearly 37% (11.5/8.4 - 1). Moreover, the transaction amount arrives
 at the yearly lowest point in August, which might because people go on holiday
 at that time; on the contrary, the transactions in July or September are higher
 than in other months, which means that people usually sign the purchase promise
 in May or July (supposed that we have 2 months for negotiating the credit
 between the purchase promise and purchase agreement) so that they can sign the
-agreement before their holiday or before the school opening.
+agreement before their holiday or before the school opening. Moreover, because
+of COVID-19 pandemic, the transaction amount dropped 50%, then it reverted after
+the first confinement ended.
 
 <p align="center">
   <img alt="Time series decomposition"
