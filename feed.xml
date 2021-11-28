@@ -1,5 +1,144 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-28T21:50:21+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Do you know which COVID-19 vaccine brings the most obvious reactions?</title><link href="https://jingwen-z.github.io/four-covid-19-vaccines-reactions/" rel="alternate" type="text/html" title="Do you know which COVID-19 vaccine brings the most obvious reactions?" /><published>2021-10-30T22:27:55+02:00</published><updated>2021-10-30T22:27:55+02:00</updated><id>https://jingwen-z.github.io/four-covid-19-vaccines-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/four-covid-19-vaccines-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-11-28T21:52:38+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Writing dataframes into an Excel template</title><link href="https://jingwen-z.github.io/writing-dataframes-into-an-excel-template/" rel="alternate" type="text/html" title="Writing dataframes into an Excel template" /><published>2021-11-27T12:07:17+01:00</published><updated>2021-11-27T12:07:17+01:00</updated><id>https://jingwen-z.github.io/writing-dataframes-into-an-excel-template</id><content type="html" xml:base="https://jingwen-z.github.io/writing-dataframes-into-an-excel-template/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;People who are familiar with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;openpyxl&lt;/code&gt; know that we can use it to read/write
+Excel 2010 xlsx/xlsm/xltx/xltm files. As I presented in &lt;a href=&quot;https://jingwen-z.github.io/how-to-munipulate-excel-workbook-by-python/&quot;&gt;this blog&lt;/a&gt;,
+we can create a workbook, assign values to some cells, apply number formats,
+merge cells, etc. However, if we need to create an Excel dashboard as the
+following, should we accomplish all formats with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;openpyxl&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20211127-portfolio-dashboard&quot; src=&quot;/images/20211127-portfolio-dashboard.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For the question above, we can resolve it from another point of view: we can
+create an Excel template with the fixed format, such as dashboard title and logo,
+subtitles, then write values into this template. In this blog, I’ll show you how
+to do this with the following points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Context&lt;/li&gt;
+  &lt;li&gt;Write data into the template&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;context&quot;&gt;Context&lt;/h2&gt;
+&lt;p&gt;We have an Excel template named “template.xlsx”, which contains two worksheets
+“category” and “product”:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20211127-category-template&quot; src=&quot;/images/20211127-category-template.PNG&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The worksheet “category” shows the performance of each category with different
+indicators like turnover, volume, number of clients, etc.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20211127-product-template&quot; src=&quot;/images/20211127-product-template.PNG&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The worksheet “product” shows the performance of each product with the same
+indicators.&lt;/p&gt;
+
+&lt;p&gt;And what we need to insert into these two worksheets are three pandas dataframes:
+classic_indicators_df, other_indicators_df and products_detail_df.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20211127-category-df&quot; src=&quot;/images/20211127-category-df.PNG&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20211127-product-df&quot; src=&quot;/images/20211127-product-df.PNG&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;write-data-into-the-template&quot;&gt;Write data into the template&lt;/h2&gt;
+&lt;p&gt;With all data preparation, the next target is writing the three dataframes into
+the template with several steps:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Load the workbook&lt;/li&gt;
+  &lt;li&gt;Create a writer&lt;/li&gt;
+  &lt;li&gt;Write dataframe into the template&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;load-the-workbook&quot;&gt;Load the workbook&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;template&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;openpyxl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load_workbook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'./template.xlsx'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We load the template with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;openpyxl.load_workbook&lt;/code&gt; by indicating the path.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-a-writer&quot;&gt;Create a writer&lt;/h3&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;out_path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'./final_report.xlsx'&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;writer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ExcelWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;writer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;book&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;template&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We set the writer with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandas.ExcelWriter&lt;/code&gt; that allows to write DataFrame
+objects into excel sheets, and set the template file as the writer’s workbook.&lt;/p&gt;
+
+&lt;h3 id=&quot;write-dataframe-into-the-template&quot;&gt;Write dataframe into the template&lt;/h3&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import openpyxl
+from openpyxl.styles.borders import Border, Side
+import string
+
+def set_border(ws, cell_range):
+    rows = ws[cell_range]
+    side = Side(border_style='thin', color=&quot;FF000000&quot;)
+
+    rows = list(rows)
+    max_y = len(rows) - 1  # index of the last row
+    for pos_y, cells in enumerate(rows):
+        max_x = len(cells) - 1  # index of the last cell
+        for pos_x, cell in enumerate(cells):
+            border = Border(
+                left=cell.border.left,
+                right=cell.border.right,
+                top=cell.border.top,
+                bottom=cell.border.bottom
+            )
+            border.left = side
+            border.right = side
+            border.top = side
+            border.bottom = side
+            
+            cell.border = border
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Before writing into the template, I create a function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set_border()&lt;/code&gt; by using
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Side()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Border()&lt;/code&gt; to set borders for each cell in the given range.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;df_sheet_list = [(classic_indicators_df, 'category'),
+                 (other_indicators_df, 'category'),
+                 (products_detail_df, 'product')]
+
+for (df, sht) in df_sheet_list:
+    templ_sht = template[sht]
+    writer.sheets = {templ_sht.title:templ_sht}
+
+    if df is classic_indicators_df:
+        classic_indicators_df.to_excel(writer, sheet_name=sht, index=False,
+                                       header=False, startrow=13, startcol=2)
+        set_border(writer.sheets[sht], f&quot;C14:G{14-1+len(df)}&quot;)
+    elif df is other_indicators_df:
+        other_indicators_df.to_excel(writer, sheet_name=sht, index=False,
+                                       header=False, startrow=13, startcol=8)
+        set_border(writer.sheets[sht], f&quot;I14:M{14-1+len(df)}&quot;)
+    elif df is products_detail_df:
+        products_detail_df.to_excel(writer, sheet_name=sht, index=False,
+                                       header=False, startrow=12, startcol=4)
+        set_border(writer.sheets[sht], f&quot;E13:K{13-1+len(df)}&quot;)
+
+writer.save()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We assign the sheet where we will insert the dateframe to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;writer.sheets&lt;/code&gt;.
+Then we write the dataframe with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.to_excel&lt;/code&gt; by specifying the writer we use,
+the worksheet that we want to insert, and the start row and the start column
+with integers, after all these steps, we save the file with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;writer.save()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are curious about the scripts, you will find them &lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/learn_openpyxl/demo_insert_values_into_excel_template.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;“What’s new in Excel 365?”, &lt;em&gt;laptrinhx.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://laptrinhx.com/what-s-new-in-excel-365-589177363/#&quot;&gt;https://laptrinhx.com/what-s-new-in-excel-365-589177363/#&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“SALES KPI REPORT”, &lt;em&gt;thesmallman.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.thesmallman.com/premium/key-performance-indicators&quot;&gt;https://www.thesmallman.com/premium/key-performance-indicators&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;“Howard Tucan”, &lt;em&gt;miro.medium.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://miro.medium.com/max/1400/1*hpMdyM6QNJGix73T-sc8vw.jpeg&quot;&gt;https://miro.medium.com/max/1400/1*hpMdyM6QNJGix73T-sc8vw.jpeg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="python3" /><category term="excel" /><summary type="html">People who are familiar with openpyxl know that we can use it to read/write Excel 2010 xlsx/xlsm/xltx/xltm files. In this blog, I will show you how to write values into an Excel template.</summary></entry><entry xml:lang="en"><title type="html">Do you know which COVID-19 vaccine brings the most obvious reactions?</title><link href="https://jingwen-z.github.io/four-covid-19-vaccines-reactions/" rel="alternate" type="text/html" title="Do you know which COVID-19 vaccine brings the most obvious reactions?" /><published>2021-10-30T22:27:55+02:00</published><updated>2021-10-30T22:27:55+02:00</updated><id>https://jingwen-z.github.io/four-covid-19-vaccines-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/four-covid-19-vaccines-reactions/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with the COVID-19 virus, and scientists are also actively looking for solutions. In order to achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. And a vaccine from theoretical design to clinical trials requires too much wisdom and effort of scientists. Last time, I analyzed the adverse reactions of Pfizer vaccine, Coronavac vaccine, AstraZeneca vaccine and Modena vaccine. Today we will compare the side effects of different vaccines in a longitudinal direction.&lt;/p&gt;
 
 &lt;p&gt;Before starting, introduce the following two terms that will be frequently mentioned next:&lt;/p&gt;
@@ -1207,132 +1346,4 @@ and to keep the dietary balance.&lt;/p&gt;
   &lt;li&gt;Thomas Cesaroni, “9 KPIs Every Retail Manager Should Track”, &lt;em&gt;toucantoco.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://toucantoco.com/blog/en/kpis-retail-manager/&quot;&gt;https://toucantoco.com/blog/en/kpis-retail-manager/&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;“Top 8 metrics for retail KPIs”, &lt;em&gt;www.tableau.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&quot;&gt;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Alexas_Fotos, “Minion banana fruit healthy”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/minion-banana-fruit-healthy-1168873/&quot;&gt;https://pixabay.com/photos/minion-banana-fruit-healthy-1168873/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product assortment, customer service, supporting services and the store's overall market positioning. To point retailers in the right direction, they need to dig the retail metrics and KPIs to track in their business. In this blog, I'll talk about some pretty helpful KPIs for retailers.</summary></entry><entry xml:lang="en"><title type="html">How to convert projected coordinates to latitude longitude by Python?</title><link href="https://jingwen-z.github.io/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/" rel="alternate" type="text/html" title="How to convert projected coordinates to latitude longitude by Python?" /><published>2021-01-10T16:44:58+01:00</published><updated>2021-01-10T16:44:58+01:00</updated><id>https://jingwen-z.github.io/how-to-convert-projected-coordinates-to-latitude-longitude-by-python</id><content type="html" xml:base="https://jingwen-z.github.io/how-to-convert-projected-coordinates-to-latitude-longitude-by-python/">&lt;p&gt;Last month I &lt;a href=&quot;https://jingwen-z.github.io/draw-subway-and-tramway-with-folium/&quot;&gt;drew subway and tramway lines with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;folium&lt;/code&gt;&lt;/a&gt;
-according to the &lt;a href=&quot;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&quot;&gt;Île-de-France public transport network datasets&lt;/a&gt;. However,
-the coordinates are not what we use in GPS (EPSG:4326), but the Mercator
-projection (EPSG:3857).&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;input1&quot; src=&quot;/images/20210110-input-1.png&quot; /&gt;
-&lt;/p&gt;
-&lt;p&gt;…&lt;/p&gt;
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;input2&quot; src=&quot;/images/20210110-input-2.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Thus, before drawing the transport lines, we need to convert projected
-coordinates to latitude longitude. In this blog, I’ll talk about this with the
-following points:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;What is EPSG:4326?&lt;/li&gt;
-  &lt;li&gt;What is EPSG:3857?&lt;/li&gt;
-  &lt;li&gt;How to convert projected coordinates to latitude longitude?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;what-is-epsg4326&quot;&gt;What is EPSG:4326?&lt;/h2&gt;
-&lt;p&gt;The World Geodetic System (WGS) is a standard for use in cartography, geodesy,
-and satellite navigation including GPS. This standard includes the definition of
-the coordinate system’s fundamental and derived constants, the ellipsoidal
-(normal) Earth Gravitational Model (EGM), a description of the associated World
-Magnetic Model (WMM), and a current list of local datum transformations.
-The latest revision is WGS 84 (also known as WGS 1984, EPSG:4326), established
-and maintained by the United States National Geospatial-Intelligence Agency
-since 1984, and last revised in 2004. Earlier schemes included WGS 72, WGS 66,
-and WGS 60. WGS 84 is the reference coordinate system used by the Global
-Positioning System.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-epsg3857&quot;&gt;What is EPSG:3857?&lt;/h2&gt;
-&lt;p&gt;Web Mercator, Google Web Mercator, Spherical Mercator, WGS 84 Web Mercator or
-WGS 84/Pseudo-Mercator is a variant of the Mercator projection and is the de
-facto standard for Web mapping applications. It rose to prominence when Google
-Maps adopted it in 2005. It is used by virtually all major online map providers,
-including Google Maps, Mapbox, Bing Maps, OpenStreetMap, Mapquest, Esri, and
-many others. Its official EPSG identifier is EPSG:3857, although others have
-been used historically.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-convert-projected-coordinates-to-latitude-longitude&quot;&gt;How to convert projected coordinates to latitude longitude?&lt;/h2&gt;
-&lt;p&gt;The Python module &lt;a href=&quot;https://pyproj4.github.io/pyproj/stable/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyproj&lt;/code&gt;&lt;/a&gt; is a cartographic projections and
-coordinate transformations library, which converts from longitude, latitude to
-native map projection x,y coordinates and vice versa, its classes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Proj&lt;/code&gt; and
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;transform&lt;/code&gt; will help us to get the GPS coordinates.&lt;/p&gt;
-
-&lt;p&gt;A &lt;a href=&quot;https://pyproj4.github.io/pyproj/stable/api/proj.html?highlight=proj&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Proj&lt;/code&gt;&lt;/a&gt; class instance is initialized with proj map projection control
-parameter key/value pairs. The key/value pairs can either be passed in a
-dictionary, or as keyword arguments, or as a PROJ string (compatible with the
-proj command).
-  performs cartographic transformations: converting from
-longitude, latitude to native map projection x,y coordinates and vice versa. The
-&lt;a href=&quot;https://pyproj4.github.io/pyproj/v2.6.1rel/api/transformer.html?highlight=transform&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Transform.er&lt;/code&gt;&lt;/a&gt; class is also for facilitating re-using transforms
-without needing to re-create them. The goal is to make repeated transforms faster.&lt;/p&gt;
-
-&lt;h3 id=&quot;method-1&quot;&gt;Method 1&lt;/h3&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyproj&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;wgs84&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Proj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;projparams&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'epsg:4326'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;InputGrid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Proj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;projparams&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'epsg:3857'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;11705274.6374&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;4826473.6922&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;InputGrid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wgs84&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We firstly set 2 variables &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wgs84&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;InputGrid&lt;/code&gt; by specifying the
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;projparams&lt;/code&gt;, then transfer the point (x1, y1) from the coordinate system
-“EPSG:3857” to the “EPSG:4326”.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;method1&quot; src=&quot;/images/20210110-metho1.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;We got the results but with a warning message as above. After checking the
-&lt;a href=&quot;https://pyproj4.github.io/pyproj/stable/gotchas.html#upgrading-to-pyproj-2-from-pyproj-1&quot;&gt;recommendation&lt;/a&gt;, now we have another method.&lt;/p&gt;
-
-&lt;h3 id=&quot;method-2&quot;&gt;Method 2&lt;/h3&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_crs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;epsg:3857&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;epsg:4326&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;For the second method, we create a transformer from a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pyproj.crs.CRS&lt;/code&gt;, with
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crs_from=&quot;epsg:3857&quot;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crs_to=&quot;epsg:4326&quot;&lt;/code&gt;, then transform the point
-(x1, y1), we can get the same result as the first method, without any warning
-message.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;method2&quot; src=&quot;/images/20210110-metho2.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&quot;use-case&quot;&gt;Use case&lt;/h3&gt;
-&lt;p&gt;So how to solve the problem at the beginning of this article?
-Idea is that we go through the projected coordinates, and transform each of them
-to “EPSG:4326”.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyproj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_crs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;epsg:3857&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;epsg:4326&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;subway_lines_df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'features'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'LineString'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;# all coordinates
-&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'coordinates'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;# coordList is for each individual polygon
-&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;lat_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lng_grid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;
-            &lt;span class=&quot;c1&quot;&gt;# do transformation
-&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;# coordList[0],coordList[1] = pyproj.transform(InputGrid, wgs84, lat_grid, lng_grid) # methode 1
-&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lat_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lng_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# methode 2
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'type'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'MultiLineString'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;len_coord&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'coordinates'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;len_coord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'geometry'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'coordinates'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;lat_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lng_grid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;
-                &lt;span class=&quot;c1&quot;&gt;# coordList[0],coordList[1] = pyproj.transform(InputGrid, wgs84, lat_grid, lng_grid) # methode 1
-&lt;/span&gt;                &lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coordList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transformer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lat_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lng_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# methode 2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you are curious about the scripts, you will find them &lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/geovisualization/converting_projected_coordinates_to_latlon.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;“Gares et stations du réseau ferré d’Île-de-France (par ligne)”, &lt;em&gt;data.iledefrance-mobilites.fr&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&quot;&gt;https://data.iledefrance-mobilites.fr/explore/dataset/emplacement-des-gares-idf/information/?location=16,48.85089,2.51991&amp;amp;basemap=jawg.streets&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“World Geodetic System”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/World_Geodetic_System&quot;&gt;https://en.wikipedia.org/wiki/World_Geodetic_System&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Web Mercator projection”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Web_Mercator_projection&quot;&gt;https://en.wikipedia.org/wiki/Web_Mercator_projection&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Antonio Falciano, “Converting projected coordinates to lat/lon using Python?”, &lt;em&gt;gis.stackexchange.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://gis.stackexchange.com/questions/78838/converting-projected-coordinates-to-lat-lon-using-python&quot;&gt;https://gis.stackexchange.com/questions/78838/converting-projected-coordinates-to-lat-lon-using-python&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;PIRO4D, “Mission to Mars”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/mission-to-mars-mars-probe-2645472/&quot;&gt;https://pixabay.com/photos/mission-to-mars-mars-probe-2645472/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="python3" /><summary type="html">This blog talks about how to convert projected coordinates to latitude longitude with python module &quot;pyproj&quot;.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product assortment, customer service, supporting services and the store's overall market positioning. To point retailers in the right direction, they need to dig the retail metrics and KPIs to track in their business. In this blog, I'll talk about some pretty helpful KPIs for retailers.</summary></entry></feed>
