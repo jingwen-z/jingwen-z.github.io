@@ -3,6 +3,7 @@ layout:      post
 title:       "House Prices: Regression Techniques"
 lang:        en
 date:        "2019-08-06 21:12:47 +0200"
+series:      [real-estate]
 tags:        [Machine-Learning, kaggle, regression, analysis, real-estate, visualisation]
 permalink:         /house-prices-regression-techniques/
 comments:    true

@@ -4,6 +4,7 @@ title:              "Second-hand apartments transactions in Paris (01/2014 - 06/
 lang:        en
 date:               "2021-01-02 22:20:57 +0100"
 last_modified_at:   2021-01-03 18:52:53 +0100
+series:             [real-estate]
 tags:               [analysis, real-estate, visualisation, geovisualisation]
 permalink:         /second-hand-apartments-transactions-in-paris-1420/
 comments:           true

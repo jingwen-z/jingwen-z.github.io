@@ -1,8 +1,9 @@
 ---
 layout:             post
 title:              "Second-hand apartments transactions in Paris (01/2014 - 06/2021)"
-lang:        en
+lang:               en
 date:               "2022-01-02 22:20:57 +0100"
+series:             [real-estate]
 tags:               [analysis, real-estate, visualisation, geovisualisation]
 permalink:         /second-hand-apartments-transactions-in-paris-1421/
 comments:           true
