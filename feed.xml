@@ -1,5 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-12-30T14:47:14+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Writing dataframes into an Excel template</title><link href="https://jingwen-z.github.io/writing-dataframes-into-an-excel-template/" rel="alternate" type="text/html" title="Writing dataframes into an Excel template" /><published>2021-11-27T12:07:17+01:00</published><updated>2021-11-27T12:07:17+01:00</updated><id>https://jingwen-z.github.io/writing-dataframes-into-an-excel-template</id><content type="html" xml:base="https://jingwen-z.github.io/writing-dataframes-into-an-excel-template/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-12-31T21:42:25+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2021</title><link href="https://jingwen-z.github.io/review-of-2021/" rel="alternate" type="text/html" title="Review of 2021" /><published>2021-12-30T14:43:06+01:00</published><updated>2021-12-30T14:43:06+01:00</updated><id>https://jingwen-z.github.io/review-of-2021</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2021/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The year 2021 is still a year battling with COVID-19. Thanks to the vaccination,
+our life gradually returns to normal, we started to back to the office more
+frequently and had the chance to travel as before. This year I continue to go
+deeper on how to apply data science to the retailing domain and do some data
+analysis with open-source data as well. In this blog, I’ll resume my year of
+2020 with the following points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Working in retailing (In The Memory)&lt;/li&gt;
+  &lt;li&gt;COVID-19 analysis&lt;/li&gt;
+  &lt;li&gt;Blogs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;working-in-retailing-in-the-memory&quot;&gt;Working in retailing (In The Memory)&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.inthememory.com/?lang=en&quot;&gt;In The Memory&lt;/a&gt; is a retail-tech company that helps retail players to
+make the best use of the different internal and external data sources to meet
+their strategic and operational business challenges. Our products allow
+distributors and brands to accelerate their decision-making to attract more
+customers and make the best assortment, merchandising, pricing, and promotional
+choices, in their various physical and online sales channels. We build tailored
+Augmented Intelligence solutions to meet clients’ priority challenges and serve
+their strategies by supporting their teams in change management, defining
+together the best KPIs to meet clients’ challenges and adapt our solutions to
+the client’s needs, constraints and processes. Moreover, this year, we have won
+the “Pépite du Retail 2020” trophy, voted for by LSA Live participants and was
+elected best Microsoft 2021 partner in the “France Action Startup Award”
+category; we have nearly 50 colleagues vs. 25 in 2020.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20211230-awards&quot; src=&quot;/images/20211230-awards.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;what-did-i-do-during-working&quot;&gt;What did I do during working?&lt;/h3&gt;
+&lt;p&gt;This year I accomplished about twenty CRM (Customer Relationship Management)
+projects, some are for the distributors, some are for the industrialists. With
+our analysis, we help them to have 10% more turnover per client. I also
+developed new features for a module that can extract about 50 KPIs for 1 year
+for different levels, such as per product/store, per product category/store
+group, or temporal levels x product/store, like month x product or day x store,
+etc. The SLA (Service-Level Agreement) of this module is about 2-5 min, and
+during 2 weeks after the release, the module has already been used around 1500
+times. Moreover, with my colleague, we created a model for estimating the
+product’s turnover and recommend products for different promotion operations,
+which will be applied in a new module. Since it’s confidential, I won’t talk
+about the details here ;)&lt;/p&gt;
+
+&lt;p&gt;Furthermore, as the company expands, we updated our information on &lt;a href=&quot;https://www.welcometothejungle.com/fr/companies/memory&quot;&gt;Welcome to
+the Jungle&lt;/a&gt;. I participated in a &lt;a href=&quot;https://www.youtube.com/watch?v=AwASE5f_7gA&quot;&gt;video shooting&lt;/a&gt; for
+presenting what the data team does in daily work and how we cooperate with other
+teams like consulting team and dev team.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-did-i-learn-during-working&quot;&gt;What did I learn during working?&lt;/h3&gt;
+&lt;p&gt;Working in different projects of retailing, I gained more knowledge of &lt;a href=&quot;https://jingwen-z.github.io/multiple-kpis-in-retailing-1/&quot;&gt;different&lt;/a&gt;
+&lt;a href=&quot;https://jingwen-z.github.io/multiple-kpis-in-retailing-2/&quot;&gt;indicactors&lt;/a&gt;. Thanks to the CRM projects, I understand what should we
+focus on according to clients’ needs and &lt;a href=&quot;https://jingwen-z.github.io/crm-in-retailing/&quot;&gt;how to segment customers with their purchases&lt;/a&gt;.
+During the daily work, I learned how to cut a project and accomplish different
+parts of the project with colleagues. The biggest gain is that when I did the
+sales promotion project, I enriched my knowledge of promotion, I understood
+different promotions operate different mechanics and generosities; to define
+the products for each promotion, we need to reach various objectives, such as
+the turnover objective, product number, brand type distribution, generosity
+distribution, etc. Thanks to this project, I have closer contact with the people
+of business (category managers, purchase, promotion, etc.), which let me better
+understand their needs/pain points, so that we can develop the right product to
+satisfy the needs or solve the pain points.&lt;/p&gt;
+
+&lt;h2 id=&quot;covid-19-vaccine-analysis&quot;&gt;COVID-19 vaccine analysis&lt;/h2&gt;
+&lt;p&gt;Since the beginning of 2020, people from all over the world have struggled with
+the COVID-19 virus, and scientists are also actively looking for solutions. To
+achieve herd immunity, the most effective method at the moment can be said to be
+vaccination. Various voices about the vaccine have also been on the cusp of
+social public opinion, and the praise or controversy about it has never stopped.
+And a vaccine from theoretical design to clinical trials requires too much
+wisdom and effort of scientists.&lt;/p&gt;
+
+&lt;p&gt;With open-source datasets, I analyzed the adverse reactions of Pfizer vaccine,
+Coronavac vaccine, AstraZeneca vaccine and Modena vaccine in different blogs:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jingwen-z.github.io/pfizer-biontech-covid-19-vaccine-reactions/&quot;&gt;Do you know the reactions of Pfizer vaccine?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/&quot;&gt;Do you know the reactions of Coronavac vaccine?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions/&quot;&gt;Do you know the reactions of Oxford/AstraZeneca vaccine?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jingwen-z.github.io/moderna-covid-19-vaccine-reactions/&quot;&gt;Do you know the reactions of Modena vaccine?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jingwen-z.github.io/four-covid-19-vaccines-reactions/&quot;&gt;Do you know which COVID-19 vaccine brings the most obvious reactions?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;20211030-global-comparaison&quot; src=&quot;/images/20211030-global-comparaison.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Whether it is a local reaction or a systemic reaction, the reaction is most
+obvious after the injection of Modena. 86% of people have local reactions, such
+as pain, swelling, and redness at the injection site, and nearly 67% have a
+systemic reaction. Such as fatigue, chills, joint pain, muscle pain, etc.
+Followed by the Kexing vaccine, 62% of people had a local reaction after
+injection, and 58% had a systemic reaction. Among the four vaccines, the
+Pfizer-Biotech vaccine caused the least adverse reactions. The probability of
+local and systemic reactions after vaccination was 29.5% and 22.4%, respectively.&lt;/p&gt;
+
+&lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
+&lt;p&gt;This year I wrote 21 blogs (including this one), they talk about various topics:
+retailing, COVID-19, population and employee. Moreover, the traffic of my blog
+increased by 21.4% concerning 2020. I’m pretty glad if my blogs can help you and
+solve the problems for you.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Blog traffic 1&quot; src=&quot;/images/20211230-blog1.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img alt=&quot;Blog traffic 2&quot; src=&quot;/images/20211230-blog2.png&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Besides, I opened a Wechat Official Account, which is likely a personal blog
+based on Wechat. On this platform, I translated some of my English blogs into
+Chinese ones and shared them with my Chinese friends. I’ve written 11 blogs
+and they’ve been read for 8500 times.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Tumisu, “New year 2021 moon New year’s eve”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/new-year-2021-moon-new-year-s-eve-5678207/&quot;&gt;https://pixabay.com/photos/new-year-2021-moon-new-year-s-eve-5678207/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html">Review of 2021.</summary></entry><entry xml:lang="en"><title type="html">Writing dataframes into an Excel template</title><link href="https://jingwen-z.github.io/writing-dataframes-into-an-excel-template/" rel="alternate" type="text/html" title="Writing dataframes into an Excel template" /><published>2021-11-27T12:07:17+01:00</published><updated>2021-11-27T12:07:17+01:00</updated><id>https://jingwen-z.github.io/writing-dataframes-into-an-excel-template</id><content type="html" xml:base="https://jingwen-z.github.io/writing-dataframes-into-an-excel-template/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;People who are familiar with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;openpyxl&lt;/code&gt; know that we can use it to read/write
 Excel 2010 xlsx/xlsm/xltx/xltm files. As I presented in &lt;a href=&quot;https://jingwen-z.github.io/how-to-munipulate-excel-workbook-by-python/&quot;&gt;this blog&lt;/a&gt;,
 we can create a workbook, assign values to some cells, apply number formats,
@@ -1174,176 +1295,4 @@ product has no enough stock, and to avoid the same problem in the future.&lt;/p&
   &lt;li&gt;“Break-even”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Break-even&quot;&gt;https://en.wikipedia.org/wiki/Break-even&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;“Economic Viability”, &lt;em&gt;www.ruthtrumpold.id.au&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;http://www.ruthtrumpold.id.au/destech/?page_id=162&quot;&gt;http://www.ruthtrumpold.id.au/destech/?page_id=162&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;ElasticComputeFarm, “supermarket stalls coolers market”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/supermarket-stalls-coolers-market-949913/&quot;&gt;https://pixabay.com/photos/supermarket-stalls-coolers-market-949913/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product assortment, customer service, supporting services and the store's overall market positioning. To point retailers in the right direction, they need to dig the retail metrics and KPIs to track in their business. In this blog, I'll talk about some pretty helpful KPIs for retailers.</summary></entry><entry xml:lang="en"><title type="html">Multiple KPIs in retailing (Part 1)</title><link href="https://jingwen-z.github.io/multiple-kpis-in-retailing-1/" rel="alternate" type="text/html" title="Multiple KPIs in retailing (Part 1)" /><published>2021-01-17T16:59:00+01:00</published><updated>2021-01-17T16:59:00+01:00</updated><id>https://jingwen-z.github.io/multiple-kpis-in-retailing-1</id><content type="html" xml:base="https://jingwen-z.github.io/multiple-kpis-in-retailing-1/">&lt;p&gt;Retail is the process of selling consumer goods or services to customers through
-multiple channels of distribution to earn a profit. Retailers satisfy demand
-identified through a supply chain. Most modern retailers typically make a
-variety of strategic level decisions including the type of store, the market to
-be served, the optimal product assortment, customer service, supporting services
-and the store’s overall market positioning. To point retailers in the right
-direction, they need to dig the retail metrics and KPIs to track in their
-business. In this blog, I’ll talk about the following pretty helpful KPIs for
-retailers:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Volume of transactions&lt;/li&gt;
-  &lt;li&gt;Turnover of transactions&lt;/li&gt;
-  &lt;li&gt;Transactions amount&lt;/li&gt;
-  &lt;li&gt;Average volume per transaction&lt;/li&gt;
-  &lt;li&gt;Average purchase value&lt;/li&gt;
-  &lt;li&gt;Purchase frequency&lt;/li&gt;
-  &lt;li&gt;Gross profit vs net profit&lt;/li&gt;
-  &lt;li&gt;Gross Margin Return On Investment (GMROI)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;volume-of-transactions&quot;&gt;Volume of transactions&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;datapine&lt;/a&gt; uses this indicator in their dashboard. Transactions’ volume
-measures the number of units sold during a specific accounting period. It can
-help you to understand if some products are sold more than others in different
-periods or different zones.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;20210117-vol-trx&quot; src=&quot;/images/20210117-vol-trx.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This plot describes the volume(k) for each fruit. Among four fruits, bananas’
-sales are the largest (34k units), however, it seems that consumers don’t like
-apple that much.&lt;/p&gt;
-
-&lt;h2 id=&quot;turnover-of-transactions&quot;&gt;Turnover of transactions&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;datapine&lt;/a&gt; uses this indicator in their dashboard. Transactions’ turnover
-measures the value of sales during a specific period. It can help you to
-understand if some products bring more value than others in different periods or
-different zones.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;20210117-turnover-trx&quot; src=&quot;/images/20210117-turnover-trx.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This plot compares two-year turnover together. The peak for both year is in the
-summer, for year N, the peak is in August; however, the peak is reached in June
-in the year N-1, which is caused by the heatwave in June.&lt;/p&gt;
-
-&lt;h2 id=&quot;transactions-amount&quot;&gt;Transactions amount&lt;/h2&gt;
-&lt;p&gt;This is a pretty straightforward metric that &lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;datapine&lt;/a&gt; uses in their
-dashboard. The transaction amount calculates how many orders have been placed
-in your business over the day, month or year. It will help you in knowing when
-the peak periods are and adapt your stock inventory accordingly, to avoid any
-stock-out or backorder.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;20210117-trx-amount&quot; src=&quot;/images/20210117-trx-amount.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;According to this plot, it’s obvious that the peak in a day is around noon and
-after work like 19h, because customers work in the morning and afternoon, they
-have time to shopping during the noon and after work. Moreover, there are 2
-small peaks around 9h and 16h, that might because customer come to buy their
-breakfast and classes over around 16h.&lt;/p&gt;
-
-&lt;h2 id=&quot;average-volume-per-transaction&quot;&gt;Average volume per transaction&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://ehopper.com/guides/kpi-retail/&quot;&gt;eHopper&lt;/a&gt; talks about this indicator on their website. We can measure this
-KPI to track things like product sales over time, it helps us to ascertain if an
-increasing turnover means you are selling more products, or if customers are
-buying more costly products.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Average volume per transaction = Total transaction volume / Transactions amount&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;20210117-avg-vol-trx&quot; src=&quot;/images/20210117-avg-vol-trx.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This plot shows the average volume per transaction of ice-cream. Logically, the
-volume increases with temperature increasing.&lt;/p&gt;
-
-&lt;h2 id=&quot;average-purchase-value&quot;&gt;Average purchase value&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://toucantoco.com/blog/en/kpis-retail-manager/&quot;&gt;toucantoco&lt;/a&gt; talks about this indicator in his blog. Average purchase value
-measures the average value of each transaction made by customers. Retailers can
-understand sales’ trend with this measure, they can also combine it with average
-volume per sale to ascertain if an increasing turnover means you are selling
-more products, or if customers are buying more costly products.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Average purchase value = Total purchase value / Transactions amount&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;20210117-avg-trx-value&quot; src=&quot;/images/20210117-avg-trx-value.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This plot describes the average volume and average value per sale during 12
-months. We find that when the average volume per sale increases, the average
-value does not always increase. For instance, the average volume of April is
-more than March, but the average value is less, which means customers buy more
-units during their purchase, but the price per unit is decreasing.&lt;/p&gt;
-
-&lt;h2 id=&quot;purchase-frequency&quot;&gt;Purchase frequency&lt;/h2&gt;
-&lt;p&gt;Purchase frequency measures how many times a customer does purchase during a
-given period. The evolution of the purchase frequency does not represent
-directly the sales’ value becomes more or less, we should understand it with
-some other KPIs like average volume per transaction or average purchase value.&lt;/p&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;Purchase frequency&quot; src=&quot;/images/20210117-purchase-frequency.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Imagine that this plot shows the performance of some supermarkets in France
-in 2020. The purchase frequency reduces because of the lockdown for COVID-19,
-however, the average value per sale doubles. Thus, although the frequency
-reduces, the total turnover doesn’t become less by analysing the average value
-per sale.&lt;/p&gt;
-
-&lt;h2 id=&quot;gross-profit-vs-net-profit&quot;&gt;Gross profit vs net profit&lt;/h2&gt;
-&lt;p&gt;Both &lt;a href=&quot;https://ehopper.com/guides/kpi-retail/&quot;&gt;eHopper&lt;/a&gt; and &lt;a href=&quot;https://www.vendhq.com/blog/retail-metrics-and-kpis/&quot;&gt;vend&lt;/a&gt; talk about these 2 KPIs. The gross profit
-tells you how much you made after deducting the costs of creating and selling
-the product. The net profit tells you how much you made after deducting your
-cost of goods along with all other business expenses — including administrative
-costs, operating expenses, etc.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;gross profit = total revenue – cost of goods sold (COGS)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;net profit = gross profit – all expenses&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Gross profit and net profit help you to understand your business and to make
-better decisions. For example, if your gross profit is much higher than net
-profit, you can look into your operating expenses or all other expenses, and
-check if they are reasonable.&lt;/p&gt;
-
-&lt;h2 id=&quot;gross-margin-return-on-investment-gmroi&quot;&gt;Gross Margin Return On Investment (GMROI)&lt;/h2&gt;
-&lt;p&gt;Both &lt;a href=&quot;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&quot;&gt;tableau&lt;/a&gt; and &lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;datapine&lt;/a&gt; talk about these 2 KPIs. Gross Margin
-Return on Investment (GMROI) measures your profit return on the funds invested
-in the stock. What this means in practice is that for every euro you spend in
-your stock, this KPI can tell you how many euros you get back so that you apply
-it on specified products to measure if they are worth stocking.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;GMROI = gross profit / average inventory cost&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img alt=&quot;GMROI&quot; src=&quot;/images/20210117-GMROI.png&quot; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This plot describes the GMROI of 3 groups of products (cleaning products, staple
-products and fruits) of 2020. All of them increase since March because of the
-COVID-19 lockdown, customers were willing to buy more cleaning products to keep
-clean, to buy more staple products and fruits since they need to cook at home
-and to keep the dietary balance.&lt;/p&gt;
-
-&lt;p&gt;If you are curious about the scripts of the visualisation, you will find them
-&lt;a href=&quot;https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/retail_kpis.ipynb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;“Retail”, &lt;em&gt;en.wikipedia.org&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://en.wikipedia.org/wiki/Retail&quot;&gt;https://en.wikipedia.org/wiki/Retail&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Francesca Nicasio, “Retail Metrics: 14 Essential KPIs for Tracking Your Business’ Performance”, &lt;em&gt;www.vendhq.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.vendhq.com/blog/retail-metrics-and-kpis/&quot;&gt;https://www.vendhq.com/blog/retail-metrics-and-kpis/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Retail Key Performance Indicators and Metrics”, &lt;em&gt;www.datapine.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.datapine.com/kpi-examples-and-templates/retail&quot;&gt;https://www.datapine.com/kpi-examples-and-templates/retail&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“15 Fundamental KPI Retail Metrics [And How to Measure Them]”, &lt;em&gt;ehopper.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://ehopper.com/guides/kpi-retail/&quot;&gt;https://ehopper.com/guides/kpi-retail/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Thomas Cesaroni, “9 KPIs Every Retail Manager Should Track”, &lt;em&gt;toucantoco.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://toucantoco.com/blog/en/kpis-retail-manager/&quot;&gt;https://toucantoco.com/blog/en/kpis-retail-manager/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;“Top 8 metrics for retail KPIs”, &lt;em&gt;www.tableau.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&quot;&gt;https://www.tableau.com/learn/articles/retail-industry-metrics-kpis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Alexas_Fotos, “Minion banana fruit healthy”, &lt;em&gt;pixabay.com&lt;/em&gt;. [Online]. Available: &lt;a href=&quot;https://pixabay.com/photos/minion-banana-fruit-healthy-1168873/&quot;&gt;https://pixabay.com/photos/minion-banana-fruit-healthy-1168873/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html">Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product assortment, customer service, supporting services and the store's overall market positioning. To point retailers in the right direction, they need to dig the retail metrics and KPIs to track in their business. In this blog, I'll talk about some pretty helpful KPIs for retailers.</summary></entry></feed>
