@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-12-31T21:42:25+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-01-01T10:12:06+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
 </subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2021</title><link href="https://jingwen-z.github.io/review-of-2021/" rel="alternate" type="text/html" title="Review of 2021" /><published>2021-12-30T14:43:06+01:00</published><updated>2021-12-30T14:43:06+01:00</updated><id>https://jingwen-z.github.io/review-of-2021</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2021/">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;The year 2021 is still a year battling with COVID-19. Thanks to the vaccination,
 our life gradually returns to normal, we started to back to the office more
 frequently and had the chance to travel as before. This year I continue to go
 deeper on how to apply data science to the retailing domain and do some data
 analysis with open-source data as well. In this blog, I’ll resume my year of
-2020 with the following points:&lt;/p&gt;
+2021 with the following points:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Working in retailing (In The Memory)&lt;/li&gt;
   &lt;li&gt;COVID-19 analysis&lt;/li&gt;
@@ -116,6 +116,10 @@ solve the problems for you.&lt;/p&gt;
 based on Wechat. On this platform, I translated some of my English blogs into
 Chinese ones and shared them with my Chinese friends. I’ve written 11 blogs
 and they’ve been read for 8500 times.&lt;/p&gt;
+
+&lt;p&gt;Don’t hesitate if you want to ask questions or write comments, it’s welcome!!&lt;/p&gt;
+
+&lt;p&gt;Hope to see you in 2022!&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 &lt;ul&gt;
