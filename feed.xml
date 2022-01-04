@@ -1,5 +1,183 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-01-04T22:08:11+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2021</title><link href="https://jingwen-z.github.io/review-of-2021/" rel="alternate" type="text/html" title="Review of 2021" /><published>2021-12-30T14:43:06+01:00</published><updated>2021-12-30T14:43:06+01:00</updated><id>https://jingwen-z.github.io/review-of-2021</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2021/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-01-04T22:10:08+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Second-hand apartments transactions in Paris (01/2014 - 06/2021)</title><link href="https://jingwen-z.github.io/second-hand-apartments-transactions-in-paris-1421/" rel="alternate" type="text/html" title="Second-hand apartments transactions in Paris (01/2014 - 06/2021)" /><published>2022-01-02T22:20:57+01:00</published><updated>2022-01-02T22:20:57+01:00</updated><id>https://jingwen-z.github.io/second-hand-apartments-transactions-in-paris-1421</id><content type="html" xml:base="https://jingwen-z.github.io/second-hand-apartments-transactions-in-paris-1421/"><![CDATA[<p>Paris is the capital and most populous city of France. Since the 17th century,
+Paris has been one of Europe’s major centers of finance, diplomacy, commerce,
+fashion, science, and the arts. According to the Economist Intelligence Unit
+Worldwide Cost of Living Survey in 2018, Paris was the second most expensive
+city in the world, after Singapore, and ahead of Zürich, Hong Kong, Oslo and
+Geneva. Another source ranked Paris as the most expensive, on a par with
+Singapore and Hong Kong, in 2018. All these elements help to bring the
+increasing price of real estate in Paris. In this blog, I’ll talk about the
+second-hand apartments purchases in Paris between January 2014 and June 2021,
+with the following points:</p>
+<ul>
+  <li>Data description</li>
+  <li>How large are the apartments?</li>
+  <li>Which is the most expensive arrondissement?</li>
+  <li>Relationship between area &amp; apartment price?</li>
+  <li>Price evolution in terms of timing?</li>
+</ul>
+
+<h2 id="data-description">Data description</h2>
+<p>First of all, I downloaded real estate transactions’ data on the <a href="https://www.data.gouv.fr/fr/datasets/5c4ae55a634f4117716d5656/">site of
+government</a>. In the dataset, we have transaction’s information
+from January 2014 to June 2021, like “nature_mutation” specifies the sale’s
+nature, “nombre_pieces_principales” indicates the number of rooms,
+“valeur_fonciere” presents the sold price, “code_commune”, “nom_commune” and
+“code_departement” specify the communities and departments, “surface_reelle_bati”
+describes the real surface area.</p>
+
+<p align="center">
+  <img alt="vf.info()" src="/images/20220102-vf75.png" />
+</p>
+
+<p>For this analysis, I only took account of second-hand apartments’ transactions
+with a positive area in Paris.</p>
+
+<h2 id="how-large-are-the-apartments">How large are the apartments?</h2>
+
+<p align="center">
+  <img alt="QP piece number" src="/images/20220102-quotepart-piece-number.png" />
+</p>
+
+<p>I classed second-hand apartments into 5 groups in terms of piece’s number: T1,
+which means one-room apartment with around 23 m2; T2, which means two-room
+apartment with around 40 m2; T3 presents three-room apartment around 63 m2; T4
+are four-room apartments nearly 93 m2; T5 are five-room apartments with a larger
+area of about 147 m2. This donut chart describes the quote-part of different
+pieces’ apartments among the transactions. T1 and T2 hold 60% transactions, 22%
+transactions sold T3 apartments, other purchases are for larger apartments.
+Let’s go further on the details.</p>
+
+<p align="center">
+  <img alt="Unit price for different piece number" src="/images/20220102-unit-price-piece-number.png" />
+</p>
+
+<p>This graph describes the average price m2 for the different number of piece
+second-hand apartments in Paris, between January 2014 and June 2021. According
+to the second graph, we find that although T2 and T3 are much larger than T1,
+their unit prices are 6.7% and 6.4% lower than the unit price of T1. Moreover,
+the average area of T4 is three times larger than T1, its unit price is only 4%
+more expensive than T1; similar for other piece-number apartments. Why are T1
+apartments that expensive per m2? That might be because there are many students
+or young workers in Paris, they need to rent a big enough apartment, which makes
+investors invest in T1 apartments, which also leads to higher demands on T1.</p>
+
+<h2 id="which-is-the-most-expensive-arrondissement">Which is the most expensive arrondissement?</h2>
+
+<p align="center">
+  <img alt="arrondissement price" src="/images/20220102-district-price.png" />
+</p>
+
+<p>According to this map, we observe that the second-hand apartments in
+arrondissements 4, 6, 7, 8 are much more expensive than other arrondissements,
+their average unit price is at least 11800 euros; on the contrary, the
+second-hand apartments in arrondissements 18, 19 and 20 are much cheaper than
+others, their average unit price is less than 8000 euros. This might be caused
+by geographical positions, number of pieces, apartment’s state, the performance
+of energy, public security, etc. The public transport in the city center is more
+than in other areas, there are also lots of shopping centers or tourist spots,
+which attracts plenty of people, so that makes the city center to be more
+valuable.</p>
+
+<p>Furthermore, according to the stacked bar plot below, it’s obvious that there
+are much more transactions in the 18th arrondissement than in other areas, nearly
+50% sold apartments are 2-room apartments. The Sacré-Cœur Basilica and Montmartre
+make the 18th arrondissement famous. A real neighborhood of artists, it is
+bohemian and cosmopolitan. If you like discovering atypical places and diverse
+personalities, you will find what you’re looking for. You will discover the
+popular flea market, many schools and many nightlife venues, such as cabarets
+around Pigalle. All these attract couples to live in the 18th arrondissement.</p>
+
+<p>Moreover, in the 16th arrondissement, the transaction amount of T4 is pretty
+larger than all other arrondissements. Paris 16 is eminently residential, as
+evidenced by its charming buildings with green courtyards and balconies. But it
+is also a Parisian cultural hotspot with many museums and emblematic places from
+both a historical and intellectual point of view. Moreover, it concentrates many
+schools and establishments of choice for the education of children and students.
+All these might be the reason why the transactions of T4 in Paris 16 are much
+more than other arrondissements.</p>
+
+<p>For the arrondissements as 1st, 2nd or 3rd arrondissement, more than one third
+of sold apartments are T1 apartments, that might be because there is not that
+many apartments at the center of Paris, and its unit price is high.</p>
+
+<p align="center">
+  <img alt="Transaction amount for different arrondissements" src="/images/20220102-trx-nb-piece-number-district.png" />
+</p>
+
+<h2 id="relationship-between-area--apartment-price">Relationship between area &amp; apartment price?</h2>
+
+<p align="center">
+  <img alt="Relationship between area and apartment price in different arrondissements" src="/images/20220102-area-price-district.png" />
+</p>
+
+<p>According to this group of scatter plots, we can simply get the relationship
+between second-hand apartments’ price and their area. Each point stands for one
+transaction, the plots on the red dash line mean that the price per m2 of these
+transactions is 10k euros. The points above the dashed line indicate their unit
+price is greater than 10k euros; otherwise, it’s less than 10k euros per m2.</p>
+
+<p>For the transactions of the downtown area, most of them are smaller than 50 m2,
+but their price varies widely to nearly 2 million euros; on the other hand, for
+the 8th, 16th and 17th arrondissement, many sold apartments’ price also arrive
+more than 2 million euros, but their area varies widely to 200 m2; moreover,
+there are also apartments whose unit price and area don’t vary that widely, as
+in 13th, 18th, 19th and 20th arrondissement, most of the apartments here are
+smaller than 100 m2 and cheaper than 1 million euros, so than less than 10k
+euros per m2.</p>
+
+<h2 id="price-evolution-in-terms-of-timing">Price evolution in terms of timing?</h2>
+
+<p align="center">
+  <img alt="Tx amount &amp; unit price evolution 14-21" src="/images/20220102-transaction-amount-unit-price-1421.png" />
+</p>
+
+<p>This graph describes second-hand apartments’ transaction amount and average price per m2 of Paris, between January 2014 and June 2021. The orange line shows the monthly average price per m2, the blue area displays the monthly transaction amount. During 7.5 years, the average price per m2 increases 37% (11.5/8.4 - 1), especially from the year 2017, the average price per m2 increases nearly 26% (11.5/9.1 - 1). Moreover, the transaction amount arrives at the yearly lowest point in August, which might be because people go on holiday at that time; on the contrary, the transactions in July or September are higher than other months, which means that people usually sign the purchase promise in May or July (supposed that we have 2 months for negotiating the credit between the purchase promise and purchase agreement), so that they can sign the agreement before their holiday or before the school opening. Moreover, because of the COVID-19 pandemic, the transaction amount dropped 50% in April 2020, then it reverted after the first confinement ended. Impacted by the pandemic, both transaction amount and average price didn’t increase a lot in 2021.</p>
+
+<p align="center">
+  <img alt="Time series decomposition" src="/images/20220102-time-series-paris.png" />
+</p>
+
+<p>Then I used Time Series <code class="language-plaintext highlighter-rouge">additive</code> model to decompose data into a trend
+component, a seasonal component, and a residual component. The trend component
+captures changes over time, the seasonal component captures cyclical effects due
+to the time of year, the residual component captures the influences not
+described by the trend and seasonal effects. Thanks to this model, we find that
+except for July, there is another transaction peak in January, which we didn’t
+find above. In March and November, the transactions arrive at their low points,
+that might be because, during the transition period between 2 years, the desire
+for purchasing or selling apartments is not that high.</p>
+
+<p align="center">
+  <img alt="Unit price prediction" src="/images/20220102-price-prediction-paris.png" />
+</p>
+
+<p>Moreover, I used <code class="language-plaintext highlighter-rouge">fbprophet</code> module to predict the price per m2. The black
+points present actual values, the blue line indicates the forecasted values,
+and the light blue shaded region is the uncertainty. The uncertainty’s region
+increases for the prediction because of the initial uncertainty and it grows
+over time. This can be impacted by policy, social elements, or some others.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>According to this analysis, we find that among all transactions of second-hand
+apartments in Paris, T1 and T2 hold 60% transactions. The second-hand apartments
+in arrondissements 4, 6, 7 and 8 are much more expensive than other
+arrondissements, their average unit price is at least 11800 euros; on the
+contrary, the second-hand apartments in arrondissements 18, 19 and 20 are much
+cheaper than others, their average unit price is less than 8000 euros.</p>
+
+<h2 id="reference">Reference</h2>
+<ul>
+  <li>Ministère de l’économie, des finances et de la relance, “Demandes de valeurs foncières”, <em>data.gouv.fr</em>. [Online]. Available: <a href="https://www.data.gouv.fr/fr/datasets/5c4ae55a634f4117716d5656/">https://www.data.gouv.fr/fr/datasets/5c4ae55a634f4117716d5656/</a></li>
+  <li>Grégoire David, “Departments polygon”, <em>github.com</em>. [Online]. Available: <a href="https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson">https://github.com/gregoiredavid/france-geojson/blob/master/departements.geojson</a></li>
+  <li>APUR, “APUR : Communes - Ile de France”, <em>data.gouv.fr</em>. [Online]. Available: <a href="https://www.data.gouv.fr/fr/datasets/apur-communes-ile-de-france/">https://www.data.gouv.fr/fr/datasets/apur-communes-ile-de-france/</a></li>
+  <li>“Paris”, <em>en.wikipedia.org</em>. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Paris">https://en.wikipedia.org/wiki/Paris</a></li>
+  <li>Ehi Aigiomawu, “Analyzing time series data in Pandas”, <em>towardsdatascience.com</em>. [Online]. Available: <a href="https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621">https://towardsdatascience.com/analyzing-time-series-data-in-pandas-be3887fdd621</a></li>
+  <li>Will Koehrsen, “Time Series Analysis in Python: An Introduction”, <em>towardsdatascience.com</em>. [Online]. Available: <a href="https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a">https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a</a></li>
+  <li>“Rent apartment Paris 18”, <em>parisattitude.com</em>. [Online]. Available: <a href="https://www.parisattitude.com/rent-apartment-paris-18.aspx">https://www.parisattitude.com/rent-apartment-paris-18.aspx</a></li>
+  <li>“Guide immobilier Paris 16ème arrondissement”, <em>engelvoelkers.com</em>. [Online]. Available: <a href="https://www.engelvoelkers.com/fr-fr/paris/guide-immobilier-16eme-arrondissement/">https://www.engelvoelkers.com/fr-fr/paris/guide-immobilier-16eme-arrondissement/</a></li>
+  <li>Walkerssk, “Paris France Eiffel tower night”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/">https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/</a></li>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html"><![CDATA[Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris between January 2014 and June 2020.]]></summary></entry><entry xml:lang="en"><title type="html">Review of 2021</title><link href="https://jingwen-z.github.io/review-of-2021/" rel="alternate" type="text/html" title="Review of 2021" /><published>2021-12-30T14:43:06+01:00</published><updated>2021-12-30T14:43:06+01:00</updated><id>https://jingwen-z.github.io/review-of-2021</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2021/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>The year 2021 is still a year battling with COVID-19. Thanks to the vaccination,
 our life gradually returns to normal, we started to back to the office more
 frequently and had the chance to travel as before. This year I continue to go
@@ -1106,197 +1284,4 @@ pp. 151b-151b. IEEE, 2007.</li>
   <li>SAP INSIGHTS, “What Is CRM Today?”, <em>insights.sap.com</em>. [Online]. Available: <a href="https://insights.sap.com/what-is-crm/">https://insights.sap.com/what-is-crm/</a></li>
   <li>Marshall Hargrave, “Customer Relationship Management (CRM)”, <em>investopedia.com</em>. [Online]. Available: <a href="https://www.investopedia.com/terms/c/customer_relation_management.asp">https://www.investopedia.com/terms/c/customer_relation_management.asp</a></li>
   <li>Tumisu, “smileys satisfaction du client”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/fr/photos/smileys-satisfaction-du-client-5617876/">https://pixabay.com/fr/photos/smileys-satisfaction-du-client-5617876/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html"><![CDATA[In retailing domain, one of the most important things is increasing the customer satifaction and the customer loyalty. To reach the goals, we need to understand CRM (Customer Relationship Management) firstly, then we can take steps to improve them.]]></summary></entry><entry xml:lang="en"><title type="html">Multiple KPIs in retailing (Part 2)</title><link href="https://jingwen-z.github.io/multiple-kpis-in-retailing-2/" rel="alternate" type="text/html" title="Multiple KPIs in retailing (Part 2)" /><published>2021-02-09T21:59:00+01:00</published><updated>2021-02-09T21:59:00+01:00</updated><id>https://jingwen-z.github.io/multiple-kpis-in-retailing-2</id><content type="html" xml:base="https://jingwen-z.github.io/multiple-kpis-in-retailing-2/"><![CDATA[<p>Retail is the process of selling consumer goods or services to customers through
-multiple channels of distribution to earn a profit. Retailers satisfy demand
-identified through a supply chain. Most modern retailers typically make a
-variety of strategic level decisions including the type of store, the market to
-be served, the optimal product assortment, customer service, supporting services
-and the store’s overall market positioning. To point retailers in the right
-direction, they need to dig the retail metrics and KPIs to track in their
-business. In this blog, I’ll talk about the following pretty helpful KPIs for
-retailers:</p>
-<ul>
-  <li>Turnover per square foot</li>
-  <li>Year over year growth</li>
-  <li>Customer retention rate</li>
-  <li>Inventory turnover vs sell-through rate</li>
-  <li>Break-Even Point</li>
-  <li>Back Order Rate</li>
-</ul>
-
-<h2 id="turnover-per-square-foot">Turnover per square foot</h2>
-<p>According to <a href="https://www.tableau.com/learn/articles/retail-industry-metrics-kpis">Tableau</a>, we find that the turnover per square foot measures
-how effectively you’re using the area you have, and it is a good indicator of
-your store’s productivity while offering insights into store and merchandise
-layouts. If some product categories perform better than others, it may because
-of the types of products or their arrangement.</p>
-
-<blockquote>
-  <p>Turnover per square foot = Total turnover / Total square foot</p>
-</blockquote>
-
-<p>Moreover, <a href="https://www.vendhq.com/blog/retail-metrics-and-kpis/">vend</a> presents some tips for improving our turnover per square
-foot:</p>
-<ul>
-  <li>Improve your store layout</li>
-  <li>Have a winning product assortment</li>
-  <li>Optimize your prices or promotions</li>
-  <li>Increase transaction or basket value</li>
-  <li>Train your staff to sell more</li>
-  <li>Encourage people to stay longer in your shop</li>
-</ul>
-
-<p align="center">
-  <img alt="20210202-turnover-per-square-foot" src="/images/20210202-turnover-per-square-foot.png" />
-</p>
-
-<p>This plot shows the turnover per square foot of 4 kinds of products during one
-day, the value for the wine is higher than others since they are put on the
-multi-layer shelves, which is a good example of using spaces. Fruits’ turnover
-per square foot is the lowest among the four, because its unit price is lower,
-although its space utilization is better than the shelves of butchery and
-seafood. For the other two kinds of products, their space utilization is not
-enough, but their unit price is high, so their turnovers per square are not that
-low.</p>
-
-<h2 id="year-over-year-growth">Year over year growth</h2>
-<p>Year-over-year growth is a comparison of a retail metric for one period to the
-same period the previous year. It calculates the percentage change during the
-past twelve months.</p>
-
-<blockquote>
-  <p>Year Over Year Growth = (Current year sales total – Previous year’s sales total) / Previous year’s sales total x 100</p>
-</blockquote>
-
-<p><a href="https://ehopper.com/guides/kpi-retail/">ehopper</a> shows us an example that can help us to understand why the year
-over year growth is an important retail metric. Imagine that the retail revenue
-was up 20% in November concerning October, besides, you also need to check this
-number against the revenue from last November. If it’s also greater than the
-revenue of last November, that means your business is doing better.</p>
-
-<p align="center">
-  <img alt="20210202-year-over-year-growth" src="/images/20210202-year-over-year-growth.png" />
-</p>
-
-<p>This plot shows the turnover and the year over year growth for each month, which
-helps us to identify if the increase of turnover is also significant vs. the
-last year.</p>
-
-<h2 id="customer-retention-rate">Customer retention rate</h2>
-<p>Being able to attract new customers and to let them return is a relatively
-stable source for long-term profit. To understand if we have this source in our
-business, we can track the number of new customers versus repeat customers, and
-calculate the customer retention rate. There is a formula to calculate this KPI
-on the site of <a href="https://www.tableau.com/learn/articles/retail-industry-metrics-kpis">Tableau</a>:</p>
-
-<blockquote>
-  <p>Customer retention rate = ((Total distinct customers at end of period) - (Total new distinct customers acquired during period)) / (Total distinct customers at start of period) x 100</p>
-</blockquote>
-
-<p>Furthermore, <a href="https://www.vendhq.com/blog/retail-metrics-and-kpis/">vend</a> presents some tips to improve our customer retention
-rate:</p>
-<ul>
-  <li>Tracking customer purchases and offering personalized recommendations</li>
-  <li>Developing meaningful relationships through amazing customer service as well
-as community-building efforts like classes, events, or online groups</li>
-  <li>Implementing a killer loyalty program to encourage shoppers to keep coming
-back</li>
-</ul>
-
-<p align="center">
-  <img alt="20210202-user-retention" src="/images/20210202-user-retention.png" />
-</p>
-
-<p>Here I take the example of Google Analytics of my blog, the idea is similar for
-e-commerce or physical stores. During the last 6 weeks, only 2.7% of visitors of
-week 0 were back in week 1, 0.9% were back in week 2, and so on.</p>
-
-<h2 id="inventory-turnover-vs-sell-through-rate">Inventory turnover vs sell-through rate</h2>
-<h3 id="inventory-turnover">Inventory turnover</h3>
-<p>In accounting, the Inventory turnover is a measure of the number of times
-inventory is sold or used in a period such as a year. It is calculated to see if
-a business has an excessive inventory in comparison to its sales level.</p>
-
-<blockquote>
-  <p>Inventory Turnover = Net sales / Average inventory at the selling price
-or
-Inventory Turnover = Cost of good sold / Average inventory at cost</p>
-</blockquote>
-
-<p>where</p>
-<blockquote>
-  <p>Average inventory = (Beginning inventory + Ending inventory) / 2</p>
-</blockquote>
-
-<p align="center">
-  <img alt="20210202-inventory-turnover" src="/images/20210202-inventory-turnover.png" />
-</p>
-
-<p>The target inventory turnover of 2020 is 2.7, which means the net sales is twice
-more than the average inventory at the selling price. Because of the lockdown,
-the sales had a high increase. which brings a high inventory turnover.</p>
-
-<h3 id="sell-through-rate">Sell-through rate</h3>
-<p>Sell-through rate refers to the percentage of a product that is sold by a
-retailer after being shipped by its supplier, typically expressed as a
-percentage. Sell-through is calculated during a period (usually 1 month).</p>
-
-<blockquote>
-  <p>Sell-Through Rate = Units Sold / Units Received</p>
-</blockquote>
-
-<p>For example, imagine that you are the manager of a supermarket, you ordered
-100 boxes of chocolate, but after 1 month only 20 boxes are sold, in this case,
-the sell-through rate is 20%, which means other 80% of chocolate are there for
-gathering dust :(</p>
-
-<p align="center">
-  <img alt="20210202-sell-through-rate" src="/images/20210202-sell-through-rate.png" />
-</p>
-
-<p>Among these 7 kinds of products, sushi’s sell-through rate is the highest since
-they can nearly all be sold the same day; on the contrary, the sell-through rate
-of the wine is lower than others since it’s not the daily aliment for everyone.</p>
-
-<h2 id="break-even-point">Break-Even Point</h2>
-<p>Break-even (or break even), often abbreviated as B/E in finance, is the point of
-balance making neither a profit nor a loss. Any number below the break-even
-point constitutes a loss while any number above it shows a profit. The term
-originates in finance but the concept has been applied in other fields.</p>
-
-<blockquote>
-  <p>Break-Even ($) = Fixed Costs / Gross Margin Percentage</p>
-</blockquote>
-
-<p align="center">
-  <img alt="20210202-break-even" src="/images/20210202-break-even.png" />
-</p>
-
-<h2 id="back-order-rate">Back Order Rate</h2>
-<p>The back order rate is the ratio between the number of orders that cannot be
-fulfilled at the moment the customer places an order and the total number of
-orders. A high back order rate means that your customers have to wait for more
-longer than assumed, which might have an impact on customers’ satisfaction and
-the customer retention rate.</p>
-
-<p><a href="https://www.datapine.com/kpi-examples-and-templates/retail">datapine</a> inserts this KPI into their dashboard to help retailers to
-measure the ability to fulfill customer orders, to identify why the related
-product has no enough stock, and to avoid the same problem in the future.</p>
-
-<p>If you are curious about the scripts of the visualisation, you will find them
-<a href="https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/retail_kpis.ipynb">here</a>.</p>
-
-<h2 id="references">References</h2>
-<ul>
-  <li>“Retail”, <em>en.wikipedia.org</em>. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Retail">https://en.wikipedia.org/wiki/Retail</a></li>
-  <li>Francesca Nicasio, “Retail Metrics: 14 Essential KPIs for Tracking Your Business’ Performance”, <em>www.vendhq.com</em>. [Online]. Available: <a href="https://www.vendhq.com/blog/retail-metrics-and-kpis/">https://www.vendhq.com/blog/retail-metrics-and-kpis/</a></li>
-  <li>“Retail Key Performance Indicators and Metrics”, <em>www.datapine.com</em>. [Online]. Available: <a href="https://www.datapine.com/kpi-examples-and-templates/retail">https://www.datapine.com/kpi-examples-and-templates/retail</a></li>
-  <li>“15 Fundamental KPI Retail Metrics [And How to Measure Them]”, <em>ehopper.com</em>. [Online]. Available: <a href="https://ehopper.com/guides/kpi-retail/">https://ehopper.com/guides/kpi-retail/</a></li>
-  <li>Thomas Cesaroni, “9 KPIs Every Retail Manager Should Track”, <em>toucantoco.com</em>. [Online]. Available: <a href="https://toucantoco.com/blog/en/kpis-retail-manager/">https://toucantoco.com/blog/en/kpis-retail-manager/</a></li>
-  <li>“Top 8 metrics for retail KPIs”, <em>www.tableau.com</em>. [Online]. Available: <a href="https://www.tableau.com/learn/articles/retail-industry-metrics-kpis">https://www.tableau.com/learn/articles/retail-industry-metrics-kpis</a></li>
-  <li>“Inventory turnover”, <em>en.wikipedia.org</em>. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Inventory_turnover">https://en.wikipedia.org/wiki/Inventory_turnover</a></li>
-  <li>“Sell-through”, <em>en.wikipedia.org</em>. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Sell-through">https://en.wikipedia.org/wiki/Sell-through</a></li>
-  <li>“Break-even”, <em>en.wikipedia.org</em>. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Break-even">https://en.wikipedia.org/wiki/Break-even</a></li>
-  <li>“Economic Viability”, <em>www.ruthtrumpold.id.au</em>. [Online]. Available: <a href="http://www.ruthtrumpold.id.au/destech/?page_id=162">http://www.ruthtrumpold.id.au/destech/?page_id=162</a></li>
-  <li>ElasticComputeFarm, “supermarket stalls coolers market”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/supermarket-stalls-coolers-market-949913/">https://pixabay.com/photos/supermarket-stalls-coolers-market-949913/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html"><![CDATA[Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit. Retailers satisfy demand identified through a supply chain. Most modern retailers typically make a variety of strategic level decisions including the type of store, the market to be served, the optimal product assortment, customer service, supporting services and the store's overall market positioning. To point retailers in the right direction, they need to dig the retail metrics and KPIs to track in their business. In this blog, I'll talk about some pretty helpful KPIs for retailers.]]></summary></entry></feed>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html"><![CDATA[In retailing domain, one of the most important things is increasing the customer satifaction and the customer loyalty. To reach the goals, we need to understand CRM (Customer Relationship Management) firstly, then we can take steps to improve them.]]></summary></entry></feed>
