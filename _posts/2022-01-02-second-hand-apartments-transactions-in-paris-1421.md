@@ -176,8 +176,8 @@ captures changes over time, the seasonal component captures cyclical effects due
 to the time of year, the residual component captures the influences not
 described by the trend and seasonal effects. Thanks to this model, we find that
 except for July, there is another transaction peak in January, which we didn’t
-find above. In March and November, the transactions arrive at their low points,
-that might be because, during the transition period between 2 years, the desire
+find above. In March and June, the transactions arrive at their low points,
+that might be because, during the transition period between 2 months, the desire
 for purchasing or selling apartments is not that high.
 
 <p align="center">
