@@ -3,6 +3,7 @@ layout:      post
 title:       "Do you know the reactions of Modena vaccine?"
 lang:        en
 date:        "2021-09-20 22:27:55 +0200"
+series:      [covid-19]
 tags:        [analysis, visualisation, COVID-19]
 permalink:   /moderna-covid-19-vaccine-reactions/
 comments:    true

@@ -3,6 +3,7 @@ layout:      post
 title:       "Do you know which COVID-19 vaccine brings the most obvious reactions?"
 lang:        en
 date:        "2021-10-30 22:27:55 +0200"
+series:      [covid-19]
 tags:        [analysis, visualisation, COVID-19]
 permalink:   /four-covid-19-vaccines-reactions/
 comments:    true

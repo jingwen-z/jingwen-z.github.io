@@ -3,6 +3,7 @@ layout:      post
 title:       "COVID-19 analysis (up to 2020-03-02) COVID-19分析（截至2020年3月2日）"
 lang:        en
 date:        "2020-03-03 21:16:07 +0100"
+series:      [covid-19]
 tags:        [analysis, COVID-19, visualisation, geovisualisation]
 permalink:         /covid-19-analysis-1/
 comments:    true

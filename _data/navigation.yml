@@ -93,4 +93,5 @@ series:
     children:
       - title:  Real Estate
         url:    /series/real-estate/
- 
+      - title:  COVID-19
+        url:    /series/covid-19/
