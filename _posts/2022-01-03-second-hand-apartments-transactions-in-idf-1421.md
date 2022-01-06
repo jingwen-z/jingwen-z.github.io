@@ -3,6 +3,7 @@ layout:      post
 title:       "Second-hand apartments transactions in Île-de-France (01/2014 - 06/2021)"
 lang:        en
 date:        "2022-01-03 16:12:46 +0100"
+series:      [real-estate]
 tags:        [analysis, real-estate, visualisation, geovisualisation]
 permalink:         /second-hand-apartments-transactions-in-idf-1421/
 comments:    true
