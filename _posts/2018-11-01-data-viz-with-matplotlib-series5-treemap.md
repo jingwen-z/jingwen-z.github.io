@@ -1,9 +1,10 @@
 ---
 layout:             post
 title:              "Matplotlib Series 5: Treemap"
-lang:        en
+lang:               en
 date:               "2018-11-01 16:23:50 +0100"
 last_modified_at:   2019-07-01 23:11:24 +0200
+series:             [data-visualisation]
 tags:               [matplotlib, visualisation]
 permalink:         /data-viz-with-matplotlib-series5-treemap/
 comments:           true

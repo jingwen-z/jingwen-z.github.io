@@ -1,9 +1,10 @@
 ---
 layout:             post
 title:              "Matplotlib Series 11: Histogram"
-lang:        en
+lang:               en
 date:               2018-12-11 22:16:43 +0100
 last_modified_at:   2019-07-19 21:57:10 +0200
+series:             [data-visualisation]
 tags:               [matplotlib, visualisation]
 permalink:         /data-viz-with-matplotlib-series11-histogram/
 comments:           true

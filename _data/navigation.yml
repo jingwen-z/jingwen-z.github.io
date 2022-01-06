@@ -97,3 +97,6 @@ series:
         url:    /series/covid-19/
       - title:  Climate Change
         url:    /series/climate-change/
+      - title:  Data Visualisation
+        url:    /series/data-visualisation/
+

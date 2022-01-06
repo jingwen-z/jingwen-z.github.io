@@ -1,9 +1,10 @@
 ---
 layout:             post
 title:              "Matplotlib Series 8: Radar chart"
-lang:        en
+lang:               en
 date:               "2018-11-21 21:27:34 +0100"
 last_modified_at:   2019-07-19 21:55:37 +0200
+series:             [data-visualisation]
 tags:               [matplotlib, visualisation]
 permalink:         /data-viz-with-matplotlib-series8-radar-chart/
 comments:           true
