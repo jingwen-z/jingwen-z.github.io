@@ -3,6 +3,7 @@ layout:      post
 title:       "Climate change Series 1: Population"
 lang:        en
 date:        "2019-09-13 09:50:17 +0200"
+series:      [climate-change]
 tags:        [analysis, climate, visualisation, geovisualisation]
 permalink:         /climate-change-series1-population/
 comments:    true

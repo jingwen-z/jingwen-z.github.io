@@ -1,9 +1,10 @@
 ---
 layout:             post
 title:              "Matplotlib Series 2: Line chart"
-lang:        en
+lang:               en
 date:               2018-09-16 16:58:54 +0200
 last_modified_at:   2019-06-21 09:28:10 +0200
+series:             [data-visualisation]
 tags:               [matplotlib, visualisation]
 permalink:         /data-viz-with-matplotlib-series2-line-chart/
 comments:           true

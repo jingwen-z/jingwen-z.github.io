@@ -3,6 +3,7 @@ layout:      post
 title:       "Climate change Series 2: CO2 emission"
 lang:        en
 date:        "2019-09-20 15:06:24 +0200"
+series:      [climate-change]
 tags:        [analysis, climate, visualisation, geovisualisation]
 permalink:         /climate-change-series-2-co2-emission/
 comments:    true

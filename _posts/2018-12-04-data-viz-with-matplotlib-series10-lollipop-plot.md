@@ -1,9 +1,10 @@
 ---
 layout:             post
 title:              "Matplotlib Series 10: Lollipop plot"
-lang:        en
+lang:               en
 date:               2018-12-04 22:27:05 +0100
 last_modified_at:   2019-07-19 21:56:54 +0200
+series:             [data-visualisation]
 tags:               [matplotlib, visualisation]
 permalink:         /data-viz-with-matplotlib-series10-lollipop-plot/
 comments:           true

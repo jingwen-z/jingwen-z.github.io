@@ -1,9 +1,10 @@
 ---
 layout:             post
 title:              "Matplotlib Series 3: Pie chart"
-lang:        en
+lang:               en
 date:               "2018-10-18 21:05:15 +0200"
 last_modified_at:   2019-06-21 09:46:59 +0200
+series:             [data-visualisation]
 tags:               [matplotlib, visualisation]
 permalink:         /data-viz-with-matplotlib-series3-pie-chart/
 comments:           true

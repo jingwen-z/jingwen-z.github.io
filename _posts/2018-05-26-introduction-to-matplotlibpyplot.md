@@ -3,6 +3,7 @@ layout:      post
 title:       "Introduction to matplotlib.pyplot"
 lang:        en
 date:        "2018-05-26 09:06:12 +0200"
+series:      [data-visualisation]
 tags:        [matplotlib, visualisation]
 permalink:         /introduction-to-matplotlibpyplot/
 comments:    true

@@ -1,9 +1,10 @@
 ---
 layout:             post
 title:              "Matplotlib Series 4: Scatter plot"
-lang:        en
+lang:               en
 date:               "2018-10-25 21:06:53 +0200"
 last_modified_at:   2019-06-12 22:19:21 +0200
+series:             [data-visualisation]
 tags:               [matplotlib, visualisation]
 permalink:         /data-viz-with-matplotlib-series4-scatter-plot/
 comments:           true

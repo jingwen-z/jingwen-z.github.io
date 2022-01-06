@@ -1,9 +1,10 @@
 ---
 layout:             post
 title:              "Matplotlib Series 9: Word cloud"
-lang:        en
+lang:               en
 date:               2018-11-27 22:27:53 +0100
 last_modified_at:   2019-07-19 21:56:18 +0200
+series:             [data-visualisation]
 tags:               [matplotlib, visualisation]
 permalink:         /data-viz-with-matplotlib-series9-word-cloud/
 comments:           true

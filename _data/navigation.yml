@@ -5,6 +5,12 @@ header:
     url: /portfolio
 
   - titles:
+      en      : &EN       Series
+      zh-Hans : &ZH_HANS  系列
+      zh      : *ZH_HANS
+    url: /series
+
+  - titles:
       # @start locale config
       en      : &EN       Archive
       en-GB   : *EN
@@ -81,3 +87,17 @@ portfolio:
         url:    /portfolio/sql
       - title:  Visualisation
         url:    /portfolio/visualisation
+
+series:
+  - title: Series
+    children:
+      - title:  Real Estate
+        url:    /series/real-estate/
+      - title:  COVID-19
+        url:    /series/covid-19/
+      - title:  Climate Change
+        url:    /series/climate-change/
+      - title:  Data Visualisation
+        url:    /series/data-visualisation/
+      - title:  Retail
+        url:    /series/retail/

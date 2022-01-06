@@ -243,6 +243,11 @@ collections:
   cn:
     permalink: /cn/:title/
     output:    true
+  series:
+    my_label:  Series
+    permalink: /series/:name/
+    output:    true
+
 
 ## => Plugins
 ##############################
