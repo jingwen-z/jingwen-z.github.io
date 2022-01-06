@@ -8,9 +8,7 @@ header:
       en      : &EN       Series
       zh-Hans : &ZH_HANS  系列
       zh      : *ZH_HANS
-    urls:
-      en      : /series/
-      zh      : /cn/series/
+    url: /series
 
   - titles:
       # @start locale config
@@ -89,3 +87,10 @@ portfolio:
         url:    /portfolio/sql
       - title:  Visualisation
         url:    /portfolio/visualisation
+
+series:
+  - title: Series
+    children:
+      - title:  Real Estate
+        url:    /series/real-estate/
+ 
