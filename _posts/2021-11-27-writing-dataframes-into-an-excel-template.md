@@ -44,7 +44,7 @@ We have an Excel template named "template.xlsx", which contains two worksheets
 
 <p align="center">
   <img alt="20211127-category-template"
-  src="{{ site.baseurl }}/images/20211127-category-template.png"/>
+  src="{{ site.baseurl }}/images/20211127-category-template.PNG"/>
 </p>
 
 The worksheet "category" shows the performance of each category with different
