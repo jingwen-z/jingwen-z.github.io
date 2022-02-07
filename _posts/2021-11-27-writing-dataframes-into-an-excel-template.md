@@ -52,7 +52,7 @@ indicators like turnover, volume, number of clients, etc.
 
 <p align="center">
   <img alt="20211127-product-template"
-  src="{{ site.baseurl }}/images/20211127-product-template.png"/>
+  src="{{ site.baseurl }}/images/20211127-product-template.PNG"/>
 </p>
 
 The worksheet "product" shows the performance of each product with the same
