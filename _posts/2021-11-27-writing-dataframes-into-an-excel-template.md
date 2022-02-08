@@ -63,7 +63,7 @@ classic_indicators_df, other_indicators_df and products_detail_df.
 
 <p align="center">
   <img alt="20211127-category-df"
-  src="{{ site.baseurl }}/images/20211127-category-df.PNG"/>
+  src="{{ site.baseurl }}/images/20211127-category-df.png"/>
 </p>
 
 <p align="center">
