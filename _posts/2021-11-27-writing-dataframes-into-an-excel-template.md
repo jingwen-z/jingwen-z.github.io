@@ -68,7 +68,7 @@ classic_indicators_df, other_indicators_df and products_detail_df.
 
 <p align="center">
   <img alt="20211127-product-df"
-  src="{{ site.baseurl }}/images/20211127-product-df.PNG"/>
+  src="{{ site.baseurl }}/images/20211127-product-df.png"/>
 </p>
 
 ## Write data into the template
