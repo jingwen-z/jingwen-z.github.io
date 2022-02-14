@@ -4,11 +4,14 @@ title:       "Python PEP 328: import and build package"
 lang:        en
 date:        "2018-08-04 18:56:28 +0200"
 tags:        [python3, PEP-328]
-permalink:         /python-pep-328-import-and-build-package/
+permalink:   /python-pep-328-import-and-build-package/
 comments:    true
-excerpt:            >
+excerpt:     >
     This blog follows PEP 328 to specify how to import package absolutely or
     relatively in Python and how to build package as well.
+cover:             /images/20180804-python.jpg
+img_width:         1280
+img_height:        853
 article_header:
   type: overlay
   theme: dark
@@ -90,7 +93,7 @@ Working with Python packages is really simple. All you need to do is:
 - Put your classes in it.
 - Create a `__init__.py` file in the directory
 
-{% highlight bash %}
+```
 $ tree
 .
 ├── mypackage
@@ -100,8 +103,7 @@ $ tree
 │   │   └── spam.py
 │   ├── __init__.py
 │   └── job.py
-
-{% endhighlight %}
+```
 
 ### Import modules
 In the example above, in order to import `grok.py` and `spam.py` in `job.py`, we can write:
@@ -112,7 +114,7 @@ from .A import spam
 {% endhighlight %}
 
 **Absolute imports**
-{% highlight bash %}
+```
 $ tree
 .
 ├── mypackage
@@ -124,9 +126,7 @@ $ tree
 │   │   ├── __init__.py
 │   │   └── bar.py
 │   └── __init__.py
-
-{% endhighlight %}
-
+```
 
 {% highlight python %}
 # mypackage/A/spam.py
@@ -157,9 +157,11 @@ which equals to `../B`.
 - [Python 3.6 tutorial: 6. Modules][Py3.6 modules]
 - [《Python Cookbook》3rd 中文版3.0.0, 第十章：模块与包][Chinese version]
 - [How to Create a Python Package][build package]
+- David Clode, "A green tree python in a typical pose", _unsplash.com_. [Online]. Available: [https://unsplash.com/photos/5uU8HSpfwkI][backgroud-img]
 
 
 [PEP328]: https://www.python.org/dev/peps/pep-0328
 [Py3.6 modules]: https://docs.python.org/3.6/tutorial/modules.html
 [Chinese version]: http://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p10_modules_and_packages.html
 [build package]: https://www.pythoncentral.io/how-to-create-a-python-package
+[backgroud-img]: https://unsplash.com/photos/5uU8HSpfwkI
