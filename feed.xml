@@ -1,5 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-16T23:06:34+02:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Second-hand apartments transactions in Île-de-France (01/2014 - 06/2021)</title><link href="https://jingwen-z.github.io/second-hand-apartments-transactions-in-idf-1421/" rel="alternate" type="text/html" title="Second-hand apartments transactions in Île-de-France (01/2014 - 06/2021)" /><published>2022-01-03T16:12:46+01:00</published><updated>2022-01-03T16:12:46+01:00</updated><id>https://jingwen-z.github.io/second-hand-apartments-transactions-in-idf-1421</id><content type="html" xml:base="https://jingwen-z.github.io/second-hand-apartments-transactions-in-idf-1421/"><![CDATA[<p>Île-de-France is the most populous of the 18 regions of France. It is located
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-16T23:07:51+02:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Learning PostgreSQL with Docker</title><link href="https://jingwen-z.github.io/learning-postgresql-with-docker/" rel="alternate" type="text/html" title="Learning PostgreSQL with Docker" /><published>2022-05-14T22:41:35+02:00</published><updated>2022-05-14T22:41:35+02:00</updated><id>https://jingwen-z.github.io/learning-postgresql-with-docker</id><content type="html" xml:base="https://jingwen-z.github.io/learning-postgresql-with-docker/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>During the recent work, I need to write data into PostgreSQL database. Before writing real data on staging, I learnt how to do it with Docker. In this blog, I’ll talk about this with the following points:</p>
+<ul>
+  <li>What is PostgreSQL?</li>
+  <li>Why Docker?</li>
+  <li>Create a database and tables with Docker container</li>
+  <li>Insert data with Python</li>
+</ul>
+
+<h2 id="what-is-postgresql">What is PostgreSQL?</h2>
+<p>PostgreSQL is a powerful, open source object-relational database system that
+uses and extends the SQL language combined with many features that safely store
+and scale the most complicated data workloads. PostgreSQL comes with many
+features aimed to help developers build applications, administrators to protect
+data integrity and build fault-tolerant environments, and help you manage your
+data no matter how big or small the dataset. In addition to being free and open
+source, PostgreSQL is highly extensible. For example, you can define your own
+data types, build out custom functions, even write code from different
+programming languages without recompiling your database!</p>
+
+<h2 id="why-docker">Why Docker?</h2>
+<p>Developing apps today requires so much more than writing code. Multiple
+languages, frameworks, architectures, and discontinuous interfaces between tools
+for each lifecycle stage creates enormous complexity. Docker simplifies and
+accelerates your workflow, while giving developers the freedom to innovate with
+their choice of tools, application stacks, and deployment environments for each
+project.</p>
+
+<h2 id="create-a-database-and-tables-with-docker-container">Create a database and tables with Docker container</h2>
+<p>Here, I used the official docker image of <a href="https://hub.docker.com/_/postgres/">postgres</a> to
+create a database and tables.</p>
+
+<h3 id="create-a-database">Create a database</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE DATABASE xxx;
+</code></pre></div></div>
+<p align="center">
+  <img alt="20220514-create-db" src="/images/20220514-create-db.png" />
+</p>
+
+<h3 id="create-a-table">Create a table</h3>
+<p>We can create a table with <a href="https://www.postgresql.org/docs/9.1/sql-createtable.html"><code class="language-plaintext highlighter-rouge">CREATE TABLE</code></a> and insert value
+into it with <a href="https://www.postgresql.org/docs/current/sql-insert.html"><code class="language-plaintext highlighter-rouge">INSERT INTO table_name (column_name) VALUES (values)</code></a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE jsonb_test (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    parameters jsonb
+);
+INSERT INTO jsonb_test ("parameters") VALUES ('{"param1":"value1","param2":22,"param3":[3,33]}');
+</code></pre></div></div>
+<p align="center">
+  <img alt="20220514-create-table-insert-values" src="/images/20220514-create-table-insert-values.png" />
+</p>
+
+<h3 id="deletion">Deletion</h3>
+<p>To delete data in a table with conditions or data a whole table, we can use
+<code class="language-plaintext highlighter-rouge">DELETE FROM table_name WHERE xxx;</code> or <code class="language-plaintext highlighter-rouge">DELETE FROM table_name</code> or
+<code class="language-plaintext highlighter-rouge">DROP TABLE tb_name</code>.</p>
+
+<h2 id="insert-data-with-python">Insert data with Python</h2>
+<p>Here, I used the official docker images of <a href="https://hub.docker.com/_/python">python3</a>.
+Now we will insert a pandas dataframe <code class="language-plaintext highlighter-rouge">pdf</code> into the table <code class="language-plaintext highlighter-rouge">jsonb_test</code>:</p>
+
+<p align="center">
+  <img alt="20220514-table-jsonb" src="/images/20220514-table-jsonb.png" />
+</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="n">pdf</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s">'parameters'</span><span class="p">:[</span><span class="s">'{"param1":"v1", "param2": 2}'</span><span class="p">]})</span>
+</code></pre></div></div>
+
+<p align="center">
+  <img alt="20220514-create-pandas-df" src="/images/20220514-create-pandas-df.png" />
+</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>eng_pg = create_engine("postgresql://postgres:{pw}@{host}/pgdb".format(pw=PASSWORD],
+                                                                       host=HOST_NAME))
+pdf.to_sql("jsonb_test", eng_pg, if_exists='append', index=False)
+</code></pre></div></div>
+<p>Before inserting the dataframe into PGSQL, we need to create a PGSQL engine with
+<code class="language-plaintext highlighter-rouge">create_engine</code> by specifying the host name and password, then insert the
+dataframe with <code class="language-plaintext highlighter-rouge">to_sql</code>.</p>
+
+<p align="center">
+  <img alt="20220514-create-engine" src="/images/20220514-create-engine.png" />
+</p>
+
+<p align="center">
+  <img alt="20220514-check-table" src="/images/20220514-check-table.png" />
+</p>
+
+<p>With the check above, we can ensure that we insert the dataframe successfully.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>“About PostgreSQL”, <em>postgresql.org</em>. [Online]. Available: <a href="https://www.postgresql.org/about/">https://www.postgresql.org/about/</a></li>
+  <li>“How to run PostgreSQL and pgAdmin on Docker on Fedora 31?”, <em>medium.com</em>. [Online]. Available: <a href="https://medium.com/@amiry.jd/how-to-run-postgresql-and-pgadmin-on-docker-on-fedora-31-e0bda8c65e3d">https://medium.com/@amiry.jd/how-to-run-postgresql-and-pgadmin-on-docker-on-fedora-31-e0bda8c65e3d</a></li>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="python3" /><category term="pgsql" /><category term="Docker" /><summary type="html"><![CDATA[This blog talks about how to create a PostgreSQL database and tables with Docker container and how to insert a dataframe into PostgreSQL database with Python.]]></summary></entry><entry xml:lang="en"><title type="html">Second-hand apartments transactions in Île-de-France (01/2014 - 06/2021)</title><link href="https://jingwen-z.github.io/second-hand-apartments-transactions-in-idf-1421/" rel="alternate" type="text/html" title="Second-hand apartments transactions in Île-de-France (01/2014 - 06/2021)" /><published>2022-01-03T16:12:46+01:00</published><updated>2022-01-03T16:12:46+01:00</updated><id>https://jingwen-z.github.io/second-hand-apartments-transactions-in-idf-1421</id><content type="html" xml:base="https://jingwen-z.github.io/second-hand-apartments-transactions-in-idf-1421/"><![CDATA[<p>Île-de-France is the most populous of the 18 regions of France. It is located
 in the north-central part of the country and often called the Région Parisienne
 (“Paris Region”) because it includes the city of Paris. Besides the landmarks of
 Paris, the region has many important historic sites, including the Palace of
@@ -1044,209 +1142,4 @@ Systemic reaction: When inflammation spreads from a local area of ​​an organ
   <li>“辉瑞-生物科技COVID-19疫苗概述和安全性”, <em>chinese.cdc.gov</em>. [Online]. Available: <a href="https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html">https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html</a></li>
   <li>大众迷你仓, “新冠疫苗接种后注意事项”, <em>zhuanlan.zhihu.com</em>. [Online]. Available: <a href="https://zhuanlan.zhihu.com/p/368304205">https://zhuanlan.zhihu.com/p/368304205</a></li>
   <li>Alexandra_Koch, “corona vaccination virus vaccine”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/">https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information]]></summary></entry><entry xml:lang="en"><title type="html">How to create a data pipeline with Azure data factory and slack?</title><link href="https://jingwen-z.github.io/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/" rel="alternate" type="text/html" title="How to create a data pipeline with Azure data factory and slack?" /><published>2021-04-27T11:23:00+02:00</published><updated>2021-04-27T11:23:00+02:00</updated><id>https://jingwen-z.github.io/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack</id><content type="html" xml:base="https://jingwen-z.github.io/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Imagine that we need to calculat some KPIs by running Azure Databricks notebook,
-before the calculation we also need to check our input data to ensure that they
-satisfy some rules, such as check if clients are in our database, check if there
-is the overlap between the period of analysis and the period of comparison, or
-count the sample of each input files (clients, stores, or products), etc.
-Sometimes, the demand comes from other teams, like marketing or innovation
-teams, to optimise the working process, creating a data pipeline and communicate
-on slack should be helpful. Since in my working environment, we use Microsoft
-Azure, in this blog, I’ll create a data pipeline with Azure Data Factory and
-talk about the following points:</p>
-<ul>
-  <li>What is Microsoft Azure?</li>
-  <li>What is Slack?</li>
-  <li>How to create a date pipeline with Azure Data Factory and Databricks?</li>
-  <li>How to communicate data pipeline’s result on Slack?</li>
-</ul>
-
-<h2 id="what-is-microsoft-azure">What is Microsoft Azure?</h2>
-<p>Microsoft Azure, commonly referred to as Azure, is a cloud computing service
-created by Microsoft for building, testing, deploying, and managing applications
-and services through Microsoft-managed data centers. It provides software as a
-service (SaaS), platform as a service (PaaS) and infrastructure as a service
-(IaaS) and supports many different programming languages, tools, and frameworks,
-including both Microsoft-specific and third-party software and systems.
-Moreover, Azure Data Factory is a data integration service that allows creation
-of data-driven workflows in the cloud for orchestrating and automating data
-movement and data transformation.</p>
-
-<p>Furthermore, Databricks is an enterprise software company founded by the
-original creators of Apache Spark. Databricks develops a web-based platform for
-working with Spark, that provides automated cluster management and IPython-style
-notebooks. In November 2017, the company was announced as a first-party service
-on Microsoft Azure via the integration Azure Databricks.</p>
-
-<h2 id="what-is-slack">What is Slack?</h2>
-<p>Slack is a proprietary business communication platform developed by American
-software company Slack Technologies. Slack offers many IRC-style features,
-including persistent chat rooms (channels) organized by topic, private groups,
-and direct messaging. For more information, you can find them <a href="https://slack.com">here</a>.</p>
-
-<h2 id="how-to-create-a-date-pipeline-with-azure-data-factory-and-databricks">How to create a date pipeline with Azure Data Factory and Databricks?</h2>
-<p>Before beginning, you need to have/create a Databricks workspace, prepare the
-Python notebook that you want to execute using Azure Data Factory. We have 2
-main steps for automating the execution of notebook:</p>
-<ul>
-  <li>Create a data pipeline in Azure Data Factory</li>
-  <li>Create a trigger for running a pipeline</li>
-</ul>
-
-<h3 id="create-a-data-pipeline-in-azure-data-factory">Create a data pipeline in Azure Data Factory</h3>
-<p>I won’t show more details for the step, since you can find them in this
-<a href="https://docs.microsoft.com/en-gb/azure/data-factory/transform-data-using-databricks-notebook">tutorial</a> as the following steps:</p>
-<ul>
-  <li>Create a data factory.</li>
-  <li>Create a pipeline that uses Databricks Notebook Activity.</li>
-  <li>Trigger a pipeline run.</li>
-  <li>Monitor the pipeline run.</li>
-</ul>
-
-<h3 id="create-a-trigger-for-running-a-pipeline">Create a trigger for running a pipeline</h3>
-<p>Triggers represent a unit of processing that determines when a pipeline
-execution needs to be kicked off. Currently, Data Factory supports three types
-of triggers:</p>
-<ul>
-  <li><a href="https://docs.microsoft.com/en-gb/azure/data-factory/how-to-create-schedule-trigger">Schedule trigger</a>: A trigger that invokes a pipeline on a
-wall-clock schedule.</li>
-  <li><a href="https://docs.microsoft.com/en-gb/azure/data-factory/how-to-create-tumbling-window-trigger">Tumbling window trigger</a>: A trigger that operates
-on a periodic interval, while also retaining state.</li>
-  <li>Event-based trigger: A trigger that responds to an event, like
-<a href="https://docs.microsoft.com/en-gb/azure/data-factory/how-to-create-event-trigger">a storage event</a> or <a href="https://docs.microsoft.com/en-gb/azure/data-factory/how-to-create-custom-event-trigger">a custom event</a>.</li>
-</ul>
-
-<p>Same as above, you can find all tutorials with the links.</p>
-
-<h2 id="how-to-communicate-data-pipelines-result-on-slack">How to communicate data pipeline’s result on Slack?</h2>
-<p>Slack provides a range of <a href="https://api.slack.com/apis">APIs</a> that provide access to read, write,
-and update many types of data in Slack. To communicate data pipeline’s result on
-Slack, we can send messages to a channel or upload files on a channel.</p>
-
-<h3 id="slack-apis">Slack APIs</h3>
-<h4 id="send-messages-to-a-channel">Send messages to a channel</h4>
-<p>We can use <a href="https://api.slack.com/methods/chat.postMessage"><code class="language-plaintext highlighter-rouge">chat.postMessage</code></a> for posting a message to a
-public channel, private channel, or direct message/IM channel.</p>
-
-<p>A request is an HTTP URL of the following form:</p>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST https://slack.com/api/chat.postMessage
-</span></code></pre></div></div>
-<p>with certain arguments:</p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">token</code>: (Required) Authentication token bearing required scopes. Tokens
-should be passed as an HTTP Authorization header or alternatively, as a <code class="language-plaintext highlighter-rouge">POST</code>
-parameter.</li>
-  <li><code class="language-plaintext highlighter-rouge">channel</code>: (Required) Channel, private group, or IM channel to send message
-to. Can be an encoded ID, or a name.</li>
-</ul>
-
-<p>About more information of arguments, you can find them <a href="https://api.slack.com/methods/chat.postMessage">here</a>.</p>
-
-<h4 id="upload-files">Upload files</h4>
-<p>We can use <a href="https://api.slack.com/methods/files.upload"><code class="language-plaintext highlighter-rouge">files.upload</code></a> for creating or uploading an existing
-file.</p>
-
-<p>A request is an HTTP URL of the following form:</p>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST https://slack.com/api/files.upload
-</span></code></pre></div></div>
-<p>with certain arguments:</p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">token</code>: (Required) Authentication token bearing required scopes. Tokens
-should be passed as an HTTP Authorization header or alternatively, as a <code class="language-plaintext highlighter-rouge">POST</code>
-parameter.</li>
-</ul>
-
-<p>About more information of arguments, you can find them <a href="https://api.slack.com/methods/files.upload">here</a>.</p>
-
-<h3 id="how-to-find-channel-id-on-slack">How to find channel ID on Slack?</h3>
-<p>To send messages or upload files to a public channel, a multi-person direct
-message or a direct message to someone, we need to get the channel ID, but where
-can we find them?</p>
-
-<h4 id="the-public-channels-id">The public channel’s ID</h4>
-<p>When we open Slack with navigator, we can find it in the URL, with the following
-format:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://app.slack.com/client/TD123ABCD/C024BE91L
-</code></pre></div></div>
-
-<p>The last part of the URL(<code class="language-plaintext highlighter-rouge">C024BE91L</code>) above starts with “C”, which presents
-the public channel’s ID.</p>
-
-<h4 id="the-multi-person-direct-messages-id">The multi-person direct message’s ID</h4>
-<p>Similar as above, let’s open Slack with navigator, we can find it in the URL,
-with the following format:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://app.slack.com/client/TD123ABCD/G012AC86C
-</code></pre></div></div>
-
-<p>The last part of the URL(<code class="language-plaintext highlighter-rouge">G012AC86C</code>) above starts with “G”, which presents
-the group’s ID.</p>
-
-<h4 id="the-users-id">The user’s ID</h4>
-<p>For a User’s ID, we can find it both on the website or the application. When we
-check someone’s profile, we can find the ID (starts with “U”) by clicking
-“More”.</p>
-
-<p align="center">
-  <img alt="vf.info()" src="/images/20210427-slack-user-id.jpg" />
-</p>
-
-<h3 id="how-to-realise-it-via-python">How to realise it via Python?</h3>
-<h4 id="send-messages-to-a-channel-1">Send messages to a channel</h4>
-<p>We can send the messages with <code class="language-plaintext highlighter-rouge">requests.post()</code> by specify the token,
-the channel ID and message that you want to send.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">"https://slack.com/api/chat.postMessage"</span><span class="p">,</span> <span class="p">{</span>
-  <span class="s">"token"</span><span class="p">:</span> <span class="s">"as-123dfghj456-klqwert7y8u9iop"</span><span class="p">,</span>
-  <span class="s">"channel"</span><span class="p">:</span> <span class="s">"U012AB34C"</span><span class="p">,</span>
-  <span class="s">"text"</span><span class="p">:</span> <span class="s">"test"</span>
-<span class="p">})</span>
-</code></pre></div></div>
-<p>I sent a message “test” with Databricks Message Bot on Slack, and received a
-message as below.</p>
-
-<p align="center">
-  <img alt="20210427-slack-send-msg" src="/images/20210427-slack-send-msg.PNG" />
-</p>
-
-<h4 id="upload-files-1">Upload files</h4>
-<p>We can upload the file with <code class="language-plaintext highlighter-rouge">requests.post()</code> by specify the file path, the
-token, the channel ID and <code class="language-plaintext highlighter-rouge">initial_comment</code> if you want to introduce the file.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">"https://slack.com/api/files.upload"</span><span class="p">,</span>
-  <span class="n">params</span><span class="o">=</span> <span class="p">{</span>
-    <span class="s">"filename"</span><span class="p">:</span> <span class="s">"/path/of/file"</span><span class="p">,</span>
-    <span class="s">"token"</span><span class="p">:</span> <span class="s">"as-123dfghj456-klqwert7y8u9iop"</span><span class="p">,</span>
-    <span class="s">"channels"</span><span class="p">:</span> <span class="s">"U012AB34C"</span><span class="p">,</span>
-    <span class="s">"initial_comment"</span> <span class="p">:</span> <span class="s">"test file"</span><span class="p">},</span>
-  <span class="n">files</span><span class="o">=</span> <span class="p">{</span>
-    <span class="s">"file"</span> <span class="p">:</span> <span class="p">(</span><span class="s">"/path/of/file"</span><span class="p">,</span>
-              <span class="nb">open</span><span class="p">(</span><span class="s">"/path/of/file"</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">),</span>
-              <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">basename</span><span class="p">(</span><span class="s">"/path/of/file"</span><span class="p">))[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">:])}</span>
-<span class="p">)</span>
-</code></pre></div></div>
-
-<h2 id="conclusion">Conclusion</h2>
-<p>In this blog, I talked about how to create and automate a data pipeline on Azure
-Data Factory, how to send messages and upload files on Slack with its APIs. Hope
-it’s helpful for you!</p>
-
-<h2 id="references">References</h2>
-<ul>
-  <li>“Microsoft Azure”, <em>en.wikipedia.org</em>. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Microsoft_Azure">https://en.wikipedia.org/wiki/Microsoft_Azure</a></li>
-  <li>“Databricks”, <em>en.wikipedia.org</em>. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Databricks">https://en.wikipedia.org/wiki/Databricks</a></li>
-  <li>“Slack (software)”, <em>en.wikipedia.org</em>. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Slack_(software)">https://en.wikipedia.org/wiki/Slack_(software)</a></li>
-  <li>“Run a Databricks notebook with the Databricks Notebook Activity in Azure Data Factory”, <em>docs.microsoft.com</em>. [Online].
-Available: <a href="https://docs.microsoft.com/en-gb/azure/data-factory/transform-data-using-databricks-notebook">https://docs.microsoft.com/en-gb/azure/data-factory/transform-data-using-databricks-notebook</a></li>
-  <li>“Pipeline execution and triggers in Azure Data Factory”, <em>docs.microsoft.com</em>. [Online].
-Available: <a href="https://docs.microsoft.com/en-gb/azure/data-factory/concepts-pipeline-execution-triggers">https://docs.microsoft.com/en-gb/azure/data-factory/concepts-pipeline-execution-triggers</a></li>
-  <li>billycm, “pipe rea l’eau metal pipeline”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/fr/photos/pipe-red-l-eau-m%C3%A9tal-pipeline-2369719/">https://pixabay.com/fr/photos/pipe-red-l-eau-m%C3%A9tal-pipeline-2369719/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="data-processing" /><category term="API" /><summary type="html"><![CDATA[In this blog, I talked about how to create and automate a data pipeline on Azure Data Factory, how to send messages and upload files on Slack with its APIs.]]></summary></entry></feed>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of the population of different ages after being vaccinated with Pfizer-BioNTech. Today, I will take you to learn more about the specific information]]></summary></entry></feed>
