@@ -287,6 +287,30 @@
     window.TEXT_VARIABLES = TEXT_VARIABLES;
   })();
 </script>
+<script>
+  (function(h,o,u,n,d) {
+    h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+    d=o.createElement(u);d.async=1;d.src=n
+    n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+  })(window,document,'script','https://www.datadoghq-browser-agent.com/datadog-rum-v4.js','DD_RUM')
+  DD_RUM.onReady(function() {
+    DD_RUM.init({
+      clientToken: 'pubcda42e398091be9674a1ef9abd156415',
+      applicationId: '88839061-4ced-42cf-98c7-169c5e8ab6e4',
+      site: 'datadoghq.eu',
+      service: 'jingwen-z.github.io',
+      env: 'prod',
+      // Specify a version number to identify the deployed version of your application in Datadog
+      // version: '1.0.0',
+      sampleRate: 100,
+      allowedTracingOrigins: ["https://search.jimidata.info"],
+      trackInteractions: true,
+      defaultPrivacyLevel: 'mask-user-input'
+    });
+
+    DD_RUM.startSessionReplayRecording();
+  })
+</script>
 </head>
   <body>
     <div class="root" data-is-touch="false">
@@ -750,7 +774,7 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
     };
   }
 
-  /// search
+  // search
   function searchByQuery(query) {
     var i, j, key, keys, cur, _title, result = {};
     keys = Object.keys(searchData);
@@ -768,6 +792,50 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
       }
     }
     return result;
+  }
+
+  // search
+  function remoteSearchByQuery(query) {
+    console.log(`searching: ${query}`);
+    var i, j, key, keys, cur, _title;
+    const url = 'https://search.jimidata.info/sites/jingwen-z.github.io/posts/search?' + $.param({
+      q: query
+    });
+    let start = Date.now();
+    $.ajax({
+      'url': url,
+      'success': function(data) {
+        let duration = Date.now() - start;
+        console.log(`received response successfully (${duration} ms)`);
+
+        result = {};
+        keys = Object.keys(data);
+
+        for (i = 0; i < keys.length; i++) {
+          key = keys[i];
+          for (j = 0; j < data[key].length; j++) {
+            cur = data[key][j], _title = cur.title;
+            if ((result[key] === undefined || result[key] && result[key].length < 4 )
+              && _title.toLowerCase().indexOf(query.toLowerCase()) >= 0) {
+              if (result[key] === undefined) {
+                result[key] = [];
+              }
+              result[key].push(cur);
+            }
+          }
+        }
+
+        $('.js-search-result').html(render(data));
+        $resultItems = $('.search-result__item');
+        activeIndex = 0;
+        $resultItems.eq(0).addClass('active');
+      },
+      'error': function(data) {
+        let duration = Date.now() - start;
+        console.error(`received error response (${duration} ms)`);
+        console.error(data);
+      }
+    })
   }
 
   var renderHeader = memorize(function(header) {
@@ -801,10 +869,9 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
     $result.html(null);
     $resultItems = $('.search-result__item'); activeIndex = 0;
   }
+
   function onInputNotEmpty(val) {
-    $result.html(render(searchByQuery(val)));
-    $resultItems = $('.search-result__item'); activeIndex = 0;
-    $resultItems.eq(0).addClass('active');
+    remoteSearchByQuery(val);
   }
 
   search.clear = clear;
