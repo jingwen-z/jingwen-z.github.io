@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-08-28T21:55:09+02:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-08-28T22:01:46+02:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
 </subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Learning PostgreSQL with Docker</title><link href="https://jingwen-z.github.io/learning-postgresql-with-docker/" rel="alternate" type="text/html" title="Learning PostgreSQL with Docker" /><published>2022-05-14T22:41:35+02:00</published><updated>2022-05-14T22:41:35+02:00</updated><id>https://jingwen-z.github.io/learning-postgresql-with-docker</id><content type="html" xml:base="https://jingwen-z.github.io/learning-postgresql-with-docker/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>During the recent work, I need to write data into PostgreSQL database. Before writing real data on staging, I learnt how to do it with Docker. In this blog, I’ll talk about this with the following points:</p>
 <ul>
@@ -565,7 +565,7 @@ to do this with the following points:</p>
 indicators like turnover, volume, number of clients, etc.</p>
 
 <p align="center">
-  <img alt="20211127-product-template" src="/images/20211127-product-template.png" />
+  <img alt="20211127-product-template" src="/images/20211127-product-template.PNG" />
 </p>
 
 <p>The worksheet “product” shows the performance of each product with the same
@@ -575,11 +575,11 @@ indicators.</p>
 classic_indicators_df, other_indicators_df and products_detail_df.</p>
 
 <p align="center">
-  <img alt="20211127-category-df" src="/images/20211127-category-df.PNG" />
+  <img alt="20211127-category-df" src="/images/20211127-category-df.png" />
 </p>
 
 <p align="center">
-  <img alt="20211127-product-df" src="/images/20211127-product-df.PNG" />
+  <img alt="20211127-product-df" src="/images/20211127-product-df.png" />
 </p>
 
 <h2 id="write-data-into-the-template">Write data into the template</h2>
