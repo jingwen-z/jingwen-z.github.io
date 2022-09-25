@@ -333,7 +333,7 @@
         <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/series">Series</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4));background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix">
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20180804-python.jpg);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix">
       <ul class="left-col menu">
         <li>
               <a class="button button--secondary button--pill button--sm"
@@ -458,15 +458,16 @@ example,</p>
   <li>Create a <code class="language-plaintext highlighter-rouge">__init__.py</code> file in the directory</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tree
-<span class="nb">.</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tree
+.
 ├── mypackage
 │   ├── A
 │   │   ├── __init__.py
 │   │   ├── grok.py
 │   │   └── spam.py
 │   ├── __init__.py
-│   └── job.py</code></pre></figure>
+│   └── job.py
+</code></pre></div></div>
 
 <h3 id="import-modules">Import modules</h3>
 <p>In the example above, in order to import <code class="language-plaintext highlighter-rouge">grok.py</code> and <code class="language-plaintext highlighter-rouge">spam.py</code> in <code class="language-plaintext highlighter-rouge">job.py</code>, we can write:</p>
@@ -476,9 +477,8 @@ example,</p>
 <span class="kn">from</span> <span class="nn">.A</span> <span class="kn">import</span> <span class="n">spam</span></code></pre></figure>
 
 <p><strong>Absolute imports</strong></p>
-
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tree
-<span class="nb">.</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ tree
+.
 ├── mypackage
 │   ├── A
 │   │   ├── __init__.py
@@ -487,7 +487,8 @@ example,</p>
 │   ├── B
 │   │   ├── __init__.py
 │   │   └── bar.py
-│   └── __init__.py</code></pre></figure>
+│   └── __init__.py
+</code></pre></div></div>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># mypackage/A/spam.py
 </span><span class="kn">from</span> <span class="nn">mypackage.A</span> <span class="kn">import</span> <span class="n">grok</span> <span class="c1"># OK
@@ -516,6 +517,7 @@ which equals to <code class="language-plaintext highlighter-rouge">../B</code>.<
   <li><a href="https://docs.python.org/3.6/tutorial/modules.html">Python 3.6 tutorial: 6. Modules</a></li>
   <li><a href="http://python3-cookbook.readthedocs.io/zh_CN/latest/chapters/p10_modules_and_packages.html">《Python Cookbook》3rd 中文版3.0.0, 第十章：模块与包</a></li>
   <li><a href="https://www.pythoncentral.io/how-to-create-a-python-package">How to Create a Python Package</a></li>
+  <li>David Clode, “A green tree python in a typical pose”, <em>unsplash.com</em>. [Online]. Available: <a href="https://unsplash.com/photos/5uU8HSpfwkI">https://unsplash.com/photos/5uU8HSpfwkI</a></li>
 </ul>
 
 </div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2018-08-04T18:56:28+02:00"><!-- start custom article footer snippet -->
