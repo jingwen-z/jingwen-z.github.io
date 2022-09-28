@@ -10,29 +10,29 @@
 		
 	</script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>API - Jingwen Zheng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Building Azure function with Python - Jingwen Zheng</title>
 
-<meta name="description" content="">
+<meta name="description" content="In this article, we talk about what we need to create an Azure function, what is HTTP triggers and bindings, how to test its functionality locally and how to...">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>API | Jingwen Zheng</title>
+<title>Building Azure function with Python | Jingwen Zheng</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="API" />
+<meta property="og:title" content="Building Azure function with Python" />
 <meta name="author" content="Jingwen Zheng" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Data Science Enthusiast" />
-<meta property="og:description" content="Data Science Enthusiast" />
-<link rel="canonical" href="https://jingwen-z.github.io/portfolio/api" />
-<meta property="og:url" content="https://jingwen-z.github.io/portfolio/api" />
+<meta name="description" content="In this article, we talk about what we need to create an Azure function, what is HTTP triggers and bindings, how to test its functionality locally and how to publish it on Azure." />
+<meta property="og:description" content="In this article, we talk about what we need to create an Azure function, what is HTTP triggers and bindings, how to test its functionality locally and how to publish it on Azure." />
+<link rel="canonical" href="https://jingwen-z.github.io/building-azure-function-with-python/" />
+<meta property="og:url" content="https://jingwen-z.github.io/building-azure-function-with-python/" />
 <meta property="og:site_name" content="Jingwen Zheng" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-28T12:46:05+02:00" />
+<meta property="article:published_time" content="2022-09-25T09:47:03+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="API" />
+<meta property="twitter:title" content="Building Azure function with Python" />
 <meta name="twitter:site" content="@Jingwen_QI" />
 <meta name="twitter:creator" content="@Jingwen Zheng" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jingwen Zheng"},"dateModified":"2022-09-28T12:46:05+02:00","datePublished":"2022-09-28T12:46:05+02:00","description":"Data Science Enthusiast","headline":"API","mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io/portfolio/api"},"url":"https://jingwen-z.github.io/portfolio/api"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jingwen Zheng"},"dateModified":"2022-09-25T09:47:03+02:00","datePublished":"2022-09-25T09:47:03+02:00","description":"In this article, we talk about what we need to create an Azure function, what is HTTP triggers and bindings, how to test its functionality locally and how to publish it on Azure.","headline":"Building Azure function with Python","mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io/building-azure-function-with-python/"},"url":"https://jingwen-z.github.io/building-azure-function-with-python/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -40,7 +40,7 @@
 
 <!-- Extra Open Graph :: End -->
 
-<link rel="canonical" href="https://jingwen-z.github.io/portfolio/api"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://jingwen-z.github.io/building-azure-function-with-python/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -314,18 +314,7 @@
 </head>
   <body>
     <div class="root" data-is-touch="false">
-      <div class="layout--page layout--page--sidebar clearfix js-page-root">
-  <div class="page__mask d-print-none js-page-mask js-sidebar-hide"></div>
-  <div class="page__viewport">
-    <div class="page__actions d-print-none">
-      <div class="button button--circle button--lg box-shadow-2 sidebar-button js-sidebar-show">
-        <i class="fas fa-bars icon--show"></i>
-      </div>
-    </div>
-
-    <div class="grid page__grid">
-
-      <div class="page__sidebar d-print-none"><div class="sidebar-toc"><ul class="toc toc--navigator"><li class="toc-h1">Portfolio</li><li class="toc-h2"><a href="/portfolio/analysis">Analysis</a></li><li class="toc-h2 active"><a href="/portfolio/api">API</a></li><li class="toc-h2"><a href="/portfolio/excel">Excel</a></li><li class="toc-h2"><a href="/portfolio/geovisualisation">Geovisualisation</a></li><li class="toc-h2"><a href="/portfolio/machine-learning">Machine-Learning</a></li><li class="toc-h2"><a href="/portfolio/python3">Python3</a></li><li class="toc-h2"><a href="/portfolio/retail">Retail</a></li><li class="toc-h2"><a href="/portfolio/sql">SQL</a></li><li class="toc-h2"><a href="/portfolio/visualisation">Visualisation</a></li></ul></div></div><div class="page__main js-page-main cell cell--auto">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
 
       <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
       <div class="header__title">
@@ -344,76 +333,419 @@
         <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/series">Series</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20220925-azure-python.png);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix">
+      <ul class="left-col menu">
+        <li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=python3">python3</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive?tag=Microsoft+Azure">Microsoft Azure</a>
+            </li>
 
-              <div class="col-aside d-print-none js-col-aside"></div>
+      <li class="separator">|</li>
+        
+          <li>
+            <a class="button button--circle button--primary focus lang"
+               href="/building-azure-function-with-python/"><span>EN</span></a>
+
+            
+
+
+
+
+
+
+            
+
+            
+          </li>
+        
+      
+    </ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Sep 25, 2022</span>
+            </li></ul></div><div class="article__header"><header><h1>Building Azure function with Python</h1></header></div><p class="overlay__excerpt">In this article, we talk about what we need to create an Azure function, what is HTTP triggers and bindings, how to test its functionality locally and how to publish it on Azure.</p></div></div>
+              </div>
+            </div><div class ="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
 
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/WebPage"><div class="article__header"><header><h1>API</h1></header></div><meta itemprop="headline" content="API"><div class="article__info clearfix">
-      <ul class="left-col menu">
-        
+<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="Building Azure function with Python"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2022-09-25T09:47:03+02:00">
+    <meta itemprop="keywords" content="python3,Microsoft Azure"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
-      
-    </ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Sep 28, 2022</span>
-            </li></ul></div><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2022-09-28T12:46:05+02:00"><div class="js-article-content">
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><h2 id="introduction">Introduction</h2>
+<p>Recently I accomplished a product feature which checks input data quality after
+users upload their datasets to our platform. To return the checking result to
+the backend, I created an HTTP API to simplify the communication and since we
+use Microsoft Azure, we choose to create it with the Azure function. In this
+blog, I’ll talk about this with the following points:</p>
+<ul>
+  <li>What is Azure function?</li>
+  <li>Prerequisites</li>
+  <li>Folder structure</li>
+  <li>HTTP trigger and bindings</li>
+  <li>Run functions locally</li>
+  <li>Publish on Azure</li>
+  <li>Going further</li>
+  <li>Conclusion</li>
+</ul>
 
+<h2 id="what-is-azure-function">What is Azure function?</h2>
+<p>Azure Function is a serverless solution that allows you to write less code,
+maintain less infrastructure, and save on costs. Instead of worrying about
+deploying and maintaining servers, the cloud infrastructure provides all the
+up-to-date resources needed to keep your applications running.</p>
 
-<div class="layout--articles">
-  <section class="my-5">
-    <div class="article-list grid grid--p-3"><div class="cell cell--12 cell--md-6 cell--lg-4">
-          <div class="card card--flat"><div class="card__image"><div class="card__background_image card__background_image_md" style="background-image: url('/images/20210427-pipe.jpg')"></div></div><div class="card__content">
-              <header>
-                <a href="/how-to-create-a-data-pipeline-with-azure-datafactory-and-slack/"><h2 class="card__header">How to create a data pipeline with Azure data factory and slack?</h2></a>
-              </header>
-            </div>
-        </div>
-      </div><div class="cell cell--12 cell--md-6 cell--lg-4">
-          <div class="card card--flat"><div class="card__image"><div class="card__background_image card__background_image_md" style="background-image: url('/images/20201114-map-image.jpg')"></div></div><div class="card__content">
-              <header>
-                <a href="/how-to-get-geographic-information-by-google-geocoding-api/"><h2 class="card__header">How to get geographic information by Google Geocoding API?</h2></a>
-              </header>
-            </div>
-        </div>
-      </div><div class="cell cell--12 cell--md-6 cell--lg-4">
-          <div class="card card--flat"><div class="card__image"><div class="card__background_image card__background_image_md" style="background-image: url('/images/20200704-youtube-img.png')"></div></div><div class="card__content">
-              <header>
-                <a href="/how-to-get-a-youtube-video-information-with-youtube-data-api-by-python/"><h2 class="card__header">How to get a YouTube video's information with YouTube Data API by Python?</h2></a>
-              </header>
-            </div>
-        </div>
-      </div><div class="cell cell--12 cell--md-6 cell--lg-4">
-          <div class="card card--flat"><div class="card__image"><div class="card__background_image card__background_image_md" style="background-image: url('/images/20200103-google-maps-reviews.jpg')"></div></div><div class="card__content">
-              <header>
-                <a href="/how-to-get-places-reviews-on-google-by-google-my-business-api/"><h2 class="card__header">How to get places' reviews on Google by Google My Business API?</h2></a>
-              </header>
-            </div>
-        </div>
-      </div><div class="cell cell--12 cell--md-6 cell--lg-4">
-          <div class="card card--flat"><div class="card__image"><div class="card__background_image card__background_image_md" style="background-image: url('/images/20200103-google-maps-reviews.jpg')"></div></div><div class="card__content">
-              <header>
-                <a href="/how-to-get-places-reviews-on-google-maps-by-place-api/"><h2 class="card__header">How to get places' reviews on Google Maps by Place API?</h2></a>
-              </header>
-            </div>
-        </div>
-      </div><div class="cell cell--12 cell--md-6 cell--lg-4">
-          <div class="card card--flat"><div class="card__image"><div class="card__background_image card__background_image_md" style="background-image: url('/images/20190827-image.jpg')"></div></div><div class="card__content">
-              <header>
-                <a href="/distance-application-in-data-science/"><h2 class="card__header">Distance application in Data Science</h2></a>
-              </header>
-            </div>
-        </div>
-      </div></div></section>
+<p>You focus on the pieces of code that matter most to you, and Azure Functions
+handles the rest.</p>
+
+<p>You can build an Azure function to react to a series of critical events, for
+example building a web API, responding to database changes, processing IoT data
+streams, or even managing message queues, etc. and with your preferred language
+(C#, Java, JavaScript, PowerShell, Python, etc.). In the blog, I’ll only talk
+about <strong>building a web API with Python</strong>.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The specific prerequisites for Core Tools depend on the features you plan to use:</p>
+
+<ul>
+  <li><a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Cpython%2Cportal%2Cbash#publish">Publish</a>:
+Core Tools currently depends on either the Azure CLI or Azure PowerShell for
+authenticating with your Azure account. This means that you must install one of
+these tools to be able to publish to Azure from Azure Functions Core Tools.</li>
+  <li><a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Cpython%2Cportal%2Cbash#install-extensions">Install extensions</a>:
+To manually install extensions by using Core Tools, you must have the .NET Core
+3.1 SDK installed. The .NET Core SDK is used by Core Tools to install extensions
+from NuGet. You don’t need to know .NET to use Azure Functions extensions.</li>
+  <li>Install the <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Cpython%2Cportal%2Cbash#install-the-azure-functions-core-tools">Azure Functions Core Tools</a>:
+Azure Functions Core Tools lets you develop and test your functions on your
+local computer from the command prompt or terminal. Your local functions can
+connect to live Azure services, and you can debug your functions on your local
+computer using the full Functions runtime. You can even deploy a function app
+to your Azure subscription.</li>
+</ul>
+
+<h2 id="folder-structure">Folder structure</h2>
+<p>The recommended folder structure for an Azure Functions project in Python looks
+like the following example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;project_root&gt;/
+ | - .venv/
+ | - .vscode/
+ | - my_first_function/
+ | | - __init__.py
+ | | - function.json
+ | | - example.py
+ | - my_second_function/
+ | | - __init__.py
+ | | - function.json
+ | - shared_code/
+ | | - __init__.py
+ | | - my_first_helper_function.py
+ | | - my_second_helper_function.py
+ | - tests/
+ | | - test_my_second_function.py
+ | - .funcignore
+ | - host.json
+ | - local.settings.json
+ | - requirements.txt
+ | - Dockerfile
+</code></pre></div></div>
+<p>The main project folder can contain the following files:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">requirements.txt</code>: Contains the list of Python packages that the system
+installs when you’re publishing to Azure.</li>
+  <li><code class="language-plaintext highlighter-rouge">host.json</code>: Contains configuration options that affect all functions in a
+function app instance. This file is published to Azure. Not all options are
+supported when functions are running locally.</li>
+  <li><code class="language-plaintext highlighter-rouge">.vscode/</code>: (Optional) Contains stored Visual Studio Code configurations.</li>
+  <li><code class="language-plaintext highlighter-rouge">.venv/</code>: (Optional) Contains a Python virtual environment that’s used for
+local development.</li>
+  <li><code class="language-plaintext highlighter-rouge">Dockerfile</code>: (Optional) Used when you’re publishing your project in a custom
+container.</li>
+  <li><code class="language-plaintext highlighter-rouge">tests/</code>: (Optional) Contains the test cases of your function app.</li>
+  <li><code class="language-plaintext highlighter-rouge">.funcignore</code>: (Optional) Declares files that shouldn’t be published to Azure.
+Usually, this file contains <code class="language-plaintext highlighter-rouge">.vscode/</code> to ignore your editor setting, <code class="language-plaintext highlighter-rouge">.venv/</code>
+to ignore the local Python virtual environment, <code class="language-plaintext highlighter-rouge">tests/</code> to ignore test cases,
+and <code class="language-plaintext highlighter-rouge">local.settings.json</code> to prevent local app settings from being published.</li>
+</ul>
+
+<h3 id="localsettingsjson">local.settings.json</h3>
+<p>Used to store app settings and connection strings when functions are running
+locally. This file isn’t published to Azure.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "&lt;language worker&gt;",
+    "AzureWebJobsStorage": "&lt;connection-string&gt;",
+    "MyBindingConnection": "&lt;binding-connection-string&gt;",
+    "AzureWebJobs.HttpExample.Disabled": "true"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*",
+    "CORSCredentials": false
+  },
+  "ConnectionStrings": {
+    "SQLConnectionString": "&lt;sqlclient-connection-string&gt;"
+  }
+}
+</code></pre></div></div>
+<ul>
+  <li>IsEncrypted: When this setting is set to <code class="language-plaintext highlighter-rouge">true</code>, all values are encrypted with
+a local machine key. Used with <code class="language-plaintext highlighter-rouge">func settings</code> commands. The default value is
+<code class="language-plaintext highlighter-rouge">false</code>.</li>
+  <li>Values: Collection of application settings used when a project is running
+locally. This key-value (string-string) pairs correspond to application
+settings in your function app in Azure, like <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-app-settings#azurewebjobsstorage">AzureWebJobsStorage</a>.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">FUNCTIONS_WORKER_RUNTIME</code>: Indicates the targeted language of the Functions
+runtime.</li>
+      <li><code class="language-plaintext highlighter-rouge">AzureWebJobsStorage</code>: Contains the connection string for an Azure storage
+account. Required when using triggers other than HTTP.</li>
+    </ul>
+  </li>
+  <li>Host: Settings in this section customize the Functions host process when you
+run projects locally. These settings are separate from the <code class="language-plaintext highlighter-rouge">host.json</code> settings,
+which also apply when you run projects in Azure.
+You can find more information <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-local#local-settings-file">here</a>.</li>
+</ul>
+
+<h3 id="function-code">Function code</h3>
+<p>A function is the primary concept in Azure Functions. A function contains two
+important pieces - your code, which can be written in a variety of languages,
+and some config, the function.json file. For compiled languages, this config
+file is generated automatically from annotations in your code. For scripting
+languages, you must provide the config file yourself.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">function.json</code> file defines the function’s trigger, bindings, and other
+configuration settings. Every function has one and only one trigger. The runtime
+uses this config file to determine the events to monitor and how to pass data
+into and return data from function execution. The following is an example
+<code class="language-plaintext highlighter-rouge">function.json</code> file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "scriptFile": "__init__.py",
+    "bindings": [
+        {
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "methods": [
+                "get",
+                "post"
+            ]
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "$return"
+        }
+    ]
+}
+</code></pre></div></div>
+<p>The <code class="language-plaintext highlighter-rouge">bindings</code> property is where you configure both triggers and bindings. Each
+binding shares a few common settings and some settings which are specific to a
+particular type of binding. Every binding requires the following settings:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">type</code>: Name of binding.</li>
+  <li><code class="language-plaintext highlighter-rouge">direction</code>: Indicates whether the binding is for receiving data into the
+function or sending data from the function.</li>
+  <li><code class="language-plaintext highlighter-rouge">name</code>: The name that is used for the bound data in the function.</li>
+</ul>
+
+<h2 id="http-trigger-and-bindings">HTTP trigger and bindings</h2>
+<h3 id="concept">Concept</h3>
+<p><strong>Triggers</strong> cause a function to run. A trigger defines how a function is
+invoked and a function must have exactly one trigger. Triggers have associated
+data, which is often provided as the payload of the function.</p>
+
+<p><strong>Binding</strong> to a function is a way of declaratively connecting another resource
+to the function; bindings may be connected as input bindings, output bindings,
+or both. Data from bindings are provided to the function as parameters.</p>
+
+<p>You can mix and match different bindings to suit your needs. Bindings are
+optional and a function might have one or multiple input and/or output bindings.</p>
+
+<p>Triggers and bindings let you avoid hardcoding access to other services. <strong>Your
+function receives data</strong> (for example, the content of a queue message) <strong>in
+function parameters. You send data</strong> (for example, to create a queue message)
+<strong>by using the return value of the function.</strong></p>
+
+<h3 id="defining">Defining</h3>
+<p>The HTTP trigger is defined in the <em>function.json</em> file. The <code class="language-plaintext highlighter-rouge">name</code> parameter of
+the binding must match the named parameter in the function. The previous
+examples use the binding name <code class="language-plaintext highlighter-rouge">req</code>. This parameter is an <a href="https://docs.microsoft.com/en-us/python/api/azure-functions/azure.functions.httprequest">HttpRequest</a>
+object, and an <a href="https://docs.microsoft.com/en-us/python/api/azure-functions/azure.functions.httpresponse">HttpResponse</a> object is returned.</p>
+
+<p>From the <code class="language-plaintext highlighter-rouge">HttpRequest</code> object, you can get request headers, query parameters,
+route parameters, and the message body.</p>
+
+<p>Here is an example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">req</span><span class="p">:</span> <span class="n">func</span><span class="p">.</span><span class="n">HttpRequest</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">func</span><span class="p">.</span><span class="n">HttpResponse</span><span class="p">:</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">"my-http-header"</span><span class="p">:</span> <span class="s">"some-value"</span><span class="p">}</span>
+
+    <span class="n">name</span> <span class="o">=</span> <span class="n">req</span><span class="p">.</span><span class="n">params</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'name'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">name</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">req_body</span> <span class="o">=</span> <span class="n">req</span><span class="p">.</span><span class="n">get_json</span><span class="p">()</span>
+        <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">req_body</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'name'</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">.</span><span class="n">HttpResponse</span><span class="p">(</span><span class="sa">f</span><span class="s">"Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">!"</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">.</span><span class="n">HttpResponse</span><span class="p">(</span>
+             <span class="s">"Please pass a name on the query string or in the request body"</span><span class="p">,</span>
+             <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">status_code</span><span class="o">=</span><span class="mi">400</span>
+        <span class="p">)</span>
+</code></pre></div></div>
+<p>In this function, the value of the <code class="language-plaintext highlighter-rouge">name</code> query parameter is obtained from the
+<code class="language-plaintext highlighter-rouge">params</code> parameter of the <code class="language-plaintext highlighter-rouge">HttpRequest</code> object. The JSON-encoded message body is
+read using the <code class="language-plaintext highlighter-rouge">get_json</code> method. Likewise, you can set the <code class="language-plaintext highlighter-rouge">status_code</code> and
+<code class="language-plaintext highlighter-rouge">headers</code> information for the response message in the returned <code class="language-plaintext highlighter-rouge">HttpResponse</code>
+object.</p>
+
+<!-- ## Unit test
+https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level#unit-testing -->
+
+<h2 id="run-functions-locally">Run functions locally</h2>
+<p><strong>Before running functions locally, we need to have installed Azure Functions
+Core Tools in your machine.</strong></p>
+
+<p>To run a Functions project, you run the Functions host from the root directory
+of your project. The host enables triggers for all functions in the project.</p>
+
+<p>To test your functions locally, you start the Functions host and call endpoints
+on the local server using HTTP requests.</p>
+
+<p>The command below must be run in a virtual environment.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># start the Functions host
+# version 2.x
+func start
+</code></pre></div></div>
+
+<p>Then we call the following endpoint to locally run HTTP and webhook triggered
+functions:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:{port}/api/{function_name}
+</code></pre></div></div>
+
+<p>The following example is the function <code class="language-plaintext highlighter-rouge">MyHttpTrigger</code> called from a POST request
+passing name in the request body:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl --request POST http://localhost:7071/api/MyHttpTrigger --data '{"name":"Azure Rocks"}'
+</code></pre></div></div>
+
+<h2 id="publish-on-azure">Publish on Azure</h2>
+<p>When you’re ready to publish, make sure that all your publicly available
+dependencies are listed in the requirements.txt file. This file is at the root
+of your project directory. You can also find project files and folders that are
+excluded from publishing, including the virtual environment folder, in the root
+directory of your project.</p>
+
+<p>Three build actions are supported for publishing your Python project to Azure:
+<a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level#remote-build">remote build</a>,
+<a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level#local-build">local build</a>,
+and builds that use <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level#custom-dependencies">custom dependencies</a>.</p>
+
+<p>You can also use Azure Pipelines or GitHub Actions to build your dependencies
+and publish by using continuous delivery (CD), which is also the way that I
+choose.</p>
+
+<p>In GitHub Actions, a workflow is an automated process that you define in your
+GitHub repository. This process tells GitHub how to build and deploy your
+function app project on GitHub. A workflow is defined by a YAML (.yml) file in
+the <code class="language-plaintext highlighter-rouge">/.github/workflows/</code> path in your repository. This definition contains the
+various steps as the following and parameters that make up the workflow:</p>
+<ul>
+  <li>Generate deployment credentials</li>
+  <li>Create the environment</li>
+  <li>Build the function app</li>
+  <li>Deploy the function app</li>
+</ul>
+
+<p>For the details of each step, you can find information <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=python">here</a>.</p>
+
+<h2 id="going-further">Going further</h2>
+<p>How to go further from here?</p>
+<ul>
+  <li>If you want to know the best practices for reliable Azure Functions, visit
+<a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices">https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practice</a></li>
+  <li>If you want to plan for secure development, visit <a href="https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts">https://learn.microsoft.com/en-us/azure/azure-functions/security-concepts</a></li>
+  <li>If you want to monitor executions in Azure Functions, you can find more
+information on <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-monitoring">https://learn.microsoft.com/en-us/azure/azure-functions/functions-monitoring</a></li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>In this article, we talk about what we need to create an Azure function, what is
+HTTP triggers and bindings, how to test its functionality locally and how to
+publish it on Azure. Hope it’s useful for you :)</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>Azure, “azure-functions-templates/Functions.Templates/Templates/HttpTrigger-Python”, <em>github.com</em>. [Online]. Available: <a href="https://github.com/Azure/azure-functions-templates/tree/dev/Functions.Templates/Templates/HttpTrigger-Python">https://github.com/Azure/azure-functions-templates/tree/dev/Functions.Templates/Templates/HttpTrigger-Python</a></li>
+  <li>“Introduction to Azure Functions”, <em>learn.microsoft.com</em>. [Online]. Available: <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview">https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview</a></li>
+  <li>“HTTP trigger and bindings”, <em>learn.microsoft.com</em>. [Online]. Available: <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level#http-trigger-and-bindings">https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level#http-trigger-and-bindings</a></li>
+  <li>t-eckert, “sample-python-azure-functions/encryption_and_decryption/”, <em>github.com</em>. [Online]. Available: <a href="https://github.com/t-eckert/sample-python-azure-functions/tree/master/encryption_and_decryption">https://github.com/t-eckert/sample-python-azure-functions/tree/master/encryption_and_decryption</a></li>
+  <li>“Publishing to Azure”, <em>learn.microsoft.com</em>. [Online]. Available: <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level#publishing-to-azure">https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level#publishing-to-azure</a></li>
+  <li>“Continuous delivery by using GitHub Actions”, <em>learn.microsoft.com</em>. [Online]. Available: <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=python">https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=python</a></li>
+  <li>coppla-note, “Azure Functions を使って Python スクリプトを API 化する”, <em>coppla-note.net</em>. [Online]. Available: <a href="https://www.coppla-note.net/posts/tutorial/azure-functions/">https://www.coppla-note.net/posts/tutorial/azure-functions/</a></li>
+</ul>
+
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-09-25T09:47:03+02:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div></div><div class="article__license"><div class="license">
+    <p>This work is licensed under a <a itemprop="license" rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</a> license.
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
+        <img alt="Attribution-NonCommercial 4.0 International" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+      </a>
+    </p>
+  </div></div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/learning-postgresql-with-docker/">Learning PostgreSQL with Docker</a></div></div></div>
+
 </div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
+</script>
 </div><section class="page__comments d-print-none"><div id="disqus_thread"></div>
   <script>
   /**
   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
   var disqus_config = function () {
-    this.page.url = 'https://jingwen-z.github.io/portfolio/api';
-    this.page.identifier = '/portfolio/api';
+    this.page.url = 'https://jingwen-z.github.io/building-azure-function-with-python/';
+    this.page.identifier = '/building-azure-function-with-python';
   };
   (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
@@ -456,7 +788,7 @@
   </div>
 </footer>
 </div></div>
-    </div></div></div><script>(function() {
+    </div><script>(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;
   window.Lazyload.js(SOURCES.jquery, function() {
     var $body = $('body'), $window = $(window);
@@ -1016,34 +1348,66 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
 /*(function () {
 
 })();*/
-</script><script>(function() {
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
   var SOURCES = window.TEXT_VARIABLES.sources;
-
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
   window.Lazyload.js(SOURCES.jquery, function() {
-    var $pageMask = $('.js-page-mask');
-    var $pageRoot = $('.js-page-root');
-    var $sidebarShow = $('.js-sidebar-show');
-    var $sidebarHide = $('.js-sidebar-hide');
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
 
-    function freeze(e) {
-      if (e.target === $pageMask[0]) {
-        e.preventDefault();
-      }
-    }
-    function stopBodyScrolling(bool) {
-      if (bool === true) {
-        window.addEventListener('touchmove', freeze, { passive: false });
-      } else {
-        window.removeEventListener('touchmove', freeze, { passive: false });
-      }
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
     }
 
-    $sidebarShow.on('click', function() {
-      stopBodyScrolling(true); $pageRoot.addClass('show-sidebar');
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
     });
-    $sidebarHide.on('click', function() {
-      stopBodyScrolling(false); $pageRoot.removeClass('show-sidebar');
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
     });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
   });
 })();
 </script>
