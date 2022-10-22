@@ -20,7 +20,9 @@ article_header:
     gradient: "linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4))"
 ---
 ## Introduction
-During the recent work, I need to write data into PostgreSQL database. Before writing real data on staging, I learnt how to do it with Docker. In this blog, I'll talk about this with the following points:
+During the recent work, I need to write data into PostgreSQL database. Before
+writing real data on staging, I learnt how to do it with Docker. In this blog,
+I'll talk about this with the following points:
 - What is PostgreSQL?
 - Why Docker?
 - Create a database and tables with Docker container
@@ -101,8 +103,9 @@ pdf = pd.DataFrame({'parameters':['{"param1":"v1", "param2": 2}']})
 </p>
 
 ```
-eng_pg = create_engine("postgresql://postgres:{pw}@{host}/pgdb".format(pw=PASSWORD],
-                                                                       host=HOST_NAME))
+eng_pg = create_engine("postgresql://postgres:{pw}@{host}/{dbname}".format(pw=PASSWORD],
+                                                                           host=HOST_NAME,
+                                                                           dbname=pgdb))
 pdf.to_sql("jsonb_test", eng_pg, if_exists='append', index=False)
 ```
 Before inserting the dataframe into PGSQL, we need to create a PGSQL engine with
