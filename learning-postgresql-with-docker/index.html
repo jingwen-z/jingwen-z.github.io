@@ -16,7 +16,7 @@
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Learning PostgreSQL with Docker | Jingwen Zheng</title>
-<meta name="generator" content="Jekyll v4.2.2" />
+<meta name="generator" content="Jekyll v4.3.0" />
 <meta property="og:title" content="Learning PostgreSQL with Docker" />
 <meta name="author" content="Jingwen Zheng" />
 <meta property="og:locale" content="en" />
@@ -381,7 +381,9 @@
 
 <!-- end custom article top snippet -->
 <div class="article__content" itemprop="articleBody"><h2 id="introduction">Introduction</h2>
-<p>During the recent work, I need to write data into PostgreSQL database. Before writing real data on staging, I learnt how to do it with Docker. In this blog, I’ll talk about this with the following points:</p>
+<p>During the recent work, I need to write data into PostgreSQL database. Before
+writing real data on staging, I learnt how to do it with Docker. In this blog,
+I’ll talk about this with the following points:</p>
 <ul>
   <li>What is PostgreSQL?</li>
   <li>Why Docker?</li>
@@ -456,8 +458,9 @@ Now we will insert a pandas dataframe <code class="language-plaintext highlighte
   <img alt="20220514-create-pandas-df" src="/images/20220514-create-pandas-df.png" />
 </p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>eng_pg = create_engine("postgresql://postgres:{pw}@{host}/pgdb".format(pw=PASSWORD],
-                                                                       host=HOST_NAME))
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>eng_pg = create_engine("postgresql://postgres:{pw}@{host}/{dbname}".format(pw=PASSWORD],
+                                                                           host=HOST_NAME,
+                                                                           dbname=pgdb))
 pdf.to_sql("jsonb_test", eng_pg, if_exists='append', index=False)
 </code></pre></div></div>
 <p>Before inserting the dataframe into PGSQL, we need to create a PGSQL engine with

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-09-28T12:46:05+02:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.0">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-10-23T16:09:19+02:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
 </subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Building Azure function with Python</title><link href="https://jingwen-z.github.io/building-azure-function-with-python/" rel="alternate" type="text/html" title="Building Azure function with Python" /><published>2022-09-25T09:47:03+02:00</published><updated>2022-09-25T09:47:03+02:00</updated><id>https://jingwen-z.github.io/building-azure-function-with-python</id><content type="html" xml:base="https://jingwen-z.github.io/building-azure-function-with-python/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>Recently I accomplished a product feature which checks input data quality after
 users upload their datasets to our platform. To return the checking result to
@@ -320,7 +320,9 @@ publish it on Azure. Hope it’s useful for you :)</p>
   <li>“Continuous delivery by using GitHub Actions”, <em>learn.microsoft.com</em>. [Online]. Available: <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=python">https://learn.microsoft.com/en-us/azure/azure-functions/functions-how-to-github-actions?tabs=python</a></li>
   <li>coppla-note, “Azure Functions を使って Python スクリプトを API 化する”, <em>coppla-note.net</em>. [Online]. Available: <a href="https://www.coppla-note.net/posts/tutorial/azure-functions/">https://www.coppla-note.net/posts/tutorial/azure-functions/</a></li>
 </ul>]]></content><author><name>Jingwen Zheng</name></author><category term="python3" /><category term="Microsoft Azure" /><summary type="html"><![CDATA[In this article, we talk about what we need to create an Azure function, what is HTTP triggers and bindings, how to test its functionality locally and how to publish it on Azure.]]></summary></entry><entry xml:lang="en"><title type="html">Learning PostgreSQL with Docker</title><link href="https://jingwen-z.github.io/learning-postgresql-with-docker/" rel="alternate" type="text/html" title="Learning PostgreSQL with Docker" /><published>2022-05-14T22:41:35+02:00</published><updated>2022-05-14T22:41:35+02:00</updated><id>https://jingwen-z.github.io/learning-postgresql-with-docker</id><content type="html" xml:base="https://jingwen-z.github.io/learning-postgresql-with-docker/"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>During the recent work, I need to write data into PostgreSQL database. Before writing real data on staging, I learnt how to do it with Docker. In this blog, I’ll talk about this with the following points:</p>
+<p>During the recent work, I need to write data into PostgreSQL database. Before
+writing real data on staging, I learnt how to do it with Docker. In this blog,
+I’ll talk about this with the following points:</p>
 <ul>
   <li>What is PostgreSQL?</li>
   <li>Why Docker?</li>
@@ -395,8 +397,9 @@ Now we will insert a pandas dataframe <code class="language-plaintext highlighte
   <img alt="20220514-create-pandas-df" src="/images/20220514-create-pandas-df.png" />
 </p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>eng_pg = create_engine("postgresql://postgres:{pw}@{host}/pgdb".format(pw=PASSWORD],
-                                                                       host=HOST_NAME))
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>eng_pg = create_engine("postgresql://postgres:{pw}@{host}/{dbname}".format(pw=PASSWORD],
+                                                                           host=HOST_NAME,
+                                                                           dbname=pgdb))
 pdf.to_sql("jsonb_test", eng_pg, if_exists='append', index=False)
 </code></pre></div></div>
 <p>Before inserting the dataframe into PGSQL, we need to create a PGSQL engine with
