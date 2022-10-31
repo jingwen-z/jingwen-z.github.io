@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Home
+show_title: false
 
 # hack for home path
 baseurl: '/'
 ---
 
-{%- assign _highlighted_portfolios = 'python:Python, analysis:Data Analysis, retail:Retail' | split: ', ' -%}
+{%- assign _highlighted_portfolios = 'python3:Python, analysis:Data Analysis, retail:Retail' | split: ', ' -%}
 
 {%- for _portfolio in _highlighted_portfolios -%}
   {%- assign _kv = _portfolio | split: ':' -%}

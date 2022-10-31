@@ -13,10 +13,10 @@
   {%- assign _sorted_list = _sorted_list | reverse -%}
 {%- endif -%}
 {%- if include.limit -%}
-   {%- assign limit = include.limit -%}
- {%- else -%}
-   {%- assign limit = _sorted_list | size -%}
- {%- endif -%}
+  {%- assign limit = include.limit -%}
+{%- else -%}
+  {%- assign limit = _sorted_list | size -%}
+{%- endif -%}
 
 {%- if include.type == 'item' -%}
 <div class="article-list items items--divided">
