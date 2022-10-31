@@ -6,4 +6,43 @@ title: Home
 baseurl: '/'
 ---
 
-{%- assign _highlighted_categories = 'python:Python, analysis:Data Analysis, retail:Retail' | split: ', ' -%}
+{%- assign _highlighted_portfolios = 'python:Python, analysis:Data Analysis, retail:Retail' | split: ', ' -%}
+
+{%- for _portfolio in _highlighted_portfolios -%}
+  {%- assign _kv = _portfolio | split: ':' -%}
+  {%- assign _tag = _kv.first -%}
+  {%- assign _title = _kv.last -%}
+
+  <div class="article__content">
+    <h2>{{ _title }}</h2>
+  </div>
+
+  <div class="layout--articles">
+    <section class="my-5">
+      {% assign _articles = site.tags[_tag] %}
+      {%- include article-list.html
+            articles=_articles
+            type='grid'
+            size='md'
+            cover_type='background'
+            limit='6'
+            with_date='true'
+      -%}
+      <p>
+        <a href="/portfolio/{{ _tag }}/">Read more...</a> ({{ site.tags[_tag] | size }} articles)
+      </p>
+    </section>
+  </div>
+{%- endfor -%}
+
+
+<div class="article__content">
+  <h2>All Categories</h2>
+  <p>If you didn't find what you want in the highlighted categories above, here are more categories to discover :D</p>
+</div>
+
+<div class="layout--articles">
+  <section class="my-5">
+    {%- include article-list.html articles=site.displayed_portfolio type='grid' size='sm' cover_type='background' -%}
+  </section>
+</div>
