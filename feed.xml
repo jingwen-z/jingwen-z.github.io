@@ -1,5 +1,167 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-11-02T22:22:48+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Building Azure function with Python</title><link href="https://jingwen-z.github.io/building-azure-function-with-python/" rel="alternate" type="text/html" title="Building Azure function with Python" /><published>2022-09-25T09:47:03+02:00</published><updated>2022-09-25T09:47:03+02:00</updated><id>https://jingwen-z.github.io/building-azure-function-with-python</id><content type="html" xml:base="https://jingwen-z.github.io/building-azure-function-with-python/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-11-02T22:25:47+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Data Science in Retail Discount</title><link href="https://jingwen-z.github.io/data-science-in-retail-discount/" rel="alternate" type="text/html" title="Data Science in Retail Discount" /><published>2022-10-31T15:26:34+01:00</published><updated>2022-10-31T15:26:34+01:00</updated><id>https://jingwen-z.github.io/data-science-in-retail-discount</id><content type="html" xml:base="https://jingwen-z.github.io/data-science-in-retail-discount/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Retail discount plays an important role in increasing turnover, increasing
+customer loyalty and attracting customers. To have a good strategy of discount,
+data mining can help retailers to build a recommendation engine that recommends
+products for customers and retailers. In this blog, I’ll share my experience on
+how to apply data mining on retail discounts with the following points:</p>
+<ul>
+  <li>What is a retail discount strategy?</li>
+  <li>What is a recommendation engine?</li>
+  <li>Use cases of recommendation engine</li>
+  <li>Promotion Analysis</li>
+</ul>
+
+<h2 id="what-is-a-retail-discount-strategy">What is a retail discount strategy?</h2>
+<p>Retail discounting is used to decrease the price of specific products for a set
+amount of time. In some cases, retailers offer a store-wide discount to move
+excess inventory and create space for new collections. Retailers usually run
+discounts to attract new customers, increase sales, and clear out old inventory.
+Large retailers have an easier time selling low-priced merchandise in high
+volumes, but this strategy doesn’t always work for small to mid-sized retail
+boutiques. With discounting, it’s important to keep an eye on your profit margins
+and break-even point, avoid conditioning customers to wait for a sale, and
+understand exactly why and when you want to discount products.</p>
+
+<h2 id="what-is-a-recommendation-engine">What is a recommendation engine?</h2>
+<p>A recommendation system is a platform that provides its users with various
+content based on their preferences and likings. A recommendation system takes
+the information about the users and their behaviours as inputs. This information
+can be in the form of the past usage of the product or the ratings that were
+provided for the product. It then processes this information to predict how much
+the user would rate or prefer the product. A recommendation system makes use of
+a variety of machine learning algorithms.</p>
+
+<p>Another important role that a recommendation system plays today is to search for
+similarities between different products. In retailing domain, the recommendation
+system searches for products that are similar to the ones you have purchased
+previously. This is an important method for scenarios that involve a cold start.
+In a cold start, the retailer does not have much user data available to generate
+recommendations. Therefore, based on the products that are sold, the engine can
+provide recommendations of the products that share a degree of similarity or
+satisfy the discount rules. There are three types of Recommendation Engine:</p>
+
+<h3 id="content-based-recommendation-system">Content-based Recommendation System</h3>
+<p>In a content-based recommendation system, the background knowledge of the
+products and customer information are taken into consideration. Based on the
+products that you have purchased in a retailer chain, it provides you with
+similar suggestions. For example, if you have purchased a product that belongs
+to the “alcohol” category, the content-based recommendation system will provide
+you with suggestions for similar products that have the same category.</p>
+
+<h3 id="collaborative-filtering-recommendation-system">Collaborative Filtering Recommendation System</h3>
+<p>Unlike content-based filtering that provided recommendations of similar
+products, Collaborative Filtering provides recommendations based on the similar
+profiles of its users. One key advantage of collaborative filtering is that it
+is independent of product knowledge. Rather, it relies on the users with a basic
+assumption that what the users liked in the past will also like in the future.
+For example, if person A purchases alcohol, snacking and baker categories and B
+purchases snacking, baker and ice-cream categories then A will also like ice
+cream and B will like the alcohol category.</p>
+
+<h3 id="hybrid-recommendation-system">Hybrid Recommendation System</h3>
+<p>There is also a third type of recommendation system that combines both Content
+and Collaborative techniques.</p>
+
+<h2 id="use-cases-of-recommendation-engine">Use cases of recommendation engine</h2>
+<p>There are many use cases in the retailing domain like recommending products that
+are complementary to the product the shopper has chosen, offering a discount to
+the potential customers to encourage the purchase or even recommending some new
+products that might be interesting for customers. Here I’ll talk about two use
+cases.</p>
+
+<h3 id="crm-customer-relationship-management">CRM (Customer Relationship Management)</h3>
+<p>Customer relationship management (CRM) refers to the principles, practices, and
+guidelines that a retailer follows when interacting with its customers. One of
+the CRM approaches is offering a discount on different products to various
+profiles of customers, which is an application of the Collaborative Filtering
+Recommendation System. The discounts target different objectives:</p>
+<ul>
+  <li><strong>Loyalty rewards</strong>: Most consumers in today’s world expect to be rewarded for
+shopping at your store and taking home memorable experiences. Studies say 75% of
+consumers say they favour companies that offer rewards. You can give out a cash
+discount on every nth purchase, a points-based rewarding system that can be
+redeemed whenever they want, or gifts on completing purchases of X amount of
+merchandise.</li>
+  <li><strong>Conditional discount</strong>: Conditional discounts can help you maintain a
+healthy profit margin while also increasing your revenue. For example, 20% off
+on purchases of $500 worth of merchandise rather than a straight 15% on every
+item is likely to be healthier for your business. It will also be more helpful
+in increasing the average basket size and average revenue per consumer.</li>
+  <li><strong>First purchase or first interaction discount</strong>: Some consumers may browse
+through your website or your shop and like some of your offerings. But, they
+might be on the edge and not able to decide if your products are worth the
+value. You can use a special first-purchase discount to tip them over in the
+category of paying customers.</li>
+</ul>
+
+<p align="center">
+  <img alt="flyer example" src="/images/20221101-flyer-ex.png" />
+</p>
+
+<h3 id="recommending-leaflet-products-to-retailers">Recommending leaflet products to retailers</h3>
+<p>Usually, retailers start to build the promotion plan several months or even 1
+year in advance, since it takes lots of time to negotiate with the supply,
+define the category and brand for each leaflet, and also design the discount
+for different products. The promotion plan recommendation system is not that
+common but it exists and it’s pretty helpful for retailers. It can recommend
+products for different leaflets by considering various elements like target
+turnover, target product amount, discount periods, category distribution, brand
+distribution, etc, and it helps retailers to save lots of time.</p>
+
+<p align="center">
+  <img alt="leaflet example" src="/images/20221101-leaflet-ex.jpg" />
+</p>
+
+<h2 id="promotion-analysis">Promotion Analysis</h2>
+<p>After promotion implementation, we need to do some analysis to understand the
+promotion effect. For example, among all target customers, how many of them
+benefit from the discount? Thanks to the promotion, how much did turnover
+increase? Furthermore, the following figure shows the effects of a retailer
+promotion on the sales of the promoted product (Gedenk 2002, Neslin 2002).</p>
+
+<p align="center">
+  <img alt="promotion effects" src="/images/20221101-promotion-effects.png" />
+</p>
+
+<p>We distinguish between short-term effects, which occur during the promotion, and
+long-term effects, which involve behaviour that takes place after the promotion.
+Sales for the promoted brand can increase during the promotion by attracting
+customers from other stores (store switching), inducing customers to switch
+brands (brand switching), inducing customers to buy from the promoted category
+rather than another category (category switching), inducing customers who
+normally do not use the product category to purchase it (new users), or inducing
+customers to move their purchases forward in time (purchase acceleration).
+Purchase acceleration can occur because consumers purchase earlier or because
+they purchase more than they would have done without the promotion. Consumers
+can either stockpile the extra quantity for future use or consume it at a faster
+rate. Total category consumption can also increase owing to category switching
+or if the promotion attracts new users.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>In this blog, we talked about how recommendation engines contribute to retail
+promotion and how could we follow the performance of a promotion. Since
+promotion plays an important role in the retail domain, it’s also important to
+build a suitable promotion plan and analyse its effects,
+<a href="https://www.inthememory.com/?lang=en">In The Memory</a> could be the expert which
+helps retailers to accelerate and improve the decision-making process, define
+the promotion plan, optimise category management levers (promotion, assortment,
+CRM, etc) and follow the business performance.</p>
+
+<p align="center">
+  <img alt="In The Memory" src="/images/20221101-memory.png" />
+</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>Alexis Damen, “Discount Strategy in Retail: How to Offer Discounts &amp; Markdowns Without Slashing Profits”, <em>www.shopify.com</em>. [Online]. Available: <a href="https://www.shopify.com/retail/retail-discounts-with-profits">https://www.shopify.com/retail/retail-discounts-with-profits</a></li>
+  <li>“How to Execute a Profitable Retail Discounting Strategy: A Definitive Guide”, <em>blog.appointy.com</em>. [Online]. Available: <a href="https://blog.appointy.com/2021/09/17/retail-discounting/">https://blog.appointy.com/2021/09/17/retail-discounting/</a></li>
+  <li>Goran, “40 Amazing Customer Loyalty Statistics in 2022”, <em>www.smallbizgenius.net</em>. [Online]. Available: <a href="https://www.smallbizgenius.net/by-the-numbers/customer-loyalty-statistics/#gref">https://www.smallbizgenius.net/by-the-numbers/customer-loyalty-statistics/#gref</a></li>
+  <li>Karen Gedenk, Scott A. Neslin, and Kusum L. Ailawadi, “Sales Promotion”, <em>faculty.tuck.dartmouth.edu</em>. [Online]. Available: <a href="https://faculty.tuck.dartmouth.edu/images/uploads/faculty/kusum-ailawadi/Promotions_Metro_Book_Chapter.pdf">https://faculty.tuck.dartmouth.edu/images/uploads/faculty/kusum-ailawadi/Promotions_Metro_Book_Chapter.pdf</a></li>
+  <li>“6 Examples of FMCG Brands That Publish Digital Leaflets and Flyers”, <em>www.publitas.com</em>. [Online]. Available: <a href="https://www.publitas.com/blog/6-examples-of-fmcg-brands-that-publish-digital-leaflets-and-flyers/alcampo-deals-discounts-in-brochure.jpg">https://www.publitas.com/blog/6-examples-of-fmcg-brands-that-publish-digital-leaflets-and-flyers/alcampo-deals-discounts-in-brochure.jpg</a></li>
+  <li>“Customize this Christmas Retail Instagram Post Template”, <em>d1csarkz8obe9u.cloudfront.net</em>. [Online]. Available: <a href="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/christmas-season-sale-flyer-template-design-e969eba50ca2c2bcc2e5c432f5ec5080_screen.jpg?ts=1605530185">https://d1csarkz8obe9u.cloudfront.net/posterpreviews/christmas-season-sale-flyer-template-design-e969eba50ca2c2bcc2e5c432f5ec5080_screen.jpg?ts=1605530185</a></li>
+  <li>Skitterphoto, “store prices rabat discount sale”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/store-prices-rabat-discount-sale-3867742/">https://pixabay.com/photos/store-prices-rabat-discount-sale-3867742/</a></li>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="retail" /><summary type="html"><![CDATA[We talk about how recommendation engines contribute to retail promotion and how could we follow the performance of a promotion.]]></summary></entry><entry xml:lang="en"><title type="html">Building Azure function with Python</title><link href="https://jingwen-z.github.io/building-azure-function-with-python/" rel="alternate" type="text/html" title="Building Azure function with Python" /><published>2022-09-25T09:47:03+02:00</published><updated>2022-09-25T09:47:03+02:00</updated><id>https://jingwen-z.github.io/building-azure-function-with-python</id><content type="html" xml:base="https://jingwen-z.github.io/building-azure-function-with-python/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>Recently I accomplished a product feature which checks input data quality after
 users upload their datasets to our platform. To return the checking result to
 the backend, I created an HTTP API to simplify the communication and since we
@@ -1320,78 +1482,4 @@ In addition, 4%-6% of people have slight or moderate swelling at the injection s
   <li>“local reaction”, <em>medical-dictionary</em>. [Online]. Available: <a href="https://medical-dictionary.thefreedictionary.com">https://medical-dictionary.thefreedictionary.com</a></li>
   <li>Rod Brouhard, EMT-P, “Systemic Reaction Throughout the Body”, <em>www.verywellhealth.com</em>. [Online]. Available: <a href="https://www.verywellhealth.com/systemic-reaction-1298693">https://www.verywellhealth.com/systemic-reaction-1298693</a></li>
   <li>Alexandra_Koch, “corona vaccination virus vaccine”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/">https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[The AstraZeneca Vaccine Trial Group at the University of Oxford has released data on the response and severity of people at different ages after being vaccinated with AstraZeneca’s COVID-19 vaccine. Today, I will take you to learn more about the specific information.]]></summary></entry><entry xml:lang="en"><title type="html">Do you know the reactions of Coronavac vaccine?</title><link href="https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Coronavac vaccine?" /><published>2021-07-15T22:27:55+02:00</published><updated>2021-07-15T22:27:55+02:00</updated><id>https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Since the beginning of 2020, people from all over the world have struggled with COVID-19, and scientists are also actively looking for solutions. To achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. A vaccine from theoretical design to clinical trials requires too much wisdom and effort from scientists. Among Chinese vaccines, the most familiar one is Coronavac vaccine, but do you know its adverse reactions?</p>
-
-<p>Instituto Butantan announced the final results of the Phase III clinical trial of China’s Coronavac COVID-19 vaccine in Brazil. Today, I will take you to learn more about the specific information.</p>
-
-<h2 id="instituto-butantan">Instituto Butantan</h2>
-<p>Before starting the text, let’s get a general understanding of the Basilis Butantan Institute: It is the largest immunobiology and biopharmaceutical manufacturer in Latin America (and one of the largest in the world), and is considered to be the world’s main science One of the centers. It is world-famous for collecting venomous snakes as well as venomous lizards, spiders, insects and scorpions. By extracting the venom of reptiles and insects, the institute has developed antivenoms and drugs against many diseases, including tuberculosis, rabies, tetanus and diphtheria.</p>
-
-<h2 id="authorization">Authorization</h2>
-<p>Liu Peicheng, Director of Branding and Public Relations of Kexing, said that Kexing’s COVID-19 vaccine has been approved for use in nearly 30 countries and regions, including China, Chile, Brazil, and Turkey, including emergency use, conditional listing or official listing, and has been launched one after another. Large-scale vaccination work. As of April 21, 2021, a total of 160 million doses have been vaccinated globally, including China. The World Health Organization (WHO) approved the emergency use of Kexing COVID-19 vaccine on June 1, 2021.</p>
-
-<h2 id="data-background">Data background</h2>
-<p align="center">
-  <img alt="20210715-ethnic" src="/images/20210715-ethnic.png" />
-</p>
-
-<p align="center">
-  <img alt="20210715-underlying-disease" src="/images/20210715-underlying-disease.png" />
-</p>
-
-<p>From July 21 to December 16, 2020, 12842 participants were screened at 16 research sites in Brazil, and 12408 participants were randomly grouped. A total of 12396 participants received at least one dose of Coxing vaccine or placebo, including 6195 in the vaccine group and 6,201 in the placebo group. Among the 12396 participants, 5.1% were elderly participants 60 years or older, 64.2% were women, and most of the participants claimed to be white (75.3%). More than half of the participants (55.9%) had underlying diseases, of which 22.5% were obese (BMI ≥ 30kg/m2). The average age and BMI of the participants were 39.5 years and 26.8 kg/m2, respectively.</p>
-
-<h2 id="most-adverse-reactions-will-occur-within-7-days-of-vaccination">Most adverse reactions will occur within 7 days of vaccination</h2>
-<p align="center">
-  <img alt="20210715-global-1" src="/images/20210715-global-1.png" />
-</p>
-
-<p>Nearly 75% of adverse reactions occur within one week after vaccination, but adverse reactions occur within one hour after vaccination, but the probability is relatively low, about 7%.</p>
-
-<p align="center">
-  <img alt="20210715-global-2" src="/images/20210715-global-2.png" />
-</p>
-
-<p>In the trial population, half of them had adverse reactions with different symptoms and different degrees, and the probability of local reactions (62%) was slightly higher than that of systemic reactions (58%).</p>
-
-<p>Local reaction: A reaction that occurs at the entrance of an infected organism or injection.
-Systemic reaction: When inflammation spreads from a local area of ​​an organ (such as the skin) to other organ systems in the body, it is called a systemic reaction.</p>
-
-<h2 id="the-adverse-reactions-of-the-second-vaccination-were-milder-than-the-first">The adverse reactions of the second vaccination were milder than the first</h2>
-<p align="center">
-  <img alt="20210715-common-local" src="/images/20210715-common-local.png" />
-</p>
-
-<p>Judging from the common reactions after the two inoculations, among the local reactions, the reaction of the second inoculation will be slightly more obvious than the first but the difference is not much. The most common reaction is still pain at the injection site. The probability of this reaction in the second injection has increased by 1.83% compared with the first time. It is also the most likely increase in the probability of these five local reactions. In addition to the above-mentioned common adverse reactions, there are some reactions that will occur with a very small probability. For example, after the first dose of vaccination, there is a 0.1% probability of fever and a 0.06% probability of localized rash. After the second injection, the probability of hardening of the inoculation site, exfoliation of the epidermis, or pustules was less than 0.05%.</p>
-
-<p align="center">
-  <img alt="20210715-common-systemic" src="/images/20210715-common-systemic.png" />
-</p>
-
-<p>Judging from the common reaction after the two vaccination, in the systemic reaction, the reaction of the second vaccination was mostly weaker than that of the first vaccination. Especially for “headache”, “fatigue” and “nausea”, their chances of appearing decreased by 6.54%, 4.78% and 2% respectively. With regard to vomiting, hypersensitivity reactions, skin rashes, blushing and other adverse reactions, the probability of occurrence is less than 1%. In addition to the above-mentioned common adverse reactions, there are some reactions that will occur with a very small probability. For example, after the first dose of vaccination, there is a 0.42% probability of back pain, 0.26% of oral herpes, 0.19% probability of hyperhidrosis, rhinitis, conjunctivitis, muscle weakness, heart palpitations, etc. less than 1% will occur reaction. After the second injection, there is a 0.46% chance of limb pain, a 0.33% chance of breathing difficulties, a 0.11% chance of edema, and tachycardia, anxiety, pharyngitis, and other reactions less than 1%.</p>
-
-<h2 id="what-should-i-pay-attention-to-after-vaccination">What should I pay attention to after vaccination?</h2>
-<p>Being vaccinated does not mean that everything will be well and that the virus will not invade. After observing, we still need to pay attention to some things:</p>
-<ul>
-  <li>Avoid eating spicy and irritating foods, seafood foods, and drinking alcohol. It is recommended to drink plenty of water (source: Zhihu)</li>
-  <li>Try to avoid strenuous exercise and keep adequate rest (source: Zhihu)</li>
-  <li>Measures should still be taken to protect yourself and others during travel (Source: CDC)</li>
-  <li>You should still pay attention to the symptoms of COVID-19, especially when you are with patients. If you develop symptoms of COVID-19, you should be tested and self-isolate, stay away from others (Source: CDC)</li>
-</ul>
-
-<h2 id="conclusion">Conclusion</h2>
-<p>On the whole, in clinical trials, regardless of the first or second needle, there is a 45% probability that the injection site will feel pain, and there is a 20%-30% probability that you will feel tired or headache. After the second injection, the feeling will not be as obvious as the first injection.</p>
-
-<p>After vaccination, you should pay attention to the light diet and keep adequate rest. Even if you are vaccinated, you must pay attention to protection.</p>
-
-<h2 id="references">References</h2>
-<ul>
-  <li>“Efficacy and Safety of a COVID-19 Inactivated Vaccine in Healthcare Professionals in Brazil: The PROFISCOV Study”, <em>europepmc.org</em>. [Online]. Available: <a href="https://europepmc.org/article/PPR/PPR341815">https://europepmc.org/article/PPR/PPR341815</a></li>
-  <li>“克爾來福2019冠狀病毒病疫苗”, <em>zh.wikipedia.org</em>. [Online]. Available: <a href="https://zh.wikipedia.org/wiki/%E5%85%8B%E7%88%BE%E4%BE%86%E7%A6%8F2019%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97">https://zh.wikipedia.org/wiki/%E5%85%8B%E7%88%BE%E4%BE%86%E7%A6%8F2019%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97</a></li>
-  <li>“辉瑞-生物科技COVID-19疫苗概述和安全性”, <em>chinese.cdc.gov</em>. [Online]. Available: <a href="https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html">https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html</a></li>
-  <li>大众迷你仓, “新冠疫苗接种后注意事项”, <em>zhuanlan.zhihu.com</em>. [Online]. Available: <a href="https://zhuanlan.zhihu.com/p/368304205">https://zhuanlan.zhihu.com/p/368304205</a></li>
-  <li>“local reaction”, <em>medical-dictionary</em>. [Online]. Available: <a href="https://medical-dictionary.thefreedictionary.com">https://medical-dictionary.thefreedictionary.com</a></li>
-  <li>Rod Brouhard, EMT-P, “Systemic Reaction Throughout the Body”, <em>www.verywellhealth.com</em>. [Online]. Available: <a href="https://www.verywellhealth.com/systemic-reaction-1298693">https://www.verywellhealth.com/systemic-reaction-1298693</a></li>
-  <li>Alexandra_Koch, “corona vaccination virus vaccine”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/">https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[Instituto Butantan announced the final results of the Phase III clinical trial of China's Coronavac COVID-19 vaccine in Brazil. Today, I will take you to learn more about the specific information.]]></summary></entry></feed>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[The AstraZeneca Vaccine Trial Group at the University of Oxford has released data on the response and severity of people at different ages after being vaccinated with AstraZeneca’s COVID-19 vaccine. Today, I will take you to learn more about the specific information.]]></summary></entry></feed>
