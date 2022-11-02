@@ -3,6 +3,7 @@ layout:      post
 title:       "Data Science in Retail Discount"
 lang:        en
 date:        "2022-10-31 15:26:34 +0100"
+series:      [retail]
 tags:        [retail]
 comments:    true
 excerpt:     >
