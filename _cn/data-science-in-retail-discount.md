@@ -2,7 +2,7 @@
 layout:      post
 title:       "促销计划制定遇瓶颈？数据来帮你"
 lang:        zh
-date:        "2022-11-31 15:26:34 +0100"
+date:        "2022-11-11 15:26:34 +0100"
 tags:        [retail]
 comments:    true
 excerpt:     >
