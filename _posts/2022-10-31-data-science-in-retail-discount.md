@@ -5,6 +5,7 @@ lang:        en
 date:        "2022-10-31 15:26:34 +0100"
 series:      [retail]
 tags:        [retail]
+permalink:         /data-science-in-retail-discount/
 comments:    true
 excerpt:     >
     We talk about how recommendation engines contribute to retail promotion and
