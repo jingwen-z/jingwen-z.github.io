@@ -1,5 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-12-26T22:31:18+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Data Science in Retail Discount</title><link href="https://jingwen-z.github.io/data-science-in-retail-discount/" rel="alternate" type="text/html" title="Data Science in Retail Discount" /><published>2022-10-31T15:26:34+01:00</published><updated>2022-10-31T15:26:34+01:00</updated><id>https://jingwen-z.github.io/data-science-in-retail-discount</id><content type="html" xml:base="https://jingwen-z.github.io/data-science-in-retail-discount/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-12-26T22:31:46+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2022</title><link href="https://jingwen-z.github.io/review-of-2022/" rel="alternate" type="text/html" title="Review of 2022" /><published>2022-12-26T15:42:52+01:00</published><updated>2022-12-26T15:42:52+01:00</updated><id>https://jingwen-z.github.io/review-of-2022</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2022/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>During the year 2022, our life is almost back to normal, we started to take off
+the mask, and have more contact with colleagues and friends.
+As in previous years, it’s time to review the whole year 2022. This year, I not
+only levelled up my skills in technique but also in project management and
+communication with clients.
+In this blog, I’ll resume my year 2022 with the following points:</p>
+<ul>
+  <li>Working in retailing (In The Memory)</li>
+  <li>Blogs</li>
+</ul>
+
+<h2 id="working-in-retailing-in-the-memory">Working in retailing (In The Memory)</h2>
+<p><a href="https://www.inthememory.com/?lang=en">In The Memory</a> is a retail-tech company that helps retail players to
+make the best use of the different internal and external data sources to meet
+their strategic and operational business challenges. Our products allow
+distributors and brands to accelerate their decision-making to attract more
+customers and make the best assortment, merchandising, pricing, and promotional
+choices, in their various physical and online sales channels. We build tailored
+Augmented Intelligence solutions to meet clients’ priority challenges and serve
+their strategies by supporting their teams in change management, defining
+together the best KPIs to meet clients’ challenges and adapting our solutions to
+the client’s needs, constraints and processes. Moreover, this year, we have been
+labelled happyatwork 2022 (this label rewards company in which employees are the
+most committed and motivated), won the LSARetailTech trophy in the “Data,
+knowledge and customer personalization” category, and have been selected by
+Business France to represent France during the next Retail’s Big Show in New
+York in January 2023; we have nearly 70 colleagues vs. 50 in 2021.</p>
+
+<p align="center">
+  <img alt="20221226-awards" src="/images/20221226-awards.png" />
+</p>
+
+<p>This year, I’m promoted to Senior Data Scientist and levelled up my skills not
+only in technique but also in project management and communication with clients.</p>
+
+<h3 id="head-of-data-management-projects-for-some-clients">Head of Data Management projects for some clients</h3>
+<p>This year, I started to be in charge of data management for some clients. Thanks
+to this project, I improve my skills in multiple aspects: maintaining the data
+integration process, troubleshooting, designing the workflow for new data
+integration, designing the retro planning with team consulting, interaction
+among clients, team consulting and team data. All of these allow our clients to
+well integrate their data into our system which is the base of our data products,
+it also allows In The Memory to explore and create more products on the platform.</p>
+
+<h3 id="launch-of-2-promotional-data-products">Launch of 2 promotional data products</h3>
+<p>After more than 1-year development, we finally release these 2 promotional
+modules for our client. Thanks to this project, I enrich my knowledge on
+promotion business, know how to manage a project from the viewpoint of data, and
+discuss the project with different teams (consulting and software). This product
+helps users to save lots of time in defining the promotion leaflets and it can
+also attract other retailers to use these amazing modules.</p>
+
+<h3 id="data-reliability">Data reliability</h3>
+<p>We created some tools for ensuring data reliability. For example, we created the
+first API of team data, this API allows us to check data format and quality
+after the user imports the input files which ensures the data is ready to be
+used to run our calculation and model. I also set up a staging environment for
+the data team, which is isolated from the production environment, this allows us
+to modify or develop new features without worrying about breaking the data in
+production, this is a product guarantee and it’s a playground!</p>
+
+<h3 id="recruiting-talents-for-in-the-memory">Recruiting talents for In The Memory</h3>
+<p>It has been 6 years since the graduation ceremony, this year I came back to
+Toulouse School of Economics again to help In The Memory recruit talents. It was
+an enriching experience for us to interact with students and teachers throughout
+the day.</p>
+
+<p align="center">
+  <img alt="20221226-tsebnd" src="/images/20221226-tsebnd.png" />
+</p>
+
+<h2 id="blogs">Blogs</h2>
+<p>Since August 2016, I’ve written 116 blogs on various aspects: python, data
+analysis, data visualisation, machine learning, and data science in retailing,
+had more than 212k users come more than 301k times on my blogs.</p>
+
+<p align="center">
+  <img alt="20221226-blog" src="/images/20221226-blog.png" />
+</p>
+
+<p>Don’t hesitate if you want to ask questions or write comments, they’re welcome!!</p>
+
+<p>Hope to see you in 2023!</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>Moritz Knöringer, “2022”, <em>unsplash.com</em>. [Online]. Available: <a href="https://unsplash.com/photos/LPj8vt3EoXE">https://unsplash.com/photos/LPj8vt3EoXE</a></li>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html"><![CDATA[Review of 2022.]]></summary></entry><entry xml:lang="en"><title type="html">Data Science in Retail Discount</title><link href="https://jingwen-z.github.io/data-science-in-retail-discount/" rel="alternate" type="text/html" title="Data Science in Retail Discount" /><published>2022-10-31T15:26:34+01:00</published><updated>2022-10-31T15:26:34+01:00</updated><id>https://jingwen-z.github.io/data-science-in-retail-discount</id><content type="html" xml:base="https://jingwen-z.github.io/data-science-in-retail-discount/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>Retail discount plays an important role in increasing turnover, increasing
 customer loyalty and attracting customers. To have a good strategy of discount,
 data mining can help retailers to build a recommendation engine that recommends
@@ -1346,140 +1434,4 @@ In addition, 4%-6% of people have slight or moderate swelling at the injection s
   <li>“local reaction”, <em>medical-dictionary</em>. [Online]. Available: <a href="https://medical-dictionary.thefreedictionary.com">https://medical-dictionary.thefreedictionary.com</a></li>
   <li>Rod Brouhard, EMT-P, “Systemic Reaction Throughout the Body”, <em>www.verywellhealth.com</em>. [Online]. Available: <a href="https://www.verywellhealth.com/systemic-reaction-1298693">https://www.verywellhealth.com/systemic-reaction-1298693</a></li>
   <li>“moderna”, <em>cdn.futura-sciences.com</em>. [Online]. Available: <a href="https://cdn.futura-sciences.com/buildsv6/images/wide1920/f/9/4/f94999f310_50180650_vaccin-moderna-markus-mainka-adobe-stock.jpg">https://cdn.futura-sciences.com/buildsv6/images/wide1920/f/9/4/f94999f310_50180650_vaccin-moderna-markus-mainka-adobe-stock.jpg</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of people of different ages after being vaccinated with the Moderna COVID-19 vaccine. Today, I will take you to learn more about the specific information.]]></summary></entry><entry xml:lang="en"><title type="html">Do you know the reactions of Oxford/AstraZeneca vaccine?</title><link href="https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Oxford/AstraZeneca vaccine?" /><published>2021-08-20T22:27:55+02:00</published><updated>2021-08-20T22:27:55+02:00</updated><id>https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions/"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Since the beginning of 2020, people from all over the world have struggled with the COVID-19 virus, and scientists are also actively looking for solutions. In order to achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. And a vaccine from theoretical design to clinical trials requires too much wisdom and effort of scientists. Last time, I analyzed the adverse reactions of Pfizer vaccine and Coronavac vaccine, and my friends wanted to know the side effects of AstraZeneca vaccine.</p>
-
-<p>Today, I will borrow the data released by the AstraZeneca Vaccine Trial Group at the University of Oxford to show you the specific information. Before starting, introduce the following two terms that will be frequently mentioned next:</p>
-<ul>
-  <li>Local reaction: A reaction that occurs at the entrance of an infected organism or injection.</li>
-  <li>Systemic reaction: When inflammation spreads from a local area of ​​an organ (such as the skin) to other organ systems in the body, it is called a systemic reaction.</li>
-</ul>
-
-<h2 id="data-background">Data background</h2>
-<p>From May 30 to August 8, 2020, 560 participants were included in the study and randomly assigned to the experimental vaccine group or the control vaccine group: 160 participants between the ages of 18-55 (100 assigned To ChAdOx1 nCoV-19, 60 were assigned to MenACWY), 160 were 56-69 years old (120 were assigned to ChAdOx1 nCoV-19, 40 were assigned to MenACWY) and 240 were 70 years and older (200 were assigned to ChAdOx1 nCoV- 19, 40 were assigned to MenACWY).</p>
-
-<p>18-55 years old population data: They include 47% of women, 82% of white people, 14% of Asian participants and 4% of other ethnic groups. The median age is 39 years. 92% were drinkers, 36% of participants had underlying diseases, and 20% had respiratory diseases.</p>
-
-<p>Data for 56-69-year-olds: They include 53% of women, 87% of whites and 13% of Asian participants. The median age is 59.5 years. 97% were alcohol drinkers and 0 smokers. 23% of the participants had underlying diseases and 13% had cardiovascular diseases.</p>
-
-<p>Data for people over 70 years old: 43% of them are women, and all participants are white. The median age is 73 years. 86% were drinkers and 0 smokers. 41% of the participants had underlying diseases and 27% had cardiovascular diseases.</p>
-
-<h2 id="tenderness-and-fatigue-are-the-most-common">Tenderness and fatigue are the most common</h2>
-<p align="center">
-  <img alt="20210820-local-reactions-18-55" src="/images/20210820-local-reactions-18-55.png" />
-</p>
-
-<p align="center">
-  <img alt="20210820-local-reactions-56-69" src="/images/20210820-local-reactions-56-69.png" />
-</p>
-
-<p align="center">
-  <img alt="20210820-local-reactions-70plus" src="/images/20210820-local-reactions-70plus.png" />
-</p>
-
-<p>Among the local reactions, tenderness and pain at the injection site are common adverse reactions of all ages, and they are most obvious after the first injection, especially for people aged 18-55 years old, the probability of occurrence is as high as 60%; compared to the pain at the injection site, The chance of itching and redness is much lower, less than 10%. In addition, people over the age of 70 have less than 5% of the possibility of swelling or induration after vaccination.</p>
-
-<p align="center">
-  <img alt="20210820-sys-reactions-18-55" src="/images/20210820-sys-reactions-18-55.png" />
-</p>
-
-<p align="center">
-  <img alt="20210820-sys-reactions-56-69" src="/images/20210820-sys-reactions-56-69.png" />
-</p>
-
-<p align="center">
-  <img alt="20210820-sys-reactions-70plus" src="/images/20210820-sys-reactions-70plus.png" />
-</p>
-
-<p>Among the systemic reactions, the overall risk of adverse reactions after the first injection is higher than that after the second injection. The more common ones are fatigue, headache and muscle pain. It is worth noting that the same adverse reactions increase with age. The probability of occurrence will be reduced. For example, among 18-55-year-olds, 75% of people will feel tired after the first injection, but for 56-69-year-olds, this proportion drops to 50%, and for 70-year-olds For the above population, this proportion is reduced to 41%.</p>
-
-<h2 id="different-people-have-different-levels-of-sensitivity">Different people have different levels of sensitivity</h2>
-<p align="center">
-  <img alt="20210820-local-reactions-detail" src="/images/20210820-local-reactions-detail.png" />
-</p>
-
-<p>More than half of the population will experience mild tenderness, and about 60% of the 18-55-year-old population will experience mild or moderate pain at the injection site.</p>
-
-<p>People aged 18-55 are the most sensitive to slight pain at the injection site. Especially at the first injection, more than 40% of them will feel slightly fatigued. This ratio is twice that of people over 70 years old. In addition, the injection site is suffering Almost all people suffering from pain are between 18-55 years old.</p>
-
-<p>For itching, although the probability of occurrence is much lower than the first two, there are still 10% of people aged 18-55 who will feel moderate itching after the second injection.</p>
-
-<p align="center">
-  <img alt="20210820-sys-reactions-details-1" src="/images/20210820-sys-reactions-details-1.png" />
-</p>
-
-<p>More than 30% of people will feel slight fatigue regardless of the first or second injection. Among them, 56-69-year-olds are most sensitive to slight fatigue after the second injection. In addition, more than 20% of people aged 18-55 will experience moderate fatigue.</p>
-
-<p>For headaches, the most common degree is mild headaches, and people aged 56-69 are the most sensitive to this. The probability of occurrence after the first injection is as high as 50%, but after the second injection, this proportion is reduced to 30% .</p>
-
-<p>People over 18 years of age have a 20% chance of experiencing mild muscle pain after vaccination. In the trial, no people over 56 years of age felt moderate or more severe muscle pain, but about 20% of people aged 18-55 would have Feel moderate muscle pain.</p>
-
-<p align="center">
-  <img alt="20210820-sys-reactions-details-2" src="/images/20210820-sys-reactions-details-2.png" />
-</p>
-
-<p>After the first vaccination, 25% of the 18-55-year-old people will feel moderate discomfort, and those over 56 years old will have a 20% chance of feeling mild discomfort; after the second vaccination, the proportion of moderate discomfort will decrease. To about 5%, but there are still 20% of 18-55-year-old people feel mild discomfort.</p>
-
-<p>For fever, people aged 18-55 have a 40% chance of experiencing mild, moderate or severe fever. This proportion is greatly reduced to 10% after the second injection; in addition, people over 56 years old will also have 10% chance of feeling mild fever.</p>
-
-<p>Among people aged 18-55, the probability of joint pain is about 30%, especially after the first vaccination; for people over 56 years old, there is a 17% chance of feeling mild joint pain.</p>
-
-<p align="center">
-  <img alt="20210820-sys-reactions-details-3" src="/images/20210820-sys-reactions-details-3.png" />
-</p>
-
-<p>Among 18-55-year-olds, the probability of getting chills after the first shot is about 40%, and this rate is reduced to 14% after the second shot; people over 56 years old are not very sensitive to chills, only 10% Possibility.</p>
-
-<p>After the first shot, about 27% of people aged 18-55 will feel nauseous, and after the second shot, this proportion drops to 8%; people aged 56-69 have a 13% chance of feeling slightly nauseous, on the contrary However, this proportion increased to 21% after the second shot.</p>
-
-<h2 id="are-astrazenecas-adverse-reactions-really-big">Are AstraZeneca’s adverse reactions really big?</h2>
-<p>King’s College London, Harvard Medical School and other units published an article on adverse reactions after injection of the COVID-19 vaccine on Lancet Infect Dis on April 21, 2021, which compared the different adverse effects after vaccination with Pfizer and AstraZeneca reaction. Let’s compare them below.</p>
-
-<p align="center">
-  <img alt="20210820-local-reactions-pfizerVSaz" src="/images/20210820-local-reactions-pfizerVSaz.png" />
-</p>
-
-<p>In terms of local reactions, the first shot of AstraZeneca was not as severe as the first shot of Pfizer vaccine, especially the second shot of Pfizer. For some local reactions, the second injection of Pfizer is much more likely to occur than AstraZeneca, such as pain at the injection site (34.26% vs. 19.1%), swelling (9.75% vs. 5.5%), redness (7.23%) vs. 4.18%) etc.</p>
-
-<p align="center">
-  <img alt="20210820-sys-reactions-pfizerVSaz" src="/images/20210820-sys-reactions-pfizerVSaz.png" />
-</p>
-
-<p>But if we look at the systemic reaction, the reaction to the first shot of AstraZeneca is more severe than the second shot of Pfizer, even if compared with the second shot of Pfizer: the probability of fatigue and headache is higher than that of the second shot of Pfizer by 7%-10 %, the chance of chills and shaking is more than double that of Pfizer (6.42% vs. 14.70%).</p>
-
-<h2 id="vaccination-with-astrazeneca--thrombosis">Vaccination with AstraZeneca = Thrombosis?</h2>
-<p>In February 2021, two Austrian women suffered from coagulation disorders after being vaccinated with the vaccine. One of them died and the other was hospitalized for pulmonary embolism. Although the connection between blood clots and vaccination was not yet established, people have naturally regarded blood clots as one of the side effects of the AstraZeneca vaccine. But is this really the case? How high is the chance of thrombosis?</p>
-
-<p>In the“<a href="https://www.who.int/news/item/16-04-2021-global-advisory-committee-on-vaccine-safety-(gacvs)-review-of-latest-evidence-of-rare-adverse-blood-coagulation-events-with-astrazeneca-covid-19-vaccine-(vaxzevria-and-covishield)">Global Advisory Committee on Vaccine Safety (GACVS) review of latest evidence of rare adverse blood coagulation events with AstraZeneca COVID-19 Vaccine (Vaxzevria and Covishield)</a>”published by the World Health Organization , it was mentioned that according to the latest available data, the AstraZeneca vaccine caused The risk of thrombotic thrombocytopenia syndrome appears to be very low. Data from the United Kingdom shows that there are about 4 cases per million adults (1 case per 250,000 people) vaccinated, while the EU estimates the ratio is about 1 case per 100,000 people. Luo Yijun, deputy head of the medical response team of the Taiwan Central Epidemic Command Center, said in mid-March that the incidence of thrombosis in Europeans and Americans is 5 to 10 times that of the yellow race.</p>
-
-<p>Some investigators have investigated the age distribution of thrombotic thrombocytopenia syndrome. The Global Vaccine Safety Advisory Committee supports further research to understand age-related risks, because although existing data indicate that young people are at higher risk, further analysis is needed. Regarding the issue of gender-related risks, although more cases have been reported among women, it must be emphasized that more women are vaccinated, and some cases of thrombotic thrombocytopenia syndrome have also been reported among men.</p>
-
-<p>There are four other categories of people, including those with thrombocytopenia or any coagulation abnormalities, and women who are pregnant or likely to become pregnant, etc., should first assess the benefits and risks before deciding whether to vaccinate. (Source: BBC)</p>
-
-<h2 id="what-should-i-pay-attention-to-after-vaccination">What should I pay attention to after vaccination?</h2>
-<p>Being vaccinated does not mean that everything will be well and that the virus will not invade. After observing, we still need to pay attention to some things:</p>
-<ul>
-  <li>Avoid eating spicy and irritating foods, seafood foods, and drinking alcohol. It is recommended to drink plenty of water (source: Zhihu)</li>
-  <li>Try to avoid strenuous exercise and keep adequate rest (source: Zhihu)</li>
-  <li>Measures should be taken to protect yourself and others during travel (Source: CDC)</li>
-  <li>You should still pay attention to the symptoms of COVID-19, especially when you are with patients. If you develop symptoms of COVID-19, you should be tested and self-isolate, away from others (Source: CDC)</li>
-</ul>
-
-<h2 id="conclusion">Conclusion</h2>
-<p>On the whole, in clinical trials, regardless of the first or second needle, there is a 60% probability that the injection site will feel tenderness, and there is a 30%-50% probability that you will feel tired or headache. After the second injection, the feeling will not be as obvious as the first injection. In addition, considering that there are not many test samples, the credibility of the data needs to be confirmed.</p>
-
-<p>After vaccination, you should pay attention to the lightness of your diet and maintain adequate rest. Even if you are vaccinated, you must pay attention to protection.</p>
-
-<h2 id="references">References</h2>
-<ul>
-  <li>Maheshi N Ramasamy, Angela M Minassian, et Al. “Safety and immunogenicity of ChAdOx1 nCoV-19 vaccine administered in a prime-boost regimen in young and old adults (COV002): a single-blind, randomised, controlled, phase 2/3 trial”, <em>Lancet 2020; 396: 1979–93</em>.</li>
-  <li>Cristina Menni, Kerstin Klaser, et Al. “Vaccine side-effects and SARS-CoV-2 infection after vaccination in users of the COVID Symptom Study app in the UK: a prospective observational study”, <em>Lancet Infect Dis 2021; 21: 939–49</em>.</li>
-  <li>“全球疫苗安全咨询委员会对阿斯利康COVID-19疫苗（Vaxzevria和Covishield）罕见不良凝血事件的最新证据的审查”, <em>www.who.int</em>. [Online]. Available: <a href="https://www.who.int/news/item/16-04-2021-global-advisory-committee-on-vaccine-safety-(gacvs)-review-of-latest-evidence-of-rare-adverse-blood-coagulation-events-with-astrazeneca-covid-19-vaccine-(vaxzevria-and-covishield)">https://www.who.int/zh/news/item/16-04-2021-global-advisory-committee-on-vaccine-safety-(gacvs)-review-of-latest-evidence-of-rare-adverse-blood-coagulation-events-with-astrazeneca-covid-19-vaccine-(vaxzevria-and-covishield)</a></li>
-  <li>“牛津－阿斯利康2019冠状病毒病疫苗”, <em>zh.wikipedia.org</em>. [Online]. Available: <a href="https://zh.wikipedia.org/wiki/%E7%89%9B%E6%B4%A5%EF%BC%8D%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B72019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97">https://zh.wikipedia.org/wiki/%E7%89%9B%E6%B4%A5%EF%BC%8D%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B72019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97</a></li>
-  <li>“阿斯利康疫苗：欧盟药监局确认血栓为该疫苗“罕见”副作用 年轻女性疑面临更大风险”, <em>www.bbc.com</em>. [Online]. Available: <a href="https://www.bbc.com/zhongwen/simp/world-56614337">https://www.bbc.com/zhongwen/simp/world-56614337</a></li>
-  <li>“辉瑞-生物科技COVID-19疫苗概述和安全性”, <em>chinese.cdc.gov</em>. [Online]. Available: <a href="https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html">https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html</a></li>
-  <li>大众迷你仓, “新冠疫苗接种后注意事项”, <em>zhuanlan.zhihu.com</em>. [Online]. Available: <a href="https://zhuanlan.zhihu.com/p/368304205">https://zhuanlan.zhihu.com/p/368304205</a></li>
-  <li>“local reaction”, <em>medical-dictionary</em>. [Online]. Available: <a href="https://medical-dictionary.thefreedictionary.com">https://medical-dictionary.thefreedictionary.com</a></li>
-  <li>Rod Brouhard, EMT-P, “Systemic Reaction Throughout the Body”, <em>www.verywellhealth.com</em>. [Online]. Available: <a href="https://www.verywellhealth.com/systemic-reaction-1298693">https://www.verywellhealth.com/systemic-reaction-1298693</a></li>
-  <li>Alexandra_Koch, “corona vaccination virus vaccine”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/">https://pixabay.com/illustrations/corona-vaccination-virus-vaccine-6256612/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[The AstraZeneca Vaccine Trial Group at the University of Oxford has released data on the response and severity of people at different ages after being vaccinated with AstraZeneca’s COVID-19 vaccine. Today, I will take you to learn more about the specific information.]]></summary></entry></feed>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of people of different ages after being vaccinated with the Moderna COVID-19 vaccine. Today, I will take you to learn more about the specific information.]]></summary></entry></feed>
