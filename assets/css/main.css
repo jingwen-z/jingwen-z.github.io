@@ -2662,6 +2662,9 @@ input:focus {
   padding-top: 0;
   padding-left: 0;
 }
+.card--flat .card__content > p {
+  color: rgba(0, 0, 0, 0.54);
+}
 
 .gallery {
   height: 100%;
