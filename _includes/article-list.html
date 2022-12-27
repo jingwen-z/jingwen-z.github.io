@@ -1,5 +1,4 @@
-{%- assign _excerpt_truncate = include.excerpt_truncate | default: 350 -%}
-
+{%- assign _excerpt_truncate = include.excerpt_truncate | default: 200 -%}
 {%- assign _excerpt_type = include.excerpt_type -%}
 
 {%- include snippets/get-locale-string.html key='READMORE' -%}
@@ -153,7 +152,7 @@
                 <a href="{{ _article_url }}"><h2 class="card__header">{{ _article.title }}</h2></a>
               </header>
               <p>
-                {{ _article.excerpt | truncate: 200}}
+                {{ _article.excerpt | strip_html | truncate: _excerpt_truncate }}
               </p>
               {%- if include.with_date -%}
                 <p>{{ _article.date | date_to_string }}</p>
