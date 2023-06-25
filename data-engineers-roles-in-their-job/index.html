@@ -10,29 +10,29 @@
 		
 	</script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Matplotlib Series 2: Line chart - Jingwen Zheng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Data Engineers' roles in their job - Jingwen Zheng</title>
 
-<meta name="description" content="This blog specifies how to create line chart with single line, line chart with multiple lines and add values' label on the chart with matplotlib in Python.">
+<meta name="description" content="Data engineer plays a very important role in terms of the data side and business side by providing the infrastructure necessary to support data-driven decisi...">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Matplotlib Series 2: Line chart | Jingwen Zheng</title>
+<title>Data Engineers’ roles in their job | Jingwen Zheng</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Matplotlib Series 2: Line chart" />
+<meta property="og:title" content="Data Engineers’ roles in their job" />
 <meta name="author" content="Jingwen Zheng" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="This blog specifies how to create line chart with single line, line chart with multiple lines and add values’ label on the chart with matplotlib in Python." />
-<meta property="og:description" content="This blog specifies how to create line chart with single line, line chart with multiple lines and add values’ label on the chart with matplotlib in Python." />
-<link rel="canonical" href="https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/" />
-<meta property="og:url" content="https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/" />
+<meta name="description" content="Data engineer plays a very important role in terms of the data side and business side by providing the infrastructure necessary to support data-driven decision-making. Without effective data engineering, organizations would struggle to make sense of the vast amounts of data they collect and would miss out on the valuable insights that data can provide." />
+<meta property="og:description" content="Data engineer plays a very important role in terms of the data side and business side by providing the infrastructure necessary to support data-driven decision-making. Without effective data engineering, organizations would struggle to make sense of the vast amounts of data they collect and would miss out on the valuable insights that data can provide." />
+<link rel="canonical" href="https://jingwen-z.github.io/data-engineers-roles-in-their-job/" />
+<meta property="og:url" content="https://jingwen-z.github.io/data-engineers-roles-in-their-job/" />
 <meta property="og:site_name" content="Jingwen Zheng" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-09-16T16:58:54+02:00" />
+<meta property="article:published_time" content="2023-04-23T15:23:05+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Matplotlib Series 2: Line chart" />
+<meta property="twitter:title" content="Data Engineers’ roles in their job" />
 <meta name="twitter:site" content="@Jingwen_QI" />
 <meta name="twitter:creator" content="@Jingwen Zheng" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jingwen Zheng"},"dateModified":"2019-06-21T09:28:10+02:00","datePublished":"2018-09-16T16:58:54+02:00","description":"This blog specifies how to create line chart with single line, line chart with multiple lines and add values’ label on the chart with matplotlib in Python.","headline":"Matplotlib Series 2: Line chart","mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/"},"url":"https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Jingwen Zheng"},"dateModified":"2023-04-23T15:23:05+02:00","datePublished":"2023-04-23T15:23:05+02:00","description":"Data engineer plays a very important role in terms of the data side and business side by providing the infrastructure necessary to support data-driven decision-making. Without effective data engineering, organizations would struggle to make sense of the vast amounts of data they collect and would miss out on the valuable insights that data can provide.","headline":"Data Engineers’ roles in their job","mainEntityOfPage":{"@type":"WebPage","@id":"https://jingwen-z.github.io/data-engineers-roles-in-their-job/"},"url":"https://jingwen-z.github.io/data-engineers-roles-in-their-job/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -40,7 +40,7 @@
 
 <!-- Extra Open Graph :: End -->
 
-<link rel="canonical" href="https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+<link rel="canonical" href="https://jingwen-z.github.io/data-engineers-roles-in-their-job/"><link rel="alternate" type="application/rss+xml" title="Jingwen Zheng" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -333,21 +333,18 @@
         <ul><li class="navigation__item"><a href="/portfolio">Portfolio</a></li><li class="navigation__item"><a href="/series">Series</a></li><li class="navigation__item"><a href="/archive">Archive</a></li><li class="navigation__item"><a href="/about">About</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
-</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20180526-pexels-steve-johnson.jpg);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix">
+</div><div class="page__content"><div class="article__header--overlay"><div class="hero hero--dark overlay" style="background-image:linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)),url(/images/20230423-pipeline.jpg);background-color:#203028;"><div class="hero__content"><div class ="main"><div class="article__info clearfix">
       <ul class="left-col menu">
         <li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=matplotlib">matplotlib</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive?tag=visualisation">visualisation</a>
+                href="/archive?tag=career">career</a>
             </li>
 
       <li class="separator">|</li>
         
           <li>
             <a class="button button--circle button--primary focus lang"
-               href="/data-viz-with-matplotlib-series2-line-chart/"><span>EN</span></a>
+               href="/data-engineers-roles-in-their-job/"><span>EN</span></a>
 
             
 
@@ -362,8 +359,8 @@
           </li>
         
       
-    </ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Sep 16, 2018</span>
-            </li></ul></div><div class="article__header"><header><h1>Matplotlib Series 2: Line chart</h1></header></div><p class="overlay__excerpt">This blog specifies how to create line chart with single line, line chart with multiple lines and add values' label on the chart with matplotlib in Python.</p></div></div>
+    </ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 23, 2023</span>
+            </li></ul></div><div class="article__header"><header><h1>Data Engineers' roles in their job</h1></header></div><p class="overlay__excerpt">Data engineer plays a very important role in terms of the data side and business side by providing the infrastructure necessary to support data-driven decision-making. Without effective data engine...</p></div></div>
               </div>
             </div><div class ="main"><div class="grid grid--reverse">
 
@@ -373,122 +370,55 @@
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="Matplotlib Series 2: Line chart"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2018-09-16T16:58:54+02:00">
-    <meta itemprop="keywords" content="matplotlib,visualisation"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+<article itemscope itemtype="http://schema.org/Article"><meta itemprop="headline" content="Data Engineers' roles in their job"><meta itemprop="author" content="Jingwen Zheng"/><meta itemprop="datePublished" content="2023-04-23T15:23:05+02:00">
+    <meta itemprop="keywords" content="career"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><blockquote>
-  <p>This blog is part of Matplotlib Series:</p>
-  <ul>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series1-bar-chart/">Matplotlib Series 1: Bar chart</a></li>
-    <li>Matplotlib Series 2: Line chart (this blog)</li>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series3-pie-chart/">Matplotlib Series 3: Pie chart</a></li>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series4-scatter-plot/">Matplotlib Series 4: Scatter plot</a></li>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series5-treemap/">Matplotlib Series 5: Treemap</a></li>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series6-venn-diagram/">Matplotlib Series 6: Venn diagram</a></li>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series7-area-chart/">Matplotlib Series 7: Area chart</a></li>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series8-radar-chart/">Matplotlib Series 8: Radar chart</a></li>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series9-word-cloud/">Matplotlib Series 9: Word cloud</a></li>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series10-lollipop-plot/">Matplotlib Series 10: Lollipop plot</a></li>
-    <li><a href="https://jingwen-z.github.io/data-viz-with-matplotlib-series11-histogram/">Matplotlib Series 11: Histogram</a></li>
-  </ul>
-</blockquote>
+<div class="article__content" itemprop="articleBody"><h2 id="introduction">Introduction</h2>
+<p>The composition of the data team can vary depending on the size and needs of an organization. However, some common roles are typically included in a data team. These roles include data engineers, data analysts, data scientists, data architects and data administrators, etc. They work to collect, store, analyze, and interpret data to drive business decisions and improve organizational performance. In this blog, I’ll focus on data engineers, and talk about their role and how they collaborate with others.</p>
 
-<h2 id="line-chart">Line chart</h2>
-<p>A <a href="https://en.wikipedia.org/wiki/Line_chart">line chart</a> or line graph is a type of chart which displays
-information as a series of data points called ‘markers’ connected by straight
-line segments. A line chart is often used to visualize a trend in data over
-intervals of time – a time series – thus the line is often drawn chronologically.</p>
-
-<h3 id="when-to-use-it-">When to use it ?</h3>
+<h2 id="data-engineers-key-responsibilities">Data engineer’s key responsibilities</h2>
+<p>Data engineers are responsible for designing, building, testing, and maintaining the infrastructure that supports an organization’s data needs. Their role is critical in ensuring that data is properly collected, stored, and made available to data scientists and other users in a timely and efficient manner. Some of the key responsibilities of data engineers include:</p>
 <ul>
-  <li>Track changes over time</li>
-  <li>x-axis displays continuous variables</li>
-  <li>Y-axis displays measurement</li>
+  <li>Data collection: Data engineers are responsible for designing and implementing systems that collect data from various sources. They ensure that the data is collected consistently and reliably.</li>
+  <li>Data storage: Once the data is collected, data engineers must store it in a way that is secure, scalable, and easily accessible. They must select appropriate database technology and design the schema that defines how the data is organized.</li>
+  <li>Data transformation: Raw data is often messy and inconsistent. Data engineers are responsible for cleaning and transforming the data so that it is ready for analysis. This includes removing duplicates, correcting errors, and transforming the data into a format that is suitable for analysis.</li>
+  <li>Data pipelines: Data engineers design and build the systems that move data from its source to its destination. They create data pipelines that move data from its source to a data warehouse, where it can be analyzed by data scientists.</li>
+  <li>Data quality: Data engineers are responsible for ensuring that the data used by data scientists is accurate and reliable. They implement quality control measures and monitor the data to identify any issues.</li>
+  <li>Infrastructure maintenance: Data engineers must ensure that the infrastructure supporting data collection, storage, and analysis is maintained and updated as needed. This includes monitoring system performance and making upgrades to hardware and software as needed.</li>
 </ul>
 
-<h3 id="example">Example</h3>
-<p align="center">
-  <img alt="line plot" src="/images/20180916-line-chart.png" />
-</p>
+<h2 id="collaboration-with-data-scientistsdata-analysts">Collaboration with data scientists/data analysts</h2>
+<p>When data engineers design the data-storage structure, they need to communicate with data scientists and data analysts to well understand their needs, pain points and use cases. They ensure that the required data is accessible and available in the appropriate formats. Raw data is often not immediately ready for analysis, after understanding that, data engineers start to clean and transform the data, ensuring that it is in a suitable format for analysis, like defining which tables need to create, with what columns, the data type of each column, do they need to do some data transformation and aggregation, create the data pipeline and define its running frequency. Moreover, they also need to create an automatic process for data quality checking, which is to verify the received data format, data volume, data value consistency, business-related logic, etc.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<p>Moreover, they work together to establish data quality standards, data validation processes, and data monitoring mechanisms. Data engineers help data scientists and data analysts understand the data lineage, metadata, and data quality issues, ensuring that they can rely on the accuracy and integrity of the data for their analyses.
+After all these, data engineers gather feedback on data availability, performance, and infrastructure requirements from the data science and analysis processes. Data engineers continuously improve the data infrastructure and systems based on this feedback, ensuring that they meet the evolving needs of the data science and analysis work.</p>
 
-<span class="n">turnover</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="n">turnover</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'.'</span><span class="p">)</span>
+<h2 id="collaboration-with-product-owners">Collaboration with product owners</h2>
+<p>Before designing new products or new product features, we need to support them from the data side, which means ensuring that data infrastructure and systems align with the goals and requirements of the product or project.</p>
 
-<span class="n">plt</span><span class="p">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="p">))</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Month'</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Turnover (K euros) of ice-cream'</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">ylim</span><span class="p">(</span><span class="n">bottom</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<p>Data engineers work closely with product owners to understand the data requirements for a specific product or project and gather information about the data sources, data formats, data volume, data quality standards and validation rules to meet the product objectives.</p>
 
-<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span></code></pre></figure>
+<p>Furthermore, product owners often have specific data needs for their products. Data engineers work with them to define the data pipelines that capture, process, and transform the required data. They collaborate on the data flow, transformations, and integration points to ensure that the data is collected and processed correctly. Throughout the development and deployment lifecycle, data engineers collaborate with product owners to gather feedback, identify areas for improvement, and make necessary adjustments to the data infrastructure. They work together to iterate on the data pipelines and systems, aligning them with evolving product requirements.</p>
 
-<p>Suppose that the plot above describes the turnover(k euros) of ice-cream’s sales
-during one year. According to the plot, we can clearly find that the sales
-reach a peak in summer, then fall from autumn to winter, which is logical.</p>
+<h2 id="collaboration-with-clients">Collaboration with clients</h2>
+<p>As a data engineer in a SaaS(Software as a Service) company, data come from the client side. Thus, communicating with clients on data integration is one of my missions. We engage in discussions and meetings to gather information about the types of data the clients need, the sources of data, and the specific use cases or analytics they want to perform. This helps data engineers gain a clear understanding of the client’s data needs. They also work together to determine which data systems, databases, APIs, or external sources are necessary to collect the required data.</p>
 
-<h2 id="line-chart-with-multiple-lines">Line chart with multiple lines</h2>
-<h3 id="when-to-use-it--1">When to use it ?</h3>
-<p>Compare different subjects during the same period.</p>
+<p>Based on the client’s data requirements, data engineers design data integration processes and pipelines. They collaborate with clients to define the data flow, transformations, and any data cleaning or enrichment steps that may be required. Data engineers work with clients to ensure that the data pipelines align with their specific needs and can provide the desired outputs.</p>
 
-<h3 id="example-1">Example</h3>
-<p align="center">
-  <img alt="line plot" src="/images/20180916-multi-line-chart.png" />
-</p>
+<p>Besides, data engineers need to maintain regular communication with clients throughout the project lifecycle. They provide progress updates, discuss any challenges or issues encountered, and seek client feedback to ensure that the data engineering processes align with the client’s expectations and requirements. This helps maintain transparency and fosters effective collaboration.</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">year_n_1</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mf">24.5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">]</span>
-<span class="n">year_n</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<h2 id="conclusion">Conclusion</h2>
+<p>Data engineer plays a very important role in terms of the data side and business side by providing the infrastructure necessary to support data-driven decision-making. Without effective data engineering, organizations would struggle to make sense of the vast amounts of data they collect and would miss out on the valuable insights that data can provide.</p>
 
-<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="n">year_n_1</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'.'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'#1f77b4'</span><span class="p">,</span>
-         <span class="n">label</span><span class="o">=</span><span class="s">'year N-1'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">'--'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="n">year_n</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'.'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'#1f77b4'</span><span class="p">,</span>
-         <span class="n">label</span><span class="o">=</span><span class="s">'year N'</span><span class="p">)</span>
-<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
+<p>Collaboration among data engineers, data scientists, and data analysts is crucial for successful data-driven initiatives, by working together, they ensure that data is accessible, reliable, and ready for analysis, enabling meaningful insights and valuable outcomes from the data; collaboration with product owners ensure that the data infrastructure supports the product’s needs, enabling data-driven decision-making and delivering value to end-users; by actively engaging with clients, data engineers can design and implement data solutions that meet their specific needs, leading to successful data-driven outcomes.</p>
 
-<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span></code></pre></figure>
-
-<p>As an extension of the first plot, the second one compares two-year turnover
-together. The peak for both year is in the summer, for year N, the peak is in
-August; however, the peak is reached in June in the year N-1, which is caused
-by the heatwave in June.</p>
-
-<h2 id="add-values-label-on-the-plot">Add values’ label on the plot</h2>
-<p>We find that there is no parameter for add values’ labels by plt.plot(), but we
-can add them with text() function.</p>
-
-<p align="center">
-  <img alt="line plot" src="/images/20180916-add-values-linechart.png" />
-</p>
-
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">autolabel_simple_lineplot_mille_wk</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">col_name</span><span class="p">,</span> <span class="n">lines_color</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col_name</span><span class="p">]):</span>
-        <span class="n">plt</span><span class="p">.</span><span class="n">text</span><span class="p">(</span><span class="n">df</span><span class="p">.</span><span class="n">index</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="mf">0.15</span><span class="p">,</span>
-                 <span class="n">val</span><span class="o">+</span><span class="mf">1.7</span><span class="p">,</span>
-                 <span class="s">'%1.0f€'</span> <span class="o">%</span> <span class="n">val</span><span class="p">,</span>
-                 <span class="n">color</span><span class="o">=</span><span class="n">lines_color</span><span class="p">,</span>
-                 <span class="n">rotation</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-                 <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span></code></pre></figure>
-
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s">'turnover'</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span>
-                               <span class="mi">30</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">]})</span>
-
-<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">.</span><span class="n">index</span><span class="p">,</span> <span class="n">df</span><span class="p">.</span><span class="n">turnover</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'.'</span><span class="p">)</span>
-<span class="n">autolabel_simple_lineplot_mille_wk</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s">'turnover'</span><span class="p">,</span> <span class="s">'#1f77b4'</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span></code></pre></figure>
-
-<p>You can click <a href="https://github.com/jingwen-z/python-playground/blob/master/python_for_data_analysis/plotting_and_visualization/line_chart.ipynb">here</a> to check this example in jupyter notebook.</p>
-
-<h2 id="reference">Reference</h2>
+<h2 id="references">References</h2>
 <ul>
-  <li>Steve Johnson, “painting wallpaper”, <em>www.pexels.com</em>. [Online]. Available: <a href="https://www.pexels.com/photo/painting-wallpaper-1070527/">https://www.pexels.com/photo/painting-wallpaper-1070527/</a></li>
+  <li>the blowup, “white and black industrial machine”, <em>unsplash.com</em>. [Online]. Available: <a href="https://unsplash.com/photos/qafbp6O0Rr0">https://unsplash.com/photos/qafbp6O0Rr0</a></li>
 </ul>
 
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2018-09-16T16:58:54+02:00"><!-- start custom article footer snippet -->
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2023-04-23T15:23:05+02:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 <div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">Subscribe</a></div></div><div class="article__license"><div class="license">
@@ -498,7 +428,7 @@ can add them with text() function.</p>
       </a>
     </p>
   </div></div></footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/python-pep-328-import-and-build-package/">Python PEP 328: import and build package</a></div><div class="next"><span>NEXT</span><a href="/data-viz-with-matplotlib-series3-pie-chart/">Matplotlib Series 3: Pie chart</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/review-of-2022/">Review of 2022</a></div></div></div>
 
 </div>
 
@@ -533,8 +463,8 @@ can add them with text() function.</p>
   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
   var disqus_config = function () {
-    this.page.url = 'https://jingwen-z.github.io/data-viz-with-matplotlib-series2-line-chart/';
-    this.page.identifier = '/data-viz-with-matplotlib-series2-line-chart';
+    this.page.url = 'https://jingwen-z.github.io/data-engineers-roles-in-their-job/';
+    this.page.identifier = '/data-engineers-roles-in-their-job';
   };
   (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');

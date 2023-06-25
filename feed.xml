@@ -1,5 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-12-31T10:39:21+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2022</title><link href="https://jingwen-z.github.io/review-of-2022/" rel="alternate" type="text/html" title="Review of 2022" /><published>2022-12-26T15:42:52+01:00</published><updated>2022-12-26T15:42:52+01:00</updated><id>https://jingwen-z.github.io/review-of-2022</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2022/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-25T09:37:15+02:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Data Engineers’ roles in their job</title><link href="https://jingwen-z.github.io/data-engineers-roles-in-their-job/" rel="alternate" type="text/html" title="Data Engineers’ roles in their job" /><published>2023-04-23T15:23:05+02:00</published><updated>2023-04-23T15:23:05+02:00</updated><id>https://jingwen-z.github.io/data-engineers-roles-in-their-job</id><content type="html" xml:base="https://jingwen-z.github.io/data-engineers-roles-in-their-job/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>The composition of the data team can vary depending on the size and needs of an organization. However, some common roles are typically included in a data team. These roles include data engineers, data analysts, data scientists, data architects and data administrators, etc. They work to collect, store, analyze, and interpret data to drive business decisions and improve organizational performance. In this blog, I’ll focus on data engineers, and talk about their role and how they collaborate with others.</p>
+
+<h2 id="data-engineers-key-responsibilities">Data engineer’s key responsibilities</h2>
+<p>Data engineers are responsible for designing, building, testing, and maintaining the infrastructure that supports an organization’s data needs. Their role is critical in ensuring that data is properly collected, stored, and made available to data scientists and other users in a timely and efficient manner. Some of the key responsibilities of data engineers include:</p>
+<ul>
+  <li>Data collection: Data engineers are responsible for designing and implementing systems that collect data from various sources. They ensure that the data is collected consistently and reliably.</li>
+  <li>Data storage: Once the data is collected, data engineers must store it in a way that is secure, scalable, and easily accessible. They must select appropriate database technology and design the schema that defines how the data is organized.</li>
+  <li>Data transformation: Raw data is often messy and inconsistent. Data engineers are responsible for cleaning and transforming the data so that it is ready for analysis. This includes removing duplicates, correcting errors, and transforming the data into a format that is suitable for analysis.</li>
+  <li>Data pipelines: Data engineers design and build the systems that move data from its source to its destination. They create data pipelines that move data from its source to a data warehouse, where it can be analyzed by data scientists.</li>
+  <li>Data quality: Data engineers are responsible for ensuring that the data used by data scientists is accurate and reliable. They implement quality control measures and monitor the data to identify any issues.</li>
+  <li>Infrastructure maintenance: Data engineers must ensure that the infrastructure supporting data collection, storage, and analysis is maintained and updated as needed. This includes monitoring system performance and making upgrades to hardware and software as needed.</li>
+</ul>
+
+<h2 id="collaboration-with-data-scientistsdata-analysts">Collaboration with data scientists/data analysts</h2>
+<p>When data engineers design the data-storage structure, they need to communicate with data scientists and data analysts to well understand their needs, pain points and use cases. They ensure that the required data is accessible and available in the appropriate formats. Raw data is often not immediately ready for analysis, after understanding that, data engineers start to clean and transform the data, ensuring that it is in a suitable format for analysis, like defining which tables need to create, with what columns, the data type of each column, do they need to do some data transformation and aggregation, create the data pipeline and define its running frequency. Moreover, they also need to create an automatic process for data quality checking, which is to verify the received data format, data volume, data value consistency, business-related logic, etc.</p>
+
+<p>Moreover, they work together to establish data quality standards, data validation processes, and data monitoring mechanisms. Data engineers help data scientists and data analysts understand the data lineage, metadata, and data quality issues, ensuring that they can rely on the accuracy and integrity of the data for their analyses.
+After all these, data engineers gather feedback on data availability, performance, and infrastructure requirements from the data science and analysis processes. Data engineers continuously improve the data infrastructure and systems based on this feedback, ensuring that they meet the evolving needs of the data science and analysis work.</p>
+
+<h2 id="collaboration-with-product-owners">Collaboration with product owners</h2>
+<p>Before designing new products or new product features, we need to support them from the data side, which means ensuring that data infrastructure and systems align with the goals and requirements of the product or project.</p>
+
+<p>Data engineers work closely with product owners to understand the data requirements for a specific product or project and gather information about the data sources, data formats, data volume, data quality standards and validation rules to meet the product objectives.</p>
+
+<p>Furthermore, product owners often have specific data needs for their products. Data engineers work with them to define the data pipelines that capture, process, and transform the required data. They collaborate on the data flow, transformations, and integration points to ensure that the data is collected and processed correctly. Throughout the development and deployment lifecycle, data engineers collaborate with product owners to gather feedback, identify areas for improvement, and make necessary adjustments to the data infrastructure. They work together to iterate on the data pipelines and systems, aligning them with evolving product requirements.</p>
+
+<h2 id="collaboration-with-clients">Collaboration with clients</h2>
+<p>As a data engineer in a SaaS(Software as a Service) company, data come from the client side. Thus, communicating with clients on data integration is one of my missions. We engage in discussions and meetings to gather information about the types of data the clients need, the sources of data, and the specific use cases or analytics they want to perform. This helps data engineers gain a clear understanding of the client’s data needs. They also work together to determine which data systems, databases, APIs, or external sources are necessary to collect the required data.</p>
+
+<p>Based on the client’s data requirements, data engineers design data integration processes and pipelines. They collaborate with clients to define the data flow, transformations, and any data cleaning or enrichment steps that may be required. Data engineers work with clients to ensure that the data pipelines align with their specific needs and can provide the desired outputs.</p>
+
+<p>Besides, data engineers need to maintain regular communication with clients throughout the project lifecycle. They provide progress updates, discuss any challenges or issues encountered, and seek client feedback to ensure that the data engineering processes align with the client’s expectations and requirements. This helps maintain transparency and fosters effective collaboration.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Data engineer plays a very important role in terms of the data side and business side by providing the infrastructure necessary to support data-driven decision-making. Without effective data engineering, organizations would struggle to make sense of the vast amounts of data they collect and would miss out on the valuable insights that data can provide.</p>
+
+<p>Collaboration among data engineers, data scientists, and data analysts is crucial for successful data-driven initiatives, by working together, they ensure that data is accessible, reliable, and ready for analysis, enabling meaningful insights and valuable outcomes from the data; collaboration with product owners ensure that the data infrastructure supports the product’s needs, enabling data-driven decision-making and delivering value to end-users; by actively engaging with clients, data engineers can design and implement data solutions that meet their specific needs, leading to successful data-driven outcomes.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>the blowup, “white and black industrial machine”, <em>unsplash.com</em>. [Online]. Available: <a href="https://unsplash.com/photos/qafbp6O0Rr0">https://unsplash.com/photos/qafbp6O0Rr0</a></li>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="career" /><summary type="html"><![CDATA[Data engineer plays a very important role in terms of the data side and business side by providing the infrastructure necessary to support data-driven decision-making. Without effective data engineering, organizations would struggle to make sense of the vast amounts of data they collect and would miss out on the valuable insights that data can provide.]]></summary></entry><entry xml:lang="en"><title type="html">Review of 2022</title><link href="https://jingwen-z.github.io/review-of-2022/" rel="alternate" type="text/html" title="Review of 2022" /><published>2022-12-26T15:42:52+01:00</published><updated>2022-12-26T15:42:52+01:00</updated><id>https://jingwen-z.github.io/review-of-2022</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2022/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>During the year 2022, our life is almost back to normal, we started to take off
 the mask, and have more contact with colleagues and friends.
 As in previous years, it’s time to review the whole year 2022. This year, I not
@@ -1347,96 +1389,4 @@ Data on people aged 12-15: On April 9, 2021, Pfizer-Biotech supplemented the tes
   <li>“阿斯利康疫苗：欧盟药监局确认血栓为该疫苗“罕见”副作用 年轻女性疑面临更大风险”, <em>www.bbc.com</em>. [Online]. Available: <a href="https://www.bbc.com/zhongwen/simp/world-56614337">https://www.bbc.com/zhongwen/simp/world-56614337</a></li>
   <li>大众迷你仓, “新冠疫苗接种后注意事项”, <em>zhuanlan.zhihu.com</em>. [Online]. Available: <a href="https://zhuanlan.zhihu.com/p/368304205">https://zhuanlan.zhihu.com/p/368304205</a></li>
   <li>torstensimon, “vaccine vaccination covid-19”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/vaccine-vaccination-covid-19-5926664/">https://pixabay.com/photos/vaccine-vaccination-covid-19-5926664/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[Some time ago, I have successively analyzed the adverse reactions of Pfizer vaccine, Coronavac vaccine, AstraZeneca vaccine and Modena vaccine. Today we will compare the side effects of different vaccines in a longitudinal direction.]]></summary></entry><entry xml:lang="en"><title type="html">Do you know the reactions of Modena vaccine?</title><link href="https://jingwen-z.github.io/moderna-covid-19-vaccine-reactions/" rel="alternate" type="text/html" title="Do you know the reactions of Modena vaccine?" /><published>2021-09-20T22:27:55+02:00</published><updated>2021-09-20T22:27:55+02:00</updated><id>https://jingwen-z.github.io/moderna-covid-19-vaccine-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/moderna-covid-19-vaccine-reactions/"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Since the beginning of 2020, people from all over the world have struggled with the COVID-19 virus, and scientists are also actively looking for solutions. In order to achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. And a vaccine from theoretical design to clinical trials requires too much wisdom and effort of scientists. Last time, I analyzed the adverse reactions of Pfizer vaccine, Coronavac vaccine and AstraZeneca vaccine, and my friends wanted to know the side effects of Modena vaccine.</p>
-
-<p>The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of people of different ages after being vaccinated with the Moderna COVID-19 vaccine. Today, I will take you to learn more about the specific information. Before starting, introduce the following two terms that will be frequently mentioned next:</p>
-<ul>
-  <li>Local reaction: A reaction that occurs at the entrance of an infected organism or injection.</li>
-  <li>Systemic reaction: When inflammation spreads from a local area of ​​an organ (such as the skin) to other organ systems in the body, it is called a systemic reaction.</li>
-</ul>
-
-<h2 id="data-background">Data background</h2>
-<p align="center">
-  <img alt="20210920-ethnic" src="/images/20210920-ethnic.png" />
-</p>
-
-<p align="center">
-  <img alt="20210920-underlying-disease" src="/images/20210920-underlying-disease.png" />
-</p>
-
-<p>As of November 11, 2020, 30,350 participants were randomly assigned to the vaccine or placebo group at a 1:1 ratio, with a median follow-up period of 7 weeks after the second vaccination. 75.2% of the participants in the vaccine group were between 18 and 65 years old, 47.8% were women; 79% were white, 10% were black or African American, and 4.3% were Asian participants. The median age is 53 years. 27% of the participants had underlying diseases, and 5% had major heart diseases.</p>
-
-<h2 id="pain-at-the-injection-site-is-most-common">Pain at the injection site is most common</h2>
-<p align="center">
-  <img alt="20210920-local-reactions" src="/images/20210920-local-reactions.png" />
-</p>
-
-<p>Among the local reactions, pain at the injection site is a common adverse reaction of all ages, and it is most obvious after the second injection, especially for people aged 18-64 years old, the probability of occurrence is as high as 90%; compared to the pain at the injection site, redness The odds are much lower, less than 10%.</p>
-
-<p align="center">
-  <img alt="20210920-sys-reactions" src="/images/20210920-sys-reactions.png" />
-</p>
-
-<p>Among the systemic reactions, the overall probability of adverse reactions after the second injection is higher than that of the first injection, or even doubled. The more common ones are fatigue, headache and muscle pain; it is worth noting that the same adverse reactions As age increases, the probability of occurrence decreases. For example, among 18-64-year-olds, 68% of people will feel fatigued after the second injection, but for people 65 and older, this ratio drops to 58 %.</p>
-
-<h2 id="different-people-have-different-levels-of-sensitivity">Different people have different levels of sensitivity</h2>
-<p align="center">
-  <img alt="20210920-local-reactions-detail" src="/images/20210920-local-reactions-detail.png" />
-</p>
-
-<p>About 80% of people will experience mild or moderate pain at the injection site, and 10%-15% will experience mild or moderate axillary swelling/tenderness.
-In addition, 4%-6% of people have slight or moderate swelling at the injection site after the first injection, and this proportion rises to 10%-12% after the second injection.</p>
-
-<p align="center">
-  <img alt="20210920-sys-reactions-details-1" src="/images/20210920-sys-reactions-details-1.png" />
-</p>
-
-<p>30%-40% of people will feel mild or moderate fatigue after the first injection. After the second injection, this proportion rises to 50%-60%, and there is a 10% probability of severe fatigue. .</p>
-
-<p>In a similar situation, there is the symptom of headache. The difference is that the probability of severe headache is 3%-5%.</p>
-
-<p>In addition, about 5%-10% of people will feel mild or moderate chills after the first injection. The proportion of people aged 18-64 after the second injection rises to 48%. For 65-year-olds About 30% of people and above feel mild or moderate chills after the second shot.</p>
-
-<p align="center">
-  <img alt="20210920-sys-reactions-details-2" src="/images/20210920-sys-reactions-details-2.png" />
-</p>
-
-<p>About 20% of people will feel mild or moderate muscle pain after the first injection. After the second injection, this proportion rises to 40%-50%, and there is a 5%-10% probability that it will be severe. Fatigue.</p>
-
-<p>The probability of joint pain is slightly lower than that of muscle pain. The probability of mild or moderate joint pain after the first shot is less than 20%, but after the second shot, the probability increases greatly, especially for people aged 18-64. One proportion doubles to 40%; and there is a 3%-6% probability that there will be severe joint pain.</p>
-
-<p>Compared with the above adverse reactions, the probability of nausea or vomiting is not so high. After the first injection, there is a 5%-10% probability of feeling mild or moderate nausea or vomiting. This probability rises to 10%-20% after the second injection.</p>
-
-<h2 id="what-should-i-pay-attention-to-after-vaccination">What should I pay attention to after vaccination?</h2>
-<p>Being vaccinated does not mean that everything will be well and that the virus will not invade. After observing, we still need to pay attention to some things:</p>
-<ul>
-  <li>Avoid eating spicy and irritating foods, seafood foods, and drinking alcohol. It is recommended to drink plenty of water (source: Zhihu)</li>
-  <li>Try to avoid strenuous exercise and keep adequate rest (source: Zhihu)</li>
-  <li>Measures should be taken to protect yourself and others during travel (Source: CDC)</li>
-  <li>You should still pay attention to the symptoms of COVID-19, especially when you are with patients. If you develop symptoms of COVID-19, you should be tested and self-isolate, away from others (Source: CDC)</li>
-</ul>
-
-<h2 id="conclusion">Conclusion</h2>
-<p>Overall, in clinical trials, regardless of the first or second needle, there is about 80% probability that the injection site will feel pain, and there is a 35%-60% probability that you will feel fatigue or headache. After the second injection, the feeling will be more obvious than the first injection, but most of them are mild or moderate.</p>
-
-<p>After vaccination, you should pay attention to the light diet and keep adequate rest. Even if you are vaccinated, you must pay attention to protection.</p>
-
-<p>If you still want to know about the adverse reactions of Pfizer, Coxing and AstraZeneca’s COVID-19 vaccine, please click on the following article:</p>
-
-<ul>
-  <li><a href="https://jingwen-z.github.io/pfizer-biontech-covid-19-vaccine-reactions/">Do you know the reactions of Pfizer vaccine?</a></li>
-  <li><a href="https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/">Do you know the reactions of Coronavac vaccine?</a></li>
-  <li><a href="https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions/">Do you know the reactions of Oxford/AstraZeneca vaccine?</a></li>
-</ul>
-
-<h2 id="references">References</h2>
-<ul>
-  <li>Vaccines and Related Biological Products Advisory Committee Meeting, “FDA Briefing Document Moderna COVID-19 Vaccine”, <em>December 17, 2020</em>.</li>
-  <li>“The Moderna COVID-19 Vaccine’s Local Reactions, Systemic Reactions, Adverse Events, and Serious Adverse Events”, <em>www.cdc.gov</em>. [Online]. Available: <a href="https://www.cdc.gov/vaccines/covid-19/info-by-product/moderna/reactogenicity.html">https://www.cdc.gov/vaccines/covid-19/info-by-product/moderna/reactogenicity.html</a></li>
-  <li>“辉瑞-生物科技COVID-19疫苗概述和安全性”, <em>chinese.cdc.gov</em>. [Online]. Available: <a href="https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html">https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html</a></li>
-  <li>大众迷你仓, “新冠疫苗接种后注意事项”, <em>zhuanlan.zhihu.com</em>. [Online]. Available: <a href="https://zhuanlan.zhihu.com/p/368304205">https://zhuanlan.zhihu.com/p/368304205</a></li>
-  <li>“local reaction”, <em>medical-dictionary</em>. [Online]. Available: <a href="https://medical-dictionary.thefreedictionary.com">https://medical-dictionary.thefreedictionary.com</a></li>
-  <li>Rod Brouhard, EMT-P, “Systemic Reaction Throughout the Body”, <em>www.verywellhealth.com</em>. [Online]. Available: <a href="https://www.verywellhealth.com/systemic-reaction-1298693">https://www.verywellhealth.com/systemic-reaction-1298693</a></li>
-  <li>“moderna”, <em>cdn.futura-sciences.com</em>. [Online]. Available: <a href="https://cdn.futura-sciences.com/buildsv6/images/wide1920/f/9/4/f94999f310_50180650_vaccin-moderna-markus-mainka-adobe-stock.jpg">https://cdn.futura-sciences.com/buildsv6/images/wide1920/f/9/4/f94999f310_50180650_vaccin-moderna-markus-mainka-adobe-stock.jpg</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[The Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of people of different ages after being vaccinated with the Moderna COVID-19 vaccine. Today, I will take you to learn more about the specific information.]]></summary></entry></feed>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[Some time ago, I have successively analyzed the adverse reactions of Pfizer vaccine, Coronavac vaccine, AstraZeneca vaccine and Modena vaccine. Today we will compare the side effects of different vaccines in a longitudinal direction.]]></summary></entry></feed>
