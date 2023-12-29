@@ -1,5 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-25T09:37:15+02:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Data Engineers’ roles in their job</title><link href="https://jingwen-z.github.io/data-engineers-roles-in-their-job/" rel="alternate" type="text/html" title="Data Engineers’ roles in their job" /><published>2023-04-23T15:23:05+02:00</published><updated>2023-04-23T15:23:05+02:00</updated><id>https://jingwen-z.github.io/data-engineers-roles-in-their-job</id><content type="html" xml:base="https://jingwen-z.github.io/data-engineers-roles-in-their-job/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-12-29T12:01:25+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2023</title><link href="https://jingwen-z.github.io/review-of-2023/" rel="alternate" type="text/html" title="Review of 2023" /><published>2023-12-29T10:35:37+01:00</published><updated>2023-12-29T10:35:37+01:00</updated><id>https://jingwen-z.github.io/review-of-2023</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2023/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>The year 2023 almost passed, before the arrival of the year 2024, I prefer to review this year, like what I did each year.
+This year I enriched my skills in data engineering, data ops and management. I’ll talk about each of them in the following.</p>
+
+<h2 id="working-in-retailing-in-the-memory">Working in retailing (In The Memory)</h2>
+<p>This year I started different projects not only on data science but also on data engineering and data ops, which is a new domain for me and it completed my skill tree on data.</p>
+
+<h3 id="head-of-data-management-projects-for-some-clients">Head of Data Management projects for some clients</h3>
+<p>Same as last year, I’m always in charge of data management for some clients: maintaining the data integration process, troubleshooting, designing the workflow for new data integration, designing the retro planning with team consulting, interaction among clients, team consulting and team data. The project became richer and more challenging this year: I created a data audit flow to ensure the data quality, which contains two parts, data engineering checking and business rules checking. Data engineering checking ensures the data’s format, no missing values, columns’ names, etc. Business rules checking verifies if the data make sense in terms of business, such as if the start date is earlier than the end date for each product, if we can find all sold products in the table “product”, or if the brand labels are all good, etc. With the audit results, a report is exported and I discussed it with our consultants, data engineers, data analysts, and with our clients as well.</p>
+
+<p>Moreover, I collaborated with the DevOps team to achieve the migration process on Eldorado, migrated the code base on GitHub and applied configuration files to standardize the codes across clients.</p>
+
+<p>Thanks to these projects, enriched my experiences in data engineering, project management and communication, and let me have my first experience in data ops.</p>
+
+<h3 id="customer-segmentation">Customer segmentation</h3>
+<p>This is a pretty interesting project that I accomplished with my intern and my lead. We created a consumer segmentation based on consumers’ purchases for our client several years ago, caused of COVID-19, the purchase behaviours have changed a lot, so it’s time to update the definition for each consumer group.</p>
+
+<p>We took last year’s transaction data, cleaned them and applied PCA and k-means clustering for all loyal customers and all consumer products, got firstly the product groups, then based on them we studied loyal clients’ purchase behaviours and defined various loyal clients groups. The study is industrialized, will be triggered in all quarters and send results to clients automatically.</p>
+
+<h3 id="update-products-level">Update products’ level</h3>
+<p>This project aims to overhaul the last level of the customer hierarchy at intermarché (level 5) containing the UBC (Unités de Besoin Consommateur in French, consumer need units in English). The project was started by an ancient colleague, I relayed it after his leaving. Based on his work, I accomplished reassigning filtered products to new UBCs. After being verified by consultants, we’ll apply the new level 5 on our platform in 2 steps: integrate them into the database and apply the new table on the platform, For each step, we’ll first test on staging and then put it on production environment when it’s good on staging.</p>
+
+<p>This project is on standby since I’m on maternity leave.</p>
+
+<h3 id="management">Management</h3>
+<p>One of the things that I most appreciated for this year is I recruited an intern and finished a great project with her. Thanks to this experience, I enriched the following skills:</p>
+
+<ul>
+  <li>project management: I learn how to cut a whole project into several parts and assign them to different people according to each member’s strengths, how to estimate the timing for each step, how to organize meetings to follow and ensure the project’s advancement, and how to communicate the project to different teams: consultants, data and our clients.</li>
+  <li>team management: to well understand my intern, keep transparency with her and follow the project, I organized a weekly meeting and several meetings for her one-month and three-month arrival.</li>
+  <li>communication: As I mentioned above, I communicated the project among internal teams (consultant, data), my intern and our clients, it’s a great experience to enhance my communication skills.</li>
+</ul>
+
+<h3 id="finops">finOps</h3>
+<p><a href="https://databrickslabs.github.io/overwatch/">Overwatch</a> was built to enable Databricks’ customers, employees, and partners to quickly / easily understand operations within Databricks deployments. As enterprise adoption increases there’s an ever-growing need for strong governance. Overwatch means to enable users to quickly answer questions and then drill down to make effective operational changes. Common examples of operational activities Overwatch assists with are:</p>
+
+<ul>
+  <li>Cost tracking by various dimensions</li>
+  <li>Governance at various dimensions</li>
+  <li>Optimization Opportunities</li>
+  <li>What If Experiments</li>
+</ul>
+
+<p>Thanks to Overwatch, we got the first understanding of our cost and found most of the clusters that we used on Data Factory pipelines were all-purpose clusters, which spend more than job clusters. Based on this, I switched all-purpose clusters to job clusters by Azure CLI.</p>
+
+<h2 id="personal-new-role">Personal new role</h2>
+<p>This year I have my new role: I become a mother! It’s really a special experience and a new challenge for us! Hope we can be good parents ;)</p>
+
+<p>Hope to see you in 2024!</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>Ricardo Loaiza, “2023”, <em>unsplash</em>. [Online]. Available: <a href="https://unsplash.com/photos/the-word-eos-spelled-out-of-fireworks-k_2huy51I3k">https://unsplash.com/photos/the-word-eos-spelled-out-of-fireworks-k_2huy51I3k</a></li>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html"><![CDATA[Review of 2023.]]></summary></entry><entry xml:lang="en"><title type="html">Data Engineers’ roles in their job</title><link href="https://jingwen-z.github.io/data-engineers-roles-in-their-job/" rel="alternate" type="text/html" title="Data Engineers’ roles in their job" /><published>2023-04-23T15:23:05+02:00</published><updated>2023-04-23T15:23:05+02:00</updated><id>https://jingwen-z.github.io/data-engineers-roles-in-their-job</id><content type="html" xml:base="https://jingwen-z.github.io/data-engineers-roles-in-their-job/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>The composition of the data team can vary depending on the size and needs of an organization. However, some common roles are typically included in a data team. These roles include data engineers, data analysts, data scientists, data architects and data administrators, etc. They work to collect, store, analyze, and interpret data to drive business decisions and improve organizational performance. In this blog, I’ll focus on data engineers, and talk about their role and how they collaborate with others.</p>
 
 <h2 id="data-engineers-key-responsibilities">Data engineer’s key responsibilities</h2>
@@ -1292,101 +1345,4 @@ with integers, after all these steps, we save the file with <code class="languag
   <li>“What’s new in Excel 365?”, <em>laptrinhx.com</em>. [Online]. Available: <a href="https://laptrinhx.com/what-s-new-in-excel-365-589177363/#">https://laptrinhx.com/what-s-new-in-excel-365-589177363/#</a></li>
   <li>“SALES KPI REPORT”, <em>thesmallman.com</em>. [Online]. Available: <a href="https://www.thesmallman.com/premium/key-performance-indicators">https://www.thesmallman.com/premium/key-performance-indicators</a></li>
   <li>“Howard Tucan”, <em>miro.medium.com</em>. [Online]. Available: <a href="https://miro.medium.com/max/1400/1*hpMdyM6QNJGix73T-sc8vw.jpeg">https://miro.medium.com/max/1400/1*hpMdyM6QNJGix73T-sc8vw.jpeg</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="python3" /><category term="excel" /><summary type="html"><![CDATA[People who are familiar with openpyxl know that we can use it to read/write Excel 2010 xlsx/xlsm/xltx/xltm files. In this blog, I will show you how to write values into an Excel template.]]></summary></entry><entry xml:lang="en"><title type="html">Do you know which COVID-19 vaccine brings the most obvious reactions?</title><link href="https://jingwen-z.github.io/four-covid-19-vaccines-reactions/" rel="alternate" type="text/html" title="Do you know which COVID-19 vaccine brings the most obvious reactions?" /><published>2021-10-30T22:27:55+02:00</published><updated>2021-10-30T22:27:55+02:00</updated><id>https://jingwen-z.github.io/four-covid-19-vaccines-reactions</id><content type="html" xml:base="https://jingwen-z.github.io/four-covid-19-vaccines-reactions/"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Since the beginning of 2020, people from all over the world have struggled with the COVID-19 virus, and scientists are also actively looking for solutions. In order to achieve herd immunity, the most effective method at the moment can be said to be vaccination. Various voices about the vaccine have also been on the cusp of social public opinion, and the praise or controversy about it has never stopped. And a vaccine from theoretical design to clinical trials requires too much wisdom and effort of scientists. Last time, I analyzed the adverse reactions of Pfizer vaccine, Coronavac vaccine, AstraZeneca vaccine and Modena vaccine. Today we will compare the side effects of different vaccines in a longitudinal direction.</p>
-
-<p>Before starting, introduce the following two terms that will be frequently mentioned next:</p>
-<ul>
-  <li>Local reaction: A reaction that occurs at the entrance of an infected organism or injection.</li>
-  <li>Systemic reaction: When inflammation spreads from a local area of ​​an organ (such as the skin) to other organ systems in the body, it is called a systemic reaction.</li>
-</ul>
-
-<h2 id="data-background">Data background</h2>
-<h3 id="coronavac-vaccine">Coronavac vaccine</h3>
-<p>Instituto Butantan (Instituto Butantan) announced the final results of the Phase III clinical trial of the COVID-19 vaccine of China Kexing Company in Brazil. From July 21 to December 16, 2020, 12842 participants were screened at 16 research sites in Brazil, and 12408 participants were randomly grouped. A total of 12396 participants received at least one dose of Coronavac vaccine or placebo, including 6195 in the vaccine group and 6201 in the placebo group. Among the 12396 participants, 5.1% were elderly participants 60 years or older, 64.2% were women, and most of the participants claimed to be white (75.3%). More than half of the participants (55.9%) had underlying diseases, of which 22.5% were obese (BMI ≥ 30kg/m2). The average age and BMI of the participants were 39.5 years and 26.8 kg/m2, respectively.</p>
-
-<h3 id="modena-vaccine">Modena vaccine</h3>
-<p>The US Centers for Disease Control and Prevention (CDC) released data on the response and severity of people of different ages after being vaccinated with Moderna’s COVID-19 vaccine. As of November 11, 2020, 30350 participants were randomly assigned to the vaccine or placebo group at a 1:1 ratio, with a median follow-up period of 7 weeks after the second vaccination. 75.2% of the participants in the vaccine group were between 18 and 65 years old, 47.8% were women; 79% were white, 10% were black or African American, and 4.3% were Asian participants. The median age is 53 years. 27% of the participants had underlying diseases, and 5% had major heart diseases.</p>
-
-<h3 id="pfizer-biontech-vaccine">Pfizer-BioNTech vaccine</h3>
-<p>The US Centers for Disease Control and Prevention (CDC) recently released data on the response and severity of populations of different ages after being vaccinated with Pfizer-BioNTech’s COVID-19 vaccine.</p>
-
-<p>Data for people over 18 years old: As of November 14, 2020, 43252 participants were randomly assigned to the vaccine or placebo group at a 1:1 ratio, and the median follow-up time was 2 months after the second vaccination. They included 49.4% of women, 81.9% of whites, 9.8% of African Americans, 4.4% of Asian participants and &lt;3% of other ethnic groups; 26.2% of participants were Hispanic/Latino; 21.4% Participants are &gt;65 years old. The median age is 51 years. The most frequently reported comorbidities were obesity (35.1%), diabetes (with or without chronic complications, 8.4%) and lung disease (7.8%). Geographically, 76.7% of the participants are from the United States, 15.3% are from Argentina, 6.1% are from Brazil, and 2% are from South Africa.
-Data on people aged 12-15: On April 9, 2021, Pfizer-Biotech supplemented the test results of people aged 12-15 and stated that the vaccine can be used in this group. 2260 adolescents aged 12-15 were randomly assigned to the vaccine or placebo group at a ratio of 1:1, with a median follow-up period of 2 months after the second vaccination. They included 49.3% of women, 88.0% of whites, 7.7% of African Americans, 2.4% of Asians, and &lt;2% of other ethnic groups; 10.5% of participants were Hispanic/Latino. The median age is 14 years. 21.5% of participants had one or more comorbidities that would increase the risk of severe COVID-19 disease. Geographically, all participants live in the United States.</p>
-
-<h3 id="astrazeneca-vaccine">AstraZeneca vaccine</h3>
-<p>Data released by the AstraZeneca vaccine trial group at the University of Oxford. From May 30 to August 8, 2020, 560 participants were included in the study and randomly assigned to the experimental vaccine group or the control vaccine group: 160 participants between the ages of 18-55 (100 assigned To ChAdOx1 nCoV-19, 60 were assigned to MenACWY), 160 were 56-69 years old (120 were assigned to ChAdOx1 nCoV-19, 40 were assigned to MenACWY) and 240 were 70 years and older (200 were assigned to ChAdOx1 nCoV- 19, 40 were assigned to MenACWY).</p>
-
-<h2 id="the-most-obvious-reaction-after-the-injection-of-modena">The most obvious reaction after the injection of Modena</h2>
-
-<p align="center">
-  <img alt="20211030-global-comparaison" src="/images/20211030-global-comparaison.png" />
-</p>
-
-<p>Whether it is a local reaction or a systemic reaction, the reaction is most obvious after the injection of Modena. 86% of people have local reactions, such as pain, swelling, and redness at the injection site, and nearly 67% have a systemic reaction. Such as fatigue, chills, joint pain, muscle pain, etc. Followed by the Kexing vaccine, 62% of people had a local reaction after injection, and 58% had a systemic reaction. Among the four vaccines, the Pfizer-Biotech vaccine caused the least adverse reactions. The probability of local and systemic reactions after vaccination was 29.5% and 22.4%, respectively.</p>
-
-<h2 id="all-4-vaccines-are-easy-to-cause-pain-and-chills-at-the-injection-site">All 4 vaccines are easy to cause pain and chills at the injection site</h2>
-<p align="center">
-  <img alt="20211030-local-reactions-comparaison" src="/images/20211030-local-reactions-comparaison.png" />
-</p>
-
-<p>Among the four vaccines, pain at the injection site is the most prone to local reaction, especially after the injection of Modena or Pfizer-Biotech vaccine, the probability of this reaction is as high as 70%-85%. The possibility of swelling and redness is much lower, and none of the 4 vaccines is higher than 10%.</p>
-
-<p align="center">
-  <img alt="20211030-sys-reactions-comparaison-1" src="/images/20211030-sys-reactions-comparaison-1.png" />
-</p>
-
-<p>For fatigue, chills and joint pain, the probability of the above three systemic reactions after the first injection of AstraZeneca vaccine is higher than the other three vaccines (fatigue: 56%, chills: 17%, joint pain: 22%), but the probability of adverse reactions after the second shot of Modena vaccine is the highest among the four vaccines (fatigue: 65%, chills: 44%, arthralgia: 43%).</p>
-
-<p align="center">
-  <img alt="20211030-sys-reactions-comparaison-2" src="/images/20211030-sys-reactions-comparaison-2.png" />
-</p>
-
-<p>The data released by the AstraZeneca vaccine trial group at the University of Oxford did not mention the adverse reaction of headache, but the probability of headache caused by the other three COVID-19 vaccines is still higher, especially the second dose of Modena or Pfizer- After the biotech vaccine, there is a 50% chance of headache. However, 10%-20% of people feel nausea/vomiting after being vaccinated with AstraZeneca. There is a similar situation with Modena vaccine. On the contrary, people who have received Pfizer-Biotech vaccine are less than 2% likely to have the same Reaction. Instituto Butantan, Brazil’s Instituto Butantan, announced that the Coronavac COVID-19 vaccine in the final study results of Brazil’s Phase III clinical trial did not mention the fever response. After the second shot of the other three vaccines, 10% There is a -15% probability of having a fever.</p>
-
-<p align="center">
-  <img alt="20211030-sys-reactions-comparaison-3" src="/images/20211030-sys-reactions-comparaison-3.png" />
-</p>
-
-<p>Similarly, the data released by the AstraZeneca vaccine trial group at the University of Oxford did not mention the adverse reactions of muscle pain and diarrhea. The data on the reaction and severity of the COVID-19 vaccine also did not mention the reaction of diarrhea. However, after vaccination with Modena and Pfizer-BioNTech vaccines, more than 20% of people will feel muscle pain, especially after the second dose of Modena, the proportion is close to 60%.</p>
-
-<h2 id="what-should-i-pay-attention-to-after-vaccination">What should I pay attention to after vaccination?</h2>
-<p>Being vaccinated does not mean that everything will be well and that the virus will not invade. After observing, we still need to pay attention to some things:</p>
-<ul>
-  <li>Avoid eating spicy and irritating foods, seafood foods, and drinking alcohol. It is recommended to drink plenty of water (source: Zhihu)</li>
-  <li>Try to avoid strenuous exercise and keep adequate rest (source: Zhihu)</li>
-  <li>Measures should be taken to protect yourself and others during travel (Source: CDC)</li>
-  <li>You should still pay attention to the symptoms of COVID-19, especially when you are with patients. If you develop symptoms of COVID-19, you should be tested and self-isolate, away from others (Source: CDC)</li>
-</ul>
-
-<h2 id="conclusion">Conclusion</h2>
-<p>Overall, in clinical trials, at least 40% of people will feel pain at the injection site regardless of the first or second injection, and at least 30% may feel tired or headache, especially if they have been vaccinated with Modena or Pfizer. -After the biotech vaccine.</p>
-
-<p>After vaccination, you should pay attention to the light diet and keep adequate rest. Even if you are vaccinated, you must pay attention to protection.</p>
-
-<p>If you still want to know about the adverse reactions of Pfizer, Coxing and AstraZeneca’s COVID-19 vaccine, please click on the following article:</p>
-
-<ul>
-  <li><a href="https://jingwen-z.github.io/pfizer-biontech-covid-19-vaccine-reactions/">Do you know the reactions of Pfizer vaccine?</a></li>
-  <li><a href="https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/">Do you know the reactions of Coronavac vaccine?</a></li>
-  <li><a href="https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions/">Do you know the reactions of Oxford/AstraZeneca vaccine?</a></li>
-  <li><a href="https://jingwen-z.github.io/moderna-covid-19-vaccine-reactions/">Do you know the reactions of Modena vaccine?</a></li>
-</ul>
-
-<h2 id="references">References</h2>
-<ul>
-  <li>“Local Reactions, Systemic Reactions, Adverse Events, and Serious Adverse Events: Pfizer-BioNTech COVID-19 Vaccine”, <em>www.cdc.gov</em>. [Online]. Available: <a href="https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/reactogenicity.html">https://www.cdc.gov/vaccines/covid-19/info-by-product/pfizer/reactogenicity.html</a></li>
-  <li>“辉瑞－BioNTech 2019冠状病毒病疫苗”, <em>zh.wikipedia.org</em>. [Online]. Available: <a href="https://zh.wikipedia.org/wiki/%E8%BE%89%E7%91%9E%EF%BC%8DBioNTech_2019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97">https://zh.wikipedia.org/wiki/%E8%BE%89%E7%91%9E%EF%BC%8DBioNTech_2019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97</a></li>
-  <li>“辉瑞-生物科技COVID-19疫苗概述和安全性”, <em>chinese.cdc.gov</em>. [Online]. Available: <a href="https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html">https://chinese.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html</a></li>
-  <li>Vaccines and Related Biological Products Advisory Committee Meeting, “FDA Briefing Document Moderna COVID-19 Vaccine”, <em>December 17, 2020</em>.</li>
-  <li>“The Moderna COVID-19 Vaccine’s Local Reactions, Systemic Reactions, Adverse Events, and Serious Adverse Events”, <em>www.cdc.gov</em>. [Online]. Available: <a href="https://www.cdc.gov/vaccines/covid-19/info-by-product/moderna/reactogenicity.html">https://www.cdc.gov/vaccines/covid-19/info-by-product/moderna/reactogenicity.html</a></li>
-  <li>“Efficacy and Safety of a COVID-19 Inactivated Vaccine in Healthcare Professionals in Brazil: The PROFISCOV Study”, <em>europepmc.org</em>. [Online]. Available: <a href="https://europepmc.org/article/PPR/PPR341815">https://europepmc.org/article/PPR/PPR341815</a></li>
-  <li>“克爾來福2019冠狀病毒病疫苗”, <em>zh.wikipedia.org</em>. [Online]. Available: <a href="https://zh.wikipedia.org/wiki/%E5%85%8B%E7%88%BE%E4%BE%86%E7%A6%8F2019%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97">https://zh.wikipedia.org/wiki/%E5%85%8B%E7%88%BE%E4%BE%86%E7%A6%8F2019%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97</a></li>
-  <li>Maheshi N Ramasamy, Angela M Minassian, et Al. “Safety and immunogenicity of ChAdOx1 nCoV-19 vaccine administered in a prime-boost regimen in young and old adults (COV002): a single-blind, randomised, controlled, phase 2/3 trial”, <em>Lancet 2020; 396: 1979–93</em>.</li>
-  <li>Cristina Menni, Kerstin Klaser, et Al. “Vaccine side-effects and SARS-CoV-2 infection after vaccination in users of the COVID Symptom Study app in the UK: a prospective observational study”, <em>Lancet Infect Dis 2021; 21: 939–49</em>.</li>
-  <li>“全球疫苗安全咨询委员会对阿斯利康COVID-19疫苗（Vaxzevria和Covishield）罕见不良凝血事件的最新证据的审查”, <em>www.who.int</em>. [Online]. Available: <a href="https://www.who.int/zh/news/item/16-04-2021-global-advisory-committee-on-vaccine-safety-(gacvs)-review-of-latest-evidence-of-rare-adverse-blood-coagulation-events-with-astrazeneca-covid-19-vaccine-(vaxzevria-and-covishield)">https://www.who.int/zh/news/item/16-04-2021-global-advisory-committee-on-vaccine-safety-(gacvs)-review-of-latest-evidence-of-rare-adverse-blood-coagulation-events-with-astrazeneca-covid-19-vaccine-(vaxzevria-and-covishield)</a></li>
-  <li>“牛津－阿斯利康2019冠状病毒病疫苗”, <em>zh.wikipedia.org</em>. [Online]. Available: <a href="https://zh.wikipedia.org/wiki/%E7%89%9B%E6%B4%A5%EF%BC%8D%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B72019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97">https://zh.wikipedia.org/wiki/%E7%89%9B%E6%B4%A5%EF%BC%8D%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B72019%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E8%8B%97</a></li>
-  <li>“阿斯利康疫苗：欧盟药监局确认血栓为该疫苗“罕见”副作用 年轻女性疑面临更大风险”, <em>www.bbc.com</em>. [Online]. Available: <a href="https://www.bbc.com/zhongwen/simp/world-56614337">https://www.bbc.com/zhongwen/simp/world-56614337</a></li>
-  <li>大众迷你仓, “新冠疫苗接种后注意事项”, <em>zhuanlan.zhihu.com</em>. [Online]. Available: <a href="https://zhuanlan.zhihu.com/p/368304205">https://zhuanlan.zhihu.com/p/368304205</a></li>
-  <li>torstensimon, “vaccine vaccination covid-19”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/vaccine-vaccination-covid-19-5926664/">https://pixabay.com/photos/vaccine-vaccination-covid-19-5926664/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="visualisation" /><category term="COVID-19" /><summary type="html"><![CDATA[Some time ago, I have successively analyzed the adverse reactions of Pfizer vaccine, Coronavac vaccine, AstraZeneca vaccine and Modena vaccine. Today we will compare the side effects of different vaccines in a longitudinal direction.]]></summary></entry></feed>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="python3" /><category term="excel" /><summary type="html"><![CDATA[People who are familiar with openpyxl know that we can use it to read/write Excel 2010 xlsx/xlsm/xltx/xltm files. In this blog, I will show you how to write values into an Excel template.]]></summary></entry></feed>
