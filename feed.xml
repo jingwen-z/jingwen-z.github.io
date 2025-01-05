@@ -1,5 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-12-29T12:01:25+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2023</title><link href="https://jingwen-z.github.io/review-of-2023/" rel="alternate" type="text/html" title="Review of 2023" /><published>2023-12-29T10:35:37+01:00</published><updated>2023-12-29T10:35:37+01:00</updated><id>https://jingwen-z.github.io/review-of-2023</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2023/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-01-05T10:39:48+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2024</title><link href="https://jingwen-z.github.io/review-of-2024/" rel="alternate" type="text/html" title="Review of 2024" /><published>2025-01-01T22:19:46+01:00</published><updated>2025-01-01T22:19:46+01:00</updated><id>https://jingwen-z.github.io/review-of-2024</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2024/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>The year 2024 passed, and on the first day of the year 2025, I prefer to review last year, like I do each year. This year, I enriched my skills in data engineering, data ops, and data management. I’ll talk about each of them in the following.</p>
+
+<h2 id="working-in-retailing-in-the-memory">Working in retailing (In The Memory)</h2>
+<p>This year, I was on maternity leave for the first three months and returned to work at the end of March. Then, I accomplished different projects not only on data science but also on data engineering and data ops, which continued to complete my skill tree on data.</p>
+
+<h3 id="data-catalog">Data catalog</h3>
+<p>A big project I spend a lot on is: setting up the data catalog on Databricks.</p>
+
+<p>Memory provides various data analytics tools to help retailers and brands make shopper-based decisions by applying retail Augmented Intelligence to all the richness of the available data (transactional data, shopper data, product data…) and delivering recommendations at a truly operational granularity level.</p>
+
+<p>However, managing all data efficiently across multiple tenants, having a vision about the whole process of data transformation, constructing a stable data model, creating a homogeneous data layer to harmonize code base cross tenants, communicating them transparently to different teams (data, consulting, product, developer), ensuring security and compliance, and enabling seamless access has always been a challenge. To address these issues, we turned to Databricks Unity Catalog, which is a unified data governance solution that enables better control, discovery and collaboration on data. In this article, we’ll talk about how Memory implements Unity Catalog and how it revolutionises our data operations to drive business growth and innovation.</p>
+
+<p>We operate one workspace per tenant and environment. With Unity Catalog, we centralize data governance across all workspaces by creating one metastore per region. Each metastore contains rich metadata related to data assets, such as data types, descriptions, and tags. Moreover, it can extract data automatically—once we create a table in the data catalog by specifying the data source path, the catalog updates automatically without manual code execution.</p>
+
+<p>Inside each metastore, per tenant and environment, we create a catalog using SQL code (managed by the data ops team), an external location, and a storage credential (created by the devops team with Terraform) for importing datasets from Azure Storage Account. For each catalog, we create different schemas for various purposes:</p>
+<ul>
+  <li>Schema bronze: Contains bronze layer datasets transformed by the data engineering team</li>
+  <li>Schema silver: Contains silver layer datasets transformed by the data engineering team</li>
+  <li>Schema gold: Contains gold tables used for reporting and analytics</li>
+  <li>Schema analytics: Contains views used for harmonizing code base across tenants</li>
+  <li>Schema aggregates: Contains views of aggregate tables used for harmonizing code base across tenants</li>
+  <li>Schema for solutions: Contains delta tables created for specific solutions</li>
+</ul>
+
+<p>Moreover, we have implemented CD to automatically run updated SQL files for the data catalog after merging in production, and set up CI to check if the SQL queries work for creating schemas, tables, and views.</p>
+
+<p>As Memory scales, Databricks Unity Catalog plays a crucial role in streamlining our daily data operations. Its robust metadata management enables us to enhance data discovery, management, and security globally. By automating permissions and integrating these processes into our CI/CD pipelines, we’ve cut operational costs, bolstered data security, and sped up the delivery of our data-driven products and insights. Looking ahead, we plan to leverage more of Unity Catalog’s features. These include Data Lineage to track data transformation processes, Data Insights to analyze usage patterns and statistics, and Data Quality to establish check rules, monitor quality, and alert us to any issues.</p>
+
+<h3 id="data-quality">Data quality</h3>
+<p>This is another interesting project that I achieved. We have created a tool to check the data that we received from our clients. We check the data quality in terms of data engineering and terms of business thinking as well, for example checking the daily transaction amount, client amount, product and sales etc. We also check if the promotional generosity respects the constraint or if there is some missing data etc. We use this tool on Databricks jobs and also in our data integration pipeline on airflow. Besides, we also created some dashboards on Power BI to share the data quality check results with all teams. Thanks to it we can monitor the data, and find and alert the problem in time.</p>
+
+<h3 id="unit-tests-on-internal-tools--configuration-setting-up-on-different-tenants">Unit tests on internal tools &amp; configuration setting up on different tenants</h3>
+<p>I added some unit tests for our internal tools and adapted and set up the configurations for different tenants.
+The unit test can help us to ensure the functions work well as we expect and to avoid the problem while the changes occur. And the setup of configuration for tenants can set a solid base for the code harmonization.</p>
+
+<h2 id="role-as-a-mother">Role as a mother</h2>
+<p>First-year being mother, the challenge is balancing work and life (child), not easy but there are still some tips:</p>
+<ul>
+  <li>Set Realistic Expectations: Identify the most important responsibilities at work and home, and focus on those.</li>
+  <li>Establish a Routine: Block time for work, family, and self-care. Consistency helps you manage your energy and commitments.</li>
+  <li>Leverage Support Systems
+    <ul>
+      <li>Partner and family support: Share household and parenting responsibilities with your partner or family members.</li>
+      <li>Professional help: Consider hiring help for childcare, cleaning, or meal preparation, if possible.</li>
+      <li>Parenting groups: Join local or online communities for advice, emotional support, and encouragement.</li>
+    </ul>
+  </li>
+  <li>Communicate with Your Employer: Discuss options such as remote work, if possible. Here I’d like to say a big thanks to Memory, the remote working policy allows me to save lots of time on traffic and earn more flexible time for working.</li>
+</ul>
+
+<p>Hope to see you in 2025!</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>Jordan González, “2024”, <em>unsplash.com</em>. [Online]. Available: <a href="https://plus.unsplash.com/premium_photo-1698133352745-55a73d7bd762?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">https://plus.unsplash.com/premium_photo-1698133352745-55a73d7bd762?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</a></li>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html"><![CDATA[Review of 2024]]></summary></entry><entry xml:lang="en"><title type="html">Review of 2023</title><link href="https://jingwen-z.github.io/review-of-2023/" rel="alternate" type="text/html" title="Review of 2023" /><published>2023-12-29T10:35:37+01:00</published><updated>2023-12-29T10:35:37+01:00</updated><id>https://jingwen-z.github.io/review-of-2023</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2023/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>The year 2023 almost passed, before the arrival of the year 2024, I prefer to review this year, like what I did each year.
 This year I enriched my skills in data engineering, data ops and management. I’ll talk about each of them in the following.</p>
 
@@ -1206,143 +1262,4 @@ and they’ve been read for 8500 times.</p>
 <h2 id="references">References</h2>
 <ul>
   <li>Tumisu, “New year 2021 moon New year’s eve”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/new-year-2021-moon-new-year-s-eve-5678207/">https://pixabay.com/photos/new-year-2021-moon-new-year-s-eve-5678207/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html"><![CDATA[Review of 2021.]]></summary></entry><entry xml:lang="en"><title type="html">Writing dataframes into an Excel template</title><link href="https://jingwen-z.github.io/writing-dataframes-into-an-excel-template/" rel="alternate" type="text/html" title="Writing dataframes into an Excel template" /><published>2021-11-27T12:07:17+01:00</published><updated>2021-11-27T12:07:17+01:00</updated><id>https://jingwen-z.github.io/writing-dataframes-into-an-excel-template</id><content type="html" xml:base="https://jingwen-z.github.io/writing-dataframes-into-an-excel-template/"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>People who are familiar with <code class="language-plaintext highlighter-rouge">openpyxl</code> know that we can use it to read/write
-Excel 2010 xlsx/xlsm/xltx/xltm files. As I presented in <a href="https://jingwen-z.github.io/how-to-munipulate-excel-workbook-by-python/">this blog</a>,
-we can create a workbook, assign values to some cells, apply number formats,
-merge cells, etc. However, if we need to create an Excel dashboard as the
-following, should we accomplish all formats with <code class="language-plaintext highlighter-rouge">openpyxl</code>?</p>
-
-<p align="center">
-  <img alt="20211127-portfolio-dashboard" src="/images/20211127-portfolio-dashboard.png" />
-</p>
-
-<p>For the question above, we can resolve it from another point of view: we can
-create an Excel template with the fixed format, such as dashboard title and logo,
-subtitles, then write values into this template. In this blog, I’ll show you how
-to do this with the following points:</p>
-<ul>
-  <li>Context</li>
-  <li>Write data into the template</li>
-</ul>
-
-<h2 id="context">Context</h2>
-<p>We have an Excel template named “template.xlsx”, which contains two worksheets
-“category” and “product”:</p>
-
-<p align="center">
-  <img alt="20211127-category-template" src="/images/20211127-category-template.PNG" />
-</p>
-
-<p>The worksheet “category” shows the performance of each category with different
-indicators like turnover, volume, number of clients, etc.</p>
-
-<p align="center">
-  <img alt="20211127-product-template" src="/images/20211127-product-template.PNG" />
-</p>
-
-<p>The worksheet “product” shows the performance of each product with the same
-indicators.</p>
-
-<p>And what we need to insert into these two worksheets are three pandas dataframes:
-classic_indicators_df, other_indicators_df and products_detail_df.</p>
-
-<p align="center">
-  <img alt="20211127-category-df" src="/images/20211127-category-df.png" />
-</p>
-
-<p align="center">
-  <img alt="20211127-product-df" src="/images/20211127-product-df.png" />
-</p>
-
-<h2 id="write-data-into-the-template">Write data into the template</h2>
-<p>With all data preparation, the next target is writing the three dataframes into
-the template with several steps:</p>
-<ul>
-  <li>Load the workbook</li>
-  <li>Create a writer</li>
-  <li>Write dataframe into the template</li>
-</ul>
-
-<h3 id="load-the-workbook">Load the workbook</h3>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">template</span> <span class="o">=</span> <span class="n">openpyxl</span><span class="p">.</span><span class="n">load_workbook</span><span class="p">(</span><span class="s">'./template.xlsx'</span><span class="p">)</span>
-</code></pre></div></div>
-<p>We load the template with <code class="language-plaintext highlighter-rouge">openpyxl.load_workbook</code> by indicating the path.</p>
-
-<h3 id="create-a-writer">Create a writer</h3>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-
-<span class="n">out_path</span> <span class="o">=</span> <span class="s">'./final_report.xlsx'</span>
-
-<span class="n">writer</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">ExcelWriter</span><span class="p">(</span><span class="n">out_path</span><span class="p">)</span>
-<span class="n">writer</span><span class="p">.</span><span class="n">book</span> <span class="o">=</span> <span class="n">template</span>
-</code></pre></div></div>
-<p>We set the writer with <code class="language-plaintext highlighter-rouge">pandas.ExcelWriter</code> that allows to write DataFrame
-objects into excel sheets, and set the template file as the writer’s workbook.</p>
-
-<h3 id="write-dataframe-into-the-template">Write dataframe into the template</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import openpyxl
-from openpyxl.styles.borders import Border, Side
-import string
-
-def set_border(ws, cell_range):
-    rows = ws[cell_range]
-    side = Side(border_style='thin', color="FF000000")
-
-    rows = list(rows)
-    max_y = len(rows) - 1  # index of the last row
-    for pos_y, cells in enumerate(rows):
-        max_x = len(cells) - 1  # index of the last cell
-        for pos_x, cell in enumerate(cells):
-            border = Border(
-                left=cell.border.left,
-                right=cell.border.right,
-                top=cell.border.top,
-                bottom=cell.border.bottom
-            )
-            border.left = side
-            border.right = side
-            border.top = side
-            border.bottom = side
-            
-            cell.border = border
-</code></pre></div></div>
-<p>Before writing into the template, I create a function <code class="language-plaintext highlighter-rouge">set_border()</code> by using
-<code class="language-plaintext highlighter-rouge">Side()</code> and <code class="language-plaintext highlighter-rouge">Border()</code> to set borders for each cell in the given range.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df_sheet_list = [(classic_indicators_df, 'category'),
-                 (other_indicators_df, 'category'),
-                 (products_detail_df, 'product')]
-
-for (df, sht) in df_sheet_list:
-    templ_sht = template[sht]
-    writer.sheets = {templ_sht.title:templ_sht}
-
-    if df is classic_indicators_df:
-        classic_indicators_df.to_excel(writer, sheet_name=sht, index=False,
-                                       header=False, startrow=13, startcol=2)
-        set_border(writer.sheets[sht], f"C14:G{14-1+len(df)}")
-    elif df is other_indicators_df:
-        other_indicators_df.to_excel(writer, sheet_name=sht, index=False,
-                                       header=False, startrow=13, startcol=8)
-        set_border(writer.sheets[sht], f"I14:M{14-1+len(df)}")
-    elif df is products_detail_df:
-        products_detail_df.to_excel(writer, sheet_name=sht, index=False,
-                                       header=False, startrow=12, startcol=4)
-        set_border(writer.sheets[sht], f"E13:K{13-1+len(df)}")
-
-writer.save()
-</code></pre></div></div>
-<p>We assign the sheet where we will insert the dateframe to <code class="language-plaintext highlighter-rouge">writer.sheets</code>.
-Then we write the dataframe with <code class="language-plaintext highlighter-rouge">.to_excel</code> by specifying the writer we use,
-the worksheet that we want to insert, and the start row and the start column
-with integers, after all these steps, we save the file with <code class="language-plaintext highlighter-rouge">writer.save()</code>.</p>
-
-<p>If you are curious about the scripts, you will find them <a href="https://github.com/jingwen-z/python-playground/blob/master/learn_openpyxl/demo_insert_values_into_excel_template.ipynb">here</a>.</p>
-
-<h2 id="references">References</h2>
-<ul>
-  <li>“What’s new in Excel 365?”, <em>laptrinhx.com</em>. [Online]. Available: <a href="https://laptrinhx.com/what-s-new-in-excel-365-589177363/#">https://laptrinhx.com/what-s-new-in-excel-365-589177363/#</a></li>
-  <li>“SALES KPI REPORT”, <em>thesmallman.com</em>. [Online]. Available: <a href="https://www.thesmallman.com/premium/key-performance-indicators">https://www.thesmallman.com/premium/key-performance-indicators</a></li>
-  <li>“Howard Tucan”, <em>miro.medium.com</em>. [Online]. Available: <a href="https://miro.medium.com/max/1400/1*hpMdyM6QNJGix73T-sc8vw.jpeg">https://miro.medium.com/max/1400/1*hpMdyM6QNJGix73T-sc8vw.jpeg</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="python3" /><category term="excel" /><summary type="html"><![CDATA[People who are familiar with openpyxl know that we can use it to read/write Excel 2010 xlsx/xlsm/xltx/xltm files. In this blog, I will show you how to write values into an Excel template.]]></summary></entry></feed>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html"><![CDATA[Review of 2021.]]></summary></entry></feed>
