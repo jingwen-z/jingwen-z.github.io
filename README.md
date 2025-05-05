@@ -1,6 +1,6 @@
 # jingwen-z.github.io
 
-More than four years as a data scientist in retailing. In my blog, I usually
+More than eight years as a data scientist in retailing. In my blog, I usually
 share what I learnt during work or personal projects, data analysis or
 visualisation with open source data around the following topics:
 - Python
