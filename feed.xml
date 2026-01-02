@@ -1,5 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-01-05T10:39:48+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
-</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2024</title><link href="https://jingwen-z.github.io/review-of-2024/" rel="alternate" type="text/html" title="Review of 2024" /><published>2025-01-01T22:19:46+01:00</published><updated>2025-01-01T22:19:46+01:00</updated><id>https://jingwen-z.github.io/review-of-2024</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2024/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://jingwen-z.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jingwen-z.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-01-02T17:50:00+01:00</updated><id>https://jingwen-z.github.io/feed.xml</id><title type="html">Jingwen Zheng</title><subtitle>Data Science Enthusiast
+</subtitle><author><name>Jingwen Zheng</name></author><entry xml:lang="en"><title type="html">Review of 2025</title><link href="https://jingwen-z.github.io/review-of-2025/" rel="alternate" type="text/html" title="Review of 2025" /><published>2026-01-01T22:19:46+01:00</published><updated>2026-01-01T22:19:46+01:00</updated><id>https://jingwen-z.github.io/review-of-2025</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2025/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>As I look back on 2025, it’s clear that this year has been marked by significant professional growth and meaningful contributions to our data engineering capabilities. The transition to the Data Engineer team opened new doors and challenges that pushed me to expand my skill set and take on complex projects.</p>
+
+<h2 id="the-journey-begins-embracing-a-new-role">The Journey Begins: Embracing a New Role</h2>
+<p>The shift to Data Engineering was more than just a title change—it represented a fundamental evolution in my professional focus. I immersed myself in mastering our Data Ingestion Framework, Airflow orchestration, and Kubernetes container management. These technologies became the foundation upon which all my subsequent achievements were built.</p>
+
+<h2 id="automation-and-quality">Automation and Quality</h2>
+<p>One of the early wins of the year was the automation of unit tests through CI/CD pipelines. Unit tests are now automated, which has significantly improved our ability to maintain code quality and detect issues earlier in the development cycle.
+On the data quality front, we successfully implemented a comprehensive dashboard with auto-refresh capabilities using the Power BI Framework. This tool has become instrumental in monitoring and maintaining data integrity across our systems.</p>
+
+<h2 id="major-migration-success-stories">Major Migration Success Stories</h2>
+<p>Working alongside our DevOps team, we executed critical migration projects for A, E, and R. These weren’t just technical exercises—they represented a strategic move toward a unified infrastructure aligned with our headquarters. Each migration required meticulous planning, careful execution, and close collaboration across teams to ensure business continuity.</p>
+
+<h2 id="a-elevating-our-development-process">A: Elevating Our Development Process</h2>
+<p>For A, we achieved two transformative milestones. First, we deployed a complete staging environment encompassing both data end and data analytics components. This staging environment revolutionized our testing approach, allowing us to validate changes thoroughly before production deployment, significantly reducing risk and increasing confidence in our releases.
+Second, we integrated the household segmentation data flows, enriching our datasets and enabling users to access more comprehensive and nuanced segmentation insights. This enhancement directly supports better business decision-making through richer, more detailed data.</p>
+
+<h2 id="e-expanding-our-reach">E: Expanding Our Reach</h2>
+<p>The E project brought exciting opportunities to work with new data sources. We successfully onboarded C as a new retailer, navigating the complexities of understanding and integrating an entirely new retailer’s data structure. Additionally, we enhanced the G retailer integration by incorporating real EAN data, completing the data picture and improving data accuracy across the board.</p>
+
+<h2 id="r-simplifying-historical-data-management">R: Simplifying Historical Data Management</h2>
+<p>For R, we implemented historical data recovery pipelines across all precomputed modules. This infrastructure simplifies what was previously a complex and time-consuming process, ensuring we can efficiently maintain comprehensive historical records for trend analysis and reporting.</p>
+
+<h2 id="looking-forward">Looking Forward</h2>
+<p>As I close out 2025, I’m proud of the progress made and the impact delivered. The combination of technical skill development, successful project execution, and quality improvements positions us well for continued growth in 2026. The foundation built this year—from automation to infrastructure to expanded retailer coverage—will serve as a launching pad for even greater achievements ahead.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>Rodion Kutsaiev, “2025”, <em>unsplash.com</em>. [Online]. Available: <a href="https://unsplash.com/photos/a-close-up-of-a-number-surrounded-by-white-balls-_OH65kvjUBc">https://unsplash.com/photos/a-close-up-of-a-number-surrounded-by-white-balls-_OH65kvjUBc</a></li>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html"><![CDATA[Review of 2025]]></summary></entry><entry xml:lang="en"><title type="html">Review of 2024</title><link href="https://jingwen-z.github.io/review-of-2024/" rel="alternate" type="text/html" title="Review of 2024" /><published>2025-01-01T22:19:46+01:00</published><updated>2025-01-01T22:19:46+01:00</updated><id>https://jingwen-z.github.io/review-of-2024</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2024/"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>The year 2024 passed, and on the first day of the year 2025, I prefer to review last year, like I do each year. This year, I enriched my skills in data engineering, data ops, and data management. I’ll talk about each of them in the following.</p>
 
 <h2 id="working-in-retailing-in-the-memory">Working in retailing (In The Memory)</h2>
@@ -1137,129 +1166,4 @@ cheaper than others, their average unit price is less than 8000 euros.</p>
   <li>“Rent apartment Paris 18”, <em>parisattitude.com</em>. [Online]. Available: <a href="https://www.parisattitude.com/rent-apartment-paris-18.aspx">https://www.parisattitude.com/rent-apartment-paris-18.aspx</a></li>
   <li>“Guide immobilier Paris 16ème arrondissement”, <em>engelvoelkers.com</em>. [Online]. Available: <a href="https://www.engelvoelkers.com/fr-fr/paris/guide-immobilier-16eme-arrondissement/">https://www.engelvoelkers.com/fr-fr/paris/guide-immobilier-16eme-arrondissement/</a></li>
   <li>Walkerssk, “Paris France Eiffel tower night”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/">https://pixabay.com/photos/paris-france-eiffel-tower-night-1836415/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html"><![CDATA[Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris between January 2014 and June 2020.]]></summary></entry><entry xml:lang="en"><title type="html">Review of 2021</title><link href="https://jingwen-z.github.io/review-of-2021/" rel="alternate" type="text/html" title="Review of 2021" /><published>2021-12-30T14:43:06+01:00</published><updated>2021-12-30T14:43:06+01:00</updated><id>https://jingwen-z.github.io/review-of-2021</id><content type="html" xml:base="https://jingwen-z.github.io/review-of-2021/"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>The year 2021 is still a year battling with COVID-19. Thanks to the vaccination,
-our life gradually returns to normal, we started to back to the office more
-frequently and had the chance to travel as before. This year I continue to go
-deeper on how to apply data science to the retailing domain and do some data
-analysis with open-source data as well. In this blog, I’ll resume my year of
-2021 with the following points:</p>
-<ul>
-  <li>Working in retailing (In The Memory)</li>
-  <li>COVID-19 analysis</li>
-  <li>Blogs</li>
-</ul>
-
-<h2 id="working-in-retailing-in-the-memory">Working in retailing (In The Memory)</h2>
-<p><a href="https://www.inthememory.com/?lang=en">In The Memory</a> is a retail-tech company that helps retail players to
-make the best use of the different internal and external data sources to meet
-their strategic and operational business challenges. Our products allow
-distributors and brands to accelerate their decision-making to attract more
-customers and make the best assortment, merchandising, pricing, and promotional
-choices, in their various physical and online sales channels. We build tailored
-Augmented Intelligence solutions to meet clients’ priority challenges and serve
-their strategies by supporting their teams in change management, defining
-together the best KPIs to meet clients’ challenges and adapt our solutions to
-the client’s needs, constraints and processes. Moreover, this year, we have won
-the “Pépite du Retail 2020” trophy, voted for by LSA Live participants and was
-elected best Microsoft 2021 partner in the “France Action Startup Award”
-category; we have nearly 50 colleagues vs. 25 in 2020.</p>
-
-<p align="center">
-  <img alt="20211230-awards" src="/images/20211230-awards.png" />
-</p>
-
-<h3 id="what-did-i-do-during-working">What did I do during working?</h3>
-<p>This year I accomplished about twenty CRM (Customer Relationship Management)
-projects, some are for the distributors, some are for the industrialists. With
-our analysis, we help them to have 10% more turnover per client. I also
-developed new features for a module that can extract about 50 KPIs for 1 year
-for different levels, such as per product/store, per product category/store
-group, or temporal levels x product/store, like month x product or day x store,
-etc. The SLA (Service-Level Agreement) of this module is about 2-5 min, and
-during 2 weeks after the release, the module has already been used around 1500
-times. Moreover, with my colleague, we created a model for estimating the
-product’s turnover and recommend products for different promotion operations,
-which will be applied in a new module. Since it’s confidential, I won’t talk
-about the details here ;)</p>
-
-<p>Furthermore, as the company expands, we updated our information on <a href="https://www.welcometothejungle.com/fr/companies/memory">Welcome to
-the Jungle</a>. I participated in a <a href="https://www.youtube.com/watch?v=AwASE5f_7gA">video shooting</a> for
-presenting what the data team does in daily work and how we cooperate with other
-teams like consulting team and dev team.</p>
-
-<h3 id="what-did-i-learn-during-working">What did I learn during working?</h3>
-<p>Working in different projects of retailing, I gained more knowledge of <a href="https://jingwen-z.github.io/multiple-kpis-in-retailing-1/">different</a>
-<a href="https://jingwen-z.github.io/multiple-kpis-in-retailing-2/">indicactors</a>. Thanks to the CRM projects, I understand what should we
-focus on according to clients’ needs and <a href="https://jingwen-z.github.io/crm-in-retailing/">how to segment customers with their purchases</a>.
-During the daily work, I learned how to cut a project and accomplish different
-parts of the project with colleagues. The biggest gain is that when I did the
-sales promotion project, I enriched my knowledge of promotion, I understood
-different promotions operate different mechanics and generosities; to define
-the products for each promotion, we need to reach various objectives, such as
-the turnover objective, product number, brand type distribution, generosity
-distribution, etc. Thanks to this project, I have closer contact with the people
-of business (category managers, purchase, promotion, etc.), which let me better
-understand their needs/pain points, so that we can develop the right product to
-satisfy the needs or solve the pain points.</p>
-
-<h2 id="covid-19-vaccine-analysis">COVID-19 vaccine analysis</h2>
-<p>Since the beginning of 2020, people from all over the world have struggled with
-the COVID-19 virus, and scientists are also actively looking for solutions. To
-achieve herd immunity, the most effective method at the moment can be said to be
-vaccination. Various voices about the vaccine have also been on the cusp of
-social public opinion, and the praise or controversy about it has never stopped.
-And a vaccine from theoretical design to clinical trials requires too much
-wisdom and effort of scientists.</p>
-
-<p>With open-source datasets, I analyzed the adverse reactions of Pfizer vaccine,
-Coronavac vaccine, AstraZeneca vaccine and Modena vaccine in different blogs:</p>
-
-<ul>
-  <li><a href="https://jingwen-z.github.io/pfizer-biontech-covid-19-vaccine-reactions/">Do you know the reactions of Pfizer vaccine?</a></li>
-  <li><a href="https://jingwen-z.github.io/coronavac-covid-19-vaccine-reactions/">Do you know the reactions of Coronavac vaccine?</a></li>
-  <li><a href="https://jingwen-z.github.io/astrazeneca-oxford-covid-19-vaccine-reactions/">Do you know the reactions of Oxford/AstraZeneca vaccine?</a></li>
-  <li><a href="https://jingwen-z.github.io/moderna-covid-19-vaccine-reactions/">Do you know the reactions of Modena vaccine?</a></li>
-  <li><a href="https://jingwen-z.github.io/four-covid-19-vaccines-reactions/">Do you know which COVID-19 vaccine brings the most obvious reactions?</a></li>
-</ul>
-
-<p align="center">
-  <img alt="20211030-global-comparaison" src="/images/20211030-global-comparaison.png" />
-</p>
-
-<p>Whether it is a local reaction or a systemic reaction, the reaction is most
-obvious after the injection of Modena. 86% of people have local reactions, such
-as pain, swelling, and redness at the injection site, and nearly 67% have a
-systemic reaction. Such as fatigue, chills, joint pain, muscle pain, etc.
-Followed by the Kexing vaccine, 62% of people had a local reaction after
-injection, and 58% had a systemic reaction. Among the four vaccines, the
-Pfizer-Biotech vaccine caused the least adverse reactions. The probability of
-local and systemic reactions after vaccination was 29.5% and 22.4%, respectively.</p>
-
-<h2 id="blogs">Blogs</h2>
-<p>This year I wrote 22 blogs (including this one), they talk about various topics:
-retailing, COVID-19, population and employee. Moreover, the traffic of my blog
-increased by 21.4% concerning 2020. I’m pretty glad if my blogs can help you and
-solve the problems for you.</p>
-
-<p align="center">
-  <img alt="Blog traffic 1" src="/images/20211230-blog1.png" />
-</p>
-
-<p align="center">
-  <img alt="Blog traffic 2" src="/images/20211230-blog2.png" />
-</p>
-
-<p>Besides, I opened a Wechat Official Account, which is likely a personal blog
-based on Wechat. On this platform, I translated some of my English blogs into
-Chinese ones and shared them with my Chinese friends. I’ve written 11 blogs
-and they’ve been read for 8500 times.</p>
-
-<p>Don’t hesitate if you want to ask questions or write comments, it’s welcome!!</p>
-
-<p>Hope to see you in 2022!</p>
-
-<h2 id="references">References</h2>
-<ul>
-  <li>Tumisu, “New year 2021 moon New year’s eve”, <em>pixabay.com</em>. [Online]. Available: <a href="https://pixabay.com/photos/new-year-2021-moon-new-year-s-eve-5678207/">https://pixabay.com/photos/new-year-2021-moon-new-year-s-eve-5678207/</a></li>
-</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="review" /><summary type="html"><![CDATA[Review of 2021.]]></summary></entry></feed>
+</ul>]]></content><author><name>Jingwen Zheng</name></author><category term="analysis" /><category term="real-estate" /><category term="visualisation" /><category term="geovisualisation" /><summary type="html"><![CDATA[Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of Europe's major centers of finance, diplomacy, commerce, fashion, science, and the arts. All these elements help to bring the increasing price of real estate in Paris. In this blog, I'll talk about the second-hand apartments purchases in Paris between January 2014 and June 2020.]]></summary></entry></feed>
